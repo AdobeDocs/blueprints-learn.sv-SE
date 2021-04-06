@@ -2,14 +2,14 @@
 title: Digital Experience-utkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 solution: Experience Platform
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 37ef1ea91b3cf83e9ab444fa0f907d4115d0fd24
+source-git-commit: 28915e33bffece1d365803db1b03c0460224dd32
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Digital Experience-utkast
 
@@ -19,7 +19,7 @@ Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdef
 
 ## Nyheter
 
-* **[Kundaktivitetshubbsknapp - översikt](/help/blueprints/customer-activity-hub/overview.md)**
+* **[Kundaktivitetshubbsknapp - översikt](/help/blueprints/audience-activation/customer-activity.md)**
 
    *Ange sammanhang för support och försäljning som utförs av agenter.*
 * **[Enterprise Data Exploration and Reporting Blueprint](/help/blueprints/data-exploration/overview.md)**
