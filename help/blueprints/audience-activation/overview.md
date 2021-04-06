@@ -1,28 +1,31 @@
 ---
-title: Audience Activation Blueprint
+title: Profil och Audience Activation Blueprint
 description: Leverera målgruppsanpassad flerkanalsannonsering med kunddataplattformens ​ i realtid.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
+exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
 
-# Audience Activation Blueprint
+# Profil och Audience Activation Blueprint
 
-Aktivering av målgrupp är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering. Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en silo där personaliseringssatsningarna endast riktar sig till kunder som interagerar med varumärket i den kanalen. Detta tillvägagångssätt återspeglar inte den verklighet som kunderna interagerar med varumärken över många olika kontaktytor. Aktivering av målgrupp gör det möjligt för varumärken att koppla samman kundinteraktioner över flera kanaler och leverera en centraliserad målgrupp som kan aktiveras i alla kanaler.
+Aktivering av profil och målgrupp är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering. Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en silo där personaliseringssatsningarna endast riktar sig till kunder som interagerar med varumärket i den kanalen. Detta tillvägagångssätt återspeglar inte den verklighet som kunderna interagerar med varumärken över många olika kontaktytor. Aktivering av målgrupp gör det möjligt för varumärken att koppla samman kundinteraktioner över flera kanaler och leverera en centraliserad målgrupp som kan aktiveras i alla kanaler.
 
 ## Scenarier
 
 | Scenario | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[Anonym aktivering av webben och annonsering](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[Online/offline + PII-aktivering](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> Kunddataplattform i realtid</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Anonym webb och reklam Audience Activation](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
+| **[Online/offline + PII-profil och Audience Activation](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> Kunddataplattform i realtid</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Profil och Audience Activation till företagsmål](enterprise-destinations.md)** | <ul><li>Replikering och uppdatering av profiländringar i företagets datalager för aktivering och rapportering av användningsfall. </li></ul><ul><li>Initiera en försäljnings- eller supportåtgärd till kunden genom att informera om en kundåtgärd från kunddataplattformen i realtid till företagssystem och företagstillämpningar.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Kunddataplattform i realtid</li><li>Aktivering av Experience Platform</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Kundaktivitetshubb](customer-activity.md)** | <ul><li>Ge kunderna ett djupare sammanhang för interaktioner som stöds av agenter, som support och säljupplevelser. Med profilsökningen i Experience Platform kan agenterna få mer kontext om konsumenten, t.ex. nya inköp, kampanjinteraktioner, egenskaper, målgruppsmedlemskap och andra attribut och insikter som lagras i kundprofilen i realtid.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## Relaterade blogginlägg
 
