@@ -4,9 +4,9 @@ description: Digital Experience Blueprints är repeterbara implementeringar för
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 28915e33bffece1d365803db1b03c0460224dd32
+source-git-commit: 3f27f27159d9fb07124f289164dd85941ec58a25
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdef
 * **[Kundaktivitetshubbsknapp - översikt](/help/blueprints/audience-activation/customer-activity.md)**
 
    *Ange sammanhang för support och försäljning som utförs av agenter.*
-* **[Enterprise Data Exploration and Reporting Blueprint](/help/blueprints/data-exploration/overview.md)**
+* **[Enterprise Data Exploration and Reporting Blueprint](/help/blueprints/data-insights/overview.md)**
 
    *Utför en undersökande fråga och analys av data i sjön.*
 * **[Customer Journey Analytics Blueprint](/help/blueprints/customer-journey-analytics/overview.md)**
