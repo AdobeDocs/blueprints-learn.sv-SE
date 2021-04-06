@@ -3,15 +3,14 @@ title: Scenario för webbpersonalisering online/offline
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
+exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 9b6c220a515c5abae22b58fe33558d7d2fed375d
+source-git-commit: 2daba1965d6dce011bcce924f8e7471d7dfd42fb
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
-
-
 
 # Scenario för webbpersonalisering online/offline
 
@@ -36,10 +35,10 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 ## Guardrails
 
-* Segment som delas från Experience Platform till Audience Manager delas inom minuter efter segmentimplementering, oavsett om det sker via direktuppspelning eller satsutvärderingsmetod. Det finns en inledande segmentkonfigurationssynkronisering mellan AEP och AAM på cirka 4 timmar för att AEP-segmentmedlemskap ska börja realiseras i AAM profiler. När de väl finns i AAM är AEP-segmentmedlemskapen tillgängliga för samma sidanpassning via Adobe Target.
-* Observera att för segmentimplementeringar som sker inom segmentkonfigurationssynkroniseringen på 4 timmar mellan AEP och AAM, kommer dessa segmentimplementeringar att implementeras i AAM på det efterföljande batchsegmentjobbet som&quot;befintliga&quot; segment.
-* Gruppsegmentdelning från AEP - en gång per dag eller manuellt initierad via API. När de här segmentmedlemskapen är klara delas de till AAM inom några minuter och är tillgängliga för samma/nästa sidanpassning i Target.
-* Direktuppspelningssegmentering genomförs inom ~ p95 5 min. När dessa segmentimplementeringar inträffar delas de till AAM inom några minuter och är tillgängliga för samma/nästa sidanpassning i Target.
+* Segment som delas från Experience Platform till Audience Manager delas inom minuter efter segmentimplementering, oavsett om det sker via direktuppspelning eller satsutvärderingsmetod. Det finns en inledande segmentkonfigurationssynkronisering mellan Experience Platform och Audience Manager på ungefär 4 timmar så att Experience Platform-segmentmedlemskapen kan börja realiseras i Audience Manager-profiler. När du väl är med i Audience Manager-profilerna är Experience Platform-segmentmedlemskapen tillgängliga för samma sidanpassning via Adobe Target.
+* Observera att för segmentimplementeringar som sker inom segmentkonfigurationssynkroniseringen på 4 timmar mellan Experience Platform och Audience Manager kommer dessa segmentimplementeringar att realiseras i Audience Manager i det efterföljande batchsegmentjobbet som&quot;befintliga&quot; segment.
+* Gruppsegmentdelning från Experience Platform - en gång per dag eller manuellt initierad via API. När dessa segmentmedlemskap är klara delas de med Audience Manager inom några minuter och är tillgängliga för samma/nästa sidanpassning i Target.
+* Direktuppspelningssegmentering genomförs inom ungefär fem minuter. När dessa segmentimplementeringar inträffar delas de med Audience Manager inom några minuter och är tillgängliga för samma/nästa sidanpassning i Target.
 * Som standard tillåter segmentdelningstjänsten att högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om kunden har en Audience Manager-licens finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Audience Manager och Adobe Target.
 
 ## Krav för implementering
@@ -102,5 +101,3 @@ Anpassningsplanen för webb/mobiler kan implementeras med antingen traditionella
 * [Hur Adobe Experience Platform kan hjälpa kunderna att personalisera sina mobilmeddelanden i realtid med Journey Orchestration Service och en mobil meddelandeleverantör](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
 * [Segmentering i sekunder: Hur Adobe Experience Platform gjorde kundprofiler i realtid till verklighet](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
 * [Bygg en optimal onlineupplevelse: Förbättra enhetlig profil med frågetjänsten](https://medium.com/adobetech/build-an-optimal-online-experience-enrich-unified-profile-with-query-service-8027c196ab33)
-
-
