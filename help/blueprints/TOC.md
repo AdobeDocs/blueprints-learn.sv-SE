@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 role: Arkitekt, utvecklare, affärsman
 translation-type: tm+mt
-source-git-commit: 4f952331b25ce0b0941d110976d2a0eda061c4b3
+source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 0%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
-+ Audience Activation{#audience-activation}
++ Profil och Audience Activation{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
    + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + [Online/offline Audience Activation](/help/blueprints/audience-activation/online-offline.md)
-+ Kundaktivitetshubb{#customer-activity-hub}
-   + [Översikt](/help/blueprints/customer-activity-hub/overview.md)
+   + [Aktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
    + [Konsolidering av digitala beteendedata](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
