@@ -1,25 +1,26 @@
 ---
-title: Anpassningsutkast för webb och mobiler
+title: Webb- och mobilpersonalisering
 description: Leverera personaliserat webb- och mobilinnehåll med kundprofil i realtid.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
+exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-# Personalisering för webb och mobiler
+# Webb- och mobilpersonalisering
 
 
-Webb- och mobilskräddarsydda skisser åtgärdar möjligheten att använda målgruppssegmentering i flera olika tillämpningar för att personalisera och optimera kundupplevelser. Ni kan använda kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner för att personalisera layouter, call-to-actions och innehåll.
+Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgruppssegmentering i flera applikationer för att personalisera och optimera kundupplevelser. Ni kan använda kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner för att personalisera layouter, call-to-actions och innehåll.
 
-## Scenarier
+## Blueprints
 
-| Scenario | Beskrivning | Experience Cloud-program |
+| Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Beteendeanpassning](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 | **[Webbanpassning online/offline](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>Kunddataplattform i realtid</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
@@ -40,4 +41,3 @@ Webb- och mobilskräddarsydda skisser åtgärdar möjligheten att använda målg
 * [Segmentering i sekunder: Hur Adobe Experience Platform gjorde kundprofiler i realtid till verklighet](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
 * [Analytiska arbetsbelastningar och kundprofil i realtid - två sidor av samma hjärna med ett enda syfte](https://medium.com/adobetech/analytical-workloads-and-real-time-customer-profile-two-sides-of-the-same-brain-with-a-cdfac85ce8c1)
 * [Bygg en optimal onlineupplevelse: Förbättra enhetlig profil med frågetjänsten](https://medium.com/adobetech/build-an-optimal-online-experience-enrich-unified-profile-with-query-service-8027c196ab33)
-
