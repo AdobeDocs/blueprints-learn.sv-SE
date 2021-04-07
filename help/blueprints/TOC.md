@@ -3,11 +3,11 @@ user-guide-title: Digital Experience-utkast
 breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
-role: Arkitekt, utvecklare, affärsman
+role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 08b0a9e06b4a5cc1f411a3cab1cc23fa47325844
+source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,11 @@ ht-degree: 0%
    + [Anropsavböjning](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Datainsamling och förberedelse{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
+   + [Dataintag och dataförberedelse till Experience Platform](/help/blueprints/data-ingestion/ingestion.md)
    + [Datainsamling för serversidan](/help/blueprints/data-ingestion/server-side-collection.md)
-+ Dataanalys och anpassad datavetenskap{#data-exploration}
++ Dataanalys, intelligens och AI/ML{#data-exploration}
    + [Översikt](/help/blueprints/data-insights/overview.md)
+   + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
 + Meddelandesamordning i flera kanaler{#multi-channel-message-orchestration}
    + [Översikt](/help/blueprints/multi-channel-message-orchestration/overview.md)
