@@ -1,18 +1,18 @@
 ---
-title: Scenario för digital beteendedatakonsolidering
+title: Konsolideringsutkast för digitala beteendedata
 description: Analysera och extrahera insikter från kundinteraktioner under hela kundresan.
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
+exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
-
-# Scenario för digital beteendedatakonsolidering
+# Konsolideringsutkast för digitala beteendedata
 
 Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.
 
@@ -82,7 +82,3 @@ Data måste hämtas till plattformen innan de kan bearbetas till Customer Journe
 * [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
 * [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)
 * [Självstudiekurser för Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
-
-
-
-
