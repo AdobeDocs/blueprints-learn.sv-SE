@@ -1,26 +1,26 @@
 ---
-title: Profil och Audience Activation Blueprint
-description: Leverera målgruppsanpassad flerkanalsannonsering med kunddataplattformens ​ i realtid.
+title: Målgrupps- och profilaktivering
+description: Leverera målgruppsanpassade och profilcentrerade kundupplevelser med kunddataplattformens ​ i realtid.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 
-# Profil och Audience Activation Blueprint
+# Målgrupp och Audience Activation
 
-Aktivering av profil och målgrupp är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering. Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en silo där personaliseringssatsningarna endast riktar sig till kunder som interagerar med varumärket i den kanalen. Detta tillvägagångssätt återspeglar inte den verklighet som kunderna interagerar med varumärken över många olika kontaktytor. Aktivering av målgrupp gör det möjligt för varumärken att koppla samman kundinteraktioner över flera kanaler och leverera en centraliserad målgrupp som kan aktiveras i alla kanaler.
+Aktivering av profil och målgrupp är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering. Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en silo där personaliseringssatsningarna endast riktar sig till kunder som interagerar med varumärket i den kanalen. Detta tillvägagångssätt återspeglar inte den verklighet som kunderna interagerar med varumärken över många olika kontaktytor. Aktivering av profil och målgrupp gör det möjligt för varumärken att koppla samman kundinteraktioner över flera kanaler och leverera en centraliserad profil och målgrupp som kan aktiveras i alla kanaler.
 
-## Scenarier
+## Blueprints
 
-| Scenario | Beskrivning | Experience Cloud-program |
+| Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Anonym webb och reklam Audience Activation](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Online/offline + PII-profil och Audience Activation](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> Kunddataplattform i realtid</li><li>Adobe Audience Manager (valfritt)</li></ul> |
