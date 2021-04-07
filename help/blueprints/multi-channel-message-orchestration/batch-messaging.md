@@ -1,18 +1,18 @@
 ---
-title: Batchmeddelanden och Adobe Experience Platform
+title: Batch Messaging och Adobe Experience Platform Blueprint
 description: Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Platform som ett centralt nav för kundprofiler och segmentering.
 solution: Experience Platform, Campaign
 kt: 7196
+exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-
-# Batchmeddelanden och Adobe Experience Platform
+# Batch Messaging och Adobe Experience Platform Blueprint
 
 Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Platform som ett centralt nav för kundprofiler och segmentering.
 
