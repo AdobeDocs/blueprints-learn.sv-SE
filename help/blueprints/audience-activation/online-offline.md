@@ -1,18 +1,18 @@
 ---
-title: Online/Offline Audience Activation scenario
+title: Online/Offline Audience Activation-utkast
 description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
+exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: c4bd4bbd40f2ae6b9ab980c5274a6e2007d976d3
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
-
-# Online/Offline Audience Activation scenario
+# Online/Offline Audience Activation-utkast
 
 Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata, tillsammans med onlinebeteende för målinriktning och personalisering.
 
@@ -42,7 +42,7 @@ Aktivera målgrupper för kända profilbaserade destinationer som e-postleverant
 * För delning av RTCDP-segmentmedlemskap i Audience Manager sker detta inom några minuter för direktuppspelningssegment och inom några minuter efter slutförd gruppsegmentsutvärdering för batchsegmentering.
 * Segment som delas från Experience Platform till Audience Manager delas inom minuter efter segmentimplementering, oavsett om det sker via direktuppspelning eller satsutvärderingsmetod. Det finns en inledande segmentkonfigurationssynkronisering mellan AEP och AAM när segmentet väl har skapats, och efter cirka 4 timmar kan AEP-segmentmedlemskapen börja realiseras i AAM profiler. Målgruppsmedlemskap som realiserats innan målgruppsdelningen mellan Experience Platform och Audience Manager har konfigurerats eller innan målgruppsmetadata har synkroniserats från Experience Platform till Audience Manager kommer inte att realiseras i Audience Manager förrän följande segmentjobb där&quot;befintliga&quot; segmentmedlemskap delas.
 * Måljobb för batch- eller direktuppspelning från batchsegmentjobb kan dela profilattributsuppdateringar samt segmentmedlemskap.
-* Direktuppspelningssegmenteringsjobb till direktuppspelningsmål delar bara uppdateringar av segmentmedlemskap.
+* Direktuppspelningssegmenteringsjobb till direktuppspelningsmål delar bara upp uppdateringar av segmentmedlemskap.
 
 ## Implementeringssteg
 
