@@ -1,21 +1,21 @@
 ---
-title: Customer Journey Analytics Blueprint
+title: Customer Journey Analytics
 description: Sammanställ och analysera data och kundbeteenden från hela kundresan
 solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
+exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
+# Customer Journey Analytics
 
-# Customer Journey Analytics Blueprint
-
-Customer Journey Analytics Blueprint visar hur varumärken kan sammanställa kunddata och beteenden från olika interaktionskanaler och källor för att skapa en resebaserad bild av alla kundinteraktioner. Rapportering och analys kan utföras i programtjänsten Customer Journey Analytics för att utvärdera och få insikt i kundinteraktions- och beteendemönster.
+Customer Journey Analytics visar hur varumärken kan sammanställa kunddata och beteenden från olika interaktionskanaler och källor för att skapa en resebaserad bild av alla kundinteraktioner. Rapportering och analys kan utföras i programtjänsten Customer Journey Analytics för att utvärdera och få insikt i kundinteraktions- och beteendemönster.
 
 Vanliga analyser är:
 
@@ -25,9 +25,9 @@ Vanliga analyser är:
 * Vilka kampanjer resulterade i konvertering och ökat engagemang
 * Verktygsanvändningsanalys för att optimera självbetjäning
 
-## Scenarier
+## Blueprints
 
-| Scenario | Beskrivning | Experience Cloud-program |
+| Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Konsolidering av digitala beteendedata](digital-behavioral-data-consolidation.md)** | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul> |
 | **[Uppringningscentrets böjning](call-deflect.md)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
