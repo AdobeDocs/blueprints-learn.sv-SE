@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 77ddc003d4328074ad269de5837a02f5e6d6add5
+source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,6 @@ Vissa skyddsutkast gäller för frågetidsgränsen och för den datamängd som i
 ## Program
 
 * Adobe Experience Platform
-
-## Scenarier
-
-| Scenario | Beskrivning | Experience Cloud program/tjänster |
-|---|---|---|
-| **Datautforskning - råfråga** | <ul><li>Skriv och utför SQL-frågor i datasjön med det interaktiva frågeanvändargränssnittet eller en ansluten SQL-klient. Data Science Workspace kan också användas för att hämta information från rådata i Experience Platform.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
-| **Enterprise Dashboard** | <ul><li>Koppla samman Business Intelligence-verktyg med Experience Platform för att visualisera data för instrumentpaneler och rapportera användningsfall.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## Arkitektur
 
