@@ -6,18 +6,18 @@ kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
 # Insamling och förberedelse av data
 
-Datainsamling och -förberedelse innefattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform. samt möjligheten att samla in data till Adobe Experience Platform Edge Network för vidarebefordran på serversidan till företagsmål.
+Datainsamling och -förberedelse innefattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform. samt möjligheten att samla in data till Adobe Experience Platform Edge Network och därefter vidarebefordra data via vidarebefordran på sidan till företagets destinationer.
 
-Datakiveringen inkluderar mappning av källdata till XDM-schema (Experience Data Model). Det omfattar även att utföra dataomvandlingar, inklusive datumformatering, fältdelning/sammanfogning/konverteringar samt att sammanfoga/skriva in poster på nytt. Med hjälp av dataförberedelser kan kunddata sammanställas för att ge en sammanställd/filtrerad analys, inklusive rapportering eller förberedelse av data för sammansättning av kundprofiler/datavetenskap/aktivering.
+Datakompilering innefattar mappning av källdata till XDM-schema (Experience Data Model). Det omfattar även att utföra dataomvandlingar, inklusive datumformatering, fältdelning/sammanfogning/konverteringar samt att sammanfoga/skriva in poster på nytt. Med hjälp av dataförberedelser kan kunddata sammanställas för att ge en sammanställd/filtrerad analys, inklusive rapportering eller förberedelse av data för sammansättning av kundprofiler/datavetenskap/aktivering.
 
 ## Blueprints
 
