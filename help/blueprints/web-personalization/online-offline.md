@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,21 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 * Direktuppspelningssegmentering genomförs inom ungefär fem minuter. När dessa segmentimplementeringar inträffar delas de med Audience Manager inom några minuter och är tillgängliga för samma/nästa sidanpassning i Target.
 * Som standard tillåter segmentdelningstjänsten att högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om kunden har en Audience Manager-licens finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Audience Manager och Adobe Target.
 
+## Implementeringsmönster
+
+Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
+
+1. Använda Platform Web SDK/Mobile SDK och Edge Network.
+1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
+
+### 1. SDK och Edge-strategi för plattformar för webb/mobiler
+
+<img src="assets/websdkflow.svg" alt="Referensarkitektur för Platform Web SDK/Mobile SDK och Edge Network Approach" style="border:1px solid #4a4a4a" />
+
+### 2. Programspecifik SDK-metod
+
+<img src="assets/appsdkflow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="border:1px solid #4a4a4a" />
+
 ## Krav för implementering
 
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
@@ -64,18 +79,6 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
    >
    >Varje program måste använda Experience Cloud-ID och vara en del av samma Experience Cloud-organisation för att ge möjlighet till målgruppsdelning mellan program.
 1. [Begär etablering för målgruppsdelning mellan Experience Platform och Adobe Target (delade målgrupper)](https://www.adobe.com/go/audiences)
-
-## Diagram över implementeringsdataflöde
-
-Anpassningsplanen för webb/mobiler kan implementeras med antingen traditionella programspecifika SDK:er (till exempel AppMeasurement.js) eller med hjälp av Platform Web SDK/Mobile SDK och Edge Network.
-
-### SDK och Edge-strategi för plattformar för webb/mobiler
-
-<img src="assets/websdkflow.svg" alt="Referensarkitektur för Platform Web SDK/Mobile SDK och Edge Network Approach" style="border:1px solid #4a4a4a" />
-
-### Programspecifik SDK-metod
-
-<img src="assets/appsdkflow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="border:1px solid #4a4a4a" />
 
 ## Relaterad dokumentation
 
