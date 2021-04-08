@@ -5,29 +5,22 @@ solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 translation-type: tm+mt
-source-git-commit: 7a097d7579d0e217ee5c6b469856bf786b17e6cb
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 # Custom Data Science for Profile Enrichment Blueprint
 
-Denna skiss visar hur data i Adobe Experience Platform används av Data Science Workspace för att utbilda, driftsätta och poängsätta modeller för maskininlärningsinsikter. Dessa modeller kan direkt matas ut till en datauppsättning som är aktiverad för kundprofil i realtid. Exempel på maskininlärningsinsikter är livstidsvärde, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
+Custom Data Science for Profile Enrichment Blueprint visar hur data i Adobe Experience Platform kan användas i Data Science Workspace för att utbilda, driftsätta och poängsätta modeller för att ge inlärningsinsikter i maskininlärningen. Dessa modeller kan direkt användas i en datauppsättning som är aktiverad för kundprofiler i realtid för att ytterligare berika kundprofiler. Dessa insikter kan sedan hanteras för personalisering. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
 
 ## Användningsexempel
 
 * Extrahera insikter och upptäck mönster från kunddata i Experience Platform. Modeller för utbildning och poäng utifrån dessa data.
-* Berika kundprofilen i realtid med modellstyrda insikter och attribut för mer detaljerad personalisering och optimerad reseoptimering.
+* Berika kundprofilen i realtid med modellstyrda insikter och attribut för mer detaljerad personalisering och optimerade resor.
 * Train- och Score-modeller för att fastställa kundinsikter som kundens livstidsvärde, benägenhet att konvertera eller tappa plats, produkt- och innehållstillhörighet samt engagemangsmätningar.
-
-## Scenarier
-
-| Scenario | Scenariobeskrivning | Experience Cloud-program |
-|---|---|---|
-| Experimentell datavetenskap | <ul><li>Identifiera signaler, fullständighet, korrekthet i data</li><li>Upptäck nya insikter med datavetenskap</li></ul> | <ul><li>Experience Platform Intelligence</li></ul> |
-| Profilberikning med AI/ML<br> - batch | <ul><li>Upptäck, skapa, utbilda, driftsätta, poängsätta och driftsätta modeller.</li><li>Använd modellförutsägelse för profil eller datasjön för batchbaserad aktivering.</li></ul> | <ul><li>Experience Platform Intelligence</li></ul> |
 
 ## Arkitektur
 
