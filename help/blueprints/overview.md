@@ -4,9 +4,9 @@ description: Digital Experience Blueprints är repeterbara implementeringar för
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,15 @@ Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdef
 
 ## Nyheter
 
+* **[Målgrupps- och profilaktivering för företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)**
+
+   *Håll kundprofilerna uppdaterade i alla system för att ge era sälj- och supportteam bättre förutsättningar. &#x200B;*
 * **[Kundaktivitetshubbsknapp - översikt](/help/blueprints/audience-activation/customer-activity.md)**
 
    *Ange sammanhang för support och försäljning som utförs av agenter.*
-* **[Dataanalys och informationsutkast](/help/blueprints/data-insights/overview.md)**
+* **[Dataanalys och informationsutkast](/help/blueprints/data-insights/analysis.md)**
 
    *Utför en undersökande fråga och analys av data i sjön.*
-* **[Customer Journey Analytics Blueprint](/help/blueprints/customer-journey-analytics/overview.md)**
-
-   *Sammanställ och analysera data och kundbeteenden från hela kundresan. &#x200B;*
 
 ## Aktuella utkast
 
@@ -54,7 +54,7 @@ Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdef
 
 ## Blogginlägg
 
-* [Nu kommer Adobe Experience Platform nya Digital Experience Blueprints](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
-* [Blueprint för Audience Activation i Adobe Experience Platform](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)
-* [Design för webbpersonalisering med Adobe Experience Platform kundprofil i realtid](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
-* [Design för flerkanalsmarknadsföring i Adobe Experience Platform](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
+* [[!DNL Introducing Adobe Experience Platform’s New Digital Experience Blueprints]](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
+* [[!DNL Blueprint for Audience Activation in Adobe Experience Platform]](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)
+* [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
+* [[!DNL Blueprint for Multi-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
