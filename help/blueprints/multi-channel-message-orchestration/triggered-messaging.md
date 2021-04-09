@@ -5,9 +5,9 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 * Stöder för närvarande inte Offer decisioning
 * Se [skyddsutkast för profil och datainmatning för Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
-### Campaign Standard
+### Adobe Campaign Standard
 
 * Kan endast hantera 14 tps (50 000 per timme) i genomströmning
 * Segmentmedlemsinitierade resor stöds inte
@@ -69,7 +69,7 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 #### Schema/datauppsättningar
 
 1. Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter i Experience Platform baserat på kunddata.
-1. Skapa kampanjscheman för följande: broadLog, trackingLog, icke-levererbara adresser och profilinställningar (valfritt).
+1. Skapa Adobe Campaign-scheman för följande: broadLog, trackingLog, icke-levererbara adresser och profilinställningar (valfritt).
 1. Lägg till dataanvändningsetiketter i datauppsättningen för styrning.
 1. Skapa profiler för att genomdriva styrning av destinationer.
 
@@ -79,16 +79,16 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 1. Lägg till identiteter i scheman.
 1. Aktivera scheman och datauppsättningar för profilen.
 1. Ställ in kopplingsregler för olika vyer av [!UICONTROL Kundprofil för realtid] (valfritt).
-1. Skapa segment för kampanjanvändning.
+1. Skapa segment för Adobe Campaign.
 
 #### Källor/mål
 
 1. Importera data till Experience Platform med hjälp av API:er för direktuppspelning och källanslutningar.
-1. Konfigurera [!DNL Azure]-lagringsmålet för blob för användning med Campaign.
+1. Konfigurera [!DNL Azure]-lagringsmålet för blob för användning med Adobe Campaign.
 
 #### Distribution av mobilappar
 
-1. Implementera Campaign SDK för Campaign Classic eller Experience Platform SDK för Campaign Standard. Om det finns Experience Platform Launch rekommenderar vi att du använder tillägget Campaign Classic/Standard tillsammans med Experience Platform SDK.
+1. Implementera Adobe Campaign SDK för Adobe Campaign Classic eller Experience Platform SDK för Adobe Campaign Standard. Om det finns Experience Platform Launch rekommenderar vi att du använder tillägget Adobe Campaign Classic eller Adobe Campaign Standard tillsammans med Experience Platform SDK.
 
 
 ### Journey Orchestration
@@ -97,7 +97,7 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 1. Konfigurera externa datakällor.
 1. Konfigurera anpassade åtgärder.
 
-### Campaign Standard
+### Adobe Campaign Standard
 
 1. Konfigurera meddelandemallar med lämpliga personaliseringsinställningar.
 1. Konfigurera exportarbetsflöden exportera transaktionsmeddelandeloggar. Rekommendationen är att köras högst var fjärde timme.
@@ -107,7 +107,7 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 
 * [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
 * [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journey-orchestration.html?lang=en)
-* [Campaign Classic dokumentation](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
+* [Adobe Campaign Classic-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
+* [Adobe Campaign Standard-dokumentation](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
 * [Experience Platform Launch dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
 * [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
