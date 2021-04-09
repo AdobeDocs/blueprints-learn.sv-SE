@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
+source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Dataanalys och intelligens omfattar möjligheten inom Adobe Experience Platform att utföra experimentella frågor och analyser av data som finns i sjön.
 
-Experience Platform Query Service tillåter att SQL-frågor utförs på data. Med arbetsytan Data Science kan man experimentera med data, datavetenskap och maskininlärning.
+Experience Platform [!UICONTROL Query Service] tillåter att SQL-frågor utförs på data. [!UICONTROL Data Science ] Workspace möjliggör datautforskande, datavetenskap och maskininlärningsarbetsbelastningar som kan utföras på data.
 
-Dessutom tillåter Experience Platform anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part att ansluta direkt till, komma åt och fråga data i Experience Platform med hjälp av protokollet PostgreSQL.
+Dessutom tillåter Experience Platform anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part att ansluta direkt till, komma åt och fråga data i Experience Platform med [!DNL PostgreSQL]-protokollet.
 
 Vissa skyddsutkast gäller för frågetidsgränsen och för den datamängd som ingår i frågeresultatet, vilket beskrivs i scenarioinformationen.
 
@@ -47,10 +47,10 @@ Vissa skyddsutkast gäller för frågetidsgränsen och för den datamängd som i
 
 1. Konfigurera datauppsättningar och scheman för datainhämtning i datasjön.
 1. Ingest data.
-1. Bekräfta att data är tillgängliga för Query Service och Data Science Workspace för åtkomst och fråga.
-1. Koppla ihop Business Intelligence-verktyg och SQL-klienter med Query Service för visualisering, datafrågor och sökning.
+1. Bekräfta att data är tillgängliga för [!UICONTROL Query Service] och [!UICONTROL Data Science Workspace] för obearbetad åtkomst och fråga.
+1. Koppla Business Intelligence- och SQL-klienter till [!UICONTROL Query Service] för visualisering, datafrågor och sökning.
 
 ## Relaterad dokumentation
 
 * [Adobe Experience Platform Intelligence - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Dokumentation för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
+* [[!UICONTROL Query ] Service-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
