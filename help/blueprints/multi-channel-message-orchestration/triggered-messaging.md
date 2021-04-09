@@ -1,20 +1,20 @@
 ---
 title: Utlöst meddelande och Adobe Experience Platform Blueprint
-description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som centrala navdata för direktuppspelning, kundprofiler och segmentering.
+description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 2404d871a852df8fed3adb97a79cc15e994db762
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # Utlöst meddelande och Adobe Experience Platform Blueprint
 
-Kör triggade meddelanden och upplevelser med Adobe Experience Platform som centrala navdata för direktuppspelning, kundprofiler och segmentering.
+Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 
 ## Användningsexempel
 
@@ -25,7 +25,7 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som cent
 
 ## Arkitektur
 
-<img src="assets/triggered.svg" alt="Referensarkitektur för scenariot Triggered Messaging och Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/triggered.svg" alt="Referensarkitektur för Triggered Messaging och Adobe Experience Platform plan" style="border:1px solid #4a4a4a" />
 
 ## Integrationsmönster
 
