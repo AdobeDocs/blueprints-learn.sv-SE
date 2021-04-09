@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: 087da6c5c5c6a6e9deee890d2ea02cf8591bdf15
+source-git-commit: 870541f548266ab82d74fec2e84b8cb6d5c952eb
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,12 @@ Som standard tillåter segmentdelningstjänsten att högst 75 målgrupper delas 
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda Platform Web SDK/Mobile SDK och Edge Network.
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network].
 1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
 
 ### 1. SDK och Edge-strategi för plattformar för webb/mobiler
 
-<img src="assets/websdkflow.svg" alt="Referensarkitektur för Platform Web SDK/Mobile SDK och Edge Network Approach" style="border:1px solid #4a4a4a" />
+<img src="assets/websdkflow.svg" alt="Referensarkitektur för [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network]" style="border:1px solid #4a4a4a" />
 
 ### 2. Programspecifik SDK-metod
 
@@ -59,10 +59,10 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
 |---|---|---|
-| Adobe Target | Platform Web SDK*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
-| Adobe Audience Manager (tillval) | Platform Web SDK* eller dil.js 5.0+ |  |
-| Adobe Analytics (tillval) | Platform Web SDK* eller AppMeasurement.js 1.6.4+ |  |
-| Experience Cloud Identity Service | Platform Web SDK* eller VisitorAPI.js 2.0+ |  |
+| Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
+| Adobe Audience Manager (tillval) | [!UICONTROL Platform Web SDK]* eller dil.js 5.0+ |  |
+| Adobe Analytics (tillval) | [!UICONTROL Platform Web SDK]* eller AppMeasurement.js 1.6.4+ |  |
+| Experience Cloud Identity Service | [!UICONTROL Platform Web SDK]* eller VisitorAPI.js 2.0+ |  |
 | Experience Platform Mobile SDK (tillval) | 4.11 eller senare för iOS och Android™ |  |
 | Experience Platform Web SDK | 1.0, den aktuella Experience Platform SDK-versionen har [olika användningsfall som ännu inte stöds för Experience Cloud-programmen](https://github.com/adobe/alloy/projects/5) |  |
 
@@ -70,7 +70,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 1. [Implementera Adobe ](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) Targeting för webb- och mobilapplikationer.
 
-   Om du använder Audience Manager eller Analytics:
+   Om du använder Audience Manager eller Adobe Analytics:
 
 1. [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)
 1. [Implementera Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
