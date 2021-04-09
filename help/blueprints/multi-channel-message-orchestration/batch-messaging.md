@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 
 ## Arkitektur
 
-<img src="assets/aepbatch.svg" alt="Referensarkitektur för Batch Messaging och Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/aepbatch.svg" alt="Referensarkitektur för Batch Messaging och Adobe Experience Platform Blueprint" style="border:1px solid #4a4a4a" />
 
 ## Guardrails
 
@@ -69,7 +69,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 1. Skapa alla kundspecifika namnutrymmen.
 1. Lägg till identiteter i scheman.
 1. Aktivera scheman och datauppsättningar för profilen.
-1. Ställ in kopplingsregler för olika vyer av kundprofilen i realtid (valfritt).
+1. Ställ in kopplingsregler för olika vyer av [!UICONTROL Kundprofil för realtid] (valfritt).
 1. Skapa segment för kampanjanvändning.
 
 #### Källor/mål
