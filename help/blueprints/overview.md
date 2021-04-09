@@ -4,9 +4,9 @@ description: Digital Experience Blueprints är repeterbara implementeringar för
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: 3c139ed925fc7999ea3b7e6eb21bf68ae9ff23cb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -34,23 +34,22 @@ Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdef
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/overview.html"><img alt="miniatyrbild för Web Personalization-plan" src="web-personalization/assets/personalization.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/overview.html"><strong>Webb-/mobilpersonalisering</strong></a></div>
-    <p><em>Leverera personaliserat webb- och mobilinnehåll.</em></p>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html"><img alt="miniatyrbild för Triggered Messaging och Adobe Experience Platform Blueprint" src="multi-channel-message-orchestration/assets/triggered.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html"><strong>Utlöst meddelande och Adobe Experience Platform Blueprint</strong></a></div>
+    <p><em>Utlös meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html"><img alt="miniatyrbild för ritningen "Audience Activation"" src="audience-activation/assets/aam.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html"><strong>Audience Activation Blueprint</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><img alt="miniatyrbild för utkast online/offline i Audience Activation" src="audience-activation/assets/onoff.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>Online/Offline Audience Activation-utkast</strong></a></div>
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/overview.html"><img alt="miniatyrbild för 'Multi-channel Orchestration-plan'" src="multi-channel-message-orchestration/assets/aepbatch.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/overview.html"><strong>Flerkanals Orchestration-utkast</strong></a></div>
-    <p><em>Leverera individuella kundupplevelser i rätt tid för alla skärmar.</em></p>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><img alt="miniatyrbild för utkast för digital beteendedatakonsolidering" src="customer-journey-analytics/assets/CJA.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>Webb-/mobilpersonalisering</strong></a></div>
+    <p><em>Få en samlad bild av kundernas beteende i olika kanaler.</em></p>
   </td>
 </tr>
 </table>
-
 
 ## Blogginlägg
 
