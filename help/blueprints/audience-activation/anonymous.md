@@ -6,7 +6,7 @@ kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Ni kan inrikta er på målgrupper över webben och annonskanaler baserat på ano
 
 ## Arkitektur
 
-<img src="assets/aam.svg" alt="Referensarkitektur för det anonyma Audience Activation-scenariot" style="border:1px solid #4a4a4a" />
+<img src="assets/aam.svg" alt="Referensarkitektur för den anonyma Audience Activation-designen" style="border:1px solid #4a4a4a" />
 
 ## Implementeringssteg
 
