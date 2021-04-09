@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
+source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ Datainsamling och -förberedelse innefattar alla metoder som kan användas för 
 
 Datakompilering innefattar mappning av källdata till XDM-schema (Experience Data Model). Det omfattar även att utföra dataomvandlingar, inklusive datumformatering, fältdelning/sammanfogning/konverteringar samt att sammanfoga/skriva in poster på nytt. Med hjälp av dataförberedelser kan kunddata sammanställas för att ge en sammanställd/filtrerad analys, inklusive rapportering eller förberedelse av data för sammansättning av kundprofiler/datavetenskap/aktivering.
 
-## Blueprints
-
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Dataförberedelse och inmatning till Experience Platform](ingestion.md)** | <ul><li>Dataförberedelse och matningsutkast omfattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform.</ul></li> | <ul><li> Adobe Experience Platform </ul></li> |
-| **[Vidarebefordran på serversidan - Enterprise Collection](server-side-collection.md)** | <ul><li>Aktivera för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> Kunddataplattform i realtid</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Vidarebefordran på serversidan - Enterprise Collection](server-side-collection.md)** | <ul><li>Aktivera för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Audience Manager (valfritt)</li></ul> |
