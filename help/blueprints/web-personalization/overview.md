@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[Beteendeanpassning](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
-| **[Webbanpassning online/offline](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Webb-/mobilpersonalisering online/offline](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 
 ## Relaterade blogginlägg
 
