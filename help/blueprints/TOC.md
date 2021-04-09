@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
+source-git-commit: 04fa7c1f111a27e782d4a70282f51397a096b46c
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    + [Anropsavböjning](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Datainsamling och förberedelse{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
-   + [Dataintag och dataförberedelse till Experience Platform](/help/blueprints/data-ingestion/ingestion.md)
+   + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
    + [Datainsamling för serversidan](/help/blueprints/data-ingestion/server-side-collection.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
    + [Översikt](/help/blueprints/data-insights/overview.md)
@@ -43,6 +43,6 @@ ht-degree: 0%
    + [Utlöst meddelande &amp; Experience Platform](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
-   + [Beteendeanpassning av webben](/help/blueprints/web-personalization/behavioral.md)
-   + [Webbanpassning online/offline](/help/blueprints/web-personalization/online-offline.md)
+   + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
+   + [Personalisering online/offline](/help/blueprints/web-personalization/online-offline.md)
 
