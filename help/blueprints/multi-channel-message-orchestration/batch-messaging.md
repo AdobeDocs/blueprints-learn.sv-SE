@@ -5,9 +5,9 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 
 ## Guardrails
 
-* Stöder endast driftsättning av enskilda organisationsenheter i Campaign
-* Campaign är en källa till sanning för alla aktiva profiler, dvs. profiler måste finnas i Campaign och nya profiler ska inte skapas baserat på Experience Platform-segment.
+* Stöder endast driftsättning av en enda Adobe Campaign-enhet
+* Adobe Campaign är en källa till sanning för alla aktiva profiler, dvs. profiler måste finnas i Adobe Campaign och nya profiler ska inte skapas baserat på Experience Platform.
 * Segmentmedlemsrealisering från Experience Platform är latent för både batch (1 per dag) och direktuppspelning (~5 minuter)
 
-**[!UICONTROL Delning av kunddata ] på plattformsnivå i realtid till kampanj:**
+**[!UICONTROL Delning av kunddata ] på Adobe Campaign i realtid:**
 
 * Rekommendation om begränsning av 20 segment
 * Aktiveringen är begränsad till var 24:e timme
@@ -50,7 +50,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 * En fil per segment av alla profiler med&quot;realiserat&quot; segmentmedlemskap ELLER om segmentmedlemskap läggs till som ett attribut i filen, både&quot;realiserade&quot; och&quot;avslutade&quot; profiler
 * Export i flera eller hela segment stöds
 * Filkryptering stöds inte
-* Arbetsflöden för kampanjexport som kan köras högst var fjärde timme
+* Adobe Campaign exportarbetsflöden som kan köras högst var fjärde timme
 * Se [skyddsutkast för profil och datainmatning för Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ## Implementeringssteg
@@ -60,7 +60,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 #### Schema / Datauppsättningar
 
 1. Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter i Experience Platform utifrån kunddata.
-1. Skapa kampanjscheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
+1. Skapa Adobe Campaign-scheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
 1. Lägg till dataanvändningsetiketter i datauppsättningen för styrning.
 1. Skapa profiler som tvingar fram styrning av destinationer.
 
@@ -70,34 +70,34 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 1. Lägg till identiteter i scheman.
 1. Aktivera scheman och datauppsättningar för profilen.
 1. Ställ in kopplingsregler för olika vyer av [!UICONTROL Kundprofil för realtid] (valfritt).
-1. Skapa segment för kampanjanvändning.
+1. Skapa segment för Adobe Campaign.
 
 #### Källor/mål
 
 1. Importera data till Experience Platform med hjälp av API:er för direktuppspelning och källanslutningar.
-1. Konfigurera [!DNL Azure]-lagringsmålet för blob för användning med Campaign.
+1. Konfigurera [!DNL Azure]-lagringsmålet för blob för användning med Adobe Campaign.
 
 #### Distribution av mobilappar
 
-1. Implementera Campaign SDK för Campaign Classic eller Experience Platform SDK för Campaign Standard. Om det finns Experience Platform Launch rekommenderar vi att du använder tillägget Campaign Classic/Standard tillsammans med Experience Platform SDK.
+1. Implementera Adobe Campaign SDK för Adobe Campaign Classic eller Experience Platform SDK för Adobe Campaign Standard. Om det finns Experience Platform Launch rekommenderar vi att du använder tillägget Adobe Campaign Classic eller Adobe Campaign Standard tillsammans med Experience Platform SDK.
 
-#### Campaign
+#### Adobe Campaign
 
 1. Konfigurera scheman för profil, sökdata och relevanta leveransdata.
 
 >[!IMPORTANT]
 >
->Det är viktigt att i det här skedet förstå vad datamodellen finns i Experience Platform för profil- och händelsedata så att ni vet vilka data som krävs i Campaign.
+>Det är viktigt att du i nuläget förstår vad datamodellen finns i Experience Platform för profil- och händelsedata så att du vet vilka data som krävs i Adobe Campaign.
 
 #### Importera arbetsflöden
 
-1. Läs in och importera förenklade profildata till Campaign sFTP.
-1. Läs in och importera orkestrerings- och meddelandepersonaliseringsdata till Campaign sFTP.
+1. Läs in och importera förenklade profildata till Adobe Campaign sFTP.
+1. Läs in och importera orkestrerings- och meddelandepersonaliseringsdata till Adobe Campaign sFTP.
 1. Infoga Experience Platform segment från blob [!DNL Azure] via arbetsflöden.
 
 #### Exportera arbetsflöden
 
-1. Skicka tillbaka kampanjloggar till Experience Platform via arbetsflöden var fjärde timme (broadLog, trackingLog, non-deliverable address).
+1. Skicka tillbaka Adobe Campaign-loggar till Experience Platform via arbetsflöden var fjärde timme (broadLog, trackingLog, non-deliverable address).
 1. Skicka tillbaka profilinställningarna till Experience Platform via konsultbaserade arbetsflöden var fjärde timme (valfritt).
 
 
