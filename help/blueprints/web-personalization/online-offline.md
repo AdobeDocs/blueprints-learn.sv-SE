@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda Platform Web SDK/Mobile SDK och Edge Network.
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network].
 1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
 
 ### 1. SDK och Edge-strategi för plattformar för webb/mobiler
 
-<img src="assets/websdkflow.svg" alt="Referensarkitektur för Platform Web SDK/Mobile SDK och Edge Network Approach" style="border:1px solid #4a4a4a" />
+<img src="assets/websdkflow.svg" alt="Referensarkitektur för [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network]" style="border:1px solid #4a4a4a" />
 
 ### 2. Programspecifik SDK-metod
 
@@ -60,10 +60,10 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
 |---|---|---|
-| Adobe Target | Platform Web SDK*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
-| Adobe Audience Manager (tillval) | Platform Web SDK* eller dil.js 5.0+ |  |
-| Adobe Analytics (tillval) | Platform Web SDK* eller AppMeasurement.js 1.6.4+ | Adobe Analytics tracking måste använda regional datainsamling (RDC). |
-| Experience Cloud ID-tjänst | Platform Web SDK* eller VisitorAPI.js 2.0+ | (Rekommenderas) Använd Experience Platform Launch för att distribuera ID-tjänsten för att säkerställa att ID:t anges före eventuella programanrop |
+| Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
+| Adobe Audience Manager (tillval) | [!UICONTROL Platform Web SDK]* eller dil.js 5.0+ |  |
+| Adobe Analytics (tillval) | [!UICONTROL Platform Web SDK]* eller AppMeasurement.js 1.6.4+ | Adobe Analytics tracking måste använda regional datainsamling (RDC). |
+| Experience Cloud ID-tjänst | [!UICONTROL Platform Web SDK]* eller VisitorAPI.js 2.0+ | (Rekommenderas) Använd Experience Platform Launch för att distribuera ID-tjänsten för att säkerställa att ID:t anges före eventuella programanrop |
 | Experience Platform Mobile SDK (tillval) | 4.11 eller senare för iOS och Android™ |  |
 | Experience Platform Web SDK | 1.0, den aktuella Experience Platform SDK-versionen har [olika användningsfall som ännu inte stöds för Experience Cloud-programmen](https://github.com/adobe/alloy/projects/5) |  |
 
