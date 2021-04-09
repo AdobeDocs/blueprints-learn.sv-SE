@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 * Campaign är en källa till sanning för alla aktiva profiler, dvs. profiler måste finnas i Campaign och nya profiler ska inte skapas baserat på Experience Platform-segment.
 * Segmentmedlemsrealisering från Experience Platform är latent för både batch (1 per dag) och direktuppspelning (~5 minuter)
 
-**Delning av kunddataplattformssegment i realtid till kampanj:**
+**[!UICONTROL Delning av kunddata ] på plattformsnivå i realtid till kampanj:**
 
 * Rekommendation om begränsning av 20 segment
 * Aktiveringen är begränsad till var 24:e timme
