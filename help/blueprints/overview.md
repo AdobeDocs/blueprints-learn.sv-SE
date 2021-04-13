@@ -4,18 +4,16 @@ description: Digital Experience Blueprints är repeterbara implementeringar för
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 652f8d2cab997418aa8752d3d2c80f715ef6a85c
+source-git-commit: b5b2fff60678a9a36ffffd0a2bf22c8f76573a3e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Digital Experience-utkast
 
-Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. Med skisser går det snabbare att skapa värdefullt material och du får en snabb väg till framgång.
-
-Varje utkast ger Adobe kunder en serie artefakter som förklarar de mest värdefulla problem, arkitekturer, implementeringssteg, tekniska överväganden och länkar till relevant dokumentation.
+Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan hantera strategier och snabbt lösa etablerade affärsproblem. Varje utkast innehåller en serie artefakter som förklarar de mest värdefulla problemen, arkitekturer, implementeringssteg, tekniska överväganden och länkar till relevant dokumentation.
 
 ## Nyheter
 
