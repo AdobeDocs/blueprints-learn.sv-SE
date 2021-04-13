@@ -5,18 +5,18 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: a63da7d5da3038cf66b5f2c99e117d4aa5b21cc1
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Målgrupps- och profilaktivering för företagsdestinationer
 
-Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall.
+Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall. <!-- This sentence is difficult to mentally process because there's no verb. Describe what the customer can do with this feature. The first paragraph on a page should not be an abstract description.-->
 
-Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar.
+Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar. <!-- What kinds of sales or support actions? You might add a "For example...." The content in these blueprints should be more simple and friendly.-->
 
 ## Användningsexempel
 
@@ -42,39 +42,39 @@ Direktuppspelningssegmentering:
 * Upp till 11 minuter för direktuppspelningsaktivering
 
 Gruppsegmentering:
-En gång per dag eller manuellt initierad ad ad hoc via API
+En gång per dag eller manuellt initierad ad ad hoc via API.
 
 * Cirka 1 timme per jobb för upp till 10 TB profibutik
 * Cirka 2 timmar per jobb för 10 TB till 100 TB profillagringsstorlek
 
 ## Implementeringssteg
 
-1. Skapa scheman för data som ska importeras
-1. Skapa datauppsättningar för data som ska importeras
+1. Skapa scheman för data som ska importeras. <!-- Cross-references to these topics would be helpful -->
+1. Skapa datauppsättningar för data som ska importeras.
 1. Konfigurera rätt identiteter och identitetsnamnutrymmen i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
 1. Aktivera scheman och datauppsättningar för profilbearbetning.
-1. Konfigurera källor för datainmatning
+1. Konfigurera alla källor för dataöverföring.
 1. Skapa segment i Experience Platform som ska utvärderas i batch eller direktuppspelning. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
 1. Konfigurera mål för delning av profilattribut och målgruppsmedlemskap till önskade mål.
 
 ## Överväganden gällande implementering
 
-Aktivering av attribut och identiteter
+Aktivera attribut och identiteter
 
-* Real-time Customer Data Platform kan aktivera både målgruppsmedlemskap och attribut- och identitetsändringar som sker för profiler som är medlemmar i segment som har valts för aktivering. Om du vill aktivera attribut och/eller identiteter måste du definiera ett globalt segment som innehåller alla profiler som attribut-/identitetsuppdateringar ska skickas för. När detta är på plats kan segmentet och de attribut som ska aktiveras väljas som en del av målkonfigurationen.
-* Observera att batchdestinationer inte stöder aktivering av bara attributändringshändelser. Målgruppsmedlemskapet är fullt eller inkrementellt och kan skickas tillsammans med de valda attributen för aktivering, men endast attribut kan inte aktiveras via batchdestinationer.
+* [!UICONTROL Real-time Customer Data ] Platform kan aktivera målgruppsmedlemskap samt attribut- och identitetsändringar som sker för profiler som är medlemmar i segment som valts för aktivering. Om målet är att aktivera attribut eller identiteter måste du definiera ett globalt segment som innehåller alla profiler som attribut- och identitetsuppdateringar skickas till. Då kan du markera segmentet och de attribut du vill aktivera som en del av målkonfigurationen.
+* Observera att batchdestinationer inte stöder aktivering av endast attributändringar. Fullständigt eller inkrementellt medlemskap kan skickas tillsammans med de valda attributen för aktivering, men du kan inte aktivera endast attributspecifika ändringshändelser via batchdestinationer.
 
-Aktivering av gruppsegment till direktuppspelningsmål
+Aktivera batchsegment för direktuppspelningsmål
 
 * Aktivering av gruppsegment till direktuppspelningsmål stöds. Batchsegmentjobb skickar meddelanden i pipeline när segmentjobbet är klart för direktuppspelningsaktivering
 
-Direktuppspelning av segmentaktivering till batchmål
+Aktivera direktuppspelningssegment för batchmål
 
-* Direktuppspelning av segmentaktivering till batchmål stöds. Målschemat för gruppen exporterar segmentmedlemskap för profilerna baserat på målschemat för gruppen. Detta inkluderar både segmentmedlemskap som bestäms via direktuppspelning och gruppmetoder.
+* Direktuppspelning av segmentaktivering till batchmål stöds. Batchmålschemat exporterar profilsegmentsmedlemskap baserat på batchmålschemat. Detta inkluderar både segmentmedlemskap som bestäms via direktuppspelning och gruppmetoder.
 
-Aktivering av upplevelsehändelser
+Aktivera upplevelsehändelser
 
-* Aktivering av raw-upplevelsehändelser stöds för närvarande inte. För att aktivera mot upplevelsehändelser måste ett segment skapas med nödvändiga regler som inkluderar/exkluderar den händelslogik som ska aktiveras mot. Detta skapar ett segment som definieras mot upplevelsehändelser och segmentmedlemskapet kan aktiveras som en proxy för aktivering av raw-upplevelsehändelser. Överväg också att använda Launch Server Side för aktivering av obearbetade upplevelsehändelser som samlats in via SDK.
+* Aktivering av raw-upplevelsehändelser stöds inte. För att aktivera mot upplevelsehändelser måste ett segment skapas med nödvändiga regler som inkluderar eller exkluderar logiken för upplevelsehändelser. Detta skapar ett segment som definieras mot upplevelsehändelser och segmentmedlemskapet kan aktiveras som en proxy för aktivering av raw-upplevelsehändelser. Överväg också att använda [!UICONTROL Starta serversidan] för att aktivera obearbetade upplevelsehändelser som samlats in via SDK.
 
 ## Relaterad dokumentation
 
