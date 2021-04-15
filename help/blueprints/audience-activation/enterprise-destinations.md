@@ -5,18 +5,16 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: a63da7d5da3038cf66b5f2c99e117d4aa5b21cc1
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
 # Målgrupps- och profilaktivering för företagsdestinationer
 
-Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall. <!-- This sentence is difficult to mentally process because there's no verb. Describe what the customer can do with this feature. The first paragraph on a page should not be an abstract description.-->
-
-Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar. <!-- What kinds of sales or support actions? You might add a "For example...." The content in these blueprints should be more simple and friendly.-->
+Dela profiler och målgruppsändringar och händelser i strömning eller batch från [!UICONTROL Kunddataplattform i realtid] till datalagring och applikationer för företag. Dessa profil- och målgruppshändelser kan användas för att initiera en sälj- eller supportåtgärd till kunden, som att följa upp en övergiven ansökningsprocess eller registrering av ett webbinarium eller för att uppdatera företagsapplikationer med de senaste kundattributen och intelligensen från [!UICONTROL Customer Data Platform] i realtid.
 
 ## Användningsexempel
 
@@ -49,7 +47,7 @@ En gång per dag eller manuellt initierad ad ad hoc via API.
 
 ## Implementeringssteg
 
-1. Skapa scheman för data som ska importeras. <!-- Cross-references to these topics would be helpful -->
+1. Skapa scheman för data som ska importeras.
 1. Skapa datauppsättningar för data som ska importeras.
 1. Konfigurera rätt identiteter och identitetsnamnutrymmen i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
 1. Aktivera scheman och datauppsättningar för profilbearbetning.
