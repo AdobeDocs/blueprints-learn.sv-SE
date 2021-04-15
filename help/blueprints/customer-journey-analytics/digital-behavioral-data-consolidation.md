@@ -1,18 +1,18 @@
 ---
-title: Konsolideringsutkast för digitala beteendedata
+title: Reseanalys över flera kanaler
 description: Analysera och extrahera insikter från kundinteraktioner under hela kundresan.
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
 
-# Konsolideringsutkast för digitala beteendedata
+# Analysöversikt över flerkanalsresor
 
 Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.
 
