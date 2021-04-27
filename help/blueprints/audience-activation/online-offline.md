@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 2f35195b875d85033993f31c8cef0f85a7f6cccc
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,27 @@ Aktivera målgrupper för kända profilbaserade destinationer som e-postleverant
 ## Guardrails
 
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
-* Batchsegmentjobb körs en gång per dag baserat på det förbestämda schemat. Segmentexportjobb körs sedan före den schemalagda destinationsleveransen. Observera att batchsegmentjobb och målleveransjobb körs separat. Batchsegmentjobb och exportjobbsprestanda beror på antalet profiler, storleken på profiler och antalet segment som utvärderas.
-* Direktuppspelningssegmentjobb utvärderas i minuter när direktuppspelningsdata kommer till en profil och sedan omedelbart skriver segmentmedlemskapet till profilen och skickar en händelse som program kan prenumerera på.
-* Medlemskap för direktuppspelande segment aktiveras omedelbart för direktuppspelande destinationer och levereras antingen i ett enda segment eller i en mikrogrupp med flera profilhändelser beroende på målets intag-mönster. Schemalagda destinationer initierar ett segmentexportjobb från profilen före leverans, för alla segment som utvärderas i direktuppspelning och levereras via schemalagd batchsegmentleverans.
-* För delning av [!UICONTROL Kunddataplattform]-segmentmedlemskap i realtid till Audience Manager sker detta inom några minuter för direktuppspelningssegment och inom några minuter efter att gruppsegmentsutvärderingen för batchsegmentssegmentering har slutförts.
-* Segment som delas från Experience Platform till Audience Manager delas inom minuter efter segmentimplementering, oavsett om det sker via direktuppspelning eller satsutvärderingsmetod. Det finns en inledande segmentkonfigurationssynkronisering mellan Experience Platform och Audience Manager när segmentet väl har skapats, och efter cirka 4 timmar kan Experience Platform segmentmedlemskapen börja realiseras i Audience Manager-profiler. Målgruppsmedlemskap som realiserats innan målgruppsdelningen mellan Experience Platform och Audience Manager har konfigurerats eller innan målgruppsmetadata har synkroniserats från Experience Platform till Audience Manager kommer inte att realiseras i Audience Manager förrän följande segmentjobb där&quot;befintliga&quot; segmentmedlemskap delas.
-* Måljobb för batch- eller direktuppspelning från batchsegmentjobb kan dela profilattributsuppdateringar samt segmentmedlemskap.
-* Direktuppspelningssegmenteringsjobb till direktuppspelningsmål delar bara upp uppdateringar av segmentmedlemskap.
+
+### Gardrutor för segmentutvärdering och aktivering
+
+| Segmenteringstyp | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) | Aktiveringsnyttolast |
+|-|-|-|-|-|-|-
+| Kantsegmentering | Kantsegmentering är för närvarande en betaversion och gör det möjligt att utvärdera giltig segmentering i realtid i Experience Platform Edge Network för att fatta beslut i realtid via Adobe Target och Adobe Journey Optimizer. |  | ~100 ms | Finns omedelbart för personalisering i Adobe Target, profilsökningar i Edge Profile och för aktivering via cookie-baserade destinationer. | Målgruppsmedlemskap finns på Edge för profilsökningar och cookie-baserade destinationer.<br>Målgruppsmedlemskap och profilattribut är tillgängliga för Adobe Target och Journey Optimizer.  |
+| Direktuppspelningssegmentering | Varje gång en ny direktuppspelningshändelse eller inspelning hämtas till kundprofilen i realtid och segmentdefinitionen är ett giltigt direktuppspelningssegment. <br>Se  [segmenteringsdokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html) för vägledning om kriterier för direktuppspelningssegment | Upp till 1 500 händelser per sekund.  | ~ p95 &lt;5min | Direktuppspelningsmål: Medlemskap för direktuppspelande målgrupper aktiveras inom ungefär 10 minuter eller mikrobatchas baserat på kraven för destinationen.<br>Schemalagda destinationer: Medlemskap för direktuppspelande målgrupper aktiveras i batch baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
+| Inkrementell segmentering | En gång i timmen för nya data som har importerats till kundprofilen i realtid sedan den senaste stegvisa utvärderingen eller utvärderingen av batchsegment. |  |  | Direktuppspelningsmål: Medlemskap för flera målgrupper aktiveras inom ungefär 10 minuter eller mikrobatchas baserat på destinationens krav.<br>Schemalagda destinationer: Inkrementella målgruppsmedlemskap aktiveras i batch baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Endast ändringar av målgruppsmedlemskap och identitetsvärden.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
+| Gruppsegmentering | En gång per dag baserat på ett förbestämt systemschema, eller manuellt initierat ad ad hoc via API. |  | Ungefär en timme per jobb för upp till 10 TB profibutik, 2 timmar per jobb för 10 TB till 100 TB profillagringsstorlek. Batchsegmentets jobbprestanda beror på talprofiler, profilstorlek och antalet segment som utvärderas. | Direktuppspelningsmål: Medlemskap för gruppanvändare aktiveras inom ungefär 10 dagar efter det att segmenteringsutvärderingen har slutförts eller mikrobatchvis baserat på destinationens krav.<br>Schemalagda destinationer: Batchmålgruppsmedlemskap aktiveras baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Endast ändringar av målgruppsmedlemskap och identitetsvärden.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
+
+### GuarDRAils for Cross Application Audience Sharing
+
+| Målgruppsintegrering | Frekvens | Genomflöde/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
+|-|-|-|-|-|-
+| Kunddataplattform i realtid till Audience Manager | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Inom några minuter efter det att segmentutvärderingen har slutförts.<br>Initial målgruppskonfigurationssynkronisering mellan kunddataplattformen i realtid och Audience Manager tar ca 4 timmar.<br>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till Audience Manager i det efterföljande gruppsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap. |
+| Adobe Analytics till Audience Manager |  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. |  |  |
+| Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
+
+
+
+
 
 ## Implementeringssteg
 
