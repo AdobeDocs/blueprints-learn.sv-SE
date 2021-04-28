@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 24b6ffe3021389d33e84688a8f1a90711ca4b772
+source-git-commit: db083e30d8add029e99cade25d561a26da78338e
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,10 @@ Aktivera målgrupper för kända profilbaserade destinationer som e-postleverant
 | Målgruppsintegrering | Frekvens | Genomströmning/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
 |---|---|---|---|---|
 | Kunddataplattform i realtid till Audience Manager | Beroende på segmenteringstyp - se tabellen med segmenteringsskyddsutkast. | Beroende på segmenteringstyp - se tabellen med segmenteringsskyddsutkast. | Beroende på segmenteringstyp - se tabellen med segmenteringsskyddsutkast. | Inom några minuter efter det att segmentutvärderingen har slutförts.<br>Initial målgruppskonfigurationssynkronisering mellan kunddataplattformen i realtid och Audience Manager tar ca 4 timmar.<br>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till Audience Manager i det efterföljande gruppsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap. |
-| Adobe Analytics till Audience Manager |  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. |  |  |
+| Kunddataplattform i realtid till Ad Cloud | Observera att delning av målgrupper från kunddataplattformen i realtid till Adobe Advertising Cloud kräver Audience Manager. Samma skyddsräcken som gäller för delning av kunddataplattform i realtid till Audience Manager kommer att användas för integrering av målgrupper i kunddataplattformen i realtid till Advertising Cloud. | - | - | - |
 | Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
+| Adobe Analytics till Audience Manager | - | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. | - | - |
+
 
 
 
