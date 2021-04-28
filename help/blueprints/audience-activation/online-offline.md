@@ -49,7 +49,7 @@ Aktivera målgrupper för kända profilbaserade destinationer som e-postleverant
 ### GuarDRAils for Cross Application Audience Sharing
 
 | Målgruppsintegrering | Frekvens | Genomflöde/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
-|-|-|-|-|-|-
+|-|-|-|-|-|
 | Kunddataplattform i realtid till Audience Manager | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Inom några minuter efter det att segmentutvärderingen har slutförts.<br>Initial målgruppskonfigurationssynkronisering mellan kunddataplattformen i realtid och Audience Manager tar ca 4 timmar.<br>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till Audience Manager i det efterföljande gruppsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap. |
 | Adobe Analytics till Audience Manager |  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. |  |  |
 | Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
