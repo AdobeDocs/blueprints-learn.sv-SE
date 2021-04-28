@@ -38,7 +38,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 ### Gardrutor för segmentutvärdering och aktivering
 
 | Segmenteringstyp | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) |
-|-|-|-|-|-|-
+|-|-|-|-|-|
 | Kantsegmentering | Kantsegmentering är för närvarande en betaversion och gör det möjligt att utvärdera giltig segmentering i realtid i Experience Platform Edge Network för att fatta beslut i realtid via Adobe Target och Adobe Journey Optimizer. |  | ~100 ms | Finns omedelbart för personalisering i Adobe Target, profilsökningar i Edge Profile och för aktivering via cookie-baserade destinationer. |
 | Direktuppspelningssegmentering | Varje gång en ny direktuppspelningshändelse eller inspelning hämtas till kundprofilen i realtid och segmentdefinitionen är ett giltigt direktuppspelningssegment. <br>Se  [segmenteringsdokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html) för vägledning om kriterier för direktuppspelningssegment | Upp till 1 500 händelser per sekund.  | ~ p95 &lt;5min | När dessa segment implementeras delas de med Audience Manager och målgruppsdelningstjänsten på några minuter och är tillgängliga för samma/nästa sidanpassning i Adobe Target. |
 | Inkrementell segmentering | En gång i timmen för nya data som har importerats till kundprofilen i realtid sedan den senaste stegvisa utvärderingen eller utvärderingen av batchsegment. |  |  | När dessa segmentmedlemskap är klara delas de med Audience Manager och målgruppsdelningstjänsten på några minuter och är tillgängliga för samma/nästa sidanpassning i Adobe Target. |
@@ -48,7 +48,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 
 | Integreringsmönster för målgruppsdelning | Detaljer | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) |
-|-|-|-|-|-|-|-
+|-|-|-|-|-|-|
 | Kunddataplattform i realtid till Audience Manager |  | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Inom några minuter efter det att segmentutvärderingen har slutförts.<br>Initial målgruppskonfigurationssynkronisering mellan kunddataplattformen i realtid och Audience Manager tar ca 4 timmar.<br>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till Audience Manager i det efterföljande gruppsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap. |
 | Adobe Analytics till Audience Manager | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. |  |  |  |  |
 | Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt just nu. |  |  |  |  |
