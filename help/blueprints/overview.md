@@ -4,7 +4,7 @@ description: Digital Experience Blueprints är repeterbara implementeringar för
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: b5b2fff60678a9a36ffffd0a2bf22c8f76573a3e
+source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan h
     <p><em>Utlös meddelanden och upplevelser med [!UICONTROL Platform] som ett centralt nav.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><img alt="miniatyrbild för utkast online/offline i Audience Activation" src="audience-activation/assets/onoff.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><img alt="miniatyrbild för utkast online/offline i Audience Activation" src="audience-activation/assets/online_offline_activation.svg" /></a>
     <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>Online/offline Audience Activation</strong></a></div>
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
