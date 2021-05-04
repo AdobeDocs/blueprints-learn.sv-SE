@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
+source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,14 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 |---|---|---|
 | **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 | **[Webb-/mobilpersonalisering online/offline](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+
+## GuarDRAG för webb- och mobilpersonalisering
+
+Se skyddsutkastet under avsnitten Audience and Profile Activation Blueprints - [LINK](../audience-activation/overview.md)
+
+### Online/Offline Personalization GuarDRAW-diagram
+
+<img src="assets/personalization_guardrails.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="border:1px solid #4a4a4a" />
 
 ## Relaterade blogginlägg
 
