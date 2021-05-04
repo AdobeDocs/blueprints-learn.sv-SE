@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 
 ## GuarDRAG för webb- och mobilpersonalisering
 
-Se skyddsutkastet under avsnitten Audience and Profile Activation Blueprints - [LINK](../audience-activation/overview.md)
+För skyddsförslag som rör målgrupps- och profilaktivering, se skyddsutkastet under avsnitten om aktiveringsplaner för målgrupper och profiler - [LINK](../audience-activation/overview.md)
 
 ### Online/Offline Personalization GuarDRAW-diagram
 
