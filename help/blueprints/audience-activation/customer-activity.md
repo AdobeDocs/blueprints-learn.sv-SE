@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
 translation-type: tm+mt
-source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
+source-git-commit: 762836aba236ed78f4f396e8521a99c775dd52fc
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,15 @@ Med den här funktionen kan ni skapa ett avancerat sammanhang när en kund ringe
 1. Konfigurera datauppsättningar och scheman.
 1. Konfigurera [!UICONTROL Kundprofil för realtid]: konfigurera schema och datauppsättning för [!UICONTROL Kundprofil för realtid] och konfigurera en sammanfogningsprincip och identiteter.
 1. Importera data till Platform och bearbeta dem till [!UICONTROL Kundprofil i realtid].
-1. Använd enhets-API:t för att söka efter ett profilattribut, antingen från postentiteten eller från upplevelsehändelseentiteten.
+
+
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
+1. [Konfigurera rätt identiteter och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) identitetsnamnutrymmen i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Aktivera schema och datauppsättningar för profil](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Importera data till plattformen](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
+1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html)
+1. Använd [Entities-API:t för att söka efter ett profilattribut](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html), antingen från postentiteten eller upplevelsehändelseentiteten.
 
 ## Relaterad dokumentation
 
