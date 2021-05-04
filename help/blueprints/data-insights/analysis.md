@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,8 @@ Vissa skyddsutkast gäller för frågans tidsgräns och för den datamängd som 
 
 ## Guardrails
 
-* 10-minuters tidsgräns för interaktiva frågor
-* Gränsen på 100 poster returnerades i användargränssnittet
-* Gränsen på 50 000 poster returnerades via SQL-kopplingen
+Läs produktdokumentationen för frågetjänsten för mer information om bästa praxis och skyddsanvisningar.
+[Vägledning för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/writing-queries.html?lang=en#best-practices)
 
 ## Implementeringssteg
 
