@@ -5,9 +5,9 @@ solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
+source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,6 @@ Få en samlad bild av kundernas beteende i olika kanaler genom att samla data fr
 ## Arkitektur
 
 <img src="assets/CJA.svg" alt="Referensarkitektur för Customer Journey Analytics Blueprint" style="border:1px solid #4a4a4a" />
-
-## Guardrails
-
-Dataintag i Customer Journey Analytics:
-
-* Intag av data till sjö: API ~ 7 GB/timme, källanslutning ~ 200 GB/timme, direktuppspelning till sjö ~ 15 minuter, Adobe Analytics källanslutning till sjö ~ 45 minuter.
-* Efter att data har publicerats till datasjön kan det ta upp till 90 minuter att bearbeta dem i Customer Journey Analytics.
 
 ## Implementeringssteg
 
