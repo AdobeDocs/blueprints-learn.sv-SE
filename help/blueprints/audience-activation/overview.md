@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -29,41 +29,44 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 
 ## GuarDRATIONS for Audience and Profile Activation Blueprints
 
+### Guardrail-diagram
+
+<img src="assets/activation_guardrails.svg" alt="GuarDRAL-diagram för målgrupps- och profilaktiveringsplaner" style="border:1px solid #4a4a4a" />
+
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
 ### Gardrutor för segmentutvärdering och aktivering
 
-| Segmenteringstyp | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) | Aktiveringsnyttolast |
-|-|-|-|-|-|-|-
-| Kantsegmentering | Kantsegmentering är för närvarande en betaversion och gör det möjligt att utvärdera giltig segmentering i realtid i Experience Platform Edge Network för att fatta beslut i realtid via Adobe Target och Adobe Journey Optimizer. |  | ~100 millisekunder | Finns omedelbart för personalisering i Adobe Target, profilsökningar i Edge Profile och för aktivering via cookie-baserade destinationer. | Målgruppsmedlemskap finns på Edge för profilsökningar och cookie-baserade destinationer.<br>Målgruppsmedlemskap och profilattribut är tillgängliga för Adobe Target och Journey Optimizer.  |
-| Direktuppspelningssegmentering | Varje gång en ny direktuppspelningshändelse eller post hämtas till kundprofilen i realtid och segmentdefinitionen är ett giltigt direktuppspelningssegment. <br>Se  [segmenteringsdokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html) för vägledning om kriterier för direktuppspelningssegment | Upp till 1 500 händelser per sekund.  | ~ p95 &lt; 5 minuter | Direktuppspelningsmål: Medlemskap för direktuppspelande målgrupper aktiveras inom ungefär 10 minuter eller mikrobatchas baserat på kraven för destinationen.<br>Schemalagda destinationer: Medlemskap för direktuppspelande målgrupper aktiveras i batch baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
-| Inkrementell segmentering | En gång per timme för nya data som har importerats till kundprofilen i realtid sedan den senaste stegvisa utvärderingen eller utvärderingen av batchsegment. |  |  | Direktuppspelningsmål: Medlemskap för flera målgrupper aktiveras inom ungefär 10 minuter eller mikrobatchas baserat på destinationens krav.<br>Schemalagda destinationer: Inkrementella målgruppsmedlemskap aktiveras gruppvis baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Endast ändringar av målgruppsmedlemskap och identitetsvärden.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
-| Gruppsegmentering | En gång per dag baserat på ett förbestämt systemschema, eller manuellt initierat ad ad hoc via API. |  | Ungefär en timme per jobb för upp till 10 terabyte profilliststorlek, 2 timmar per jobb för 10 terabyte till 100 terabytes profilagestorlek. Batchsegmentets jobbprestanda beror på talprofiler, profilstorlek och antalet segment som utvärderas. | Direktuppspelningsmål: Medlemskap för gruppanvändare aktiveras inom ungefär 10 dagar efter det att segmenteringsutvärderingen har slutförts eller mikrobatchvis baserat på destinationens krav.<br>Schemalagda destinationer: Batchmålgruppsmedlemskap aktiveras baserat på den schemalagda leveranstiden för destinationen. | Direktuppspelningsmål: Endast ändringar av målgruppsmedlemskap och identitetsvärden.<br>Schemalagda destinationer: Ändringar av målgruppsmedlemskap, identitetsvärden och profilattribut. |
+| Segmenteringstyp | Användningsexempel | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) | Aktiveringsnyttolast |
+|--------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kantsegmentering | Webb-/mobilpersonalisering (samma sida/nästa sida) | Kantsegmentering är för närvarande i betaversion och är ännu inte allmänt tillgänglig. | - | Cirka 100 millisekunder | Target och Journey Optimizer:<ul><li>Finns omedelbart i samma personaliseringsbegäran.</li></ul><br>Cookie-baserade destinationer:<ul><li>Tillgängligt för beslut om nästa sida.</li></ul> | Edge Profile Lookups (Target och Journey Optimizer):<ul><li>Målgruppsmedlemskap</li><li>Profilattribut</li></ul><br>Cookie-baserade destinationer:<ul><li>Målgruppsmedlemskap</li></ul> |
+| Strömmande segmentering | Trigger Based Marketing (Streaming) | Varje gång en ny direktuppspelningshändelse eller inspelning hämtas till kundprofilen i realtid och segmentdefinitionen är ett giltigt direktuppspelningssegment. <br>Se segmenteringsdokumentationen för vägledning om  [segmentsegmentkriteriedokumentation för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html) | Upp till 1 500 händelser per sekund. | Ungefär 5 minuter, p95 | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul><br>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul><br>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
+| Inkrementell segmentering | <li>Batchmeddelanden<li>Målinriktade kampanjer och upplevelser | En gång i timmen för nya data som har importerats till kundprofilen i realtid sedan den senaste stegvisa utvärderingen eller utvärderingen av batchsegment. | Ej tillämpligt | Beroende på antal profiler, profilstorlek och antal segment som utvärderas. | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul><br>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li></ul><br>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
+| Gruppsegmentering | <ul><li>Batchmeddelanden</li><li>Målinriktade kampanjer och upplevelser</li></ul> | En gång per dag baserat på ett förbestämt systemschema, eller manuellt initierat ad ad hoc via API. | Ej tillämpligt | Beroende på antal profiler, profilstorlek och antal segment som utvärderas.<ul><li>Cirka en timme per jobb för upp till 10 TB profibutik</li><li>2 timmar per jobb för 10 TB till 100 TB profillagringsstorlek.</li></ul> | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul><br>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li></ul><br>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
 
 ### GuarDRAils for Cross Application Audience Sharing
 
-| Målgruppsintegrering | Frekvens | Genomflöde/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
-|-|-|-|-|-|-
-| Kunddataplattform i realtid till Audience Manager | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Inom några minuter efter det att segmentutvärderingen har slutförts.<br>Initial målgruppskonfigurationssynkronisering mellan kunddataplattformen i realtid och Audience Manager tar ca 4 timmar.<br>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till Audience Manager i det efterföljande gruppsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap. |
-| Kunddataplattform i realtid till Ad Cloud | Observera att delning av målgrupper från kunddataplattformen i realtid till Adobe Advertising Cloud kräver Audience Manager. Samma skyddsräcken som gäller för delning av kunddataplattform i realtid till Audience Manager kommer att användas för integrering av målgrupper i kunddataplattformen i realtid till Advertising Cloud. | - |-  | - |
-| Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
-| Adobe Analytics till Audience Manager |-  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en Audience Manager-licens används finns det ingen gräns för hur många målgrupper som kan delas mellan Adobe Analytics och Adobe Target eller Adobe Audience Manager och Adobe Target. | - |-  |
+| Målgruppsintegrering | Användningsexempel | Frekvens | Genomflöde/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
+|-|-|-|-|-|-|-
+| Kunddataplattform i realtid till Audience Manager | Berika tredjepartsannonsering med kända profilmålgrupper | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | <ul><li>Inom några minuter efter det att segmentutvärderingen har slutförts.</li><li>Initial målgruppskonfigurationssynkronisering mellan RTCDP och AAM tar ca 4 timmar.</li><li>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till AAM om det efterföljande batchsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap.</li></ul> |
+| Adobe Analytics till Audience Manager | Förbättra tredjepartsannonsering med detaljbeteendebaserade målgrupper |  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en licens för Audience Manager används finns det ingen begränsning. |  |  |
+| Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt just nu. | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
 
 
-### Garantier för aktivering av attribut och identiteter
+### Aktivera attribut och identiteter
 
 * [!UICONTROL Real-time Customer Data ] Platform kan aktivera målgruppsmedlemskap samt attribut- och identitetsändringar som sker för profiler som är medlemmar i segment som valts för aktivering. Om målet är att aktivera attribut eller identiteter måste du definiera ett globalt segment som innehåller alla profiler som attribut- och identitetsuppdateringar skickas till. Då kan du markera segmentet och de attribut du vill aktivera som en del av målkonfigurationen.
 * Observera att batchdestinationer inte stöder aktivering av endast attributändringar. Fullständigt eller inkrementellt medlemskap kan skickas tillsammans med de valda attributen för aktivering, men du kan inte aktivera endast attributspecifika ändringshändelser via batchdestinationer.
 
-Aktivera batchsegment för direktuppspelningsmål
+### Aktivera batchsegment för direktuppspelningsmål
 
 * Aktivering av gruppsegment till direktuppspelningsmål stöds. Batchsegmentjobb skickar meddelanden i pipeline när segmentjobbet är klart för direktuppspelningsaktivering
 
-Aktivera direktuppspelningssegment för batchmål
+### Aktivera direktuppspelningssegment för batchmål
 
 * Direktuppspelning av segmentaktivering till batchmål stöds. Batchmålschemat exporterar profilsegmentsmedlemskap baserat på batchmålschemat. Detta inkluderar både segmentmedlemskap som bestäms via direktuppspelning och gruppmetoder.
 
-Aktivera upplevelsehändelser
+### Aktivera upplevelsehändelser
 
 * Aktivering av raw-upplevelsehändelser stöds inte. För att aktivera mot upplevelsehändelser måste ett segment skapas med nödvändiga regler som inkluderar eller exkluderar logiken för upplevelsehändelser. Detta skapar ett segment som definieras mot upplevelsehändelser och segmentmedlemskapet kan aktiveras som en proxy för aktivering av raw-upplevelsehändelser. Överväg också att använda [!UICONTROL Starta serversidan] för att aktivera obearbetade upplevelsehändelser som samlats in via SDK.
 
