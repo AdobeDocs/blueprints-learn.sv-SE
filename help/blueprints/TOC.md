@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
+source-git-commit: ee4e59f014ad73df8e9bceb2a41752b3bc760761
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
    + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + [Online/offline Audience Activation](/help/blueprints/audience-activation/online-offline.md)
    + [Aktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [Målgrupps- och profilaktivering med Experience Cloud-program](/help/blueprints/audience-activation/aep+apps.md)
    + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
