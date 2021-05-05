@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: 6365fa00a77ba22774b2d6de3e882a3e09dcae0f
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,9 @@ Custom Data Science for Profile Enrichment Blueprint visar hur data i Adobe Expe
 
 ## Implementeringssteg
 
-1. Skapa scheman och datauppsättningar.
-1. Importera data till Experience Platform.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
+1. [Importera data till plattformen](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
 1. Skapa en DSW-anteckningsbok.
 1. Välj ett språk. Python och PySpark stöds.
 1. Författarmodell i anteckningsbok.
