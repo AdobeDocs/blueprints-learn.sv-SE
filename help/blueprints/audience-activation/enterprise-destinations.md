@@ -5,7 +5,7 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
+source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering - [
 1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
 1. [Tillhandahåll  [!UICONTROL realtidsdelning av kunddata ] Platformsegment ](https://www.adobe.com/go/audiences) mellan Experience Platform och Audience Manager för målgrupper som definieras i Experience Platform som ska delas med Audience Manager.
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) segmentering i Experience Platform Systemet avgör automatiskt om segmentet utvärderas som batch- eller direktuppspelning.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) segmentering i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
 1. [Konfigurera ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) mål för delning av profilattribut och målgruppsmedlemskap till önskade mål.
 
 ## Relaterad dokumentation
