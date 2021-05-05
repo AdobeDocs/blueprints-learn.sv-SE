@@ -5,23 +5,23 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7722
 exl-id: null
 translation-type: tm+mt
-source-git-commit: c1a281f0808a0f081b2b63927a8bddb6377bbbad
+source-git-commit: d81329f6e90a0bdc0b76a41e4045b8e1aa5f89cd
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
 # Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint
 
-Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program. Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-program.
+Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program. Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-applikationer.
 
-Aktivering med Experience Cloud-program är i linje med [Online/Offline Audience Activation-utkast](online-offline.md). I den här planen finns ytterligare information som är specifik för integreringar mellan Experience Platform och Experience Cloud.
+Aktivering med Experience Cloud-program är i linje med [Online/Offline Audience Activation-utkast](online-offline.md).
 
 ## Användningsexempel
 
-* Personalisering och målgruppsanpassning över olika kundinteraktionskanaler som drivs av Experience Cloud.
-* Delning av målgrupps- och profildata med Experience Platform till och från Experience Cloud-program.
+* Anpassa och rikta er mot olika kundinteraktionskanaler som drivs av Experience Cloud.
+* Dela målgrupps- och profildata mellan Experience Platform och Experience Cloud.
 
 ## Program
 
@@ -29,14 +29,12 @@ Aktivering med Experience Cloud-program är i linje med [Online/Offline Audience
 * [!UICONTROL Kunddataplattform i realtid]
 * Aktivering av Experience Platform
 * Experience Cloud-program
-   * Audience Manager
-   * Mål
-   * Campaign
+   * Adobe Audience Manager
+   * Adobe Target
+   * Adobe Campaign
    * Journey Optimizer
 
 ## Arkitektur
-
-### Målgrupps- och profilaktivering med Experience Cloud-program
 
 <img src="assets/activation+apps.svg" alt="Referensarkitektur för målgrupps- och profilaktivering med Experience Cloud-program" style="border:1px solid #4a4a4a" />
 
