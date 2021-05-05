@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: b5d8160235fb510642701ba066434d8bd226b464
+source-git-commit: ee4e59f014ad73df8e9bceb2a41752b3bc760761
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
@@ -25,34 +25,14 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 | **[Anonym Audience Activation](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Online/offline Audience Activation](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Audience Manager (valfritt)</li></ul> |
 | **[Målgrupps- och profilaktivering för företagsdestinationer](enterprise-destinations.md)** | <ul><li>Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall. </li></ul><ul><li>Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Aktivering av Experience Platform</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Målgrupps- och profilaktivering med Experience Cloud-program](aep+apps.md)** | </ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul> |
 | **[Kundaktivitetshubb](customer-activity.md)** | <ul><li>Ge kunderna ett djupare sammanhang för interaktioner som stöds av agenter, som support och säljupplevelser. Med profilsökningen i Experience Platform kan agenterna få mer kontext om konsumenten, t.ex. senaste köp, kampanjinteraktioner, egenskaper, målgruppsmedlemskap och andra attribut och insikter som lagras i kundprofilen i realtid.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
+
+
 
 ## GuarDRATIONS for Audience and Profile Activation Blueprints
 
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
-
-### Guardrail-diagram
-
-<img src="assets/activation_guardrails.svg" alt="GuarDRAL-diagram för målgrupps- och profilaktiveringsplaner" style="border:1px solid #4a4a4a" />
-
-
-
-### Gardrutor för segmentutvärdering och aktivering
-
-| Segmenteringstyp | Användningsexempel | Frekvens | Genomflöde | Latens (segmentutvärdering) | Latens (segmentaktivering) | Aktiveringsnyttolast |
-|--------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kantsegmentering | Webb-/mobilpersonalisering (samma sida/nästa sida) | Kantsegmentering är för närvarande i betaversion och är ännu inte allmänt tillgänglig. | - | Cirka 100 millisekunder | Target och Journey Optimizer:<ul><li>Finns omedelbart i samma personaliseringsbegäran.</li></ul>Cookie-baserade destinationer:<ul><li>Tillgängligt för beslut om nästa sida.</li></ul> | Edge Profile Lookups (Target och Journey Optimizer):<ul><li>Målgruppsmedlemskap</li><li>Profilattribut</li></ul>Cookie-baserade destinationer:<ul><li>Målgruppsmedlemskap</li></ul> |
-| Strömmande segmentering | Trigger Based Marketing (Streaming) | Varje gång en ny direktuppspelningshändelse eller inspelning hämtas till kundprofilen i realtid och segmentdefinitionen är ett giltigt direktuppspelningssegment. <br>Se segmenteringsdokumentationen för vägledning om  [segmentsegmentkriteriedokumentation för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html) | Upp till 1 500 händelser per sekund. | Ungefär 5 minuter, p95 | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
-| Inkrementell segmentering | <li>Batchmeddelanden<li>Målinriktade kampanjer och upplevelser | En gång i timmen för nya data som har importerats till kundprofilen i realtid sedan den senaste stegvisa utvärderingen eller utvärderingen av batchsegment. | Ej tillämpligt | Beroende på antal profiler, profilstorlek och antal segment som utvärderas. | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li></ul>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
-| Gruppsegmentering | <ul><li>Batchmeddelanden</li><li>Målinriktade kampanjer och upplevelser</li></ul> | En gång per dag baserat på ett förbestämt systemschema, eller manuellt initierat ad ad hoc via API. | Ej tillämpligt | Beroende på antal profiler, profilstorlek och antal segment som utvärderas.<ul><li>Cirka en timme per jobb för upp till 10 TB profibutik</li><li>2 timmar per jobb för 10 TB till 100 TB profillagringsstorlek.</li></ul> | Direktuppspelningsmål:<ul><li>Ungefär 1 minut till Audience Manager och Target</li><li>Ungefär 10 minuter till externa destinationer eller mikrobatchvis beroende på destinationen.</li></ul>Schemalagda destinationer:<ul><li>Aktiverat till externa destinationer i batch baserat på den schemalagda leveranstiden för destinationen.</li></ul> | Direktuppspelningsmål: <ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li></ul>Schemalagda destinationer:<ul><li>Ändringar av målgruppsmedlemskap</li><li>Identitetsvärden</li><li>Profilattribut</li></ul> |
-
-### GuarDRAils for Cross Application Audience Sharing
-
-| Målgruppsintegrering | Användningsexempel | Frekvens | Genomflöde/volym | Latens (segmentutvärdering) | Latens (segmentaktivering) |
-|-|-|-|-|-|-|-
-| Kunddataplattform i realtid till Audience Manager | Berika tredjepartsannonsering med kända profilmålgrupper | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | Beroende på segmenteringstyp - se tabellen ovan över skyddsutkast för segmentering. | <ul><li>Inom några minuter efter det att segmentutvärderingen har slutförts.</li><li>Initial målgruppskonfigurationssynkronisering mellan RTCDP och AAM tar ca 4 timmar.</li><li>Alla målgruppsmedlemskap som realiseras under 4-timmarsperioden kommer att skrivas till AAM om det efterföljande batchsegmenteringsjobbet som&quot;befintliga&quot; målgruppsmedlemskap.</li></ul> |
-| Adobe Analytics till Audience Manager | Förbättra tredjepartsannonsering med detaljbeteendebaserade målgrupper |  | Som standard kan högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om en licens för Audience Manager används finns det ingen begränsning. |  |  |
-| Adobe Analytics till kunddataplattform i realtid | Inte tillgängligt just nu. | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället | Inte tillgängligt för tillfället |
 
 
 ### Aktivera attribut och identiteter
