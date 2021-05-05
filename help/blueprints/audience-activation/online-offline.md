@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
+source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata, tillsammans med onlinebeteende för målinriktning och personalisering.
 
 Aktivera målgrupper för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer.
+
+Online-/offlinedesignen för Audience Activation är i linje med [målgrupps- och profilaktiveringen med Experience Cloud Applications Blueprint](platform-and-applications.md). Mer information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications-utkast](platform-and-applications.md)   som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
 
 ## Användningsexempel
 
@@ -42,7 +44,7 @@ Aktivera målgrupper för kända profilbaserade destinationer som e-postleverant
 
 ## Guardrails
 
-Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering - [LINK](overview.md)
+[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering.](overview.md)
 
 ## Implementeringssteg
 
