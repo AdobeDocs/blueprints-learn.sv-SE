@@ -1,18 +1,18 @@
 ---
-title: Målgrupps- och profilaktivering med Experience Cloud-program
-description: Målgrupps- och profilaktivering med Experience Cloud-program
+title: Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint
+description: Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
 translation-type: tm+mt
-source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
+source-git-commit: c1a281f0808a0f081b2b63927a8bddb6377bbbad
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Målgrupps- och profilaktivering med Experience Cloud-program
+# Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint
 
 Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program. Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-program.
 
@@ -36,16 +36,15 @@ Aktivering med Experience Cloud-program är i linje med [Online/Offline Audience
 
 ## Arkitektur
 
-[Se avsnittet Experience Platform and Applications Architecture (Programarkitektur) för ytterligare arkitekturdiagram för Experience Platform-integrering med Experience Cloud-program.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
-
 ### Målgrupps- och profilaktivering med Experience Cloud-program
 
 <img src="assets/activation+apps.svg" alt="Referensarkitektur för målgrupps- och profilaktivering med Experience Cloud-program" style="border:1px solid #4a4a4a" />
-<br>
+
+I [Adobe Experience Platform &amp; Applications-diagrammet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html) finns ytterligare ett arkitekturdiagram för Experience Platform och dess integrering med Experience Cloud-program.
 
 ## Guardrails
 
-[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering](overview.md)
+Se [skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering](overview.md)
 
 ## Relaterad dokumentation
 
