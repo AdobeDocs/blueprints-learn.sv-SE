@@ -5,9 +5,9 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
+source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Dela profiler och målgruppsändringar och händelser i strömning eller batch f
 
 ## Guardrails
 
-Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering - [LINK](overview.md)
+[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering.](overview.md)
 
 ## Implementeringssteg
 
