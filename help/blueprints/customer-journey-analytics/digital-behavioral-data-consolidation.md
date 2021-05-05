@@ -5,9 +5,9 @@ solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
+source-git-commit: 6365fa00a77ba22774b2d6de3e882a3e09dcae0f
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,9 @@ Få en samlad bild av kundernas beteende i olika kanaler genom att samla data fr
 
 ## Implementeringssteg
 
-1. Konfigurera datauppsättningar och scheman.
-1. Importera data till Platform.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
+1. [Importera data till plattformen](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
 Data måste hämtas till plattformen innan de kan bearbetas till Customer Journey Analytics.
 1. Analysera händelsedatamängder för flera kanaler som ska analyseras tillsammans för att se till att de har ett gemensamt namnområdes-ID eller att de eftersöks med hjälp av den fältbaserade sammanfogningsfunktionen i Customer Journey Analytics. 
 
