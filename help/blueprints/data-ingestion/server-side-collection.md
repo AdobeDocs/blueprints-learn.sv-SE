@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b,c7d6356d-a1ae-472b-b501-5c736e990252
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,8 @@ I skissen Enterprise Data Collection (på serversidan) visas hur data som samlat
 
 ## Relaterad dokumentation
 
-[Experience Platform Launch Server Side Documentation](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info)
+[Experience Platform Launch Server-](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info)
+[dokumentationExperience Platform launch Server Side videor](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html)
 
 ## Relaterade blogginlägg
 
