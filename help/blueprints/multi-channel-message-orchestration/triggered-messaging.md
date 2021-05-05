@@ -5,9 +5,9 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 81df87f850b7ac4be9dce7a3b96d39a3a47685c5
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -68,23 +68,23 @@ Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett 
 
 #### Schema/datauppsättningar
 
-1. Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter i Experience Platform baserat på kunddata.
-1. Skapa Adobe Campaign-scheman för följande: broadLog, trackingLog, icke-levererbara adresser och profilinställningar (valfritt).
-1. Lägg till dataanvändningsetiketter i datauppsättningen för styrning.
-1. Skapa profiler för att genomdriva styrning av destinationer.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) flerenhetskarta i Experience Platform baserat på data som kunden har tillhandahållit.
+1. Skapa Adobe Campaign-scheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar i Experience Platform för data som ska importeras.
+1. [Lägg till ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) etiketter för dataanvändning i Experience Platform i datauppsättningen för styrning.
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) policyer som tvingar fram styrning av destinationer.
 
 #### Profil/identitet
 
-1. Skapa alla kundspecifika namnutrymmen.
-1. Lägg till identiteter i scheman.
-1. Aktivera scheman och datauppsättningar för profilen.
-1. Ställ in kopplingsregler för olika vyer av [!UICONTROL Kundprofil för realtid] (valfritt).
+1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
+1. [Lägg till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
+1. [Aktivera schema och datauppsättningar för profil](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Ställ in sammanslagningsprinciper ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av kundprofilen [!UICONTROL  i ] realtid (valfritt).
 1. Skapa segment för Adobe Campaign.
 
 #### Källor/mål
 
-1. Importera data till Experience Platform med hjälp av API:er för direktuppspelning och källanslutningar.
-1. Konfigurera [!DNL Azure]-lagringsmålet för blob för användning med Adobe Campaign.
+1. [Importera data till Experience ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) Platform med hjälp av API:er för direktuppspelning och källkopplingar.1. Konfigurera  [!DNL Azure] blobblagringsmålet för användning med Adobe Campaign.
 
 #### Distribution av mobilappar
 
