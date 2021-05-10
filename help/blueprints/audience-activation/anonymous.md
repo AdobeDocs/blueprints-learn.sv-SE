@@ -6,9 +6,9 @@ kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: 53914ce36ef0e48734c04818fbf8a5285fbb14ab
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ni kan inrikta er på målgrupper över webben och annonskanaler baserat på ano
 
 <!-- These steps should link to help. -->
 
-1. [Implementera Audience Manager](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
+1. [Implementera Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
 1. Samla in data i Audience Manager.
 1. Konfigurera signaler och egenskaper för användning i segmentdefinitioner.
 1. Skapa segment i Audience Manager.
