@@ -4,8 +4,7 @@ description: Hantera profiler och målgrupper i Experience Platform och dela dem
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
-translation-type: tm+mt
-source-git-commit: d81329f6e90a0bdc0b76a41e4045b8e1aa5f89cd
+source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -36,9 +35,12 @@ Aktivering med Experience Cloud-program är i linje med [Online/Offline Audience
 
 ## Arkitektur
 
-<img src="assets/activation+apps.svg" alt="Referensarkitektur för målgrupps- och profilaktivering med Experience Cloud-program" style="border:1px solid #4a4a4a" />
+[Se avsnittet Experience Platform and Applications Architecture (Programarkitektur) för ytterligare arkitekturdiagram för Experience Platform-integrering med Experience Cloud-program.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
 
-I [Adobe Experience Platform &amp; Applications-diagrammet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html) finns ytterligare ett arkitekturdiagram för Experience Platform och dess integrering med Experience Cloud-program.
+### Målgrupps- och profilaktivering med Experience Cloud-program
+
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Referensarkitektur för målgrupps- och profilaktivering med Experience Cloud-program" style="border:1px solid #4a4a4a" />
+<br>
 
 ## Guardrails
 
