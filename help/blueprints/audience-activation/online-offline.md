@@ -4,10 +4,9 @@ description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-translation-type: tm+mt
-source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
+source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,10 +36,6 @@ Online-/offlinedesignen för Audience Activation är i linje med [målgrupps- oc
 
 <img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="border:1px solid #4a4a4a" />
 <br>
-
-### Online/offline Audience Activation med Experience Cloud-program
-
-<img src="assets/activation+apps.svg" alt="Referensarkitektur för online-/offlineutkast för Audience Activation med Experience Cloud-program" style="border:1px solid #4a4a4a" />
 
 ## Guardrails
 
