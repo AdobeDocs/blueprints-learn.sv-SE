@@ -4,10 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-translation-type: tm+mt
-source-git-commit: b8770bdc4db581be11b347e3788b1d6e6534fe10
+source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 0%
 # Digital Experience-utkast {#architecture}
 
 + [Översikt](/help/blueprints/overview.md)
-+ Diagram över arkitektur{#architecture-overview}
++ Arkitekturöversikter{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
