@@ -3,9 +3,9 @@ title: Digital Experience-utkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: 83cda30e0fac5c3a2c38ca4b2df2c2405736e4a0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,8 @@ Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan h
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/triggered-messaging.html"><img alt="miniatyrbild för Triggered Messaging och Experience Platform Blueprint" src="customer-journeys/assets/triggered.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/triggered-messaging.html"><strong>Utlöst meddelande och Experience Platform</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><img alt="miniatyrbild för Triggered Messaging och Experience Platform Blueprint" src="customer-journeys/assets/journey-optimizer.png" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Utlöst meddelande och Experience Platform</strong></a></div>
     <p><em>Utlös meddelanden och upplevelser med [!UICONTROL Platform] som ett centralt nav.</em></p>
   </td>
   <td>
