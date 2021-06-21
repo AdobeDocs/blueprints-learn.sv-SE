@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: 366c1c90e8132faac85da17eade60e3b7be77906
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
    + [Reseanalys över flera kanaler](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [Anropsavböjning](/help/blueprints/customer-journey-analytics/call-deflect.md)
++ Kundresor{#customer-journeys}
+   + [Översikt](/help/blueprints/customer-journeys/overview.md)
+   + [Batchmeddelanden och Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
+   + [Utlöst meddelande &amp; Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + Datainsamling och förberedelse{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
@@ -37,10 +41,6 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
-+ Meddelandesamordning i flera kanaler{#customer-journeys}
-   + [Översikt](/help/blueprints/customer-journeys/overview.md)
-   + [Batchmeddelanden och Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
-   + [Utlöst meddelande &amp; Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
