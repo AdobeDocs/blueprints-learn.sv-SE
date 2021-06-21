@@ -5,9 +5,9 @@ solution: Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: faf65f9cd457982baea0a94275a441cd8b5c0b3a
+source-git-commit: 83cda30e0fac5c3a2c38ca4b2df2c2405736e4a0
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,5 @@ Customer Journeys behandlar möjligheten för varumärken att aktivt interagera 
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **Batchmeddelanden och transaktionsmeddelanden** | <ul><li>Skapa och kör schemalagda och utgående batchkampanjer</li><li>Leverera transaktionsmeddelanden</li></ul> | <ul><li>Adobe Campaign Classic och Managed Services</li><li>Adobe Campaign Standard</li></ul> |
-| **[Batch Messaging och Adobe Experience Platform](batch-messaging.md)** | <ul><li>Kör schemalagda och gruppbaserade meddelandekampanjer med Adobe Experience Platform som ett centralt nav för kundprofiler och segmentering</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Campaign Classic, Managed Services eller Campaign Standard</li><li>Tredjeparts meddelandeleverantör som stöds</li></ul> |
-| **[Utlösta meddelanden och Adobe Experience Platform](triggered-messaging.md)** | <ul><li>Kör triggade meddelanden och strömmande meddelanden med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering, med Journey Orchestration för direktuppspelad resesamordning och meddelandeleverans</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Orchestration</li><li>Adobe Campaign eller andra program från tredje part för leverans av meddelanden</li></ul> |
+| **[Adobe Campaign](batch-messaging.md)** | <ul><li>Kör schemalagda och gruppbaserade meddelandekampanjer med Adobe Experience Platform som ett centralt nav för kundprofiler och segmentering</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Campaign Classic, Managed Services eller Campaign Standard</li><li>Tredjeparts meddelandeleverantör som stöds</li></ul> |
+| **[Journey Optimizer](journey-optimizer.md)** | <ul><li>Kör triggade meddelanden och strömmande meddelanden med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering, med Journey Orchestration för direktuppspelad resesamordning och meddelandeleverans</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Optimizer</li></ul> |
