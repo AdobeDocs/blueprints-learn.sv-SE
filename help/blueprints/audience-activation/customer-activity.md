@@ -3,9 +3,8 @@ title: Kundaktivitetshubbsknapp - översikt
 description: '[!UICONTROL Kundprofiler i realtid ] för att ge kontext för support och försäljning som utförs av agenter.'
 solution: Experience Platform,Data Collection
 kt: 7195
-exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
-translation-type: tm+mt
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
+exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
+source-git-commit: 8b055d87a9c55b640bd35e54325977526ce21d94
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -31,7 +30,6 @@ Med den här funktionen kan ni skapa ett avancerat sammanhang när en kund ringe
 ## Arkitektur
 
 <img src="assets/customer_activity_hub.svg" alt="Referensarkitektur för Customer Activity Hub-utkast" style="border:1px solid #4a4a4a" />
-
 
 ## Guardrails
 
