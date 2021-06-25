@@ -4,10 +4,9 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
-translation-type: tm+mt
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
