@@ -1,18 +1,18 @@
 ---
-title: Dataförberedelse och matningsutkast
+title: Web/Mobile SDK Data Collection - översikt
 description: Den här planen visar arkitekturen och intagandet via Experience Platform Web och Mobile SDK
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: null
-source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
+source-git-commit: f6f25c1b650445c5c3686de80c80334aacc17db5
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
 
-# Experience Platform WebSDK-datainsamling
+# Experience Platform Web/Mobile SDK-datainsamling
 
 Bilden nedan illustrerar integrationssökvägarna och datainsamlingen med Experience Platform WebSDK.
 
@@ -20,4 +20,4 @@ Bilden nedan illustrerar integrationssökvägarna och datainsamlingen med Experi
 
 ## Referensdokumentation
 
-[Experience Platform WebSDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)
+[Experience Platform Web/Mobile SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)
