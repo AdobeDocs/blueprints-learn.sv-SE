@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
+source-git-commit: 64f29b492d010539e310c7d24979dedee56068f7
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,11 @@ Observera att poster som bara har en identitet inte bearbetas av identitetstjän
 
 Sammanfogningen av profilfragment sker när identitetsdiagrammet innehåller relationerna mellan de olika källprofilfragmenten som har relaterats. Sammanslagningsprincipen avgör vilka källfragment och vilka identitetsdiagram som ska användas när fragmenten sammanfogas. Varje gång profilen används sker sammanslagningen av profilfragmenten för att säkerställa den mest aktuella kombinerade vyn av profilen. Styrnings- och policyreglerna säkerställer att endast de godkända segmenten och attributen kan aktiveras för de angivna destinationerna.
 
+## Segmentering och målöversikt
+
+Bilden nedan visar de olika segmenteringsmetoderna och de olika profilerna och målgruppsaktiveringsmönstren.
+
+<img src="assets/segmentation_destination_overview.png" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%"/>
 
 ## GuarDRATIONS for Audience and Profile Activation Blueprints
 
