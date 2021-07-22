@@ -4,9 +4,9 @@ description: Synkronisera webbpersonalisering med e-post och annan känd och ano
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 848f1366f3dd2d7948a31cfc606e906ec7f74fbb
+source-git-commit: 176f4950ffb5b21005b6ad8cfbb993186086442b
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,11 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 ## Krav för implementering
 
+Identitetskrav
+
+* Att dela målgrupper från Adobe Experience Platform till Adobe Target kräver att ECID används som identitet.
+* Alternativa identiteter kan användas för att dela Experience Platform-målgrupper till Adobe Target via Audience Manager, eftersom Audience Manager kan matcha alternativa ID:n till ett ECID så länge som både ECID och det alternativa ID:t samlas in till Audience Manager. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID krävs fortfarande för den slutliga målgruppsdelningen i Adobe Target.
+
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
 |---|---|---|
 | Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
@@ -61,6 +66,8 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 | Experience Cloud ID-tjänst | [!UICONTROL Platform Web SDK]* eller VisitorAPI.js 2.0+ | (Rekommenderas) Använd Experience Platform Launch för att distribuera ID-tjänsten för att säkerställa att ID:t anges före eventuella programanrop |
 | Experience Platform Mobile SDK (tillval) | 4.11 eller senare för iOS och Android™ |  |
 | Experience Platform Web SDK | 1.0, den aktuella Experience Platform SDK-versionen har [olika användningsfall som ännu inte stöds för Experience Cloud-programmen](https://github.com/adobe/alloy/projects/5) |  |
+
+
 
 
 ## Implementeringssteg
