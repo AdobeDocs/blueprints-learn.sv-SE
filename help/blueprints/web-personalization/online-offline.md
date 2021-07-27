@@ -1,17 +1,17 @@
 ---
-title: Online/Offline Web Personalization Blueprint
+title: Webb-/mobilpersonalisering med online- och offlinedata
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 176f4950ffb5b21005b6ad8cfbb993186086442b
+source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
 
-# Online/Offline Web/Mobile Personalization Blueprint
+# Webb-/mobilpersonalisering med online- och offlinedata
 
 Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 
