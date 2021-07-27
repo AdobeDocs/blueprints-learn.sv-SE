@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 45e47c3ac88a67069485952aaa57741820c37143
+source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
-| **[Webb-/mobilpersonalisering online/offline](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Webb-/mobilpersonalisering med online- och offlinedata](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 
 ## GuarDRAG för webb- och mobilpersonalisering
 
