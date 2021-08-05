@@ -4,9 +4,9 @@ description: Synkronisera webbpersonalisering med e-post och annan känd och ano
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 Identitetskrav
 
 * Att dela målgrupper från Adobe Experience Platform till Adobe Target kräver att ECID används som identitet.
-* Alternativa identiteter kan användas för att dela Experience Platform-målgrupper till Adobe Target via Audience Manager, eftersom Audience Manager kan matcha alternativa ID:n till ett ECID så länge som både ECID och det alternativa ID:t samlas in till Audience Manager. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID krävs fortfarande för den slutliga målgruppsdelningen i Adobe Target.
+* Alternativa identiteter kan användas för att dela Experience Platform-målgrupper till Adobe Target via Audience Manager, eftersom Audience Manager kan matcha alternativa ID:n till ett ECID så länge som både ECID och det alternativa ID:t samlas in till Audience Manager och använder samma ID-namnutrymme i både Audience Manager och Experience Platform. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID krävs fortfarande för den slutliga målgruppsdelningen i Adobe Target.
 
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
 |---|---|---|
