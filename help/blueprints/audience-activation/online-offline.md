@@ -1,23 +1,23 @@
 ---
-title: Online/Offline Audience Activation-utkast
+title: Aktivering med online- och offlinedata
 description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-# Online/Offline Audience Activation-utkast
+# Aktivering med online- och offlinedata
 
 Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata, tillsammans med onlinebeteende för målinriktning och personalisering.
 
 Aktivera målgrupper för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer.
 
-Online-/offlinedesignen för Audience Activation är i linje med [målgrupps- och profilaktiveringen med Experience Cloud Applications Blueprint](platform-and-applications.md). Mer information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications-utkast](platform-and-applications.md)   som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
+Aktiveringen med online- och offlinedatabilder är i linje med [målgrupps- och profilaktiveringen med Experience Cloud Applications Blueprint](platform-and-applications.md). Mer information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications-utkast](platform-and-applications.md)   som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
 
 ## Användningsexempel
 
@@ -32,7 +32,7 @@ Online-/offlinedesignen för Audience Activation är i linje med [målgrupps- oc
 
 ## Arkitektur
 
-### Online/offline Audience Activation med destinationer
+### Aktivering med online- och offlinedata med destinationer
 
 <img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="border:1px solid #4a4a4a" />
 <br>
@@ -60,7 +60,7 @@ Online-/offlinedesignen för Audience Activation är i linje med [målgrupps- oc
 
 ## Relaterad dokumentation
 
-* [[!UICONTROL Beskrivning av kunddataplattform ] i realtidProduktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
+* [[!UICONTROL Beskrivning av kunddataplattform ] i realtid](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
