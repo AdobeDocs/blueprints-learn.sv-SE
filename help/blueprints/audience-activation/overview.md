@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 64f29b492d010539e310c7d24979dedee56068f7
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Anonym Audience Activation](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[Online/offline Audience Activation](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Audience Manager (valfritt)</li></ul> |
-| **[Målgrupps- och profilaktivering för företagsdestinationer](enterprise-destinations.md)** | <ul><li>Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall. </li></ul><ul><li>Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Aktivering av Experience Platform</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Aktivering med online- och offlinedata](online-offline.md)** | <ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Audience Manager (valfritt)</li></ul> |
+| **[Aktivering till mål för fil- och företagsströmning](enterprise-destinations.md)** | <ul><li>Replikering och uppdatering av profiler och målgruppsändringar i företagets datalager för aktivering och rapportering av användningsfall. </li></ul><ul><li>Initiera en försäljnings- eller supportåtgärd till kunden genom att meddela en kundåtgärd från [!UICONTROL kunddataplattformen ] i realtid till företagssystem och företagstillämpningar.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Aktivering av Experience Platform</li><li>Adobe Audience Manager (valfritt)</li></ul> |
 | **[Målgrupps- och profilaktivering med Experience Cloud-program](platform-and-applications.md)** | <ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul> |
 | **[Kundaktivitetshubb](customer-activity.md)** | <ul><li>Ge kunderna ett djupare sammanhang för interaktioner som stöds av agenter, som support och säljupplevelser. Med profilsökningen i Experience Platform kan agenterna få mer kontext om konsumenten, t.ex. senaste köp, kampanjinteraktioner, egenskaper, målgruppsmedlemskap och andra attribut och insikter som lagras i kundprofilen i realtid.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
