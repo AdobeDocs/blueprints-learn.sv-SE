@@ -5,9 +5,9 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 45e47c3ac88a67069485952aaa57741820c37143
+source-git-commit: 724d4c1016bbbdc7431df159af052f587288d2bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,9 @@ Customer Journey Analytics visar hur varumärken kan sammanställa kunddata och 
 Vanliga analyser är:
 
 * Konvertera banor uppifrån och ned
+* Kanalengagemang och -konvertering
 * Viktigaste visade innehåll
-* Kategorier och produkter
+* De viktigaste kategorierna och produkterna
 * Vilka kampanjer resulterade i konvertering och ökat engagemang
 * Verktygsanvändningsanalys för att optimera självbetjäning
 
