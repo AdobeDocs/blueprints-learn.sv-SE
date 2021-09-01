@@ -6,7 +6,7 @@ kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 source-git-commit: 2cf3445775b2db827938d2927214a4073da20cdb
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ Få en samlad bild av kundernas beteende i olika kanaler genom att samla data fr
 
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
-1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
-Data måste hämtas till plattformen innan de kan bearbetas till Customer Journey Analytics.
+1. Infoga data[Ingest Data Tutorial](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i Experience Platform.
+Data måste hämtas till plattformen innan de kan bearbetas till Customer Journey Analytics. Mer information om dataöverföring och typer av datakällor finns i följande dokumentation. [Datakällor ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) inklusive  [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)
 1. Analysera händelsedatamängder för flera kanaler som ska analyseras tillsammans för att se till att de har ett gemensamt namnområdes-ID eller att de eftersöks med hjälp av den fältbaserade sammanfogningsfunktionen i Customer Journey Analytics. Mer information om identitetssammanfogning i Customer Journey Analytics finns i dokumentationen för flerkanalsanalys. [Identitetskorrigering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en)
 
    >[!NOTE]
