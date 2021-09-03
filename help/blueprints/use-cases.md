@@ -1,9 +1,9 @@
 ---
 title: Användningsexempel på digitala upplevelseutkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
-source-git-commit: 474584b43ce94213719804fa660ccb714dd85f2b
+source-git-commit: 988861c95a9f138acd8c6107e6c08b7e05e4e537
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  <tr>
   <td>Anonym målgruppsanpassning och
   personalisering.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">Anonym
   Audience Activation</a></td>
-  <td rowspan="9" border="1" valign="middle">Målgrupp
+  <td rowspan="9" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Målgrupp
   och profilaktivering</td>
  </tr>
  <tr>
@@ -35,7 +35,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  <tr>
   <td>Målgruppsanpassning för kända målgrupper inom sociala medier och reklam
   destinationer.</td>
-  <td rowspan="3" border="1" valign="middle"><a
+  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Online/offline
   Audience Activation</a></td>
  </tr>
@@ -56,7 +56,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  <tr>
   <td>Personalisera och inrikta er på olika interaktionskanaler
   som drivs av Experience Cloud.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Aktivering
   med Experience Cloud-program</a></td>
  </tr>
@@ -79,10 +79,10 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
   <td>Analysera kundinteraktioner på både dator och mobil till
   förstå kundernas beteende och extrahera insikter för att optimera det digitala
   kundupplevelser.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=en">Kryss
   Kanal</a></td>
-  <td rowspan="4" border="1" valign="middle">Kund
+  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Kund
   Reseanalys</td>
  </tr>
  <tr>
@@ -92,7 +92,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Analysera kundbeteendet innan kunderna kontaktar supporten.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/call-deflect.html?lang=en">Utlysning
   Avböjning</a></td>
  </tr>
@@ -101,10 +101,10 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Schemalagda e-postkampanjer.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">Grupp
   Meddelanden och plattform</a></td>
-  <td rowspan="6" border="1" valign="middle">Kund
+  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Kund
   Resor</td>
  </tr>
  <tr>
@@ -112,7 +112,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Utlösta meddelanden.</td>
-  <td rowspan="4" border="1" valign="middle"><a
+  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en">Resa
   Optimering</a></td>
  </tr>
@@ -130,14 +130,14 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
   <td><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/ingestion.html?lang=en">Data
   Förberedelse och intag</a></td>
-  <td rowspan="4" border="1" valign="middle">Data
+  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Data
   Samling och förberedelse</td>
  </tr>
  <tr>
   <td>Samla in data från webben eller mobiler med en enda samlingstagg,
   belyser kodvikten i webbläsare och appar. Sprid de insamlade
   data till olika slutpunkter för en enda datakälla för datainsamling.</td>
-  <td rowspan="2" border="1" valign="middle"><a
+  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/server-side-collection.html?lang=en">AEP
   Collection Enterprise (Event Forwarding)</a></td>
  </tr>
@@ -153,10 +153,10 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Interaktiv fråga och sammanställning av data.</td>
-  <td rowspan="3" border="1" valign="middle"><a
+  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/analysis.html?lang=en">Data
   Analys och analys</a></td>
-  <td rowspan="6" border="1" valign="middle">Data
+  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Data
   Analyser, intelligens och ML</td>
  </tr>
  <tr>
@@ -170,7 +170,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  <tr>
   <td>Extrahera insikter och hitta mönster från kunddata i
   Experience Platform. Modeller för utbildning och poäng utifrån dessa data.</td>
-  <td rowspan="3" border="1" valign="middle"><a
+  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/data-science.html?lang=en">Kund
   Datavetenskap för profilberikning</a></td>
  </tr>
@@ -185,10 +185,10 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Optimering av landningssidor.</td>
-  <td rowspan="3" border="1" valign="middle"><a
+  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en">Beteende
   Personalisering</a></td>
-  <td rowspan="6" border="1" valign="middle">Webb
+  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Webb
   &amp; Mobilanpassning</td>
  </tr>
  <tr>
@@ -201,7 +201,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  </tr>
  <tr>
   <td>Optimering av landningssidor.</td>
-  <td rowspan="3" border="1" valign="middle"><a
+  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html?lang=en">Online/offline
   Personalisering</a></td>
  </tr>
