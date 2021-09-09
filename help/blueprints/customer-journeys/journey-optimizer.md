@@ -4,9 +4,9 @@ description: Kör triggade meddelanden och upplevelser med Adobe Experience Plat
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 93561231286b5bfd9bf3660399b542d27aedb52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 ## Guardrails
 
-* Mer information om begränsningar finns på länken
+* Mer information om skyddsutkast för Journey Optimizer [LINK](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en) finns på länken
 * Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
 * Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
 * Profiluppdateringsaktivitet - Real-Time Customer Profile kan uppdateras direkt från en resa.  Uppdateringen till profilarkivet fördröjs med upp till 1 min
