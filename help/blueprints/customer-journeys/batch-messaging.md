@@ -4,7 +4,7 @@ description: Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe E
 solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Kör schemalagda meddelandekampanjer och batchkampanjer med Adobe Experience Pla
 
 #### Schema / Datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) flerenhetskarta i Experience Platform baserat på data som kunden har tillhandahållit.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) flerenhetskarta i Experience Platform baserat på data som kunden har tillhandahållit.
 1. Skapa Adobe Campaign-scheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar i Experience Platform för data som ska importeras.
 1. [Lägg till ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) etiketter för dataanvändning i Experience Platform i datauppsättningen för styrning.

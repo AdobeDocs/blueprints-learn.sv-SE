@@ -4,7 +4,7 @@ description: Denna plan visar hur Adobe Experience Platform Data Science Workspa
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
+source-git-commit: c26bf7523dc9b3310678a4129ea10ad06ef5e7cb
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -27,15 +27,15 @@ Custom Data Science for Profile Enrichment Blueprint visar hur data i Adobe Expe
 
 ## Implementeringssteg
 
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
+1. [Skapa ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) scheman för data som ska importeras.
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
 1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
-1. Skapa en DSW-anteckningsbok.
+1. [Skapa en DSW-anteckningsbok](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en).
 1. Välj ett språk. Python och PySpark stöds.
-1. Författarmodell i anteckningsbok.
-1. Tåla modellen.
-1. Testa modellen för att generera prognoser med måldata.
-1. Aktivera modellresultatdatauppsättningen för profilen om modellresultat överförs till [!UICONTROL kundprofilen i realtid].
+1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=en) bärbar dator med modelin.
+1. [Tåla modellen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en).
+1. [Testa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en) modellerna för att generera prognoser med måldata.
+1. [Aktivera modellresultatdatauppsättningen för profil om modellresultat överförs till kundprofilen [!UICONTROL  i ]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=en)realtid.
 
 ## Relaterad dokumentation
 

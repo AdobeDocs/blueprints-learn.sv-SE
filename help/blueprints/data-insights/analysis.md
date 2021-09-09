@@ -5,7 +5,7 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-source-git-commit: 3bcb5d798986e563fda6f40fc730ff62b74b3187
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -43,11 +43,11 @@ Läs produktdokumentationen för frågetjänsten för mer information om bästa 
 
 ## Implementeringssteg
 
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) scheman för data som ska importeras.
+1. [Skapa ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) scheman för data som ska importeras.
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
 1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
-1. Bekräfta att data är tillgängliga för [!UICONTROL Query Service] och [!UICONTROL Data Science Workspace] för obearbetad åtkomst och fråga.
-1. Koppla Business Intelligence- och SQL-klienter till [!UICONTROL Query Service] för visualisering, datafrågor och sökning.
+1. Bekräfta att data är tillgängliga för [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=en) och [[!UICONTROL Data Science Workspace]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en) för obearbetad åtkomst och fråga.
+1. [Koppla samman Business Intelligence- och SQL-klienter med  [!UICONTROL Query ]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash) Service för visualisering, datafrågor och utforskning.
 
 ## Relaterad dokumentation
 

@@ -4,16 +4,16 @@ description: Strömma insamlade data från Experience Platform SDK:er till desti
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3bcb5d798986e563fda6f40fc730ff62b74b3187
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Design för serversidan Enterprise Data Collection
 
-I skissen Enterprise Data Collection (på serversidan) visas hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan vidarebefordras från Experience Platform Edge Network till önskat mål. Du kan vidarebefordra alla rådata som samlats in från SDK:n eller specifika data baserade på händelser och regler enligt konfigurationen i Experience Platform Launch.
+I skissen Enterprise Data Collection (på serversidan) visas hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan vidarebefordras från Experience Platform Edge Network till önskat mål. Du kan vidarebefordra alla rådata som samlats in från SDK:n eller specifika data baserade på händelser och regler som konfigurerats i taggegenskaperna (tidigare Launch).
 
 ## Användningsexempel
 
@@ -30,8 +30,8 @@ I skissen Enterprise Data Collection (på serversidan) visas hur data som samlat
 
 ## Relaterad dokumentation
 
-[Experience Platform Launch Server-](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info)
-[dokumentationExperience Platform launch Server Side videor](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html)
+* [Dokumentation för vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+* [Videofilmer om hur du vidarebefordrar händelser](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html)
 
 ## Relaterade blogginlägg
 

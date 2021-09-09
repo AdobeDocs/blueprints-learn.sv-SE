@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 7c958db2f2bb9cac4d15420d824de0f9722a8135
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
    + [Datainsamling för serversidan](/help/blueprints/data-ingestion/server-side-collection.md)
-   + [Experience Platform WebSDK](/help/blueprints/data-ingestion/websdk.md)
+   + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)

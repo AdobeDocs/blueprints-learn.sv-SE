@@ -4,9 +4,9 @@ description: Kör triggade meddelanden och upplevelser med Adobe Experience Plat
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: dc13a1fe9a32f70497c5c73485618e6989b7a644
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,8 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 * Kunden måste ha en mobilutvecklare tillgänglig för att kunna bygga appen
 * Adobe Experience Platform Mobile SDK
-* Adobe Launch
-   * Mobil egenskap
+* Datainsamling
+   * Egenskapen Mobile-taggar
       * Tillägg:
          * Adobe Journey Optimizer Extension
          * Adobe Experience Platform Edge Network
@@ -73,7 +73,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 #### Schema/datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) flerenhetskarta i Experience Platform baserat på data som kunden har tillhandahållit.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) flerenhetskarta i Experience Platform baserat på data som kunden har tillhandahållit.
 1. Skapa Adobe Campaign-scheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
 1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar i Experience Platform för data som ska importeras.
 1. [Lägg till ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) etiketter för dataanvändning i Experience Platform i datauppsättningen för styrning.
