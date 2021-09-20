@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: ec32344078e8bad9639d8d11ce93ed68fda186f3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 0%
    + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
-   + [Reseanalys över flera kanaler](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
-   + [Anropsavböjning](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Kundresor{#customer-journeys}
    + [Översikt](/help/blueprints/customer-journeys/overview.md)
    + [Batchmeddelanden och Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
