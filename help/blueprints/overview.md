@@ -2,9 +2,9 @@
 title: Digital Experience-utkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: d35b3cc34e0b3ab6fce9fc15a96e5f1183b0a0fd
+source-git-commit: d2b0643bd567a10b27591d22480db1bde2a0a36a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan h
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><img alt="miniatyrbild för utkast för digital beteendedatakonsolidering" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>Konsolidering av digitala beteendedata</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><img alt="miniatyrbild för utkast för digital beteendedatakonsolidering" src="customer-journey-analytics/assets/CJA.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><strong>Reseanalys över flera kanaler</strong></a></div>
     <p><em>Få en samlad bild av kundernas beteende i olika kanaler.</em></p>
   </td>
 </tr>
