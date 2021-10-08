@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 5e93d3a5a09a3a20418ec7e563b93d22aef3ddc7
+source-git-commit: fd4ca13589f988605bfd7a3bdf64c43cd9acad68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 ## Program
 
-* [!UICONTROL Kunddataplattform i realtid]
+* [!UICONTROL Real-time Customer Data Platform]
 * Adobe Target
 * Adobe Audience Manager (valfritt): Lägger till målgruppsdata från tredje part, samverkansbaserad enhetsgraf, möjlighet att visa upp plattformssegment i Adobe Analytics samt möjlighet att visa upp Adobe Analytics-segment i Platform
 * Adobe Analytics (valfritt): Lägger till möjligheten att skapa segment baserat på historiska beteendedata och finindelad segmentering från Adobe Analytics-data
@@ -57,7 +57,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 Identitetskrav
 
 * Att dela målgrupper från Adobe Experience Platform till Adobe Target kräver att ECID används som identitet.
-* Alternativa identiteter kan användas för att dela Experience Platform-målgrupper till Adobe Target via Audience Manager, eftersom Audience Manager kan matcha alternativa ID:n till ett ECID så länge som både ECID och det alternativa ID:t samlas in till Audience Manager och använder samma ID-namnutrymme i både Audience Manager och Experience Platform. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID krävs fortfarande för den slutliga målgruppsdelningen i Adobe Target.
+* Alternativa identiteter kan även användas för att dela Experience Platform-målgrupper med Adobe Target via Audience Manager. Experience Platform aktiverar målgrupper till Audience Manager via följande namnutrymmen som stöds: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID krävs fortfarande för den slutliga målgruppsdelningen i Adobe Target.
 
 | Program/tjänst | Nödvändigt bibliotek | Anteckningar |
 |---|---|---|
