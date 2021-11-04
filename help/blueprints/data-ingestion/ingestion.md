@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 761b60e15c518aec2e295be0a45275bafe59479e
+source-git-commit: 642143ea2e2a28f66dd7b56a807fa952c2f5b4ac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Datakompilering innefattar mappning av källdata till XDM-schema (Experience Dat
 
 ## Arkitektur
 
-<img src="assets/data_ingestion.png" alt="Referensarkitektur för dataförberedelse och matningsutkast" style="border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.png" alt="Referensarkitektur för dataförberedelse och matningsutkast" style="border:1px solid #4a4a4a" />
 
 ## Dataöverföringsskydd
 
@@ -36,7 +36,7 @@ Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för data
 | Direktuppspelningskällor | Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</li></ul>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors) |
 | API för direktuppspelning | Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</li><li>7 GB/timme</li></ul>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=en#what-can-you-do-with-streaming-ingestion%3F) |
 | ETL-verktyg | Använd ETL-verktygen för att modifiera och omvandla företagsdata innan de förs in i Experience Platform.<br><br>Svarstid:<ul><li>Tidsinställningen beror på den externa ETL-verktygets schemaläggning, och då tillämpas standardrutorna för intag baserat på den metod som används för intaget.</li></ul> |
-| Batchkällor | Schemalagd hämtning från källor<br>Latens: ~ 200 GB/timme<br><br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors)<br>[Video Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html) |
+| Batchkällor | Schemalagd hämtning från källor<br>Svarstid: ~ 200 GB/timme<br><br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors)<br>[Video Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html) |
 | Batch-API | Svarstid:<ul><li>Batchintag till profil beroende på storlek och trafikbelastning ~45 minuter</li><li>Tillförsel av data till sjön i batch beroende på storlek och trafikbelastning</li></ul>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=en#batch) |
 | Adobe Application Connectors | Automatiskt importera data som hämtas från Adobe Experience Cloud-program<ul><li>Adobe Analytics: [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors) och [Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)</li><li>Audience Manager: [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en#connectors) och [Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)</li></ul> |
 
@@ -45,9 +45,9 @@ Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för data
 
 | Metoder för dataförberedelse | Beskrivning |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!UICONTROL Data Science Workspace]  - Data Prep | Modelldriven omvandling, skriptbaserad omvandling.<br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
-| Externt ETL-verktyg ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica] och så vidare) | Utför komplexa omformningar i ETL-verktygen och använd Experience Platform [!UICONTROL API:er för flödestjänsten] eller källanslutningar för att importera resulterande data. |
-| [!UICONTROL Frågetjänst]  - Datapreposition | Sammanfogar, delar, sammanfogar, omformar, frågar och filtrerar data till en ny datauppsättning. Använda Skapa tabell som markerad (CTAS) <br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
+| [!UICONTROL Datavetenskapens arbetsyta] - Dataprep | Modelldriven omvandling, skriptbaserad omvandling.<br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
+| Externt ETL-verktyg ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica]och så vidare) | Utför komplexa omvandlingar med ETL-verktyg och använd Experience Platform som standard [!UICONTROL Flödestjänst] API:er eller källanslutningar för import av resulterande data. |
+| [!UICONTROL Frågetjänst] - Dataprep | Sammanfogar, delar, sammanfogar, omformar, frågar och filtrerar data till en ny datauppsättning. Använda Skapa tabell som markerad (CTAS) <br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
 | Funktionerna XDM-mappning och dataförberedelse (strömning och batch) | Mappa källattribut i CSV- eller JSON-format till XDM-attribut vid förtäring av Experience Platform.<br>Beräkna funktioner för data när de importeras. d.v.s. dataformatering, uppdelning, sammanfogning osv.<br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
 
 ## Relaterade blogginlägg
