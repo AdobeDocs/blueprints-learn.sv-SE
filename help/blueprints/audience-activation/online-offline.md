@@ -4,9 +4,9 @@ description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: e4e4838813d68ed3dc209c71354a86c1af264f1a
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Använd offlineattribut och händelser som offlineorder, transaktioner, CRM elle
 
 Aktivera målgrupper för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer.
 
-Aktiveringen med online- och offlinedatabilder är i linje med [målgrupps- och profilaktiveringen med Experience Cloud Applications Blueprint](platform-and-applications.md). Mer information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications-utkast](platform-and-applications.md)   som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
+Aktiveringen med online- och offlinedatabilder är i linje med [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md). Ytterligare information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md)   som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
 
 ## Användningsexempel
 
@@ -34,7 +34,7 @@ Aktiveringen med online- och offlinedatabilder är i linje med [målgrupps- och 
 
 ### Aktivering med online- och offlinedata med destinationer
 
-<img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrails
@@ -43,30 +43,30 @@ Aktiveringen med online- och offlinedatabilder är i linje med [målgrupps- och 
 
 ## Implementeringssteg
 
-1. [Skapa ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) scheman för data som ska importeras.
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
-1. [Konfigurera rätt identiteter och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) identitetsnamnutrymmen i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
+1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) på schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
 1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
-1. [Tillhandahåll  [!UICONTROL realtidsdelning av kunddata ] Platformsegment ](https://www.adobe.com/go/audiences) mellan Experience Platform och Audience Manager för målgrupper som definieras i Experience Platform som ska delas med Audience Manager.
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) segmentering i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
-1. [Konfigurera ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) mål för delning av profilattribut och målgruppsmedlemskap till önskade mål.
+1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till Experience Platform.
+1. [Tillhandahållande [!UICONTROL Real-time Customer Data Platform] segmentdelning](https://www.adobe.com/go/audiences) mellan Experience Platform och Audience Manager för målgrupper som definieras i Experience Platform som ska delas med Audience Manager.
+1. [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
+1. [Konfigurera mål](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) för delning av profilattribut och målgruppsmedlemskap till önskade mål.
 
 ## Överväganden gällande implementering
 
-* När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som är nödvändiga för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL kundprofilen ] i realtid.
+* När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som krävs för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL Kundprofil i realtid].
 
-* För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. För närvarande delas inte kundnamnutrymmen. Målgrupper från Experience Platform kan delas via Audience Manager när de nödvändiga destinationsidentiteterna ingår i [!UICONTROL kundprofilen i realtid], eller där identiteter i [!UICONTROL kundprofilen i realtid] kan relateras till de önskade destinationsidentiteterna som är länkade i Audience Manager.
+* För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. För närvarande delas inte kundnamnutrymmen. Målgrupper från Experience Platform kan delas via Audience Manager-destinationer när de nödvändiga destinationsidentiteterna ingår i [!UICONTROL Kundprofil i realtid]eller var i [!UICONTROL Kundprofil i realtid] kan kopplas till de önskade målidentiteter som är länkade i Audience Manager.
 
 ## Relaterad dokumentation
 
-* [[!UICONTROL Beskrivning av kunddataplattform ] i realtid](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
+* [[!UICONTROL Real-time Customer Data Platform] Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
 
 ## Relaterade videor och Tutorials
 
-* [[!UICONTROL Kunddata ] Platformoverview i realtid](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
-* [Demo av  [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)
+* [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
+* [Demo av [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)
 * [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)

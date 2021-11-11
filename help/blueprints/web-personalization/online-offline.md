@@ -5,7 +5,7 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: fd4ca13589f988605bfd7a3bdf64c43cd9acad68
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 ## Arkitektur
 
-<img src="assets/online_offline_personalization_with_apps.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_personalization_with_apps.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrails
 
@@ -41,7 +41,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network].
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network].
 1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
 
 ### 1. SDK och Edge-strategi för plattformar för webb/mobiler
@@ -50,7 +50,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 ### 2. Programspecifik SDK-metod
 
-<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Krav för implementering
 
@@ -73,10 +73,10 @@ Identitetskrav
 
 ## Implementeringssteg
 
-1. [Implementera Adobe ](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) Targeting för webb- och mobilapplikationer
-1. [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)  (valfritt)
-1. [Implementera Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)   (valfritt)
-1. [Implementera kundprofil för Experience Platform och  [!UICONTROL realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
+1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer
+1. [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html) (valfritt)
+1. [Implementera Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)  (valfritt)
+1. [Implementera Experience Platform och [!UICONTROL Kundprofil i realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 1. Implementera [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html) eller [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
    >[!NOTE]
    >

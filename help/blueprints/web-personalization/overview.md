@@ -1,11 +1,11 @@
 ---
 title: Webb- och mobilpersonalisering
-description: Leverera personaliserat webb- och mobilinnehåll med [!UICONTROL kundprofil i realtid].
+description: Leverera personaliserat webb- och mobilinnehåll med [!UICONTROL Kundprofil i realtid].
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
-| **[Webb-/mobilpersonalisering med online- och offlinedata](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Kunddataplattform i realtid]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Webb-/mobilpersonalisering med online- och offlinedata](online-offline.md)** | <ul><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Target</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 
 ## GuarDRAG för webb- och mobilpersonalisering
 
@@ -27,7 +27,7 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda målgr
 
 ### Online/Offline Personalization GuarDRAW-diagram
 
-<img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Relaterade blogginlägg
 

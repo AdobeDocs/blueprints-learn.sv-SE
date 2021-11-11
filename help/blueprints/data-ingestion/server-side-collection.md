@@ -4,9 +4,9 @@ description: Strömma insamlade data från Experience Platform SDK:er till desti
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ I skissen Enterprise Data Collection (på serversidan) visas hur data som samlat
 
 ## Arkitektur
 
-<img src="assets/enterprise_collection.svg" alt="Referensarkitektur för företagsdatainsamling" style="border:1px solid #4a4a4a" />
+<img src="assets/enterprise_collection.svg" alt="Referensarkitektur för företagsdatainsamling" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Relaterad dokumentation
 

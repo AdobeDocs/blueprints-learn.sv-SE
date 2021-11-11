@@ -5,7 +5,7 @@ landing-page-description: Lär dig personalisera baserat på onlinebeteende och 
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: aa0cb68acc93821b978e58f638f8ab16a33cdfe6
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 ## Arkitektur
 
-<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:80%; border:1px solid #4a4a4a" />
 
 
 ## Guardrails
@@ -41,7 +41,7 @@ Som standard tillåter segmentdelningstjänsten att högst 75 målgrupper delas 
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Platform Mobile SDK] och [!UICONTROL Edge Network].
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network].
 1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
 
 ### 1. SDK och Edge-strategi för plattformar för webb/mobiler
@@ -50,7 +50,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 ### 2. Programspecifik SDK-metod
 
-<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Krav för implementering
 
@@ -65,7 +65,7 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 ## Implementeringssteg
 
-1. [Implementera Adobe ](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) Targeting för webb- och mobilapplikationer.
+1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer.
 
    Om du använder Audience Manager eller Adobe Analytics:
 
@@ -78,8 +78,8 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
    >Varje program måste använda Experience Cloud-ID och vara en del av samma Experience Cloud-organisation för att ge möjlighet till målgruppsdelning mellan program.
 
 1. [Begär etablering för tjänsterna Personer och Målgruppsdelning (delade målgrupper)](https://www.adobe.com/go/audiences)
-1. Skapa segment i [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) eller [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html) och [konfigurera dessa målgrupper för delning till Experience Cloud (om du använder Audience Manager eller Adobe Analytics)](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-1. När målgrupperna finns i Adobe Target kan de användas för [målgruppsupplevelser med Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
+1. Bygg segment i [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) eller [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html) och [konfigurera dessa målgrupper för delning till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)  (om du använder Audience Manager eller Adobe Analytics)
+1. När målgrupperna finns i Adobe Target kan de användas för [målinrikta upplevelser med Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
 
 ## Relaterad dokumentation
 

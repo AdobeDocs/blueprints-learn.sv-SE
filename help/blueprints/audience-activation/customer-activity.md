@@ -1,19 +1,19 @@
 ---
 title: Kundaktivitetshubbsknapp - översikt
-description: '[!UICONTROL Kundprofiler i realtid ] för att ge kontext för support och försäljning som utförs av agenter.'
+description: '[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext för support och försäljning som utförs av agenter.'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
 # Kundaktivitetshubbsknapp - översikt
 
-Kundaktivitetshubben visar hur externa program kan komma åt Adobe Experience Platform [!UICONTROL kundprofil i realtid].
+Kundaktivitetshubben visar hur externa program kan komma åt Adobe Experience Platform [!UICONTROL Kundprofil i realtid].
 
 Externa program kan komma åt profiler med en API-GET-begäran. Attribut, händelser, segmentmedlemskap och modelldrivna funktioner som lagras i profilen kan sedan användas i dessa externa program som inte kommer från Adobe.
 
@@ -29,25 +29,25 @@ Med den här funktionen kan ni skapa ett avancerat sammanhang när en kund ringe
 
 ## Arkitektur
 
-<img src="assets/customer_activity_hub.svg" alt="Referensarkitektur för Customer Activity Hub-utkast" style="border:1px solid #4a4a4a" />
+<img src="assets/customer_activity_hub.svg" alt="Referensarkitektur för Customer Activity Hub-utkast" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrails
 
-* [Guardrails for  [!UICONTROL Real-time Customer ] Profiledata](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardrails för [!UICONTROL Kundprofil i realtid] data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ## Implementeringssteg
 
-1. [Skapa ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) scheman för data som ska importeras.
-1. [Skapa ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) datauppsättningar för data som ska importeras.
-1. [Konfigurera rätt identiteter och ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) identitetsnamnutrymmen i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
+1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) på schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
 1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ingest ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) data into Experience Platform.
+1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till Experience Platform.
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html).
-1. Använd [Entities-API:t för att söka efter ett profilattribut](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html), antingen från postentiteten eller upplevelsehändelseentiteten.
+1. Använd [Enheter-API för att söka efter ett profilattribut](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html), antingen från postenheten eller från upplevelsehändelseenheten.
 
 ## Relaterad dokumentation
 
 * [Adobe Experience Platform Activation product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform0.html)
-* [[!UICONTROL Kundprofildokumentation ] i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)
+* [[!UICONTROL Kundprofil i realtid] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)
 * [Profilskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [API för profilsökning](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
