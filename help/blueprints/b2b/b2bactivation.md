@@ -3,8 +3,7 @@ title: B2B-aktivering
 description: Leverera kontobaserade målgrupper och profilbaserade kundupplevelser med Real-time Customer Data Platform ​.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-exl-id: null
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: bc8aab586175ab004614764645ee8a86713b407b
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
