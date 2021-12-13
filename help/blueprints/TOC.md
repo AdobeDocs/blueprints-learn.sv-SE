@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: e8a1ba803fd085a8323830c5013c35ad00a1147e
+source-git-commit: 18c5ac6e01636d4d3b0ea0eb2edb92c949c870c5
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,10 @@ ht-degree: 0%
    + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
    + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
-+ B2B-aktivering och marknadsföring{#b2b-activation}
++ B2B-analys och aktivering{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
+   + [B2B-analys](/help/blueprints/b2b/b2banalysis.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
 + Kundresor{#customer-journeys}
