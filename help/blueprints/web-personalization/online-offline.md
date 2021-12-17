@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: b52346f224964b50ff5e5e553eca88670b7580f3
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 * Optimering av landningssidor
 * Riktad beteendeprofil och offlineprofil
 * Personalisering baserad på tidigare produkt-/innehållsvyer, produkt-/innehållstillhörighet, miljöattribut, målgruppsdata från tredje part och demografiska data utöver offlineinsikter som transaktioner, lojalitet och CRM-data samt modellerade insikter
+* Dela och inrikta er på målgrupper som definieras i Real-time Customer Data Platform på webbplatser och mobilappar med Adobe Target.
 
 ## Program
 
@@ -28,6 +29,46 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 * Adobe Target
 * Adobe Audience Manager (valfritt): Lägger till målgruppsdata från tredje part, samverkansbaserad enhetsgraf, möjlighet att visa upp plattformssegment i Adobe Analytics samt möjlighet att visa upp Adobe Analytics-segment i Platform
 * Adobe Analytics (valfritt): Lägger till möjligheten att skapa segment baserat på historiska beteendedata och finindelad segmentering från Adobe Analytics-data
+
+## Integrationsmönster
+
+<table class="tg" style="undefined;table-layout: fixed; width: 790px">
+<colgroup>
+<col style="width: 20px">
+<col style="width: 276px">
+<col style="width: 229px">
+<col style="width: 265px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-y6fn">#</th>
+    <th class="tg-f7v4">Integreringsmönster</th>
+    <th class="tg-y6fn">Funktion</th>
+    <th class="tg-f7v4">Krav</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">RTCDP-strömning och batchmålgruppsdelning till Target och Audience Manager via Audience Sharing Service Approach</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">- Dela strömnings- och gruppmålgrupper från RTCDP till Target och Audience Manager via tjänsten Audience Sharing. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 3.</span></td>
+    <td class="tg-73oq">- Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- Identiteten måste matchas med ECID för att kunna dela till kanten för att Target ska kunna agera på den. AAM har en separat lista över godkända identiteter att matcha mot<br>- WebSDK-distribution krävs inte för den här integreringen.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-73oq">RTCDP-strömning och gruppmålgruppsdelning till Target via Edge-metoden</td>
+    <td class="tg-0lax">- Dela strömnings- och gruppmålgrupper från RTCDP till Target via Edge Network. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 3.</td>
+    <td class="tg-73oq"><span style="text-decoration:none">- I betaversion</span><br>- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>WebSDK krävs inte. WebSDk och AT.js stöds. <br>- Om AT.js används stöds endast profilsökning mot ECID. <br>- För anpassade ID-namnområdessökningar på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet i identitetskartan.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">3</td>
+    <td class="tg-73oq">Utvärdering av RTCDP-segment i realtid på Edge som delas med Target via Edge Network med WebSDK.</td>
+    <td class="tg-0lax">- Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.</td>
+    <td class="tg-73oq"><span style="text-decoration:none">- I betaversion</span><br>- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- WebSDK måste implementeras.<br>- Stöds även via API.</td>
+  </tr>
+</tbody>
+</table>
+
 
 ## Arkitektur
 
@@ -78,10 +119,11 @@ Identitetskrav
 1. [Implementera Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)  (valfritt)
 1. [Implementera Experience Platform och [!UICONTROL Kundprofil i realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 1. Implementera [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html) eller [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+1. [Begär etablering för målgruppsdelning mellan Experience Platform och Adobe Target (delade målgrupper)](https://www.adobe.com/go/audiences)
    >[!NOTE]
    >
-   >Varje program måste använda Experience Cloud-ID och vara en del av samma Experience Cloud-organisation för att ge möjlighet till målgruppsdelning mellan program.
-1. [Begär etablering för målgruppsdelning mellan Experience Platform och Adobe Target (delade målgrupper)](https://www.adobe.com/go/audiences)
+   >När du använder tjänsten Audience Sharing mellan RTCDP och Adobe Target måste målgrupperna delas med Experience Cloud-ID och vara en del av samma Experience Cloud-organisation. Stöd för andra identiteter än ECID kräver att WebSDK och Experience Edge Network används.
+
 
 ## Relaterad dokumentation
 
