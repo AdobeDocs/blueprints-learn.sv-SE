@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 18c5ac6e01636d4d3b0ea0eb2edb92c949c870c5
+source-git-commit: 12a791205a2d8ee1cd0a7184eba54340f7d9ab1d
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 
 + [Översikt](/help/blueprints/overview.md)
 + [Se alla användningsfall](/help/blueprints/use-cases.md)
++ Möt alla framgångar i branschen{#industry-success-stories}
+   + [Översikt](/help/blueprints/industry-success-stories/overview.md)
+   + [Kläder](/help/blueprints/industry-success-stories/apparel.md)
+   + [Detaljhandel](/help/blueprints/industry-success-stories/retail.md)
+   + [Telekommunikation](/help/blueprints/industry-success-stories/telecommunications.md)
+   + [Resor och turism](/help/blueprints/industry-success-stories/travel-hospitality.md)
 + Arkitekturöversikter{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
@@ -26,10 +32,9 @@ ht-degree: 0%
    + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
    + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
-+ B2B-analys och aktivering{#b2b-activation}
++ B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
-   + [B2B-analys](/help/blueprints/b2b/b2banalysis.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
 + Kundresor{#customer-journeys}
