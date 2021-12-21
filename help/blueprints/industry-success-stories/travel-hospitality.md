@@ -3,9 +3,9 @@ title: Resor- och turismbranschen - aktivering med online- och offlinedata
 description: Realtidsbeslut med en samlad bild av kundbeteendet över olika kanaler.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
-source-git-commit: 7a81ea5d71355323a784e12207542fb7dd6b286b
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,18 +26,19 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 
 ## Affärsvärde levererat
 
-| Mål | Taktik | Värde ej låst |
+| Mål | Taktik | Värdet upplåst |
 |---|---|---|
-| **Gör alla upplevelser relevanta för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering:</strong>Skapa 3X e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens:</strong>Gästbelöningsprogram genomför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering:</strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en affärsanpassad kontrollpanel för resa och attribuering som även minskar latensen (i dagar)</li><li><strong>Framtidssäkra tekniklösningar:</strong>Tio miljoner profiler över 7 kanaler som är klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
+| **Gör alla upplevelser relevanta för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering: </strong>Skapa 3X e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens: </strong>Gästbelöningsprogram genomför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering: </strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en affärsanpassad kontrollpanel för resa och attribuering som även minskar latensen (i dagar)</li><li><strong>Framtidssäkrad teknikhög: </strong>Tio miljoner profiler över 7 kanaler som är klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
 
-## Key Blueprint: Aktivering med online- och offlinedata
+## Primär blå: Aktivering med online- och offlinedata
 
-<strong>Beskrivning</strong>
+### Beskrivning
+
 <ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer.</li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></li></ul>
 
-<strong>Experience Cloud-program</strong>
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager</li><li>Customer Journey Analytics</li></ul> 
-<br>
+### Experience Cloud-program
+
+<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager</li><li>Customer Journey Analytics</li></ul>
 
 ### Blåtrycksarkitektur
 

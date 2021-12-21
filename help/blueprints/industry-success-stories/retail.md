@@ -3,7 +3,7 @@ title: Detaljhandel - aktivering med Experience Cloud-program
 description: Leverera kundupplevelser i realtid i digitala medier, e-post, push och webbkanaler.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
-source-git-commit: 6da7ce0e5ae27fd7946c57f1a05a55a98026839d
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -22,18 +22,19 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 
 ## Affärsvärde levererat
 
-| Mål | Taktik | Värde ej låst |
+| Mål | Taktik | Värdet upplåst |
 |---|---|---|
-| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Google och Adobe Target för att underlätta investeringar i media och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker den här återförsäljarens profilarkiv, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Direktuppspelning av segment i Google-medier för attribuering och undertryckande av annonser</li><li><strong>Webbpersonalisering i realtid:</strong>Strömma segment ut till Adobe Target för att kunna aktivera på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid berikade med alla tillgängliga kunddata och aktiverade realtid i e-post- och push-kanaler</li></ul> |
+| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Google och Adobe Target för att underlätta investeringar i media och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Direktuppspelning av segment i Google-medier för attribuering och undertryckande av annonser</li><li><strong>Webbpersonalisering i realtid:</strong>Strömma segment ut till Adobe Target för att kunna aktivera på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid berikade med alla tillgängliga kunddata och aktiverade realtid i e-post- och push-kanaler</li></ul> |
 
-## Key Blueprint: Målgrupp och aktivering med Experience Cloud-program
+## Primär blå: Målgrupp och aktivering med Experience Cloud-program
 
-<strong>Beskrivning</strong>
+### Beskrivning
+
 <ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul>
 
-<strong>Experience Cloud-program</strong>
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul> 
-<br>
+### Experience Cloud-program
+
+<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul>
 
 ### Blåtrycksarkitektur
 
