@@ -5,9 +5,9 @@ solution: Experience Platform, Campaign, Analytics, Target, Audience Manager, Ma
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: d9ba365e53d78291bca15fd10fe6e49e54c331f6
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,13 @@ Arkitekturen nedan visar hur Adobe Experience Cloud-program och Adobe Experience
 <img src="assets/aec_experience_architecture.svg" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 <br>
+Arkitekturdiagrammet nedan visar hur Adobe Experience Platform kan koppla ihop och integreras med Adobe Experience Cloud-programmen för att uppnå en personalisering i stor skala över data-, innehålls- och upplevelseleverans.
+<br>
+<br>
+<img src="assets/personalization_at_scale.png" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
+<br>
+<br>
 Arkitekturdiagrammet nedan visar hur Adobe Experience Platform kan ansluta till och integreras med Adobe Experience Cloud-programmen.
-
+ <br>
+<br>
 <img src="assets/experience_cloud.svg" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
