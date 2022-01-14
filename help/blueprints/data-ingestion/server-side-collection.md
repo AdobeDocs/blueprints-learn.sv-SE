@@ -4,9 +4,9 @@ description: Strömma insamlade data från Experience Platform SDK:er till desti
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: 0415f2fb46b3a8d667c938c6ae13affb683530c6
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,7 @@ I skissen Enterprise Data Collection (på serversidan) visas hur data som samlat
 
 * [Dokumentation för vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 * [Videofilmer om hur du vidarebefordrar händelser](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html)
+* [Lektion om vidarebefordran av händelser](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) självstudiekurs för Web SDK
 
 ## Relaterade blogginlägg
 

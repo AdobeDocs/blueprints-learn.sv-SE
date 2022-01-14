@@ -4,9 +4,9 @@ description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: c51ea51266ef61d5fdfdb50f4e0c1316790b1986
+source-git-commit: 0415f2fb46b3a8d667c938c6ae13affb683530c6
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Aktiveringen med online- och offlinedatabilder är i linje med [Målgrupps- och 
 
 * Målgruppsmedlemskap från RT-CDP delas med Audience Manager på ett strömmande sätt så snart segmentutvärderingen är klar och skriven i kundprofilen i realtid, oavsett om segmentutvärderingen gjordes i batch eller strömning. Om den kvalificerade profilen innehåller regional routningsinformation för relaterade profilenheter är målgruppsmedlemskapet från RTCDP kvalificerat för direktuppspelning på associerad Audience Manager Edge. Om profilerna från RTCDP inte innehåller någon regional routningsinformation skickas profilmedlemskapen till Audience Manager navet för batchbaserad utvärdering och aktivering. Profiler som är berättigade till Edge-aktivering aktiveras inom några minuter efter att segment kvalificerats från RTCDP. Profiler som inte är kvalificerade för Edge-aktivering kvalificeras i Audience Manager nav och kan ha en 12-24-timmars tidsram för bearbetning.
 
-* Regional routningsinformation som profilens relaterade enhetsinformation lagras på i Audience Manager Edge kan samlas in från Analytics Data Connector när Analytics-data har aktiverats för att samlas in i en profil, eller direkt från WebSDK som en separat profilpostklassdatauppsättning som sedan måste aktiveras för en profil.
+* Regional routningsinformation som profilens relaterade enhetsinformation lagras på i Audience Manager Edge kan samlas in från Analytics Data Connector när Analytics-data har aktiverats för att samlas in i en profil, eller direkt från Web SDK som en separat profilpostklassdatauppsättning som sedan måste aktiveras för en profil.
 
 * För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Anpassade namnutrymmen delas för närvarande inte.
 
