@@ -3,13 +3,13 @@ title: B2B-analys och aktivering
 description: Leverera kontobaserade målgrupper och profilbaserade kundupplevelser med Real-time Customer Data Platform ​.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
+source-git-commit: 9d0766cba6562066e5d8d7dc5c8983ab6fb1824b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # B2B-analys och aktivering
 
@@ -19,5 +19,6 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[B2B-analys](b2bactivation.md)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
-| **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler.</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
+
+| **[B2B-analys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul>|<ul><li>Adobe Customer Journey Analytics</li></ul>| | **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler.</li></ul>|<ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul>|
+
