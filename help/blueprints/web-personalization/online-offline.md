@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 0746a479d4e651244995a8c355ed4c58b968f0c1
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1146'
 ht-degree: 0%
 
 ---
@@ -58,13 +58,13 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">RTCDP-strömning och gruppmålgruppsdelning till Target via Edge-metoden</td>
     <td class="tg-0lax">- Dela strömnings- och gruppmålgrupper från RTCDP till Target via Edge Network. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 3.</td>
-    <td class="tg-73oq"><span style="text-decoration:none">- I betaversion</span><br>- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>WebSDK krävs inte. WebSDk och AT.js stöds. <br>- Om AT.js används stöds endast profilsökning mot ECID. <br>- För anpassade ID-namnområdessökningar på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet i identitetskartan.</td>
+    <td class="tg-73oq">- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>WebSDK krävs inte. WebSDk och AT.js stöds. <br>- Om AT.js används stöds endast profilsökning mot ECID. <br>- För anpassade ID-namnområdessökningar på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet i identitetskartan.</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq">Utvärdering av RTCDP-segment i realtid på Edge som delas med Target via Edge Network med WebSDK.</td>
     <td class="tg-0lax">- Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.</td>
-    <td class="tg-73oq"><span style="text-decoration:none">- I betaversion</span><br>- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- WebSDK måste implementeras.<br>- Stöds även via API.</td>
+    <td class="tg-73oq">- Målmålet måste konfigureras i RTCDP-mål.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- WebSDK måste implementeras.<br>- Stöds även via API.</td>
   </tr>
 </tbody>
 </table>
@@ -79,6 +79,11 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 Processflödesarkitektur
 
 <img src="assets/RTCDP+Target_flow.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+
+<br>
+
+<img src="assets/RTCDP+Target_sequence.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+
 
 Detaljerad arkitektur
 

@@ -4,7 +4,7 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 12a791205a2d8ee1cd0a7184eba54340f7d9ab1d
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%

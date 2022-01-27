@@ -1,7 +1,6 @@
 ---
-source-git-commit: 8225c25ca54acb10ff9e9dd07d869b0c9a626c0b
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '430'
 ht-degree: 6%
 
@@ -22,7 +21,7 @@ Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra me
 
 ### Mindre ändringar
 
-Om du bidrar med mindre uppdateringar av ditt hjärta kan du gå till artikeln och klicka på länken **Redigera** i artikeln som går till artikelns GitHub-källa. Använd sedan bara GitHub-gränssnittet för att göra uppdateringarna. Mer information finns i den allmänna [handboken för medverkande på Adobe Docs](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Om du bidrar med mindre uppdateringar av ditt hjärta kan du gå till artikeln och klicka på knappen **Redigera** i artikeln som går till artikelns GitHub-källa. Använd sedan bara GitHub-gränssnittet för att göra uppdateringarna. Se det allmänna [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) för mer information.
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkoren.
 
@@ -36,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Stora förändringar för anställda i Adobe
 
-Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience Cloud-lösning och det är ditt jobb att bidra till eller skriva tekniska artiklar bör du använda den privata databasen på `https://git.corp.adobe.com/AdobeDocs`.
+Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience Cloud-lösning och det är ditt jobb att bidra till eller skriva tekniska artiklar bör du använda det privata arkivet på `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -44,7 +43,7 @@ Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience 
 
 Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande redigering eller förgrena rapporten för att göra större insatser.
 
-Mer information finns i [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Se [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) för mer information.
 
 ## Så här använder du kod för att formatera ditt ämne
 
@@ -55,7 +54,7 @@ Alla artiklar i den här databasen använder smaksatt GitHub-kod. Om du inte är
 
 ## Etiketter
 
-I den offentliga databasen tilldelas automatiska etiketter för att hämta begäranden som hjälper oss att hantera pull-arbetsflödet och som hjälper dig att få reda på vad som pågår med din pull-begäran:
+I den offentliga databasen tilldelas automatiska etiketter för att hämta begäranden som hjälper oss att hantera arbetsflödet för pull-begäran och som hjälper dig att få reda på vad som pågår med din pull-begäran:
 
 * **Ändringen har skickats till författaren**: Författaren har underrättats om den väntande pull-begäran.
-* **klar för sammanslagning**: Redo för granskning av vårt team för granskning av pull-förfrågningar.
+* **redo att sammanfogas**: Redo för granskning av vårt team för granskning av pull-förfrågningar.

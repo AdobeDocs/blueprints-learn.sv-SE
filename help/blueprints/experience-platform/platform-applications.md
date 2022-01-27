@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 0e981eba79a4a99c32598a8d018beff7cec1da0e
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Ad Cloud</td>
       <td colspan="1">
         <ul>
-          <li>Målgrupper som definieras i kunddataplattformen i realtid kan delas med Ad Cloud för målgruppsanpassning via Audience Manager.</li>
+          <li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Ad Cloud för målgruppsanpassning via Audience Manager.</li>
         </ul>
       </td>
       <td colspan="1">Ingen aktuell integrering</td>
@@ -88,12 +88,12 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td>Audience Manager</td>
       <td>
         <ul>
-          <li>Målgrupper som definieras i kunddataplattformen i realtid kan delas med Audience Manager för aktivering till cookie-destinationer från tredje part.</li>
+          <li>Publikationer som definieras i Real-time Customer Data Platform kan delas med Audience Manager för aktivering till cookie-destinationer från tredje part.</li>
         </ul>
       </td>
       <td>
         <ul>
-          <li>Data som samlas in och utvärderas kan delas med Experience Platform data sjö- och profibutik. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en">Koppling till Audience Manager-källa</a>
+          <li>Data som samlas in och utvärderas kan delas med Experience Platform data sjö- och profibutik. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en">Audience Manager Source Connector</a>
           </li>
         </ul>
       </td>
@@ -115,12 +115,12 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Campaign Classic</td>
       <td colspan="1">
         <ul>
-          <li>Målgrupper som definieras i kunddataplattformen i realtid kan delas med Campaign Classic som målgrupp för att initiera kampanjer.</li>
+          <li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Campaign Classic som målgrupp för att initiera kampanjer.</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Interaktions- och kampanjdata som samlas in av Campaign kan förtäras av Experience Platform som en datakälla för ytterligare användning i målgruppsuppbyggnaden via kunddataplattformen i realtid och analys via Customer Journey Analytics och Experience Platform Query Service och Data Science Workspace.</li>
+          <li>Interaktions- och kampanjdata som samlas in av Campaign kan förtäras av Experience Platform som en datakälla för ytterligare användning i målgruppsuppbyggnaden via Real-time Customer Data Platform och analys via Customer Journey Analytics och Experience Platform Query Service och Data Science Workspace.</li>
         </ul>
       </td>
       <td colspan="1">
@@ -135,12 +135,12 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Campaign Standard</td>
       <td colspan="1">
         <ul>
-          <li>Målgrupper som definieras i kunddataplattformen i realtid kan delas med Campaign Standarden som målgrupp för att initiera kampanjer.</li>
+          <li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Campaign Standarden som målgrupp för att initiera kampanjer.</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Interaktions- och kampanjdata som samlas in av Campaign kan förtäras av Experience Platform som en datakälla för ytterligare användning i målgruppsuppbyggnaden via kunddataplattformen i realtid och analys via Customer Journey Analytics och Experience Platform Query Service och Data Science Workspace.</li>
+          <li>Interaktions- och kampanjdata som samlas in av Campaign kan förtäras av Experience Platform som en datakälla för ytterligare användning i målgruppsuppbyggnaden via Real-time Customer Data Platform och analys via Customer Journey Analytics och Experience Platform Query Service och Data Science Workspace.</li>
         </ul>
       </td>
       <td colspan="1">
@@ -192,7 +192,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       </td>
       <td colspan="1">
         <ul>
-          <li>Interaktions- och kampanjdata som producerats av Journey Optimizer samlas in i Experience Platform för ytterligare användning i målgruppsuppbyggnaden via kunddataplattformen i realtid och för analys via Customer Journey Analytics, Experience Platform Query Service och Data Science Workspace.</li>
+          <li>Interaktions- och kampanjdata från Journey Optimizer samlas in i Experience Platform för ytterligare användning i målgruppsbyggande via Real-time Customer Data Platform och analys via Customer Journey Analytics, Experience Platform Query Service och Data Science Workspace.</li>
         </ul>
       </td>
       <td colspan="1">
@@ -213,7 +213,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Marketo</td>
       <td colspan="1">
         <ul>
-          <li>Målgrupper som definieras i Customer Data Platform i realtid kan delas med Marketo som målgrupp för att initiera Marketo-kampanjer och uppdatera Marketo-objekt.</li>
+          <li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Marketo som målgrupp för att starta Marketo-kampanjer och uppdatera Marketo-objekt.</li>
         </ul>
       </td>
       <td colspan="1">
@@ -232,7 +232,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">CDP i realtid</td>
       <td colspan="1">
         <ul>
-          <li>Data som hämtas in och samlas in i Experience Platform är datakällan för att sammanställa kundprofiler i realtid som driver kunddataplattformen i realtid.</li>
+          <li>Data som hämtas in och samlas in i Experience Platform är datakällan för att sammanställa kundprofiler i realtid som driver Real-time Customer Data Platform.</li>
         </ul>
       </td>
       <td colspan="1">
@@ -256,13 +256,13 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Mål</td>
       <td colspan="1">
         <ul>
-          <li>Målgrupper som definieras i kunddataplattformen i realtid kan delas med Target och användas i personaliserings- och målinriktningsupplevelser som levereras av Target. </li>
+          <li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Target och användas i personaliserings- och målinriktningsupplevelser som levereras av Target. </li>
           <li>Direct Experience Edge-integrering med Target för segmentmedlemskap i realtid och åtkomst till profilattribut finns på färdplanen.</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Data som samlas in för Target-upplevelser och interaktioner kan samlas in till Experience Platform via Experience Platform Web SDK. Dessa data kan användas i målgruppsuppbyggnaden via kunddataplattformen i realtid och för analys via Customer Journey Analytics,  Experience Platform Query Service och Data Science Workspace.</li>
+          <li>Data som samlas in för Target-upplevelser och interaktioner kan samlas in till Experience Platform via Experience Platform Web SDK. Dessa data kan användas i målgruppsuppbyggnaden via Real-time Customer Data Platform och för analys via Customer Journey Analytics, Experience Platform Query Service och Data Science Workspace.</li>
         </ul>
       </td>
       <td colspan="1">
