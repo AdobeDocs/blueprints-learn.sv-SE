@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,13 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
 + Kundresor{#customer-journeys}
    + [Översikt](/help/blueprints/customer-journeys/overview.md)
-   + [Batchmeddelanden och Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
+   + [Kampanjhanterade Cloud Services](/help/blueprints/customer-journeys/campaign.md)
+   + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
+   + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
+   + [Campaign med Real-Time CDP](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
+   + [Campaign med Journey Optimizer](/help/blueprints/customer-journeys/ajo-and-campaign.md)
    + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
+   + [Meddelanden från tredje part](/help/blueprints/customer-journeys/3rd-party-messaging.md)
 + Datainsamling och förberedelse{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
