@@ -3,9 +3,9 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Experience Platform, Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
+source-git-commit: 2ead62f94e761cd9453be284a9fde3c5803879eb
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,13 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
 | [Meddelanden från tredje part](3rd-party-messaging.md) | Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation | Leverera personlig kommunikation direkt till kunderna när de interagerar med ert varumärke eller företag<br><br>Att tänka på:<br><ul><li>Tredjepartssystem måste ha stöd för innehavartoken för autentisering</li><li>Inget stöd för statiska IP-adresser på grund av multi-tenant-arkitektur</li><li>Var medveten om arkitektoniska begränsningar för system från tredje part när det gäller API-anrop per sekund.  Kunderna kan behöva köpa ytterligare volymer från tredjepartsleverantören för supportvolym från Journey Optimizer</li><li>Stöder inte Offer decisioning i meddelanden eller nyttolaster</li></ul> |
+
+<br>
+
+## Integrationsmönster
+
+| Integrering | Beskrivning | Funktioner |
+| :-- | :--- | :--- |
 | [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda funktioner för realtidsmeddelanden för att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kampanjprogrammet måste finnas i antingen v7 build >21.1 eller v8</li><li>Meddelandegenomströmning</li><ul><li>Campaign v7 - upp till 50 000 per timme</li><li>Campaign v8 - upp till 1 MB per timme</li><li>Campaign Standard - upp till 50 000 per timme</li></ul><li>Ingen begränsning utförs, så användningsfall kräver teknisk kontroll av en företagsarkitekt</li><li>Inget stöd för att använda Offer decisioning i ett meddelande som skickas av Campaign</li></ul> |
 
 <br>
