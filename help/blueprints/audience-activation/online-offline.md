@@ -4,9 +4,9 @@ description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: c4adcc5d23bb0482a348d7b5b2b70b06ff2873e8
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ Aktiveringen med online- och offlinedatabilder är i linje med [Målgrupps- och 
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Audience Manager
 
-* Målgruppsmedlemskap från RT-CDP delas med Audience Manager på ett strömmande sätt så snart segmentutvärderingen är klar och skriven i kundprofilen i realtid, oavsett om segmentutvärderingen gjordes i batch eller strömning. Om den kvalificerade profilen innehåller regional routningsinformation för relaterade profilenheter är målgruppsmedlemskapet från RTCDP kvalificerat för direktuppspelning på associerad Audience Manager Edge. Om profilerna från RTCDP inte innehåller någon regional routningsinformation skickas profilmedlemskapen till Audience Manager navet för batchbaserad utvärdering och aktivering. Profiler som är berättigade till Edge-aktivering aktiveras inom några minuter efter att segment kvalificerats från RTCDP. Profiler som inte är kvalificerade för Edge-aktivering kvalificeras i Audience Manager nav och kan ha en 12-24-timmars tidsram för bearbetning.
+* Målgruppsmedlemskap från RT-CDP delas med Audience Manager på ett strömmande sätt så snart segmentutvärderingen är klar och skriven i kundprofilen i realtid, oavsett om segmentutvärderingen gjordes i batch eller strömning. Om den kvalificerade profilen innehåller regional routningsinformation för relaterade profilenheter är målgruppsmedlemskapet från RTCDP kvalificerat för direktuppspelning på associerad Audience Manager Edge. Om den regionala routningsinformationen har använts på en profil med en tidsstämpel under de senaste 14 dagarna utvärderas den på Audience Manager Edge i direktuppspelning. Om profilerna från RTCDP inte innehåller någon regional routningsinformation eller om den regionala routningsinformationen är mer än 14 dagar gammal, skickas profilmedlemskapen till Audience Manager navet för batchbaserad utvärdering och aktivering. Profiler som är berättigade till Edge-aktivering aktiveras inom några minuter efter att segment kvalificerats från RTCDP, profiler som inte är kvalificerade för Edge-aktivering kvalificeras i Audience Manager nav och kan ha en 12-24-timmars tidsram för bearbetning.
 
-* Regional routningsinformation som profilens relaterade enhetsinformation lagras på i Audience Manager Edge kan samlas in från Analytics Data Connector när Analytics-data har aktiverats för att samlas in i en profil, eller direkt från Web SDK som en separat profilpostklassdatauppsättning som sedan måste aktiveras för en profil.
+* Regional routningsinformation som Edge Audience Manager-profilen lagras på kan samlas in till Experience Platform från Audience Manager, Visitor ID-tjänsten, Analytics, Launch eller direkt från Web SDK som en separat profilpostklass med hjälp av XDM-fältgruppen&quot;data capture region information&quot;.
 
 * För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Anpassade namnutrymmen delas för närvarande inte.
 
