@@ -1,79 +1,93 @@
 ---
-title: Aktivering med online- och offlinedata
-description: Online/offline Audience Activation.
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+title: Aktivering till Google kundmatchning
+description: Aktivering till FGoogle Customer Match.
+solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+source-git-commit: 0a0181a5fd84a645344fadefd47838237807c97c
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-# Aktivering med online- och offlinedata
 
-Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata, tillsammans med onlinebeteende för målinriktning och personalisering.
+# Aktivering till FGoogle Customer Match
 
-Aktivera målgrupper för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer.
-
-Ytterligare information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md) som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
+Importera kunddata från olika källor för att skapa en enda profilvy av kunden, segmentera profilerna för att bygga målgrupper för marknadsföring och personalisering, dela dessa målgrupper med sociala annonsnätverk som Google kundmatchning för att rikta och personalisera kampanjer mot dessa målgrupper. Med Google Customer Match kan ni använda era online- och offlinedata för att nå ut till och återengagera era kunder via Google egna och driftsatta egendomar, som: Sök, handla, Gmail och YouTube.
 
 ## Användningsexempel
 
 * Målgruppsanpassning för kända målgrupper på sociala medier och reklamdestinationer.
 * Anpassning online med online- och offlineattribut.
-* Aktivera målgrupper för kända kanaler, som e-post och SMS.
 
 ## Program
 
-* Adobe Experience Platform
-* [!UICONTROL Real-time Customer Data Platform]
+* Real-time Customer Data Platform
 
 ## Arkitektur
 
-### Aktivering med online- och offlinedata med destinationer
-
-<img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="width:80%; border:1px solid #4a4a4a" />
-<br>
-
-## Guardrails
-
-[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering.](overview.md)
+<img src="../assets/gcm.png" alt="Referensarkitektur för Google kundmatchningsaktivering" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Implementeringssteg
 
-1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
-1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) på schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
-1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till Experience Platform.
-1. [Tillhandahållande [!UICONTROL Real-time Customer Data Platform] segmentdelning](https://www.adobe.com/go/audiences) mellan Experience Platform och Audience Manager för målgrupper som definieras i Experience Platform som ska delas med Audience Manager.
-1. [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
-1. [Konfigurera mål](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) för delning av profilattribut och målgruppsmedlemskap till önskade mål.
+1. Konfigurera identitetsnamnutrymmen som ska användas i profildatakällor.
+   * Använd namnutrymmen som e-post och SHA256-hash för e-post, om sådana finns.
+   * Google Customer Match innehåller en lista över identiteter som stöds. För att kunna aktivera till Google kundmatchning måste en av de identiteter som stöds finnas i profilerna som ska aktiveras.
+   * Följande identiteter stöds för närvarande av Google Customer Match: GAID, IDFA, phone_sha256_e.164, email_lc_sha256, user_id.
+   * Mer information finns i [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+   * Skapa egna namnutrymmen där det inte finns några namnutrymmen i rutan för de tillämpliga identiteterna.
+1. Konfigurera scheman och datauppsättningar för datakällor för profiler.
+   * Skapa profilpostscheman för alla profilpostens källdata.
+      * Ange primär identitet och sekundära identiteter för varje schema.
+      * Aktivera schemat för profilinmatning.
+   * Skapa profilpostdatauppsättningar för alla profilpostens källdata och tilldela det associerade schemat.
+      * Aktivera datauppsättningen för profilinmatning.
+   * Skapa profilupplevelsehändelsescheman för alla profiltidsseriebaserade källdata.
+      * Ange primär identitet och sekundära identiteter för schemat.
+   * Aktivera schemat för profilinmatning.
+   * Skapa data om händelser för profilupplevelser för alla händelsekälldata för profilupplevelser, och tilldela det associerade schemat.
+      * Aktivera datauppsättningen för profilinmatning.
+1. Infoga källdata med en källanslutning i den associerade datauppsättningen som konfigurerats ovan.
+   * Konfigurera källanslutarkontot med autentiseringsuppgifter.
+   * Konfigurera ett dataflöde för att importera data från källfilen eller mappplatsen enligt ett angivet schema till den angivna datauppsättningen.
+   * Mappa fält från källdata till målschemat.
+   * Omvandla alla fält till rätt format för intag till Experience Platform.
+      * Datumomformningar
+      * Omvandla till gemener där det är lämpligt - t.ex. e-postadress
+      * Mönsteromformningar (till exempel telefonnummer)
+      * Lägg till unika post-ID:n för upplevelsehändelseposter om de inte finns i källdata.
+      * Omforma arrayer och mappa typfält för att säkerställa korrekt mappning och modellering av arrayer och kartor för segmentering i Experience Platform.
+1. Konfigurera profilkopplingsprincipen för att säkerställa att identitetsdiagrammet konfigureras korrekt och vilka datauppsättningar som ska ingå i sammanslagningen av profiler.
+1. När dataflödena har körts kontrollerar du att inmatningen av profildata lyckades utan fel.
+   * Inspect identitetsdiagrammet för flera profiler för att säkerställa korrekt behandling av identitetsrelationer.
+   * Inspect anger attribut och händelser för flera profiler för att säkerställa korrekt intag av attribut och händelser till profilerna.
+1. Skapa segment för att skapa profilmålgrupper
+   * Bygg segment i segmentbyggaren med regler mot attribut och händelser.
+   * Spara segmentet för utvärdering. Segmenten utvärderas enligt angivet schema en gång om dagen.
+      * Om segmentreglerna är berättigade till direktuppspelningssegmentering utvärderas segmentet som nya direktuppspelningsdata hämtas för profilerna. Direktuppspelningssegment utvärderas också en gång per dag under den schemalagda gruppsegmenteringen.
+1. Se till att segmentresultaten blir som förväntat.
+   * Granska segmentresultatantalet för de angivna segmenten.
+   * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
+1. Konfigurera leveransen av målgruppen till målet i målkonfigurationen.
+   * Se [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) om du vill ha mer information om hur du konfigurerar Facebook Destination.
+   * När du konfigurerar ett mål väljer du vilken målgrupp du vill aktivera för målet.
+   * Fastställ det schemalagda startdatum som du vill att måldataflödet ska börja leverera målgruppen till målet.
+   * Varje mål har obligatoriska och valfria attribut som ska skickas.
+      * För Google Customer Match måste en av de nödvändiga identiteterna inkluderas och används för att matcha profilerna i målgrupperna i Experience Platform mot en profil som Google Customer Match har som mål.
+   * Varje mål har också en angiven leveranstyp, vare sig det gäller direktuppspelning eller batch, filbaserad eller JSON-nyttolast.
+      * För Google Customer Match levereras målgruppsmedlemskap i direktuppspelande form till en Google Customer Match-slutpunkt i JSON-format.
+      * Målgruppsmedlemskap kommer att levereras i direktuppspelande läge efter utvärderingen av direktuppspelning eller gruppsegmentering i Experience Platform.
+1. Kontrollera att målgruppen har levererats till destinationen som förväntat.
+   * Kontrollera övervakningsgränssnittet för att bekräfta att målgruppen levererades med det förväntade antalet profiler. Målgruppsstorleken bör återspegla det förväntade antalet profiler som är aktiverade, och observera att specifika mål som Google Customer Match kräver vissa fält, till exempel en e-posthash-identitet, och om de inte finns i profilen som är medlem av målgruppen aktiveras de inte till målplatsen.
+   * Kontrollera om det finns profiler som hoppats över för att se om det saknas profiler eller attribut som var obligatoriska saknas.
+   * Kontrollera om det finns andra fel som behöver åtgärdas.
+1. Kontrollera att målgruppen aktiverades till slutmålet med det förväntade antalet målgruppsmedlemskap.
+   * När aktiveringsflödet är klart växlar du till ditt Google Ads-konto. De aktiverade segmenten visas i ditt Google-konto som kundlistor. Observera att beroende på segmentstorleken fyller vissa målgrupper inte i bilden om det inte finns fler än 100 aktiva användare att betjäna.
 
-## Överväganden gällande implementering
+## Guardrails
 
-* När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som krävs för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL Kundprofil i realtid].
-
-### Målgruppsdelning från Real-time Customer Data Platform till Audience Manager
-
-* Målgruppsmedlemskap från RT-CDP delas med Audience Manager på ett strömmande sätt så snart segmentutvärderingen är klar och skriven i kundprofilen i realtid, oavsett om segmentutvärderingen gjordes i batch eller strömning. Om den kvalificerade profilen innehåller regional routningsinformation för relaterade profilenheter är målgruppsmedlemskapet från RTCDP kvalificerat för direktuppspelning på associerad Audience Manager Edge. Om den regionala routningsinformationen har använts på en profil med en tidsstämpel under de senaste 14 dagarna utvärderas den på Audience Manager Edge i direktuppspelning. Om profilerna från RTCDP inte innehåller någon regional routningsinformation eller om den regionala routningsinformationen är mer än 14 dagar gammal, skickas profilmedlemskapen till Audience Manager navet för batchbaserad utvärdering och aktivering. Profiler som är berättigade till Edge-aktivering aktiveras inom några minuter efter att segment kvalificerats från RTCDP, profiler som inte är kvalificerade för Edge-aktivering kvalificeras i Audience Manager nav och kan ha en 12-24-timmars tidsram för bearbetning.
-
-* Regional routningsinformation som Edge Audience Manager-profilen lagras på kan samlas in till Experience Platform från Audience Manager, Visitor ID-tjänsten, Analytics, Launch eller direkt från Web SDK som en separat profilpostklass med hjälp av XDM-fältgruppen&quot;data capture region information&quot;.
-
-* För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Anpassade namnutrymmen delas för närvarande inte.
-
-Målgrupper från Experience Platform kan delas via Audience Manager-destinationer när de nödvändiga destinationsidentiteterna ingår i [!UICONTROL Kundprofil i realtid]eller var i [!UICONTROL Kundprofil i realtid] kan kopplas till de önskade målidentiteter som är länkade i Audience Manager.
+[Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
 ## Relaterad dokumentation
 
-* [[!UICONTROL Real-time Customer Data Platform] Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
-* [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
-* [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
-* [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
-
-## Relaterade videor och Tutorials
-
-* [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
-* [Demo av [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)
-* [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
+Aktivering av Google kundmatchning - [Målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)

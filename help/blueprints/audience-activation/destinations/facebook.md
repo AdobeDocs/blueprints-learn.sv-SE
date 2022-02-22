@@ -3,13 +3,13 @@ title: Aktivering till Facebook anpassade målgrupper
 description: Aktivera för Facebook anpassade målgrupper.
 solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
+source-git-commit: 051b094412419363e5e2406f2e436cc528bd409e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
-
 
 # Aktivering till Facebook anpassade målgrupper
 
@@ -19,7 +19,9 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
 
 * Målgruppsanpassning för kända målgrupper på sociala medier och reklamdestinationer.
 * Anpassning online med online- och offlineattribut.
-Program
+
+## Program
+
 * Real-time Customer Data Platform
 
 ## Arkitektur
@@ -32,7 +34,7 @@ Program
    * Använd namnutrymmen som e-post och SHA256-hash för e-post, om sådana finns.
    * Facebook har en lista över identiteter som stöds. För att kunna aktivera anpassade målgrupper i Facebook måste en av de identiteter som stöds finnas i de profiler som ska aktiveras.
    * Följande identiteter stöds för närvarande av Facebook: GAID, IDFA, phone_sha256, email_lc_sha256, extern_id.
-   * Mer information finns i [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en).
+   * Mer information finns i [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
    * Skapa egna namnutrymmen där det inte finns några namnutrymmen i rutan för de tillämpliga identiteterna.
 1. Konfigurera scheman och datauppsättningar för datakällor för profiler.
    * Skapa profilpostscheman för alla profilpostens källdata.
@@ -67,7 +69,7 @@ Program
    * Granska segmentresultatantalet för de angivna segmenten.
    * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
 1. Konfigurera leveransen av målgruppen till målet i målkonfigurationen.
-   * Se [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en) om du vill ha mer information om hur du konfigurerar Facebook Destination.
+   * Se [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html) om du vill ha mer information om hur du konfigurerar Facebook Destination.
    * När du konfigurerar ett mål väljer du vilken målgrupp du vill aktivera för målet.
    * Fastställ det schemalagda startdatum som du vill att måldataflödet ska börja leverera målgruppen till målet.
    * Varje mål har obligatoriska och valfria attribut som ska skickas.
@@ -88,4 +90,4 @@ Program
 
 ## Relaterad dokumentation
 
-Aktivering till Facebook anpassade målgrupper - [Målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en)
+Aktivering till Facebook anpassade målgrupper - [Målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)
