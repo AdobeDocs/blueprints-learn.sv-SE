@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: a61fa9d1c6a77e9eb32ff363f724de92fbac8585
+source-git-commit: bdbf083e60a94b29debb70976aad47a083b41e32
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 0%
    + [Aktivering med online- och offlinedata](/help/blueprints/audience-activation/online-offline.md)
    + Aktivering till sociala kanaler och reklamkanaler{#audience-activation}
       + [Aktivering till Facebook anpassade målgrupper](/help/blueprints/audience-activation/destinations/facebook.md)
+      + [Aktivering till Google kundmatchning](/help/blueprints/audience-activation/destinations/gcm.md)
    + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
    + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
