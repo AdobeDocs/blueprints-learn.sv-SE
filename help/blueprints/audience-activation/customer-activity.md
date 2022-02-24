@@ -1,12 +1,12 @@
 ---
 title: Kundaktivitetshubbsknapp - översikt
-description: '[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext för support och försäljning som utförs av agenter.'
+description: '"[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext för support och försäljning som utförs av agenter."'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 062701f2ee8d7b2a97db2ee8e75a4d0f42b59b53
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
