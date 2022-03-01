@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 4d02197b437c167a90cbadf16b0b19fc733a9f65
+source-git-commit: 2b2e9a7b849b71ac4b827a3783820a7e4b8ad6f1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 * Adobe Audience Manager (valfritt): Lägger till målgruppsdata från tredje part, samverkansbaserad enhetsgraf, möjlighet att visa Real-time Customer Data Platform-målgrupper i Adobe Analytics samt möjlighet att visa Adobe Analytics målgrupper i Real-time Customer Data Platform
 * Adobe Analytics (valfritt): Lägger till möjligheten att skapa segment baserat på historiska beteendedata och finindelad segmentering från Adobe Analytics-data
 
-## Integrationsmönster
+## Använd scenarier
 
 <table class="tg" style="undefined;table-layout: fixed; width: 790px">
 <colgroup>
@@ -42,7 +42,7 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
 <thead>
   <tr>
     <th class="tg-y6fn">#</th>
-    <th class="tg-f7v4">Integreringsmönster</th>
+    <th class="tg-f7v4">Använd scenarier</th>
     <th class="tg-y6fn">Funktion</th>
     <th class="tg-f7v4">Krav</th>
   </tr>
@@ -52,49 +52,38 @@ Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpers
     <td class="tg-0lax">1</td>
 <td class="tg-73oq">Utvärdering av segment i realtid på den kant som delas från Real-time Customer Data Platform till Target</td>
     <td class="tg-0lax">- Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.<br>- Dessutom kommer alla segment som utvärderas i strömning eller batchmode också att projiceras till Edge Network för att inkluderas i edge segment-utvärderingen och personaliseringen.</td>
-    <td class="tg-73oq">- Datastream måste konfigureras i Experience Edge när tillägget Mål och Experience Platform är aktiverat. DataStream-ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- WebSDK måste implementeras.<br>- Mobile SDK och API-baserad implementering är för närvarande inte tillgängliga</td> 
+    <td class="tg-73oq"><br>- Implementeringsmönster 1 som beskrivs nedan.<br>- Web/Mobile SDK måste implementeras.<br>- Observera att Mobile SDK och API-baserat stöd för segmentering i realtid för närvarande inte är tillgängligt<br>- Datastream måste konfigureras i Experience Edge när tillägget Mål och Experience Platform är aktiverat. DataStream-ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td> 
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge-metoden</td>
     <td class="tg-0lax">- Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via Edge Network. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 1.<br>- Integrationen används vanligtvis för att dela direktuppspelnings- och gruppmålgrupper med traditionella SDK:er i stället för att migrera till Edge Collection och WebSDK som driver både direktuppspelnings- och gruppmålgrupper i realtid enligt beskrivningen i integreringsmönster 1.</td>
-    <td class="tg-73oq">- Datastream måste konfigureras i Experience Edge. DataStream ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- WebSDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, men det krävs för att aktivera edge segment-utvärdering i realtid enligt riktlinjerna i integreringsmönster 1. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet på identitetskartan.</td>
+    <td class="tg-73oq"><br>- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment enligt integreringsmönster 1. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet på identitetskartan.<br>- Datastream måste konfigureras i Experience Edge. DataStream ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target och Audience Manager via Audience Sharing Service</span></td>
     <td class="tg-0lax"><span style="font-weight:400;font-style:normal">- Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target och Audience Manager via tjänsten Audience Sharing.<br> -Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas. I annat fall är integreringsmönstret 1 och 2 att föredra. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 1.</span></td>
-    <td class="tg-73oq">- Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- Identiteten måste matchas med ECID för att kunna dela till kanten för att Target ska kunna agera på den.<br>- WebSDK-distribution krävs inte för den här integreringen.</td>
+    <td class="tg-73oq"><br>- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK-distribution krävs inte för den här integreringen.<br>- Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- Identiteten måste matchas med ECID för att kunna dela till kanten för att Target ska kunna agera på den.</td>
   </tr>
 </tbody>
 </table>
 
+## Arkitektur för scenario 1 och 2 - Delning i realtid, direktuppspelning och grupp av målgrupper via Edge Network
 
-## Arkitektur för integreringsmönster 1
-
-
-Detaljerad arkitektur för integreringsmönster 1
+Arkitektur
 
 <img src="assets/RTCDP+Target.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
-Sekvensdiagram för integreringsmönster 1
+Sekvensdetalj
 
 <img src="assets/RTCDP+Target_flow.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
-
-<br>
-
-<img src="assets/RTCDP+Target_sequence.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 Översikt Arkitektur för integreringsmönster 1
 
 <img src="assets/personalization_with_apps.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a"/>
 
-
-## Implementering av integreringsmönster 1
-
-För segmentering i realtid på Edge [!UICONTROL Platform Web SDK] och [!UICONTROL Edge Network] måste implementeras. [Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md)
-
-### Implementeringssteg för integreringsmönster 1
+### Implementeringssteg för scenario 1, stöder även scenario 2
 
 1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer
 1. [Implementera Experience Platform och [!UICONTROL Kundprofil i realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
@@ -102,12 +91,13 @@ För segmentering i realtid på Edge [!UICONTROL Platform Web SDK] och [!UICONTR
 1. [Konfigurera Edge Network med Edge DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [Aktivera Adobe Target som mål i Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 
-## Implementering av integreringsmönster 2 och 3
+## Arkitektur för scenario 3 - Direktuppspelning och gruppmålgruppsdelning via tjänsten Målgruppsdelning till Adobe Target och Audience Manager
 
-Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js)
-<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
+Arkitektur
 
-### Implementeringssteg för integreringsmönstret 2 och 3
+<img src="assets/audience_share_architecture.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+
+### Implementeringssteg för scenario 3, stöder även scenario 2
 
 1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer
 1. [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html) (valfritt)
@@ -117,6 +107,24 @@ Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasur
 1. [Begär etablering för målgruppsdelning mellan Experience Platform och Adobe Target (delade målgrupper)](https://www.adobe.com/go/audiences) för att dela målgrupper från Experience Platform till Target.
 1. (Valfritt) [Konfigurera Edge Network med Edge DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) (Detta krävs endast för integreringsmönster 2, där målgrupperna inte behöver delas med Audience Manager eller berikas av Audience Manager målgrupper eller data).
 1. (Valfritt) [Aktivera Adobe Target som mål i Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) för att dela direktuppspelnings- och gruppmålgrupper från Real-time Customer Data Platform direkt till Edge jämfört med genom målgruppsdelningstjänsten och Audience Manager.
+
+### Implementeringsmönster
+
+Personalisering online och offline stöds via flera implementeringsmetoder.
+
+### Implementeringsmönster 1 - Stöder användningsscenario 1 och 2. Edge Network med Web/Mobile SDK (rekommenderat tillvägagångssätt)
+
+Använda Edge Network med Web/Mobile SDK
+<img src="assets/web_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
+
+<br>
+Sekvensdiagram
+<img src="assets/RTCDP+Target_sequence.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+
+### Implementeringsmönster 2 - Stöder användningsscenario 3 och 2. Programspecifika SDK:er
+
+Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js)
+<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrails
 
