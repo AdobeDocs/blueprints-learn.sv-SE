@@ -2,9 +2,9 @@
 title: Användningsexempel på digitala upplevelseutkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
-source-git-commit: 3afcc2c293242a3b68ee4e4603ab686f6b309232
+source-git-commit: 657e94baf69ba1898a163a082fbfef36fdfd9a3a
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Vilka av dessa användningsområden är viktiga för ditt företag? Upptäck vil
  <tr>
   <td>Målgruppsanpassning för kända målgrupper på sociala medier och reklamdestinationer.</td>
   <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Online/offline Audience Activation</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html?lang=en">Känd kundaktivering</a></td>
  </tr>
  <tr>
   <td>Anpassning online med online- och offlineattribut.</td>

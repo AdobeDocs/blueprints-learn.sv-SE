@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: bdbf083e60a94b29debb70976aad47a083b41e32
+source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,14 @@ ht-degree: 0%
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
    + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
-   + [Aktivering med online- och offlinedata](/help/blueprints/audience-activation/online-offline.md)
-   + Aktivering till sociala kanaler och reklamkanaler{#audience-activation}
-      + [Aktivering till Facebook anpassade målgrupper](/help/blueprints/audience-activation/destinations/facebook.md)
-      + [Aktivering till Google kundmatchning](/help/blueprints/audience-activation/destinations/gcm.md)
-   + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + Känd kundaktivering{#known-customer-audience-activation}
+      + [Översikt](/help/blueprints/audience-activation/known.md)
+      + Aktivering till sociala kanaler och reklamkanaler{#audience-activation}
+         + [Aktivering till Facebook anpassade målgrupper](/help/blueprints/audience-activation/destinations/facebook.md)
+         + [Aktivering till Google kundmatchning](/help/blueprints/audience-activation/destinations/gcm.md)
+      + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
+      + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
-   + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
