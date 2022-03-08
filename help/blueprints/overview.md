@@ -2,9 +2,9 @@
 title: Digital Experience-utkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
+source-git-commit: 7611084c357e721f954ff980ef88b965609dd5ed
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan h
     <p><em>Skicka meddelanden och påverka kundupplevelserna i realtid med [!UICONTROL Platform] som ett centralt nav.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><img alt="miniatyrbild för Kundaktiveringsutkast" src="audience-activation/assets/online_offline_activation.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><strong>Online/offline Audience Activation</strong></a></div>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="miniatyrbild för Kundaktiveringsutkast" src="audience-activation/assets/online_offline_activation.svg" /></a>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>Online/offline Audience Activation</strong></a></div>
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
   <td>
