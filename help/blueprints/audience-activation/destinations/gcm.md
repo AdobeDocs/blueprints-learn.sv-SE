@@ -3,7 +3,8 @@ title: Aktivering till Google kundmatchning
 description: Aktivering till FGoogle Customer Match.
 solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: 0a0181a5fd84a645344fadefd47838237807c97c
+exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
+source-git-commit: 60d99de0ec64a091662f0921b23aea0725965681
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Aktivering till FGoogle Customer Match
+# Aktivering till Google kundmatchning
 
 Importera kunddata från olika källor för att skapa en enda profilvy av kunden, segmentera profilerna för att bygga målgrupper för marknadsföring och personalisering, dela dessa målgrupper med sociala annonsnätverk som Google kundmatchning för att rikta och personalisera kampanjer mot dessa målgrupper. Med Google Customer Match kan ni använda era online- och offlinedata för att nå ut till och återengagera era kunder via Google egna och driftsatta egendomar, som: Sök, handla, Gmail och YouTube.
 
@@ -47,8 +48,8 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
    * Aktivera schemat för profilinmatning.
    * Skapa data om händelser för profilupplevelser för alla händelsekälldata för profilupplevelser, och tilldela det associerade schemat.
       * Aktivera datauppsättningen för profilinmatning.
-1. Infoga källdata med en källanslutning i den associerade datauppsättningen som konfigurerats ovan.
-   * Konfigurera källanslutarkontot med autentiseringsuppgifter.
+1. Ingest the source data using a source connector into the associated dataset configured above.
+   * Configure the source connector account with credentials.
    * Konfigurera ett dataflöde för att importera data från källfilen eller mappplatsen enligt ett angivet schema till den angivna datauppsättningen.
    * Mappa fält från källdata till målschemat.
    * Omvandla alla fält till rätt format för intag till Experience Platform.
@@ -62,9 +63,9 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
    * Inspect identitetsdiagrammet för flera profiler för att säkerställa korrekt behandling av identitetsrelationer.
    * Inspect anger attribut och händelser för flera profiler för att säkerställa korrekt intag av attribut och händelser till profilerna.
 1. Skapa segment för att skapa profilmålgrupper
-   * Bygg segment i segmentbyggaren med regler mot attribut och händelser.
-   * Spara segmentet för utvärdering. Segmenten utvärderas enligt angivet schema en gång om dagen.
-      * Om segmentreglerna är berättigade till direktuppspelningssegmentering utvärderas segmentet som nya direktuppspelningsdata hämtas för profilerna. Direktuppspelningssegment utvärderas också en gång per dag under den schemalagda gruppsegmenteringen.
+   * Build segments in the segment builder using rules against attributes and events.
+   * Spara segmentet för utvärdering. Segments will evaluate at the specified schedule once a day.
+      * If the segment rules are eligible for streaming segmentation the segment will be evaluated as new streaming data is ingested for the profiles. Streaming segments will also be evaluated once per day during the scheduled batch segmentation.
 1. Se till att segmentresultaten blir som förväntat.
    * Granska segmentresultatantalet för de angivna segmenten.
    * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
@@ -82,7 +83,7 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
    * Kontrollera om det finns profiler som hoppats över för att se om det saknas profiler eller attribut som var obligatoriska saknas.
    * Kontrollera om det finns andra fel som behöver åtgärdas.
 1. Kontrollera att målgruppen aktiverades till slutmålet med det förväntade antalet målgruppsmedlemskap.
-   * När aktiveringsflödet är klart växlar du till ditt Google Ads-konto. De aktiverade segmenten visas i ditt Google-konto som kundlistor. Observera att beroende på segmentstorleken fyller vissa målgrupper inte i bilden om det inte finns fler än 100 aktiva användare att betjäna.
+   * After completing the activation flow, switch to your Google Ads account. De aktiverade segmenten visas i ditt Google-konto som kundlistor. Observera att beroende på segmentstorleken fyller vissa målgrupper inte i bilden om det inte finns fler än 100 aktiva användare att betjäna.
 
 ## Guardrails
 
