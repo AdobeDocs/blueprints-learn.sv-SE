@@ -1,15 +1,16 @@
 ---
-title: Real-Time CDP med Adobe Campaign Blueprint
+title: Real-Time CDP med Adobe Campaign integreringsmönster
 description: Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personaliserade konversationer.
 solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
+source-git-commit: e158cb7c14970a9deb035fde50c9c070b0760203
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
-# Real-Time CDP med Adobe Campaign Blueprint
+# Real-Time CDP med Adobe Campaign integreringsmönster
 
 Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personaliserade konversationer.
 
@@ -24,7 +25,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 ## Arkitektur
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="Referensarkitektur för Batch Messaging och Adobe Experience Platform Blueprint" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="Referensarkitektur för Batch Messaging och Adobe Experience Platform Integration Pattern" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
