@@ -4,9 +4,9 @@ description: Hantera profiler och målgrupper i Experience Platform och dela dem
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 8d9875595cb5cb4a4815fff9213defc2921e647d
+source-git-commit: 2b4e1f7134b240b68a432bfd70fe698ff634857a
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -52,17 +52,19 @@ Se [skyddsutkast på sidan Översikt över målgrupps- och profilaktivering](ove
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Audience Manager
 
+* Mer information finns i följande dokumentation. [Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html).
+
 * Målgruppsmedlemskap från RT-CDP delas med Audience Manager på ett strömmande sätt så snart segmentutvärderingen är klar och skriven i kundprofilen i realtid, oavsett om segmentutvärderingen gjordes i batch eller strömning. Om den kvalificerade profilen innehåller regional routningsinformation för relaterade profilenheter är målgruppsmedlemskapet från RTCDP kvalificerat för direktuppspelning på associerad Audience Manager Edge. Om den regionala routningsinformationen har använts på en profil med en tidsstämpel under de senaste 14 dagarna utvärderas den på Audience Manager Edge i direktuppspelning. Om profilerna från RTCDP inte innehåller någon regional routningsinformation eller om den regionala routningsinformationen är mer än 14 dagar gammal, skickas profilmedlemskapen till Audience Manager navet för batchbaserad utvärdering och aktivering. Profiler som är berättigade till Edge-aktivering aktiveras inom några minuter efter att segment kvalificerats från RTCDP, profiler som inte är kvalificerade för Edge-aktivering kvalificeras i Audience Manager nav och kan ha en 12-24-timmars tidsram för bearbetning.
 
 * Regional routningsinformation som Edge Audience Manager-profilen lagras på kan samlas in till Experience Platform från Audience Manager, Visitor ID-tjänsten, Analytics, Launch eller direkt från Web SDK som en separat profilpostklass med hjälp av XDM-fältgruppen&quot;data capture region information&quot;.
 
-* För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Anpassade namnutrymmen delas för närvarande inte.
+* För aktiveringsscenarier där målgrupper delas från Experience Platform till Audience Manager delas följande identiteter automatiskt: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID. Anpassade namnutrymmen delas för närvarande inte.
 
 * Målgrupper från Experience Platform kan delas via Audience Manager-destinationer när de nödvändiga destinationsidentiteterna ingår i [!UICONTROL Kundprofil i realtid]eller var i [!UICONTROL Kundprofil i realtid] kan kopplas till de önskade målidentiteter som är länkade i Audience Manager.
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Target
 
-* Se [Webb-/mobilpersonalisering med online- och offlinedata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) om du vill ha mer information om delning av profiler och målgrupper från Real-time Customer Data Platform till Target.
+* Se [Web/Mobile Personalization med online- och offlinedata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) om du vill ha mer information om delning av profiler och målgrupper från Real-time Customer Data Platform till Target.
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Campaign och Journey Optimizer
 
