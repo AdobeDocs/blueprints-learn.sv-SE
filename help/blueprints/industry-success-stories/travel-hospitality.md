@@ -3,13 +3,13 @@ title: Resor- och turismbranschen - aktivering med online- och offlinedata
 description: Realtidsbeslut med en samlad bild av kundbeteendet över olika kanaler.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
+source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
-
 
 # Resor- och hotell- och näringslivets utmaning
 
@@ -42,8 +42,4 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 
 ### Blåtrycksarkitektur
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="miniatyrbild för ett rese- och turismföretag som fattar beslut i realtid med en samlad bild av kundbeteendet över olika kanaler." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/online_offline_activation.svg"/></a>
-
-
-
-
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="miniatyrbild för ett rese- och turismföretag som fattar beslut i realtid med en samlad bild av kundbeteendet över olika kanaler." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/known_activation.svg"/></a>

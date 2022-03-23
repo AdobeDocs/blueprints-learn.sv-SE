@@ -4,9 +4,9 @@ description: Online/offline Audience Activation.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 20dd657a85ffeb8ae2f160855369643c2f2743bb
+source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,25 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 
 * Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
+* Destinationer baserade på Audience Manager kan också utnyttjas för personbaserad aktivering i Facebook, LinkedIn och Google Customer Match.
 
 ## Arkitektur
 
-### Aktivering med online- och offlinedata med destinationer
+### Känd kundaktivering via Real-time Customer Data Platform
 
-<img src="assets/online_offline_activation.svg" alt="Referensarkitektur för utkast online/offline i Audience Activation" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Referensarkitektur för Known Customer Activation Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+<br>
+
+### Känd kundaktivering via Audience Manager personbaserade destinationer
+
+<img src="assets/AAM_PBD.svg" alt="Referensarkitektur för Known Customer Activation Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrails
 
 [Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering](overview.md).
 
-## Implementeringssteg
+## Implementeringssteg för Real-time Customer Data Platform
 
 1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
@@ -57,6 +63,12 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 * När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som krävs för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL Kundprofil i realtid].
 
 * Se [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md) om du vill ha mer information om hur du delar målgrupper från Real-time Customer Data Platform till Audience Manager, Analytics, Target, Campaign och Journey Optimizer.
+
+## Implementeringssteg för personbaserade destinationer i Audience Manager
+
+* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html).
+
+* Mer information om hur du implementerar personbaserade destinationer i Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html).
 
 ## Relaterad dokumentation
 
