@@ -1,8 +1,9 @@
 ---
 title: Journey Optimizer med Adobe Campaign Blueprint
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
-solution: Experience Platform, Journey Optimizer, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
+exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -139,7 +140,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
 
    >[!IMPORTANT]
-   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
+   >Mobile-tokens kan behöva samlas in både i Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
 
 <br>
 

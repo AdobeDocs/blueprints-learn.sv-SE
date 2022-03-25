@@ -1,15 +1,15 @@
 ---
 title: Telekommunikationsbranschen - Journey Optimizer för Triggered Messaging
 description: Ge kunderna skräddarsydda erbjudanden i realtid samtidigt som ni effektivt kan introducera nya kunder för långsiktig lojalitet.
-solution: Experience Platform, Journey Optimizer
+solution: Journey Optimizer
 kt: 9486
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
-
 
 # Telekom Industry - problem
 
@@ -42,8 +42,3 @@ Denna begränsning måste lösas för att man ska kunna inleda en tidsbesparande
 ### Blåtrycksarkitektur
 
 <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="miniatyrbild för ett telekomföretag erbjuder skräddarsydda erbjudanden i realtid samtidigt som man effektivt kan introducera nya kunder för långsiktig lojalitet." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>
-
-
-
-
-

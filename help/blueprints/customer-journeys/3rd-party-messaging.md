@@ -1,8 +1,9 @@
 ---
 title: Journey Optimizer - meddelandeplan från tredje part
 description: Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
-solution: Experience Platform, Journey Optimizer
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+solution: Journey Optimizer
+exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
@@ -102,7 +103,7 @@ Meddelandesystem från tredje part
 1. Konfigurera externa datakällor
 1. Konfigurera anpassade åtgärder för program från tredje part
 
-### Konfiguration av Mobile Push (valfritt eftersom tredje part kan samla in token)
+### Mobile Push-konfiguration (valfritt eftersom tredje part kan samla in token)
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
 1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
