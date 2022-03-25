@@ -1,20 +1,20 @@
 ---
 title: Webb- och mobilpersonalisering
 description: Leverera personaliserat webb- och mobilinnehåll med [!UICONTROL Kundprofil i realtid].
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: aba3bfcecac07cb51393fef9e6278d9d6af3e377
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
-# Webb- och mobilpersonalisering
+# Webb och Mobile Personalization
 
-Webb- och mobilpersonalisering är inriktat på möjligheten att använda profil- och målgruppssegmentering i flera olika applikationer för att personalisera och optimera kundupplevelser. Kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner kan utnyttjas för att personalisera layouter, call-to-actions och innehåll.
+Webben och Mobile Personalization behandlar möjligheten att använda profil- och målgruppssegmentering i flera olika tillämpningar för att personalisera och optimera kundupplevelserna. Kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner kan utnyttjas för att personalisera layouter, call-to-actions och innehåll.
 
 <br>
 
@@ -31,7 +31,7 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda profil
 
 <br>
 
-### Online/Offline Personalization GuarDRAW-diagram
+### Online/offline Personalization Guardrail-diagram
 
 <img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 

@@ -2,10 +2,10 @@
 title: Webb-/mobilpersonalisering med online- och offlinedata
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 landing-page-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 0dda473e727ee367f6fa9ad78c9201d18bc064b9
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
 source-wordcount: '1531'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 * Personalisering online med online- och offlinedata och kända profiler
 * Optimering av landningssidor
-* Personalisering baserad på tidigare produkt-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
+* Personalization bygger på tidigare produktions-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
 * Dela och inrikta er på målgrupper som definieras i Real-time Customer Data Platform på webbplatser och mobilappar med Adobe Target.
 
 ## Program
@@ -57,7 +57,7 @@ ht-degree: 0%
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge-metoden</td>
     <td class="tg-0lax">- Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via Edge Network. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 1.<br>- Integrationen används vanligtvis för att dela direktuppspelnings- och gruppmålgrupper med traditionella SDK:er i stället för att migrera till Edge Collection och WebSDK som driver både direktuppspelnings- och gruppmålgrupper i realtid enligt beskrivningen i integreringsmönster 1.</td>
-    <td class="tg-73oq">- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment enligt integreringsmönster 1. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet på identitetskartan.<br>- Datastream måste konfigureras i Experience Edge. DataStream ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td>
+    <td class="tg-73oq">- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera edge segment-utvärdering i realtid enligt beskrivningen i integreringsmönster 1. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet på identitetskartan.<br>- Datastream måste konfigureras i Experience Edge. DataStream ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
@@ -86,7 +86,7 @@ Sekvensdetalj
 
 1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer
 1. [Implementera Experience Platform och [!UICONTROL Kundprofil i realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) säkerställa att målgrupper som skapats aktiveras för Edge genom att konfigurera tillämpliga [sammanfogningsprincip](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy) som aktivt på Edge.
-1. Implementera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Experience Platform Web SDK krävs för edge-segmentering i realtid, men krävs inte för delning av strömnings- och batchmålgrupper från Real-time Customer Data Platform till Target. Observera att stöd för segmentering i realtid via Mobile SDK och API inte är tillgängligt för närvarande.
+1. Implementera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Experience Platform Web SDK krävs för edge-segmentering i realtid, men krävs inte för delning av strömnings- och batchmålgrupper från Real-time Customer Data Platform till Target. Observera att det för närvarande inte finns något stöd för segmentering i realtid via Mobile SDK och API.
 1. [Konfigurera Edge Network med Edge DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [Aktivera Adobe Target som mål i Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 
@@ -113,7 +113,7 @@ Arkitektur
 
 ## Implementeringsmönster
 
-Personalisering online och offline stöds via flera implementeringsmetoder.
+Online och offline Personalization stöds via flera olika implementeringsmetoder.
 
 ### Implementeringsmönster 1 - Stöder användningsscenario 1 och 2. Edge Network med Web/Mobile SDK (rekommenderat tillvägagångssätt)
 

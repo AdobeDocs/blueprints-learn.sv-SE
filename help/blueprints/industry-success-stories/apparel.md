@@ -1,15 +1,15 @@
 ---
 title: Skolindustrin - aktivering med Experience Cloud-tillämpningar
 description: Använde flera utkast för att möjliggöra realtidsmarknadsföring, flerkanalsaktivering och flerkanalsanalys.
-solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
+solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Klädderbranschen - en utmaning
 
@@ -19,7 +19,7 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 
 * Enhetliga meddelanden och aktiveringar i olika kanaler
 * Utlösarbaserad marknadsföring i realtid
-* Personalisering och möjlighet att mäta kampanjens effektivitet och förmåga att utföra kundanalys och attribuering
+* Personalization och möjlighet att mäta kampanjens effektivitet och förmåga att utföra kundanalys och attribuering
 
 ## Adobe
 
@@ -47,7 +47,3 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 ### Blåtrycksarkitektur
 
 <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="miniatyrbild för ett skymningsföretag med målgruppsaktivering, kundreseanalys och kundresorRitningar" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>
-
-
-
-
