@@ -6,9 +6,9 @@ solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 64e7b61c1b4b1d600641fd3299a2b84154873cfb
+source-git-commit: 4a46b7a4c278107c806d3ddd14591c7abe1a13d3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -39,15 +39,13 @@ Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer s
 
 <br>
 
-## Implementeringssteg
+## Implementeringssteg för Audience Manager
 
-1. [Implementera Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
-1. Samla in data i Audience Manager.
-1. Konfigurera signaler och egenskaper för användning i segmentdefinitioner.
-1. Skapa segment i Audience Manager.
-1. Konfigurera destinationer i Audience Manager för att dela målgrupper.
+* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html).
 
-För implementeringssteg av Real-time Customer Data Platform, se [känd kundaktiveringsplan](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+## Implementeringssteg för Real-time Customer Data Platform
+
+* För implementeringssteg för Real-time Customer Data Platform, se följande [dokumentation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 
 ## Relaterad dokumentation
 
