@@ -1,12 +1,12 @@
 ---
 title: Custom Data Science for Profile Enrichment Blueprint
 description: Denna plan visar hur Adobe Experience Platform Data Science Workspace kan använda data i Experience Platform för att utbilda, driftsätta och göra poäng i modeller för maskininlärning.
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

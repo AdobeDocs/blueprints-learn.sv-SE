@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics
 description: Sammanställ och analysera data och kundbeteenden från hela kundresan
-solution: Experience Platform, Customer Journey Analytics
+solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

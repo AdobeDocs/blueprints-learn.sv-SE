@@ -1,11 +1,11 @@
 ---
 title: Web/Mobile SDK Data Collection - översikt
 description: Den här planen visar arkitekturen och intagandet via Experience Platform Web och Mobile SDK
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 992528c2dcde4a0ace0b67cb6c84de4844693304
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%

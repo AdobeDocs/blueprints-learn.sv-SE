@@ -1,11 +1,11 @@
 ---
 title: Real-Time CDP med Adobe Campaign integreringsmönster
 description: Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personaliserade konversationer.
-solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
+solution: Experience Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: e158cb7c14970a9deb035fde50c9c070b0760203
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 1. Skicka tillbaka profilinställningarna till Experience Platform via konsultbaserade arbetsflöden var fjärde timme (valfritt).
 
 
-### Konfiguration av Mobile Push
+### Mobile Push-konfiguration
 
 * Två metoder som stöds för integrering med mobila enheter för push-meddelanden:
    * Experience Platform Mobile SDK

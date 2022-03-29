@@ -2,13 +2,13 @@
 title: Anonymt Audience Activation Blueprint
 description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna möjlighet möjliggör personaliserade och enhetliga kundupplevelser i realtid på olika enheter.
 landing-page-description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
-solution: Experience Platform, Audience Manager
+solution: Audience Manager, Experience Platform
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 4a46b7a4c278107c806d3ddd14591c7abe1a13d3
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
