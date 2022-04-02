@@ -5,9 +5,9 @@ landing-page-description: Lär dig personalisera baserat på onlinebeteende och 
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
+source-git-commit: 99de2ae48ef0b6177193ffbbb9cef71e7bc83e59
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 * Optimering av landningssidor
 * Beteendeanpassning
-* Personalization baserat på tidigare produkt-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut, målgruppsdata från tredje part och demografiska data
+* Personalisering baserad på tidigare produkt-/innehållsvyer, produkt-/innehållstillhörighet, miljöattribut, målgruppsdata från tredje part och demografiska data
 
 ## Program
 
@@ -31,24 +31,15 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 ## Arkitektur
 
-<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för Behavioral Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:80%; border:1px solid #4a4a4a" />
 
 
 ## Implementeringsmönster
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network].
-1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js)
-
-### 1. SDK och Edge-strategi för plattformar för webb/mobiler
-
-[Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md)
-
-### 2. Programspecifik SDK-metod
-
-[Se programspecifik SDK-skiss](../data-ingestion/appsdk.md)
-
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network]. [Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md)
+1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js). [Se programspecifik SDK-skiss](../data-ingestion/appsdk.md)
 
 ## Implementeringssteg
 
