@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
+source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -59,6 +59,7 @@ ht-degree: 0%
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
    + [Datainsamling för serversidan](/help/blueprints/data-ingestion/server-side-collection.md)
    + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
+   + [SDK för program](/help/blueprints/data-ingestion/appsdk.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
@@ -66,4 +67,4 @@ ht-degree: 0%
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
-   + [Personalisering med online- och offlinedata](/help/blueprints/web-personalization/online-offline.md)
+   + [Känd Personalization-kund](/help/blueprints/web-personalization/known-personalization.md)

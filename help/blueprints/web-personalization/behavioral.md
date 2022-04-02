@@ -5,9 +5,9 @@ landing-page-description: Lär dig personalisera baserat på onlinebeteende och 
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -20,22 +20,19 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 * Optimering av landningssidor
 * Beteendeanpassning
-* Personalisering baserad på tidigare produkt-/innehållsvyer, produkt-/innehållstillhörighet, miljöattribut, målgruppsdata från tredje part och demografiska data
+* Personalization baserat på tidigare produkt-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut, målgruppsdata från tredje part och demografiska data
 
 ## Program
 
 * Adobe Target
 * Adobe Analytics (valfritt)
 * Adobe Audience Manager (valfritt)
+* Adobe Real-time Customer Data Platform (valfritt)
 
 ## Arkitektur
 
-<img src="assets/behavioral_personalization.png" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för Behavioral Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
-
-## Guardrails
-
-Som standard tillåter segmentdelningstjänsten att högst 75 målgrupper delas för varje Adobe Analytics-rapportserie. Om Audience Manager används för målgruppsdelning finns det ingen gräns för hur många målgrupper som kan delas. 
 
 ## Implementeringsmönster
 
@@ -50,24 +47,14 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 
 ### 2. Programspecifik SDK-metod
 
-<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för den programspecifika SDK-metoden" style="width:80%; border:1px solid #4a4a4a" />
+[Se programspecifik SDK-skiss](../data-ingestion/appsdk.md)
 
-## Krav för implementering
-
-| Program/tjänst | Nödvändigt bibliotek | Anteckningar |
-|---|---|---|
-| Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+, eller mbox.js 61+ | at.js är att föredra eftersom mbox.js inte längre utvecklas. |
-| Adobe Audience Manager (tillval) | [!UICONTROL Platform Web SDK]* eller dil.js 5.0+ |  |
-| Adobe Analytics (tillval) | [!UICONTROL Platform Web SDK]* eller AppMeasurement.js 1.6.4+ |  |
-| Experience Cloud Identity Service | [!UICONTROL Platform Web SDK]* eller VisitorAPI.js 2.0+ |  |
-| Experience Platform Mobile SDK (tillval) | 4.11 eller senare för iOS och Android™ |  |
-| Experience Platform Web SDK | 1.0, den aktuella Experience Platform SDK-versionen har [olika användningsfall som ännu inte stöds för Experience Cloud-programmen](https://github.com/adobe/alloy/projects/5) |  |
 
 ## Implementeringssteg
 
 1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer.
 
-   Om du använder Audience Manager eller Adobe Analytics:
+### Implementeringssteg - Audience Manager eller Adobe Analytics
 
 1. [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)
 1. [Implementera Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
@@ -81,12 +68,28 @@ Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som 
 1. Bygg segment i [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) eller [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html) och [konfigurera dessa målgrupper för delning till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)  (om du använder Audience Manager eller Adobe Analytics)
 1. När målgrupperna finns i Adobe Target kan de användas för [målinrikta upplevelser med Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
 
+### Implementeringssteg - Real-time Customer Data Platform
+
+1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
+1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) på schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till Experience Platform.
+1. [Tillhandahållande [!UICONTROL Real-time Customer Data Platform] segmentdelning](https://www.adobe.com/go/audiences) mellan Experience Platform och Audience Manager för målgrupper som definieras i Experience Platform som ska delas med Audience Manager.
+1. [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
+1. [Konfigurera mål](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) för delning av profilattribut och målgruppsmedlemskap till önskade mål.
+
+
 ## Relaterad dokumentation
 
 * [Experience Cloud målgrupper](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 * [Integrera Audience Manager med Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
 * [Adobe Analytics segmentdelning via Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-
+* [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
+* [[!UICONTROL Real-time Customer Data Platform] Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
+* [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+* [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
+* [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
 
 ## Relaterade blogginlägg
 
