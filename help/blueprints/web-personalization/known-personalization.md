@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 817ec1be3d4754ca3fb4fc9767ca79e516b6ab47
+source-git-commit: b050017505b8d77fcf507e4dec147b66c561779a
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 * Online-personalisering med kända kunddata
 * Optimering av landningssidor
-* Personalization bygger på tidigare produktions-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
+* Personalisering baserad på tidigare produkt-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
 * Dela och inrikta er på målgrupper som definieras i Real-time Customer Data Platform på webbplatser och mobilappar med Adobe Target.
 
 ## Program
@@ -29,44 +29,13 @@ ht-degree: 0%
 * Adobe Audience Manager (valfritt): Lägger till målgruppsdata från tredje part, samverkansbaserad enhetsgraf
 * Adobe Analytics (valfritt): Lägger till möjligheten att skapa segment baserat på historiska beteendedata och finindelad segmentering från Adobe Analytics-data
 
-## Använd scenarier
+## Integrationsmönster
 
-<table class="tg" style="undefined;table-layout: fixed; width: 790px">
-<colgroup>
-<col style="width: 20px">
-<col style="width: 276px">
-<col style="width: 229px">
-<col style="width: 265px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-y6fn">#</th>
-    <th class="tg-f7v4">Använd scenarier</th>
-    <th class="tg-y6fn">Funktion</th>
-    <th class="tg-f7v4">Krav</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax">1</td>
-<td class="tg-73oq">Utvärdering av segment i realtid på den kant som delas från Real-time Customer Data Platform till Target</td>
-    <td class="tg-0lax">- Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.<br>- Dessutom kommer alla segment som utvärderas i strömning eller batchmode också att projiceras till Edge Network för att inkluderas i edge segment-utvärderingen och personaliseringen.</td>
-    <td class="tg-73oq">- Implementeringsmönster 1 som beskrivs nedan.<br>- Web/Mobile SDK måste implementeras.<br>- Observera att det Mobile SDK-baserade stödet för segmentering i realtid för närvarande inte är tillgängligt<br>- Datastream måste konfigureras i Experience Edge när tillägget Mål och Experience Platform är aktiverat. DataStream-ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td> 
-  </tr>
-  <tr>
-    <td class="tg-0lax">2</td>
-    <td class="tg-73oq">Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge-metoden</td>
-    <td class="tg-0lax">- Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via Edge Network. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 1.<br>- Integrationen används vanligtvis för att dela direktuppspelnings- och gruppmålgrupper med traditionella SDK:er i stället för att migrera till Edge Collection och WebSDK som driver både direktuppspelnings- och gruppmålgrupper i realtid enligt beskrivningen i integreringsmönster 1.</td>
-    <td class="tg-73oq">- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment enligt integreringsmönster 1. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet på identitetskartan.<br>- Datastream måste konfigureras i Experience Edge. DataStream ID anges i målkonfigurationen.<br>- Målmålet måste konfigureras i Real-time Customer Data Platform Destinations.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">3</td>
-    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target och Audience Manager via Audience Sharing Service</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">- Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target och Audience Manager via tjänsten Audience Sharing.<br> -Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas. I annat fall är integreringsmönstret 1 och 2 att föredra. Publiker som utvärderas i realtid kräver WebSDK och målgruppsutvärdering i realtid som beskrivs i integreringsmönster 1.</span></td>
-    <td class="tg-73oq">- Implementeringsmönster 1 eller 2 beskrivs nedan.<br>- Web/Mobile SDK-distribution krävs inte för den här integreringen.<br>- Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.<br>- Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.<br>- Identiteten måste matchas med ECID för att kunna dela till kanten för att Target ska kunna agera på den.</td>
-  </tr>
-</tbody>
-</table>
+| # | Integreringsmönster | Funktion | Krav |
+|---|---|---|---|
+| 1 | Utvärdering av segment i realtid på den kant som delas från Real-time Customer Data Platform till Target | <ul><li>Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.</li><li>Dessutom kommer alla segment som utvärderas i strömning eller batchmode också att projiceras till Edge Network för att inkluderas i edge segment-utvärderingen och personaliseringen.</li></ul> | <ul><li>Web/Mobile SDK måste implementeras.</li><li>Datastream måste konfigureras i Experience Edge med tillägget Target och Experience Platform aktiverat</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
+| 2 | Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge-metoden | <ul><li>Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via Edge Network. Publiker som utvärderas i realtid kräver implementeringen av WebSDK och Edge Network.</li></ul> | <ul><li>Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet i identitetskartan.</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
+| 3 | Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target och Audience Manager via Audience Sharing Service | <ul><li>Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas.</li></ul> | <ul><li>Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs WebSDK-distributionen och varje identitet måste anges som en identitet i identitetskartan.</li><li>Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
 
 ## Realtids-, strömnings- och gruppmålgruppsdelning till Adobe Target
 
@@ -148,7 +117,7 @@ Identitetskrav
 
 ### Relaterade blogginlägg
 
-* [Adobe presenterar Same page Förbättrad personalisering med Adobe Target och Real-time Customer Data Platform](https://blog.adobe.com/en/publish/2021/10/05/adobe-announces-same-page-enhanced-personalization-with-adobe-target-real-time-customer-data-platform)
+* [Adobe presenterar Same Page Förbättrad Personalization med Adobe Target och Real-time Customer Data Platform](https://blog.adobe.com/en/publish/2021/10/05/adobe-announces-same-page-enhanced-personalization-with-adobe-target-real-time-customer-data-platform)
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Adobe Experience Platform’s Identity Service — How to Solve the Customer Identity Conundrum]](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
