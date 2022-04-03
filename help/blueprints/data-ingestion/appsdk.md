@@ -4,7 +4,7 @@ description: I den här översikten visas arkitektur och intag via applikationss
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
-source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
+source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I arkitekturdiagrammet nedan visas integrationssökvägarna och datainsamlingen med hjälp av programspecifika SDK:er för implementering.
 
-<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för implementering med programspecifika SDK:er" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="Referensarkitektur för implementering med programspecifika SDK:er" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Referensdokumentation
 

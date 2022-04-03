@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience Cloud program och programtjänster.
 
-<img src="assets/aep+apps_vertical.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:80%;" />
+<img src="assets/aep+apps_vertical.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
 ## Adobe Experience Platform &amp; Applications - detaljerad arkitektur
 
-<img src="assets/aep+apps_horizontal.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:80%;" />
+<img src="assets/aep+apps_horizontal.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
 
 ## Adobe Experience Platform och Experience Cloud
 
@@ -171,7 +171,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
       <td colspan="1">Experience Manager</td>
       <td colspan="1">
         <ul>
-          <li>Experience Platform-profilen kan nås direkt från serversidan för att ge kraft åt personaliserade upplevelser som levereras via Experience Manager. Observera att personaliseringsaktiviteter oftast levereras via Experience Manager via Target-integreringen. </li>
+          <li>Profilen Experience Platform kan nås direkt från serversidan för att ge kraft åt personaliserade upplevelser som levereras via Experience Manager. Observera att personaliseringsaktiviteter oftast levereras via Experience Manager via Target-integreringen. </li>
         </ul>
       </td>
       <td colspan="1">Ingen aktuell integrering, inga beteenden eller interaktioner som utförs på Experience Manager webbplatser samlas in direkt via Experience Platform Web och Mobile SDK.</td>

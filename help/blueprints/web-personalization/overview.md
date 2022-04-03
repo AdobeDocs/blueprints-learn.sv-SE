@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Webben och Mobile Personalization behandlar möjligheten att använda profil- oc
 
 ### Kundens Personalization Guardrail - diagram
 
-<img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Relaterade blogginlägg
 
