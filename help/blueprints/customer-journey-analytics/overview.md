@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: 798dec7767938b85d0b8c41438a0782ef179bf68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,13 @@ En fullständig lista över användningsfall för Customer Journey Analytics fin
 Exempel på primära användningsområden är följande:
 | Blueprint | Beskrivning | Experience Cloud-program | |—|—|—| | **[Reseanalys över flera kanaler](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul>| | **[Reseanalys för samtalsavböjning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
+## Arkitektur för Customer Journey Analytics Blueprints
+
+![Arkitektur](assets/CJA.svg)
+
 ## Guardrail-diagram för Customer Journey Analytics Blueprints
 
-![Guardradit-diagram](assets/cja_guardrails.png)
+![Guardradit-diagram](assets/cja_guardrails.svg)
 
 ## Relaterade blogginlägg
 

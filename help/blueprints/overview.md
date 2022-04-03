@@ -2,9 +2,9 @@
 title: Digital Experience-utkast
 description: Digital Experience Blueprints är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
+source-git-commit: 5f35c36d3ef426396aadf0292e291d7738520032
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Digitala upplevelseutkast är repeterbara implementeringar som gör att ni kan h
   </td>
   <td>
     <a href="/help/blueprints/audience-activation/known.md"><img alt="miniatyrbild för Kundaktiveringsutkast" src="audience-activation/assets/known_activation.svg" /></a>
-    <div><a href="/help/blueprints/audience-activation/known.md"><strong>Online/offline Audience Activation</strong></a></div>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>Känd kundaktivering</strong></a></div>
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
   <td>
