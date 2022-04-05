@@ -2,17 +2,17 @@
 title: Behavioral Web Personalization Blueprint
 description: Ta reda på hur ni personaliserar innehåll baserat på onlinebeteende och målgruppsdata.
 landing-page-description: Lär dig personalisera baserat på onlinebeteende och målgruppsdata.
-solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 16b022263e622c07528329e71f479c63628f6ee0
+source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 0%
 
 ---
 
-# Behavioral skiss för webb/mobilpersonalisering
+# Behavioral Web/Mobile Personalization Blueprint
 
 Personalisera baserat på onlinebeteende och målgruppsdata.
 
