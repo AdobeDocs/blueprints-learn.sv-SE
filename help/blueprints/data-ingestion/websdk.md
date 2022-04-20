@@ -5,7 +5,7 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 4d0313e079a6f0f48f9c958f598f0fd02b90fd5f
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Bilden nedan illustrerar integrationssökvägarna och datainsamlingen med Experience Platform Web SDK.
 
-<img src="assets/web_sdk_flow.png" alt="Referensarkitektur för implementering med Experience Platform Web och Mobile SDK" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="Referensarkitektur för implementering med Experience Platform Web och Mobile SDK" style="width:90%; border:1px solid #4a4a4a" />
 
 Sekvensdiagram
 
