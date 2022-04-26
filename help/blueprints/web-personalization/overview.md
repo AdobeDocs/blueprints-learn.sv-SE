@@ -20,12 +20,12 @@ Webben och Mobile Personalization behandlar möjligheten att använda profil- oc
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[Behavioral Web/Mobile Personalization](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(valfritt)*</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(valfritt)*</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 | **[Mobile/Personalization med kända kunddata](known-personalization.md)** | <ul><li>Fullständiga kundprofiler och förbättrad segmentering ger bättre personaliserade upplevelser.</li><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 
 <br>
 
-## Guardrails for Web and Mobile Personalization
+## GuarDRAG för webb- och mobilpersonalisering
 
 [Information om skyddsprofiler som rör målgrupps- och profilaktivering finns i dokumentationen för profil- och segmenteringsskyddsprofiler.](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
