@@ -2,9 +2,10 @@
 title: offer decisioning
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer och agentstödda upplevelser.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 5309a5ce986ebf238884df2aac38eb175f3dda11
+exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
+source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -71,12 +72,14 @@ Adobe Experience Platform
 ## Implementeringsmönster
 
 * Använd webb- eller Mobile SDK för distribution på webbplatser och mobilappar för att implementera Offer decisioning där SDK distribuerades.
+   * [Web/Mobile SDK-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html)
    * [WebSDK](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/web-sdk.html)
    * [MobileSDK](https://aep-sdks.gitbook.io/docs/)
 
 eller
 
-* För en API-server-till-server-baserad implementering använder du Edge Network Server-API:t för direkt server-till-server-implementering av Offer decisioning. [Länk](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
+* För en API-server-till-server-baserad implementering använder du Edge Network Server-API:t för direkt server-till-server-implementering av Offer decisioning.
+   * [API för Edge Network Server](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
 
 <br>
 
