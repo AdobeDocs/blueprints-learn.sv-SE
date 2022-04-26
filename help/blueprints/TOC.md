@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
+source-git-commit: 5309a5ce986ebf238884df2aac38eb175f3dda11
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,8 @@ ht-degree: 0%
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
       + [Journey Optimizer med Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Meddelanden från tredje part](/help/blueprints/customer-journeys/3rd-party-messaging.md)
+      + offer decisioning{#offer-decisioning}
+      + [offer decisioning på kanten](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
    + Campaign v8{#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
    + Campaign v7{#campaign-v7}
@@ -67,4 +69,4 @@ ht-degree: 0%
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
-   + [Känd Personalization-kund](/help/blueprints/web-personalization/known-personalization.md)
+   + [Känd kundanpassning](/help/blueprints/web-personalization/known-personalization.md)

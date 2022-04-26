@@ -5,25 +5,40 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 4d0313e079a6f0f48f9c958f598f0fd02b90fd5f
+source-git-commit: acef1c8122285cfecdae633ca004ddbf3a0cf719
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-# Experience Platform Web/Mobile SDK-datainsamling
 
-Bilden nedan illustrerar integrationssökvägarna och datainsamlingen med Experience Platform Web SDK.
+# Översikt
+
+En översikt och information om Web och Mobile SDK finns i följande.
+* [WebSDK-översikt](https://experienceleague.adobe.com/docs/web-sdk.html)
+* [MobileSDK - översikt](https://aep-sdks.gitbook.io/docs/)
+
+En detaljerad beskrivning av vilka programfunktioner som stöds i WebSDK finns i följande dokumentation.
+* [Stöd för WebSDK-programfunktioner](https://github.com/orgs/adobe/projects/18/views/1)
+
+Mer information om migrering från programspecifika SDK:er till webben och mobila SDK:er finns i följande dokumentation.
+* [Identitetstjänster](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
+* [Analyser](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/analytics-overview.html)
+* [Mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
+* [Analyser för Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html)
+
+## Driftsättning av Experience Platform Web/Mobile SDK
+
+Bilden nedan illustrerar driftsättning och datainsamling med Experience Platform Web SDK.
 
 <img src="assets/web_sdk_flow.svg" alt="Referensarkitektur för implementering med Experience Platform Web och Mobile SDK" style="width:90%; border:1px solid #4a4a4a" />
 
-Sekvensdiagram
+Sekvensdiagram över Experience Edge, Experience Platform Services och Applications
 
 <img src="assets/web_sdk_sequence.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Referensdokumentation
 
-* [Experience Platform Web/Mobile SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)
 * [Implementera Adobe Experience Cloud med Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
 * [Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
