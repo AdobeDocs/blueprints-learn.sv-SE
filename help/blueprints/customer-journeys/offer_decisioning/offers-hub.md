@@ -1,40 +1,39 @@
 ---
-title: offer decisioning på kanten
-description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
+title: offer decisioning på navet
+description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
-exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 86956e351c166bac0aa37deccc18b7dc151d1473
+source-git-commit: 8ad119551e25c1f6acb66fec544c8a67b26c0927
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer - Offer decisioning i kanten
+# Journey Optimizer - Offer decisioning på navet
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsexempel och tekniska funktioner i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör Offer decisioning.
 
-Beslutshanteringen kan genomföras på ett av två sätt. Det första är via Adobe Experience Platform Hub, som är en enda datacenterarkitektur. I navet-metoden utförs, personaliseras och levereras med andra fördröjning. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver en sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner.
+Beslutshanteringen kan genomföras på ett av två sätt. Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden och utgående kampanjer drivs också av navmetoden.
 
-Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshantering i realtid är avsedd att serva kundupplevelser i realtid. Det gäller upplevelser som webb eller mobilförfrågningar om inkommande personalisering.
+Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshanteringen på Edge är utformad för att leverera konsumentupplevelser i realtid, som webb- eller mobilförfrågningar om inkommande personalisering.
 
-Denna plan kommer att omfatta detaljerna i beslutsfattandet på utsidan.
+Denna plan kommer att omfatta de specifika delarna av beslutsförvaltningen på navet.
 
-Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-hub.html?lang=en) utkast.
+Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html?lang=en) utkast.
 
-Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+Mer information om beslutshantering finns i produktdokumentationen HERE (https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
 ## Användningsexempel
 
-* Onlinepersonalisering via webben eller mobiler.
-* Ankommande offer decisioning och erbjudandeförslag.
+* Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
+* Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
 
 <br>
 
 ## Arkitektur
 
-<img src="../assets/offers_edge.svg" alt="Referensarkitekturens Offer decisioning på den avancerade ritningen" style="width:100%; border:1px solid #4a4a4a" />
+<img src="../assets/offers_hub.svg" alt="Referensarkitekturens Offer decisioning på den avancerade ritningen" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -73,16 +72,9 @@ Adobe Experience Platform
 
 ## Implementeringsmönster
 
-* Använd webb- eller Mobile SDK för distribution på webbplatser och mobilappar för att implementera Offer decisioning där SDK distribuerades.
-   * [Web/Mobile SDK-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html)
-   * [WebSDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html)
-   * [MobileSDK](https://aep-sdks.gitbook.io/docs/)
-
-eller
-
-* För en API-server-till-server-baserad implementering använder du Edge Network Service API för direkt server-till-server-implementering av Offer decisioning.
-   * [API för Edge Network Server](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
-   * [Besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
+* Implementeras i e-post, SMS och utgående kanaler via direktintegrering med Adobe Journey Optimizer.
+* För andra kanalupplevelser kan [Besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
+* För Edge-baserade realtidsupplevelser använder du Web/Mobile SDK eller Edge Decisioning API enligt riktlinjerna i [offer decisioning på Edge-ritningen](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html).
 
 <br>
 
