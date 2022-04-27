@@ -2,9 +2,10 @@
 title: offer decisioning på navet
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 8ad119551e25c1f6acb66fec544c8a67b26c0927
+exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
+source-git-commit: 9cdb1bf7a8e97fce6a41fb135441c12ed8e477e0
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,6 +28,7 @@ Mer information om beslutshantering finns i produktdokumentationen HERE (https:/
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
+* Erbjudanden som ingår i e-post, SMS eller andra utgående interaktioner.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
 
 <br>
@@ -72,10 +74,10 @@ Adobe Experience Platform
 
 ## Implementeringsmönster
 
-* Implementeras i e-post, SMS och utgående kanaler via direktintegrering med Adobe Journey Optimizer.
-* För andra kanalupplevelser kan [Besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
+* Implementeras i e-post, SMS och utgående kanaler via direkt integrering med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html).
+* För server-API-baserad implementering av Offer decisioning kan du använda [Besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
+* Vid implementering av batchbaserade beslut att leverera större mängder av erbjudanden till ett meddelandeleveransprogram använder du [API för gruppbeslut](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html).
 * För Edge-baserade realtidsupplevelser använder du Web/Mobile SDK eller Edge Decisioning API enligt riktlinjerna i [offer decisioning på Edge-ritningen](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html).
-
 <br>
 
 ## Implementeringssteg
