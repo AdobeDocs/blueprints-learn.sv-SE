@@ -5,9 +5,9 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
+source-git-commit: 3c134d6a4f8afb091631c14b05f34d6133a8865b
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,10 @@ ht-degree: 0%
 
 # Översikt
 
-En översikt och information om Web och Mobile SDK finns i följande.
+En översikt och information om Web och Mobile SDK samt API:t för Edge Network Server finns i följande avsnitt.
 * [WebSDK-översikt](https://experienceleague.adobe.com/docs/web-sdk.html)
 * [MobileSDK - översikt](https://aep-sdks.gitbook.io/docs/)
+* [API för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 En detaljerad beskrivning av vilka programfunktioner som stöds i WebSDK finns i följande dokumentation.
 * [Stöd för WebSDK-programfunktioner](https://github.com/orgs/adobe/projects/18/views/1)
@@ -28,7 +29,7 @@ Mer information om migrering från programspecifika SDK:er till webben och mobil
 * [Mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
 * [Analyser för Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html)
 
-## Driftsättning av Experience Platform Web/Mobile SDK
+## Experience Platform Web/Mobile SDK eller Edge Network Server API Deployment
 
 Bilden nedan illustrerar driftsättning och datainsamling med Experience Platform Web SDK.
 
