@@ -3,7 +3,7 @@ title: offer decisioning på kanten
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: fd8762711a6c3b04d0dd991e4dced2fb6be48c13
+source-git-commit: bfc8133f0a48cb35dd62e74e92eeb041e93be5c7
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -56,8 +56,8 @@ Adobe Experience Platform
 
 ## Guardrails
 
-* För Journey Optimizer-gardinsmenyer, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
-* Se följande för Offer decisioning-skydd: [Produktbeskrivning för offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
+* För Journey Optimizer skyddsräcken, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
+* För skyddsräcken för Offera decisioningar, se följande [Produktbeskrivning för offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
 
 ### Dataöverföringsskydd
 
