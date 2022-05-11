@@ -3,16 +3,20 @@ title: offer decisioning på navet
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 494d70fca12a42befb7b726562d98cec17a21d22
+source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer - Offer decisioning på navet
 
+Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och Offera decisioningen [HÄR](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-overview.html)
+
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsexempel och tekniska funktioner i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör Offer decisioning.
+
+Journey Optimizer används för att leverera det bästa erbjudandet och upplevelsen till era kunder vid alla kontaktytor vid rätt tidpunkt. offer decisioning förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa er att skicka rätt erbjudande till era kunder vid rätt tidpunkt.
 
 Beslutshanteringen kan genomföras på ett av två sätt. Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden och utgående kampanjer drivs också av navmetoden.
 
@@ -20,11 +24,9 @@ Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd,
 
 Denna plan kommer att omfatta de specifika delarna av beslutsförvaltningen på navet.
 
-Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html?lang=en) utkast.
+Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html) utkast.
 
-Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
-
-## Användningsexempel
+## Använd ärenden för beslutshantering på navet
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.

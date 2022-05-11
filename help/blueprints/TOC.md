@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: c840330d6c81831b868e81d3452d0c416bf55938
+source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 0%
    + Journey Optimizer{#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
       + offer decisioning{#offer-decisioning}
+         + [Översikt](/help/blueprints/customer-journeys/offer_decisioning/offers-overview.md)
          + [offer decisioning på kanten](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
          + [offer decisioning på navet](/help/blueprints/customer-journeys/offer_decisioning/offers-hub.md)
       + [Journey Optimizer med Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)

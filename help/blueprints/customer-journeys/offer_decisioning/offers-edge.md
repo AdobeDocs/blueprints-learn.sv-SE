@@ -3,14 +3,16 @@ title: offer decisioning på kanten
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: bedfce6f9ded6c168656e8c37c59f85f250481a1
+source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer - Offer decisioning i kanten
+
+Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och Offera decisioningen [HÄR](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-overview.html)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsexempel och tekniska funktioner i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör Offer decisioning.
 
@@ -20,14 +22,11 @@ Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd,
 
 Denna plan kommer att omfatta detaljerna i beslutsfattandet på utsidan.
 
-Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-hub.html?lang=en) utkast.
+Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-hub.html) utkast.
 
-Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+## Använd fall för beslutshantering i utkanten
 
-## Användningsexempel
-
-* Onlinepersonalisering via webben eller mobiler.
-* Ankommande offer decisioning och erbjudandeförslag.
+* Onlinepersonalisering via webb eller mobilupplevelser.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
 
 <br>
