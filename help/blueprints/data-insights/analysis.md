@@ -5,9 +5,9 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: a972ea56-d1c8-45da-9044-ed31222a2441
-source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
+source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Dataanalys och intelligens omfattar möjligheten inom Adobe Experience Platform att utföra experimentella frågor och analyser av data som finns i sjön.
 
-Experience Platform [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data. [!UICONTROL Datavetenskapens arbetsyta] gör det möjligt att utföra datautforskningar, datavetenskap och maskininlärningsarbetsbelastningar på data.
+Experience Platform [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data.
 
-Dessutom tillåter Experience Platform anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, få åtkomst till och fråga data i Experience Platform med hjälp av [!DNL PostgreSQL] -protokoll.
+Experience Platform tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, få åtkomst till och fråga data i Experience Platform med [!DNL PostgreSQL] -protokoll.
 
-Vissa skyddsutkast gäller för frågans tidsgräns och för den datamängd som ingår i frågeresultatet, vilket beskrivs i ritningsinformationen.
+Vissa skyddsutkast gäller för frågetidsgränsen och för den datamängd som ingår i frågeresultatet, vilket beskrivs i avsnittet med säkerhetsutkast nedan.
 
 ## Användningsexempel
 

@@ -3,9 +3,9 @@ title: offer decisioning på navet
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,8 @@ Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfatt
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
-* Erbjudanden som ingår i e-post, SMS eller andra utgående interaktioner.
+* Erbjudanden som ingår i e-post, SMS, push-meddelanden för mobiler eller andra utgående interaktioner.
+* Erbjud externa ESP- och meddelandesystem för leverans.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
 
 <br>
@@ -40,12 +41,6 @@ Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfatt
 <img src="../assets/offers_hub.svg" alt="Referensarkitekturens Offer decisioning på den avancerade ritningen" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
-
-## Integrationsmönster
-
-| Integrering | Beskrivning |
-| :-- | :--- |
-| [offer decisioning med Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html) | offer decisioning kan integreras med Adobe Target så att erbjudandena kan testas och levereras som Target-upplevelser. |
 
 ## Förutsättningar
 
