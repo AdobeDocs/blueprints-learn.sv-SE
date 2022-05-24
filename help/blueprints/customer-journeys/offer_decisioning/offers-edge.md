@@ -3,9 +3,9 @@ title: offer decisioning på kanten
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Experience Platform
 
 * För Journey Optimizer skyddsräcken, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
 * För skyddsräcken för Offera decisioningar, se följande [Produktbeskrivning för offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
+* Begäranden per sekund = 5000.
+* Svarstid &lt; 250 ms.
+* Tillgång till Edge-realtidsprofil. Endast kantprojicerade målgrupper och profilattribut är tillgängliga i profilen.
+* Om personalisering krävs i förstagångsupplevelser kommer navet att vara idealiskt eftersom den fullständiga profilen är tillgänglig. Kantprofilen måste synkroniseras från navet för första gången. Den allra första upplevelsen från kanten kommer därför inte att inkludera tidigare överförda profildata till navet.
 
 ### Dataöverföringsskydd
 

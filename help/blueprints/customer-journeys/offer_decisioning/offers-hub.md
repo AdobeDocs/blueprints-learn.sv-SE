@@ -3,9 +3,9 @@ title: offer decisioning på navet
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,9 @@ Adobe Experience Platform
 
 * För Journey Optimizer skyddsräcken, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
 * För skyddsräcken för Offera decisioningar, se följande [Produktbeskrivning för offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
+* Begäranden per sekund = 2000.
+* Svarstid &lt; 500 ms.
+* Tillgång till en fullständig kundprofil i realtid, inklusive målgruppsmedlemskap, attribut och upplevelsehändelser.
 
 
 ### Dataöverföringsskydd

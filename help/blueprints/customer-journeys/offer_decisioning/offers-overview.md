@@ -3,9 +3,9 @@ title: Översikt över offer decisioning
 description: Leverera personaliserade erbjudanden på alla kundresor.
 solution: Experience Platform, Journey Optimizer
 exl-id: f6271802-faab-4ffc-92d6-4c4d7d423ed4
-source-git-commit: 8842b8637a30151577a93653c16b4d37e2cf7c27
+source-git-commit: 7dcbf86b362350312a86445bbe7a020f5ccd1752
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -31,12 +31,20 @@ Beslutshanteringen kan användas på ett av två sätt, på kanten eller via nav
 
 Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden, SMS-meddelanden eller push-meddelanden och andra utgående kampanjer drivs också av navmetoden. Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-hub.html?lang=en) utkast.
 
+* Erbjudandets behörighet kan fungera mot kundprofilen i realtid, inklusive alla attribut och upplevelsehändelser
+
 ### Använd ärenden för beslutshantering på navet
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
 * Erbjudanden som ingår i e-post, SMS eller andra utgående interaktioner.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
+
+### Beslutsledning om tekniska överväganden
+
+* Begäranden per sekund = 2000.
+* Svarstid &lt; 500 ms.
+* Tillgång till en fullständig kundprofil i realtid, inklusive målgruppsmedlemskap, attribut och upplevelsehändelser.
 
 ## Beslutsfattare i utkanten
 
@@ -46,6 +54,13 @@ Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd,
 
 * Onlinepersonalisering via webb eller mobilupplevelser.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
+
+### Beslutsfattare om de tekniska aspekterna
+
+* Begäranden per sekund = 5000.
+* Svarstid &lt; 250 ms.
+* Tillgång till Edge-realtidsprofil. Endast kantprojicerade målgrupper och profilattribut är tillgängliga i profilen.
+* Om personalisering krävs i förstagångsupplevelser kommer navet att vara idealiskt eftersom den fullständiga profilen är tillgänglig. Kantprofilen måste synkroniseras från navet för första gången. Den allra första upplevelsen från kanten kommer därför inte att inkludera tidigare överförda profildata till navet.
 
 ## Relaterad dokumentation
 
