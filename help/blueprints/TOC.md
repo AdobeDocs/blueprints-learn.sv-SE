@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: fff87b7bbea6db6bb5af0386b5919e78077a7858
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 + Datainsamling och förberedelse{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
-   + [Datainsamling för serversidan](/help/blueprints/data-ingestion/server-side-collection.md)
+   + [Vidarebefordran av händelser](/help/blueprints/data-ingestion/server-side-collection.md)
    + Distribution{#deployment}
       + [Experience Platform Web SDK &amp; Edge Network](/help/blueprints/data-ingestion/websdk.md)
       + [SDK för program](/help/blueprints/data-ingestion/appsdk.md)
