@@ -4,16 +4,16 @@ description: Strömma insamlade data från Experience Platform SDK:er till desti
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: e6ef8a1e7b90778c0163227e32d2691dfaf9c9d2
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
-# Design för serversidan Enterprise Data Collection
+# Vidarebefordra utkast
 
-I skissen Enterprise Data Collection (på serversidan) visas hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan vidarebefordras från Experience Platform Edge Network till önskat mål. Du kan vidarebefordra alla rådata som samlats in från SDK:n eller specifika data baserade på händelser och regler som konfigurerats i taggegenskaperna (tidigare Launch).
+Händelsevidarebefordringsskissen visar hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan vidarebefordras från Experience Platform Edge Network till önskad destination. Du kan vidarebefordra alla rådata som samlats in från SDK:n eller specifika data baserade på händelser och regler som konfigurerats i taggegenskaperna (tidigare Launch).
 
 ## Användningsexempel
 
@@ -22,7 +22,7 @@ I skissen Enterprise Data Collection (på serversidan) visas hur data som samlat
 
 ## Program
 
-* Adobe Experience Platform Collection
+* Adobe Experience Platform Data Collection
 
 ## Arkitektur
 

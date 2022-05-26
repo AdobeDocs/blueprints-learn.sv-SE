@@ -5,9 +5,9 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
+source-git-commit: 5ee530220cd5928f9ab4aabd50148b963273d67c
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för data
 
 | Inmatningsmetoder | Beskrivning |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Web/Mobile SDK | Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</ul>Dokumentation: <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html)</li><li>[Implementera Adobe Experience Cloud med Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en)</li><li>[Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)</li></ul> |
+| Webb/mobil SDK | Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</ul>Dokumentation: <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html)</li><li>[Implementera Adobe Experience Cloud med Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en)</li><li>[Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)</li></ul> |
 | Direktuppspelningskällor | [Direktuppspelningskällor](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors)<br>Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</li></ul> |
 | API för direktuppspelning | [Edge Network Server API (rekommenderas)](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) - har stöd för Edge Services inklusive Edge Segmentation och <br>[Huvudtjänst-API för datainsamling](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/streaming/http.html) - saknar stöd för Edge Services, dirigeringar direkt till navet.<br>Svarstid:<ul><li>Realtid - samma sidsamling till Edge Network</li><li>Direktuppspelning till profil ~1 minut</li><li>Direktuppspelat intag till datasjön (mikrobatteri ~15 minuter)</li><li>7 GB/timme</li></ul>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=en#what-can-you-do-with-streaming-ingestion%3F) |
 | ETL-verktyg | Använd ETL-verktygen för att modifiera och omvandla företagsdata innan de förs in i Experience Platform.<br><br>Svarstid:<ul><li>Tidsinställningen beror på den externa ETL-verktygets schemaläggning, och då tillämpas standardrutorna för intag baserat på den metod som används för intaget.</li></ul> |
@@ -45,8 +45,7 @@ Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för data
 
 | Metoder för dataförberedelse | Beskrivning |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!UICONTROL Datavetenskapens arbetsyta] - Dataprep | Modelldriven omvandling, skriptbaserad omvandling.<br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
-| Externt ETL-verktyg ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica]och så vidare) | Utför komplexa omvandlingar med ETL-verktyg och använd Experience Platform som standard [!UICONTROL Flödestjänst] API:er eller källanslutningar för import av resulterande data. |
+| Externt ETL-verktyg ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica], osv.) | Utför komplexa omvandlingar med ETL-verktyg och använd Experience Platform som standard [!UICONTROL Flödestjänst] API:er eller källanslutningar för import av resulterande data. |
 | [!UICONTROL Frågetjänst] - Dataprep | Sammanfogar, delar, sammanfogar, omformar, frågar och filtrerar data till en ny datauppsättning. Använda Skapa tabell som markerad (CTAS) <br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
 | Funktionerna XDM-mappning och dataförberedelse (strömning och batch) | Mappa källattribut i CSV- eller JSON-format till XDM-attribut vid förtäring av Experience Platform.<br>Beräkna funktioner för data när de importeras. d.v.s. dataformatering, uppdelning, sammanfogning osv.<br>[Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
 
