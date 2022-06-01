@@ -3,7 +3,7 @@ title: Journey Optimizer med Adobe Campaign Blueprint
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
    * Strömmande segment (&lt;5min-kvalificering)
 * Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
 * Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
-* offera decisioningen stöds inte
+* Beslutshantering stöds inte
 * Affärshändelser stöds inte
 * Utgående integreringar med system från tredje part
    * Inget stöd för en enda statisk IP eftersom vår infrastruktur är multi-tenant (måste tillåtelselista alla IP-adresser för datacenter)
@@ -76,7 +76,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 * AC (v7) stöder endast händelseinitierade resor
    * Inget segment eller segmentmedlemskap initierades på Journeys
    * Läsning av målgrupps- och affärshändelsebaserade resor stöds inte på grund av volym som kan skickas till körningsinstanserna
-* Varken AC (v7) eller AC (v8) stöder Offer decisioning i meddelanden
+* Varken AC (v7) eller AC (v8) stöder beslutsstyrning i meddelanden
 * Ingen begränsning av utgående API-anrop till Campaign
 * Loggar för transaktionsmeddelanden synkroniseras inte direkt till AEP. Kräver konsultation. Rekommendation att exportera loggar högst var fjärde timme
 
@@ -140,7 +140,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
 
    >[!IMPORTANT]
-   >Mobile-tokens kan behöva samlas in både i Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
+   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
 
 <br>
 

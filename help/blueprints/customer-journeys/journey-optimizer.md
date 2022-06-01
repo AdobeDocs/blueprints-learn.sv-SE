@@ -3,7 +3,7 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
-| [Meddelanden från tredje part](3rd-party-messaging.md) | Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation | Leverera personlig kommunikation direkt till kunderna när de interagerar med ert varumärke eller företag<br><br>Att tänka på:<br><ul><li>Tredjepartssystem måste ha stöd för innehavartoken för autentisering</li><li>Inget stöd för statiska IP-adresser på grund av multi-tenant-arkitektur</li><li>Var medveten om arkitektoniska begränsningar för system från tredje part när det gäller API-anrop per sekund.  Kunderna kan behöva köpa ytterligare volymer från tredjepartsleverantören för supportvolym från Journey Optimizer</li><li>Stöder inte Offer decisioning i meddelanden eller nyttolaster</li></ul> |
+| [Meddelanden från tredje part](3rd-party-messaging.md) | Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation | Leverera personlig kommunikation direkt till kunderna när de interagerar med ert varumärke eller företag<br><br>Att tänka på:<br><ul><li>Tredjepartssystem måste ha stöd för innehavartoken för autentisering</li><li>Inget stöd för statiska IP-adresser på grund av multi-tenant-arkitektur</li><li>Var medveten om arkitektoniska begränsningar för system från tredje part när det gäller API-anrop per sekund.  Kunderna kan behöva köpa ytterligare volymer från tredjepartsleverantören för supportvolym från Journey Optimizer</li><li>Stöder inte beslutshantering i meddelanden eller nyttolaster</li></ul> |
 
 <br>
 
@@ -45,7 +45,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 | Integrering | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
-| [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda funktioner för realtidsmeddelanden för att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kampanjprogrammet måste finnas i antingen v7 build >21.1 eller v8</li><li>Meddelandegenomströmning</li><ul><li>Campaign v7 - upp till 50 000 per timme</li><li>Campaign v8 - upp till 1 MB per timme</li><li>Campaign Standard - upp till 50 000 per timme</li></ul><li>Ingen begränsning utförs, så användningsfall kräver teknisk kontroll av en företagsarkitekt</li><li>Inget stöd för att använda Offer decisioning i ett meddelande som skickas av Campaign</li></ul> |
+| [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda funktioner för realtidsmeddelanden för att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kampanjprogrammet måste finnas i antingen v7 build >21.1 eller v8</li><li>Meddelandegenomströmning</li><ul><li>Campaign v7 - upp till 50 000 per timme</li><li>Campaign v8 - upp till 1 MB per timme</li><li>Campaign Standard - upp till 50 000 per timme</li></ul><li>Ingen begränsning utförs, så användningsfall kräver teknisk kontroll av en företagsarkitekt</li><li>Inget stöd för att använda beslutsstöd i ett meddelande som skickas av Campaign</li></ul> |
 
 <br>
 
@@ -78,7 +78,7 @@ Observera dessa som inte finns med på länken ovan:
 
 * Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
 * Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
-* Inbyggt stöd för Offer decisioning endast i meddelanden (inga anpassade åtgärder)
+* Inbyggt stöd för Beslutshantering endast i meddelanden (inga anpassade åtgärder)
 * Meddelandetyper som stöds:
    * E-post
    * Push (FCM / APNS)

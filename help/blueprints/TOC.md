@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: f39c916d4b13d17eb3705c7adf01353929ff7956
+source-git-commit: ac995cdb942fd14d87281c4b499239732a1e4019
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -47,10 +47,10 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + offer decisioning{#offer-decisioning}
-         + [Översikt](/help/blueprints/customer-journeys/offer_decisioning/offers-overview.md)
-         + [offer decisioning på kanten](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
-         + [offer decisioning på navet](/help/blueprints/customer-journeys/offer_decisioning/offers-hub.md)
+      + Beslutshantering{#decision-management}
+         + [Översikt](/help/blueprints/customer-journeys/decision_management/decision-management-overview.md)
+         + [Beslutsfattare i utkanten](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
+         + [Beslutshantering på navet](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
       + [Journey Optimizer med Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Meddelanden från tredje part](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8{#campaign-v8}
@@ -74,4 +74,4 @@ ht-degree: 0%
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
    + [Känd kundanpassning](/help/blueprints/web-personalization/known-personalization.md)
-   + [offer decisioning](/help/blueprints/web-personalization/offers-edge.md)
+   + [Beslutshantering](/help/blueprints/web-personalization/decision-management-edge.md)
