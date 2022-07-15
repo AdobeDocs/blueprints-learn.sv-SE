@@ -7,12 +7,12 @@ kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Behavioral Web/Mobile Personalization Blueprint
+# Behavioral skiss för webb/mobilpersonalisering
 
 Personalisera baserat på onlinebeteende och målgruppsdata.
 
@@ -31,7 +31,7 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 ## Arkitektur
 
-<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för Behavioral Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:90%; border:1px solid #4a4a4a" />
 
 
 ## Implementeringsmönster

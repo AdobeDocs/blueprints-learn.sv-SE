@@ -7,21 +7,21 @@ thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Webb och Mobile Personalization
+# Webb- och mobilpersonalisering
 
-Webben och Mobile Personalization behandlar möjligheten att använda profil- och målgruppssegmentering i flera olika tillämpningar för att personalisera och optimera kundupplevelserna. Kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner kan utnyttjas för att personalisera layouter, call-to-actions och innehåll.
+Webb- och mobilpersonalisering är inriktat på möjligheten att använda profil- och målgruppssegmentering i flera olika applikationer för att personalisera och optimera kundupplevelser. Kundbeteenden, demografi, lojalitetsnivå och tidigare transaktioner kan utnyttjas för att personalisera layouter, call-to-actions och innehåll.
 
 <br>
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Beteendeanpassning för webb/mobiler](behavioral.md)** | <ul><li>Personalisera baserat på onlinebeteende och målgruppsdata</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(valfritt)*</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
-| **[Mobile/Personalization med kända kunddata](known-personalization.md)** | <ul><li>Fullständiga kundprofiler och förbättrad segmentering ger bättre personaliserade upplevelser.</li><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
+| **[Webb-/mobilpersonalisering med kända kunddata](known-personalization.md)** | <ul><li>Fullständiga kundprofiler och förbättrad segmentering ger bättre personaliserade upplevelser.</li><li>Anpassa med offlineattribut och händelser (transaktioner, reservationer, CRM och lojalitetsdata).</li><li>Synkronisera personalisering över webben, e-post och andra kända kanaler.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics *(valfritt)*</li><li>Adobe Audience Manager *(valfritt)*</li></ul> |
 
 <br>
 
@@ -31,7 +31,7 @@ Webben och Mobile Personalization behandlar möjligheten att använda profil- oc
 
 <br>
 
-### Kundens Personalization Guardrail - diagram
+### Känt kundanpassningsdiagram
 
 <img src="assets/personalization_guardrails.png" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
 

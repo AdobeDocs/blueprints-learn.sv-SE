@@ -1,5 +1,5 @@
 ---
-title: Web/Mobile Personalization - översikt
+title: Webbpersonalisering/mobilpersonalisering - översikt
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 landing-page-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
@@ -7,19 +7,19 @@ kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: 9d9daf96b9ad36d3f384f486e156a79e679494d9
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Mobile/Personalization med kända kunddata
+# Webb-/mobilpersonalisering med kända kunddata
 
 ## Användningsexempel
 
 * Online-personalisering med kända kunddata
 * Optimering av landningssidor
-* Personalization bygger på tidigare produktions-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
+* Personalisering baserad på tidigare produkt-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
 * Dela och inrikta er på målgrupper som definieras i Real-time Customer Data Platform på webbplatser och mobilappar med Adobe Target.
 
 ## Program
@@ -53,11 +53,11 @@ Sekvensdetalj
 
 ## Implementeringsmönster
 
-Kunden Personalization stöds via flera olika implementeringsmetoder.
+Känd kundanpassning stöds via flera implementeringsmetoder.
 
 ### Implementeringsmönster 1 - Edge Network med webb/mobil SDK eller Edge Network API (rekommenderat tillvägagångssätt)
 
-* Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden för Web/Mobile SDK eller Edge API.
+* Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden Web/Mobile SDK eller Edge API.
 * [Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md) för SDK-baserad implementering.
 * [Se API:t för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
