@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: f1d2bc62d07b5cd42e5745320dd6371debb41cfe
+source-git-commit: dfd1592c79fd20899705e68cfd4cd1a1bb3ebb87
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 0%
 
 Customer Journey Analytics visar hur varumärken kan sammanställa kunddata och kundbeteenden från olika interaktionskanaler och källor för att skapa en resebaserad bild av alla kundinteraktioner. Rapportering och analys kan utföras i programtjänsten Customer Journey Analytics för att utvärdera och få insikt i kundinteraktions- och beteendemönster.
 
-Vanliga analyser är:
+Exempel på vanliga användningsområden:
 
+* Skapa och publicera målgrupper i Real-time Customer Data Platform
 * Konvertera banor uppifrån och ned
 * Kanalengagemang och -konvertering
 * Viktigaste visade innehåll
@@ -30,7 +31,7 @@ En fullständig lista över användningsfall för Customer Journey Analytics fin
 ## [Länk till Customer Journey Analytics-användningsfall](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en)
 
 Exempel på primära användningsområden är följande:
-| Blueprint | Beskrivning | Experience Cloud-program | |—|—|—| | **[Reseanalys över flera kanaler](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul>| | **[Reseanalys för samtalsavböjning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
+| Blueprint | Beskrivning | Experience Cloud-program | |—|—|—| | **[Reseanalys över flera kanaler](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul>| | **[Publicera publiker på Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>skapa och publicera målgrupper som identifieras i Customer Journey Analytics (CJA) till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. Idealiskt för att skapa målgrupper med hjälp av historiska data eller mer raffinerade målgrupper från granulatfiltrering och beräknade fält i Customer Journey Analytics.</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> | | **[Reseanalys för samtalsavböjning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
 ## Arkitektur för Customer Journey Analytics Blueprints
 

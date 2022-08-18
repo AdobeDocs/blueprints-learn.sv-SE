@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ac995cdb942fd14d87281c4b499239732a1e4019
+source-git-commit: dfd1592c79fd20899705e68cfd4cd1a1bb3ebb87
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
+   + [Dela CJA-målgrupper till RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
 + Kundresor{#customer-journeys}
    + [Översikt](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
