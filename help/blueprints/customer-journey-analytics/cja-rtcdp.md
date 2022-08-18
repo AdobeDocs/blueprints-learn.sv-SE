@@ -4,7 +4,7 @@ description: Sammanställ och analysera data och kundbeteenden från hela kundre
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 0d188a41b6c90bc838eaf4b1d0d1f31b3596e7ca
+source-git-commit: 8a252e0f061bddb14ce1a21b49137a22fdf700da
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -15,6 +15,10 @@ ht-degree: 0%
 
 Skapa och publicera målgrupper som identifieras i Customer Journey Analytics (CJA) till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. Idealiskt för att skapa målgrupper med hjälp av historiska data eller mer raffinerade målgrupper från granulatfiltrering och beräknade fält i Customer Journey Analytics.
 
+## Customer Journey Analytics Audience Publishing Guide
+
+I följande dokumentation finns vägledning om implementering och konfigurering av publikationer från Customer Journey Analytics till Real-time Customer Data Platform. [Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+
 ## Arkitektur för Customer Journey Analytics Blueprints
 
 ![Arkitektur](assets/CJA_RTCDP.svg)
@@ -22,10 +26,6 @@ Skapa och publicera målgrupper som identifieras i Customer Journey Analytics (C
 ## Guardrail-diagram för Customer Journey Analytics Blueprints
 
 ![Guardradit-diagram](assets/cja_guardrails.svg)
-
-## Customer Journey Analytics Audience Publishing Guide
-
-I följande dokumentation finns vägledning om implementering och konfigurering av publikationer från Customer Journey Analytics till Real-time Customer Data Platform. [Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
 
 ## Relaterade blogginlägg
 
