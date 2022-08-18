@@ -5,9 +5,9 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
 Dataanalys, intelligens och AI/ML omfattar möjligheten inom Adobe Experience Platform att utföra utforskande frågor och analys av data som finns i sjön.
 
 Experience Platform [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data. Dessutom tillåter Experience Platform anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, få åtkomst till och fråga data i Experience Platform med hjälp av [!DNL PostgreSQL] -protokoll.
-
-[!UICONTROL Datavetenskapens arbetsyta] gör det möjligt att utföra datautforskningar, datavetenskap och maskininlärningsarbetsbelastningar på data. Modeller kan tränas, poängsättas och användas för att ytterligare berika kundprofiler och få djupare insikter om kundbeteenden och upplevelser.
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|

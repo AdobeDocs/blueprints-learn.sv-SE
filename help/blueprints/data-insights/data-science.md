@@ -1,19 +1,19 @@
 ---
 title: Custom Data Science for Profile Enrichment Blueprint
-description: Denna plan visar hur Adobe Experience Platform Data Science Workspace kan använda data i Experience Platform för att utbilda, driftsätta och göra poäng i modeller för maskininlärning.
+description: Den här planen visar hur datavetenskapen kan inhämtas till Experience Platform för att berika kundprofilen i realtid.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
+source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
 # Custom Data Science for Profile Enrichment Blueprint
 
-Custom Data Science for Profile Enrichment Blueprint illustrerar hur data i Adobe Experience Platform kan användas för att utbilda, driftsätta och poängsätta modeller för maskininlärning i Experience Platform och Real-time Customer Data Platform med hjälp av datavetenskap och maskininlärningsverktyg. Modellerade insikter kan hämtas in i Experience Platform för att berika kundprofilen i realtid. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
+Custom Data Science for Profile Enrichment Blueprint visar hur data kan användas för att utbilda, driftsätta och poängsätta modeller för att ge maskininlärningsinsikter om Experience Platform och Real-time Customer Data Platform från datavetenskap och maskininlärningsverktyg. Modellerade insikter kan hämtas in i Experience Platform för att berika kundprofilen i realtid. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
 
 ## Användningsexempel
 
@@ -38,17 +38,14 @@ För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du 
 
 ## Överväganden gällande implementering
 
-* I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara en enkel attributsträng. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
+* I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara enkla attributsträngar. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
 * Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler är tillgängligt [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).
 * Följande metoder kan användas för att extrahera data från Experience Platform
    * SDK för dataåtkomst
       * Data finns i råfilsformat
       * Data för händelser för profilupplevelse förblir i oförenat råformat.
    * RTCDP-mål
-      * Endast profilattribut och segmentmedlemskap kan komprimeras.
-   * Frågetjänst
-      * Om du får åtkomst till stora mängder rådata kan det leda till att frågan tar slut vid 10 minuters timeout. Vi rekommenderar att du frågar data stegvis.
-
+      * Profilattribut och segmentmedlemskap kan komprimeras.
 
 ## Relaterad dokumentation
 
