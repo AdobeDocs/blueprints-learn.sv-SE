@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 310ef2284ffbc58d74f1924f5fe73ca226201da0
+source-git-commit: 590096ff0f2f96871fd03623fc167d215d55cdb8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ Känd kundanpassning stöds via flera implementeringsmetoder.
 
 * Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden Web/Mobile SDK eller Edge API.
 * [Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md) för SDK-baserad implementering.
+* För användning i Mobile SDK på [Adobe Journey Optimizer - Beslutstillägg](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) måste vara installerat i Mobile SDK.
 * [Se API:t för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
 ### Implementeringsmönster 2 - Programspecifika SDK:er
@@ -71,7 +72,7 @@ Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasur
 
 1. [Implementera Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) för webb- och mobilapplikationer
 1. [Implementera Experience Platform och [!UICONTROL Kundprofil i realtid]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) säkerställa att målgrupper som skapats aktiveras för Edge genom att konfigurera tillämpliga [sammanfogningsprincip](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy) som aktivt på Edge.
-1. Implementera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller Experience Platform Mobile SDK. Experience Platform Web/Mobile SDK eller EDGE API krävs för edge-segmentering i realtid, men krävs inte för delning av strömnings- och batchmålgrupper från Real-time Customer Data Platform till Target.
+1. Implementera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller [Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/) med rätt tillägg (Target eller Adobe Journey Optimizer - Decisioning) installerat. Experience Platform Web/Mobile SDK eller EDGE API krävs för edge-segmentering i realtid, men krävs inte för delning av strömnings- och batchmålgrupper från Real-time Customer Data Platform till Target.
 1. [Konfigurera Edge Network med Edge DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [Aktivera Adobe Target som mål i Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 1. (Valfritt) [Implementera Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html).
