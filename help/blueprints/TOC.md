@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: a5a8de74c2ce176e1ca36fa536ad1c088fccdc27
+source-git-commit: c0994c3f09d854c635049054328abcd2d552c28e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
@@ -29,8 +29,8 @@ ht-degree: 0%
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
-   + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
-   + Känd kundaktivering{#known-customer-audience-activation}
+   + [Anonym Audience Activation (AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + Känd kundaktivering (RTCDP) {#known-customer-audience-activation}
       + [Översikt](/help/blueprints/audience-activation/known.md)
       + Aktivering till sociala kanaler och reklamkanaler{#audience-activation}
          + [Aktivering till Facebook anpassade målgrupper](/help/blueprints/audience-activation/destinations/facebook.md)
@@ -74,6 +74,6 @@ ht-degree: 0%
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
-   + [Beteendeanpassning](/help/blueprints/web-personalization/behavioral.md)
-   + [Känd kundanpassning](/help/blueprints/web-personalization/known-personalization.md)
+   + [Beteendeanpassning - mål](/help/blueprints/web-personalization/behavioral.md)
+   + [Känd kundanpassning - mål och RTCDP](/help/blueprints/web-personalization/known-personalization.md)
    + [Beslutshantering](/help/blueprints/web-personalization/decision-management-edge.md)

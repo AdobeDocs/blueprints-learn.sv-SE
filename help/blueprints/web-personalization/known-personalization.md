@@ -1,13 +1,13 @@
 ---
-title: Webbpersonalisering/mobilpersonalisering - översikt
+title: Översikt över anpassning för webb/mobiler - Adobe Target och RTCDP
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 landing-page-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 590096ff0f2f96871fd03623fc167d215d55cdb8
+source-git-commit: 31f5e095ed5817ea1f6586aecdd13c1e06fb5e4a
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
