@@ -1,13 +1,13 @@
 ---
 user-guide-title: Digital Experience-utkast
-breadcrumb-title: 'Blueprints '
+breadcrumb-title: Blueprints
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: c0994c3f09d854c635049054328abcd2d552c28e
+source-git-commit: 4aced09f12b47c0af25af7aaa97085a607d749b3
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 + [Översikt](/help/blueprints/overview.md)
 + [Se alla användningsfall](/help/blueprints/use-cases.md)
-+ Möt alla framgångar i branschen{#industry-success-stories}
++ Lodräta industriskisser{#vertical-blueprints}
    + [Översikt](/help/blueprints/industry-success-stories/overview.md)
    + [Kläder](/help/blueprints/industry-success-stories/apparel.md)
    + [Detaljhandel](/help/blueprints/industry-success-stories/retail.md)

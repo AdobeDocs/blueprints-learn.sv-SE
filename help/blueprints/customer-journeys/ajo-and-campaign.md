@@ -3,9 +3,9 @@ title: Journey Optimizer med Adobe Campaign Blueprint
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
+source-git-commit: a04bd6fe26c9b67a5bfbe753d734882f30f6c047
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
    * Läsning av målgrupps- och affärshändelsebaserade resor stöds inte på grund av volym som kan skickas till körningsinstanserna
 * Varken AC (v7) eller AC (v8) stöder beslutsstyrning i meddelanden
 * Ingen begränsning av utgående API-anrop till Campaign
-* Loggar för transaktionsmeddelanden synkroniseras inte direkt till AEP. Kräver konsultation. Rekommendation att exportera loggar högst var fjärde timme
+* Med Campaign v8.4 är det möjligt att utnyttja Adobe Campaign Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Mer information finns i dokumentationen för Source Connector. [Länk](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
 
 <br>
 
@@ -126,7 +126,8 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 ### Campaign v7/v8 eller Campaign Standard
 
 * Meddelandemallar måste konfigureras med rätt personaliseringskontext
-* Exportera arbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme
+* För Campaign-standard - Exportera arbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme.
+* För Campaign v8.4 är det möjligt att utnyttja Adobe Campaign Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Mer information finns i dokumentationen för Source Connector. [Länk](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
 
 ### Konfiguration av Mobile Push (tillval)
 
