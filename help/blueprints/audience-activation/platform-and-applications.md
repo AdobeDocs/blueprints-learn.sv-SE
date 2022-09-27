@@ -4,9 +4,9 @@ description: Hantera profiler och målgrupper i Experience Platform och dela dem
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 094591020413933932356cb8c393bf569bcfca50
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Se [skyddsutkast på sidan Översikt över målgrupps- och profilaktivering](ove
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Target
 
-* Se [Web/Mobile Personalization med online- och offlinedata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) om du vill ha mer information om delning av profiler och målgrupper från Real-time Customer Data Platform till Target.
+* Se [Känd kundanpassning - mål- och RTCDP-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html) om du vill ha mer information om delning av profiler och målgrupper från Real-time Customer Data Platform till Target.
 
 ### Målgruppsdelning från Real-time Customer Data Platform till Campaign och Journey Optimizer
 
