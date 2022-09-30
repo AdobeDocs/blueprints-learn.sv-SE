@@ -2,16 +2,16 @@
 title: Segmentmatchning
 description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör det möjligt att utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
-source-git-commit: a4ae1eaa864f85144b8bdfbff23b4389847c8cfa
+source-git-commit: a5bf86b8606d40a0686c667f83516e3b495350b8
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
 
 # Segmentmatchning
 
-Nyckeln för varumärken är att få kontakt med kunderna baserat på data som samlats in från deras direkta relationer med konsumenterna. Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.
+Segmentmatchning gör det möjligt för partnervarumärken att dela målgrupper över sina respektive Experience Platform-miljöer. Nyckeln för varumärken är att få kontakt med kunderna baserat på data som samlats in från deras direkta relationer med konsumenterna. Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.
 
 [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som tillåter Experience Platform (AEP) kunder (kallas _partners_) för att utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 
