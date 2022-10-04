@@ -1,11 +1,11 @@
 ---
-title: Campaign v8-utkast
+title: Campaign v8, Blueprint, Campaign & AEP
 description: Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
+source-git-commit: f8116387105cf1fe0adfc148562529d62ca90cfc
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för tra
 * Påbörja och återmarknadsföra kampanjer
 * Reklam för direktreklam, broschyrer och tidskrifter
 * Enkelt transaktionsmeddelande (t.ex. lösenordsåterställning, e-postkvittenser, orderbekräftelser etc.)
+* Integrering av Campaign-data till Adobe Experience Platform för analys och profilskapande
+* Dela Real-time Customer Data Platform målgrupper med Campaign.
 
 <br>
 
