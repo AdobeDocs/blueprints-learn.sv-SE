@@ -1,11 +1,11 @@
 ---
-title: Real-Time CDP med integreringsmönstret Adobe Campaign v7
+title: Real-Time CDP med integreringsmönstret Adobe Campaign v7 och Campaign Standard
 description: Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personaliserade konversationer.
 solution: Real-time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: f8116387105cf1fe0adfc148562529d62ca90cfc
+source-git-commit: 163dd644b690c1f5554a3929e1f83c121e132df5
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,8 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 #### Källor/mål
 
+1. [Källor och utsmyckningar för Experience Platform och Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html)
+1. [Källor och designer för Experience Platform och Campaign v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html)
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 1. Konfigurera [!DNL Azure] lagringsmål för blob som kan användas med Adobe Campaign.
 
