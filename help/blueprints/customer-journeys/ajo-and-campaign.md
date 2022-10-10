@@ -3,9 +3,9 @@ title: Journey Optimizer med Adobe Campaign Blueprint
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: a04bd6fe26c9b67a5bfbe753d734882f30f6c047
+source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -66,92 +66,9 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 <br>
 
-### Campaign (v7/v8)
+### Kampanjintegrering
 
-* Körningsinstansen av meddelandecentret måste vara värd för Cloud Services som hanteras av Adobe
-* Måste finnas i version 7 >21.1 eller v8
-* Meddelandegenomströmning
-   * AC (v7) 50 000 per timme
-   * AC (v8) upp till 1 MB per timme baserat på paket
-* AC (v7) stöder endast händelseinitierade resor
-   * Inget segment eller segmentmedlemskap initierades på Journeys
-   * Läsning av målgrupps- och affärshändelsebaserade resor stöds inte på grund av volym som kan skickas till körningsinstanserna
-* Varken AC (v7) eller AC (v8) stöder beslutsstyrning i meddelanden
-* Ingen begränsning av utgående API-anrop till Campaign
-* Med Campaign v8.4 är det möjligt att utnyttja Adobe Campaign Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Mer information finns i dokumentationen för Source Connector. [Länk](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+Om du vill ha mer information om hur du integrerar med en viss version av Adobe Campaign och Adobe Journey Optimizer läser du i motsvarande guide för respektive Adobe Campaign-version.
 
-<br>
-
-### Campaign Standard
-
-* Stöder genomströmning på 14 tps (50 000 per timme)
-* Stöder endast händelseinitierade resor
-   * Inget segment eller segmentmedlemskap initierades på Journeys
-   * Läsning av målgrupps- och affärshändelsebaserade resor stöds inte på grund av volym som kan skickas till körningsinstanserna
-* Öppna och klicka-aktiviteter från transaktionsmeddelanden som skickas till Campaign Standarden visas som&quot;händelser&quot; i realtid på Journey Optimizer arbetsyta
-* Loggar för transaktionsmeddelanden synkroniseras inte direkt till Experience Platform. Kräver konsultation. Rekommendation att exportera loggar högst var fjärde timme
-
-<br>
-
-## Implementeringssteg
-
-### Adobe Experience Platform
-
-#### Schema/datauppsättningar
-
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform, baserat på kunddata.
-1. Skapa Experience Event-klassbaserade scheman för tabeller med adresser i Adobe Campaign brushlog, trackingLog och icke-levererbara adresser (valfritt).
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
-1. [Lägg till etiketter för dataanvändning](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform till datauppsättningen för styrning.
-1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som tillämpar styrning av destinationer.
-
-#### Profil/identitet
-
-1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Lägga till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
-1. Skapa segment för reseanvändning.
-
-#### Källor/mål
-
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
-
-### Journey Optimizer
-
-1. Konfigurera din Experience Platform-datakälla och bestäm vilka fält som ska cachas som en del av de profileStreaming-data som används för att initiera en kundresa måste konfigureras i Journey Optimizer först för att få ett orchestration-ID. Detta orkestrerings-ID skickas sedan till utvecklaren för användning vid förtäring
-1. Konfigurera externa datakällor
-1. Konfigurera anpassade åtgärder för Campaign-instansen
-
-### Campaign v7/v8 eller Campaign Standard
-
-* Meddelandemallar måste konfigureras med rätt personaliseringskontext
-* För Campaign-standard - Exportera arbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme.
-* För Campaign v8.4 är det möjligt att utnyttja Adobe Campaign Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Mer information finns i dokumentationen för Source Connector. [Länk](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
-
-### Konfiguration av Mobile Push (tillval)
-
-1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
-1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
-   * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
-   * Adobe Experience Platform Edge Network
-   * Identitet för Edge Network
-   * Mobile Core
-1. Se till att du har en dedikerad datastam för mobilappsdistributioner jämfört med webbdistributioner
-1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
-
-   >[!IMPORTANT]
-   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
-
-<br>
-
-## Relaterad dokumentation
-
-* [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
-* [Dokumentation för Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
-* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
-* [Journey Optimizer-dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=en)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=en)
-* [Dokumentation för Campaign v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
+* [Adobe Journey Optimizer &amp; Campaign v7](ajo-and-campaign-v7.md)
+* [Adobe Journey Optimizer &amp; Campaign v8](ajo-and-campaign-v8.md)
