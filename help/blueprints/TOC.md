@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
+source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 0%
 + Lodräta industriskisser{#vertical-blueprints}
    + [Översikt](/help/blueprints/vertical-blueprints/overview.md)
    + [Kläder](/help/blueprints/vertical-blueprints/apparel.md)
+   + [Sjukvård](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [Detaljhandel](/help/blueprints/vertical-blueprints/retail.md)
    + [Telekommunikation](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Resor och turism](/help/blueprints/vertical-blueprints/travel-hospitality.md)
@@ -26,9 +27,10 @@ ht-degree: 0%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
-   + Distributionsmönster{#deployment}
+   + Distribution{#deployment}
       + [Experience Platform Web SDK &amp; Edge Network](/help/blueprints/data-ingestion/websdk.md)
       + [SDK för program](/help/blueprints/data-ingestion/appsdk.md)
+      + [Guardrails](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
    + [Anonym Audience Activation (AAM)](/help/blueprints/audience-activation/anonymous.md)
