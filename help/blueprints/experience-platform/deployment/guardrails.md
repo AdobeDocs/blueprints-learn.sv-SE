@@ -3,9 +3,9 @@ title: Experience Platform och programskydd
 description: Garantier definierar förväntningarna på prestanda och påverkan för komponenter och tjänster i Adobe Experience Platform och program
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 4de3d70cc3218ec79a49daa0511d2ad779d49508
+source-git-commit: 8a53151558f4df9d2909d43d13bdbd800adbc79f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,23 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
 
+<br>
 
+## Slut till slut-svarstid
+
+### Dataintag
+
+Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för dataöverföring till Adobe Experience Platform.
+
+<img src="../assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
+
+<br>
+
+### Journey Optimizer
+
+<img src="../assets/activation-latency.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
+
+<br>
 
 ## Produktbeskrivningar
 
