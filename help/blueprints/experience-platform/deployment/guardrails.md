@@ -3,9 +3,9 @@ title: Experience Platform och programskydd
 description: Garantier definierar förväntningarna på prestanda och påverkan för komponenter och tjänster i Adobe Experience Platform och program
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 8a53151558f4df9d2909d43d13bdbd800adbc79f
+source-git-commit: e75f8b39b52794b61c4efd33df1f658a6615a7b8
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 [Identitetsskydd](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 
 [Frågetjänstmeddelanden](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
+
+[Målaktiveringsskydd](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
 
 [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
 
