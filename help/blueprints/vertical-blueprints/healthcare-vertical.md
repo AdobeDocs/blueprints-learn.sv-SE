@@ -2,16 +2,16 @@
 title: Sjukvård
 description: Läs om Healthcare Shield, ett Adobe Experience Platform-tillägg för plattformsbaserade tillämpningar som Real-Time CDP, Customer Journey Analytics och Adobe Journey Optimizer. Tillägget gör att dessa program uppfyller kraven för HIPAA och PHI.
 solution: Experience Platform
-source-git-commit: 3e71aa9ea63e94b9fc0002e2fc879894149e5d0f
+source-git-commit: a7dd0634533110859500e2dab63779014f8cf9b9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2367'
 ht-degree: 0%
 
 ---
 
 # Hälsovårdssköld
 
-Vårdskölden är ett Adobe Experience Platform-tillägg till Adobe Experience Platform-baserade program som Real-Time CDP, Customer Journey Analytics och Adobe Journey Optimizer. Det är utformat för att göra dessa program HIPAA-klara och uppfyller kraven för bearbetning och användning av PHI (Protected Health Information).
+Sjukvården är ett Adobe Experience Platform-tillägg till Adobe Experience Platform-baserade program som Real-time Customer Data Platform, Customer Journey Analytics och Adobe Journey Optimizer. Det är utformat för att göra dessa program HIPAA-klara och uppfyller kraven för bearbetning och användning av PHI (Protected Health Information).
 
 ## Frågor och svar om vårdsköld
 
@@ -41,7 +41,7 @@ Sjukvården för Real-Time CDP är avsedd för kunder som är en enhet som omfat
 
 ### Varför ska hälso- och sjukvårdspersonal köpa hälsovård från Real-Time CDP?
 
-Som tillägg till Real-Time CDP uppgraderar Healthcare Shield programmet till statusen&quot;HIPAA-ready&quot;. Detta innebär att programmet har de skyddsåtgärder som krävs för att använda PHI i enlighet med HIPAA-kraven. Dessutom kan Adobe med vårdskölden ge kunden tillstånd att föra in vissa typer av tillåtna känsliga personuppgifter till den HIPAA-klara tillämpningen. Adobe signerar Business Associate Agreements (BAA) med kunder som licensierar Healthcare Shield för en kompatibel plattformsbaserad applikation.
+Som tillägg till Real-Time CDP uppgraderar Healthcare Shield programmet till statusen&quot;HIPAA-ready&quot;. Detta innebär att programmet har de skyddsåtgärder som krävs för att använda PHI i enlighet med HIPAA-kraven. Dessutom kan Adobe med vårdskölden ge kunden tillstånd att föra in vissa typer av tillåtna känsliga personuppgifter till de HIPAA-klara tillämpningarna. Adobe signerar Business Associate Agreements (BAA) med kunder som licensierar Healthcare Shield för en kompatibel plattformsbaserad applikation.
 
 ### Vilka typer av data är godkända för Real-Time CDP med vårdsköld (och vilka är inte det)?
 
@@ -73,16 +73,16 @@ En kundlicenssköld för hälso- och sjukvård bör använda ett bra omdöme fö
 
 | Användningsexempel för RTCDP B2C Edition Standard | Beskrivning |
 |-----|-----|
-| Insamling av strömmande data | <ul><li>Normaliserade, flexibla datamodeller som kan användas över Adobe och icke-Adobe<li>Persondata och kontobaserade datascheman utformade för B2C-marknadsföring<li>Tagghantering och vidarebefordran av händelser samlar in och distribuerar data på händelsenivå i realtid.<li> Optimerade profiler som kortar leveranstiden</li></ul> |
-| Betrodd profilhantering | <ul><li>Enhetliga profiler som innehåller konsumentattribut, beteenden och inställningsdata<li> Datastyrningsramverket är flexibelt, transparent och tillämpat på enhetliga profiler med skapande av policyer och automatisk tillämpning för att förhindra missbruk av data. </li></ul> |
-| Aktivering i realtid | <ul><li>Dra-och-släpp-segmentering för B2C-marknadsförare<li>Identitetsupplösning på person- och kontonivå samt profilberikning för flerkanalsaktivering<li> Enhetliga kundupplevelser genom målgruppssamordning och realtidsaktivering i alla kanaler och miljöer (Adobe och icke-Adobe) </li></ul> |
-| Kundvärvning | <ul><li>Insikter i konvertering av oautentiserade till identifierade/autentiserade användare<li>Uppmuntra oregistrerade användare att registrera sig för medlemskap.<li> Öka och/eller få tillbaka prenumerationer<li> Analysera kundprofiler för att förstå benägenheten (t.ex. . jämföra högvärdessegment med underpresterande segment och optimera för förvärv)</li></ul> |
-| Kundengagemang | <ul><li>Målerbjudanden baserade på kundernas beteendemönster, senaste händelser och frekvensåtgärder för erbjudanden (online och offline)<li>Sammanställ digitala egenskaper för en uppkopplad upplevelse (uppmuntra till nedladdning av mobilappar och använd segmentaktivering i alla kanaler för att koppla samman upplevelser)</li></ul> |
-| Anpassning i stor skala | <ul><li> Utvärdera segment i realtid för personalisering av samma sida och nästa sida<li>Öka engagemanget genom att leverera unika och målinriktade upplevelser till besökare som överger en session över resorna (t.ex. överge kundvagnen, upprepa besökare som inte lyckas konvertera).<li> Sammanställ och koppla offline- och onlinebeteenden för att optimera och engagera användarna</li></ul> |
-| Korsförsäljning/merförsäljning | <ul><li>Bevara kunderna samtidigt som ni utvecklar och upprätthåller befintliga relationer med användarna<li>Skapa nya intäktsströmmar med affärsenhet/varumärke/erbjudande till kundens livstidsvärde<li>Få insikter om AOV för olika produkter och SKU:er (t.ex. frekventa paket, priskänslighet)</li></ul> |
-| Kundlagring/lojalitet | <ul><li> Återaktivera kunder för att öka lojaliteten och undvika att kunderna faller<li>Kuratera personaliserade produktrekommendationer för värdefulla kunder baserat på preferenser och benägenhet<li>Skapa en standardkonferens för engagemang och specialerbjudanden för lojala kunder<li> Länka inställningar online och offline för att optimera erbjudanden i alla kanaler</li></ul> |
-| Datasamarbete | <ul><li> Skapa handskakningar i ett användargränssnitt för att bygga upp arbetsflöden för datasamarbete.<li>(Utnyttja dataöverlappningar mellan olika branscher för att fatta välgrundade strategiska affärsbeslut och -kampanjer.<li>Minska mängden data och förstå en holistisk kundresa<li> Uppfyll önskemål och godkänn efter användningsfall</li></ul> |
-| Media/marknadsföringseffektivitet och optimering | <ul><li> Öka effektiviteten i organisationen genom att centralisera och underhålla kunddata och aktiveringskanaler i ett och samma registersystem<li>Stödja undertryckningskampanjer för effektiv medieanvändning<li> Anpassa till IT-policyer via styrning och policystyrning<li>Ge åtkomst till data efter behov, i realtid för att ge stöd åt kampanjer i rätt tid</li></ul> |
+| Insamling av strömmande data | <ul><li>Normaliserade, flexibla datamodeller som kan användas över Adobe och icke-Adobe<li>Persondata och kontobaserade datascheman utformade för B2C-marknadsföring.<li>Tagghantering och vidarebefordran av händelser samlar in och distribuerar data på händelsenivå i realtid.<li> Optimerade profiler som snabbar upp leveransen av upplevelser.</li></ul> |
+| Betrodd profilhantering | <ul><li>Enhetliga profiler som innehåller konsumentattribut, beteenden och inställningsdata.<li> Datastyrningsramverket är flexibelt, transparent och tillämpat på enhetliga profiler med skapande av policyer och automatisk tillämpning för att förhindra missbruk av data. </li></ul> |
+| Aktivering i realtid | <ul><li>Dra-och-släpp-segmentering för B2C-marknadsförare.<li>Identitetsupplösning på person- och kontonivå samt profilberikning för flerkanalsaktivering.<li> Enhetliga kundupplevelser genom målgruppssamordning och realtidsaktivering i alla kanaler och miljöer (Adobe och andra än Adobe).</li></ul> |
+| Kundvärvning | <ul><li>Insikter i konvertering av oautentiserade till identifierade/autentiserade användare.<li>Uppmuntra oregistrerade användare att registrera sig för medlemskap.<li> Öka och/eller få tillbaka prenumerationer.<li> Analysera kundprofiler för att förstå benägenheten (t.ex. . jämför högvärdessegment med underpresterande segment och optimera för förvärv).</li></ul> |
+| Kundengagemang | <ul><li>Målinriktade erbjudanden baserade på kundernas beteendemönster och hur ofta erbjudandena presenteras (online och offline).<li>Sammanställ digitala resurser för en uppkopplad upplevelse (uppmuntra till nedladdning av mobilappar och använd segmentaktivering i alla kanaler för att koppla samman upplevelser).</li></ul> |
+| Anpassning i stor skala | <ul><li> Utvärdera segment i realtid för personalisering av samma sida och nästa sida.<li>Öka engagemanget genom att leverera unika och målinriktade upplevelser till besökare som överger en session över resorna (t.ex. överge kundvagnen, upprepa besökare som inte lyckas konvertera).<li> Sammanställ och koppla samman offline- och onlinebeteenden för att optimera och engagera användarna.</li></ul> |
+| Korsförsäljning/merförsäljning | <ul><li>Bevara kunderna samtidigt som ni utvecklar och upprätthåller befintliga relationer med användarna.<li>Öka kundens livstidsvärde genom att generera nya intäktsströmmar med affärsenhet/varumärke/erbjudande.<li>Få insikter om AOV för olika produkter och SKU:er (t.ex. frekventa paket, priskänslighet).</li></ul> |
+| Kundlagring/lojalitet | <ul><li> Återaktivera kunder för att öka lojaliteten och undvika att kunderna faller bort&lt;.li>Kuratera personaliserade produktrekommendationer för värdefulla kunder utifrån önskemål och benägenhet.<li>Skapa en standardkonferens för engagemang och specialerbjudanden för lojala kunder.<li> Länka inställningarna online och offline för att optimera erbjudanden i olika kanaler.</li></ul> |
+| Datasamarbete | <ul><li> Skapa handskakningar i ett användargränssnitt för att bygga upp arbetsflöden för datasamarbete.<li>(Utnyttja dataöverlappningar mellan olika branscher för att få information om strategiska affärsbeslut och kampanjer.<li>Bryt ner datavattnen och förstå holistiska kundresor.<li> Följ preferenser och samtycke efter användningsfall.</li></ul> |
+| Media/marknadsföringseffektivitet och optimering | <ul><li> Öka effektiviteten i organisationen genom att centralisera och underhålla kunddata och aktiveringskanaler i ett och samma registersystem.<li>Stödja undertryckningskampanjer för effektiv medieanvändning.<li> Anpassa er till IT-policyer via styrning och policystyrning.<li>Ge åtkomst till data efter behov, i realtid för att stödja kampanjer i rätt tid.</li></ul> |
 
 ## Relevanta tekniska funktioner
 
@@ -178,13 +178,11 @@ Se [HIPAA och Adobe Products and Services](https://www.adobe.com/trust/complianc
 
 Produkter som är HIPAA-klara (och inte):
 
-![Hippa Ready](assets/hippa-ready.png)
-
 **Marketecture-diagram**
 
-![Hippa Ready](assets/HIPAA-readiness.png)
+* Program som är illustrerade med grått är ännu inte HIPAA-klara.
 
-[Lucidchart-källa](https://lucid.app/lucidchart/8a795213-3bfa-43f3-a542-f0de56123afd/edit?invitationId=inv_d3183739-8c07-4ca2-bfd1-16d819b911a6&amp;page=0_0)
+![Hippa Ready](assets/HIPAA-readiness.png)
 
 ## Metod
 
