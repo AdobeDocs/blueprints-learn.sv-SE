@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
+source-git-commit: e7a640580038c547cf983956ed155099aa14b159
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,7 +19,6 @@ ht-degree: 0%
 + Lodräta industriskisser{#vertical-blueprints}
    + [Översikt](/help/blueprints/vertical-blueprints/overview.md)
    + [Kläder](/help/blueprints/vertical-blueprints/apparel.md)
-   + [Sjukvård](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [Detaljhandel](/help/blueprints/vertical-blueprints/retail.md)
    + [Telekommunikation](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Resor och turism](/help/blueprints/vertical-blueprints/travel-hospitality.md)
