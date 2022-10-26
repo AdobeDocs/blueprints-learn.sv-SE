@@ -3,7 +3,7 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 8a53151558f4df9d2909d43d13bdbd800adbc79f
+source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Observera dessa som inte finns med på länken ovan:
 
 ### Aktiveringsskydd
 
-<img src="../experience-platform/assets/activation-latency.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
