@@ -4,9 +4,9 @@ description: Leverera kontobaserade målgrupper och profilbaserade kundupplevels
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 2db815520027e3fed71eb1eb5138009fd2ed93a1
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ Använd konto-, affärsmöjlighets- och lead-information som är knuten till en 
 
 ## Guardrails
 
-Observera att säkerhetsutkast och implementeringsåtgärder som rör Marketo Engage endast är relevanta när Marketo Engage används som källa och/eller mål.
+* Observera att säkerhetsutkast och implementeringsåtgärder som rör Marketo Engage endast är relevanta när Marketo Engage används som källa och/eller mål.
+
+* Mer information och skyddsförslag för slut- och slutlatenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
+
 
 ### Stöd för flera instanser och IMS-organisation:
 
@@ -55,7 +58,7 @@ Följande visar vilka mönster som stöds för mappning av instanser av Experien
 
 #### Profil- och segmenteringsskydd för Experience Platform:
 
-* Se profilerna och segmenteringsgarantierna för Experience Platform - [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+* Se profilerna och segmenteringsgarantierna för Experience Platform - [Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * B2B-segment som inkluderar konton, leads, affärsmöjligheter använder relationer med flera enheter vilket gör att segmentutvärderingen blir en batch. Direktuppspelningssegmentering stöds för segment som är begränsade till personer och händelser.
 
 #### Experience Platform - Källanslutning till Marketo Engage:
@@ -74,7 +77,7 @@ Följande visar vilka mönster som stöds för mappning av instanser av Experien
 
 #### Målgarantins
 
-* Mer information om destinationerna finns i måldokumentationen. [Riktlinjer för destinationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)
+* Mer information om destinationerna finns i måldokumentationen. [Målgarantins](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=en)
 
 
 ## Implementeringssteg

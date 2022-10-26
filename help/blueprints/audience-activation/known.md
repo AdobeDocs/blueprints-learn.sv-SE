@@ -4,9 +4,9 @@ description: Online/offline Audience Activation.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 
 ## Guardrails
 
-[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering](overview.md).
+[Se skyddsutkastet på sidan Översikt över målgrupps- och profilaktivering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html?lang=en#guardrails-for-audience-and-profile-activation-blueprints).
 
 ## Implementeringssteg för Real-time Customer Data Platform
 
