@@ -5,10 +5,10 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: e7a640580038c547cf983956ed155099aa14b159
+source-git-commit: f087e4d4312c7e8e33130a699b43909914252035
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '252'
+ht-degree: 4%
 
 ---
 
@@ -70,9 +70,10 @@ ht-degree: 0%
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
       + [Real-Time CDP med Adobe Campaign v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
       + [Journey Optimizer med Adobe Campaign v7](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
-+ Datainmatning och dataexport{#data-ingestion}
++ Datainsamling, inmatning, åtkomst och export{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
+   + [Dataåtkomst och -export](/help/blueprints/data-ingestion/egress.md)
    + [Vidarebefordran av händelser](/help/blueprints/data-ingestion/server-side-collection.md)
    + [Samling med data för flera sandlådor](/help/blueprints/data-ingestion/multi-sandbox-data-collection.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
