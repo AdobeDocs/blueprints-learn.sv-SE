@@ -4,9 +4,9 @@ description: Den här planen visar hur datavetenskapen kan inhämtas till Experi
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
+source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ Custom Data Science for Profile Enrichment Blueprint visar hur data kan använda
 ## Arkitektur
 
 <img src="assets/data_science.svg" alt="Referensarkitektur för Custom Data Science for Profile Enrichment Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+
+## Guardrails
+
+* Detaljerade skyddsförslag och sluttider för inhämtning av data från datavetenskapen finns i Experience Platform och kundprofilen i realtid. Se även de detaljerade säkerhetsritningarna och tidsdiagrammet i rapporten. [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md).
 
 ## Implementeringssteg
 
