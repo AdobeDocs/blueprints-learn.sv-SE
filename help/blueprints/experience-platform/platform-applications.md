@@ -5,9 +5,9 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 83f1f5e0e508d35d6711710cdb4d367f67e4f715
+source-git-commit: 79e349d8b8dcb1626cccfff2ad56160bb9babd76
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td>Analyser</td>
 <td>
 <ul>
-<li>Ingen aktuell integrering</li>
+<li>Data som samlas in via webb/mobil SDK kan vidarebefordras till Adobe Analytics.</li>
 </ul>
 </td>
 <td>
@@ -89,7 +89,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 <td>
 <ul>
-<li>Data som samlas in och utvärderas kan delas med Experience Platform data sjö- och profibutik. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en">Audience Manager Source Connector</a></li>
+<li>Data som samlas in och utvärderas tillsammans med målgruppsmedlemskap från Audience Manager kan delas till Experience Platform Data Lake och Profile Store. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en">Audience Manager Source Connector</a></li>
 </ul>
 </td>
 <td>
@@ -141,6 +141,9 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td colspan="1">
 <ul>
 <li>Data som samlas in och hämtas in i Experience Platform Data Lake görs tillgängliga för behandling till Customer Journey Analytics. </li>
+<li>Profil- och målgruppsdata från Real-time Customer Data Platform kan hämtas till CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">Integrering mellan RTCDP och CJA</a>.
+</li>
+</ul>
 </ul>
 </td>
 <td colspan="1">
@@ -191,15 +194,15 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 </tr>
 <tr>
-<td colspan="1">Magento</td>
+<td colspan="1">Adobe Commerce</td>
 <td colspan="1">
 <ul>
-<li>Ingen aktuell integrering</li>
+<li>Profiler och målgrupper som skapats i Real-time Customer Data Platform kan göras tillgängliga för personalisering i Adobe Commerce. </li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Data som är inbyggda i Magento kan skickas till Experience Platform via en Magento-källanslutning. </li>
+<li>Data som är inbyggda i Adobe Commerce kan skickas till Experience Platform via en Adobe Commerce-källanslutning. </li>
 </ul>
 </td>
 <td colspan="1">Ingen aktuell integrering</td>
@@ -218,7 +221,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 <td colspan="1">
 <ul>
-<li>B2B-aktivering - under utveckling</li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en">B2B-aktiveringsutkast</a></li>
 </ul>
 </td>
 </tr>
