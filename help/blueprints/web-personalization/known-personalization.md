@@ -5,9 +5,9 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: 87679928d2bfcfe74c85bb054341c662999e52a5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,17 @@ Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasur
 
 [Läs mer i skyddsutkastet på sidan Översikt över skräddarsydda webb- och mobilskisser.](overview.md)
 
+* Edge-profiler skapas bara när en användare är aktiv på Edge, vilket innebär att deras profil har direktuppspelningshändelser som skickas till Edge via Web/Mobile SDK eller Edge Server-API:t. Detta motsvarar vanligtvis den användare som är aktiv på en webbplats eller i en mobilapp.
+* Kantprofiler har en standardtid för att fungera på 14 dagar. Om användaren inte har samlat in aktiva edge-händelser kommer profilen att upphöra att gälla efter 14 dagars inaktivitet. Profilen förblir giltig i navet och synkroniseras med kanten när användaren åter aktiveras på kanten.
+* När en ny profil skapas på kanten görs ett synkanrop asynkront till navet för att hämta målgrupper och attribut som har konfigurerats för kantprojektion via ett mål. Eftersom det är en asynkron process kan det ta från en sekund till flera minuter innan hubbprofilen synkas till kanten. Därför kan det inte garanteras att nya profiler har profilkontexten från navet för förstasidupplevelser. Detta gäller även för nyligen insamlade data till navet. Dessa data projiceras asynkront till kanten och därmed kommer tidpunkten för när data kommer till lämplig kant att separeras från kantaktiviteten. Endast profiler som är aktiva längs kanten behåller attribut och målgrupper som projiceras från navet.
+
 ## Överväganden gällande implementering
 
 Identitetskrav
 
 * Alla primära identiteter kan utnyttjas när implementeringsmönster 1 används, vilket beskrivs ovan, med Edge-nätverket och WebSDK. Personalisering vid första inloggning kräver att personaliseringsbegäran anger en primär identitet som matchar den primära identiteten för profilen från Real-time Customer Data Platform. Identitetssammanfogning mellan anonyma enheter och kända kunder behandlas på navet och sedan projiceras till utkanten.
 * Observera att data som överförs till navet innan en konsument besöker eller loggar in på en webbplats inte omedelbart blir tillgängliga för personalisering. En aktiv kantprofil måste först finnas för att hubbdata ska kunna synkroniseras till. När kantprofilen har skapats synkroniseras den asynkront med navprofilen, vilket resulterar i nästa sidanpassning.
-* Att dela målgrupper från Adobe Experience Platform till Adobe Target kräver att ECID används som identitet när målgruppsdelningstjänsten används, vilket beskrivs i integreringsparten 2 och 3 ovan.
+* Att dela målgrupper från Adobe Experience Platform till Adobe Target kräver att ECID används som identitet när målgruppsdelningstjänsten används enligt beskrivningen i integreringsmönstret 2 och 3 ovan.
 * Alternativa identiteter kan även användas för att dela Experience Platform-målgrupper med Adobe Target via Audience Manager. Experience Platform aktiverar målgrupper till Audience Manager via följande namnutrymmen som stöds: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Observera att Audience Manager och Target löser medlemskap för målgrupper via ECID-identiteten, så ECID måste fortfarande finnas i identitetsdiagrammet för konsumenten för att den slutliga målgruppen ska kunna dela till Adobe Target.
 
 ## Relaterad dokumentation

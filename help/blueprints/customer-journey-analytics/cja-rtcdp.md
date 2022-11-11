@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: d47efe9bb7d19a745e0d75d21a09cb87912bd60b
+source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,18 @@ I följande dokumentation finns vägledning om implementering och konfigurering 
 * Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
 
 ![Guardradit-diagram](../experience-platform/assets/CJA_guardrails.svg)
+
+## Vanliga frågor
+
+* Om det inte finns någon motsvarande profil i RTCDP som CJA har skickat, kommer en ny profil att skapas eller spelas målgrupper bara in från CJA för profiler som redan finns? Ja, en ny profil skapas. Om RTCDP-implementeringen bara är till för kända kunder, bör därför målgruppsreglerna för CJA skrivas för att filtrera enbart efter profiler med kända identiteter. Detta säkerställer att RTCDP-profilantalet inte ökar från anonyma profiler om det inte behövs.
+
+* Skickar CJA målgruppsdata som rörliga händelser eller som en platt fil som också går till sjön? CJA-målgrupper direktuppspelas via pipeline till RTCDP Profile Service, men data lagras även i datasjön som en datauppsättning.
+
+* Vilka identiteter skickar CJA? CJA skickar över de identiteter som konfigurerats som &quot;person-ID&quot; under CJA-konfigurationen.
+
+* Vad anges som primär identitet? Vilken identitet användaren än valde när han/hon konfigurerade CJA som primär &quot;person&quot;-ID.
+
+* Bearbetar identitetstjänsten även CJA-meddelandena? Kan CJA lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning? Nej, identitetstjänsten bearbetar inte CJA-meddelandena.
 
 ## Relaterade blogginlägg
 
