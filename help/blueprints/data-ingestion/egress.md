@@ -3,9 +3,10 @@ title: Dataåtkomst och export av utkast
 description: Denna plan innehåller en översikt över alla metoder som kan användas för att komma åt och exportera data från Adobe Experience Platform och program.
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
-source-git-commit: 67e66068bb8a2106dd8aa9784b5a39377225c045
+exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
+source-git-commit: c0fe0e94e30351f593e32ea0e6809dd832f976ad
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Se [API för åtkomst till kundprofiler i realtid](https://experienceleague.adob
 
 * Kundprofil i realtid [skyddsräcken](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) gäller.
 * Utformad för sökning efter enstaka profiler åt gången. Används inte för att få tillgång till eller hämta hela profilpopulationen för användning av analys eller datavetenskap.
-* Svarstiden för profilsökning följer profilens skyddsprofiler. Kraven på låg latens - till exempel för krav på sidanpassning bör Edge-profilen eller kundens personaliseringsmål användas för profilåtkomst med låg latens. [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en).
+* Svarstiden för profilsökning följer profilens skyddsprofiler. Låga latenskrav i realtid - exempelvis för krav på sidanpassning bör Edge Profile användas från början till slut [Adobe Target Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) eller [Anpassad anslutning för anpassning](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en) för profilåtkomst i realtid för webbläsare och apppersonalisering.
 
 ### API för dataåtkomst {#data-access-api}
 
@@ -129,7 +130,7 @@ Se [Real-time Customer Data Platform Destinations](https://experienceleague.adob
 
 #### Användningsexempel
 
-* Aktivera profilattributinformation, inklusive målgruppsmedlemskap i ett internt Enterprise-datalager, analysverktyg, e-postsystem eller supportsystem.
+* Aktivera profilattributinformation, inklusive målgruppsmedlemskap i interna datalager, analysverktyg, e-postsystem eller supportsystem.
 * Aktivera medlemskap för profilmålgrupper hos en extern reklamleverantör för att anpassa och anpassa innehållet efter profilen.
 
 #### Överväganden
@@ -154,13 +155,3 @@ Se [Journey Optimizer egna åtgärder](https://experienceleague.adobe.com/docs/j
 * Anpassade åtgärder kan utföras i en direktuppspelning en i taget för varje händelse eller profil under en resa. Det går inte att utföra massåtgärder eller massdatagränser i form av filer eller aggregerade förfrågningar över kundresor.
 * Direktuppspelad åtkomst till kundprofilattribut i realtid och upplevelsehändelser som kan inkluderas i aktiveringsnyttolasten.
 * Händelsedata kan filtreras och enkla mappningsomvandlingar tillämpas innan händelser skickas till externa mål.
-
-
-
-
-
-
-
-
-
-
