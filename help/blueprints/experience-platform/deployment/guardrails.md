@@ -3,13 +3,13 @@ title: Experience Platform och programskydd
 description: Garantier definierar förväntningarna på prestanda och påverkan för komponenter och tjänster i Adobe Experience Platform och program
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 24699f79ed4966a72f78138ad9dd9f3763674b4e
+exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
+source-git-commit: f208fcd938bfc12882421f213192a6888f546a79
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Guardrails
 
@@ -79,6 +79,8 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 [Experience Platform Intelligence](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 
 [Intelligenta tjänster](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
+
+[Data Distiller](https://helpx.adobe.com/legal/product-descriptions/data-distiller.html)
 
 [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
 
