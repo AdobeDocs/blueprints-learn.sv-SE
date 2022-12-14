@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: d952442d066ea99f5b089f85798129dd0e40daec
+source-git-commit: fd8dd3caee5cbf450c5f00266c74ccdef7cd1de9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '262'
 ht-degree: 4%
 
 ---
@@ -79,6 +79,10 @@ ht-degree: 4%
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
++ Optimera försörjningskedjan för kampanjer med Marketo och Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
+   + [Översikt](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md)
+   + [Nöjda kunder berättar](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/customer-success-stories.md)
+   + [Infoga och skapa](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md)
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning - mål](/help/blueprints/web-personalization/behavioral.md)
