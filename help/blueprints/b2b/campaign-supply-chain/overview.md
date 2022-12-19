@@ -2,9 +2,9 @@
 description: Översikt - Optimera leveranskedjan för kampanjer med Marketo och Workfront
 title: Översikt
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
+source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Nu när ni har en grundläggande förståelse för hur Workfront och Marketo Eng
 
 ### Getting Started with Workfront Fusion, Workfront and Marketo Engage Integration {#getting-started-with-workfront-fusion}
 
-* [Infoga och skapa](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md){target=&quot;_blank&quot;} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
+* [Infoga och skapa](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md){target=&quot;_blank&quot;} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
 
 * Korrektur och godkännande (kommer snart)
 

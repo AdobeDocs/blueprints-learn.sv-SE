@@ -2,9 +2,9 @@
 description: Intag och skapande - Optimera leveranskedjan för kampanjer med Marketo och Workfront
 title: Infoga och skapa
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
+source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I arbetsflödet nedan visas en begäran om ett webbinarium som görs av en kampa
 
 >[!TIP]
 >
->Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md){target=&quot;_blank&quot;}.
+>Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}.
 
 ## Förbered er kampanjutvecklingsprocess för automatisering {#prepare-your-campaign-development-process-for-automation}
 

@@ -5,7 +5,7 @@ landing-page-description: Synkronisera webbpersonalisering med e-post och annan 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 87679928d2bfcfe74c85bb054341c662999e52a5
+source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Känd kundanpassning stöds via flera implementeringsmetoder.
 ### Implementeringsmönster 1 - Edge Network med webb/mobil SDK eller Edge Network API (rekommenderat tillvägagångssätt)
 
 * Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden Web/Mobile SDK eller Edge API.
-* [Se Experience Platform Web and Mobile SDK Blueprint](../data-ingestion/websdk.md) för SDK-baserad implementering.
+* [Se Experience Platform Web and Mobile SDK Blueprint](../experience-platform/deployment/websdk.md) för SDK-baserad implementering.
 * För användning i Mobile SDK på [Adobe Journey Optimizer - Beslutstillägg](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) måste vara installerat i Mobile SDK.
 * [Se API:t för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
@@ -66,7 +66,7 @@ Känd kundanpassning stöds via flera implementeringsmetoder.
 
 Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Direktuppspelning och gruppmålgruppsdelning från Experience Platform nav stöds dock med den här implementeringsmetoden.
 
-[Se programspecifik SDK-skiss](../data-ingestion/appsdk.md)
+[Se programspecifik SDK-skiss](../experience-platform/deployment/appsdk.md)
 
 ### Implementeringssteg
 
@@ -100,7 +100,7 @@ Identitetskrav
 ### SDK-dokumentation
 
 * [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
-* [Dokumentation för Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Dokumentation för Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
 * [Experience Cloud ID-tjänstdokumentation](https://experienceleague.adobe.com/docs/id-service/using/home.html)
 
 ### Anslutningsdokumentation
