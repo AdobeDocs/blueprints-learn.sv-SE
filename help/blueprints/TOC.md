@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: fd8dd3caee5cbf450c5f00266c74ccdef7cd1de9
+source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -27,8 +27,8 @@ ht-degree: 4%
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
    + Distribution{#deployment}
-      + [Experience Platform Web SDK &amp; Edge Network](/help/blueprints/data-ingestion/websdk.md)
-      + [SDK för program](/help/blueprints/data-ingestion/appsdk.md)
+      + [Experience Platform Web SDK &amp; Edge Network](/help/blueprints/experience-platform/deployment/websdk.md)
+      + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Guardrails](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
