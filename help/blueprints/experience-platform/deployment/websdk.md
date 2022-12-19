@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
+source-git-commit: 0b0f77eaf903f592993ed8f4abe29827b733c769
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 En översikt och information om Web och Mobile SDK samt API:t för Edge Network Server finns i följande avsnitt.
 * [WebSDK-översikt](https://experienceleague.adobe.com/docs/web-sdk.html)
-* [MobileSDK - översikt](https://aep-sdks.gitbook.io/docs/)
+* [MobileSDK - översikt](https://developer.adobe.com/client-sdks/documentation/)
 * [API för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 En detaljerad beskrivning av vilka programfunktioner som stöds i WebSDK finns i följande dokumentation.
