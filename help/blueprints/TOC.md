@@ -5,10 +5,10 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
+source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,6 +45,10 @@ ht-degree: 4%
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
+   + Kampanjleveranskedja med Marketo och Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
+      + [Översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md)
+      + [Nöjda kunder berättar](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
+      + [Infoga och skapa](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
    + [Dela CJA-målgrupper till RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
@@ -79,10 +83,6 @@ ht-degree: 4%
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
-+ Optimera försörjningskedjan för kampanjer med Marketo och Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
-   + [Översikt](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md)
-   + [Nöjda kunder berättar](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/customer-success-stories.md)
-   + [Infoga och skapa](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md)
 + Webb- och mobilpersonalisering{#web-personalization}
    + [Översikt](/help/blueprints/web-personalization/overview.md)
    + [Beteendeanpassning - mål](/help/blueprints/web-personalization/behavioral.md)
