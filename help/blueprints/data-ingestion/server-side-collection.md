@@ -1,17 +1,17 @@
 ---
-title: Vidarebefordra utkast
+title: Planen för vidarebefordran av händelser
 description: Strömma insamlade data från Experience Platform SDK:er till destinationer
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 7181c1dc3f823a9ea6f0e95f036eb4623b1b6c3b
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-# Vidarebefordra utkast
+# Planen för vidarebefordran av händelser
 
 Händelsevidarebefordringsskissen visar hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan vidarebefordras från Experience Platform Edge Network till önskad destination. Du kan vidarebefordra alla rådata som samlats in från SDK:n eller specifika data baserade på händelser och regler som konfigurerats i taggegenskaperna (tidigare Launch).
 

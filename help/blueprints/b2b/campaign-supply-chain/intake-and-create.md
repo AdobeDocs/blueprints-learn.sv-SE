@@ -1,21 +1,21 @@
 ---
+title: Ta och skapa en plan
 description: Intag och skapande - Optimera leveranskedjan för kampanjer med Marketo och Workfront
-title: Infoga och skapa
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: c33790d001c98628fcaa57f0ef8ebf449adb8af2
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
 
-# Infoga och skapa {#intake-and-create}
+# Ta och skapa en plan {#intake-and-create}
 
 Det antal marknadsföringsförfrågningar som kommer in i ett marknadsföringsteam för att lansera nya kampanjer kan göra ett högt fungerande team till en ständig dörr av återkommande uppgifter, vilket leder till att innovationer sprider sig ut och stagnerar.
 
 Genom att skapa en process för att skicka in kampanjförfrågningar och automatisera skapandet av ofta efterfrågade marknadsföringskampanjer kan ni: öka tempot i era kampanjer, minska antalet fel, skicka förfrågningar till rätt medlem i era marknadsföringsaktiviteter, balansera och förbättra resursanvändningen och fokusera mer på era marknadsföringsåtgärder för mer strategiska uppgifter.
 
-Med Workfront och Marketo Engage kan du ansluta system-till-system från en [Formulär för Workfront-begäran](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target=&quot;_blank&quot;} för att skapa ett Marketo Engage-program och sedan fylla i nyckelvariabler som: ämnesrader, e-postkopia, bilder, datum, tid, händelseinformation med mera.
+Med Workfront och Marketo Engage kan du ansluta system-till-system från en [Formulär för Workfront-begäran](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program, fylla i nyckelvariabler som: ämnesrader, e-postkopia, bilder, datum, tid, händelseinformation med mera.
 
 För att uppnå den här integreringen kommer du att använda Workfront Fusion, ett lager för automatisering av arbete som gör att du kan automatisera arbetsflöden mellan Workfront och andra system.
 
@@ -25,15 +25,15 @@ I arbetsflödet nedan visas en begäran om ett webbinarium som görs av en kampa
 
 >[!TIP]
 >
->Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}.
+>Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}.
 
-## Förbered er kampanjutvecklingsprocess för automatisering {#prepare-your-campaign-development-process-for-automation}
+## Förbered kampanjutvecklingsprocessen för automatisering {#prepare-your-campaign-development-process-for-automation}
 
 Bakom varje automatiserad arbetsflöde finns en definierad process som ser till att team och intressenter får ut det mesta av automatiseringen.
 
 **Vilka typer av marknadsföringsförfrågningar kommer du att få?**
 
-Tänk på vilka typer av marknadsföringstaktik du kommer att köra, som e-post, näring, webbinarier från första part och event. Kör du även webbinarier från tredje part eller visningsannonser? Var och en av dessa förfrågningar bör beaktas eftersom de kan behöva särskilda inmatningsfält i ansökningsformuläret och mappas till olika programmallar i Marketo Engage som ska klonas.
+Tänk på vilka typer av marknadsföringstaktik du kommer att köra, som e-post, näring, webbinarier från första part och event. Kör du även webbinarier eller visningsannonser från tredje part? Var och en av dessa förfrågningar bör beaktas eftersom de kan behöva särskilda inmatningsfält i ansökningsformuläret och mappas till olika programmallar i Marketo Engage som ska klonas.
 
 Ni måste också förstå om ni kör kampanjer i flera regioner. Om så är fallet vill du ta med ett projekt i Workfront för att skapa flera program i Marketo Engage, där varje program har olika språkstöd.
 
@@ -87,7 +87,7 @@ Tänk på den viktigaste informationen som behöver hämtas i din ansökningsbla
 >
 >Idag är programmässigt byggande av målgrupper via automatisering begränsat i Marketo Engage eftersom tokens inte stöds i smarta listor. Detta innebär att målgrupperna antingen måste skapas i Marketo Engage av en användare, eller om du har en förutbestämd målgrupp som du hela tiden kommunicerar med, kan du inkludera en konfigurerad smart lista som en del av programmallen som klonas under automatiseringsprocessen.
 
-### Upprätta ett centrum för högskolan {#establish-your-center-of-excellence}
+### Upprätta ett högklassigt centrum {#establish-your-center-of-excellence}
 
 Om du vill automatisera framtagningen av program behöver du ett högklassigt center i Marketo Engage. Ett högklassigt centrum innehåller mallsidiga program och resurser som hjälper till att snabba upp och standardisera kampanjutvecklingsprocessen. Du kan till exempel ha en programmall för olika kampanjbehov: e-post, näring, personliga event och webbinarium. Dessutom kan du ha flera e-postprogrammallar som du använder för olika regioner eller olika typer av e-postmeddelanden.
 
@@ -95,7 +95,7 @@ Att skapa ett högklassigt centrum med programmallar i Marketo Engage är ett av
 
 När ni väl har en uppsättning återanvändbara programmallar kan ni skala om era insatser ytterligare med hjälp av den automatisering som beskrivs i den här planen för att skapa en snabbare kampanjutveckling.
 
-Mer information om hur du skapar ett eget centrum för spetskompetens finns i [Marketo Community](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target=&quot;_blank&quot;} för bästa praxis.
+Mer information om hur du skapar ett eget centrum för spetskompetens finns i [Marketo Community](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"} för bästa praxis.
 
 ### Använd variabler för att fylla i innehåll {#use-tokens-to-populate-content}
 
@@ -103,7 +103,7 @@ Med Marketo Engage kan variabler användas för att fylla i innehåll i kampanjr
 
 ![](assets/intake-and-create-2.png)
 
-### Fyll i bilder från AEM Assets {#populate-images-from-aem-assets}
+### Fylla i bilder från AEM Assets {#populate-images-from-aem-assets}
 
 Du kan automatisera utvecklingen av e-post- och landningssidor ytterligare genom att använda Marketo Engage-tokens i kombination med länkar till resurser i AEM Assets. Kampanjbegärare kan skicka in publicerade bildlänkar från AEM Assets som en del av förfrågningsprocessen. Workfront Fusion kan sedan ta med sig länkarna och bädda in dem HTML i ett e-postmeddelande med hjälp av Marketo Engage-tokens.
 
@@ -145,16 +145,16 @@ En del grundläggande information som ska ingå i sökbiblioteket för programma
   </tbody>
 </table>
 
-## Infoga och skapa automatiseringsflöde {#intake-and-create-automation-flow}
+## Intag och skapa automatiseringsflöde {#intake-and-create-automation-flow}
 
-Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med färdiga [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;} och [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;} moduler som gör att du kan leverera automatisering snabbare.
+Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med färdiga [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} -moduler som gör att ni kan leverera automatisering snabbare.
 
 ![](assets/intake-and-create-3.png)
 
 ## Resurser {#resources}
 
-* [Adobe Marketo Engage Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;}
+* [Adobe Marketo Engage Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
-* [Adobe Workfront Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;}
+* [Adobe Workfront Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
 
-* [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}
+* [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}

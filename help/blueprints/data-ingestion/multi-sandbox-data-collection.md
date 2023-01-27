@@ -1,16 +1,17 @@
 ---
-title: Rapport över datainsamling för vidarebefordran av händelser för flera sandlådor
+title: Formgivning av datainsamling för vidarebefordran av händelser i flera sandlådor
 description: Strömma insamlade data från Experience Platform SDK:er till flera sandlådor med hjälp av Event Forwarding
 solution: Data Collection
 kt: 7202
-source-git-commit: 8ea7041103f86f034740f00a607ae36ca0b358cf
+exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-# Rapport över datainsamling för vidarebefordran av händelser för flera sandlådor
+# Formgivning av datainsamling för vidarebefordran av händelser i flera sandlådor
 
 En översikt över datainsamling för vidarebefordran av händelser i flera sandlådor visar hur data som samlats in med Adobe Experience Platform Web och Mobile SDK kan konfigureras för att samla in en enda händelse och vidarebefordras till flera AEP-sandlådor. Det här utkast är ett särskilt användningsexempel som använder funktionen för händelsespridning i Adobe-taggar.
 
@@ -29,31 +30,30 @@ Din målsandlåda skulle behöva en konfigurerad slutpunkt för HTTP-direktuppsp
 
 ## Program
 
-* Adobe Experience Platform Collection
+* Adobe Experience Platform Data Collection
 
 ## Arkitektur
 
 <img src="assets/multi-Sandbox-Data-Collection.svg" alt="Referensarkitektur för vidarebefordran av händelser i flera sandlådor" style="width:90%; border:1px solid #4a4a4a" />
 
-1. Taggförfattare definierar både en taggegenskap och en händelsevidarebefordringsegenskap. Här definierar författarna dataelement, regler och åtgärder som hanterar datainsamling. Tänk på att taggegenskapskoden körs på klienten och distribueras av en CDN-värd. Egenskapskoden för händelsevidarebefordran körs på Adobe Edge Server.
+1. Taggförfattare definierar både en taggegenskap och en händelsevidarebefordringsegenskap. Här definierar författare de dataelement, regler och åtgärder som hanterar datainsamling. Tänk på att taggegenskapskoden körs på klienten och distribueras av en CDN-värd. Egenskapskoden för händelsevidarebefordran körs på Adobe Edge Server.
 
-1. Data som samlas in på klienten skickas till Edge-servern. Kunderna kan också skicka data till sin egen server först som en metod för att samla in data på serversidan.
-WebSDK kan tillhandahålla en server till server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Läs dokumentationen **API-översikt för Edge Network Server** nedan
+1. Data som samlas in på klienten skickas till Edge Network. Kunderna kan också skicka data till sin egen server först som en metod för att samla in data på serversidan.  Web SDK kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Läs dokumentationen **API-översikt för Edge Network Server** nedan
 
-1. Platform Edge Server tar emot datainsamlingsnyttolaster och strukturerar dataflödet till de system som krävs, till exempel Target och Analytics.
+1. Platform Edge Network tar emot datainsamlingsnyttolaster och strukturerar dataflödet till de system som krävs, till exempel Target och Analytics.
 
-1. Dataelement för händelsevidarebefordringsegenskapen används för att komma åt händelsedata som anländer till nyttolasten. Regler kan också användas för att ändra händelsedata efter behov innan de vidarebefordras. som att formatera data i den XDM som krävs för direktuppspelad datainmatning
+1. Dataelement för händelsevidarebefordringsegenskaper används för att komma åt händelsedata som kommer in i nyttolasten. Regler kan också användas för att ändra händelsedata efter behov innan de vidarebefordras. som att formatera data i den XDM som krävs för direktuppspelad datainmatning
 
-1. Händelsevidarebefordran tillhandahåller det HTTPS-tillägg som gör det möjligt att vidarebefordra dina händelsedata till en HTTPS-slutpunkt.
+1. Vidarebefordran av händelser ger det HTTPS-tillägg som gör det möjligt att vidarebefordra dina händelsedata till en HTTPS-slutpunkt.
 
-1. Sandbox 2 har konfigurerats med en direktuppspelande slutpunkt som tar emot den vidarebefordrade händelsen.
+1. Sandbox 2 har konfigurerats med en direktuppspelningsslutpunkt som tar emot den vidarebefordrade händelsen.
 
 ## Relaterad dokumentation
 
 * [Dokumentation för vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 * [Videofilmer om hur du vidarebefordrar händelser](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html)
 * [Lektion om vidarebefordran av händelser](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) självstudiekurs för Web SDK
-* [Experience Platform WebSDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 ## Relaterade blogginlägg

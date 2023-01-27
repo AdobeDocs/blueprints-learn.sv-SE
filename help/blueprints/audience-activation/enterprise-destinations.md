@@ -1,17 +1,17 @@
 ---
-title: Målgrupps- och profilaktivering av mål för fil- och företagsströmning - utkast
+title: Målgruppsaktivering och profilaktivering av mål för fil- och företagsdirektuppspelning
 description: Målgrupps- och profilaktivering för företagsdestinationer
 solution: Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Målgrupps- och profilaktivering av mål för fil- och företagsströmning - utkast
+# Målgruppsaktivering och profilaktivering av mål för fil- och företagsdirektuppspelning
 
 Dela profiler och målgruppsändringar och händelser i strömning eller batch från [!UICONTROL Real-time Customer Data Platform] till företagets datalager och tillämpningar. Dessa profil- och målgruppshändelser kan användas för att initiera en sälj- eller supportåtgärd till kunden, som att följa upp en övergiven ansökningsprocess eller registrering av webbinarier eller för att uppdatera företagsapplikationer med de senaste kundattributen och intelligensen från [!UICONTROL Real-time Customer Data Platform].
 
@@ -52,7 +52,7 @@ Dela profiler och målgruppsändringar och händelser i strömning eller batch f
 * [Riktlinjer för profil och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 
-## Relaterade videor och Tutorials
+## Relaterade videor och självstudiekurser
 
 * [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
 * [Demo av [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)

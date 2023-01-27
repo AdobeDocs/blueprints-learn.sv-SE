@@ -1,18 +1,18 @@
 ---
-title: Översikt över beslutshantering
+title: Beslutsledningsplaner
 description: Leverera personaliserade erbjudanden på alla kundresor.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer - beslutsöversikt
+# Journey Optimizer - Beslutsledningsplaner
 
-Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+Mer information om beslutshantering finns i [produktdokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
@@ -25,7 +25,7 @@ Beslutsledningskapaciteten består av två huvudkomponenter:
 
 <img src="../assets/offers_overview.png" alt="Beslutshantering" style="width:100%; border:1px solid #4a4a4a" />
 
-Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att köra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns också i beslutsledningens dokumentation [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
+Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att köra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns i [Beslutsledningens dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
 
 ## Beslutshantering på navet
 
@@ -33,7 +33,7 @@ Det första är via Adobe Experience Platform nav, som är en central datacenter
 
 * Erbjudandets behörighet kan fungera mot kundprofilen i realtid, inklusive alla attribut och upplevelsehändelser
 
-### Använd ärenden för beslutshantering på navet
+### Användningsfall för beslutshantering på navet
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
@@ -50,7 +50,7 @@ Det första är via Adobe Experience Platform nav, som är en central datacenter
 
 Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshanteringen på Edge är utformad för att leverera konsumentupplevelser i realtid, som webb- eller mobilförfrågningar om inkommande personalisering. Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en) utkast.
 
-### Använd fall för beslutshantering i utkanten
+### Användningsexempel för beslutshantering i utkanten
 
 * Onlinepersonalisering via webb eller mobilupplevelser.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.

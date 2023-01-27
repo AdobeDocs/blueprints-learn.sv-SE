@@ -5,14 +5,14 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Insamling och förberedelse av data
+# Insamling och förberedelse av färdplaner
 
 Datainsamling och -förberedelse innefattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform. samt möjligheten att samla in data till Adobe Experience Platform Edge Network och därefter vidarebefordra data via vidarebefordran på sidan till företagets destinationer.
 

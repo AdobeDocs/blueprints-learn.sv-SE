@@ -1,17 +1,17 @@
 ---
-title: B2B-aktivering
+title: B2B-målgrupps- och profilaktiveringsplan
 description: Leverera kontobaserade målgrupper och profilbaserade kundupplevelser med Real-time Customer Data Platform ​.
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
 
-# B2B-målgrupps- och profilaktivering
+# B2B-målgrupps- och profilaktiveringsplan
 
 Använd konto-, affärsmöjlighets- och lead-information som är knuten till en enskild kund för att skapa användbara b2b-profiler för förbättrad personalisering och målinriktning över alla kanaler.
 
@@ -24,7 +24,7 @@ Använd konto-, affärsmöjlighets- och lead-information som är knuten till en 
 
 * Real-time Customer Data Platform B2B Edition
 
-## Integrationsmönster
+## Integreringsmönster
 
 * Datakällor från B2B (Marketo, Salesforce osv.) -> Real-time Customer Data Platform B2B Edition -> Destinationer Olika B2B-datakällor kan användas för att mappa konton, leads, affärsmöjligheter och persondata till B2B Edition av Real-time Customer Data Platform.
 
@@ -86,7 +86,7 @@ Mer information om hur du implementerar och konfigurerar B2B Edition av Real-tim
 
 Det finns två möjliga implementeringsparter. Både möjligheten att importera B2B-data och profiler från Marketo Engage eller möjligheten att importera B2B-data från andra CRM-datakällor.
 
-## Överväganden gällande implementering
+## Implementeringsöverväganden
 
 Vägledning om viktiga överväganden och konfigurationer av ritningen.
 

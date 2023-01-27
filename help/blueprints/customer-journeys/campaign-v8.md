@@ -1,16 +1,16 @@
 ---
-title: Campaign v8, Blueprint, Campaign & AEP
+title: Campaign v8-plan, Campaign & Platform
 description: Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: c79422931cb4305347a4034ae1cb6bac2be1e229
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
-# Campaign v8-utkast
+# Campaign v8, utkast
 
 Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
@@ -33,7 +33,7 @@ Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för tra
 
 <br>
 
-## Integrationsmönster
+## Integreringsmönster
 
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
@@ -45,7 +45,7 @@ Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för tra
 ## Förutsättningar
 
 
-### Application Server och Real-Time Messaging Server
+### Programserver och meddelandeserver i realtid
 
 * Adobe Campaign Client Console krävs för att interagera och använda Campaign v8-programmet. Det är en Windows-baserad klient som använder standardInternet-protokoll (SOAP, HTTP osv.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
 
@@ -104,7 +104,7 @@ Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för tra
    * SMS MO (Mobile Originated): ett SMS som skickas av en mobil till Adobe Campaign via SMPP-leverantören.
    * SMS SR (statusrapport), DR eller DLR (leveranskvitto): Ett returkvitto som skickas av mobilen till Adobe Campaign via SMPP-leverantören som anger att SMS:et har tagits emot. Adobe Campaign kan också få ett SR-meddelande som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
 
-### Konfiguration av Mobile Push
+### Mobil push-konfiguration
 
 * Endast Campaign SDK stöds för Campaign v8. Kontakta Adobe kundtjänst för att få åtkomst
 * Följ [Kampanjens SDK-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) för att lära dig hur du installerar och konfigurerar SDK

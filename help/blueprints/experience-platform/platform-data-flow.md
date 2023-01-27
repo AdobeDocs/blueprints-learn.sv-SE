@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Platform dataflödesdiagram
+title: Diagram över dataflödesarkitektur i Adobe Experience Platform
 description: Arkitekturdiagrammet visar hur data flödar in i och ut ur Adobe Experience Platform.
 solution: Data Collection
 kt: 7198
 thumbnail: null
 exl-id: 5016f657-dd55-4ab7-859d-c97bc5edff76
-source-git-commit: c08dbf26ad559d48dfc8af5e19ec30e5bbfced65
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '76'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform dataflödesarkitektur
+# Diagram över dataflödesarkitektur i Adobe Experience Platform
 
 ## Dataflödesdiagram
 
@@ -20,7 +20,7 @@ Bilden nedan visar de olika sätten att mata in data och gå ut ur Adobe Experie
 
 <img src="assets/aep_data_flow.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="90%" />
 
-## Dataöverföringsskydd
+## Skyddsförslag för dataöverföring
 
 Bilden nedan visar de genomsnittliga prestandagarantierna och latensen för dataöverföring till Adobe Experience Platform.
 

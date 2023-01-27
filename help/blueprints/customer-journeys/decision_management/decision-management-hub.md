@@ -1,16 +1,16 @@
 ---
-title: Beslutshantering på navet
+title: Beslutshantering om navplanen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer - Beslutshantering på navet
+# Beslutshantering om navplanen
 
 Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och beslutsöversikten [HÄR](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
 
@@ -26,7 +26,7 @@ Denna plan kommer att omfatta de specifika delarna av beslutsförvaltningen på 
 
 Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en) utkast.
 
-## Använd ärenden för beslutshantering på navet
+## Användningsfall för beslutshantering på navet
 
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
@@ -61,7 +61,7 @@ Adobe Experience Platform
 * Tillgång till en fullständig kundprofil i realtid, inklusive målgruppsmedlemskap, attribut och upplevelsehändelser.
 
 
-### Dataöverföringsskydd
+### Skyddsförslag för dataöverföring
 
 <img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
 
@@ -100,7 +100,7 @@ Adobe Experience Platform
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 

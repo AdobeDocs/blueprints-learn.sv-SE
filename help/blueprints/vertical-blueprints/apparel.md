@@ -4,14 +4,14 @@ description: Använde flera utkast för att möjliggöra realtidsmarknadsföring
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
 exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Klädderbranschen - en utmaning
+# Affärsproblem inom industrin
 
 Detta företag är ett globalt ledande företag inom design, utveckling, tillverkning och global marknadsföring och försäljning av skodon, kläder, utrustning, tillbehör och tjänster.
 
@@ -34,7 +34,7 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 |---|---|---|
 | **Sammankopplade upplevelser över flera kanaler **<br></br>**Engagemang och lagring **<br></br>**Datamottagning och insikter**</ul> | <ul><li>Inbyggt flera företagsdatauppsättningar för att skapa tiotals miljoner profiler och hundratals segment, flera destinationer och rapportpaneler</li><li>Aktivering över flera destinationer med Real-time Customer Data Platform</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Automatiska händelseutlösare för kundinteraktioner som implementeras via Adobe Journey Optimizer</li></ul> | <ul><li><strong> Kundprofil: </strong>360 Grad av kunder för segmentering</li><li><strong>Målaktiveringar: </strong>Aktivering på betalda medier, e-post och sociala plattformar</li><li><strong>Kundanalys och attribuering: </strong>Flerkanalsattribueringsanalys är tillgänglig för särskilda ändamål och enkelt distribuerad<li><strong>Journey Orchestration: </strong> Skapa och driftsätta triggade kampanjer och schemalagda kampanjer i realtid</li></ul> |
 
-## Primär blå: Målgrupp och aktivering med Experience Cloud-program
+## Primär ritning: Målgrupp och aktivering med Experience Cloud
 
 ### Beskrivning
 

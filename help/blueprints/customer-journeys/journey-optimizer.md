@@ -3,14 +3,14 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer
+# Journey Optimizer-ritningar
 
 Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringsteam som i realtid kan reagera på kundbeteenden och möta dem där de befinner sig. Funktioner för datahantering har flyttats till Adobe Experience Platform, vilket gör att marknadsföringsteamen kan fokusera på det de gör bäst: som skapar kundresor och personaliserade konversationer i världsklass.  Denna plan beskriver programmets tekniska funktioner och ger en djupdykning i de olika arkitektoniska komponenterna som Adobe Journey Optimizer består av.
 
@@ -33,7 +33,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 <br>
 
-## Scenarier med blå text
+## Scenarier
 
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
@@ -41,7 +41,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 <br>
 
-## Integrationsmönster
+## Integreringsmönster
 
 | Integrering | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
@@ -89,7 +89,7 @@ Observera dessa som inte finns med på länken ovan:
    * Autentisering via användar-/pass- eller auktoriseringstoken
 * Det går inte att paketera och flytta enskilda komponenter i Adobe Experience Platform eller Journey Optimizer mellan olika sandlådor. Måste implementeras på nytt i nya miljöer
 
-### Dataöverföringsskydd
+### Skyddsförslag för dataöverföring
 
 <img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
 
@@ -120,7 +120,7 @@ Observera dessa som inte finns med på länken ovan:
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 
@@ -130,7 +130,7 @@ Observera dessa som inte finns med på länken ovan:
 1. Konfigurera externa datakällor.
 1. Konfigurera anpassade åtgärder.
 
-### Konfiguration av Mobile Push
+### Mobil push-konfiguration
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
 1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:

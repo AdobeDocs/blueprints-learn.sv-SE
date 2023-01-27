@@ -1,16 +1,16 @@
 ---
-title: Journey Optimizer - meddelandeplan från tredje part
+title: Journey Optimizer - plan för tredjepartsmeddelanden
 description: Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
 
-# Meddelanden från tredje part
+# Design för tredjepartsmeddelanden
 
 Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
 
@@ -60,7 +60,7 @@ Fler Journey Optimizer-garderobilder:
 
 <br>
 
-Meddelandesystem från tredje part
+Tredjepartsmeddelandesystem
 
 * Måste förstå vilken belastning systemet kan hantera för transaktions-API-anrop
    * Antal anrop som tillåts per sekund
@@ -69,8 +69,8 @@ Meddelandesystem från tredje part
    * Autentiseringstyp: token | lösenord | OAuth2 stöds via Journey Optimizer
    * Giltighetstid för autentiseringscache: Hur länge är token giltig? 
 * Om batchinmatning bara stöds behöver strömning ske till en molnlagringsmotor som Amazon Kinesis eller Azure Event Grid 1st
-   * Data kan samlas in från dessa molnlagringsmotorer och överföras till tredje part
-   * All mellanvara som krävs är kundens eller tredjepartsens ansvar att tillhandahålla
+   * Data kan grupperas i dessa molnlagringsmotorer och överföras till tredje part
+   * All mellanvara som krävs är kundens eller tredjepartens ansvar att tillhandahålla
 
 <br>
 
@@ -93,7 +93,7 @@ Meddelandesystem från tredje part
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 
@@ -103,7 +103,7 @@ Meddelandesystem från tredje part
 1. Konfigurera externa datakällor
 1. Konfigurera anpassade åtgärder för program från tredje part
 
-### Konfiguration av Mobile Push (valfritt eftersom tredje part kan samla in token)
+### Mobil push-konfiguration (valfritt eftersom tredje part kan samla in token)
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
 1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:

@@ -1,23 +1,23 @@
 ---
-title: Känd kundaktivering
+title: Kundaktiveringsplan
 description: Online/offline Audience Activation.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
 
-# Kundaktiveringsutkast
+# Kundaktiveringsplan
 
 Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata, tillsammans med onlinebeteende för målinriktning och personalisering.
 
 Utökade identifierare med inbyggda styrningskontroller ger fler möjligheter att kommunicera med kända kunder. Aktivera målgrupper för kända profilbaserade destinationer som e-postleverantörer, sociala nätverk och reklamdestinationer.
 
-Ytterligare information finns i [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md) som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
+Ytterligare information finns i [Målgrupps- och profilaktivering med Experience Cloud-program](platform-and-applications.md) som är specifikt för integreringar mellan Experience Platform och Experience Cloud.
 
 ## Användningsexempel
 
@@ -34,12 +34,12 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 
 ### Känd kundaktivering via Real-time Customer Data Platform
 
-<img src="assets/known_activation.svg" alt="Referensarkitektur för Known Customer Activation Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Referensarkitektur för Kundaktiveringsplanen" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ### Känd kundaktivering via Audience Manager personbaserade destinationer
 
-<img src="assets/AAM_PBD.svg" alt="Referensarkitektur för Known Customer Activation Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="Referensarkitektur för Kundaktiveringsplanen" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrails
@@ -57,11 +57,11 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 1. [Skapa segment](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html) i Experience Platform. Systemet avgör automatiskt om segmentet utvärderas som batch eller direktuppspelning.
 1. [Konfigurera mål](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html) för delning av profilattribut och målgruppsmedlemskap till önskade mål.
 
-## Överväganden gällande implementering
+## Implementeringsöverväganden
 
 * När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som krävs för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL Kundprofil i realtid].
 
-* Se [Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint](platform-and-applications.md) om du vill ha mer information om hur du delar målgrupper från Real-time Customer Data Platform till Audience Manager, Analytics, Target, Campaign och Journey Optimizer.
+* Se [Målgrupps- och profilaktivering med Experience Cloud-program](platform-and-applications.md) om du vill ha mer information om hur du delar målgrupper från Real-time Customer Data Platform till Audience Manager, Analytics, Target, Campaign och Journey Optimizer.
 
 ## Implementeringssteg för personbaserade destinationer i Audience Manager
 
@@ -76,7 +76,7 @@ Ytterligare information finns i [Målgrupps- och profilaktivering med Experience
 * [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
 
-## Relaterade videor och Tutorials
+## Relaterade videor och självstudiekurser
 
 * [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
 * [Demo av [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)

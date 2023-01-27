@@ -1,19 +1,19 @@
 ---
-title: Anonymt Audience Activation Blueprint
+title: Anonym Audience Activation-ritning
 description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna möjlighet möjliggör personaliserade och enhetliga kundupplevelser i realtid på olika enheter.
 landing-page-description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
 solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 16c05fcb36fb3f11b0d86ad30710e399cecc05c0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
-# Anonymt Audience Activation Blueprint
+# Anonym Audience Activation-ritning
 
 Anonym målgruppsaktivering är möjligheten att rikta och personalisera till målgrupper över webben, mobiler och annonskanaler baserat på anonyma enhets- och beteendedata.
 
@@ -31,7 +31,7 @@ Anonym målgruppsaktivering är möjligheten att rikta och personalisera till m�
 
 Både Audience Manager och Real-time Customer Data Platform kan utnyttjas för att driva anonyma Audience Activation för annonseringsplatser och annonsdestinationer. Observera att Real-time Customer Data Platform bara stöder en delmängd av annonsdestinationer med anonyma enhetsidentifierare som finns i [destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
-Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer som stöds av Real-time Customer Data Platform för anonym enhetsbaserad målinriktning. Utöver detta stöder Real-time Customer Data Platform ett antal kända kundbaserade destinationer som katalogiseras i [destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) och enligt beskrivningen i [känd kundaktiveringsplan](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer som stöds av Real-time Customer Data Platform för anonym enhetsbaserad målinriktning. Utöver detta stöder Real-time Customer Data Platform ett antal kända kundbaserade destinationer som katalogiseras i [destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) och enligt beskrivningen i [Kundaktiveringsplan](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 
 ## Arkitektur
 
@@ -53,5 +53,5 @@ Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer s
 * [Experience Cloud [!UICONTROL Målgrupper]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 * [Integrera Audience Manager med Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
 * [Adobe Analytics segmentdelning via Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-* [Kundaktiveringsutkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+* [Kundaktiveringsplan](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 * [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)

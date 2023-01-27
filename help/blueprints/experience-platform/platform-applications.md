@@ -1,18 +1,18 @@
 ---
-title: Arkitektur för Adobe Experience Platform och program
+title: Diagram över Adobe Experience Platform- och programarkitektur
 description: Arkitekturen visar hur Adobe Experience Platform relaterar till andra Adobe Experience Cloud-program och -programtjänster.
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 122e317b34c7704dc80da11d08b9a8ff955dfa8c
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform och program
+# Arkitektur för Adobe Experience Platform och program
 
 ## Arkitektur för Adobe Experience Platform och program
 
@@ -20,7 +20,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 
 <img src="assets/aep+apps_vertical.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
 
-## Adobe Experience Platform &amp; Applications - detaljerad arkitektur
+## Adobe Experience Platform &amp; applikationer - detaljerad arkitekturdiagram
 
 <img src="assets/aep-app-architecture.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
 

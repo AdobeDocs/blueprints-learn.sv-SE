@@ -1,17 +1,17 @@
 ---
-title: Custom Data Science for Profile Enrichment Blueprint
+title: Custom Data Science for Profile Enrichment plan
 description: Den här planen visar hur datavetenskapen kan inhämtas till Experience Platform för att berika kundprofilen i realtid.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# Custom Data Science for Profile Enrichment Blueprint
+# Custom Data Science for Profile Enrichment plan
 
 Custom Data Science for Profile Enrichment Blueprint visar hur data kan användas för att utbilda, driftsätta och poängsätta modeller för att ge maskininlärningsinsikter om Experience Platform och Real-time Customer Data Platform från datavetenskap och maskininlärningsverktyg. Modellerade insikter kan hämtas in i Experience Platform för att berika kundprofilen i realtid. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
 
@@ -40,7 +40,7 @@ För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du 
 1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) på schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
 1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 
-## Överväganden gällande implementering
+## Implementeringsöverväganden
 
 * I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara enkla attributsträngar. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
 * Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler är tillgängligt [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).

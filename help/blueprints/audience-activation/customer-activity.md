@@ -1,19 +1,19 @@
 ---
-title: Kundaktivitetshubbsknapp - översikt
-description: '"[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext för support och försäljning som utförs av agenter."'
+title: Kundaktivitetshubbskiss
+description: "[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext för support och försäljning som utförs av agenter."
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# Kundaktivitetshubbsknapp - översikt
+# Kundaktivitetshubbskiss
 
-Kundaktivitetshubben visar hur externa program kan komma åt Adobe Experience Platform [!UICONTROL Kundprofil i realtid].
+Kundaktivitetsnubben visar hur externa program kan komma åt Adobe Experience Platform [!UICONTROL Kundprofil i realtid].
 
 Externa program kan komma åt profiler med en API-GET-begäran. Attribut, händelser, segmentmedlemskap och modelldrivna funktioner som lagras i profilen kan sedan användas i dessa externa program som inte kommer från Adobe.
 

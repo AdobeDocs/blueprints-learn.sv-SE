@@ -1,15 +1,16 @@
 ---
-title: Journey Optimizer med Adobe Campaign v7 Blueprint
+title: Journey Optimizer med Adobe Campaign v7-plan
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
+exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer med Adobe Campaign v7
+# Journey Optimizer med Adobe Campaign v7-plan
 
 Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign för att skicka meddelanden internt med hjälp av meddelandeservern i Campaign.
 
@@ -44,7 +45,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 [Journey Optimizer Guardrails Product Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 
-### Fler Journey Optimizer-garderobilder
+### Ytterligare Journey Optimizer skyddsräcken
 
 * Funktionen för att hämta innehåll är tillgänglig via API idag för att säkerställa att målsystemet inte är mättat till den punkt där felet uppstod. Detta innebär att meddelanden som överskrider gränsen kommer att tas bort helt och aldrig skickas. Begränsning stöds inte.
    * Maximalt antal anslutningar - maximalt antal http/s-anslutningar som ett mål kan hantera
@@ -99,7 +100,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 
@@ -114,7 +115,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 * Meddelandemallar måste konfigureras med rätt personaliseringskontext
 * För Campaign v7 - Exportera arbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme.
 
-### Konfiguration av Mobile Push (tillval)
+### Mobil push-konfiguration (valfritt)
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
 1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:

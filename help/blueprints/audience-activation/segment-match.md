@@ -1,15 +1,16 @@
 ---
-title: Segmentmatchning
+title: Segmentmatchning - utkast
 description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör det möjligt att utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
-source-git-commit: a5bf86b8606d40a0686c667f83516e3b495350b8
+exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# Segmentmatchning
+# Segmentmatchning - utkast
 
 Segmentmatchning gör det möjligt för partnervarumärken att dela målgrupper över sina respektive Experience Platform-miljöer. Nyckeln för varumärken är att få kontakt med kunderna baserat på data som samlats in från deras direkta relationer med konsumenterna. Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.
 
@@ -165,7 +166,7 @@ Om motsvarande identitet finns i mottagarsandlådan under den dagliga identitets
 
 ## Mer information
 
-* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#)
+* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv#)
 * [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en)
 * [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=en)
 * [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=en)

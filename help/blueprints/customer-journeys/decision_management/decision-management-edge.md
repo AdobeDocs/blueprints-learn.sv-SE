@@ -1,16 +1,16 @@
 ---
-title: Beslutsfattare i utkanten
+title: Beslutshantering om Edge-planen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer - Beslutshantering
+# Journey Optimizer - Beslutshantering om Edge-planen
 
 Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och beslutsöversikten [HÄR](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
 
@@ -24,7 +24,7 @@ Denna plan kommer att omfatta detaljerna i beslutsfattandet på utsidan.
 
 Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en) utkast.
 
-## Använd fall för beslutshantering i utkanten
+## Användningsexempel för beslutshantering i utkanten
 
 * Onlinepersonalisering via webb eller mobilupplevelser.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
@@ -37,7 +37,7 @@ Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshanterin
 
 <br>
 
-## Integrationsmönster
+## Integreringsmönster
 
 | Integrering | Beskrivning |
 | :-- | :--- |
@@ -62,7 +62,7 @@ Adobe Experience Platform
 * Tillgång till Edge-realtidsprofil. Endast kantprojicerade målgrupper och profilattribut är tillgängliga i profilen.
 * Om personalisering krävs i förstagångsupplevelser kommer navet att vara idealiskt eftersom den fullständiga profilen är tillgänglig. Kantprofilen måste synkroniseras från navet för första gången. Den allra första upplevelsen från kanten kommer därför inte att inkludera tidigare överförda profildata till navet.
 
-### Dataöverföringsskydd
+### Skyddsförslag för dataöverföring
 
 <img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
 
@@ -78,7 +78,7 @@ Adobe Experience Platform
 
 * Använd webb- eller Mobile SDK för distribution på webbplatser och mobilappar för att implementera beslutshantering där SDK distribuerades.
    * [Web/Mobile SDK-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/websdk.html?lang=en)
-   * [WebSDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html)
+   * [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html)
    * [MobileSDK](https://aep-sdks.gitbook.io/docs/)
 
 eller
@@ -107,7 +107,7 @@ eller
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 

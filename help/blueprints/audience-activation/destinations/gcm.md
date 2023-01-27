@@ -4,7 +4,7 @@ description: Aktivering till FGoogle Customer Match.
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
-source-git-commit: 6fa38772f77ffd565580db55f8f2889b0e703949
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 0%

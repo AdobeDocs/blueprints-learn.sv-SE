@@ -4,14 +4,14 @@ description: Realtidsbeslut med en samlad bild av kundbeteendet över olika kana
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-# Resor- och hotell- och näringslivets utmaning
+# Affärsproblem inom rese- och turismbranschen
 
 Ett kasino- och underhållningsföretag i USA ville revolutionera sin förmåga att utnyttja data för att skapa personaliserade anslutningar i realtid.  Denna vision blev ännu viktigare eftersom COVID-19-pandemin förändrade hur kunderna interagerar med rese- och turismföretag.
 
@@ -30,7 +30,7 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 |---|---|---|
 | **Gör alla upplevelser relevanta för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering: </strong>Skapa 3X e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens: </strong>Gästbelöningsprogram genomför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering: </strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en affärsanpassad kontrollpanel för resa och attribuering som även minskar latensen (i dagar)</li><li><strong>Framtidssäkrad teknikhög: </strong>Tio miljoner profiler över 7 kanaler som är klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
 
-## Primär blå: Aktivering med online- och offlinedata
+## Primär ritning: Aktivering med online- och offlinedata
 
 ### Beskrivning
 

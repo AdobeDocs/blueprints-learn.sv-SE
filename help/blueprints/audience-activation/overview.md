@@ -1,19 +1,19 @@
 ---
-title: Målgrupps- och profilaktivering
+title: Planer för målgrupps- och profilaktivering
 description: Leverera målgruppsinriktade och profilbaserade kundupplevelser med Real-time Customer Data Platform ​.
 solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 
-# Målgrupps- och profilaktivering
+# Planer för målgrupps- och profilaktivering
 
 Målgrupps- och profilaktivering är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering.
 
@@ -23,7 +23,7 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 |---|---|---|
 | **[Anonym Audience Activation](anonymous.md)** | <ul><li>Rikta er till målgrupper över webben och annonskanaler för anonyma och beteendemässiga kunddata.</li><li>Integrera med externa målgruppsdata för ökad personalisering.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Känd kundaktivering](known.md)** | <ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer. </li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (valfritt)</li></ul> |
-| **[Målgrupps- och profilaktivering med Experience Cloud-program](platform-and-applications.md)** | <ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul> |
+| **[Målgrupps- och profilaktivering med Experience Cloud](platform-and-applications.md)** | <ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul> |
 | **[Segmentmatchning](segment-match.md)** | <ul><li>Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
 
 ## Kundprofilarkitektur i realtid
@@ -38,13 +38,13 @@ Observera att poster som bara har en identitet inte bearbetas av identitetstjän
 
 Sammanfogningen av profilfragment sker när identitetsdiagrammet innehåller relationerna mellan de olika källprofilfragmenten som har relaterats. Sammanslagningsprincipen avgör vilka källfragment och vilka identitetsdiagram som ska användas när fragmenten sammanfogas. Varje gång profilen används sker sammanslagningen av profilfragmenten för att säkerställa den mest aktuella kombinerade vyn av profilen. Styrnings- och policyreglerna säkerställer att endast de godkända segmenten och attributen kan aktiveras för de angivna destinationerna.
 
-## Segmentering och målöversikt
+## Översikt över segment och mål
 
 Bilden nedan visar de olika segmenteringsmetoderna och de olika profilerna och målgruppsaktiveringsmönstren.
 
 <img src="assets/segmentation_destination_overview.png" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%"/>
 
-## GuarDRATIONS for Audience and Profile Activation Blueprints
+## GuarDRAils for Audience and Profile Activation blueprints
 
 * Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md) och [Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 

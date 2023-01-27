@@ -1,21 +1,21 @@
 ---
-title: Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint
+title: Målgrupps- och profilaktivering med Experience Cloud-program
 description: Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
 
-# Målgrupps- och profilaktivering med Experience Cloud Applications Blueprint
+# Målgrupps- och profilaktivering med Experience Cloud-program
 
 Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program. Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-applikationer.
 
-Aktiveringen med Experience Cloud-program justeras mot [Kundaktiveringsutkast](known.md).
+Aktiveringen med Experience Cloud-program justeras mot [Kundaktiveringsplan](known.md).
 
 ## Användningsexempel
 
@@ -41,7 +41,7 @@ Aktiveringen med Experience Cloud-program justeras mot [Kundaktiveringsutkast](k
 
 Se [Experience Platform and Applications Architecture Section](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html) om du vill ha ytterligare arkitekturdiagram för integrering av Experience Platform med Experience Cloud-program.
 
-### Målgrupps- och profilaktivering med Experience Cloud-program
+### Målgrupps- och profilaktivering med Experience Cloud
 
 <img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Referensarkitektur för målgrupps- och profilaktivering med Experience Cloud-program" style="width:90%; border:1px solid #4a4a4a" />
 <br>
@@ -50,7 +50,7 @@ Se [Experience Platform and Applications Architecture Section](https://experienc
 
 Se [skyddsutkast på sidan Översikt över målgrupps- och profilaktivering](overview.md) och [distributionsskyddsutkast](../experience-platform/deployment/guardrails.md) sida.
 
-## Överväganden gällande implementering
+## Implementeringsöverväganden
 
 * När du delar profildata till mål måste du inkludera det specifika identitetsvärde som används av målet i målnyttolasten. Alla identiteter som krävs för ett målmål måste hämtas till Platform och konfigureras som en identitet för [!UICONTROL Kundprofil i realtid].
 
@@ -88,7 +88,7 @@ Se [skyddsutkast på sidan Översikt över målgrupps- och profilaktivering](ove
 * [Segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
 
-## Relaterade videor och Tutorials
+## Relaterade videor och självstudiekurser
 
 * [[!UICONTROL Real-time Customer Data Platform] översikt](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
 * [Demo av [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)

@@ -1,36 +1,36 @@
 ---
-title: Dataåtkomst och export av utkast
+title: Layout för dataåtkomst och export
 description: Denna plan innehåller en översikt över alla metoder som kan användas för att komma åt och exportera data från Adobe Experience Platform och program.
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: c0fe0e94e30351f593e32ea0e6809dd832f976ad
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
 
 ---
 
-# Dataåtkomst och export av utkast
+# Layout för dataåtkomst och export
 
 I skisserna Dataåtkomst och Exportera anger du alla metoder som kan användas för att få åtkomst till och exportera data från Adobe Experience Platform och program.
 
 Blueprint delas upp i två kategorier för dataåtkomst från Experience Platform och program. För det första strategier för att egressera data från Experience Platform och tillämpningar. detta betraktas som en push-typmetod för datagegress. För det andra, metoder för att få tillgång till data från Experience Platform och tillämpningar. detta betraktas som en utdragstyp för dataåtkomst.
 
-Dataåtkomstmetoder
+Åtkomstmetoder:
 
 * [API för åtkomst till kundprofiler i realtid](#rtcp-profile-access-api)
 * [API för dataåtkomst](#data-access-api)
 * [Frågetjänst](#query-service)
 
-Dataexportmetoder
+Metoder för dataexport:
 
 * [Kundsidestaggar](#client-side-tags-extensions)
 * [Vidarebefordran av händelser](#event-forwarding)
 * [Real-time Customer Data Platform Destinations](#RTCDP-destinations)
 * [Journey Optimizer Custom Actions](#jo-custom-actions)
 
-## Arkitektur för dataåtkomst och exportöversikt
+## Översiktsarkitektur för dataåtkomst och -export
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="Referensarkitektur för dataförberedelse och matningsutkast" style="width:90%; border:1px solid #4a4a4a" />
 
@@ -88,7 +88,7 @@ Med hjälp av upplevelseplattformen kan frågetjänstkunder ställa frågor till
 
 ## Metoder för dataexport
 
-### Tillägg för klientsidestaggar {#client-side-tags-extensions}
+### Kodtillägg på klientsidan {#client-side-tags-extensions}
 
 Tillägg kan distribueras med hjälp av Adobe Tags-lösningen. När ett tillägg distribueras distribueras dataförfrågningar direkt i en klientwebbläsare eller ett program och en begäran kan anropas för att skicka data och förfrågningar till önskat mål.
 
@@ -111,18 +111,18 @@ Begäranden om datainsamling samlas in direkt till Adobe Edge Network. Från Edg
 
 Se följande [Vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en) dokumentation för ytterligare information.
 
-#### Använd skiftlägen
+#### Användningsexempel
 
 * Samla in strömmande rådata direkt från klientmiljöerna till slutpunkterna med hjälp av Adobe serversidans händelsevidarebefordran.
 
 #### Överväganden
 
-* Om du vill använda händelsevidarebefordran måste data skickas till Edge-nätverket med WebSDK eller MobileSDK.
+* Om du vill använda händelsevidarebefordran måste data skickas till Edge-nätverket med Web SDK eller MobileSDK.
 * Vidarebefordra händelser minskar sidans inläsningstid och vikt på grund av att ytterligare taggar läggs till på sidan.
 * Ingen anrikning från kantprofilen eller andra datakällor stöds för närvarande.
 * Begränsad datafiltrering och enkel mappningsomvandling stöds.
 
-### Real-time Customer Data Platform Destinations {#RTCDP-destinations}
+### Real-time Customer Data Platform destinationer {#RTCDP-destinations}
 
 Profilattributsdata och målgruppsmedlemskapsdata kan aktiveras för företags- och annonsmål. Det innebär att data som matas in måste hämtas in i kundprofilen i Experience Platform-realtid.
 
@@ -138,7 +138,7 @@ Se [Real-time Customer Data Platform Destinations](https://experienceleague.adob
 * Profilattribut och målgruppsmedlemskap kan aktiveras. Raw-upplevelsehändelser kan för närvarande inte aktiveras som en del av RTCDP-destinationer.
 * Aktiveringar görs i direktuppspelning eller batch beroende på vilken typ av segmentutvärdering det är och vilken typ av ingtionsprotokoll som destinationen accepterar.
 
-### Journey Optimizer Custom Actions {#jo-custom-actions}
+### Journey Optimizer egna åtgärder {#jo-custom-actions}
 
 Med Journey Optimizer-kunder kan man anropa en anpassad åtgärd från arbetsytan för att skicka en nyttolast eller ett meddelande till en extern API-slutpunkt som är konfigurerad. En åtgärd kan konfigureras till vilken tjänst som helst från en leverantör som kan anropas via ett REST API med en JSON-formaterad nyttolast. Den här nyttolasten kan innehålla händelseinformation, profilattribut och tidigare händelsedata, omvandlingar och berikningar som har konfigurerats under resan.
 

@@ -3,7 +3,7 @@ title: Real-Time CDP med integreringsmönstret Adobe Campaign v7 och Campaign St
 description: Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personaliserade konversationer.
 solution: Real-time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: 163dd644b690c1f5554a3929e1f83c121e132df5
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 ## Arkitektur
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="Referensarkitektur för Batch Messaging och Adobe Experience Platform Integration Pattern" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="Referensarkitektur för integreringsmönstret Batch Messaging och Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -60,7 +60,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 ### Adobe Experience Platform
 
-#### Schema / Datauppsättningar
+#### Schema/datauppsättningar
 
 1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform, baserat på kunddata.
 1. Skapa Adobe Campaign-scheman för widthLog, trackingLog, adresser som inte kan levereras samt profilinställningar (valfritt).
@@ -76,7 +76,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för Adobe Campaign.
 
-#### Källor/mål
+#### Källor/destinationer
 
 1. [Källor och utsmyckningar för Experience Platform och Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html)
 1. [Källor och designer för Experience Platform och Campaign v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html)
@@ -103,7 +103,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 1. Skicka tillbaka profilinställningarna till Experience Platform via konsultbaserade arbetsflöden var fjärde timme (valfritt).
 
 
-### Konfiguration av Mobile Push
+### Mobil push-konfiguration
 
 * Två metoder som stöds för integrering med mobila enheter för push-meddelanden:
    * Experience Platform Mobile SDK

@@ -2,7 +2,7 @@
 title: Framgångsrika berättelser om Digital Experience Blueprints Industry Success Stories
 description: Digitala upplevelser visar hur olika branscher får affärsvärde med Adobe Experience Cloud-program från Adobe Experience Platform.
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Läs om hur kunderna skapar fantastiska upplevelser och lyckas med digitala upplevelseutkast. Dessa beprövade repeterbara implementeringar gör att ni kan ta itu med strategier och snabbt lösa etablerade affärsproblem.
 
-## Framgångshistorier
+## Nöjda kunder
 
 <table style="table-layout:fixed">
 <tr>
@@ -51,7 +51,7 @@ Läs om hur kunderna skapar fantastiska upplevelser och lyckas med digitala uppl
 </tr>
 </table>
 
-## Fler nöjda berättelser
+## Fler nöjda kunder
 
 * <a href="https://business.adobe.com/customer-success-stories/index.html?Products+%26+Services=Experience">Adobe Experience Cloud</a>
 * <a href="https://business.adobe.com/customer-success-stories/index.html?Products+%26+Services=Experience+Platform">Adobe Experience Platform</a>

@@ -1,18 +1,18 @@
 ---
-title: 'Kundresor '
+title: Kundresor - ritningar
 description: Leverera individuella kundupplevelser i rätt tid för alla skärmar.
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard, Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
-# Kundresor
+# Kundresor - ritningar
 
 Customer Journeys behandlar möjligheten för varumärken att aktivt interagera med och kommunicera med sina kunder via kanaler som e-post, SMS och mobilaviseringar. Orchestration-verktyg kan också integreras med andra interaktionskanaler, t.ex. med inkommande kanaler för webb-/mobilpersonalisering genom att dela målgruppsstatus med andra kanalspecifika beslutsmotorer. Ett antal faktorer avgör vilka program och driftsättningsalternativ som ska användas för kundresor, men kan sammanfattas på två olika sätt: reagera på en kund när de interagerar (triggas) eller reagerar på en grupp kunder när de interagerar (planeras).
 

@@ -1,16 +1,16 @@
 ---
-title: Campaign v7 Blueprint
+title: Campaign v7-plan
 description: Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
-# Campaign v7 Blueprint
+# Campaign v7-plan
 
 Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
@@ -31,7 +31,7 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 
 <br>
 
-## Integrationsmönster
+## Integreringsmönster
 
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
@@ -42,13 +42,13 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 
 ## Förutsättningar
 
-### Application Server och Real-Time Messaging Server
+### Programserver och meddelandeserver i realtid
 
 * Adobe Campaign Client Console krävs för att interagera och använda Campaign v8-programmet. Det är en Windows-baserad klient som använder standardInternet-protokoll (SOAP, HTTP osv.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
 
 * Tillåt listning av IP-adress
    * Identifiera de IP-intervall som alla användare kommer att utnyttja vid åtkomst till klientkonsolen
-   * Identifiera vilka affärssystem som kommer att få användas för att prata med Real-Time Messaging-servern och se till att de har en statiskt tilldelad IP eller ett intervall som du kan tillåtelselista
+   * Identifiera vilka företagssystem som kommer att tillåtas att prata med realtidsmeddelandeservern och se till att de har en statiskt tilldelad IP eller ett intervall som du kan tillåtelselista
    * Detta kan konfigureras och styras via Campaign Control Panel
 * Nyckelhantering via FTP
    * Ha offentliga SSH-nycklar tillgängliga för användning med Campaign via sFTP. Detta kan konfigureras och styras via Campaign-kontrollpanelen.
@@ -100,7 +100,7 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
    * SMS MO (Mobile Originated): ett SMS som skickas av en mobil till Adobe Campaign via SMPP-leverantören.
    * SMS SR (statusrapport), DR eller DLR (leveranskvitto): Ett returkvitto som skickas av mobilen till Adobe Campaign via SMPP-leverantören som anger att SMS:et har tagits emot. Adobe Campaign kan också få ett SR-meddelande som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
 
-### Konfiguration av Mobile Push
+### Mobil push-konfiguration
 
 * Två metoder som stöds för integrering med mobila enheter för push-meddelanden:
    * Experience Platform Mobile SDK (rekommenderas)
