@@ -5,14 +5,14 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 05bf0a34-e5c7-498c-8d5d-1d549c00e070
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
 
 ---
 
-# Programspecifika arkitekturdiagram för SDK-distribution
+# Programspecifika arkitekturdiagram för SDK-driftsättning
 
 I arkitekturdiagrammet nedan visas integrationssökvägarna och datainsamlingen med hjälp av programspecifika SDK:er för implementering.
 

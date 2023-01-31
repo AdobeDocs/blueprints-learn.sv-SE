@@ -1,10 +1,10 @@
 ---
 title: Målgrupps- och profilaktivering med Experience Cloud-program
 description: Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program.
-solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%

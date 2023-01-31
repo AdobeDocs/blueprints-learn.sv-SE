@@ -2,10 +2,10 @@
 title: Översikt över anpassning för webb/mobiler - Adobe Target och RTCDP
 description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
 landing-page-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
-solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
+solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 | Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge-metoden | <ul><li>Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via Edge Network. Publiker som utvärderas i realtid kräver implementeringen av Web SDK och Edge Network.</li></ul> | <ul><li>Webb-/mobilapplikationer för SDK eller Edge API-implementering av Target krävs inte för delning av RTCDP-målgrupper för direktuppspelning och batch-RTCDP-målgrupper till Target, även om det krävs för att aktivera realtidsutvärdering av edge segment enligt ovan.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet på identitetskartan.</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations. Endast standardproduktionssandlådan i RTCDP stöds.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
 | Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target och Audience Manager via Audience Sharing Service | <ul><li>Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas.</li></ul> | <ul><li>Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, även om det krävs för att aktivera realtidsutvärdering av edge segment.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet på identitetskartan.</li><li>Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li><li>Det är bara målgrupper från standardproduktionssandlådan som har stöd för målgruppsdelning.</li></ul> |
 
-## Realtids-, strömnings- och gruppmålgruppsdelning till Adobe Target
+## Realtids-, strömnings- och batchmålgruppsdelning till Adobe Target
 
 Arkitektur
 
@@ -55,7 +55,7 @@ Sekvensdetalj
 
 Känd kundanpassning stöds via flera implementeringsmetoder.
 
-### Implementeringsmönster 1 - Edge Network med webb/mobil SDK eller Edge Network API (rekommenderat tillvägagångssätt)
+### Implementeringsmönster 1 - Edge Network med Web/Mobile SDK eller Edge Network API (rekommenderat tillvägagångssätt)
 
 * Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden Web/Mobile SDK eller Edge API.
 * [Se Experience Platform Web and Mobile SDK Blueprint](../experience-platform/deployment/websdk.md) för SDK-baserad implementering.
@@ -119,7 +119,7 @@ Identitetskrav
 
 ### Tutorials
 
-* [Nästa steg i personaliseringen med CDP och Adobe Target i realtid](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
+* [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
 
 ### Relaterade blogginlägg
 

@@ -1,11 +1,11 @@
 ---
 title: Webb- och mobilpersonaliseringsplaner
 description: Leverera personaliserat webb- och mobilinnehåll med [!UICONTROL Kundprofil i realtid].
-solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Webb- och mobilpersonalisering är inriktat på möjligheten att använda profil
 
 <br>
 
-### Känt kundanpassningsdiagram
+### Diagram över kända kundanpassningsgarantier
 
-<img src="assets/personalization_guardrails.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
 
 ## Relaterade blogginlägg
 

@@ -1,28 +1,28 @@
 ---
 title: Diagram över Adobe Experience Platform- och programarkitektur
 description: Arkitekturen visar hur Adobe Experience Platform relaterar till andra Adobe Experience Cloud-program och -programtjänster.
-solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
+solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
-# Arkitektur för Adobe Experience Platform och program
+# Diagram över Adobe Experience Platform- och programarkitektur
 
 ## Arkitektur för Adobe Experience Platform och program
 
 Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience Cloud program och programtjänster.
 
-<img src="assets/aep+apps_vertical.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
+<img src="assets/aep+apps_vertical.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />
 
-## Adobe Experience Platform &amp; applikationer - detaljerad arkitekturdiagram
+## Adobe Experience Platform &amp; Applications - detaljerad arkitektur
 
-<img src="assets/aep-app-architecture.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%;" />
+<img src="assets/aep-app-architecture.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
@@ -161,7 +161,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td colspan="1">Experience Manager</td>
 <td colspan="1">
 <ul>
-<li>Profilen Experience Platform kan nås direkt från serversidan för att ge kraft åt personaliserade upplevelser som levereras via Experience Manager. Observera att personaliseringsaktiviteter oftast levereras via Experience Manager via Target-integreringen. </li>
+<li>Experience Platform-profilen kan nås direkt från serversidan för att ge kraft åt personaliserade upplevelser som levereras via Experience Manager. Observera att personaliseringsaktiviteter oftast levereras via Experience Manager via Target-integreringen. </li>
 </ul>
 </td>
 <td colspan="1">
@@ -226,7 +226,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 </tr>
 <tr>
-<td colspan="1">CDP i realtid</td>
+<td colspan="1">Real-Time CDP</td>
 <td colspan="1">
 <ul>
 <li>Data som hämtas in och samlas in i Experience Platform är datakällan för att sammanställa kundprofiler i realtid som driver Real-time Customer Data Platform.</li>

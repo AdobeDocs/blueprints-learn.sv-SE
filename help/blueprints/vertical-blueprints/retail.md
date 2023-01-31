@@ -1,10 +1,10 @@
 ---
 title: Detaljhandel - aktivering med Experience Cloud-program
 description: Leverera kundupplevelser i realtid i digitala medier, e-post, push och webbkanaler.
-solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
+solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 |---|---|---|
 | **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Google och Adobe Target för att underlätta investeringar i media och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Direktuppspelning av segment i Google-medier för attribuering och undertryckande av annonser</li><li><strong>Webbpersonalisering i realtid:</strong>Strömma segment ut till Adobe Target för att kunna aktivera på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid berikade med alla tillgängliga kunddata och aktiverade realtid i e-post- och push-kanaler</li></ul> |
 
-## Primär ritning: Målgrupp och aktivering med Experience Cloud
+## Primär ritning: Målgrupp och aktivering med Experience Cloud-program
 
 ### Beskrivning
 

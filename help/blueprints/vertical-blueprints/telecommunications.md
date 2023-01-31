@@ -4,7 +4,7 @@ description: Ge kunderna skräddarsydda erbjudanden i realtid samtidigt som ni e
 solution: Journey Optimizer
 kt: 9486
 exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Denna begränsning måste lösas för att man ska kunna inleda en tidsbesparande
 |---|---|---|
 | **Få högre kampanjkonverteringsgrader **<br></br>**Öka intäkterna från årsredovisningar**</ul> | <ul><li>Skapa ett nytt segment i nära realtid för användare som har visat intresse av att lägga till en rad men ännu inte konverterat.</li><li>Få uppföljning för okonverterade kunder med en andra kontaktyta för intresserade icke-konverterare. </li><li>Använd en teststrategi för att mäta resans resultat och optimera för konvertering via e-post.</li></ul> | <ul><li><strong>Relevanta upplevelser med hög kvalitet:</strong> Med en fungerande kundresa får kunderna mer relevanta meddelanden, vilket minskar bortfallet av e-postlistor.</li><li><strong>Journey Orchestration vid skalförändring:</strong>En personaliserad och tidsödande resa kan skapas för att öka antalet konverteringar och totala intäkter.</li></ul> |
 
-## Primär ritning: Målgrupp och aktivering med Experience Cloud
+## Primär ritning: Målgrupp och aktivering med Experience Cloud-program
 
 ### Beskrivning
 
