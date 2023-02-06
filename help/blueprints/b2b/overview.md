@@ -1,10 +1,10 @@
 ---
 title: B2B Analytics och Activation - planer
 description: Leverera kontobaserade målgrupper och profilbaserade kundupplevelser med Real-time Customer Data Platform.
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%

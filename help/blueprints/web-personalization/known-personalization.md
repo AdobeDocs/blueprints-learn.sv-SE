@@ -1,14 +1,14 @@
 ---
 title: Översikt över anpassning för webb/mobiler - Adobe Target och RTCDP
-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
-landing-page-description: Synkronisera webbpersonalisering med e-post och annan känd och anonym kanalpersonalisering.
-solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
+description: Synkronisera webbanpassning med e-post och annan känd och anonym kanalanpassning.
+landing-page-description: Synkronisera webbanpassning med e-post och annan känd och anonym kanalanpassning.
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -117,7 +117,7 @@ Identitetskrav
 * [Adobe Analytics segmentdelning via Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 * [Konfiguration av sammanfogningsprincip](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy)
 
-### Tutorials
+### Självstudiekurser
 
 * [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
 

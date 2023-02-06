@@ -4,7 +4,7 @@ description: "[!UICONTROL Kundprofil i realtid] sökningar för att ge kontext f
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 4b09d5e43dba53df2f066917f95eae0f74191de8
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Med den här funktionen kan ni skapa ett avancerat sammanhang när en kund ringe
 
 ## Arkitektur
 
-<img src="assets/customer_activity_hub.svg" alt="Referensarkitektur för Customer Activity Hub-utkast" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/customer_activity_hub.svg" alt="Referensarkitektur för Customer Activity Hub-utkast" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 
 ## Guardrails
 

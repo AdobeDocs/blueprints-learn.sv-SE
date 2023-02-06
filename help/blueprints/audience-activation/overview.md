@@ -1,11 +1,11 @@
 ---
 title: Planer för målgrupps- och profilaktivering
 description: Leverera målgruppsinriktade och profilbaserade kundupplevelser med Real-time Customer Data Platform ​.
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 
 Bilden nedan visar huvudkomponenterna i Experience Platform:s kundprofil i realtid.
 
-<img src="assets/profile_architecture.jpg" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%"/>
+<img src="assets/profile_architecture.jpg" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
 
 De första datakällorna hämtas in i Experience Platform. Om datakällan är konfigurerad för profilbearbetning matas den in i kundprofilen i realtid. Ett enda profilfragment eller dokument skapas för varje datakälla och varje primär ID-post som har konfigurerats för varje datakälla. När data hämtas till profilen bearbetas även dessa av identitetstjänsten. Alla poster från datakällor som har fler än en identitet markerad i schemat och med motsvarande värden ifyllda i posten kommer att behandlas som en identitetsrelation inom identitetstjänsten.
 
@@ -42,7 +42,7 @@ Sammanfogningen av profilfragment sker när identitetsdiagrammet innehåller rel
 
 Bilden nedan visar de olika segmenteringsmetoderna och de olika profilerna och målgruppsaktiveringsmönstren.
 
-<img src="assets/segmentation_destination_overview.png" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%"/>
+<img src="assets/segmentation_destination_overview.png" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
 
 ## GuarDRAils for Audience and Profile Activation blueprints
 

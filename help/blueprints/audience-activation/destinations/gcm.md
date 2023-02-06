@@ -1,10 +1,10 @@
 ---
 title: Aktivering till Google kundmatchning
 description: Aktivering till FGoogle Customer Match.
-solution: Real-Time Customer Data Platform, Data Collection
+solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
 
 ## Arkitektur
 
-<img src="../assets/gcm.svg" alt="Referensarkitektur för Google kundmatchningsaktivering" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../assets/gcm.svg" alt="Referensarkitektur för Google kundmatchningsaktivering" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ## Implementeringssteg
 

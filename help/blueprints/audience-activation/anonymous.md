@@ -1,15 +1,15 @@
 ---
 title: Anonym Audience Activation-ritning
-description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna möjlighet möjliggör personaliserade och enhetliga kundupplevelser i realtid på olika enheter.
-landing-page-description: Lär er målinrikta målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
+description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna förmåga möjliggör personanpassade och konsekventa kundupplevelser i realtid på alla enheter.
+landing-page-description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
 solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 4b09d5e43dba53df2f066917f95eae0f74191de8
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -35,7 +35,7 @@ Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer s
 
 ## Arkitektur
 
-<img src="assets/anonymous_activation.svg" alt="Referensarkitektur för den anonyma Audience Activation-designen" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/anonymous_activation.svg" alt="Referensarkitektur för den anonyma Audience Activation-designen" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 
 <br>
 
