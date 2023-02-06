@@ -3,9 +3,9 @@ title: Segmentmatchning - utkast
 description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör det möjligt att utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Globala multinationella företag står inför utmaningar när det gäller datasa
 
 ## Arkitektur
 
-![Segmentmatchningsarkitektur](assets/architecture-segment-match.png)
+![Segmentmatchningsarkitektur](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
 
 [!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Istället är det en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning] hjälper till att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Segmentmatchning] upplevelsen är enkel att hantera, skalbar och gör det möjligt för administratörer att dela segment på ett valfritt och kontrollerbart sätt.
 
@@ -77,7 +77,7 @@ Kraven för [!UICONTROL Segmentmatchning] är:
 
 The [!UICONTROL Segmentmatchning] för att hantera partners säkras av RBAC. Endast personer med rätt tillstånd kan initiera, acceptera eller hantera partners. Detta kan du göra i avsnittet Dataintag i produktprofilen. Följande behörigheter krävs:
 
-![Målgruppsanslutning](assets/data-ingestion.png)
+![Målgruppsanslutning](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
 
 | Behörighet | Beskrivning |
 |---|---|
@@ -140,13 +140,13 @@ Som en del av det här segmentdelningsarbetsflödet kan den avsändande partnern
 
 Det övergripande processflödet är:
 
-![Segmentdelning](assets/segment-sharing.png)
+![Segmentdelning](assets/segment-sharing.png){zoomable=&quot;yes&quot;}
 
 Dessa överlappande uppskattningar ger viktiga insikter, partnerupptäckt och data för att understödja datasamarbetsavtal. Inga kund- eller segmentdata flyttas över sandlådor för att få fram dessa uppskattningar av överlappning. De av kunden valda, förhash-kodade tillämpliga identiteterna i en given sandlåda läggs till i en sannolik datastruktur som gör att Adobe kan utföra union- och skärningsåtgärder mellan dem. De här åtgärderna hjälper dig [!UICONTROL Segmentmatchning] hämta den beräknade skärningspunkten för två datastrukturer som består av identiteter från två olika sandlådor utan att behöva jämföra de faktiska värdena
 
 Identitetsöverlappningsprocessen beror på **daglig export av full profil** datauppsättning från både avsändar- och mottagarsandlådor för att identifiera gemensamma profiler som tillhör de delade segmenten. Det detaljerade processflödet för överlappningsprocessen visas nedan:
 
-![Identitetsöverlappningsprocess](assets/overlap-process.png)
+![Identitetsöverlappningsprocess](assets/overlap-process.png){zoomable=&quot;yes&quot;}
 
 När segmentdelningen är klar från den avsändande partnern får mottagaren ett meddelande om den delade segmentfeeden. Denna segmentfeed måste vara aktiverad för profilen hos mottagaren för att det ska gå att initiera segmentmedlemskapets dataflöde. Det enda segmentmedlemskapet är inkapslat i den mottagande IMS-organisationens överlappande profilfragment och ingen ytterligare identitet överförs från avsändaren till mottagaren.
 

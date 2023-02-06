@@ -4,9 +4,9 @@ description: Använde flera utkast för att möjliggöra realtidsmarknadsföring
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
 exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 
 ### Blåtrycksarkitektur
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="miniatyrbild för ett skymningsföretag med målgruppsaktivering, kundreseanalys och kundresorRitningar" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en" class="modal-image"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="bild för ett hemligt företag med målgruppsaktivering, kundreseanalys och kundreseskisser" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en" class="modal-image"/></a>

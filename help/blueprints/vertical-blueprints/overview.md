@@ -2,7 +2,7 @@
 title: Framgångsrika berättelser om Digital Experience Blueprints Industry Success Stories
 description: Digitala upplevelser visar hur olika branscher får affärsvärde med Adobe Experience Cloud-program från Adobe Experience Platform.
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -18,17 +18,17 @@ Läs om hur kunderna skapar fantastiska upplevelser och lyckas med digitala uppl
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="miniatyrbild för en konfektionsindustri med målgruppsaktivering, kundreseanalys och kundresorRitningar" src="../experience-platform/assets/aep+apps_vertical.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="miniatyrbild för en konfektionsindustri med målgruppsaktivering, kundreseanalys och kundresorRitningar" src="../experience-platform/assets/aep+apps_vertical.svg" /></a>
     </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="miniatyrbild för detaljhandeln med Activation with Online/Offline Data &amp; Journey Optimizer Blueprints" src="../experience-platform/assets/aep+apps_vertical.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="miniatyrbild för detaljhandeln med Activation with Online/Offline Data &amp; Journey Optimizer Blueprints" src="../experience-platform/assets/aep+apps_vertical.svg" /></a>
 
 </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><img alt="miniatyrbild för Journey Optimizer Blueprint" src="../customer-journeys/assets/ajo-architecture.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><img alt="miniatyrbild för Journey Optimizer Blueprint" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><img alt="miniatyrbild för aktivering av online-/offlinedata" src="../audience-activation/assets/known_activation.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><img alt="miniatyrbild för aktivering av online-/offlinedata" src="../audience-activation/assets/known_activation.svg" /></a>
   </td>
 </tr>
 <tr>

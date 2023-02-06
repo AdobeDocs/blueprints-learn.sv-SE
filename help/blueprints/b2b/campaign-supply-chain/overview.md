@@ -2,9 +2,9 @@
 title: Kampanjleveranskedja med Marketo- och Workfront-ritningar
 description: Översikt - Optimera leveranskedjan för kampanjer med Marketo- och Workfront-modeller
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella o
 
 Här nedan visas ett arbetsflödesdiagram över kampanjutvecklingsprocessen om det är en e-postbegäran. Dessutom kan ni se hur Workfront Fusion kan spela en roll mellan Workfront och Marketo Engage för att driva arbetsflödes- och processautomatisering under kampanjutvecklingscykeln.
 
-![](assets/overview-1.png)
+![Kampanjplanering till utförande - användningsfall för automatisering](assets/overview-1.png){zoomable=&quot;yes&quot;}
 
 Observera de olika faserna i kampanjutvecklingsprocessen.
 
@@ -60,7 +60,7 @@ Med Adobe Workfront kan man hantera arbetet och få ett effektivare utförande. 
 
 Att förstå hur du mappar din affärsprocess till dessa objekt är viktigt för att förstå relationen mellan Workfront och Marketo Engage.
 
-![](assets/overview-2.png)
+![Förstå hur marknadsföringssatsningar presenteras i Workfront](assets/overview-2.png){zoomable=&quot;yes&quot;}
 
 ### Portfolio-hierarki har definierats {#portfolio-hierarchy-defined}
 
@@ -115,7 +115,7 @@ Zeplin Company släpper en uppdaterad version av en av sina kompakta traktorbila
 
 Hierarkin nedan visar hur strategi, taktik, uppgifter och resurser mappas till Workfront för denna marknadsföringskampanj.
 
-![](assets/overview-3.png)
+![Exempel på hantering av marknadsföringsinitiativ](assets/overview-3.png){zoomable=&quot;yes&quot;}
 
 ## Mappa Workfront till Marketo {#mapping-workfront-to-marketo}
 
@@ -129,7 +129,7 @@ Med Workfront Fusion som integreringslager kan du mappa dina projekt i Workfront
 
 Här nedan visas ett exempel på hur ett program kan innehålla flera projekt och hur dessa Workfront-projekt kan mappas till program i Marketo Engage.
 
-![](assets/overview-4.png)
+![Mappa Workfront-projekt till Marketo Engage-program](assets/overview-4.png){zoomable=&quot;yes&quot;}
 
 Du kanske vill lansera ett stort marknadsföringsprojekt som kräver att flera Workfront-projekt ska ingå i ett Workfront-program, eller så kanske du har en enstaka förfrågan om ett webbinarium eller e-postmeddelande som bara behöver ett Workfront-projekt. Vad ni än behöver, med Workfront, Workfront Fusion och Marketo Engage, har ert team flexibiliteten att integrera er kampanjutvecklingsprocess sömlöst från planering till genomförande.
 

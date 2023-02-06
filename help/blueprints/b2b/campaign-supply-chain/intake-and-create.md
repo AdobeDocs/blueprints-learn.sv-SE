@@ -2,9 +2,9 @@
 title: Ta och skapa en plan
 description: Intag och skapande - Optimera leveranskedjan för kampanjer med Marketo och Workfront
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Mer information om hur du skapar ett eget centrum för spetskompetens finns i [M
 
 Med Marketo Engage kan variabler användas för att fylla i innehåll i kampanjresurser. När du till exempel har klonat en e-postmall från ditt högklassiga center kan Workfront Fusion hämta information från kampanjbegäran i Workfront och skicka dem till Mina token i Marketo Engage-programmet. Token-värdena kan sedan ärvas direkt till e-postmeddelandet för att skapa e-postmeddelandet.
 
-![](assets/intake-and-create-2.png)
+![Använd variabler för att fylla i innehållsdiagram](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
 
 ### Fylla i bilder från AEM Assets {#populate-images-from-aem-assets}
 
@@ -149,7 +149,7 @@ En del grundläggande information som ska ingå i sökbiblioteket för programma
 
 Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med färdiga [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} -moduler som gör att ni kan leverera automatisering snabbare.
 
-![](assets/intake-and-create-3.png)
+![Intag och skapa automatiseringsflöde](assets/intake-and-create-3.png)Använd variabler för att fylla i innehåll
 
 ## Resurser {#resources}
 
