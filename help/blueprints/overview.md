@@ -1,12 +1,12 @@
 ---
 title: Digitala upplevelseutkast
-description: Planer för digitala upplevelser är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De förkortar time-to-value och ger en snabb väg till framgång.
+description: Planer för digitala upplevelser är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De påskyndar tid-till-värde och ger en snabb väg till framgång.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -38,17 +38,17 @@ Planer för digitala upplevelser är repeterbara implementeringar som gör att n
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><img alt="miniatyrbild för Triggered Messaging och Experience Platform Blueprint" src="customer-journeys/assets/ajo-architecture.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><img alt="miniatyrbild för Triggered Messaging och Experience Platform Blueprint" src="customer-journeys/assets/ajo-architecture.svg" class="modal-image" /></a>
     <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Flerkanalsmarknadsföring</strong></a></div>
     <p><em>Skicka meddelanden och påverka kundupplevelserna i realtid med [!UICONTROL Platform] som ett centralt nav.</em></p>
   </td>
   <td>
-    <a href="/help/blueprints/audience-activation/known.md"><img alt="miniatyrbild för Kundaktiveringsplanen" src="audience-activation/assets/known_activation.svg" /></a>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="miniatyrbild för Kundaktiveringsplanen" src="audience-activation/assets/known_activation.svg" class="modal-image" /></a>
     <div><a href="/help/blueprints/audience-activation/known.md"><strong>Känd kundaktivering</strong></a></div>
     <p><em>Leverera målgruppsaktiverad flerkanalsreklam.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><img alt="miniatyrbild för utkast för digital beteendedatakonsolidering" src="customer-journey-analytics/assets/CJA.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><img alt="miniatyrbild för utkast för digital beteendedatakonsolidering" src="customer-journey-analytics/assets/CJA.svg" class="modal-image" /></a>
     <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><strong>Reseanalys över flera kanaler</strong></a></div>
     <p><em>Få en samlad bild av kundernas beteende i olika kanaler.</em></p>
   </td>

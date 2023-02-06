@@ -1,14 +1,14 @@
 ---
 title: Behavioral Web Personalization plan
-description: Ta reda på hur ni personaliserar innehåll baserat på onlinebeteende och målgruppsdata.
-landing-page-description: Lär dig personalisera baserat på onlinebeteende och målgruppsdata.
+description: Ta reda på hur du personanpassar innehåll baserat på onlinebeteende och målgruppsdata.
+landing-page-description: Lär dig att personanpassa baserat på onlinebeteende och målgruppsdata.
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 ## Arkitektur
 
-<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
+<img src="assets/behavioral_personalization.svg" alt="Referensarkitektur för beteendeanpassning av webbdesign" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 
 
 ## Implementeringsmönster

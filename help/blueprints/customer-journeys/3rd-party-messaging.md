@@ -3,7 +3,7 @@ title: Journey Optimizer - plan för tredjepartsmeddelanden
 description: Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem
 
 ## Arkitektur
 
-<img src="assets/3rd-party-messaging-architecture.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/3rd-party-messaging-architecture.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

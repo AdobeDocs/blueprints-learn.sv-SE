@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ En fullständig lista över användningsfall för Customer Journey Analytics fin
 
 ## Arkitektur för Customer Journey Analytics
 
-![Arkitektur](assets/CJA.svg)
+![Arkitektur](assets/CJA.svg){zoomable=&quot;yes&quot;}
 
 Exempel på primära användningsområden är följande:
 | Blueprint | Beskrivning | Experience Cloud-program | |—|—|—| | **[Reseanalys över flera kanaler](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul>| | **[Publicera publiker på Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>skapa och publicera målgrupper som identifieras i Customer Journey Analytics (CJA) till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. Idealiskt för att skapa målgrupper med hjälp av historiska data eller mer raffinerade målgrupper från granulatfiltrering och beräknade fält i Customer Journey Analytics.</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> | | **[Reseanalys för samtalsavböjning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
@@ -41,7 +41,7 @@ Exempel på primära användningsområden är följande:
 
 * Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
 
-![Guardradit-diagram](../experience-platform/assets/CJA_guardrails.svg)
+![Guardradit-diagram](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
 ## Relaterade blogginlägg
 

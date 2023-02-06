@@ -1,12 +1,12 @@
 ---
 title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blueprint
-description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
+description: Utför utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringst
 
 ## Arkitektur
 
-<img src="assets/ajo-architecture.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/ajo-architecture.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -91,13 +91,13 @@ Observera dessa som inte finns med på länken ovan:
 
 ### Skyddsförslag för dataöverföring
 
-<img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
 
 <br>
 
 ### Aktiveringsskydd
 
-<img src="../experience-platform/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

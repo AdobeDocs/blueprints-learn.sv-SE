@@ -4,7 +4,7 @@ description: Strömma insamlade data från Experience Platform SDK:er till flera
 solution: Data Collection
 kt: 7202
 exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Din målsandlåda skulle behöva en konfigurerad slutpunkt för HTTP-direktuppsp
 
 ## Arkitektur
 
-<img src="assets/multi-Sandbox-Data-Collection.svg" alt="Referensarkitektur för vidarebefordran av händelser i flera sandlådor" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/multi-Sandbox-Data-Collection.svg" alt="Referensarkitektur för vidarebefordran av händelser i flera sandlådor" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 1. Taggförfattare definierar både en taggegenskap och en händelsevidarebefordringsegenskap. Här definierar författare de dataelement, regler och åtgärder som hanterar datainsamling. Tänk på att taggegenskapskoden körs på klienten och distribueras av en CDN-värd. Egenskapskoden för händelsevidarebefordran körs på Adobe Edge Server.
 

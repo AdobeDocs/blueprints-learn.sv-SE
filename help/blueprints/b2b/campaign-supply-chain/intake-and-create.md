@@ -2,9 +2,9 @@
 title: Ta och skapa en plan
 description: Intag och skapande - Optimera leveranskedjan för kampanjer med Marketo och Workfront
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ För att uppnå den här integreringen kommer du att använda Workfront Fusion, 
 
 I arbetsflödet nedan visas en begäran om ett webbinarium som görs av en kampanjhanterare med hjälp av ett Workfront-formulär. Informationen som skickades i begäran utlöser sedan ett program och ett e-postmeddelande som ska skapas i Marketo Engage för webbinariet. Dessutom hämtas information från begärandeformuläret för att fylla i innehållet i e-postmeddelandet.
 
-![](assets/intake-and-create-1.png)
+![Ta och skapa en plan](assets/intake-and-create-1.png){zoomable=&quot;yes&quot;}
 
 >[!TIP]
 >

@@ -3,7 +3,7 @@ title: Beslutshantering om Edge-planen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshanterin
 
 ## Arkitektur
 
-<img src="../assets/offers_edge.svg" alt="Referensarkitekturbeslutshantering i den främsta planen" style="width:100%; border:1px solid #4a4a4a" />
+<img src="../assets/offers_edge.svg" alt="Referensarkitekturbeslutshantering i den främsta planen" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -64,13 +64,13 @@ Adobe Experience Platform
 
 ### Skyddsförslag för dataöverföring
 
-<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
 
 <br>
 
 ### Aktiveringsskydd
 
-<img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
