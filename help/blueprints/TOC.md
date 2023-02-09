@@ -1,14 +1,14 @@
 ---
 user-guide-title: Digital Experience-utkast
-breadcrumb-title: Blueprints
+breadcrumb-title: Utkast
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 374f3afa12611b21121e9bfe2fd906342ba1ea4f
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 4%
+source-wordcount: '250'
+ht-degree: 21%
 
 ---
 
@@ -35,9 +35,7 @@ ht-degree: 4%
    + [Anonym Audience Activation (AAM)](/help/blueprints/audience-activation/anonymous.md)
    + Känd kundaktivering (RTCDP) {#known-customer-audience-activation}
       + [Översikt](/help/blueprints/audience-activation/known.md)
-      + Aktivering till sociala kanaler och reklamkanaler{#audience-activation}
-         + [Aktivering till Facebook anpassade målgrupper](/help/blueprints/audience-activation/destinations/facebook.md)
-         + [Aktivering till Google kundmatchning](/help/blueprints/audience-activation/destinations/gcm.md)
+      + [Aktivering till sociala kanaler och reklamkanaler](/help/blueprints/audience-activation/advertising-activation.md)
       + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
       + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
