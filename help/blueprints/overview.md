@@ -1,12 +1,12 @@
 ---
 title: Digitala upplevelseutkast
-description: Planer för digitala upplevelser är repeterbara implementeringar för att hantera strategier och lösa etablerade affärsproblem. De påskyndar tid-till-värde och ger en snabb väg till framgång.
+description: Digital Experience-utkast är repeterbara implementeringar för att hantera strategier och lösa etablerade företagsproblem. De påskyndar tid-till-värde och ger en snabb väg till framgång.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
