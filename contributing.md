@@ -1,8 +1,8 @@
 ---
-source-git-commit: b8709e01d7771ac9002fbc286c2d9709ef3d0ca2
+source-git-commit: 139702439c38e3bafe1aa74a129934504aa95352
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Bidra
@@ -18,7 +18,7 @@ Detta projekt följer Adobes [uppförandekod](code-of-conduct.md). Genom att del
 
 ## Dokumentation för användarhandboken för bidragsgivare
 
-Se [Användarhandboken för bidragsgivare](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Se [Användarhandboken för bidragsgivare](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv).
 
 ## Har du en fråga?
 
@@ -54,3 +54,4 @@ kan du kontakta befintliga projektansvariga för att ha ett samtal om detta.
 ## Säkerhetsproblem
 
 Säkerhetsproblem ska inte rapporteras i den här felspåraren. Istället [skickar du ett ärende till våra säkerhetsexperter](https://helpx.adobe.com/se/security/alertus.html)
+
