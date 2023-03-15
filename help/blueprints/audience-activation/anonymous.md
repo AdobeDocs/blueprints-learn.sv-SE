@@ -2,11 +2,12 @@
 title: Anonym Audience Activation-ritning
 description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna förmåga möjliggör personanpassade och konsekventa kundupplevelser i realtid på alla enheter.
 landing-page-description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
+short-description: Learn to target audiences across web and advertising channels based on anonymous and behavioral customer data.
 solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
+source-git-commit: 3a6a98eded28baee2cbb44de2262bbd580fa0c94
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 11%
