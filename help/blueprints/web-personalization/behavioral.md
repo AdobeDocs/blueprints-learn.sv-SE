@@ -2,15 +2,15 @@
 title: Behavioral Web Personalization plan
 description: Ta reda på hur du personanpassar innehåll baserat på onlinebeteende och målgruppsdata.
 landing-page-description: Lär dig att personanpassa baserat på onlinebeteende och målgruppsdata.
-short-description: Learn to personalize based on online behavior and audience data.
+short-description: Lär dig att personanpassa baserat på onlinebeteende och målgruppsdata.
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085
 thumbnail: thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 3a6a98eded28baee2cbb44de2262bbd580fa0c94
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 5%
 
 ---
 
