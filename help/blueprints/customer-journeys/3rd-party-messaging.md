@@ -3,7 +3,7 @@ title: Journey Optimizer - plan för tredjepartsmeddelanden
 description: Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 342b039e62ff3a8fc8a42cf292f4fc28781c21de
+source-git-commit: a1421a47da2c84635ef904096a6036cfe488d763
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -112,12 +112,7 @@ Tredjepartsmeddelandesystem
    * Identitet för Edge Network
    * Mobile Core
 1. Se till att du har en dedikerad datastam för mobilappsdistributioner jämfört med webbdistributioner
-1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://developer.adobe.com/client-sdks/documentation/mobile-foundation-extensions/)
-
-<!--
-This step with a broken link was replaced by above step.
-1. For more information follow the [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
--->
+1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/)
 
 <br>
 
