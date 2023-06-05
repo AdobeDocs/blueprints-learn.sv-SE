@@ -4,9 +4,9 @@ description: Leverera kundupplevelser i realtid i digitala medier, e-post, push 
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: 5bf1f0c01e1c7d2ebb2ae7228cc04c149a789664
+source-git-commit: f03981dd3fe6ed9e60d2e60ca4eb91e129052a73
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,53 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 
 | Mål | Taktik | Värdet upplåst |
 |---|---|---|
-| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Google och Adobe Target för att underlätta investeringar i media och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Direktuppspelning av segment i Google-medier för attribuering och undertryckande av annonser</li><li><strong>Webbpersonalisering i realtid:</strong>Strömma segment ut till Adobe Target för att kunna aktivera på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid berikade med alla tillgängliga kunddata och aktiverade realtid i e-post- och push-kanaler</li></ul> |
+| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Advertising Networks och Adobe Target för att underlätta mediernas utgifter och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Strömma segment till annonsnätverk för attribuering och reklamdämpning</li><li><strong>Webbpersonalisering i realtid:</strong>Direktuppspelningssegment som aktiveras för Adobe Target för att kunna aktiveras på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid som har berikats med tillgängliga kunddata och aktiverats i realtid för e-post- och push-kanaler</li></ul> |
 
-## Primär ritning: Målgrupp och aktivering med Experience Cloud-program
 
-### Beskrivning
+## Användare
 
-<ul><li>Hantera profiler och målgrupper i Experience Platform och dela dem med Experience Cloud-program</li><li>Bygg och dela avancerade kundsegment och insikter i Experience Platform och dela dem med Experience Cloud-tillämpningar</li></ul>
+| Kategori | Mål | Använd skiftläge | Beskrivning |
+|:----|:----|:----|:----|
+| Kundresor | Förvärv | Välkomstserie | Välkommen nya prenumeranter med introduktion till företag, produkter och tjänster |
+|  |  | Första inköpsprogrammet |  |
+|  | Förbättra försäljningen | Övergiven kundvagn/bläddring | Återvinn potentiella köpare och öka försäljningen |
+|  |  | Produktgranskning/korsförsäljning | Korssälja fler artiklar med produktrecensioner. |
+|  |  | Produktkampanjer |  |
+|  |  | Tid att ändra ordning | Återkommande påminnelse för cykliska produkter/tjänster |
+|  | Varumärkeslojalitet | Vinn bakåt | Återvinn kunder som har varit inaktiva. |
+|  |  | Födelsedag påminnelser | Få en mer personlig relation till era kunder genom att vara en del av deras födelsedagseftermiddag! |
+| Merchandising | Hantera lager | Tillbaka i Stock | Förbättra lagret genom att visa kunderna att produkterna de vill ha finns i lager igen |
+|  |  | Nästa bästa kategori | Identifiera de bästa kategorierna/försäljningen för användarna |
+|  |  | Best Sellers |  |
+|  |  | Påminnelser om prisfall | Visa användare att artiklar de gillar har reducerat pris |
+|  |  | Liknande produkter |  |
+| Anpassa | Öka konverteringen | Kuponger/erbjudanden | Visa bästa erbjudanden/kuponger för kunder |
+|  |  | Personlig produktsökning | Förbättra sökupplevelsen |
+|  |  | Recommendations | Förbättra surfupplevelsen |
+|  |  | Upplevelser över flera kanaler | Nå ut till kunder i alla kanaler |
+| Mät | Förstå kundresor | Flerkanalskampanj | Mät kampanjer i flera kanaler |
+|  |  | Segmentprestanda | Förstå segmentens prestanda och bidrag |
+|  |  | Utfallsrapporter | Visualisera konverteringar i varje steg |
+|  |  | Kohortanalys | Mät interaktion mellan segmentgrupper |
+|  |  | Klicka-för-streck-rapporter | Se hur kundkonverteringar leder till butiksupplevelser |
+|  |  | Tillskrivning | Se vilken kontaktyta/upplevelse som har störst påverkan på köpkonverteringen |
+|  |  | Prediktiva insikter | Läs mer om kundernas egenskaper |
 
-### Experience Cloud-program
+## Arkitektur
 
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Aktivering av Experience Platform</li><li>Experience Cloud-program</li></ul>
+<img src="../vertical-blueprints/assets/retail-architecture.png" alt="Referensarkitektur för butik" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
-### Blåtrycksarkitektur
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en"><img alt="för ett detaljhandelsföretag som levererar kundupplevelser i realtid över digitala medier, e-post, push och webbkanaler" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps.svg?lang=en" class="modal-image" /></a>
+## Relaterade utkast
+
+
+| Användningsfall/integrering  | Länk |
+|:----|:----|
+| CJA + AEP | [Översikt över Customer Journey Analytics-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en) |
+|  | [Customer Journey Analytics - Användningsexempel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) |
+| AJO + AEP | [Adobe Journey Optimizer - Användningsexempel](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
+|  | [Beslutshantering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en) |
+| RTCDP + AEP | [Online/offline Audience Activation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en) |
+|  | [Experience Platform + programaktivering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en) |
+| Marketo + AEP | [B2B-aktivering och marknadsföring](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) |  |
+| Mål + AEP | [Adobe Target Use case - Behavioral Web/Mobile Personalization](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [Webb-/mobilpersonalisering med kända kunddata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) |  |
