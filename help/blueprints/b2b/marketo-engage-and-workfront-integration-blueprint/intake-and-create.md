@@ -2,7 +2,7 @@
 title: Ta och skapa en plan
 description: Input and Create - Marketo Engage and Workfront integration plan
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
+source-git-commit: c4ab702cafa0dcacc4b3919bf70af0c50fa6bea8
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I arbetsflödet nedan visas en begäran om ett webbinarium som görs av en kampa
 
 >[!TIP]
 >
->Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}.
+>Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}.
 
 ## Förbered kampanjutvecklingsprocessen för automatisering {#prepare-your-campaign-development-process-for-automation}
 
@@ -157,4 +157,4 @@ Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med fär
 
 * [Adobe Workfront Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
 
-* [Marketo och Workfront - översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}
+* [Marketo och Workfront - översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}
