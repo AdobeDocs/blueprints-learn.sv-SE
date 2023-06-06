@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 079c2e6deeeea0ede0f71a8bdda7e9b9f4d9084c
+source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 20%
 
 ---
@@ -43,10 +43,10 @@ ht-degree: 20%
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
-   + Kampanjleveranskedja med Marketo och Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
-      + [Översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md)
-      + [Infoga och skapa](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)
-      + [Nöjda kunder berättar](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
+   + Integrering av Marketo Engage och Workfront{#marketo-engage-and-workfront-integration-blueprint}
+      + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
+      + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
+      + [Nöjda kunder berättar](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
    + [Dela CJA-målgrupper till RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
