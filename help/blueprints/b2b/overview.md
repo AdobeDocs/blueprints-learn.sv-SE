@@ -4,9 +4,9 @@ description: Leverera kontobaserade målgrupper och profilbaserade kundupplevels
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
+source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 |---|---|---|
 | **[B2B-analys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
-| **[Kampanjleveranskedja: Översikt](/help/blueprints/b2b/campaign-supply-chain/overview.md)** | <ul><li>Optimera planering, utveckling och genomförande av B2B-marknadsföringskampanjer</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
-| **[Kampanjleveranskedja: Infoga och skapa](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)** | <ul><li>Automatisera inhämtning av förfrågan från B2B-marknadsföringskampanjer för kampanjutveckling</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
+| **[Integreringsutkast för Marketo Engage och Workfront: Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Optimera planering, utveckling och genomförande av B2B-marknadsföringskampanjer</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
+| **[Integreringsutkast för Marketo Engage och Workfront: Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>Automatisera inhämtning av förfrågan från B2B-marknadsföringskampanjer för kampanjutveckling</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |

@@ -2,9 +2,9 @@
 title: Översikt över integreringsprogrammet Marketo Engage och Workfront
 description: Översikt - översikt över integreringsprogrammet Marketo Engage och Workfront
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
+source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -147,11 +147,9 @@ Nu när ni har en grundläggande förståelse för hur Workfront och Marketo Eng
 
 ### Komma igång med integrationen mellan Workfront Fusion, Workfront och Marketo Engage {#getting-started-with-workfront-fusion}
 
-* [Infoga och skapa](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md){target="_blank"} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
+* [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
 
 * Korrektur och godkännande (kommer snart)
-
-* Rapport och granskning (kommer snart)
 
 ### Hantera kampanjnamn för Marketo Engage och deras associerade URL:er {#managing-marketo-engage-campaign-names}
 
