@@ -32,29 +32,29 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 | Kategori | Mål | Använd skiftläge | Beskrivning |
 |:----|:----|:----|:----|
 | Kundresor | Förvärv | Välkomstserie | Välkommen nya prenumeranter med introduktion till företag, produkter och tjänster |
-|  |  | Första inköpsprogrammet |  |
-|  | Förbättra försäljningen | Övergiven kundvagn/bläddring | Återvinn potentiella köpare och öka försäljningen |
-|  |  | Produktgranskning/korsförsäljning | Korssälja fler artiklar med produktrecensioner. |
-|  |  | Produktkampanjer |  |
-|  |  | Tid att ändra ordning | Återkommande påminnelse för cykliska produkter/tjänster |
-|  | Varumärkeslojalitet | Vinn bakåt | Återvinn kunder som har varit inaktiva. |
-|  |  | Födelsedag påminnelser | Få en mer personlig relation till era kunder genom att vara en del av deras födelsedagseftermiddag! |
+| | | Första inköpsprogrammet | |
+| | Förbättra försäljningen | Övergiven kundvagn/bläddring | Återvinn potentiella köpare och öka försäljningen |
+| | | Produktgranskning/korsförsäljning | Korssälja fler artiklar med produktrecensioner. |
+| | | Produktkampanjer |  |
+| | | Tid att ändra ordning | Återkommande påminnelse för cykliska produkter/tjänster |
+| | Varumärkeslojalitet | Vinn bakåt | Återvinn kunder som har varit inaktiva. |
+| | | Födelsedag påminnelser | Få en mer personlig relation till era kunder genom att vara en del av deras födelsedagseftermiddag! |
 | Merchandising | Hantera lager | Tillbaka i Stock | Förbättra lagret genom att visa kunderna att produkterna de vill ha finns i lager igen |
-|  |  | Nästa bästa kategori | Identifiera de bästa kategorierna/försäljningen för användarna |
-|  |  | Best Sellers |  |
-|  |  | Påminnelser om prisfall | Visa användare att artiklar de gillar har reducerat pris |
-|  |  | Liknande produkter |  |
+| | | Nästa bästa kategori | Identifiera de bästa kategorierna/försäljningen för användarna |
+| | | Best Sellers | |
+| | | Påminnelser om prisfall | Visa användare att artiklar de gillar har reducerat pris |
+| | | Liknande produkter |  |
 | Anpassa | Öka konverteringen | Kuponger/erbjudanden | Visa bästa erbjudanden/kuponger för kunder |
-|  |  | Personlig produktsökning | Förbättra sökupplevelsen |
-|  |  | Recommendations | Förbättra surfupplevelsen |
-|  |  | Upplevelser över flera kanaler | Nå ut till kunder i alla kanaler |
+| | | Personlig produktsökning | Förbättra sökupplevelsen |
+| | | Recommendations | Förbättra surfupplevelsen |
+| | | Upplevelser över flera kanaler | Nå ut till kunder i alla kanaler |
 | Mät | Förstå kundresor | Flerkanalskampanj | Mät kampanjer i flera kanaler |
-|  |  | Segmentprestanda | Förstå segmentens prestanda och bidrag |
-|  |  | Utfallsrapporter | Visualisera konverteringar i varje steg |
-|  |  | Kohortanalys | Mät interaktion mellan segmentgrupper |
-|  |  | Klicka-för-streck-rapporter | Se hur kundkonverteringar leder till butiksupplevelser |
-|  |  | Tillskrivning | Se vilken kontaktyta/upplevelse som har störst påverkan på köpkonverteringen |
-|  |  | Prediktiva insikter | Läs mer om kundernas egenskaper |
+| | | Segmentprestanda | Förstå segmentens prestanda och bidrag |
+| | | Utfallsrapporter | Visualisera konverteringar i varje steg |
+| | | Kohortanalys | Mät interaktion mellan segmentgrupper |
+| | | Klicka-för-streck-rapporter | Se hur kundkonverteringar leder till butiksupplevelser |
+| | | Tillskrivning | Se vilken kontaktyta/upplevelse som har störst påverkan på köpkonverteringen |
+| | | Prediktiva insikter | Läs mer om kundernas egenskaper |
 
 ## Arkitektur
 
@@ -67,10 +67,10 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 | Användningsfall/integrering  | Länk |
 |:----|:----|
 | CJA + AEP | [Översikt över Customer Journey Analytics-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en) |
-|  | [Customer Journey Analytics - Användningsexempel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) |
+| | [Customer Journey Analytics - Användningsexempel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) |
 | AJO + AEP | [Adobe Journey Optimizer - Användningsexempel](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
-|  | [Beslutshantering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en) |
+| | [Beslutshantering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en) |
 | RTCDP + AEP | [Online/offline Audience Activation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en) |
-|  | [Experience Platform + programaktivering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en) |
-| Marketo + AEP | [B2B-aktivering och marknadsföring](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) |  |
-| Mål + AEP | [Adobe Target Use case - Behavioral Web/Mobile Personalization](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [Webb-/mobilpersonalisering med kända kunddata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) |  |
+| | [Experience Platform + programaktivering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en) |
+| Marketo + AEP | [B2B-aktivering och marknadsföring](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
+| Mål + AEP | [Adobe Target Use case - Behavioral Web/Mobile Personalization](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [Webb-/mobilpersonalisering med kända kunddata](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) | |
