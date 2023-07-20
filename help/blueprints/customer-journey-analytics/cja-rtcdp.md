@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: 2d7d2fff6c430b66e4a2935d4c68b5a8b9ecfae2
+source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -28,7 +28,7 @@ I följande dokumentation finns vägledning om implementering och konfigurering 
 
 * Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
 
-![Guardradit-diagram](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
+![Guardradit-diagram](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
 ## Frågor och svar
 
