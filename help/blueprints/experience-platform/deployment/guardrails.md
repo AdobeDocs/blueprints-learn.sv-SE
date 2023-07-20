@@ -4,9 +4,9 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: b3eddbfe943f45e1acbbb108652824df45c6c0e8
+source-git-commit: 73815906905fbefa1402a78351076a7da7d4930c
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '342'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvändning, optimering av prestanda och undvikande av fel eller oväntade resultat i Adobe Experience Platform och program. Garantier är avsedda att återspegla systembegränsningar och prestandaförväntningar för att underlätta kundens arkitektur och optimera fallprestanda. Garantier är inte avsedda att vara servicenivåavtal. Information om produktspecifika servicenivåavtal finns i produktbeskrivningsdokumentationen som är länkad nedan.
 
 
-## Garardsutkast för Adobe Experience Platform och program
+## Referensdokumentation för säkerhetsutkast för Adobe Experience Platform och program
 
 [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en)
 
@@ -42,31 +42,31 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 ### Intag av data
 
-<img src="../assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Segmentering
 
-<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform Segmenteringsgurkor" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/segmentation_guardrails.svg" alt="Experience Platform Segmenteringsgurkor" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Real-time Customer Data Platform &amp; Adobe Target
 
-<img src="../assets/RTCDP_Target_guardrails.svg" alt="RTCDP och målskydd" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/RTCDP_Target_guardrails.svg" alt="RTCDP och målskydd" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Customer Journey Analytics
 
-<img src="../assets/CJA_guardrails.svg" alt="CJA Guardrails" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/CJA_guardrails.svg" alt="CJA Guardrails" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Journey Optimizer
 
-<img src="../assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
+<img src="assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
