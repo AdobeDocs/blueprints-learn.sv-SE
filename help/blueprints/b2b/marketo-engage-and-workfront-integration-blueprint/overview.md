@@ -2,9 +2,9 @@
 title: Översikt över integreringsprogrammet Marketo Engage och Workfront
 description: Översikt - översikt över integreringsprogrammet Marketo Engage och Workfront
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Organisationer som får högre avkastning samtidigt som de ökar sina intäkter 
 Om din organisation vill uppnå liknande mål som beskrivs nedan är det här dokumentet användbart för dig:
 
 * Skala kampanjåtgärder för att stödja korsfunktionella marknadsföringsteam
-* Snabbare time-to-market med smidig process för kampanjförfrågningar
+* Snabbare time to market med smidig process för kampanjförfrågningar
 * Upprätta ett registersystem för att öka synligheten bland kampanjintressenter
 * Granska och godkänn kampanjresurser (bilder, e-postkopia)
 
@@ -46,9 +46,9 @@ Observera de olika faserna i kampanjutvecklingsprocessen.
 
 1. Intag och skapande: begäran om kampanj görs och kampanjresurserna samlas in programmatiskt.
 
-1. Korrektur och godkännande: När kampanjen väl har sammanställts är det dags för intressenter att granska och godkänna kampanjresurser som e-post och landningssidor.
+1. Granska och godkänn: när kampanjen väl har satts ihop är det dags för intressenter att granska och godkänna kampanjresurser som e-post och landningssidor.
 
-1. Rapport och granskning: dela kampanjresultat med Workfront för att ge mer synlighet för tvärfunktionella intressenter.
+1. Rapportera och granska: Dela kampanjresultat till Workfront för att ge mer synlighet för tvärfunktionella intressenter.
 
 >[!NOTE]
 >
@@ -149,13 +149,13 @@ Nu när ni har en grundläggande förståelse för hur Workfront och Marketo Eng
 
 * [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
 
-* Korrektur och godkännande (kommer snart)
+* [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
 
 ### Hantera kampanjnamn för Marketo Engage och deras associerade URL:er {#managing-marketo-engage-campaign-names}
 
 Att standardisera era namngivningskonventionerna för kampanjer och URL:er är en viktig grund för en korrekt programhantering i Marketo Engage och bidrar till en mer konsekvent process under kampanjens utvecklingslivscykel. Om du letar efter verktyg som kan hjälpa dig med detta rekommenderar vi att du checkar ut några kostnadsfria verktyg med öppen källkod från [Adobe Success Services](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} som gör att ni kan skapa ett konsekvent tillvägagångssätt för att skapa och hantera kampanjer i Marketo Engage och deras associerade URL:er.
 
-### Resurser {#resources}
+### Resurs {#resources}
 
 * [Workfront Fusion för Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 

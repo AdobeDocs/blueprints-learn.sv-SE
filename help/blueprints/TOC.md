@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '258'
 ht-degree: 20%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 20%
 # Digital Experience-utkast {#architecture}
 
 + [Översikt](/help/blueprints/overview.md)
-+ Lodräta industriskisser{#vertical-blueprints}
++ Lodräta industriutkast{#vertical-blueprints}
    + [Översikt](/help/blueprints/vertical-blueprints/overview.md)
    + [Kläder](/help/blueprints/vertical-blueprints/apparel.md)
    + [Detaljhandel](/help/blueprints/vertical-blueprints/retail.md)
    + [Telekommunikation](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Resor och turism](/help/blueprints/vertical-blueprints/travel-hospitality.md)
-+ Arkitekturöversikter{#architecture-overview}
++ Arkitekturöversikt{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
@@ -46,6 +46,7 @@ ht-degree: 20%
    + Integrering av Marketo Engage och Workfront{#marketo-engage-and-workfront-integration-blueprint}
       + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
+      + [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [Nöjda kunder berättar](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
@@ -75,7 +76,7 @@ ht-degree: 20%
 + Datainsamling, åtkomst och export{#data-ingestion}
    + [Översikt](/help/blueprints/data-ingestion/overview.md)
    + [Datainsamling för vidarebefordran av händelser för flera sandlådor](/help/blueprints/data-ingestion/multi-sandbox-event-forwarding.md)
-   + [Förberedelse och inmatning av data](/help/blueprints/data-ingestion/ingestion.md)
+   + [Dataförberedelse och matning](/help/blueprints/data-ingestion/ingestion.md)
    + [Dataåtkomst och -export](/help/blueprints/data-ingestion/egress.md)
    + [Vidarebefordran av händelser](/help/blueprints/data-ingestion/server-side-collection.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}

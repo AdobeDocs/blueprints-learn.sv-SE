@@ -2,9 +2,9 @@
 title: Ta och skapa en plan
 description: Input and Create - Marketo Engage and Workfront integration plan
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: c4ab702cafa0dcacc4b3919bf70af0c50fa6bea8
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Det antal marknadsföringsförfrågningar som kommer in i ett marknadsföringsteam för att lansera nya kampanjer kan göra ett högt fungerande team till en ständig dörr av återkommande uppgifter, vilket leder till att innovationer sprider sig ut och stagnerar.
 
-Genom att skapa en process för att skicka in kampanjförfrågningar och automatisera skapandet av ofta efterfrågade marknadsföringskampanjer kan ni: öka tempot i era kampanjer, minska antalet fel, skicka förfrågningar till rätt medlem i era marknadsföringsaktiviteter, balansera och förbättra resursanvändningen och fokusera mer på era marknadsföringsåtgärder för mer strategiska uppgifter.
+Genom att skapa en process för att skicka in kampanjförfrågningar och automatisera skapandet av ofta efterfrågade marknadsföringskampanjer kan ni: öka hastigheten på era kampanjer, minska antalet fel, skicka förfrågningar till rätt medlem i marknadsföringsåtgärderna, balansera och förbättra resursanvändningen och fokusera mer av era marknadsföringsåtgärder på mer strategiska uppgifter.
 
-Med Workfront och Marketo Engage kan du ansluta system-till-system från en [Formulär för Workfront-begäran](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program, fylla i nyckelvariabler som: ämnesrader, e-postkopia, bilder, datum, tid, händelseinformation med mera.
+Med Workfront och Marketo Engage kan du ansluta system till system från en [Formulär för Workfront-begäran](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program och sedan fylla i viktiga variabler som ämnesrader, e-postkopia, bilder, datum, tid, händelseinformation med mera.
 
 För att uppnå den här integreringen kommer du att använda Workfront Fusion, ett lager för automatisering av arbete som gör att du kan automatisera arbetsflöden mellan Workfront och andra system.
 
@@ -33,7 +33,7 @@ Bakom varje automatiserad arbetsflöde finns en definierad process som ser till 
 
 **Vilka typer av marknadsföringsförfrågningar kommer du att få?**
 
-Tänk på vilka typer av marknadsföringstaktik du kommer att köra, som e-post, näring, webbinarier från första part och event. Kör du även webbinarier eller visningsannonser från tredje part? Var och en av dessa förfrågningar bör beaktas eftersom de kan behöva särskilda inmatningsfält i ansökningsformuläret och mappas till olika programmallar i Marketo Engage som ska klonas.
+Tänk på vilka typer av marknadsföringstaktik du kommer att köra, som e-post, näring, webbinarier från första part och event. Kör du även webbinarier eller visningsannonser från tredje part? Var och en av dessa förfrågningar bör beaktas eftersom de kan behöva särskilda inmatningsfält i formuläret och mappas till olika programmallar i Marketo Engage som ska klonas.
 
 Ni måste också förstå om ni kör kampanjer i flera regioner. Om så är fallet vill du ta med ett projekt i Workfront för att skapa flera program i Marketo Engage, där varje program har olika språkstöd.
 
@@ -52,7 +52,7 @@ Tänk på den viktigaste informationen som behöver hämtas i din ansökningsbla
    <td>E-postutfall</td>
    <td>・ E-postämne<br />
 ・ Schemalagt datum<br />
-・ E-postkopia<br />
+・ Email Copy<br />
 ・ Call to Action<br />
 ・ Bild(er) - AEM Assets URL:er kan refereras direkt för användning i Marketo<br />
 ・ Kriterier för målgruppskvalitet</td>
@@ -74,8 +74,8 @@ Tänk på den viktigaste informationen som behöver hämtas i din ansökningsbla
   </tr>
   <tr>
    <td>Nätur</td>
-   <td>・ Antal e-postmeddelanden<br />
-・ E-postkopia<br />
+   <td>・ Antal mejl<br />
+・ Email Copy<br />
 ・ E-postrubriker<br />
 ・ Call to Action<br />
 ・ Kriterier för målgruppskvalitet</td>
@@ -89,7 +89,7 @@ Tänk på den viktigaste informationen som behöver hämtas i din ansökningsbla
 
 ### Upprätta ett högklassigt centrum {#establish-your-center-of-excellence}
 
-Om du vill automatisera framtagningen av program behöver du ett högklassigt center i Marketo Engage. Ett högklassigt centrum innehåller mallsidiga program och resurser som hjälper till att snabba upp och standardisera kampanjutvecklingsprocessen. Du kan till exempel ha en programmall för olika kampanjbehov: e-post, näring, personliga event och webbinarium. Dessutom kan du ha flera e-postprogrammallar som du använder för olika regioner eller olika typer av e-postmeddelanden.
+Om du vill automatisera framtagningen av program behöver du ett högklassigt center i Marketo Engage. Ett högklassigt centrum innehåller mallsidiga program och resurser som hjälper till att snabba upp och standardisera kampanjutvecklingsprocessen. Du kan till exempel ha en programmall för olika kampanjbehov: e-post, näring, personlig händelse och webbinarium. Dessutom kan du ha flera e-postprogrammallar som du använder för olika regioner eller olika typer av e-postmeddelanden.
 
 Att skapa ett högklassigt centrum med programmallar i Marketo Engage är ett av de första stegen mot att ha ett mer programmatiskt tillvägagångssätt för kampanjutförande och kommer att fungera som en grund för automatisering av kampanjförfrågningar.
 
@@ -99,7 +99,7 @@ Mer information om hur du skapar ett eget centrum för spetskompetens finns i [M
 
 ### Använd variabler för att fylla i innehåll {#use-tokens-to-populate-content}
 
-Med Marketo Engage kan variabler användas för att fylla i innehåll i kampanjresurser. När du till exempel har klonat en e-postmall från ditt högklassiga center kan Workfront Fusion hämta information från kampanjbegäran i Workfront och skicka dem till Mina token i Marketo Engage-programmet. Token-värdena kan sedan ärvas direkt till e-postmeddelandet för att skapa e-postmeddelandet.
+Med Marketo Engage kan tokens användas för att fylla i innehåll i kampanjresurser. När du till exempel har klonat en e-postmall från ditt högklassiga center kan Workfront Fusion hämta information från kampanjbegäran i Workfront och skicka dem till Mina token i Marketo Engage-programmet. Token-värdena kan sedan ärvas direkt till e-postmeddelandet för att skapa e-postmeddelandet.
 
 ![Använd variabler för att fylla i innehållsdiagram](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
 
@@ -149,9 +149,9 @@ En del grundläggande information som ska ingå i sökbiblioteket för programma
 
 Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med färdiga [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} -moduler som gör att ni kan leverera automatisering snabbare.
 
-![Intag och skapa automatiseringsflöde](assets/intake-and-create-3.png)Använd variabler för att fylla i innehåll
+![Intag och skapa automatiseringsflöde](assets/intake-and-create-3.png)
 
-## Resurser {#resources}
+## Resurs {#resources}
 
 * [Adobe Marketo Engage Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
