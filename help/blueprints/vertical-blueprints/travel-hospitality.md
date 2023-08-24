@@ -26,7 +26,7 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 
 ## Affärsvärde levererat
 
-| Mål | Taktik | Värdet upplåst |
+| Mål | Taktik | Värdet är upplåst |
 |---|---|---|
 | **Gör alla upplevelser relevanta för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering: </strong>Skapa 3X e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens: </strong>Gästbelöningsprogram genomför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering: </strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en affärsanpassad kontrollpanel för resa och attribuering som även minskar latensen (i dagar)</li><li><strong>Framtidssäkrad teknikhög: </strong>Tio miljoner profiler över 7 kanaler som är klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
 
@@ -34,7 +34,7 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 
 ### Beskrivning
 
-<ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer.</li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteende för målinriktning och personalisering.</li></li></ul>
+<ul><li>Aktivera för kända profilbaserade destinationer, som e-postleverantörer, sociala nätverk och reklamdestinationer.</li><li>Använd offlineattribut och händelser som offlineorder, transaktioner, CRM eller lojalitetsdata tillsammans med onlinebeteenden för målinriktning och personalisering.</li></li></ul>
 
 ### Experience Cloud-program
 

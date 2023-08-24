@@ -46,7 +46,7 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
    * Skapa profilpostdatauppsättningar för alla profilpostens källdata och tilldela det associerade schemat.
       * Aktivera datauppsättningen för profilinmatning.
    * Skapa profilupplevelsehändelsescheman för alla profiltidsseriebaserade källdata.
-      * Ange primär identitet och sekundära identiteter för schemat.
+      * Ange den primära identiteten och de sekundära identiteterna för schemat.
    * Aktivera schemat för profilinmatning.
    * Skapa data om händelser för profilupplevelser för alla händelsekälldata för profilupplevelser, och tilldela det associerade schemat.
       * Aktivera datauppsättningen för profilinmatning.
@@ -72,8 +72,8 @@ Importera kunddata från olika källor för att skapa en enda profilvy av kunden
    * Granska segmentresultatantalet för de angivna segmenten.
    * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
 1. Konfigurera leveransen av målgruppen till målet i målkonfigurationen.
-   * Se [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html) om du vill ha mer information om hur du konfigurerar Facebook Destination.
-   * Se [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) om du vill ha mer information om hur du konfigurerar Google Destination.
+   * Se [Facebook Destinationshandbok](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html) för mer information om hur du konfigurerar Facebook Destination.
+   * Se [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) för mer information om hur du konfigurerar Google Destination.
    * När du konfigurerar ett mål väljer du vilken målgrupp du vill aktivera för målet.
    * Fastställ det schemalagda startdatum som du vill att måldataflödet ska börja leverera målgruppen till målet.
    * Varje mål har obligatoriska och valfria attribut som ska skickas.

@@ -24,13 +24,13 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 [Guardrails för kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
-[Identitetsskydd](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
+[Identitetsgarantins](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 
 [Customer Journey Analytics målgruppsdelningsgardiner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
 
 [Customer Journey Analytics Data Ingtion Guardradrals](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
 
-[Frågetjänstmeddelanden](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
+[Frågetjänstens säkerhetsbeskrivningar](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
 
 [Målaktiveringsskydd](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
 
@@ -52,7 +52,7 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 <br>
 
-### Real-time Customer Data Platform &amp; Adobe Target
+### REAL-TIME CUSTOMER DATA PLATFORM &amp; ADOBE TARGET
 
 <img src="assets/RTCDP_Target_guardrails.svg" alt="RTCDP och målskydd" style="border:1px solid #4a4a4a" width="85%" />
 
@@ -92,4 +92,4 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 [Journey Orchestration](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html)
 
-[offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+[Offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)

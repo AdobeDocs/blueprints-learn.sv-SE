@@ -85,7 +85,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 #### Adobe Campaign
 
-1. Konfigurera scheman för profil, sökdata och relevanta leveransdata.
+1. Konfigurera scheman för profil, sökdata och relevanta data för leveranspersonalisering.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
    * Experience Platform Mobile SDK
    * Campaign Mobile SDK
 * Experience Platform Mobile SDK-väg:
-   * Utnyttja Adobe Tags och tillägget Campaign Classic för att integrera med Experience Platform Mobile SDK
+   * Utnyttja Adobe-taggar och Campaign Classic-tillägget för att konfigurera integreringen med Experience Platform Mobile SDK
    * behöver kunskaper om Adobe-taggar och datainsamling
    * Behöver mobilutvecklingsupplevelse med push-meddelanden i både Android och iOS för att distribuera SDK, integrera med FCM (Android) och APNS (iOS) för att få push-token, konfigurera din app så att den tar emot push-meddelanden och hantera push-interaktioner
 * Campaign Mobile SDK
@@ -121,7 +121,7 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 ## Relaterad dokumentation
 
 * [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
-* [Campaign Classic dokumentation](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
+* [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
 * [Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
 * [Experience Platform Launch dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
 * [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)

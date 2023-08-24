@@ -22,9 +22,9 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 
 ## Affärsvärde levererat
 
-| Mål | Taktik | Värdet upplåst |
+| Mål | Taktik | Värdet är upplåst |
 |---|---|---|
-| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Advertising Networks och Adobe Target för att underlätta mediernas utgifter och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor:</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Strömma segment till annonsnätverk för attribuering och reklamdämpning</li><li><strong>Webbpersonalisering i realtid:</strong>Direktuppspelningssegment som aktiveras för Adobe Target för att kunna aktiveras på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid som har berikats med tillgängliga kunddata och aktiverats i realtid för e-post- och push-kanaler</li></ul> |
+| **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Advertising Networks och Adobe Target för att underlätta mediernas utgifter och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Strömma segment till annonsnätverk för attribuering och reklamdämpning</li><li><strong>Webbpersonalisering i realtid:</strong>Direktuppspelningssegment som aktiveras för Adobe Target för att kunna aktiveras på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid som har berikats med tillgängliga kunddata och aktiverats i realtid för e-post- och push-kanaler</li></ul> |
 
 
 ## Användare
@@ -44,9 +44,9 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 | | | Best Sellers | |
 | | | Påminnelser om prisfall | Visa användare att artiklar de gillar har reducerat pris |
 | | | Liknande produkter |  |
-| Anpassa | Öka konverteringen | Kuponger/erbjudanden | Visa bästa erbjudanden/kuponger för kunder |
+| Anpassa | Öka konverteringen | Kuponger | Visa bästa erbjudanden/kuponger för kunder |
 | | | Personlig produktsökning | Förbättra sökupplevelsen |
-| | | Recommendations | Förbättra surfupplevelsen |
+| | | Recommendations | Bättre surfning |
 | | | Upplevelser över flera kanaler | Nå ut till kunder i alla kanaler |
 | Mät | Förstå kundresor | Flerkanalskampanj | Mät kampanjer i flera kanaler |
 | | | Segmentprestanda | Förstå segmentens prestanda och bidrag |
@@ -68,7 +68,7 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 |:----|:----|
 | CJA + AEP | [Översikt över Customer Journey Analytics-utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en) |
 | | [Customer Journey Analytics - Användningsexempel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) |
-| AJO + AEP | [Adobe Journey Optimizer - Användningsexempel](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
+| AJO + AEP | [Adobe Journey Optimizer - användningsexempel](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
 | | [Beslutshantering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en) |
 | RTCDP + AEP | [Online/offline Audience Activation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en) |
 | | [Experience Platform + programaktivering](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en) |

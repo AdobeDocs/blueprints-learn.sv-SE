@@ -90,7 +90,7 @@ Det finns två möjliga implementeringsparter. Både möjligheten att importera 
 
 Vägledning om viktiga överväganden och konfigurationer av ritningen.
 
-* CRM-integrering med och utan Marketo: Om implementeringen kommer att använda Marketo Engage som källa och Marketo Engage är ansluten till CRM, använder du Marketo-källkopplingen i Experience Platform för att importera CRM-data till Experience Platform. Använd källkopplingen för Experience Platform om ytterligare tabeller behöver hämtas. Om implementeringen inte kommer att använda Marketo Engage som källa ansluter du CRM-källan direkt till AEP med CRM-källkopplingen Experience Platform.
+* CRM-integrering med och utan Marketo: Om implementeringen kommer att använda Marketo Engage som källa och Marketo Engage är ansluten till CRM använder du Marketo källanslutning i Experience Platform för att importera CRM-data till Experience Platform. Använd källkopplingen för Experience Platform om ytterligare tabeller behöver hämtas. Om implementeringen inte kommer att använda Marketo Engage som källa ansluter du CRM-källan direkt till AEP med CRM-källkopplingen Experience Platform.
 * Vi rekommenderar inte att bara lansera och vårda leads från B2B Edition av Real-time Customer Data Platform. Vi rekommenderar att du använder ett ledande vårdsverktyg (t.ex. Marketo Engage) i detta fall.
 * Målkopplingen för AEP i Marketo Engage, som överför målgrupper till Marketo Engage för aktivering, skickar bara e-postadresser och ECID. Det skapar inte ett nytt lead om kontakten inte redan finns. Det är därför nödvändigt att importera profilen och lead-data till Marketo Engage.
 
@@ -100,4 +100,4 @@ Vägledning om viktiga överväganden och konfigurationer av ritningen.
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html)
 * [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en)
-* [Adobe Experience Platform - Marketo Destination Connector](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)
+* [Adobe Experience Platform - Marketo målanslutning](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)

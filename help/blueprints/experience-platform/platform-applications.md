@@ -108,7 +108,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td colspan="1">Campaign Classic</td>
 <td colspan="1">
 <ul>
-<li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Campaign Classic som målgrupp för att initiera kampanjer.</li>
+<li>Målgrupper som definieras i Real-time Customer Data Platform kan delas med Campaign Classicen som målgrupp för att initiera kampanjer.</li>
 </ul>
 </td>
 <td colspan="1">
@@ -144,7 +144,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td colspan="1">Customer Journey Analytics</td>
 <td colspan="1">
 <ul>
-<li>Data som samlas in och hämtas in i Experience Platform Data Lake görs tillgängliga för behandling till Customer Journey Analytics. </li>
+<li>Data som samlas in och hämtas in i Experience Platform datasjön görs tillgängliga för behandling till Customer Journey Analytics. </li>
 <li>Profil- och målgruppsdata från Real-time Customer Data Platform kan hämtas till CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">Integrering mellan RTCDP och CJA</a>.
 </li>
 </ul>
