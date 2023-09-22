@@ -4,19 +4,23 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: df10f49b618804982dd5b72ab4061de619beb72f
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
 
 # Guardrails
 
-Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvändning, optimering av prestanda och undvikande av fel eller oväntade resultat i Adobe Experience Platform och program. Garantier är avsedda att återspegla systembegränsningar och prestandaförväntningar för att underlätta kundens arkitektur och optimera fallprestanda. Garantier är inte avsedda att vara servicenivåavtal. Information om produktspecifika servicenivåavtal finns i produktbeskrivningsdokumentationen som är länkad nedan.
+Vi rekommenderar att du anger tröskelvärden som ger vägledning för data- och systemanvändning i Adobe Experience Platform och program. Garantierna speglar systembegränsningar och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang samt hjälper till att undvika fel och oväntade resultat. Garantier är inte avsedda att vara servicenivåavtal.
+
+Information om specifika servicenivåavtal för program och funktioner finns i&quot;Program- och funktionsbeskrivningar&quot; längst ned på den här sidan.
 
 
 ## Referensdokumentation för säkerhetsutkast för Adobe Experience Platform och program
+
+Följande sidor innehåller information om säkerhetsutkast för Adobe Experience Platform funktioner, tjänster och program:
 
 [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en)
 
@@ -70,7 +74,9 @@ Vi rekommenderar tröskelvärden som ger vägledning för data- och systemanvän
 
 <br>
 
-## Produktbeskrivningar
+## Program- och funktionsbeskrivningar
+
+Mer information om funktionsspecifika servicenivåavtal finns i beskrivningarna nedan:
 
 [Experience Platform Collection Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
