@@ -14,7 +14,7 @@ ht-degree: 5%
 
 ---
 
-# Beteendeanpassning för webb/mobil
+# Beteendeanpassning för webb/mobiler
 
 Personalisera baserat på onlinebeteende och målgruppsdata.
 

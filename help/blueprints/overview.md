@@ -24,14 +24,11 @@ Planer för digitala upplevelser är repeterbara implementeringar som gör att n
 ## Nyheter
 
 * **[Målgrupps- och profilaktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)**
-
-   *Håll kundprofilerna uppdaterade i alla system för att ge era sälj- och supportteam bättre förutsättningar. &#x200B;*
+  *Håll kundprofilerna uppdaterade i alla system för att ge era sälj- och supportteam bättre förutsättningar. &#x200B;*
 * **[Kundaktivitetshubbskiss](/help/blueprints/audience-activation/customer-activity.md)**
-
-   *Ange sammanhang för support och försäljning som utförs av agenter.*
-* **[Dataanalys och intelligensutkast](/help/blueprints/data-insights/analysis.md)**
-
-   *Utför en undersökande fråga och analys av data i sjön.*
+  *Ange sammanhang för support och försäljning som utförs av agenter.*
+* **[Dataanalys och intelligens - översikt](/help/blueprints/data-insights/analysis.md)**
+  *Utför en undersökande fråga och analys av data i sjön.*
 
 ## Utvalda utkast
 

@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Journey Optimizer-ritningar
 
-Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringsteam som i realtid kan reagera på kundbeteenden och möta dem där de befinner sig. Funktioner för datahantering har flyttats till Adobe Experience Platform, vilket gör att marknadsföringsteamen kan fokusera på det de gör bäst: som skapar kundresor och personaliserade konversationer i världsklass.  Denna plan beskriver programmets tekniska funktioner och ger en djupdykning i de olika arkitektoniska komponenterna som Adobe Journey Optimizer består av.
+Adobe Journey Optimizer är ett särskilt utformat system för marknadsföringsteam som i realtid kan reagera på kundbeteenden och möta dem där de befinner sig. Funktioner för datahantering har flyttats till Adobe Experience Platform, vilket gör att marknadsföringsteamen kan fokusera på vad de gör bäst: att skapa kundresor och personaliserade konversationer i världsklass.  Denna plan beskriver programmets tekniska funktioner och ger en djupdykning i de olika arkitektoniska komponenterna som Adobe Journey Optimizer består av.
 
 <br>
 
@@ -63,7 +63,7 @@ E-post
 * Underdomänen kan antingen delegeras helt till Adobe (rekommenderas) eller CNAME kan användas för att peka mot Adobe-specifika DNS-servrar (anpassad)
 * Google TXT-post krävs för varje underdomän för att säkerställa god levererbarhet
 
-Mobilpush
+Mobil pensel
 
 * Kunden måste ha en mobilutvecklare tillgänglig för att kunna bygga appen
 * Adobe Experience Platform Mobile SDK

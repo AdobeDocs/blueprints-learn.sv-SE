@@ -9,8 +9,8 @@ thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 source-git-commit: 3a6a98eded28baee2cbb44de2262bbd580fa0c94
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '396'
+ht-degree: 14%
 
 ---
 
@@ -46,7 +46,7 @@ Microsoft Bing, Google DV360 och TradeDesk är de främsta reklamdestinationer s
 
 ## Implementeringssteg för Real-time Customer Data Platform
 
-* För implementeringssteg för Real-time Customer Data Platform, se följande [dokumentation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+* För implementeringssteg i Real-time Customer Data Platform, se följande [dokumentation](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 
 ## Relaterad dokumentation
 
