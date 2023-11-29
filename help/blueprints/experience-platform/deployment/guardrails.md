@@ -4,10 +4,10 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 4379f372241248ea6c70c766f13a182783fcac0c
+source-git-commit: 76ad3dceda37c5f991a43df5828a926f6dfc42a5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 1%
 
 ---
 
@@ -38,39 +38,37 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 * [Frågetjänstens säkerhetsbeskrivningar](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
 * [Målaktiveringsskydd](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
 
+## Latensdiagram från början till slut {#end-to-end-latency}
 
+### Intag av data {#data-ingestion}
 
-## Latensdiagram från början till slut
+Diagrammet nedan visar förväntade fördröjningsvärden för dataöverföring via [direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html) och [batchintag](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=en) när data hämtas till Real-Time CDP. Klicka på bilden för att se en högupplöst version.
 
-### Intag av data
+![Översikt över dataöverföring på hög nivå.](/help/blueprints/experience-platform/deployment/assets/aep_data_flow_guardrails.svg "Högnivåvisuell överblick och fördröjningsvärden för dataöverföring"){width="1000" zoomable="yes"}
 
-<img src="assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" />
+### Segmentering {#segmentation}
 
-<br>
+Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med målgrupper i [Real-Time CDP segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html). Klicka på bilden för att se en högupplöst version.
 
-### Segmentering
+![Översikt över segmentering på hög nivå.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentera visuell översikt och latensvärden på hög nivå"){width="1000" zoomable="yes"}
 
-<img src="assets/segmentation_guardrails.svg" alt="Experience Platform Segmenteringsgurkor" style="border:1px solid #4a4a4a" width="85%" />
+### REAL-TIME CUSTOMER DATA PLATFORM &amp; ADOBE TARGET {#adobe-target-latency}
 
-<br>
+Diagrammet nedan visar förväntade fördröjningsvärden när målgrupper exporteras från Real-Time CDP till [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
-### REAL-TIME CUSTOMER DATA PLATFORM &amp; ADOBE TARGET
+![Exportera till Adobe Target högnivåvisuell översikt.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Target_guardrails.svg "Exportera målgrupper till Adobe Target högnivåvisuella översikter och latensvärden"){width="1000" zoomable="yes"}
 
-<img src="assets/RTCDP_Target_guardrails.svg" alt="RTCDP och målskydd" style="border:1px solid #4a4a4a" width="85%" />
+### Customer Journey Analytics {#customer-journey-analytics}
 
-<br>
+Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
-### Customer Journey Analytics
+![Arbeta med högnivåvisuell översikt på Customer Journey Analytics.](/help/blueprints/experience-platform/deployment/assets/CJA_guardrails.svg "Arbeta med högnivåvisuell översikt och latensvärden för Customer Journey Analytics"){width="1000" zoomable="yes"}
 
-<img src="assets/CJA_guardrails.svg" alt="CJA Guardrails" style="border:1px solid #4a4a4a" width="85%" />
+### Journey Optimizer {#journey-optimizer}
 
-<br>
+Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
-### Journey Optimizer
-
-<img src="assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" />
-
-<br>
+![Arbeta med Adobe Journey Optimizer visuella översikt på hög nivå.](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "Arbeta med Adobe Journey Optimizer högnivåvisuella översikter och latensvärden"){width="1000" zoomable="yes"}
 
 ## Program- och funktionsbeskrivningar {#application-feature-descriptions}
 
