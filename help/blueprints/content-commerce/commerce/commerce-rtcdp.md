@@ -3,7 +3,7 @@ title: Adobe Commerce - RTCDP Blueprint
 description: Adobe Experience Platform-integrering med Adobe Commerce för att skapa en enda kundvy och på ett intelligent sätt personalisera upplevelser i en digital butik och i alla kanaler.
 solution: Real-Time Customer Data Platform, Commerce
 exl-id: e2fc5e1c-c865-4c24-9b82-861a34aba487
-source-git-commit: 387ad59319f72adeff338880c7f168d3aeca86f8
+source-git-commit: 8a47b73065a5591673804301c61a73947346813c
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -65,7 +65,7 @@ En fullständig lista över händelser som stöds finns i [Commerce Events](http
 
 ## Relaterade implementeringsguider
 
-| Användarhandbok  | Länk |
+| Användarhandbok | Länk |
 |:----|:----|
 | Platform Connector | [Adobe Commerce Experience Platform Connector - översikt](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html) |
 | Commerce Destination | [Adobe Commerce Connection i RTCDP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-commerce.html) |
