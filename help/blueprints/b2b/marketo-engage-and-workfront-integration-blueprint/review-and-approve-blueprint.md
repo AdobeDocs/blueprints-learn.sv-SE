@@ -1,9 +1,10 @@
 ---
 title: Granska och godkänn en plan
 description: Granska och godkänn en plan för integrering av Marketo Engage och Workfront
-source-git-commit: 4c63a1e552c893a2b2ae753bd3eaccab5c673448
+exl-id: a446faab-7db4-42a2-b4b9-395725c49c9f
+source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---

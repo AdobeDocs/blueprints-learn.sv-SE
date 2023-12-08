@@ -1,13 +1,13 @@
 ---
-title: Experience Platform och programskydd
+title: Experience Platform och programskydd och svarstider från början till slut
 description: Garantier definierar förväntningarna på prestanda och påverkan för komponenter och tjänster i Adobe Experience Platform och program
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 76ad3dceda37c5f991a43df5828a926f6dfc42a5
+source-git-commit: 94197d1b450694f96eb1ef17245c0353494859b1
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 1%
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 

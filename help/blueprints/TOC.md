@@ -7,8 +7,8 @@ mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: f98f1b6ca56ed1249e9c18ea04935808f4498ed5
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 20%
+source-wordcount: '250'
+ht-degree: 16%
 
 ---
 

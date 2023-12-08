@@ -3,13 +3,13 @@ title: Datainsamling för vidarebefordran av händelser i flera sandlådor
 description: Lär dig hur data som samlas in med Experience Platform Web och Mobile SDK kan konfigureras för att samla in en enda händelse och vidarebefordras till flera Experience Platform-sandlådor.
 solution: Data Collection
 kt: 7202
-source-git-commit: e9a9abeaa722bb2f9a232f4e861b1b5eae86edd1
+exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
+source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
-
 
 # Datainsamling för vidarebefordran av händelser i flera sandlådor
 
@@ -17,7 +17,7 @@ Den här planen visar hur data som samlats in med Experience Platform Web och Mo
 
 Förutom att replikera händelsen med [!UICONTROL Vidarebefordran av händelser] kan du lägga till, filtrera eller ändra de ursprungliga insamlade data som uppfyller kraven för andra sandlådor.
 
-[!UICONTROL Vidarebefordran av händelser] använder en separat egenskap som innehåller [!UICONTROL Dataelement], [!UICONTROL Regler]och [!UICONTROL Tillägg] nödvändiga för dina databehov. Med en inkommande händelse kan du [!UICONTROL Vidarebefordran av händelser] kan samla in data och hantera dem efter behov före vidarebefordran.
+[!UICONTROL Vidarebefordran av händelser] använder en separat egenskap som innehåller [!UICONTROL Dataelement], [!UICONTROL Regler]och [!UICONTROL Tillägg] nödvändiga för dina databehov. Med en inkommande händelse [!UICONTROL Vidarebefordran av händelser] kan samla in data och hantera dem efter behov före vidarebefordran.
 
 Din målsandlåda kräver en konfigurerad slutpunkt för HTTP-direktuppspelning som används av Adobe [!UICONTROL Cloud Connector] tillägg.
 
@@ -54,12 +54,12 @@ Trafikvolymer krävs för granskning av varje användningsfall. Detta är viktig
 
 ![Flera sandlådor [!UICONTROL Vidarebefordran av händelser]](assets/multi-sandbox-data-collection.png)
 
-1. Samla in och skicka händelsedata till [!UICONTROL Platform Edge Network] krävs för att kunna använda [!UICONTROL Vidarebefordran av händelser]. Kunder kan använda Adobe-taggar för klientsidan eller [!UICONTROL API för plattforms-Edge Network Server] för datainsamling från server till server. The [!UICONTROL API för plattformen Edge Network] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
+1. Samla in och skicka händelsedata till [!UICONTROL Platform Edge Network] krävs för att kunna använda [!UICONTROL Vidarebefordran av händelser]. Kunder kan använda Adobe-taggar för klientsidan eller [!UICONTROL API för plattforms-Edge Network Server] för datainsamling mellan servrar. The [!UICONTROL API för plattformen Edge Network] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
 
 1. Samlade nyttolaster skickas från taggimplementering till [!UICONTROL Platform Edge Network] till [!UICONTROL Vidarebefordran av händelser] och behandlas av en egen [!UICONTROL Dataelement], [!UICONTROL Regler] och [!UICONTROL Åtgärder]. Du kan läsa mer om skillnaderna [Taggar och [!UICONTROL Vidarebefordran av händelser]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
 
-1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!UICONTROL Platform Edge Network]. Om händelsedata skickades till plattforms-Edge-nätverket av en implementerad tagg eller en server-till-server-samling. Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda den anpassade koden [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
+1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!UICONTROL Platform Edge Network]. Om händelsedata skickades till plattforms-Edge-nätverket av en implementerad tagg eller en server-till-server-samling. Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda anpassad kod [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
 
 1. För närvarande används Adobe [!UICONTROL Cloud Connector-tillägg] krävs i [!UICONTROL Vidarebefordran av händelser] Egenskap. När reglerna bearbetar eller berikar händelsedata används Cloud Connector i ett hämtningsanrop som konfigurerats för en POST som skickar nyttolasten till den andra sandlådan.
 
-1. En slutpunkt för direktuppspelning för datainmatning krävs för den andra sandlådan. Du kan också överväga funktionerna för dataprep i AEP för att underlätta intag och mappning av [!UICONTROL Vidarebefordran av händelser] nyttolaster till XDM. Läs AEP-dokumentationen Skapa en [Anslutning för HTTP-API-direktuppspelning med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en)
+1. En slutpunkt för direktuppspelning för datainmatning krävs för den andra sandlådan. Du kan också överväga funktionerna för dataprep i AEP för att underlätta intag och mappning av [!UICONTROL Vidarebefordran av händelser] nyttolaster till XDM. Läs AEP-dokumentationen Skapa en [HTTP API Streaming Connection med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en)
