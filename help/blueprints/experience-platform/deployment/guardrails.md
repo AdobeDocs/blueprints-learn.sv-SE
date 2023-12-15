@@ -1,17 +1,17 @@
 ---
-title: Experience Platform och programskydd och svarstider från början till slut
+title: Experience Platform och programskydd
 description: Garantier definierar förväntningarna på prestanda och påverkan för komponenter och tjänster i Adobe Experience Platform och program
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: a16d7e925b7f5e9a379214d01280e4fef56344af
+source-git-commit: 4cc0eafda6e2670ac5b72b0a0ca59b84e1c0dba1
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# Gardraster och svarstider från början till slut
+# Guardrails
 
 Vi rekommenderar att du anger tröskelvärden som ger vägledning för data, observerad fördröjning och systemanvändning i Adobe Experience Platform och program. Garantierna speglar systembegränsningar och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang samt hjälper till att undvika fel och oväntade resultat. Garantier är inte avsedda att vara servicenivåavtal.
 
