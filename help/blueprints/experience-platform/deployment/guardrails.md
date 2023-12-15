@@ -4,16 +4,16 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 94197d1b450694f96eb1ef17245c0353494859b1
+source-git-commit: a16d7e925b7f5e9a379214d01280e4fef56344af
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
-# Guardrails
+# Gardraster och svarstider från början till slut
 
-Vi rekommenderar att du anger tröskelvärden som ger vägledning för data- och systemanvändning i Adobe Experience Platform och program. Garantierna speglar systembegränsningar och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang samt hjälper till att undvika fel och oväntade resultat. Garantier är inte avsedda att vara servicenivåavtal.
+Vi rekommenderar att du anger tröskelvärden som ger vägledning för data, observerad fördröjning och systemanvändning i Adobe Experience Platform och program. Garantierna speglar systembegränsningar och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang samt hjälper till att undvika fel och oväntade resultat. Garantier är inte avsedda att vara servicenivåavtal.
 
 Information om specifika servicenivåavtal för program och funktioner finns i [Program- och funktionsbeskrivningar](#application-feature-descriptions) längst ned på den här sidan.
 
@@ -25,15 +25,15 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 **Experience Platform-program**
 
 * [Översikt över Real-Time CDP skyddsutkast](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Customer Journey Analytics, skyddsräcken för målgruppsdelning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
-* [Customer Journey Analytics skyddsräcken för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
+* [Customer Journey Analytics, skyddsräcken för målgruppsdelning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
+* [Customer Journey Analytics skyddsräcken för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
 
 **Experience Platform**
 
-* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en)
-* [Guardrutor för Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=en)
-* [Guardrails för kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
+* [Guardrutor för Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [Kundprofil och segmenteringsgurkor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [Identitetsgarantins](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 * [Frågetjänstens säkerhetsbeskrivningar](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
 * [Målaktiveringsskydd](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
