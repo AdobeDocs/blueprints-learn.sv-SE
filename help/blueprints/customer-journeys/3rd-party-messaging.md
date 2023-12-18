@@ -3,9 +3,9 @@ title: Journey Optimizer - plan för tredjepartsmeddelanden
 description: Visar hur Adobe Journey Optimizer kan användas med tredjeparts meddelandesystem för att samordna och skicka personaliserad kommunikation.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: a1421a47da2c84635ef904096a6036cfe488d763
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -40,39 +40,8 @@ Meddelandeprogram från tredje part
 
 [Journey Optimizer Guardrails Product Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 
-Fler Journey Optimizer-garderobilder:
+[Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
-* Funktionen för att hämta innehåll är tillgänglig via API idag för att säkerställa att målsystemet inte är mättat till den punkt där felet uppstod. Detta innebär att meddelanden som överskrider gränsen kommer att tas bort helt och aldrig skickas. Begränsning stöds inte.
-   * Maximalt antal anslutningar - maximalt antal http/s-anslutningar som ett mål kan hantera
-   * Max antal anrop - maximalt antal anrop som ska göras i parametern periodInms
-   * periodInms - tid i millisekunder
-* Segmentmedlemsinitierade resor kan fungera i två olika lägen:
-   * Gruppsegment (uppdateras var 24:e timme)
-   * Strömmande segment (&lt;5min-kvalificering)
-* Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
-* Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
-* Beslutshantering stöds inte
-* Utgående integreringar med system från tredje part
-   * Inget stöd för en enda statisk IP eftersom vår infrastruktur är multi-tenant (måste tillåtelselista alla IP-adresser för datacenter)
-   * Endast POST- och PUT-metoder stöds för anpassade åtgärder
-   * Autentiseringsstöd: token | lösenord | OAuth2
-* Det går inte att paketera och flytta enskilda komponenter i Adobe Experience Platform eller Journey Optimizer mellan olika sandlådor. Måste implementeras på nytt i nya miljöer
-
-<br>
-
-Tredjepartsmeddelandesystem
-
-* Måste förstå vilken belastning systemet kan hantera för transaktions-API-anrop
-   * Antal anrop som tillåts per sekund
-   * Antal anslutningar
-* Måste förstå vilken autentisering som krävs för att kunna göra API-anrop
-   * Autentiseringstyp: token | lösenord | OAuth2 stöds via Journey Optimizer
-   * Giltighetstid för autentiseringscache: Hur länge är token giltig? 
-* Om batchinmatning bara stöds behöver strömning ske till en molnlagringsmotor som Amazon Kinesis eller Azure Event Grid 1st
-   * Data kan grupperas i dessa molnlagringsmotorer och överföras till tredje part
-   * All mellanvara som krävs är kundens eller tredjepartens ansvar att tillhandahålla
-
-<br>
 
 ## Implementeringssteg
 

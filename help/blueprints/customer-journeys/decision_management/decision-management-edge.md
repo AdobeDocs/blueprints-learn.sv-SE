@@ -3,9 +3,9 @@ title: Beslutshantering om Edge-planen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe
 
 Beslutshanteringen kan genomföras på ett av två sätt. Det första är via Adobe Experience Platform Hub, som är en enda datacenterarkitektur. I navet-metoden utförs, personaliseras och levereras med andra fördröjning. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver en sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner.
 
-Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshantering i realtid är avsedd att serva kundupplevelser i realtid. Det gäller upplevelser som webb eller mobilförfrågningar om inkommande personalisering.
+Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshantering i realtid är avsedd att serva kundupplevelser i realtid. Det kan vara upplevelser som webb- eller mobilförfrågningar om inkommande personalisering.
 
 Denna plan kommer att omfatta detaljerna i beslutsfattandet på utsidan.
 
@@ -56,23 +56,11 @@ Adobe Experience Platform
 ## Guardrails
 
 * För Journey Optimizer skyddsräcken, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
+
 * För beslutsförvaltningsgarantier se följande [Produktbeskrivning för beslutshantering](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
-* Begäranden per sekund = 5000.
-* Svarstid &lt; 250 ms.
-* Tillgång till Edge-realtidsprofil. Endast kantprojicerade målgrupper och profilattribut är tillgängliga i profilen.
-* Om personalisering krävs i förstagångsupplevelser kommer navet att vara idealiskt eftersom den fullständiga profilen är tillgänglig. Kantprofilen måste synkroniseras från navet för första gången. Den allra första upplevelsen från kanten kommer därför inte att inkludera tidigare överförda profildata till navet.
 
-### Skyddsförslag för dataöverföring
+[Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
-<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Aktiveringsskydd
-
-<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## Implementeringsmönster
 

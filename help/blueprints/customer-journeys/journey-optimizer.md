@@ -3,10 +3,10 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Utför utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 3102ab35e48fe51010185ea5a0352c77f068d0d4
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 2%
+source-wordcount: '563'
+ht-degree: 3%
 
 ---
 
@@ -74,22 +74,7 @@ Mobil pensel
 
 [Journey Optimizer Guardrails Product Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-[Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
-
-Observera följande ytterligare överväganden:
-
-* Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
-* Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
-* Inbyggt stöd för Beslutshantering endast i meddelanden (inga anpassade åtgärder)
-* Meddelandetyper som stöds:
-   * E-post
-   * Push (FCM / APNS)
-   * Anpassade åtgärder (via Rest API)
-* Utgående integreringar med system från tredje part
-   * Inget stöd för en enda statisk IP eftersom vår infrastruktur är multi-tenant (måste tillåtelselista alla IP-adresser för datacenter)
-   * Endast POST- och PUT-metoder stöds för anpassade åtgärder
-   * Autentisering via användar-/pass- eller auktoriseringstoken
-* Det går inte att paketera och flytta enskilda komponenter i Adobe Experience Platform eller Journey Optimizer mellan olika sandlådor. Måste implementeras på nytt i nya miljöer
+[Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Relaterad dokumentation
 

@@ -3,9 +3,9 @@ title: Beslutshantering om navplanen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -56,22 +56,8 @@ Adobe Experience Platform
 
 * För Journey Optimizer skyddsräcken, se följande [Journey Optimizer Guardrails](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
 * För beslutsförvaltningsgarantier se följande [Produktbeskrivning för beslutshantering](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
-* Begäranden per sekund = 2000.
-* Svarstid &lt; 500 ms.
-* Tillgång till en fullständig kundprofil i realtid, inklusive målgruppsmedlemskap, attribut och upplevelsehändelser.
 
-
-### Skyddsförslag för dataöverföring
-
-<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Aktiveringsskydd
-
-<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
+[Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Implementeringsmönster
 

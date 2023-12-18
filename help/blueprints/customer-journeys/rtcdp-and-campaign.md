@@ -3,10 +3,10 @@ title: Real-Time CDP med integreringsmönstret Adobe Campaign v7 och Campaign St
 description: Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe Campaign för att leverera personanpassade konversationer.
 solution: Real-Time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 6%
+source-wordcount: '663'
+ht-degree: 7%
 
 ---
 
@@ -46,15 +46,9 @@ Visar hur Adobe Experience Platform och dess kundprofil i realtid och centralise
 
 ### Experience Platform CDP-segmentdelning
 
-* Rekommendation om 20-segmentsgräns
-* Aktiveringen är begränsad till var 24:e timme
-* Endast attribut för föreningsschema är tillgängliga för aktivering (inget stöd för array-/maps-/experience-händelser)
-* Rekommendation om högst 20 attribut per segment
-* En fil per segment av alla profiler med&quot;realiserat&quot; segmentmedlemskap ELLER om segmentmedlemskap läggs till som ett attribut i filen, både&quot;realiserade&quot; och&quot;avslutade&quot; profiler
-* Stöd för export till hela segment
-* Filkryptering stöds inte
+* Se RTCDP Campaign Destination Connector - [RTCDP Campaign Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html)
 
-<br>
+* Se utkast för profiler och dataöverföringsgarantier för AEP - [Länk](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ## Implementeringssteg
 
