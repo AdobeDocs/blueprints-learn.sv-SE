@@ -3,10 +3,10 @@ title: Journey Optimizer - Triggered Messaging och Adobe Experience Platform Blu
 description: Utför utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+source-git-commit: 3102ab35e48fe51010185ea5a0352c77f068d0d4
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 1%
+source-wordcount: '710'
+ht-degree: 2%
 
 ---
 
@@ -72,9 +72,11 @@ Mobil pensel
 
 ## Guardrails
 
-[Journey Optimizer Guardrails Product Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
+[Journey Optimizer Guardrails Product Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-Observera dessa som inte finns med på länken ovan:
+[Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+
+Observera följande ytterligare överväganden:
 
 * Gruppsegment - måste säkerställa att ni förstår den dagliga volymen av kvalificerade användare och ser till att målsystemet kan hantera den explosionsartade genomströmningen per resa och över alla resor
 * Strömmande segment - måste säkerställa att den initiala höjningen av profilkvalifikationer kan hanteras tillsammans med den dagliga strömmande kvalificerande volymen per resa och över alla resor
@@ -88,59 +90,6 @@ Observera dessa som inte finns med på länken ovan:
    * Endast POST- och PUT-metoder stöds för anpassade åtgärder
    * Autentisering via användar-/pass- eller auktoriseringstoken
 * Det går inte att paketera och flytta enskilda komponenter i Adobe Experience Platform eller Journey Optimizer mellan olika sandlådor. Måste implementeras på nytt i nya miljöer
-
-### Skyddsförslag för dataöverföring
-
-<img src="../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Experience Platform dataflöde" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Aktiveringsskydd
-
-<img src="../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Referensarkitektur Journey Optimizer - utkast" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
-
-## Implementeringssteg
-
-### Adobe Experience Platform
-
-#### Schema/datauppsättningar
-
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform, baserat på kunddata.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
-1. [Lägg till etiketter för dataanvändning](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform till datauppsättningen för styrning.
-1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som tillämpar styrning av destinationer.
-
-#### Profil/identitet
-
-1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Lägga till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
-1. Skapa segment för reseanvändning.
-
-#### Källor/destinationer
-
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
-
-### Journey Optimizer
-
-1. Konfigurera datakällan för Experience Platform och bestäm vilka fält som ska cachas som en del av de profileStreaming-data som används för att initiera en kundresa måste konfigureras i Journey Optimizer först för att få ett orchestration-ID. Detta orkestrerings-ID skickas sedan till utvecklaren för användning vid förtäring
-1. Konfigurera externa datakällor.
-1. Konfigurera anpassade åtgärder.
-
-### Mobil push-konfiguration
-
-1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
-1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
-1. Adobe Journey Optimizer
-1. Adobe Experience Platform Edge Network
-1. Identitet för Edge Network
-1. Mobile Core
-1. Se till att du har en dedikerad datastam för mobilappsdistributioner jämfört med webbdistributioner
-1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
-
 
 ## Relaterad dokumentation
 
