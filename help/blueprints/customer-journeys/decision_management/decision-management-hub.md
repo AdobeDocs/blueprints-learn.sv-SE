@@ -3,9 +3,9 @@ title: Beslutshantering om navplanen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,16 @@ Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfatt
 
 ## Användningsfall för beslutshantering på navet
 
+* Direktuppspelning använder fall där svarstiden för profilkontext inte är strikt - 15 minuter eller högre latens.
 * Personaliserade erbjudanden på kioskdatorer och butiksupplevelser.
 * Personaliserade erbjudanden via agentassisterad upplevelse som callcenters eller säljinteraktioner.
 * Erbjudanden som ingår i e-post, SMS, push-meddelanden för mobiler eller andra utgående interaktioner.
 * Erbjud externa ESP- och meddelandesystem för leverans.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
+
+>[!IMPORTANT]
+>
+>För erbjudanden och resor krävs åtkomst till profilen för ytterligare information och sammanhang. Det är viktigt att ta hänsyn till den fördröjning det tar att hämta in data till en profil på navet för att se till att informationen är tillgänglig vid beslut. För scenarier där sammanhanget strömmas eller importeras till en profil och där erbjudandet eller resan måste ha det sammanhanget tillgängligt inom några sekunder eller minuter efter erbjudandebeslutet, är dessa scenarier bäst lämpade för beslutshantering i Edge.
 
 <br>
 

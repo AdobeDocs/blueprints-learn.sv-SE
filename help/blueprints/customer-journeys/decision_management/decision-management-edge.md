@@ -3,9 +3,9 @@ title: Beslutshantering om Edge-planen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshanterin
 
 ## Användningsexempel för beslutshantering i utkanten
 
+* Direktuppspelning använder fall där svarstiden för profilkontext är lägre än 15 minuters fördröjning och körning av beslutshantering är mindre än 15 sekunder.
 * Onlinepersonalisering via webb eller mobilupplevelser.
 * Flerkanalsmarknadsföring - ger enhetlighet över webben, mobilen, e-post och andra interaktionskanaler via Adobe Journey Optimizer.
 
