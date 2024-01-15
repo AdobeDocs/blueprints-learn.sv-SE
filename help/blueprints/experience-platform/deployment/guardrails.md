@@ -4,9 +4,9 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 5a4827244b7d8414b1f1a0bf9b3cd8308bde8c60
+source-git-commit: 2ff576ccb4ac3f9e2bdb690b6e9242d674214c33
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vi rekommenderar att du anger tröskelvärden som ger vägledning för data, obs
 
 Information om specifika servicenivåavtal för program och funktioner finns i [Program- och funktionsbeskrivningar](#application-feature-descriptions) längst ned på den här sidan.
 
-Observera att för alla kundärenden som har strikta krav på fördröjning eller volym rekommenderar Adobe att du granskar ditt användningsfall i detalj med ditt kontoteam på Adobe och din implementeringspartner. I vissa fall är det tillrådligt att testa och observera en viss implementering av ett visst användningsfall innan produktionen startar användarexemplet för att observera och förstå förväntat beteende - eftersom varje kundimplementering har olika faktorer som är aktuella, inklusive typ och frånvaro av datadrag, de specifika egenskaperna hos segmentreglerna som byggs och de olika aktiveringsutmaningarna och nyttolasterna - kommer varje implementering av användningsfall att ha olika observerade prestanda. Därför är det bäst att fastställa och testa den förväntade prestandan direkt för att säkerställa en korrekt arkitektur och implementering i enlighet med de latens- och prestandakrav som gäller för användningsfallet.
+Observera att för alla kundärenden som har strikta krav på fördröjning eller volym rekommenderar Adobe att du granskar ditt användningsfall i detalj med ditt kontoteam på Adobe och din implementeringspartner. I vissa fall är det tillrådligt att testa och observera en viss implementering av ett visst användningsfall innan produktionen startar användarexemplet för att observera och förstå förväntat beteende - eftersom varje kundimplementering har olika faktorer som är under spel, inklusive typ och frånvaro av datadrag, de specifika egenskaperna hos segmentreglerna som byggs och de olika aktiveringskanalerna och nyttolasterna - kommer varje implementering av användningsfall att ha olika observerade prestanda. Därför är det bäst att fastställa och testa den förväntade prestandan direkt för att säkerställa en korrekt arkitektur och implementering i enlighet med de latens- och prestandakrav som gäller för användningsfallet.
 
 
 ## Referensdokumentation för säkerhetsutkast för Adobe Experience Platform och program
@@ -42,6 +42,12 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 
 ## Latensdiagram från början till slut {#end-to-end-latency}
 
+### Experience Platform Edge Network och Hub Primär observerad latens {#edge-hub-latencies}
+
+I följande diagram visas den primära kanten och hubben som observerats för att vara medveten om när man konstruerar användningsfall på Experience Platform och program.
+
+![Experience Platform Edge Network och de primära latenserna som observeras i navet.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform Edge-nätverk och primära latenser för navnätverk"){width="1000" zoomable="yes"}
+
 ### Intag av data {#data-ingestion}
 
 Diagrammet nedan visar förväntade fördröjningsvärden för dataöverföring via [direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html) och [batchintag](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=en) när data hämtas till Real-Time CDP. Klicka på bilden för att se en högupplöst version.
@@ -54,11 +60,11 @@ Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med m�
 
 ![Översikt över segmentering på hög nivå.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentera visuell översikt och latensvärden på hög nivå"){width="1000" zoomable="yes"}
 
-### REAL-TIME CUSTOMER DATA PLATFORM &amp; ADOBE TARGET {#adobe-target-latency}
+### Real-time Customer Data Platform &amp; Edge Network {#adobe-edge-latency}
 
-Diagrammet nedan visar förväntade fördröjningsvärden när målgrupper exporteras från Real-Time CDP till [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
+Diagrammet nedan visar förväntade fördröjningsvärden när Edge Network utnyttjas - till exempel för att utnyttja RTCDP-målgrupper i [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
-![Exportera till Adobe Target högnivåvisuell översikt.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Target_guardrails.svg "Exportera målgrupper till Adobe Target högnivåvisuella översikter och latensvärden"){width="1000" zoomable="yes"}
+![Adobe Edge Network och Experience Platform.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "Exportera målgrupper till Adobe Target visuella översikt och latens på hög nivå"){width="1000" zoomable="yes"}
 
 ### Customer Journey Analytics {#customer-journey-analytics}
 
