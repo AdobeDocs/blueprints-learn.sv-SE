@@ -1,9 +1,9 @@
 ---
 title: Journey Optimizer med Adobe Campaign v7-ritning
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
-solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
+solution: Journey Optimizer, Campaign, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 5c0f5c5cfd7c3258c6b41fb579fe6c24d1e9a56e
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
 1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
-   * Adobe Journey Optimizer | ADOBE CAMPAIGN CLASSIC | ADOBE CAMPAIGN STANDARD
+   * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
    * Adobe Experience Platform Edge Network
    * Identitet för Edge Network
    * Mobile Core
