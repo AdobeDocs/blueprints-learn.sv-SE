@@ -7,7 +7,7 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b0f106c4dce59137086c8806def34e98b554bb61
+source-git-commit: 7d043f3245c131ee4dd6085dd4d15e38188a1884
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Känd kundanpassning stöds via flera implementeringsmetoder.
 ### Implementeringsmönster 1 - Edge Network med Web/Mobile SDK eller Edge Network API (rekommenderat tillvägagångssätt)
 
 * Använda Edge Network med Web/Mobile SDK. Kantsegmentering i realtid kräver implementeringsmetoden Web/Mobile SDK eller Edge API.
-* [Se Experience Platform Web and Mobile SDK Blueprint](..//experience-platform/deployment/websdk.md) för SDK-baserad implementering.
+* [Se Experience Platform Web and Mobile SDK Blueprint](../../experience-platform/deployment/websdk.md) för SDK-baserad implementering.
 * För användning i Mobile SDK på [Adobe Journey Optimizer - Beslutstillägg](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) måste vara installerat i Mobile SDK.
 * [Se API:t för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
@@ -68,7 +68,7 @@ Känd kundanpassning stöds via flera implementeringsmetoder.
 
 Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Direktuppspelning och gruppmålgruppsdelning från Experience Platform nav stöds dock med den här implementeringsmetoden.
 
-[Se programspecifik SDK-skiss](..//experience-platform/deployment/appsdk.md)
+[Se programspecifik SDK-skiss](../../experience-platform/deployment/appsdk.md)
 
 ### Implementeringssteg
 
