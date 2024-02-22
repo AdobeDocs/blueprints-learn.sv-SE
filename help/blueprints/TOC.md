@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: f98f1b6ca56ed1249e9c18ea04935808f4498ed5
+source-git-commit: 404c0d42fd29cb13f933bf74ad375476868a59ad
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 16%
@@ -40,6 +40,11 @@ ht-degree: 16%
       + [Kundaktivitetshubb](/help/blueprints/audience-activation/customer-activity.md)
       + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
+   + Webb- och mobilpersonalisering{#web-personalization}
+      + [Översikt](/help/blueprints/audience-activation/web-personalization/overview.md)
+      + [Beteendeanpassning - mål](/help/blueprints//audience-activation/web-personalization/behavioral.md)
+      + [Känd kundanpassning - mål och RTCDP](/help/blueprints/audience-activation/web-personalization/known-personalization.md)
+      + [Beslutshantering](/help/blueprints/audience-activation/web-personalization/decision-management-edge.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
@@ -85,8 +90,3 @@ ht-degree: 16%
    + [Översikt](/help/blueprints/data-insights/overview.md)
    + [Dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)
    + [Custom Data Science for Profile Enrichment](/help/blueprints/data-insights/data-science.md)
-+ Webb- och mobilpersonalisering{#web-personalization}
-   + [Översikt](/help/blueprints/web-personalization/overview.md)
-   + [Beteendeanpassning - mål](/help/blueprints/web-personalization/behavioral.md)
-   + [Känd kundanpassning - mål och RTCDP](/help/blueprints/web-personalization/known-personalization.md)
-   + [Beslutshantering](/help/blueprints/web-personalization/decision-management-edge.md)
