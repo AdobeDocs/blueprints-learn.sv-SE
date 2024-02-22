@@ -7,7 +7,7 @@ solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data C
 kt: 7085
 thumbnail: thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 47ae9808a53fd59583bd26b70e58c34a15e47493
+source-git-commit: 1ee81e6e2e9847f53f51bc96e55ea434a0a1cbda
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 7%
@@ -40,8 +40,8 @@ Personalisera baserat på onlinebeteende och målgruppsdata.
 
 Anpassningsplanen för webb/mobiler kan implementeras med följande metoder som beskrivs nedan.
 
-1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network]. [Se Experience Platform Web and Mobile SDK Blueprint](/experience-platform/deployment/websdk.md)
-1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js). [Se programspecifik SDK-skiss](/experience-platform/deployment/appsdk.md)
+1. Använda [!UICONTROL Platform Web SDK] eller [!UICONTROL Plattformsmobil SDK] och [!UICONTROL Edge Network]. [Se Experience Platform Web and Mobile SDK Blueprint](//experience-platform/deployment/websdk.md)
+1. Använda traditionella programspecifika SDK:er (till exempel AppMeasurement.js). [Se programspecifik SDK-skiss](//experience-platform/deployment/appsdk.md)
 
 ## Implementeringssteg
 
