@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 3bd7a73786fee42ec14d98fc4362e7a9609f12a3
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ Mer information om migrering från programspecifika SDK:er till webben och mobil
 
 Bilden nedan illustrerar driftsättning och datainsamling med Experience Platform Web SDK.
 
-<img src="assets/web_sdk_flow.svg" alt="Referensarkitektur för implementering med Experience Platform Web och Mobile SDK" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="Referensarkitektur för implementering med Experience Platform Web och Mobile SDK" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 Sekvensdiagram över Experience Edge, Experience Platform Services och Applications
 
-<img src="assets/web_sdk_sequence.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_sequence.svg" alt="Referensarkitektur för Online/Offline Web Personalization Blueprint" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ## Referensdokumentation
 
