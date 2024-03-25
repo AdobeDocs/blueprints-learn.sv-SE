@@ -5,7 +5,7 @@ solution: Experience Cloud, Campaign, Analytics, Target, Audience Manager, Comme
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: acbf600dbfb711c99eda2029bd48549e673f0361
+source-git-commit: 20ec9197752bbafea6e601d7a36406b5786f372b
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Diagrammen visar hur Experience Cloud, applikationstjänster och Experience Plat
 
 I följande diagram visas de olika komponenterna i Adobe Experience Cloud för datainsikter och målgrupper, innehåll och handel, kundresor, arbetsflöde för marknadsföring, som är byggt och integrerat på grund av Adobe Experience Platform.
 
-<img src="assets/AEC.png" alt="Översikt över Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
+<img src="assets/AEC.jpg" alt="Översikt över Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 
 
 ## Integreringsarkitektur för data och insikter, innehåll och handel samt upplevelseleverans
