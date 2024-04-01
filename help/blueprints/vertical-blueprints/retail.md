@@ -1,12 +1,12 @@
 ---
-title: Detaljhandel - aktivering med Experience Cloud-program
-description: Leverera kundupplevelser i realtid i digitala medier, e-post, push och webbkanaler.
+title: Detaljhandeln - Aktivering med Experience Cloud
+description: Lär dig att leverera kundupplevelser i realtid i digitala medier, e-post, push och webbkanaler.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 | **Samordna kundresor i realtid **<br></br>**Kör upprepade köp från nya kunder **<br></br>**Effektivare marknadsföring och lägre mediekostnader**</ul> | <ul><li>Robusta data- och identitetsstrategier som ger en heltäckande realtidsprofil.</li><li>Kund- och transaktionsdataströmning i realtid inklusive 90 dagars historisk belastning</li><li>Direktuppspelningssegmentering till Advertising Networks och Adobe Target för att underlätta mediernas utgifter och personalisering.</li><li>Kundresor i realtid via Adobe Campaign som innehåller en strategi för att mäta prestanda</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Leverera kundupplevelser i realtid i medier, e-post, push och på webben</li><li><strong>Datakällor</strong> Strömmande data som täcker detaljhandlarens profilbutiker, ordersystem, produktkatalog och butiker.</li><li><strong>Medieaktivering i realtid:</strong>Strömma segment till annonsnätverk för attribuering och reklamdämpning</li><li><strong>Webbpersonalisering i realtid:</strong>Direktuppspelningssegment som aktiveras för Adobe Target för att kunna aktiveras på återförsäljarens webbupplevelse.</li><li><strong>Journey Orchestration vid skalförändring:</strong>Utlösta meddelanden i realtid som har berikats med tillgängliga kunddata och aktiverats i realtid för e-post- och push-kanaler</li></ul> |
 
 
-## Användare
+## Användningsexempel
 
 | Kategori | Mål | Använd skiftläge | Beskrivning |
 |:----|:----|:----|:----|
@@ -61,8 +61,7 @@ Det här integrerade upplevelseföretaget ville personalisera hela kundresan fö
 <img src="../vertical-blueprints/assets/retail-architecture.png" alt="Referensarkitektur för butik" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 
-## Relaterade utkast
-
+## Relaterade ritningar
 
 | Användningsfall/integrering  | Länk |
 |:----|:----|

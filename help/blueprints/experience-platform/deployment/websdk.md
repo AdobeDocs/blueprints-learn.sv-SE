@@ -1,25 +1,25 @@
 ---
-title: Web/Mobile SDK, arkitekturdiagram för Edge Network Deployment
-description: Den här planen visar arkitekturen och intagandet via Experience Platform Web och Mobile SDK och Edge Network
+title: Web/Mobile SDK, [!DNL Edge Network] Diagram över distributionsarkitektur
+description: Den här planen visar arkitekturen och intagandet via Experience Platform Web och Mobile SDK och [!DNL Edge Network]
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 3bd7a73786fee42ec14d98fc4362e7a9609f12a3
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
 
-# Diagram över arkitektur för Experience Platform Web SDK och Edge Network
+# Experience Platform Web SDK &amp; [!DNL Edge Network] arkitektur
 
-En översikt och information om Web och Mobile SDK samt API:t för Edge Network Server finns i följande avsnitt.
+En översikt och information om Web och Mobile SDK samt [!DNL Edge Network] Server-API:t ser följande.
 
 * [Web SDK - översikt](https://experienceleague.adobe.com/docs/web-sdk.html)
 * [Mobile SDK - översikt](https://developer.adobe.com/client-sdks/documentation/)
-* [API för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
+* [[!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 En detaljerad beskrivning av vilka programfunktioner som stöds i Web SDK finns i följande dokumentation.
 
@@ -32,7 +32,7 @@ Mer information om migrering från programspecifika SDK:er till webben och mobil
 * [Mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
 * [Analyser för Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html)
 
-## Experience Platform Web/Mobile SDK eller Edge Network Server API-distribution
+## Experience Platform Web/Mobile SDK eller [!DNL Edge Network] Driftsättning av server-API
 
 Bilden nedan illustrerar driftsättning och datainsamling med Experience Platform Web SDK.
 

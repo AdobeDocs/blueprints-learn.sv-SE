@@ -1,20 +1,20 @@
 ---
 title: Campaign v7-plan
-description: Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
+description: Läs mer om Campaign v7-planen för batchbaserade meddelandeprogram, introduktions- och återmarknadsföringskampanjer, direktreklam och enkla transaktionsmeddelanden.
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
 
 # Campaign v7-plan
 
-Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.  Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
+Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella marknadsföringskanaler som e-post och direktreklam. Den erbjuder robusta ETL- och datahanteringsfunktioner för att hjälpa till att utforma och strukturera den perfekta kampanjen. Dess orkestreringsmotor ger möjlighet till multitouch-marknadsföring med fokus på batchbaserade resor.
 
-<br>
+Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
 ## Användningsexempel
 
@@ -23,13 +23,9 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 * Reklam för direktreklam, broschyrer och tidskrifter
 * Enkelt transaktionsmeddelande med låg volym (t.ex. lösenordsåterställning, e-postkvittenser, orderbekräftelser osv.)
 
-<br>
-
 ## Arkitektur
 
 <img src="assets/campaign-v7-architecture.svg" alt="Referensarkitektur för Campaign v7 Blueprint" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## Integreringsmönster
 
@@ -38,9 +34,9 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 | [Real-Time CDP med Adobe Campaign](rtcdp-and-campaign.md) | Visar hur Adobe Experience Platform Real-Time CDP och dess centraliserade segmenteringsverktyg kan användas tillsammans med Adobe Campaign för att leverera personaliserade konversationer | <ul><li>Delning av profiler och målgrupper från Real-Time CDP till Adobe Campaign via utbyte av molnlagringsfiler och arbetsflöden för inhämtning från Adobe Campaign </li><li>Dela enkelt data om leverans och interaktion från kundkonversationer tillbaka till Real-Time CDP från Adobe Campaign för att förbättra både kundprofilen i realtid och tillhandahålla flerkanalsrapportering om meddelandekampanjer</li></ul> |
 | [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda funktioner för realtidsmeddelanden för att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kan skicka upp till 50 000 meddelanden per timme via meddelandeservern i realtid<li>Ingen begränsning görs från Journey Optimizer, så man kan försäkra sig om teknisk kontroll genom en företagsarkitekt före försäljningen</li><li>Beslutshantering stöds inte i nyttolaster till Campaign v7 realtidsmeddelandeserver</li></ul> |
 
-<br>
-
 ## Förutsättningar
+
+Granska följande villkor nedan.
 
 ### Programserver och meddelandeserver i realtid
 
@@ -73,6 +69,8 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 
 ## Guardrails
 
+Granska följande skyddsutkast.
+
 ### Programserverns storlek
 
 * Lagring kan skalas till upp till 100 miljoner profiler
@@ -96,9 +94,9 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 * Campaign ger möjlighet att integrera med en SMS-leverantör. Leverantören anskaffas av kunden och integreras med kampanjen för att skicka SMS-baserade meddelanden
 * Stöd ges via SMPP-protokollet
 * Det finns tre (3) olika typer av SMS som Adobe kan stödja:
-   * SMS MT (Mobile Terminated): ett SMS som Adobe Campaign skickar till mobiltelefoner via SMPP-leverantören.
+   * SMS MT (Mobile Terminated): ett SMS som Adobe Campaign skickar ut till mobiltelefoner via SMPP-leverantören.
    * SMS MO (Mobile Originated): ett SMS som skickas av en mobil till Adobe Campaign via SMPP-leverantören.
-   * SMS SR (statusrapport), DR eller DLR (leveranskvitto): Ett returkvitto som skickas av mobilen till Adobe Campaign via SMPP-leverantören som anger att SMS:et har tagits emot. Adobe Campaign kan också få ett SR-meddelande som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
+   * SMS SR (statusrapport), DR eller DLR (leveranskvitto): ett returkvitto som skickas av mobilen till Adobe Campaign via SMPP-leverantören som anger att SMS:et har tagits emot. Adobe Campaign kan också få ett SR-meddelande som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
 
 ### Mobil push-konfiguration
 
@@ -106,21 +104,19 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
    * Experience Platform Mobile SDK (rekommenderas)
    * Campaign Mobile SDK
 * Experience Platform Mobile SDK-väg:
-   * Utnyttja Adobe Tags och tillägget Campaign Classic för att integrera med Experience Platform Mobile SDK
+   * Utnyttja Adobe-taggar och Campaign Classic-tillägget för att konfigurera integreringen med Experience Platform Mobile SDK
    * behöver kunskaper om Adobe-taggar och datainsamling
    * Behöver mobilutvecklingsupplevelse med push-meddelanden i både Android och iOS för att distribuera SDK, integrera med FCM (Android) och APNS (iOS) för att få push-token, konfigurera din app så att den tar emot push-meddelanden och hantera push-interaktioner
 * Campaign Mobile SDK
    * Kontakta Adobe kundtjänst för att få åtkomst
    * Följ [Kampanjens SDK-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) för att lära dig hur du installerar och konfigurerar SDK
 
-   >[!IMPORTANT]
-   >Om ni distribuerar Campaign SDK och arbetar med andra Experience Cloud-program måste de använda Experience Platform Mobile SDK för datainsamling. Detta är ett annat SDK och måste installeras tillsammans med Campaign SDK
-
-<br>
+  >[!IMPORTANT]
+  >Om ni distribuerar Campaign SDK och arbetar med andra Experience Cloud-program måste de använda Experience Platform Mobile SDK för datainsamling. Detta är ett annat SDK och måste installeras tillsammans med Campaign SDK
 
 ## Implementeringssteg
 
-Se [Starthandbok](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) för implementering av Adobe Campaign v7
+Se [Starthandbok](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) för implementering av Adobe Campaign v7.
 
 
 ## Relaterad dokumentation

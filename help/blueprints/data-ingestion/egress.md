@@ -1,23 +1,27 @@
 ---
 title: Layout för dataåtkomst och export
-description: Denna plan innehåller en översikt över alla metoder som kan användas för att komma åt och exportera data från Adobe Experience Platform och program.
+description: Lär dig mer om de metoder som används för att komma åt och exportera data från Adobe Experience Platform och program.
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: 2b555728ddf570e236c0c54a8c17f85a6942618f
 workflow-type: tm+mt
-source-wordcount: '2052'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
 
 # Layout för dataåtkomst och export
 
-I skisserna Dataåtkomst och Exportera anger du alla metoder som kan användas för att få åtkomst till och exportera data från Adobe Experience Platform och program.
+Planen Dataåtkomst och Exportera visar alla möjliga metoder som kan användas för att få åtkomst till eller exportera data från [!DNL Experience Platform] och program.
 
-Blueprint delas upp i två kategorier för dataåtkomst från Experience Platform och program. För det första strategier för att komprimera data från Experience Platform och program. Detta skulle betraktas som en metod med push-typ av datagegress. För det andra, metoder för att få tillgång till data från Experience Platform och tillämpningar, vilket skulle betraktas som en utsökt metod för dataåtkomst.
+Planen är uppdelad i två kategorier för dataåtkomst från [!DNL Experience Platform] och program.
 
-Åtkomstmetoder:
+Den första innehåller metoder för att komprimera data från Experience Platform och program. Detta skulle anses vara en _push_ datagenerationens typmetod.
+
+Den andra innehåller metoder för åtkomst av data från Experience Platform och tillämpningar. Detta skulle anses vara en _pull_ dataåtkomstens typmetod.
+
+Dataåtkomstmetoder:
 
 * [API för åtkomst till kundprofiler i realtid](#rtcp-profile-access-api)
 * [API för dataåtkomst](#data-access-api)
@@ -30,11 +34,11 @@ Dataexportmetoder:
 * [Real-time Customer Data Platform Destinations](#RTCDP-destinations)
 * [Journey Optimizer Custom Actions](#jo-custom-actions)
 
-## Översiktsarkitektur för dataåtkomst och -export
+## Arkitektur för dataåtkomst och exportöversikt
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="Referensarkitektur för dataförberedelse och matningsutkast" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 
-## Metoder för dataåtkomst och -export
+## Dataåtkomst och exportmetoder
 
 <table cellspacing="0" class="Table" style="border-collapse:collapse; width:1133px">
 <tbody>
@@ -408,7 +412,7 @@ Se [Översikt över taggar](https://experienceleague.adobe.com/docs/experience-p
 
 ### Vidarebefordran av händelser {#event-forwarding}
 
-Begäranden om datainsamling samlas in direkt till Adobe Edge Network. Från Edge Network-begäranden till externa RESTful-slutpunkter kan konfigureras för att vidarebefordra dessa begäranden till det externa målet.
+Begäran om datainsamling samlas in direkt till Adobe [!DNL Edge Network]. Från [!DNL Edge Network] begäranden till externa RESTful-slutpunkter kan konfigureras för att vidarebefordra dessa begäranden till det externa målet.
 
 Se följande [Vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en) ytterligare information.
 
@@ -418,7 +422,7 @@ Se följande [Vidarebefordran av händelser](https://experienceleague.adobe.com/
 
 #### Överväganden
 
-* Om du vill använda händelsevidarebefordran måste data skickas till Edge-nätverket med Web SDK eller MobileSDK.
+* Om du vill använda händelsevidarebefordran måste data skickas till [!DNL Edge Network] med Web SDK eller MobileSDK.
 * Vidarebefordra händelser minskar sidans inläsningstid och vikt på grund av att ytterligare taggar läggs till på sidan.
 * Ingen anrikning från kantprofilen eller andra datakällor stöds för närvarande.
 * Begränsad datafiltrering och enkel mappningsomvandling stöds.

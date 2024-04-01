@@ -3,22 +3,24 @@ title: Beslutshantering om Edge-planen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, även i realtid via webben och mobilupplevelser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer - Beslutshantering om Edge-planen
+# JOURNEY OPTIMIZER - [!DNL Decision Management] på Edge-ritningen
 
-Mer information om beslutshantering finns i produktdokumentationen [HÄR](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och beslutsöversikten [HÄR](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
+[!DNL Decision Management] är en tjänst som tillhandahålls som en del av [!DNL Journey Optimizer]. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
-Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
+>[!MORELIKETHIS]
+>
+>Mer information om [!DNL Decision Management], se [översikt över utkast](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en) eller går till [produktdokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html).
 
-Beslutshanteringen kan genomföras på ett av två sätt. Det första är via Adobe Experience Platform Hub, som är en enda datacenterarkitektur. I navet-metoden utförs, personaliseras och levereras med andra fördröjning. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver en sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner.
+[!DNL Decision Management] kan distribueras på ett av två sätt. Det första är via [!DNL Experience Platform] nav, som är en enda datacenterarkitektur. I navet-metoden utförs, personaliseras och levereras med andra fördröjning. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver en sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner.
 
-Den andra metoden är via Experience Edge-nätverket, som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba subsekundsupplevelser och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshantering i realtid är avsedd att serva kundupplevelser i realtid. Det kan vara upplevelser som webb- eller mobilförfrågningar om inkommande personalisering.
+Den andra metoden är via Experience Platform [!DNL Edge Network], som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba upplevelser under och under millisekunder. Den slutanvändarupplevelse som körs av Edge-infrastrukturen närmast konsumenternas geografiska plats för att minimera latensen. [!DNL Decision Management] på Edge är utformat för att leverera kundupplevelser i realtid. Det kan vara upplevelser som webb- eller mobilförfrågningar om inkommande personalisering.
 
 Denna plan kommer att omfatta detaljerna i beslutsfattandet på utsidan.
 

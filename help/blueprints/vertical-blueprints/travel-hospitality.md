@@ -1,12 +1,12 @@
 ---
-title: Resor- och turismbranschen - aktivering med online- och offlinedata
-description: Realtidsbeslut med en samlad bild av kundbeteendet över olika kanaler.
+title: Resor och turism - aktivering med online- och offlinedata
+description: Lär dig att fatta beslut i realtid med en samlad bild av kundbeteendet över olika kanaler.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---

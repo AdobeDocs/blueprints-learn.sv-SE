@@ -4,9 +4,9 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 2ff576ccb4ac3f9e2bdb690b6e9242d674214c33
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 **Experience Platform**
 
 * [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [Guardrutor för Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [[!DNL Edge Network] API-guider](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * [Kundprofil och segmenteringsgurkor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [Identitetsgarantins](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 * [Frågetjänstens säkerhetsbeskrivningar](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
@@ -46,7 +46,7 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 
 I följande diagram visas den primära kanten och hubben som observerats för att vara medveten om när man konstruerar användningsfall på Experience Platform och program.
 
-![Experience Platform Edge Network och de primära latenserna som observeras i navet.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform Edge-nätverk och primära latenser för navnätverk"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network] och navens primära observerade latenser.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform Edge-nätverk och primära latenser för navnätverk"){width="1000" zoomable="yes"}
 
 ### Intag av data {#data-ingestion}
 
@@ -60,9 +60,9 @@ Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med m�
 
 ![Översikt över segmentering på hög nivå.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentera visuell översikt och latensvärden på hög nivå"){width="1000" zoomable="yes"}
 
-### Real-time Customer Data Platform &amp; Edge Network {#adobe-edge-latency}
+### REAL-TIME CUSTOMER DATA PLATFORM &amp; [!DNL Edge Network] {#adobe-edge-latency}
 
-Diagrammet nedan visar förväntade fördröjningsvärden när Edge Network utnyttjas - till exempel för att utnyttja RTCDP-målgrupper i [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
+Diagrammet nedan visar förväntade fördröjningsvärden när du använder [!DNL Edge Network] - till exempel för att utnyttja RTCDP-målgrupper i [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
 ![Adobe Edge Network och Experience Platform.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "Exportera målgrupper till Adobe Target visuella översikt och latens på hög nivå"){width="1000" zoomable="yes"}
 

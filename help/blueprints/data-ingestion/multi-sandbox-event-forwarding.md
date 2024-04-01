@@ -4,9 +4,9 @@ description: Lär dig hur data som samlas in med Experience Platform Web och Mob
 solution: Data Collection
 kt: 7202
 exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
-source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Med [!UICONTROL Vidarebefordran av händelser] När det gäller att skicka data 
 
 ### Olika datastreams- och direktuppspelningsslutpunkter
 
-När data flödar genom datastödraster från [!UICONTROL Platform Edge Network], när du använder [!UICONTROL Vidarebefordran av händelser] till en annan AEP-sandlåda är ett krav att aldrig använda samma datastream- eller direktuppspelningsslutpunkt som den datastream som skapar den ursprungliga samlingen. Detta kan vara skadligt för AEP-instansen och skulle kunna utlösa en DoS-situation.
+När data flödar genom datastödraster från [!DNL Platform Edge Network], när du använder [!UICONTROL Vidarebefordran av händelser] till en annan AEP-sandlåda är ett krav att aldrig använda samma datastream- eller direktuppspelningsslutpunkt som den datastream som skapar den ursprungliga samlingen. Detta kan vara skadligt för AEP-instansen och skulle kunna utlösa en DoS-situation.
 
 ### Uppskattade trafikvolymer
 
@@ -54,11 +54,11 @@ Trafikvolymer krävs för granskning av varje användningsfall. Detta är viktig
 
 ![Flera sandlådor [!UICONTROL Vidarebefordran av händelser]](assets/multi-sandbox-data-collection.png)
 
-1. Samla in och skicka händelsedata till [!UICONTROL Platform Edge Network] krävs för att kunna använda [!UICONTROL Vidarebefordran av händelser]. Kunder kan använda Adobe-taggar för klientsidan eller [!UICONTROL API för plattforms-Edge Network Server] för datainsamling mellan servrar. The [!UICONTROL API för plattformen Edge Network] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
+1. Samla in och skicka händelsedata till [!DNL Platform Edge Network] krävs för att kunna använda [!UICONTROL Vidarebefordran av händelser]. Kunder kan använda Adobe-taggar för klientsidan eller [!DNL Platform Edge Network Server API] för datainsamling mellan servrar. The [!DNL Platform Edge Network API] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
 
-1. Samlade nyttolaster skickas från taggimplementering till [!UICONTROL Platform Edge Network] till [!UICONTROL Vidarebefordran av händelser] och behandlas av en egen [!UICONTROL Dataelement], [!UICONTROL Regler] och [!UICONTROL Åtgärder]. Du kan läsa mer om skillnaderna [Taggar och [!UICONTROL Vidarebefordran av händelser]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
+1. Samlade nyttolaster skickas från taggimplementering till [!DNL Platform Edge Network] till [!UICONTROL Vidarebefordran av händelser] och behandlas av en egen [!UICONTROL Dataelement], [!UICONTROL Regler] och [!UICONTROL Åtgärder]. Du kan läsa mer om skillnaderna [Taggar och [!UICONTROL Vidarebefordran av händelser]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
 
-1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!UICONTROL Platform Edge Network]. Om händelsedata skickades till plattforms-Edge-nätverket av en implementerad tagg eller en server-till-server-samling. Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda anpassad kod [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
+1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!DNL Platform Edge Network]. Om händelsedata skickades till [!DNL Platform Edge Network] av en implementerad tagg eller en server-till-server-samling. Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda anpassad kod [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
 
 1. För närvarande används Adobe [!UICONTROL Cloud Connector-tillägg] krävs i [!UICONTROL Vidarebefordran av händelser] Egenskap. När reglerna bearbetar eller berikar händelsedata används Cloud Connector i ett hämtningsanrop som konfigurerats för en POST som skickar nyttolasten till den andra sandlådan.
 

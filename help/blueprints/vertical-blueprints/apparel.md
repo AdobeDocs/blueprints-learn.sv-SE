@@ -1,12 +1,12 @@
 ---
-title: Skolindustrin - aktivering med Experience Cloud-tillämpningar
-description: Använde flera utkast för att möjliggöra realtidsmarknadsföring, flerkanalsaktivering och flerkanalsanalys.
+title: Skolindustrin - aktivering med Experience Cloud
+description: Använde flera modeller för realtidsmarknadsföring, flerkanalsaktivering och flerkanalsanalys.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
 exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---

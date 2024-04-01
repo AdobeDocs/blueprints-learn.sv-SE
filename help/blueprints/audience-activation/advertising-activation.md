@@ -1,19 +1,19 @@
 ---
-title: Aktivering till sociala måltider och reklamdestinationer från kunddataplattformen i realtid
-description: Aktivering till sociala måltider och reklamdestinationer från kunddataplattformen i realtid
+title: Aktivering till sociala medier och reklamdestinationer från RTCDP
+description: Lär dig hur du importerar kunddata från flera källor för att skapa en enda profilvy av kunden.
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
 
-# Aktivering till sociala måltider och reklamdestinationer från kunddataplattformen i realtid
+# Aktivering till sociala medier och reklamdestinationer från RTCDP
 
-Importera kunddata från olika källor för att skapa en enda profilvy av kunden, segmentera profilerna för att bygga målgrupper för marknadsföring och personalisering, dela dessa målgrupper med annonsnätverk som Facebook och Google för att rikta och personalisera kampanjer mot dessa målgrupper.
+Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden. Ni kan segmentera dessa profiler för att bygga målgrupper för marknadsföring och personalisering, dela dessa målgrupper med annonsnätverk som Facebook och Google för att rikta och personalisera kampanjer mot dessa målgrupper.
 
 ## Användningsexempel
 

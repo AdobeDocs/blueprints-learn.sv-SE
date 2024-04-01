@@ -1,36 +1,43 @@
 ---
-title: Diagram över Adobe Experience Platform- och programarkitektur
-description: Arkitekturen visar hur Adobe Experience Platform relaterar till andra Adobe Experience Cloud-program och -programtjänster.
+title: Experience Platform (AEP) och programarkitekturdiagram
+description: Visa arkitekturdiagram som visar hur Adobe Experience Platform (AEP) relaterar till andra Experience Cloud-program och programtjänster.
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
 
-# Diagram över Adobe Experience Platform- och programarkitektur
+# Adobe Experience Platform och programarkitekturdiagram
 
-## Arkitektur för Adobe Experience Platform och program
+Dessa arkitekturdiagram visar hur Experience Platform (AEP) relaterar till andra Experience Cloud-program och programtjänster.
+
+>[!MORELIKETHIS]
+>
+>[Integrationskonfigurationer för integrering av Experience Cloud-program](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=en).
+
+
+## Arkitektur
 
 Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience Cloud program och programtjänster.
 
 <img src="assets/aep+apps.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## Adobe Experience Platform &amp; Applications Overview
+## Översiktsdiagram
 
 <img src="assets/aep+apps_overview.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## Adobe Experience Platform &amp; Applications - detaljerad arkitektur
+## Detaljerat arkitekturdiagram
 
 <img src="assets/aep+apps_detailed.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
-## Adobe Experience Platform och Experience Cloud
+## Applikationsintegreringar mellan AEP och Experience Cloud
 
 <table class="relative-table wrapped" style="width: 100%;">
 <colgroup>

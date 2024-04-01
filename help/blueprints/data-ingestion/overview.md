@@ -1,20 +1,20 @@
 ---
 title: Datainsamling och förberedelse
-description: I det här utkastet visas alla metoder som kan användas för att mata in och förbereda data i Adobe Experience Platform.
+description: Lär dig de metoder som kan användas för att importera och förbereda data i Adobe Experience Platform.
 solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 8%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
-# Insamling och förberedelse av färdplaner
+# Insamling av uppgifter och förberedelsetyper
 
-Datainsamling och -förberedelse innefattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform. samt möjligheten att samla in data till Adobe Experience Platform Edge Network och därefter vidarebefordra data via vidarebefordran på sidan till företagets destinationer.
+Datainsamling och -förberedelse innefattar alla metoder som kan användas för att förbereda och importera data till Adobe Experience Platform. samt möjligheten att samla in uppgifter till Adobe [!DNL Experience Platform Edge Network] och efterföljande vidarebefordran av data via vidarebefordran till företagets destinationer.
 
 Datakompilering innefattar mappning av källdata till XDM-schema (Experience Data Model). Det omfattar även att utföra dataomvandlingar, inklusive datumformatering, fältdelning/sammanfogning/konverteringar samt att sammanfoga/skriva in poster på nytt. Med hjälp av dataförberedelser kan kunddata sammanställas för att ge en sammanställd/filtrerad analys, inklusive rapportering eller förberedelse av data för sammansättning av kundprofiler/datavetenskap/aktivering.
 
