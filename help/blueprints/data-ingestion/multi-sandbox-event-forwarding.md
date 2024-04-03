@@ -4,16 +4,16 @@ description: Lär dig hur data som samlas in med Experience Platform Web och Mob
 solution: Data Collection
 kt: 7202
 exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
 # Datainsamling för vidarebefordran av händelser i flera sandlådor
 
-Den här planen visar hur data som samlats in med Experience Platform Web och Mobile SDK kan konfigureras för att samla in en enda händelse och vidarebefordra till flera AEP-sandlådor. Denna skiss är specifik för datainsamling med flera sandlådor som använder [!UICONTROL Vidarebefordran av händelser] för att uppnå detta mål.
+Den här planen visar hur data som samlats in med [!DNL Experience Platform] Webb- och Mobile SDK:er kan konfigureras för att samla in en enda händelse och vidarebefordra till flera AEP-sandlådor. Denna skiss är specifik för datainsamling med flera sandlådor som använder [!UICONTROL Vidarebefordran av händelser] för att uppnå detta mål.
 
 Förutom att replikera händelsen med [!UICONTROL Vidarebefordran av händelser] kan du lägga till, filtrera eller ändra de ursprungliga insamlade data som uppfyller kraven för andra sandlådor.
 
@@ -40,7 +40,9 @@ Med [!UICONTROL Vidarebefordran av händelser] När det gäller att skicka data 
 
 ### Inga HIPAA-data
 
-[!UICONTROL Vidarebefordran av händelser] inte betraktas som HIPAA-klar och bör inte användas i HIPAA-fall där HIPAA-data samlas in. Den infrastruktur som används för [!UICONTROL Vidarebefordran av händelser] är att betrakta som HIPAA-redo och är helt och hållet kundens val. Med [!UICONTROL Vidarebefordran av händelser] Taggegenskapen finns i [!UICONTROL Vidarebefordran av händelser] systemet skickas hela datanyttolasten till [!UICONTROL Vidarebefordran av händelser] system för bearbetning. Det är denna process som [!UICONTROL Vidarebefordran av händelser] för användning av HIPAA. Med hela nyttolasten levererad till [!UICONTROL Vidarebefordran av händelser] system, inkluderar detta alla HIPAA-värden. Trots att [!UICONTROL Vidarebefordran av händelser] regler kommer att filtrera dessa data innan de skickas till destinationen, att HIPAA-data fortfarande skickas till en infrastruktur som inte är HIPAA-förberedd. Nyttolastdata lagras dock aldrig och är bara en genomströmning.
+[!UICONTROL Vidarebefordran av händelser] inte betraktas som HIPAA-klar och bör inte användas i HIPAA-fall där HIPAA-data samlas in.
+
+Den infrastruktur som används för [!UICONTROL Vidarebefordran av händelser] är HIPAA-ready och helt och hållet efter kundens gottfinnande. Med [!UICONTROL Vidarebefordran av händelser] Taggegenskapen finns i [!UICONTROL Vidarebefordran av händelser] systemet skickas hela datanyttolasten till [!UICONTROL Vidarebefordran av händelser] system för bearbetning. Den här processen skapar [!UICONTROL Vidarebefordran av händelser] för användning av HIPAA. Med hela nyttolasten levererad till [!UICONTROL Vidarebefordran av händelser] i skulle den här processen inkludera alla HIPAA-värden. Trots att [!UICONTROL Vidarebefordran av händelser] regler filtrerar dessa data innan de skickas till destinationen, att HIPAA-data fortfarande skickas till en infrastruktur som inte är HIPAA-förberedd. Nyttolastdata lagras dock aldrig och är bara en vidarekoppling.
 
 ### Olika datastreams- och direktuppspelningsslutpunkter
 
@@ -54,12 +56,16 @@ Trafikvolymer krävs för granskning av varje användningsfall. Detta är viktig
 
 ![Flera sandlådor [!UICONTROL Vidarebefordran av händelser]](assets/multi-sandbox-data-collection.png)
 
-1. Samla in och skicka händelsedata till [!DNL Platform Edge Network] krävs för att kunna använda [!UICONTROL Vidarebefordran av händelser]. Kunder kan använda Adobe-taggar för klientsidan eller [!DNL Platform Edge Network Server API] för datainsamling mellan servrar. The [!DNL Platform Edge Network API] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
+1. Samla in och skicka händelsedata till [!DNL Platform Edge Network] måste användas [!UICONTROL Vidarebefordran av händelser]. Du kan använda Adobe-taggar för klientsidan eller [!DNL Platform Edge Network Server API] för datainsamling mellan servrar.
 
-1. Samlade nyttolaster skickas från taggimplementering till [!DNL Platform Edge Network] till [!UICONTROL Vidarebefordran av händelser] och behandlas av en egen [!UICONTROL Dataelement], [!UICONTROL Regler] och [!UICONTROL Åtgärder]. Du kan läsa mer om skillnaderna [Taggar och [!UICONTROL Vidarebefordran av händelser]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
+   The [!DNL Platform Edge Network API] kan tillhandahålla en server-till-server-samlingsfunktion. Detta kräver dock en annan programmeringsmodell för att implementera. Se [API-översikt för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
 
-1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!DNL Platform Edge Network]. Om händelsedata skickades till [!DNL Platform Edge Network] av en implementerad tagg eller en server-till-server-samling. Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda anpassad kod [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
+1. Samlade nyttolaster skickas från taggimplementering till [!DNL Platform Edge Network] till [!UICONTROL Vidarebefordran av händelser] och behandlas av en egen [!UICONTROL Dataelement], [!UICONTROL Regler]och [!UICONTROL Åtgärder]. Mer information om skillnaderna finns i [Taggar och [!UICONTROL Vidarebefordran av händelser]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
 
-1. För närvarande används Adobe [!UICONTROL Cloud Connector-tillägg] krävs i [!UICONTROL Vidarebefordran av händelser] Egenskap. När reglerna bearbetar eller berikar händelsedata används Cloud Connector i ett hämtningsanrop som konfigurerats för en POST som skickar nyttolasten till den andra sandlådan.
+1. An [!UICONTROL Vidarebefordran av händelser] egenskapen krävs också för att ta emot insamlade händelsedata från [!DNL Platform Edge Network], oavsett om händelsedata skickades till [!DNL Platform Edge Network] av en implementerad tagg eller en server-till-server-samling.
 
-1. En slutpunkt för direktuppspelning för datainmatning krävs för den andra sandlådan. Du kan också överväga funktionerna för dataprep i AEP för att underlätta intag och mappning av [!UICONTROL Vidarebefordran av händelser] nyttolaster till XDM. Läs AEP-dokumentationen Skapa en [HTTP API Streaming Connection med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en)
+   Författare definierar de dataelement, regler och åtgärder som används för att berika händelsedata innan de vidarebefordras till den andra sandlådan. Överväg att använda anpassad kod [!DNL JavaScript] dataelement som hjälper till att strukturera data för sandlådeinmatning. I kombination med plattformsdataförberedelsefunktioner har du flera alternativ för att hantera din datastruktur.
+
+1. För närvarande används Adobe [!UICONTROL Cloud Connector-tillägg] krävs i [!UICONTROL Vidarebefordran av händelser] Egenskap. När reglerna har bearbetat eller berikat händelsedata [!UICONTROL Cloud Connector] används i ett hämtningsanrop som konfigurerats för en POST och som skickar nyttolasten till den andra sandlådan.
+
+1. En slutpunkt för direktuppspelning för datainmatning krävs för den andra sandlådan. Du kan också överväga [!UICONTROL Dataprep] funktioner i AEP för att underlätta intag och mappning av [!UICONTROL Vidarebefordran av händelser] nyttolaster till XDM. Läs AEP-dokumentationen Skapa en [HTTP API Streaming Connection med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en)

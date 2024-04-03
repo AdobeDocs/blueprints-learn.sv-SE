@@ -1,24 +1,24 @@
 ---
-title: Dataanalys, intelligens och AI/ML-modeller
-description: Denna plan visar hur Adobe Experience Platform kan genomföra experimentella frågor och analyser av data som finns i sjön.
+title: Dataanalys, intelligens och AI/ML-utkast
+description: Lär dig hur du gör en undersökande fråga och analys av data som finns i datasjön.
 solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
+source-git-commit: 7f3bc307f74aa88a7a73f3e50cc48bd16f58b37f
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
 # Dataanalys, intelligens och AI/ML-modeller
 
-Dataanalys, intelligens och AI/ML omfattar möjligheten inom Adobe Experience Platform att utföra utforskande frågor och analys av data som finns i sjön.
+Dataanalys, intelligens och AI/ML omfattar förmågan inom Adobe [!DNL Experience Platform] att utföra en undersökande fråga och analys av data som finns i sjön.
 
-Experience Platform [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data. Dessutom tillåter Experience Platform anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, få åtkomst till och fråga data i Experience Platform med hjälp av [!DNL PostgreSQL] -protokoll.
+[!DNL Experience Platform]&#39;s [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data. Dessutom [!DNL Experience Platform] tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, komma åt och fråga data i [!DNL Experience Platform], med [!DNL PostgreSQL] -protokoll.
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[Dataanalys och dataanalys](analysis.md)** | <ul><li>Data Analysis and Intelligence Blueprint omfattar de metoder som kan användas för att söka efter och analysera data för att få djupare insikter i Adobe Experience Platform</ul></li> | <ul><li> Adobe Experience Platform Intelligence</ul></li> |
-| **[Custom Data Science for Profile Enrichment](data-science.md)** | <ul><li>Utbilda, poängsätta och driftsätta modeller för att ytterligare berika kundprofiler och handlingmodellstyrda kundinsikter</li></ul> | <ul><li>Adobe Experience Platform Intelligence</li><li> [!UICONTROL Real-time Customer Data Platform]</li></ul> |
+| **[Dataanalys och dataanalys](analysis.md)** | <ul><li>Dataanalys och Intelligence-utkast omfattar de metoder som kan användas för att söka efter och analysera data för att få djupare insikter inom [!DNL Experience Platform]</ul></li> | <ul><li> [!DNL Experience Platform] Intelligens</ul></li> |
+| **[Custom Data Science for Profile Enrichment](data-science.md)** | <ul><li>Utbilda, poängsätta och driftsätta modeller för att ytterligare berika kundprofiler och handlingmodellstyrda kundinsikter</li></ul> | <ul><li>[!DNL Experience Platform] Intelligens</li><li> [!UICONTROL Real-time Customer Data Platform]</li></ul> |

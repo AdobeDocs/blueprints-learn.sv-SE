@@ -1,19 +1,21 @@
 ---
-title: Custom Data Science for Profile Enrichment plan
-description: Den här planen visar hur datavetenskapen kan inhämtas till Experience Platform för att berika kundprofilen i realtid.
+title: Custom Data Science for Profile Enrichment Plan
+description: Läs om hur datavetenskapsbaserade insikter kan hämtas in i [!DNL Experience Platform] för att förbättra kundprofilen i realtid.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
+source-git-commit: 7f3bc307f74aa88a7a73f3e50cc48bd16f58b37f
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# Custom Data Science for Profile Enrichment plan
+# Anpassad datavetenskap för en plan för profilberikning
 
-Custom Data Science for Profile Enrichment Blueprint visar hur data kan användas för att utbilda, driftsätta och poängsätta modeller för att ge maskininlärningsinsikter om Experience Platform och Real-time Customer Data Platform från datavetenskap och maskininlärningsverktyg. Modellerade insikter kan hämtas in i Experience Platform för att berika kundprofilen i realtid. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
+Den anpassade datavetenskapen för profilberikning illustrerar hur data kan användas för att utbilda, driftsätta och poängsätta modeller för att ge maskininlärningsinsikter om [!DNL Experience Platform] och [!DNL Real-Time Customer Data Platform] från datavetenskap och maskininlärningsverktyg.
+
+Modellerade insikter kan hämtas in i [!DNL Experience Platform] för att förbättra kundprofilen i realtid. Exempel på maskininlärningsinsikter är poängsättning för livstid, produkt- och kategoritillhörighet, benägenhet att konvertera eller benägenhet att försvinna.
 
 ## Användningsexempel
 
@@ -27,13 +29,13 @@ Custom Data Science for Profile Enrichment Blueprint visar hur data kan använda
 
 ## Guardrails
 
-* Detaljerade skyddsförslag och sluttider för inhämtning av data från datavetenskapen finns i Experience Platform och kundprofilen i realtid. Se även de detaljerade säkerhetsritningarna och tidsdiagrammet i rapporten. [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md).
+* Detaljerade säkerhetsdetaljer och total latens vid inmatning av datavetenskap ger [!DNL Experience Platform] och kundprofilen i realtid refererar till de utkast för dataöverföringsskydd och latensdiagram som refereras i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md).
 
 ## Implementeringssteg
 
 1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
-1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till Experience Platform.
+1. [Ingrediera data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) till [!DNL Experience Platform].
 
 För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du göra följande innan du hämtar in data:
 
@@ -44,7 +46,7 @@ För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du 
 
 * I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara enkla attributsträngar. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
 * Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler är tillgängligt [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).
-* Följande metoder kan användas för att extrahera data från Experience Platform
+* För att extrahera data från [!DNL Experience Platform] följande metoder kan användas
    * SDK för dataåtkomst
       * Data finns i råfilsformat
       * Data för händelser för profilupplevelse förblir i oförenat råformat.
@@ -53,12 +55,12 @@ För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du 
 
 ## Relaterad dokumentation
 
-* [Adobe Experience Platform Intelligence - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
+* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Adobe [!DNL Experience Platform] Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv)
 
 ## Relaterade blogginlägg
 
-* [[!DNL Content and Commerce AI: Personalizing Your Interactions with Customers Through Content Intelligence]](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
-* [[!DNL An Introductory Look at Exploratory Data Analysis on Adobe Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
-* [[!DNL Cutting Across Adobe Experience Products with Machine Learning to Elevated User Experience]](https://medium.com/adobetech/cutting-across-adobe-experience-products-with-machine-learning-to-elevated-user-experience-7c85000510d1)
-* [[!DNL Segmentation.AI: Automated Audience-Clustering-as-a-Service in Adobe Experience Platform]](https://medium.com/adobetech/segmentation-ai-automated-audience-clustering-as-a-service-in-adobe-experience-platform-261f4099462c)
+* [Innehåll och handel AI: Personalisera interaktionen med kunder via innehållsintelligens](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
+* [En introduktion till undersökande dataanalys på Adobe [!DNL Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
+* [Att skära mellan olika Adobe-upplevelser med maskininlärning till en bättre användarupplevelse](https://medium.com/adobetech/cutting-across-adobe-experience-products-with-machine-learning-to-elevated-user-experience-7c85000510d1)
+* [Segmentering.AI: Automated Audience-Clustering-as-a-Service in Adobe [!DNL Experience Platform]](https://medium.com/adobetech/segmentation-ai-automated-audience-clustering-as-a-service-in-adobe-experience-platform-261f4099462c)

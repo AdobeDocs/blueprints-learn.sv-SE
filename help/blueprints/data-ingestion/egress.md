@@ -4,22 +4,22 @@ description: Lär dig mer om de metoder som används för att komma åt och expo
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 2b555728ddf570e236c0c54a8c17f85a6942618f
+source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
 
-# Layout för dataåtkomst och export
+# Dataåtkomst och exportplan
 
-Planen Dataåtkomst och Exportera visar alla möjliga metoder som kan användas för att få åtkomst till eller exportera data från [!DNL Experience Platform] och program.
+I dataåtkomsten och exportplanen beskrivs alla möjliga metoder som kan användas för att få åtkomst till och exportera data från [!DNL Experience Platform] och program.
 
 Planen är uppdelad i två kategorier för dataåtkomst från [!DNL Experience Platform] och program.
 
-Den första innehåller metoder för att komprimera data från Experience Platform och program. Detta skulle anses vara en _push_ datagenerationens typmetod.
+Den första innehåller metoder för att komprimera data från [!DNL Experience Platform] och program. Detta skulle anses vara en _push_ datagenerationens typmetod.
 
-Den andra innehåller metoder för åtkomst av data från Experience Platform och tillämpningar. Detta skulle anses vara en _pull_ dataåtkomstens typmetod.
+Den andra innehåller metoder för åtkomst av data från [!DNL Experience Platform] och program. Detta skulle anses vara en _pull_ dataåtkomstens typmetod.
 
 Dataåtkomstmetoder:
 
