@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Journey Optimizer] - Triggered Messaging och Adobe Experience Platform Blueprint"
-description: Utför utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
+description: Kör utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
