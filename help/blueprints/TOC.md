@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 16%
       + [Guardrails](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
-   + [Anonym Audience Activation (AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + Känd kundaktivering (RTCDP) {#known-customer-audience-activation}
       + [Översikt](/help/blueprints/audience-activation/known.md)
       + [Aktivering i sociala kanaler och annonskanaler](/help/blueprints/audience-activation/advertising-activation.md)
@@ -53,7 +53,7 @@ ht-degree: 16%
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [Nöjda kunder](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-+ Innehåll och handel{#content-commerce}
++ Innehåll och Commerce{#content-commerce}
    + [Adobe Commerce &amp; RTCDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
