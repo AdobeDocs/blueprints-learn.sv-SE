@@ -5,10 +5,10 @@ solution: Real-Time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
+source-git-commit: f22376004f0e6feab1872b16ee2993ed22cc145e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
@@ -41,4 +41,4 @@ Mer information om profil, segmentering och aktivering finns i [Översiktsdokume
 
 ## GuarDRAils for Audience and Profile Activation blueprints
 
-* Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md) och [Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md) och [Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
