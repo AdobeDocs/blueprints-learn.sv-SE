@@ -3,7 +3,7 @@ title: Adobe Commerce - RTCDP Blueprint
 description: Adobe Experience Platform-integrering med Adobe Commerce för att skapa en enda kundvy och på ett intelligent sätt personalisera upplevelser i en digital butik och i alla kanaler.
 solution: Real-Time Customer Data Platform, Commerce
 exl-id: e2fc5e1c-c865-4c24-9b82-861a34aba487
-source-git-commit: 8a47b73065a5591673804301c61a73947346813c
+source-git-commit: 993836cda90ce169602cc6a4eec9a7477fc67172
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce &amp; RTCDP
 
-The [!DNL Data Connection] som hjälper Adobe Commerce-kunder att integrera med Adobe Experience Platform för att berika kundprofilen och personalisera upplevelser i digitala butiker och andra kanaler.
+The [!DNL Data Connection] som hjälper Adobe Commerce-kunder att smidigt integrera med Adobe Experience Platform för att berika kundprofilen och personalisera upplevelser i digitala butiker och andra kanaler.
 
 ## Teknisk kapacitet aktiverad
 
@@ -36,13 +36,13 @@ Använd [!DNL Data Connection] måste du ha följande:
 
 * [Installera](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/install.html) den [!DNL Data Connection] tillägg.
 * [Logga in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) till ditt Adobe-konto och visa för att bekräfta ditt organisations-ID. Organisations-ID är det ID som är kopplat till ditt tilldelade Experience Cloud-företag. Detta ID är en alfanumerisk sträng med 24 tecken, följt av (och måste innehålla) @AdobeOrg.
-* [Skapa eller uppdatera](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/update-xdm.html) XDM-schemat med handelsspecifika fältgrupper.
+* [Skapa eller uppdatera](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/update-xdm.html) XDM-schemat med Commerce-specifika fältgrupper.
 * [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) baserat på det schema du skapade eller uppdaterade. Den här datauppsättningen innehåller de Commerce-data som du skickar.
-* [Skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) och välj det XDM-schema som innehåller de handelsspecifika fältgrupperna.
+* [Skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) och välj det XDM-schema som innehåller de Commerce-specifika fältgrupperna.
 * [Anslut till Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 * [Anslut till Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/connect-data.html).
 
-### Anslut till Commerce Destination från Adobe Experience Platform för målgruppsdelning
+### Anslut till Commerce destination från Adobe Experience Platform för målgruppsdelning
 
 Så här ansluter du till Adobe Commerce-målet:
 
