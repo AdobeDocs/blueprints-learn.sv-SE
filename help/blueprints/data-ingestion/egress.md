@@ -7,19 +7,19 @@ exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
 source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
 source-wordcount: '1834'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Dataåtkomst och exportplan
 
-I dataåtkomsten och exportplanen beskrivs alla möjliga metoder som kan användas för att få åtkomst till och exportera data från [!DNL Experience Platform] och program.
+I dataåtkomsten och exportplanen beskrivs alla möjliga metoder för att komma åt eller exportera data från [!DNL Experience Platform] och program.
 
 Planen är uppdelad i två kategorier för dataåtkomst från [!DNL Experience Platform] och program.
 
-Den första innehåller metoder för att komprimera data från [!DNL Experience Platform] och program. Detta skulle anses vara en _push_ datagenerationens typmetod.
+Den första innehåller metoder för att komprimera data från [!DNL Experience Platform] och program. Detta betraktas som en _push_-typmetod för datagegress.
 
-Den andra innehåller metoder för åtkomst av data från [!DNL Experience Platform] och program. Detta skulle anses vara en _pull_ dataåtkomstens typmetod.
+Den andra innehåller metoder för åtkomst av data från [!DNL Experience Platform] och program. Detta betraktas som en _pull_-metod för dataåtkomst.
 
 Dataåtkomstmetoder:
 
@@ -68,7 +68,7 @@ Dataexportmetoder:
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
 <ul style="list-style-type:square">
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Vidarebefordran av rådata som samlats in från Adobe SDK för analys och insamling till affärssystem</span></span></span></li>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Ljus viktmärkning för 3<sup>rd</sup> samla in partdata via tillägg</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Lättviktstaggning för datainsamling från 3<sup>rd</sup> part via tillägg</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
@@ -135,7 +135,7 @@ Dataexportmetoder:
 </tr>
 <tr>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en" style="color:#0563c1; text-decoration:underline">RTCDP - personaliseringsmål</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en" style="color:#0563c1; text-decoration:underline">RTCDP - Personalization Destinations</a></span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
 <ul style="list-style-type:square">
@@ -199,7 +199,7 @@ Dataexportmetoder:
 </tr>
 <tr>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:240px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">RTCDP - profilsökning Edge API* Beta</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">RTCDP - Profilsökning Edge API* Beta</span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:467px">
 <ul style="list-style-type:square">
@@ -345,26 +345,26 @@ Dataexportmetoder:
 
 Kunderna kan få tillgång till enstaka enhetliga profiler från kundprofilbutiken i realtid, inklusive alla profilidentiteter, målgruppsmedlemskap, attribut och upplevelsehändelser med hjälp av API:t för kundprofilåtkomst i realtid.
 
-Se [API för åtkomst till kundprofiler i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=en) ytterligare information.
+Mer information finns i [API:t för kundprofilåtkomst i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=en) .
 
-#### Användningsexempel
+#### Användningsfall
 
 * Sök efter en enskild profil för att lägga till kontext till kundinteraktioner för agenter, som supportinteraktioner via chatt och callcenter, eller en säljinteraktion på försäljningsstället.
 * Tillåt tillagd kontext till en personaliseringsbeskrivning som görs av ett externt system, till exempel ett webbpersonaliseringssystem eller ett system för beslut om erbjudande.
 
 #### Överväganden
 
-* Kundprofil i realtid [skyddsräcken](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) gäller.
+* Kundprofilen [skyddsräcken](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) används i realtid.
 * Utformad för sökning efter enstaka profiler åt gången. Används inte för att få tillgång till eller hämta hela profilpopulationen för användning av analys eller datavetenskap.
-* Svarstiden för profilsökning följer profilens skyddsprofiler. Låga latenskrav i realtid - exempelvis för krav på sidanpassning bör Edge Profile användas från början till slut [Adobe Target Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) eller [Anpassad anslutning för anpassning](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en) för profilåtkomst i realtid för webbläsare och apppersonalisering.
+* Svarstiden för profilsökning följer profilens skyddsprofiler. Låga latenskrav i realtid - exempelvis för samma sidanpassningskrav bör Edge-profilen användas från till [Adobe Target Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) eller [Custom Personalization Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en) för profilåtkomst i realtid i webbläsare och apppersonalisering.
 
 ### API för dataåtkomst {#data-access-api}
 
 Med API:t för dataåtkomst kan kunder få direkt åtkomst till de rådatauppsättningsfiler som lagras i Experience Platform datasjön.
 
-* Mer information om hur du använder API:t för dataåtkomst finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=en).
+* Mer information om hur du använder API:t för dataåtkomst finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=en).
 
-#### Användningsexempel
+#### Användningsfall
 
 * Dra in råa och bearbetade datafiler från Experience Platform för lagring och utvärdering i företagsmiljöer.
 
@@ -379,7 +379,7 @@ Med hjälp av upplevelseplattformen kan frågetjänstkunder ställa frågor till
 
 * Mer information om hur du ansluter till SQL-klienter för att behålla SQL-resultat från Experience Platform Query Service finns i följande [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en).
 
-#### Användningsexempel
+#### Användningsfall
 
 * Fråga rådata från datauppsättningarna i Experience Platform och behåll frågeresultaten.
 * Hämta profilögonblicksbildsdatauppsättningen för att få insikter om kundprofilen i realtid. [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=en#profile-attribute-datasets).
@@ -389,7 +389,7 @@ Med hjälp av upplevelseplattformen kan frågetjänstkunder ställa frågor till
 
 * När data efterfrågas asynkront i en batch kommer åtkomsten till data att vara till sin natur latent jämfört med strategier för att direktuppspela data, till exempel taggar, händelsevidarebefordring eller RTCDP-destinationer.
 * Det är bara data som är tillgängliga i dataströmmen i Experience Platform som kan efterfrågas med hjälp av frågetjänsten. Real-time Customer Profile Store, identitetsdiagrammet, Customer Journey Analytics kan inte hämtas direkt med Query Service. Det är bara när datauppsättningar exporteras till datasjön som dessa datauppsättningar kan efterfrågas, som i exemplet med datamängden för profilögonblicksbilder.
-* Observera att utkast för antalet frågeresultat och frågans tidsgräns gäller enligt instruktionerna i [Frågetjänster - skyddsräcken](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en) dokumentation.
+* Observera att utkast för antalet frågeresultat och frågans tidsgräns gäller enligt beskrivningen i [frågetjänstens säkerhetsutkast](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en) .
 
 ## Metoder för dataexport
 
@@ -397,9 +397,9 @@ Med hjälp av upplevelseplattformen kan frågetjänstkunder ställa frågor till
 
 Tillägg kan distribueras med hjälp av Adobe Tags-lösningen. När ett tillägg distribueras distribueras dataförfrågningar direkt i en klientwebbläsare eller ett program och en begäran kan anropas för att skicka data och förfrågningar till önskat mål.
 
-Se [Översikt över taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) ytterligare information.
+Mer information finns i [taggöversikten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) -dokumentationen.
 
-#### Användningsexempel
+#### Användningsfall
 
 * Samla in strömningsinformation direkt från klientmiljöerna med hjälp av taggning.
 
@@ -412,11 +412,11 @@ Se [Översikt över taggar](https://experienceleague.adobe.com/docs/experience-p
 
 ### Vidarebefordran av händelser {#event-forwarding}
 
-Begäran om datainsamling samlas in direkt till Adobe [!DNL Edge Network]. Från [!DNL Edge Network] begäranden till externa RESTful-slutpunkter kan konfigureras för att vidarebefordra dessa begäranden till det externa målet.
+Begäranden om datainsamling samlas in direkt till Adobe [!DNL Edge Network]. Från [!DNL Edge Network]-begäranden till externa RESTful-slutpunkter kan konfigureras för att vidarebefordra dessa begäranden till det externa målet.
 
-Se följande [Vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en) ytterligare information.
+Mer information finns i följande [dokumentation för vidarebefordran av händelser](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
-#### Användningsexempel
+#### Användningsfall
 
 * Samla in strömmande rådata direkt från klientmiljöerna till slutpunkterna med hjälp av Adobe serversidans händelsevidarebefordran.
 
@@ -431,9 +431,9 @@ Se följande [Vidarebefordran av händelser](https://experienceleague.adobe.com/
 
 Profilattributsdata och målgruppsmedlemskapsdata kan aktiveras för företags- och annonsmål. Det innebär att data som matas in måste hämtas in i kundprofilen i Experience Platform-realtid.
 
-Se [Real-time Customer Data Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en) ytterligare information.
+Mer information finns i dokumentationen för [Real-time Customer Data Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en).
 
-#### Användningsexempel
+#### Användningsfall
 
 * Aktivera profilattributinformation, inklusive målgruppsmedlemskap i interna datalager, analysverktyg, e-postsystem eller supportsystem.
 * Aktivera medlemskap för profilmålgrupper hos en extern reklamleverantör för att anpassa och anpassa innehållet efter profilen.
@@ -447,16 +447,16 @@ Se [Real-time Customer Data Platform Destinations](https://experienceleague.adob
 
 Med Journey Optimizer-kunder kan man anropa en anpassad åtgärd från arbetsytan för att skicka en nyttolast eller ett meddelande till en extern API-slutpunkt som är konfigurerad. En åtgärd kan konfigureras till vilken tjänst som helst från en leverantör som kan anropas via ett REST API med en JSON-formaterad nyttolast. Den här nyttolasten kan innehålla händelseinformation, profilattribut och tidigare händelsedata, omvandlingar och berikningar som har konfigurerats under resan.
 
-Se [Anpassade åtgärder från Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-custom-actions.html?lang=en) ytterligare information.
+Mer information finns i dokumentationen för [Journey Optimizer anpassade åtgärder](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-custom-actions.html?lang=en).
 
-#### Användningsexempel
+#### Användningsfall
 
 * Aktiveringshändelser från Experience Platform och Journey Optimizer som innehåller ytterligare information från kundprofilen i realtid.
 * Meddela externa system när en kund har nått en viss punkt på en resa.
 
 #### Överväganden
 
-* Länkar till genomströmningen som stöds av [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en) och berikning som stöds av [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) gäller.
+* Garantier om genomströmningen som stöds av [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en) och berikningar som stöds av [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) gäller.
 * Anpassade åtgärder kan utföras i en direktuppspelning en i taget för varje händelse eller profil under en resa. Det går inte att utföra massåtgärder eller massdatagränser i form av filer eller aggregerade förfrågningar över kundresor.
 * Direktuppspelad åtkomst till kundprofilattribut i realtid och upplevelsehändelser som kan inkluderas i aktiveringsnyttolasten.
 * Händelsedata kan filtreras och enkla mappningsomformningar tillämpas innan händelser skickas till externa mål.

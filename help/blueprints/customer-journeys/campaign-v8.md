@@ -16,7 +16,7 @@ Adobe Campaign v8 är nästa generations kampanjverktyg som tagits fram för tra
 
 Den levereras också tillsammans med en skalbar meddelandeserver i realtid som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en totalbelastning från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-## Användningsexempel
+## Användningsfall
 
 * Mycket komplexa batchbaserade meddelandeprogram.
 * Kampanjer för introduktion och återmarknadsföring.
@@ -27,7 +27,7 @@ Den levereras också tillsammans med en skalbar meddelandeserver i realtid som g
 
 ## Arkitekturdiagram
 
-Läs mer om [Distributionsmodeller för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}.
+Läs mer om [Campaign v8-distributionsmodeller](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}.
 
 ### Driftsättning av kampanjföretag (FFDA)
 
@@ -41,8 +41,8 @@ Läs mer om [Distributionsmodeller för Campaign v8](https://experienceleague.ad
 
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
-| [[!DNL Real-time Customer Data Platform] med Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md) | Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe [!DNL Campaign] leverera personaliserade konversationer | <ul><li>Delning av profiler och målgrupper från [!DNL Real-Time CDP] till Adobe [!DNL Campaign] via utbyte av molnlagringsfiler och Adobe [!DNL Campaign] arbetsflöden för inmatning </li><li>Dela enkelt data om leverans och interaktion från kundkonversationer tillbaka i [!DNL Real-Time CDP] från Adobe [!DNL Campaign] för att förbättra både kundprofilen i realtid och tillhandahålla kanalövergripande rapporter om meddelandekampanjer</li></ul> |
-| [[!DNL Journey Optimizer] med Adobe [!DNL Campaign]](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja inbyggda Adobe [!DNL Campaign] transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja kundprofilen i realtid och kraften i [!DNL Journey Optimizer] att orkestrera upplevelserna i ögonblicket samtidigt som ni använder de inbyggda realtidsfunktionerna i Adobe [!DNL Campaign] att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kan skicka upp till 1 miljon meddelanden per timme via meddelandeservern i realtid<li>Ingen begränsning utförs från [!DNL Journey Optimizer] så att man kan göra en teknisk granskning av en affärssystemarkitekt före försäljningen</li><li>Beslutshantering stöds inte i nyttolaster till Campaign v8</li></ul> |
+| [[!DNL Real-time Customer Data Platform] med Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md) | Visar hur Adobe Experience Platform och dess kundprofil i realtid och centraliserade segmenteringsverktyg kan användas med Adobe [!DNL Campaign] för att leverera personaliserade konversationer | <ul><li>Delning av profiler och målgrupper från [!DNL Real-Time CDP] till Adobe [!DNL Campaign] via utbyte av molnlagringsfiler och arbetsflöden för Adobe [!DNL Campaign] </li><li>Dela enkelt leverans- och interaktionsdata från kundkonversationer tillbaka till [!DNL Real-Time CDP] från Adobe [!DNL Campaign] för att förbättra både kundprofilen i realtid och tillhandahålla kanalövergripande rapporter om meddelandekampanjer</li></ul> |
+| [[!DNL Journey Optimizer] med Adobe [!DNL Campaign]](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja det inbyggda transaktionsmeddelandesystemet Adobe [!DNL Campaign] för att skicka meddelandet | Utnyttja kundprofilen i realtid och kraften hos [!DNL Journey Optimizer] för att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som du använder de inbyggda funktionerna för realtidsmeddelanden i Adobe [!DNL Campaign] för att utföra den senaste ledighetskommunikationen<br><br>Att tänka på:<br><ul><li>Kan skicka upp till 1 miljon meddelanden per timme via meddelandeservern i realtid<li>Ingen begränsning har utförts från [!DNL Journey Optimizer] så kontrollera teknisk kontroll av en företagsarkitekt före försäljning</li><li>Beslutshantering stöds inte i nyttolaster till Campaign v8</li></ul> |
 
 ## Förutsättningar
 
@@ -50,7 +50,7 @@ Följande krav gäller för den här planen.
 
 ### Programserver och meddelandeserver i realtid
 
-* Adobe [!DNL Campaign] Klientkonsolen krävs för att interagera och använda [!DNL Campaign] v8. Det är en Windows-baserad klient som använder standardInternet-protokoll (SOAP, HTTP osv.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
+* Klientkonsolen Adobe [!DNL Campaign] krävs för att interagera och använda programvaran [!DNL Campaign] v8. Det är en Windows-baserad klient som använder vanliga Internet-protokoll (SOAP, HTTP, etc.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
 
 * Lista över tillåtna IP-adresser:
    * Identifiera de IP-intervall som alla användare utnyttjar vid åtkomst till klientkonsolen.
@@ -75,14 +75,14 @@ Följande krav gäller för den här planen.
 * Kan delegera ytterligare en underdomän för Campaign-värdbaserade avbeställnings- och landningssidor.
 * SSL-certifikat rekommenderas.
 
-## Guardrails
+## Skyddsräcken
 
 Skyddskassorna beskrivs nedan.
 
 ### Programserverns storlek
 
 * Lagring kan skalas upp till 200 MB-profiler med möjlighet att skala upp till 1B-profiler.
-* Konfigurera och styr åtkomsten till användare via Adobe [!DNL Admin Console].
+* Konfigurera och kontrollera användaråtkomst via Adobe [!DNL Admin Console].
 * Datainläsning till [!DNL Campaign] förväntas göras via gruppfiler:
    * Stöd för inläsning av API-data är främst avsett för hantering av profiler eller enkla objekt i databasen (d.v.s. skapa och uppdatera). Den är inte avsedd att användas för att läsa in stora datavolymer eller batchliknande åtgärder.
    * Det går inte att använda API:er för att läsa data för anpassade programsyften
@@ -103,9 +103,9 @@ Skyddskassorna beskrivs nedan.
 * Campaign ger möjlighet att integrera med en SMS-leverantör. Leverantören anskaffas av kunden och integreras med kampanjer för att skicka SMS-baserade meddelanden.
 * Stöd ges via SMPP-protokollet.
 * Det finns tre (3) olika typer av SMS som Adobe kan stödja:
-   * SMS MT (Mobile Terminated): Ett SMS som skickas från Adobe [!DNL Campaign] mot mobiltelefoner genom SMPP-leverantören.
-   * SMS MO (Mobile Originated): ett SMS som skickas av en mobil till Adobe [!DNL Campaign] via SMPP-leverantören.
-   * SMS SR (statusrapport), DR eller DLR (leveranskvitto): ett returkvitto som skickas från mobilen till Adobe [!DNL Campaign] via SMPP-leverantören som anger att SMS:et har tagits emot. Adobe [!DNL Campaign] kan också få SR som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
+   * SMS MT (Mobile Terminated): Ett SMS som skickas från Adobe [!DNL Campaign] till mobiltelefoner via SMPP-providern.
+   * SMS MO (Mobile Originated): Ett SMS som skickas av en mobil till Adobe [!DNL Campaign] via SMPP-providern.
+   * SMS SR (statusrapport), DR eller DLR (leveranskvitto): ett returkvitto som skickas från mobilen till Adobe [!DNL Campaign] via SMPP-providern som anger att SMS:et har tagits emot. Adobe [!DNL Campaign] kan också få SR som anger att meddelandet inte kunde levereras, ofta med en beskrivning av felet.
 
 ## Implementeringssteg
 
@@ -115,5 +115,5 @@ Se guiden Komma igång för [Implementera Adobe Campaign v8](https://experiencel
 
 * [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign-v8.html)
 * [Produktbeskrivning för Campaign v8](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Dokumentation för Experience Platform-taggar](https://experienceleague.adobe.com/docs/launch.html)
+* [Experience Platform Tags documentation](https://experienceleague.adobe.com/docs/launch.html)
 * [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html)

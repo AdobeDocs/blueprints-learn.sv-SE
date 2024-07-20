@@ -7,7 +7,7 @@ thumbnail: null
 exl-id: 5ae084bf-a98d-418a-8038-e6f849ff7c1d
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ I följande dokumentation finns riktlinjer för implementering och konfigurering
 
 ## Arkitektur för Customer Journey Analytics med Journey Optimizer
 
-![Arkitektur](assets/CJA_AJO.svg){zoomable=&quot;yes&quot;}
+![Arkitekturdiagram](assets/CJA_AJO.svg){zoomable="yes"}

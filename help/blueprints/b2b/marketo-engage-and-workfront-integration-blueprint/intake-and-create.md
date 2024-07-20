@@ -4,7 +4,7 @@ description: Input and Create - Marketo Engage and Workfront integration plan
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
 source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ Det antal marknadsföringsförfrågningar som kommer in i ett marknadsföringste
 
 Genom att skapa en process för att skicka in kampanjförfrågningar och automatisera skapandet av ofta efterfrågade marknadsföringskampanjer kan ni: öka hastigheten på era kampanjer, minska antalet fel, skicka förfrågningar till rätt medlem i marknadsföringsåtgärderna, balansera och förbättra resursanvändningen och fokusera mer av era marknadsföringsåtgärder på mer strategiska uppgifter.
 
-Med Workfront och Marketo Engage kan du ansluta system till system från en [Formulär för Workfront-begäran](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program och sedan fylla i viktiga variabler som ämnesrader, e-postkopia, bilder, datum, tid, händelseinformation med mera.
+Med Workfront och Marketo Engage kan du med en system-till-system-anslutning skapa information från ett [Workfront-formulär](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program och sedan fylla i viktiga variabler som ämnesrader, e-postkopia, bilder, datum, tider, händelseinformation och mycket annat.
 
 För att uppnå den här integreringen kommer du att använda Workfront Fusion, ett lager för automatisering av arbete som gör att du kan automatisera arbetsflöden mellan Workfront och andra system.
 
 I arbetsflödet nedan visas en begäran om ett webbinarium som görs av en kampanjhanterare med hjälp av ett Workfront-formulär. Informationen som skickades i begäran utlöser sedan ett program och ett e-postmeddelande som ska skapas i Marketo Engage för webbinariet. Dessutom hämtas information från begärandeformuläret för att fylla i innehållet i e-postmeddelandet.
 
-![Ta och skapa en plan](assets/intake-and-create-1.png){zoomable=&quot;yes&quot;}
+![Ta in och skapa utkast](assets/intake-and-create-1.png){zoomable="yes"}
 
 >[!TIP]
 >
->Om du vill veta mer om olika typer av objekt i Workfront som används för att organisera arbetet med marknadsföringskampanjer och hur det mappas till ett program i Marketo Engage kan du titta på [Marketo och Workfront - översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}.
+>Om du vill veta mer om de olika objekttyperna i Workfront som används för att organisera arbetet i en marknadsföringskampanj och hur det mappas till ett program i Marketo Engage går du till [Marketo och Workfront Overview](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}.
 
 ## Förbered kampanjutvecklingsprocessen för automatisering {#prepare-your-campaign-development-process-for-automation}
 
@@ -51,33 +51,33 @@ Tänk på den viktigaste informationen som behöver hämtas i din ansökningsbla
   <tr> 
    <td>E-postutfall</td>
    <td>・ E-postämne<br />
-・ Schemalagt datum<br />
-・ Email Copy<br />
-・ Call to Action<br />
-・ Bild(er) - AEM Assets URL:er kan refereras direkt för användning i Marketo<br />
+・ Schemalagt datum <br />
+・ E-postkopia <br />
+・ Call to Action <br />
+・ Bild(er) - AEM Assets URL:er kan refereras direkt för användning i Marketo <br />
 ・ Kriterier för målgruppskvalitet</td>
   </tr>
   <tr>
    <td>Webbseminarium/händelse</td>
    <td>・ Händelsenamn<br />
-・ Händelsedatum<br />
-・ Händelsetid<br />
-・ Evenemangets ort<br />
-・ Händelsebeskrivning<br />
-・ Inspelningssida för webbinarium - PageURL OnDemand<br />
-・ Föredragshållarnamn<br />
-・ Föredragshållartexter<br />
-・ Högtalarbilder<br />
-・ E-postmeddelanden behövs (inbjudan, bekräftelse, påminnelse, uppföljning)<br />
-・ Sidhuvudsbilder via e-post<br />
+・ Händelsedatum <br />
+・ Händelsetid <br />
+・ Event City <br />
+・ Händelsebeskrivning <br />
+・ Inspelningssida för webbinarium - PageURL OnDemand <br />
+・ Föredragshållarnamn <br />
+・ Föredragshållartexter <br />
+・ Högtalarbilder <br />
+・ E-postmeddelanden behövs (inbjudan, bekräftelse, påminnelse, uppföljning) <br />
+・ Sidhuvudsbild(er) <br />
 ・ Kriterier för målgruppskvalitet</td>
   </tr>
   <tr>
    <td>Nätur</td>
-   <td>・ Antal mejl<br />
-・ Email Copy<br />
-・ E-postrubriker<br />
-・ Call to Action<br />
+   <td>・ Antal e-postmeddelanden<br />
+・ E-postkopia<br />
+・ E-postrubriker <br />
+・ Call to Action <br />
 ・ Kriterier för målgruppskvalitet</td>
   </tr>
   </tbody>
@@ -95,13 +95,13 @@ Att skapa ett högklassigt centrum med programmallar i Marketo Engage är ett av
 
 När ni väl har en uppsättning återanvändbara programmallar kan ni skala om era insatser ytterligare med hjälp av den automatisering som beskrivs i den här planen för att skapa en snabbare kampanjutveckling.
 
-Mer information om hur du skapar ett eget centrum för spetskompetens finns i [Marketo Community](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"} för bästa praxis.
+Om du vill veta mer om hur du skapar ett eget centrum för spetskompetens kan du läsa [Marketo Community](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"} för bästa praxis.
 
 ### Använd variabler för att fylla i innehåll {#use-tokens-to-populate-content}
 
 Med Marketo Engage kan tokens användas för att fylla i innehåll i kampanjresurser. När du till exempel har klonat en e-postmall från ditt högklassiga center kan Workfront Fusion hämta information från kampanjbegäran i Workfront och skicka dem till Mina token i Marketo Engage-programmet. Token-värdena kan sedan ärvas direkt till e-postmeddelandet för att skapa e-postmeddelandet.
 
-![Använd variabler för att fylla i innehållsdiagram](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
+![Använd variabler för att fylla i innehållsdiagram](assets/intake-and-create-2.png){zoomable="yes"}
 
 ### Fylla i bilder från AEM Assets {#populate-images-from-aem-assets}
 
@@ -147,14 +147,14 @@ En del grundläggande information som ska ingå i sökbiblioteket för programma
 
 ## Intag och skapa automatiseringsflöde {#intake-and-create-automation-flow}
 
-Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med färdiga [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} -moduler som gör att ni kan leverera automatisering snabbare.
+Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med de fördefinierade modulerna [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} och [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} som gör att du kan leverera automatisering snabbare.
 
-![Intag och skapa automatiseringsflöde](assets/intake-and-create-3.png)
+![Intagnings- och skapa automatiseringsflöde](assets/intake-and-create-3.png)
 
-## Resurs {#resources}
+## Resurser {#resources}
 
-* [Adobe Marketo Engage Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
+* [Adobe Marketo Engage-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
-* [Adobe Workfront Modules](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
+* [Adobe Workfront-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
 
 * [Marketo och Workfront - översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}

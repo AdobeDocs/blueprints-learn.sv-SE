@@ -8,7 +8,7 @@ role: Architect, Developer, User
 source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -16,20 +16,20 @@ ht-degree: 16%
 # Digital Experience-utkast {#architecture}
 
 + [Digital Experiences Blueprints](/help/blueprints/overview.md)
-+ Lodräta ritningar{#vertical-blueprints}
++ Lodräta industrimodeller{#vertical-blueprints}
    + [Översikt](/help/blueprints/vertical-blueprints/overview.md)
    + [Kläder](/help/blueprints/vertical-blueprints/apparel.md)
    + [Detaljhandel](/help/blueprints/vertical-blueprints/retail.md)
    + [Telekommunikation](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Resor och turism](/help/blueprints/vertical-blueprints/travel-hospitality.md)
-+ Arkitekturöversikt{#architecture-overview}
++ Arkitekturöversikter{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
    + Distribution{#deployment}
       + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
-      + [Guardrails](/help/blueprints/experience-platform/deployment/guardrails.md)
+      + [Skyddsräcken](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Översikt](/help/blueprints/audience-activation/overview.md)
    + [Anonym Audience Activation](/help/blueprints/audience-activation/anonymous.md)
@@ -40,7 +40,7 @@ ht-degree: 16%
       + [Kundaktivitetsnav](/help/blueprints/audience-activation/customer-activity.md)
       + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
    + [Aktivering med Experience Cloud-program](/help/blueprints/audience-activation/platform-and-applications.md)
-   + Webb- och mobilpersonalisering{#web-personalization}
+   + Webb och mobil - Personalization{#web-personalization}
       + [Översikt](/help/blueprints/audience-activation/web-personalization/overview.md)
       + [Beteendeanpassning - målinriktat](/help/blueprints//audience-activation/web-personalization/behavioral.md)
       + [Känd kundanpassning - mål och RTCDP](/help/blueprints/audience-activation/web-personalization/known-personalization.md)
@@ -48,7 +48,7 @@ ht-degree: 16%
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
-   + Integrering av Marketo Engage och Workfront{#marketo-engage-and-workfront-integration-blueprint}
+   + Integreringsutkast för Marketo Engage och Workfront {#marketo-engage-and-workfront-integration-blueprint}
       + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
@@ -72,7 +72,7 @@ ht-degree: 16%
    + Campaign Standard{#campaign-standard}
       + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html){target="_blank"}
       + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html){target="_blank"}
-   + Campaign v8{#campaign-v8}
+   + Kampanj v8{#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
       + [Real-Time CDP med Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)

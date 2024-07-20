@@ -6,13 +6,13 @@ exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
 source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Journey Optimizer med Adobe Campaign v8-plan
 
-Visar hur Adobe [!DNL Journey Optimizer] kan användas med Adobe [!DNL Campaign] att skicka meddelanden internt genom att använda meddelandeservern i realtid i [!DNL Campaign].
+Visar hur Adobe [!DNL Journey Optimizer] kan användas med Adobe [!DNL Campaign] för att skicka meddelanden internt genom att använda meddelandeservern i realtid i [!DNL Campaign].
 
 ## Arkitektur
 
@@ -37,11 +37,11 @@ Granska följande krav för varje program.
 * Körningsinstansen av meddelandetjänsten i realtid (dvs. meddelandecentret) måste vara värd för Cloud Service som hanteras av Adobe
 * All meddelanderedigering görs i själva Campaign-instansen
 
-## Guardrails
+## Skyddsräcken
 
 * [Journey Optimizer Guardrails - produktbegränsningar](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 
-* [Garantier och riktlinjer för svarstid från början till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+* [Garantier och vägledning från början till slut ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Implementeringssteg
 
@@ -51,35 +51,35 @@ Följ implementeringarna för varje program som beskrivs nedan.
 
 #### Schema/datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera enheter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform, baserat på kunddata.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
 1. (Valfritt) Skapa Experience Event-klassbaserade scheman för adresstabellerna Adobe Campaign broadLog, trackingLog och non-deliverable.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
-1. [Lägg till etiketter för dataanvändning](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform till datauppsättningen för styrning.
-1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som tillämpar styrning av destinationer.
+1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform i datauppsättningen för styrning.
+1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som framtvingar styrning på mål.
 
 #### Profil/identitet
 
 1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Lägga till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
+1. [Lägg till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
 1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ställ in sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
+1. [Ställ in sammanslagningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för reseanvändning.
 
 #### Källor/destinationer
 
-1. [Infoga data i [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
+1. [Importera data till [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 
 ### Journey Optimizer
 
-1. Konfigurera [!DNL Experience Platform] datakälla och bestämma vilka fält som ska cachas som en del av de profileStreaming-data som används för att initiera en kundresa måste konfigureras i Journey Optimizer först för att få ett orchestration-ID. Detta Orchestration-ID skickas sedan till utvecklaren för användning vid intag.
+1. Konfigurera din [!DNL Experience Platform]-datakälla och bestäm vilka fält som ska cachas som en del av de profileStreaming-data som används för att initiera en kundresa måste konfigureras i Journey Optimizer först för att få ett orchestration-ID. Detta Orchestration-ID skickas sedan till utvecklaren för användning vid intag.
 1. Konfigurera externa datakällor.
 1. Konfigurera anpassade åtgärder för Campaign-instansen.
 
 ### Campaign v8
 
 * Meddelandemallar måste konfigureras med rätt personaliseringskontext.
-* För [!DNL Campaign] standard: Exportarbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme.
-* För [!DNL Campaign] v8.4 Det är möjligt att utnyttja Adobe [!DNL Campaign] Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Se [Källkoppling](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) dokumentation för mer information.
+* För standard [!DNL Campaign]: Exportera arbetsflöden måste konfigureras för att exportera transaktionsmeddelandeloggarna tillbaka till Experience Platform. Rekommendationen är att köras högst var fjärde timme.
+* För [!DNL Campaign] v8.4 är det möjligt att använda Adobe [!DNL Campaign] Managed Services Source Connector i Experience Platform för att synkronisera leverans- och spårningshändelser från Campaign till Experience Platform. Mer information finns i dokumentationen för [Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html).
 
 ### Mobil push-konfiguration (valfritt)
 

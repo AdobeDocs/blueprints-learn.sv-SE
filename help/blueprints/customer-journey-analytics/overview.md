@@ -7,8 +7,8 @@ thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 source-git-commit: b69e73349741b829f05d04cfac70aa0161ef7684
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 6%
+source-wordcount: '346'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,9 @@ En fullständig lista över användningsfall för Customer Journey Analytics fin
 
 ## Användningsexempel i Customer Journey Analytics
 
-[Vanliga användningsfall](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) inkludera:
+[Exempel på vanliga användningsområden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en) är:
 
-* Skapa och publicera målgrupper i Real-time Customer Data Platform
+* Create and Publish Auditions to Real-time Customer Data Platform
 * Konvertera banor uppifrån och ned
 * Kanalengagemang och -konvertering
 * Viktigaste visade innehåll
@@ -32,21 +32,21 @@ En fullständig lista över användningsfall för Customer Journey Analytics fin
 
 ## Arkitektur för Customer Journey Analytics
 
-![Arkitektur](assets/CJA.svg){zoomable=&quot;yes&quot;}
+![Arkitekturdiagram](assets/CJA.svg){zoomable="yes"}
 
 Exempel på primära användningsområden är följande:
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[Reseanalys över flera kanaler](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)** | <ul><li>Få en samlad bild av kundernas beteende i olika kanaler genom att samla data från olika webb-, mobil- och offlineegenskaper.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (valfritt)</li></ul> |
-| **[Publicera publiker på Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>skapa och publicera målgrupper som identifieras i Customer Journey Analytics (CJA) till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. Idealiskt för att skapa målgrupper med hjälp av historiska data eller mer raffinerade målgrupper från granulatfiltrering och beräknade fält i Customer Journey Analytics.</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> |
-| **[Reseanalys för samtalsavböjning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
+| **[Publish-målgrupper till Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>skapa och publicera målgrupper som identifieras i Customer Journey Analytics (CJA) till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. Idealiskt för att skapa målgrupper med hjälp av historiska data eller mer raffinerade målgrupper från granulatfiltrering och beräknade fält i Customer Journey Analytics.</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> |
+| **[Anropa avböjningsreseanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Bestäm vilka beteenden som är mest indikativa och skapa agentstödda samtal genom att samla ihop data från Call Center med webb-, mobil- och andra interaktionsdata.</li><li>Dessa insikter kan sedan användas för att optimera kundupplevelsen och minska vägen till handläggarassisterade interaktioner genom optimerat självbetjäningsinnehåll och verktyg.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
 ## Guardrail-diagram för ritningar från Customer Journey Analytics
 
-* Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
+* Detaljerade skyddsförslag och sista-till-sista-latenser finns i dokumentet [Distributionsskyddsförslag](../experience-platform/deployment/guardrails.md)
 
-![Guardradit-diagram](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
+![Skyddsdiagram](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable="yes"}
 
 ## Relaterade blogginlägg
 

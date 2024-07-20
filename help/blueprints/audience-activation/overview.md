@@ -35,10 +35,10 @@ Ta fram utkast för målgrupps- och profilaktivering
 
 Bilden nedan visar huvudkomponenterna i Experience Platform:s kundprofil i realtid.
 
-Mer information om profil, segmentering och aktivering finns i [Översiktsdokumentation för RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home) och [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) sidor.
+Mer information om profil, segmentering och aktivering finns i [Översiktsdokumentation för RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home) och [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home).
 
 <img src="assets/profile_architecture.jpg" alt="Referensarkitektur för kundprofilen i realtid" style="border:1px solid #4a4a4a" width="90%"  class="modal-image"/>
 
 ## GuarDRAils for Audience and Profile Activation blueprints
 
-Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md) och [Profil- och segmenteringsskydd](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+Detaljerade skyddsförslag och slut-till-slut-latenser finns i dokumentet [Distributionsskyddsutkast](../experience-platform/deployment/guardrails.md) och [Profil- och segmenteringsriktlinjerna](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)

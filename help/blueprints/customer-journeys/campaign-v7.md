@@ -16,7 +16,7 @@ Adobe Campaign v7 är ett kampanjverktyg som är byggt för traditionella markna
 
 Den levereras också tillsammans med en realtidsserver för meddelanden som gör det möjligt för marknadsföringsteamen att skicka fördefinierade meddelanden baserat på en total nyttolast från alla IT-system för exempelvis lösenordsåterställning, orderbekräftelse, e-kvitto och mycket annat.
 
-## Användningsexempel
+## Användningsfall
 
 * Batchbaserade meddelandeprogram
 * Påbörja och återmarknadsföra kampanjer
@@ -32,7 +32,7 @@ Den levereras också tillsammans med en realtidsserver för meddelanden som gör
 | Scenario | Beskrivning | Funktioner |
 | :-- | :--- | :--- |
 | [Real-Time CDP med Adobe Campaign](rtcdp-and-campaign.md) | Visar hur Adobe Experience Platform Real-Time CDP och dess centraliserade segmenteringsverktyg kan användas tillsammans med Adobe Campaign för att leverera personaliserade konversationer | <ul><li>Delning av profiler och målgrupper från Real-Time CDP till Adobe Campaign via utbyte av molnlagringsfiler och arbetsflöden för inhämtning från Adobe Campaign </li><li>Dela enkelt data om leverans och interaktion från kundkonversationer tillbaka till Real-Time CDP från Adobe Campaign för att förbättra både kundprofilen i realtid och tillhandahålla flerkanalsrapportering om meddelandekampanjer</li></ul> |
-| [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda funktioner för realtidsmeddelanden för att kommunicera på sista milen<br><br>Att tänka på:<br><ul><li>Kan skicka upp till 50 000 meddelanden per timme via meddelandeservern i realtid<li>Ingen begränsning görs från Journey Optimizer, så man kan försäkra sig om teknisk kontroll genom en företagsarkitekt före försäljningen</li><li>Beslutshantering stöds inte i nyttolaster till Campaign v7 realtidsmeddelandeserver</li></ul> |
+| [Journey Optimizer med Adobe Campaign](ajo-and-campaign.md) | Visar hur du kan använda Adobe Journey Optimizer för att orkestrera 1:1-upplevelser med hjälp av kundprofilen i realtid och utnyttja Adobe Campaign transaktionsmeddelandesystem för att skicka meddelandet | Utnyttja Journey Optimizer kundprofil i realtid och kraften i att orkestrera i det ögonblick upplevelserna inträffar, samtidigt som ni använder Adobe Campaign inbyggda meddelandefunktioner i realtid för att göra den sista milkommunikationen<br><br>Överväganden:<br><ul><li>Kan skicka upp till 50 000 meddelanden per timme via meddelandeservern i realtid<li>Ingen begränsning görs från Journey Optimizer, så man kan försäkra sig om teknisk kontroll genom en företagsarkitekt före försäljningen</li><li>Beslutshantering stöds inte i nyttolaster till Campaign v7 realtidsmeddelandeserver</li></ul> |
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ Granska följande villkor nedan.
 
 ### Programserver och meddelandeserver i realtid
 
-* Adobe Campaign Client Console krävs för att interagera och använda Campaign v8-programmet. Det är en Windows-baserad klient som använder standardInternet-protokoll (SOAP, HTTP osv.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
+* Adobe Campaign Client Console krävs för att interagera och använda Campaign v8-programmet. Det är en Windows-baserad klient som använder vanliga Internet-protokoll (SOAP, HTTP, etc.). Kontrollera att du har de behörigheter som krävs aktiverade i organisationen för att distribuera, installera och köra programvara
 
 * Tillåt listning av IP-adress
    * Identifiera de IP-intervall som alla användare kommer att utnyttja vid åtkomst till klientkonsolen
@@ -67,7 +67,7 @@ Granska följande villkor nedan.
 
 <br>
 
-## Guardrails
+## Skyddsräcken
 
 Granska följande skyddsutkast.
 
@@ -106,22 +106,22 @@ Granska följande skyddsutkast.
 * Experience Platform Mobile SDK-väg:
    * Utnyttja Adobe-taggar och Campaign Classic-tillägget för att konfigurera integreringen med Experience Platform Mobile SDK
    * behöver kunskaper om Adobe-taggar och datainsamling
-   * Behöver mobilutvecklingsupplevelse med push-meddelanden i både Android och iOS för att distribuera SDK, integrera med FCM (Android) och APNS (iOS) för att få push-token, konfigurera din app så att den tar emot push-meddelanden och hantera push-interaktioner
+   * behöver mobilutvecklingsupplevelse med push-meddelanden i både Android och iOS för att distribuera SDK, integrera med FCM (Android) och APNS (iOS) för att få push-token, konfigurera din app så att den tar emot push-meddelanden och hantera push-interaktioner
 * Campaign Mobile SDK
    * Kontakta Adobe kundtjänst för att få åtkomst
-   * Följ [Kampanjens SDK-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) för att lära dig hur du installerar och konfigurerar SDK
+   * Följ [dokumentationen för Campaign SDK](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) för att lära dig hur du installerar och konfigurerar SDK
 
   >[!IMPORTANT]
   >Om ni distribuerar Campaign SDK och arbetar med andra Experience Cloud-program måste de använda Experience Platform Mobile SDK för datainsamling. Detta är ett annat SDK och måste installeras tillsammans med Campaign SDK
 
 ## Implementeringssteg
 
-Se [Starthandbok](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) för implementering av Adobe Campaign v7.
+Se [Komma igång-guiden](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) för att implementera Adobe Campaign v7.
 
 
 ## Relaterad dokumentation
 
-* [Dokumentation för Campaign v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
+* [Kampanjdokumentation v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
 * [Produktbeskrivning för Campaign v7](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Dokumentation för Experience Platform-taggar](https://experienceleague.adobe.com/docs/launch.html?lang=en)
+* [Experience Platform Tags documentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
 * [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)

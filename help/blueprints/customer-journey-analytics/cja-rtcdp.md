@@ -7,7 +7,7 @@ thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ I följande dokumentation finns vägledning om implementering och konfigurering 
 
 ## Arkitektur för Customer Journey Analytics-ritningar
 
-![Arkitektur](assets/CJA.svg){zoomable=&quot;yes&quot;}
+![Arkitekturdiagram](assets/CJA.svg){zoomable="yes"}
 
 ## Guardrail-diagram för ritningar från Customer Journey Analytics
 
-* Detaljerade skyddsförslag och sista-till-sista-latenser finns i [distributionsskyddsdokument](../experience-platform/deployment/guardrails.md)
+* Detaljerade skyddsförslag och sista-till-sista-latenser finns i dokumentet [Distributionsskyddsförslag](../experience-platform/deployment/guardrails.md)
 
-![Guardradit-diagram](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
+![Skyddsdiagram](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable="yes"}
 
 ## Frågor och svar
 

@@ -33,7 +33,7 @@ Lär dig hur kunderna skapar fantastiska upplevelser och lyckas med digitala upp
 </tr>
 <tr>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><strong>Skolindustrin</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><strong>Skalindustri</strong></a></div>
     <p><em>Realtidsmarknadsföring, flerkanalsaktivering och flerkanalsanalys.</em></p>
   </td>
   <td>
@@ -41,11 +41,11 @@ Lär dig hur kunderna skapar fantastiska upplevelser och lyckas med digitala upp
     <p><em>Kundupplevelser i realtid i digitala medier, e-post, push och webbkanaler.</em></p>
   </td>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><strong>Telekommunikation</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><strong>Telekommunikationsbranschen</strong></a></div>
     <p><em>Skräddarsy erbjudanden i realtid med effektiv kundintroduktion för långsiktig lojalitet.</em></p>
   </td>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><strong>Resor- och turismbranschen</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><strong>Resor- och hotell</strong></a></div>
     <p><em>Realtidsbeslut med en samlad bild av kundernas beteende i olika kanaler.</em></p>
   </td>
 </tr>

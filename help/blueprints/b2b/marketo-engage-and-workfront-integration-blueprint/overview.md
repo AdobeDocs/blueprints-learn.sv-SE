@@ -4,7 +4,7 @@ description: Översikt - översikt över integreringsprogrammet Marketo Engage o
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
 source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Marknadsföringens jobb fortsätter att växa med nya kanaler och fler sätt att personalisera kommunikation varje dag. Marknadsföringsteamen behöver sätt att fortsätta att automatisera och utveckla för att stödja förändrade marknadsföringskrav runt om i världen.
 
-**&quot;Avkastningen har alltid varit det verkliga målet. Inkomsterna är enastående, men inte till något pris - särskilt idag.&quot; - CMO, Business Services Industry**
+**&quot;ROI har alltid varit det verkliga målet. Inkomsterna är enastående, men inte till något pris - särskilt idag.&quot; - CMO, Business Services Industry**
 
 Organisationer som får högre avkastning samtidigt som de ökar sina intäkter gör det genom att effektivisera sin kampanjutvecklingsprocess, optimera hastigheten för kampanjgenomförandet och förbättra tillsynen över hela marknadsföringsfunktionen.
 
@@ -30,7 +30,7 @@ Kampanjteamen behöver system som gör det möjligt för dem att effektivt plane
 
 Genom att integrera aktiveringssystemet för flerkanalsmarknadsföring (Marketo Engage) med marknadsföringsplaneringen och registersystemet (Workfront) kan ni öka kampanjhastigheten och ge intressenterna bättre synlighet.
 
-Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella och felbenägna steg som krävs för att översätta ett marknadsföringsmaterial till en kampanj. Workfront Fusion har ett integrerat lager mellan Workfront och Marketo Engage som gör det möjligt att utveckla arbetsflöden mellan olika system på ett flexibelt och effektivt sätt. Du kan lära dig mer om hur du konfigurerar integreringen och vilka åtgärder som kan vidtas för att automatisera arbetsflöden [här](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}.
+Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella och felbenägna steg som krävs för att översätta ett marknadsföringsmaterial till en kampanj. Workfront Fusion har ett integrerat lager mellan Workfront och Marketo Engage som gör det möjligt att utveckla arbetsflöden mellan olika system på ett flexibelt och effektivt sätt. Du kan läsa mer om hur du konfigurerar integreringen och vilka åtgärder som kan vidtas för att automatisera arbetsflöden [här](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}.
 
 ## Kampanjplanering till utförande - användningsfall för automatisering {#campaign-planning-to-execution-automation-use-cases}
 
@@ -40,7 +40,7 @@ Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella o
 
 Här nedan visas ett arbetsflödesdiagram över kampanjutvecklingsprocessen om det är en e-postbegäran. Dessutom kan ni se hur Workfront Fusion kan spela en roll mellan Workfront och Marketo Engage för att driva arbetsflödes- och processautomatisering under kampanjutvecklingscykeln.
 
-![Kampanjplanering till utförande - användningsfall för automatisering](assets/overview-1.png){zoomable=&quot;yes&quot;}
+![Kampanjplanering till körning - användningsfall för automatisering](assets/overview-1.png){zoomable="yes"}
 
 Observera de olika faserna i kampanjutvecklingsprocessen.
 
@@ -60,7 +60,7 @@ Med Adobe Workfront kan man hantera arbetet och få ett effektivare utförande. 
 
 Att förstå hur du mappar din affärsprocess till dessa objekt är viktigt för att förstå relationen mellan Workfront och Marketo Engage.
 
-![Förstå hur marknadsföringssatsningar presenteras i Workfront](assets/overview-2.png){zoomable=&quot;yes&quot;}
+![Förstå hur marknadsföringsinitiativen presenteras i Workfront](assets/overview-2.png){zoomable="yes"}
 
 ### Portfolio-hierarki har definierats {#portfolio-hierarchy-defined}
 
@@ -115,7 +115,7 @@ Zeplin Company släpper en uppdaterad version av en av sina kompakta traktorbila
 
 Hierarkin nedan visar hur strategi, taktik, uppgifter och resurser mappas till Workfront för denna marknadsföringskampanj.
 
-![Exempel på hantering av marknadsföringsinitiativ](assets/overview-3.png){zoomable=&quot;yes&quot;}
+![Exempel på hantering av marknadsföringsinitiativ](assets/overview-3.png){zoomable="yes"}
 
 ## Mappa Workfront till Marketo {#mapping-workfront-to-marketo}
 
@@ -129,7 +129,7 @@ Med Workfront Fusion som integreringslager kan du mappa dina projekt i Workfront
 
 Här nedan visas ett exempel på hur ett program kan innehålla flera projekt och hur dessa Workfront-projekt kan mappas till program i Marketo Engage.
 
-![Mappa Workfront-projekt till Marketo Engage-program](assets/overview-4.png){zoomable=&quot;yes&quot;}
+![Mappar Workfront-projekt till Marketo Engage-program](assets/overview-4.png){zoomable="yes"}
 
 Du kanske vill lansera ett stort marknadsföringsprojekt som kräver att flera Workfront-projekt ska ingå i ett Workfront-program, eller så kanske du har en enstaka förfrågan om ett webbinarium eller e-postmeddelande som bara behöver ett Workfront-projekt. Vad ni än behöver, med Workfront, Workfront Fusion och Marketo Engage, har ert team flexibiliteten att integrera er kampanjutvecklingsprocess sömlöst från planering till genomförande.
 
@@ -147,16 +147,16 @@ Nu när ni har en grundläggande förståelse för hur Workfront och Marketo Eng
 
 ### Komma igång med integrationen mellan Workfront Fusion, Workfront och Marketo Engage {#getting-started-with-workfront-fusion}
 
-* [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
+* [Intag och skapande](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} - Automatisering av kampanjutveckling med Marketo Engage och Workfront
 
 * [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
 
 ### Hantera kampanjnamn för Marketo Engage och deras associerade URL:er {#managing-marketo-engage-campaign-names}
 
-Att standardisera era namngivningskonventionerna för kampanjer och URL:er är en viktig grund för en korrekt programhantering i Marketo Engage och bidrar till en mer konsekvent process under kampanjens utvecklingslivscykel. Om du letar efter verktyg som kan hjälpa dig med detta rekommenderar vi att du checkar ut några kostnadsfria verktyg med öppen källkod från [Adobe Success Services](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} som gör att ni kan skapa ett konsekvent tillvägagångssätt för att skapa och hantera kampanjer i Marketo Engage och deras associerade URL:er.
+Att standardisera era namngivningskonventionerna för kampanjer och URL:er är en viktig grund för en korrekt programhantering i Marketo Engage och bidrar till en mer konsekvent process under kampanjens utvecklingslivscykel. Om du letar efter verktyg som kan hjälpa dig med detta rekommenderar vi att du checkar ut några kostnadsfria verktyg med öppen källkod från [Adobe Success Services](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} som gör att du kan skapa ett konsekvent sätt att skapa och hantera Marketo Engage-kampanjer och deras associerade URL:er.
 
-### Resurs {#resources}
+### Resurser {#resources}
 
 * [Workfront Fusion för Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
-* [Workfront Fusion for Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
+* [Workfront Fusion för Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}

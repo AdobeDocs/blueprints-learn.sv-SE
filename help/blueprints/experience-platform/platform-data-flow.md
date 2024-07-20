@@ -22,9 +22,9 @@ Bilden nedan visar de olika sätten att mata in data och gå ut ur Adobe Experie
 
 ## Mönster för datainress och egress
 
-En detaljerad lista över alla mönster för dataintrång, -insamling och -ingress finns på [Dataförberedelse och intag](../data-ingestion/ingestion.md).
+En detaljerad lista över alla mönster för datainförsel, insamling och inmatning finns i [Planen för dataförberedelse och inmatning](../data-ingestion/ingestion.md).
 
-En detaljerad lista över alla data- och åtkomstfilter finns i [Layout för dataåtkomst och export](../data-ingestion/egress.md).
+En detaljerad lista över alla datagränser och åtkomstmönster finns i [planen för dataåtkomst och dataexport](../data-ingestion/egress.md).
 
 ## Skyddsförslag för dataöverföring
 

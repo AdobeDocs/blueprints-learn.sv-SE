@@ -7,7 +7,7 @@ exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
 source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Genom att utnyttja teknik och tjänster från Adobe är den här organisationen 
 
 | Mål | Taktik | Värdet är upplåst |
 |---|---|---|
-| **Gör alla upplevelser relevanta för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering: </strong>Skapa 3X e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens: </strong>Gästbelöningsprogram genomför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering: </strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en affärsanpassad kontrollpanel för resa och attribuering som även minskar latensen (i dagar)</li><li><strong>Framtidssäkrad teknikhög: </strong>Tio miljoner profiler över 7 kanaler som är klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
+| **Gör varje upplevelse relevant för gästen **<br></br>**Affärsklara insikter och datamarknad via kontrollpaneler **<br></br>**Organisations- och driftseffektivitet**</ul> | <ul><li>Skapa enhetliga kundprofiler för belönade program med hjälp av online- och offlinedata för aktivering och mätning</li><li>Aktivering i realtid över alla kanaler, snabbt och skalbart</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Utveckla intelligens för att förbättra aktiveringen genom att lära av historiskt klickade strömdata.</li><li>Använd online- och offlinedata för att få en enhetlig kundvy för insikter över kundresor och kanaler.</li></ul> | <ul><li><strong> Flerkanalsaktivering: </strong>Skapar 3X-e-postengagemang, adresserbar målgruppstillväxt och ökat intryck, personaliserade webbupplevelser </li><li><strong>Intelligens: </strong>Gästbelöningsprogram utför en aktiveringskampanj för att minska bortfallet av medlemmar</li><li><strong>Rapportering: </strong>Sammanfogade online-/offlinedata med AI/ML-inlärning till en företagsvänlig kontrollpanel för resa och attribuering och reducerade fördröjningen (i dagar)</li><li><strong>Framtidssäkrad teknikhög: </strong>Tygon miljoner profiler över 7 kanaler klara att köras i korsförsäljning, merförsäljning och utgiftsoptimeringsscenarier</li></ul> |
 
 ## Primär ritning: Aktivering med online- och offlinedata
 

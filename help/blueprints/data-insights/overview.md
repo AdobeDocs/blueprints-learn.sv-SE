@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Dataanalys, intelligens och AI/ML-modeller
 
-Dataanalys, intelligens och AI/ML omfattar förmågan inom Adobe [!DNL Experience Platform] att utföra en undersökande fråga och analys av data som finns i sjön.
+Dataanalys, intelligens och AI/ML omfattar möjligheten inom Adobe [!DNL Experience Platform] att utföra experimentell fråga och analys av data som finns i sjön.
 
-[!DNL Experience Platform]&#39;s [!UICONTROL Frågetjänst] gör att SQL-frågor kan utföras på data. Dessutom [!DNL Experience Platform] tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part för att direkt ansluta till, komma åt och fråga data i [!DNL Experience Platform], med [!DNL PostgreSQL] -protokoll.
+[!UICONTROL Frågetjänsten ] för [!DNL Experience Platform] tillåter att SQL-frågor utförs på data. Dessutom tillåter [!DNL Experience Platform] anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part att ansluta direkt till, komma åt och fråga data i [!DNL Experience Platform] med protokollet [!DNL PostgreSQL].
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[Dataanalys och dataanalys](analysis.md)** | <ul><li>Dataanalys och Intelligence-utkast omfattar de metoder som kan användas för att söka efter och analysera data för att få djupare insikter inom [!DNL Experience Platform]</ul></li> | <ul><li> [!DNL Experience Platform] Intelligens</ul></li> |
-| **[Custom Data Science for Profile Enrichment](data-science.md)** | <ul><li>Utbilda, poängsätta och driftsätta modeller för att ytterligare berika kundprofiler och handlingmodellstyrda kundinsikter</li></ul> | <ul><li>[!DNL Experience Platform] Intelligens</li><li> [!UICONTROL Real-time Customer Data Platform]</li></ul> |
+| **[Dataanalys och dataanalys](analysis.md)** | <ul><li>Dataanalys och Intelligence-utkast omfattar de metoder som kan användas för att fråga efter och analysera data för att få djupare insikter i [!DNL Experience Platform]</ul></li> | <ul><li> [!DNL Experience Platform] Intelligence</ul></li> |
+| **[Anpassad datavetenskap för profilberikning](data-science.md)** | <ul><li>Utbilda, poängsätta och driftsätta modeller för att ytterligare berika kundprofiler och handlingmodellstyrda kundinsikter</li></ul> | <ul><li>[!DNL Experience Platform] Intelligence</li><li> [!UICONTROL Real-time Customer Data Platform]</li></ul> |

@@ -22,4 +22,4 @@ I arkitekturdiagrammet nedan visas integrationssökvägarna och datainsamlingen 
 
 * [Experience Platform Web/Mobile SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)
 * [Implementera Adobe Experience Cloud med Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
-* [Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
+* [Implementera Adobe Experience Cloud i mobilappar, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)

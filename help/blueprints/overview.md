@@ -23,11 +23,11 @@ Planer för digitala upplevelser är repeterbara implementeringar som gör att n
 
 ## Nyheter
 
-* **[Målgrupps- och profilaktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)**
+* **[Målgrupps- och profilaktivering i företagsdestinationsplanering](/help/blueprints/audience-activation/enterprise-destinations.md)**
   *Håll kundprofilerna uppdaterade i alla system för att ge era sälj- och supportteam bättre förutsättningar. &#x200B;*
-* **[Kundaktivitetshubbskiss](/help/blueprints/audience-activation/customer-activity.md)**
-  *Ange sammanhang för support och försäljning som utförs av agenter.*
-* **[Dataanalys och intelligens - översikt](/help/blueprints/data-insights/analysis.md)**
+* **[Kundaktivitetshubben - översikt](/help/blueprints/audience-activation/customer-activity.md)**
+  *Ange kontext för support och försäljning för agenter.*
+* **[Planen för dataanalys och dataanalys](/help/blueprints/data-insights/analysis.md)**
   *Utför en undersökande fråga och analys av data i sjön.*
 
 ## Utvalda utkast
@@ -36,7 +36,7 @@ Planer för digitala upplevelser är repeterbara implementeringar som gör att n
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><img alt="miniatyrbild för Triggered Messaging och Experience Platform Blueprint" src="customer-journeys/assets/ajo-architecture.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Flerkanalsmarknadsföring</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Samlad flerkanalsmarknadsföring</strong></a></div>
     <p><em>Skicka meddelanden och påverka kundupplevelserna i realtid med [!UICONTROL Platform] som ett centralt nav.</em></p>
   </td>
   <td>

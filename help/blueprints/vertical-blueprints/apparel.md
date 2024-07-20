@@ -19,7 +19,7 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 
 * Enhetliga meddelanden och aktiveringar i olika kanaler
 * Utlösarbaserad marknadsföring i realtid
-* Personalisering och möjlighet att mäta kampanjens effektivitet och förmåga att utföra kundanalys och attribuering
+* Personalization och möjlighet att mäta kampanjens effektivitet och förmåga att utföra kundanalys och attribuering
 
 ## Adobe
 
@@ -32,7 +32,7 @@ Deras globala teknikteam använder Adobe Experience Platform och Adobe för att 
 
 | Mål | Taktik | Värdet är upplåst |
 |---|---|---|
-| **Sammankopplade upplevelser över flera kanaler **<br></br>**Engagemang och lagring **<br></br>**Datamottagning och insikter**</ul> | <ul><li>Inbyggt flera företagsdatauppsättningar för att skapa tiotals miljoner profiler och hundratals segment, flera destinationer och rapportpaneler</li><li>Aktivering över flera destinationer med Real-time Customer Data Platform</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Automatiska händelseutlösare för kundinteraktioner som implementeras via Adobe Journey Optimizer</li></ul> | <ul><li><strong> Kundprofil: </strong>360 Grad av kunder för segmentering</li><li><strong>Målaktiveringar: </strong>Aktivering på betalda medier, e-post och sociala plattformar</li><li><strong>Kundanalys och attribuering: </strong>Flerkanalsattribueringsanalys är tillgänglig för särskilda ändamål och enkelt distribuerad<li><strong>Journey Orchestration: </strong> Skapa och driftsätta triggade kampanjer och schemalagda kampanjer i realtid</li></ul> |
+| **Anslutna flerkanalsupplevelser **<br></br>**Drive Engagement &amp; Retention **<br></br>**Datatillämpning och insikter**</ul> | <ul><li>Inbyggt flera företagsdatauppsättningar för att skapa tiotals miljoner profiler och hundratals segment, flera destinationer och rapportpaneler</li><li>Aktivering över flera destinationer med Real-time Customer Data Platform</li><li>Funktionen för analys på kundnivå har låsts upp med kundreseanalys</li><li>Automatiska händelseutlösare för kundinteraktioner som implementeras via Adobe Journey Optimizer</li></ul> | <ul><li><strong> Kundprofil: </strong>360 Grad av kundvy för segmentering</li><li><strong>Målaktiveringar: </strong>Aktivering på betalda medier, e-post och sociala plattformar</li><li><strong>Kundanalys och attribuering: </strong>Flerkanalsattribueringsanalys är tillgänglig ad hoc och enkelt distribuerad<li><strong>Journey Orchestration: </strong> Skapa och driftsätta utlösta kampanjer och schemalagda kampanjer i realtidskontext</li></ul> |
 
 ## Primär ritning: Målgrupp och aktivering med Experience Cloud-program
 

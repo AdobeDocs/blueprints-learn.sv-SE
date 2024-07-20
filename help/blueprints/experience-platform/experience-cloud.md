@@ -8,7 +8,7 @@ exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
 source-git-commit: 48b34b05b83f693395b71bcabb16dffa548a1b00
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Diagrammen visar hur Experience Cloud, applikationstjänster och Experience Plat
 
 ## Adobe Experience Cloud marketecture
 
-I följande diagram visas de olika komponenterna i Adobe Experience Cloud för datainsikter och målgrupper, innehåll och handel, kundresor, arbetsflöde för marknadsföring, som är byggt och integrerat på grund av Adobe Experience Platform.
+Följande diagram visar de olika komponenterna i Adobe Experience Cloud för datainsikter och målgrupper, innehåll och Commerce, kundresor, arbetsflöde för marknadsföring, som är byggt och integrerat på grund av Adobe Experience Platform.
 
 <img src="assets/AEC.jpg" alt="Översikt över Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 

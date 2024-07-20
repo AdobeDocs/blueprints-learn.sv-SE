@@ -4,7 +4,7 @@ description: Granska och godkänn en plan för integrering av Marketo Engage och
 exl-id: a446faab-7db4-42a2-b4b9-395725c49c9f
 source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -52,37 +52,37 @@ För att göra detta bör du överväga stegen nedan som en del av processen fö
 1. Trigga ditt Marketo Engage-e-postmeddelande för att synkronisera med Workfront med en statusändring för aktiviteten.
 1. Konvertera din e-postfil från Marketo Engage till granskningsbart korrektur i Workfront.
 1. Använd Workfront korrektur för att samarbeta via kommentarer och anteckningar.
-1. Godkänn Workfront Proof för att aktivera godkännande av mediefiler i Marketo Engage och markera sedan uppgiften som slutförd.
+1. Godkänn Workfront Proof för att aktivera godkännande av resurser i Marketo Engage och markera sedan uppgiften som slutförd.
 
 ### Konfigurera ett Workfront-projekt med en uppgift som är klar för granskning {#configure-a-workfront-project-with-a-ready-for-review-task}
 
-Använd [projektmallar](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html){target="_blank"} för att hämta in de flesta av de repeterbara processerna, informationen och inställningarna som är kopplade till projekten i organisationen. Du kan definiera uppgifter, köämnen, skapa anpassade formulär och bifoga dokument i mallen.
+Använd [projektmallar](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html){target="_blank"} för att hämta de flesta repeterbara processer, information och inställningar som är associerade med projekten i organisationen. Du kan definiera uppgifter, köämnen, skapa anpassade formulär och bifoga dokument i mallen.
 
 I projektmallen i Workfront kan du inkludera uppgifter för att granska resurser som ingår i marknadsföringskampanjen. Dessutom kan du lägga till en godkännandeprocess för att hantera enstaka godkännanden eller mer komplexa godkännanden på flera nivåer.
 
 Om du vill starta en ny e-postkampanj bör du ha en projektmall som innehåller en uppgift att granska e-postmeddelandet samt en godkännandeprocess för att säkerställa att e-postmeddelandet godkänns av rätt intressent innan det kan skickas ut.
 
-![aktivitetsskärm](assets/review-and-approve-blueprint-1.png){zoomable=&quot;yes&quot;}
+![aktivitetsskärm](assets/review-and-approve-blueprint-1.png){zoomable="yes"}
 
 ### Utlös din e-post från Marketo Engage för att synkronisera med Workfront med statusändring för uppgifter {#trigger-your-marketo-engage-email-to-sync-to-workfront}
 
-Som en del av granskningsprocessen vill du kunna synkronisera e-postmeddelanden till ditt Workfront-projekt när de är klara för granskning av marknadsföringsteamet. För att göra detta rekommenderar vi att du konfigurerar en uppgift som är klar att granskas med en [aktivitetsstatus](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html){target="_blank"} som anger när e-postmeddelandet är klart att granskas. I vårt exempel har vi lagt till en e-poststatus för Granska Marketo som kan väljas när e-postutkastet är klart att granskas av intressenter.
+Som en del av granskningsprocessen vill du kunna synkronisera e-postmeddelanden till ditt Workfront-projekt när de är klara för granskning av marknadsföringsteamet. För att göra detta rekommenderar vi att du konfigurerar en aktivitet klar att granska med [aktivitetsstatus](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html){target="_blank"} som anger när e-postmeddelandet är klart att granskas. I vårt exempel har vi lagt till en e-poststatus för Granska Marketo som kan väljas när e-postutkastet är klart att granskas av intressenter.
 
 Med den här statusen på plats i ditt Workfront-projekt kan du konfigurera ditt Workfront Fusion-scenario så att det lyssnar efter aktiviteten Klar att granska för att uppdatera till&quot;Granska Marketo-e-post&quot;. När ditt scenario har uppdaterats kan du hämta Marketo Engage-e-postmeddelandet som en HTML-fil, zippa upp det och spara en kopia av det i Workfront projektdokument som ska granskas.
 
-![klar för granskning](assets/review-and-approve-blueprint-2.png){zoomable=&quot;yes&quot;}
+![klar för granskning](assets/review-and-approve-blueprint-2.png){zoomable="yes"}
 
 ### Konvertera din e-post från Marketo Engage till granskningsbart korrektur i Workfront {#convert-your-marketo-engage-email-to-reviewable-proof-in-workfront}
 
-När aktiviteten Redo för granskning har flyttats till statusen&quot;Granska Marketo-e-post&quot; och Marketo Engage e-postmeddelandet har sparats i Workfront, kan du konfigurera ditt Workfront Fusion-scenario så att e-postmeddelandet konverteras till ett Workfront-korrektur.
+När aktiviteten Redo för granskning har flyttats till statusen&quot;Granska Marketo-e-post&quot; och Marketo Engage e-postmeddelandet har sparats i Workfront, kan du konfigurera ditt Workfront Fusion-scenario så att e-postmeddelandet konverteras till en Workfront Proof.
 
 ### Använd Workfront korrektur för att samarbeta via kommentarer och anteckningar {#use-workfront-proofing-to-collaborate}
 
-[Workfront korrektur](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} gör det möjligt för marknadsföringsteamet att ta en ny mediefil, till exempel en bild eller ett e-postmeddelande, och samarbeta via kommentarer och kommentarer. När ett bevis är klart att publiceras kan beslutsfattarna godkänna materialet från korrekturverktyget.
+[Med Workfront funktioner för korrektur](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} kan marknadsföringsteamet ta en ny resurs, till exempel en bild eller ett e-postmeddelande, och samarbeta via kommentarer och anteckningar. När ett bevis är klart att publiceras kan beslutsfattarna godkänna materialet från korrekturverktyget.
 
-![konvertera e-postskärm](assets/review-and-approve-blueprint-3.png){zoomable=&quot;yes&quot;}
+![konvertera e-postskärm](assets/review-and-approve-blueprint-3.png){zoomable="yes"}
 
-### Godkänn Workfront-korrektur och aktivera godkännande av mediefiler i Marketo Engage, markera aktiviteten som slutförd {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
+### Godkänn Workfront Proof och aktivera godkännande av resurser i Marketo Engage, markera aktiviteten som slutförd {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
 
 Workfront Fusion kan identifiera när e-postmeddelandet har godkänts av intressenter och skicka en begäran till Marketo Engage om att godkänna e-postmeddelandet inuti Marketo.
 
@@ -96,12 +96,12 @@ För att effektivisera utvecklingen av arbetsflöden för granskning och godkän
 
 Sammanställningsscenariot nedan tar dig igenom den första halvan av gransknings- och godkännandeflödet, där e-postutkastet kan hämtas från Marketo Engage och sparas i Workfront som ett korrektur. När det har sparats som ett korrektur i Workfront projektdokument kan det granskas av marknadsaktörer, kommenteras och kommenteras som en del av granskningsprocessen.
 
-![granskning och godkännande av fusionsscenarier](assets/review-and-approve-blueprint-4.png){zoomable=&quot;yes&quot;}
+![granskning och godkännande av fusionsscenario](assets/review-and-approve-blueprint-4.png){zoomable="yes"}
 
 ### Godkänn ett e-postmeddelande i Workfront som utlöser godkännandet av resursen i Marketo Engage {#approve-an-email-in-workfront-that-triggers-approval}
 
 Fusionsscenariot nedan kan användas för att identifiera när ett korrektur i Workfront har godkänts och skicka det till Marketo Engage för att uppdatera e-postutkastet så att det är klart att användas i ett Marketo Engage-program.
 
-![godkännande av säkert fusionsscenario](assets/review-and-approve-blueprint-5.png){zoomable=&quot;yes&quot;}
+![Säkert godkännande av fusionsscenario](assets/review-and-approve-blueprint-5.png){zoomable="yes"}
 
 Tillsammans kan dessa två scenarier användas för att skapa en tvåvägs väg för att dra marknadsföringsresurser från Marketo Engage till Workfront och få effektiva arbetsflöden för granskning och godkännande, och sedan skicka tillbaka godkännanden till Marketo Engage från Workfront.

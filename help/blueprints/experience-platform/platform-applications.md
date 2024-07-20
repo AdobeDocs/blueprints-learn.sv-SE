@@ -8,7 +8,7 @@ exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -74,7 +74,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 </tr>
 <tr>
-<td>Analyser</td>
+<td>Analys</td>
 <td>
 <ul>
 <li>Data som samlas in via webb/mobil SDK kan vidarebefordras till Adobe Analytics.</li>
@@ -82,7 +82,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 </td>
 <td>
 <ul>
-<li>Data som samlas in av Analytics kan skickas till datavjön och profilarkivet i Experience Platform. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en">Analytics Data Connector</a></li>
+<li>Data som samlas in av Analytics kan skickas till datavjön och profilarkivet i Experience Platform. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en">Dataanslutning för analys</a></li>
 </ul>
 </td>
 <td>
@@ -152,7 +152,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 <td colspan="1">
 <ul>
 <li>Data som samlas in och hämtas in i Experience Platform datasjön görs tillgängliga för behandling till Customer Journey Analytics. </li>
-<li>Profil- och målgruppsdata från Real-time Customer Data Platform kan hämtas till CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">Integrering mellan RTCDP och CJA</a>.
+<li>Profil- och målgruppsdata från Real-time Customer Data Platform kan hämtas till CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">RTCDP till CJA-integrering</a>.
 </li>
 </ul>
 </ul>

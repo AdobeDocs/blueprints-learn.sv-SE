@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Journey Optimizer - Beslutsledningsplaner
 
-Mer information om beslutshantering finns i [produktdokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+Mer information om beslutshantering finns i [produktdokumentationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
@@ -25,11 +25,11 @@ Beslutsledningskapaciteten består av två huvudkomponenter:
 
 <img src="../assets/offers_overview.png" alt="Beslutshantering" style="width:100%; border:1px solid #4a4a4a" />
 
-Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att utföra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns i [Beslutsledningens dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
+Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att utföra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns också i [beslutsstyrningsdokumentationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
 
 ## Beslutshantering på navet
 
-Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden, SMS-meddelanden eller push-meddelanden och andra utgående kampanjer drivs också av navmetoden. Om du vill veta mer om beslutshantering för navet kan du läsa [Beslutshantering på navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en) utkast.
+Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden, SMS-meddelanden eller push-meddelanden och andra utgående kampanjer drivs också av navmetoden. Mer information om beslutshantering för navet finns i [beslutshanteringen för navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en).
 
 * Erbjudandets behörighet kan fungera mot kundprofilen i realtid, inklusive alla attribut och upplevelsehändelser
 
@@ -48,7 +48,7 @@ Det första är via Adobe Experience Platform nav, som är en central datacenter
 
 ## Beslutsfattare i utkanten
 
-Den andra metoden är via upplevelsen [!DNL Edge Network], som är en globalt spridd, geografiskt belägen infrastruktur som kan leverera snabba upplevelser under och under millisekunder. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshanteringen på Edge är utformad för att leverera konsumentupplevelser i realtid, som webb- eller mobilförfrågningar om inkommande personalisering. Om du vill veta mer om beslutshantering på Edge-nivå kan du läsa [Beslutsfattare i utkanten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en) utkast.
+Den andra metoden är via upplevelsen [!DNL Edge Network], som är en globalt distribuerad, geografiskt placerad infrastruktur som kan leverera snabba, subsekundära och millisekundsupplevelser. Den slutanvändarupplevelse som utförs av den gränsinfrastruktur som är närmast konsumenternas geografiska plats för att minimera latensen. Beslutshanteringen på Edge är avsedd att betjäna kundupplevelser i realtid, som webb- eller mobilförfrågningar om inkommande personalisering. Om du vill veta mer om beslutshantering för Edge kan du läsa [beslutshanteringen i den översta](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en)-planen.
 
 ### Användningsexempel för beslutshantering i utkanten
 
@@ -68,4 +68,4 @@ Den andra metoden är via upplevelsen [!DNL Edge Network], som är en globalt sp
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
 * [Adobe Journey Optimizer Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 * [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Produktbeskrivning för beslutsledning i Adobe](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Produktbeskrivning för beslutshantering för Adobe](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
