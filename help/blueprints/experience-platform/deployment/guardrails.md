@@ -4,7 +4,7 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 164793e15315d64cf38cb14928eac10cf6ae5c35
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 
 I följande diagram visas den primära kanten och hubben som observerats för att vara medveten om när man konstruerar användningsfall på Experience Platform och program.
 
-![Experience Platform [!DNL Edge Network] och primära latenser för navet som observerats.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform Edge Network och primära latenser som observerats via hubb"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network] och primära latenser för navet som observerats.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency_v1.svg "Experience Platform Edge Network och primära latenser som observerats via hubb"){width="1000" zoomable="yes"}
 
 ### Intag av data {#data-ingestion}
 
