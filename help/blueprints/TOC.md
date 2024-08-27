@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
+source-git-commit: 5095a3aed75c727f0e28aaa07587994a23020448
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '243'
 ht-degree: 18%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 18%
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
+   + [Aktivera B2B-konto](/help/blueprints/b2b/b2b-account-activation.md)
    + Integreringsutkast för Marketo Engage och Workfront {#marketo-engage-and-workfront-integration-blueprint}
       + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
