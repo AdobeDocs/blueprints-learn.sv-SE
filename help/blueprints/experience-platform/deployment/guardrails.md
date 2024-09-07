@@ -4,21 +4,30 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 164793e15315d64cf38cb14928eac10cf6ae5c35
+source-git-commit: 7ccabe2d11467b02d7fb5a2f920ebc5af8a17983
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '603'
 ht-degree: 1%
 
 ---
 
 # Skyddsräcken
+Garantierna speglar systembegränsningar, förväntade latenser och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang och bidra till att säkerställa stabilitet, undvika fel och oväntade resultat.
 
-Vi rekommenderar att du anger tröskelvärden som ger vägledning för data, observerad fördröjning och systemanvändning i Adobe Experience Platform och program. Garantierna speglar systembegränsningar och prestandaförväntningar för att optimera kundens arkitektur och använda fallissemang samt hjälper till att undvika fel och oväntade resultat. Garantier är inte avsedda att vara servicenivåavtal, servicenivåavtal beskrivs i de produktbeskrivningar som är länkade nedan och i kundlicensavtalen. Garantier är avsedda att ge vägledning i arkitekturen av lösningar för specifika kundanvändningsfall för att säkerställa stabilitet och utförande.
+## Typer av skyddsräcken
 
-Information om specifika servicenivåavtal för program och funktioner finns i avsnittet [Program- och funktionsbeskrivningar](#application-feature-descriptions) längst ned på den här sidan.
+| Typ av skyddsräcke | Beskrivning |
+|---|---|
+| Prestandaskydd (mjuk gräns) | Prestandaskydd är användarbegränsningar som relaterar till omfattningen av dina användningsfall och ger en översikt över förväntade prestanda under normala förhållanden. Om det överskrids kan prestandan försämras och fördröjning uppstå. Prestandaskydd finns dokumenterade i Experience League-dokumenten under respektive lösnings skyddsavsnitt enligt nedan. |
+| Statisk gräns (hård gräns) | Det här är begränsningar som framtvingas av systemet och som inte kan överskridas. Statiska begränsningar är vanligtvis bundna och anges i kundkontraktet och i [produktbeskrivningarna](https://helpx.adobe.com/legal/product-descriptions.html). |
 
-Observera att för alla kundärenden som har strikta krav på fördröjning eller volym rekommenderar Adobe att du granskar ditt användningsfall i detalj med ditt kontoteam på Adobe och din implementeringspartner. I vissa fall är det tillrådligt att testa och observera en viss implementering av ett visst användningsfall innan produktionen startar användarexemplet för att observera och förstå förväntat beteende - eftersom varje kundimplementering har olika faktorer som är under spel, inklusive typ och frånvaro av datadrag, de specifika egenskaperna hos segmentreglerna som byggs och de olika aktiveringskanalerna och nyttolasterna - kommer varje implementering av användningsfall att ha olika observerade prestanda. Därför är det bäst att fastställa och testa den förväntade prestandan direkt för att säkerställa en korrekt arkitektur och implementering i enlighet med de latens- och prestandakrav som gäller för användningsfallet.
+>[!NOTE]
+>
+> Garantier är inte avsedda att vara servicenivåavtal, utan snarare som vägledning för optimala konfigurationer och förväntat systembeteende. Alla skyddsförslag som är system- eller avtalsbegränsningar eller serviceavtal dokumenteras specifikt i kundavtalen och produktbeskrivningarna. Om du är intresserad av att lära dig mer om anpassade begränsningar kontaktar du kundtjänstrepresentanten.
 
+>[!NOTE]
+>
+> För användningsfall med strikta svarstider eller prestationsbehov föreslår Adobe att ni diskuterar detaljerna med ert kontoteam på Adobe och er implementeringspartner. Varje kundinställning kan variera mellan olika datainmatningsmönster, segmentregler och aktiveringskanaler. Det är viktigt att du testar och granskar ditt användningsexempel innan du startar programmet för att få en förståelse för hur det fungerar.
 
 ## Referensdokumentation för säkerhetsutkast för Adobe Experience Platform och program
 
@@ -77,19 +86,3 @@ Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med [C
 I diagrammet nedan visas förväntade fördröjningsvärden när du arbetar med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en). Klicka på bilden för att se en högupplöst version.
 
 ![Arbeta med Adobe Journey Optimizer visuella översikt på hög nivå.](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "Arbeta med Adobe Journey Optimizer högnivåvisuella översikter och latensvärden"){width="1000" zoomable="yes"}
-
-## Program- och funktionsbeskrivningar {#application-feature-descriptions}
-
-Mer information om funktionsspecifika servicenivåavtal finns i produktbeskrivningarna nedan:
-
-* [Experience Platform Collection Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
-* [Real-time Customer Data Platform](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
-* [B2B Customer Data Platform](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-b2b.html)
-* [Aktivering av Experience Platform](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform0.html)
-* [Experience Platform Intelligence](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Intelligenta tjänster](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
-* [Data Distiller](https://helpx.adobe.com/legal/product-descriptions/data-distiller.html)
-* [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
-* [Journey Optimizer](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Journey Orchestration](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html)
-* [Offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
