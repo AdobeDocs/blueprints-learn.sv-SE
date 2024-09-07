@@ -4,9 +4,9 @@ description: Garantier definierar förväntningarna på prestanda och påverkan 
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 7e37677280c27302e650a96786035169573d9709
+source-git-commit: 8ab82995ad7762f8ed6f706aa4c4fe59d47abb20
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Garantierna speglar systembegränsningar, förväntade latenser och prestandafö
 
 >[!NOTE]
 >
-> För användningsfall med strikta svarstider eller prestationsbehov föreslår Adobe att ni diskuterar detaljerna med ert kontoteam på Adobe och er implementeringspartner. Varje kundinställning kan variera mellan olika datainmatningsmönster, segmentregler och aktiveringskanaler. Det är viktigt att du testar och granskar ditt användningsexempel innan du startar programmet för att få en förståelse för hur det fungerar.
+> För användningsfall med strikta svarstider eller prestationsbehov föreslår Adobe att ni diskuterar detaljerna med ert kontoteam på Adobe och er implementeringspartner. Varje kundinställning kan variera mellan olika datainmatningsmönster, profilantal och detaljrikedom, segmentregler och aktiveringskanaler. Därför är det viktigt att du skapar och testar ditt användningssätt för att optimera prestandan och förstå de förväntade prestandaegenskaperna.
 
 ## Referensdokumentation för säkerhetsutkast för Adobe Experience Platform och program
 
