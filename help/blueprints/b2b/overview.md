@@ -1,17 +1,17 @@
 ---
-title: B2B Analytics och Activation - planer
+title: B2B Analytics, Activation and Marketing blueprints
 description: Leverera kontobaserade målgrupper och profilbaserade kundupplevelser med Real-time Customer Data Platform.
 solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 6a13de73d7f61295092faccfc21172f5e188331d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# B2B Analytics och Activation - planer
+# B2B Analytics, Activation and Marketing blueprints
 
 B2B-målgrupps- och profilaktivering är nyckeln till framgång i en datadriven marknadsföringsvärld. Men många varumärken fokuserar fortfarande på aktivering av kanaler först, vilket ofta ger inkonsekvent räckvidd och personalisering.
 
@@ -20,6 +20,7 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
 | **[B2B-analys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
-| **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
+| **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B edition</li></ul> |
+| **[Köpa gruppbaserad marknadsföring och resehantering](./b2b-buying-group-journeys.md)** | <ul><li>Utforma och bygg en kontoresa som kvalificerar leads för en inköpsgrupp som ökar marknadsföringsaktivitetens effektivitet när det gäller kvalificerande leads till försäljningsmöjligheter</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B edition</li><li>Adobe Marketo Engage</li></ul> |
 | **[Integreringsutkast för Marketo Engage och Workfront: Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Optimera planering, utveckling och genomförande av B2B-kampanjer</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
 | **[Integreringsutkast för Marketo Engage och Workfront: Ta in och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>Automatisera inhämtning av förfrågan från B2B-marknadsföringskampanjer för kampanjutveckling</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
