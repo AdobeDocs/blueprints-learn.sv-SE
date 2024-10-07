@@ -2,9 +2,9 @@
 title: Köpa en gruppbaserad plan för marknadsföring och resehantering
 description: Lär dig att hitta, designa och bygga en resa som berättigar till köp i Adobe Journey Optimizer B2B edition.
 solution: Journey Optimizer B2B Edition
-source-git-commit: 5035c869aa5181fff66cbc20b03922f82832f126
+source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2118'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Följande nyckeltal är väl anpassade efter hur väl användningsexemplen funge
 
 ## Kontobaserad marknadsföring
 
-Ett vanligt användningsexempel, och fokus i den här planen, är ett kontobaserat marknadsföringsinitiativ som utforskar den punkt där den inköpskoncern som skapats är ifylld med ett lead när de är kopplade till en roll och en lösning.
+Ett vanligt användningsexempel, och fokus i den här planen, är ett kontobaserat marknadsföringsinitiativ. Det här användningsexemplet utforskar den punkt där den inköpskoncern som du har skapat fylls i med ett lead när de är kopplade till en roll och ett lösningsintresse.
 
 När du leder en individ under resan samlar du in mer information om leadet (Buying Group Workflow) via formulär, CRM Sync och LinkedIn-aktivering.
 
-När ett lead tydligt visar lösningsintresset indikerar det en affärshändelse som definieras av ett företagslinje. I nuläget är företaget övertygat om att denna lead verkligen är intresserad av en produkt, och i Journey Optimizer B2B edition är ledaren kopplad till en inköpsgrupp för den lösningen i en rollmall (som påverkare, beslutsfattare, mästare och sponsorer).
+När ett lead tydligt visar lösningsintresset indikerar det en affärshändelse som definieras av ett företagslinje. I nuläget är företaget säkert på att denna lead verkligen är intresserad av en produkt. I Journey Optimizer B2B edition är leadet kopplat till en inköpsgrupp för den lösningen i en rollmall (t.ex. påverkare, beslutsfattare, mästare och sponsorer).
 
 Som framgår av bilden nedan kan du samla in uppgifter i formulär eller genom LinkedIn-aktivering och kvalificera en lösningsmetod när en chattrobot interagerar.
 
@@ -85,7 +85,7 @@ Vid varje implementering av datadriven automatisering av marknadsföringen är u
 
 Scheman har berikats specifikt med B2B-dataelement för att ge stöd åt den omfattande relationen i profiler och inkludera kontoperspektivet via `sourceKey` för att koppla händelser och profiler till kontoschemat. Scheman är en representation av organisationens krav och insamlade och profilerade data. För att tillgodose dessa behov är B2B-scheman flexibla och är en förlängning av de B2B-element som krävs.
 
-När du utformar dataschemat för din organisation är det en god vana att representera och etikettera huvudentiteterna i din ERD med högnivåentiteter i det första diagrammet i [RTCDP B2B-schemadokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b). Den här processen är mycket användbar för att förstå de dataelement som krävs och som du måste definiera i varje schema.
+När du utformar dataschemat för din organisation är det en god vana att representera och etikettera huvudenheterna i din ERD med högnivåenheter. (Se det första diagrammet i [dokumentationen för RTCDP B2B-schemat](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)). Den här processen är mycket användbar för att förstå de dataelement som krävs och som du måste definiera i varje schema.
 
 I det här skedet kan Experience Events ännu inte påverka resorna. Förutom Experience Event-scheman rekommenderar vi att du lägger till egenskaper i kontot som representerar viktiga beslut baserade på användaraktiviteter. De här egenskaperna används för delade banelement i resedesignern.
 
@@ -97,7 +97,7 @@ I det här skedet kan Experience Events ännu inte påverka resorna. Förutom Ex
 
 Om du vill utöka kontodataelementen kan du använda Marketo Engage och dess B2B-data för att utöka RTCDP- och Journey Optimizer B2B edition-kontovyn. Genom att ställa in Marketo Engage Source Connector och mappa Marketo Engage data till RTCDP-schemaattribut kan data flöda från Marketo Engage till RTCDP, och om så anges, till profilen.
 
-Mer information om anslutningskonfigurationen och den obligatoriska fältmappningen finns i [Marketo Engage-anslutningsdokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) till det schema som definierades i föregående steg.
+Mer information om anslutningskonfigurationen och den obligatoriska fältmappningen till schemat finns i [Marketo Engage-anslutningsdokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
 
 ### Skyddsräcken
 
@@ -118,7 +118,7 @@ Läs dokumentationen för [Real-Time CDP GuarDRAils](https://experienceleague.ad
 
 ## Implementering
 
-Följande steg ger vägledning för att aktivera funktionen Buying Group i din Journey Optimizer B2B edition-instans och inkluderar ytterligare aktivering för att stödja utökning av din kontobas med fokus på att köpa rollmallar som saknas i grupper.
+Följande steg ger vägledning när det gäller att aktivera inköpsgrupper i din instans av Journey Optimizer B2B edition, inklusive målgruppsaktivering för att stödja utökning av din kontobas med fokus på mallar för att köpa grupper som saknas.
 
 ### Krav-steg
 
@@ -131,7 +131,7 @@ Följande steg ger vägledning för att aktivera funktionen Buying Group i din J
    * Använd det [RTCDP B2B-schemaskapandeskriptet](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility) för att generera det inledande schemat
    * Lägg till ärendespecifika fält i scheman som genereras för att slutföra schemat så att det passar organisationens behov.
 
-   I det här skedet har du anslutningen mellan Marketo Engage och RTCDP och schemastrukturen för att acceptera konto- och persondata för att fylla i dataset för kontosegmenten. Nästa steg är att ansluta RTCDP till Marketo Engage och Journey Optimizer B2B edition.
+   I det här skedet har du anslutningen mellan Marketo Engage och RTCDP och schemastrukturen för att acceptera konto- och persondata för att fylla i dataset för kontosegmenten definieras. Nästa steg är att ansluta RTCDP till Marketo Engage och Journey Optimizer B2B edition.
 
 1. Konfigurera Marketo Engage-anslutningen, inklusive mappningen av Marketo Engage till XDM-strukturen.
 
@@ -141,7 +141,7 @@ Följande steg ger vägledning för att aktivera funktionen Buying Group i din J
 
 1. Skapa kontomålgrupper i Journey Optimizer B2B edition eller RTCDP.
 
-   Aktivera alternativet Schemalägga alla målgrupper på sidan Customer → Audiences → Browse för att aktivera Account Audiences. (Om detta inte fungerar måste du skapa ett kundprofilsegment för att kunna skapa kontomåldrar)
+   Aktivera alternativet Schemalägga alla målgrupper på sidan Customer → Audiences → Browse för att aktivera Account Audiences. (Om detta inte fungerar måste du skapa ett kundprofilsegment för att kunna aktivera skapandet av målgrupper för konto.)
 
    Om du vill skapa ett segment följer du stegen i [målgruppsdokumentationen](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-audiences/account-audience-overview). Användningen av Segment Builder tillsammans med de datafält som du har identifierat som nyckel för din kontopublik är nyckelaktiviteten när du definierar målgruppen.
 
