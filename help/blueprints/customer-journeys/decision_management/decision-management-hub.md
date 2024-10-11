@@ -3,10 +3,10 @@ title: Beslutshantering om navplanen
 description: Leverera personaliserade erbjudanden till konsumenter i alla kanaler, inklusive kioskdatorer, agentstödda upplevelser och i e-postmeddelanden och andra utgående leveranser.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -39,23 +39,9 @@ Om du vill veta mer om beslutshantering för Edge kan du läsa [beslutshantering
 >
 >För erbjudanden och resor krävs åtkomst till profilen för ytterligare information och sammanhang. Det är viktigt att ta hänsyn till den fördröjning det tar att hämta in data till en profil på navet för att se till att informationen är tillgänglig vid beslut. För scenarier där sammanhanget strömmas eller importeras till en profil och där erbjudandet eller resan måste ha det sammanhanget tillgängligt inom några sekunder eller minuter efter erbjudandebeslutet, är dessa scenarier bäst lämpade för beslutshantering på Edge.
 
-<br>
-
 ## Arkitektur
 
 <img src="../assets/offers_hub.svg" alt="Referensarkitekturbeslutshantering i den främsta planen" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
-
-## Förutsättningar
-
-Adobe Experience Platform
-
-* Scheman och datauppsättningar måste konfigureras i systemet innan du kan konfigurera Journey Optimizer-datakällor
-* För Experience Event-klassbaserade scheman lägger du till fältgruppen &#39;Orchestration eventID&#39; när du vill att en händelse som inte är en regelbaserad händelse ska aktiveras
-* För enskilda profilklassbaserade scheman lägger du till fältgruppen Profiltestinformation för att kunna läsa in testprofiler som ska användas med Journey Optimizer
-
-<br>
 
 ## Skyddsräcken
 
@@ -70,30 +56,6 @@ Adobe Experience Platform
 * För server-API-baserad implementering av beslutshantering använder du [besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
 * Använd [API:t för gruppbeslut](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html) om du vill implementera batchbaserade beslut för att leverera erbjudanden i grupp till ett meddelandeleveransprogram.
 * För Edge-baserade realtidsupplevelser använder du Web/Mobile SDK eller Edge Decisioning API så som beskrivs i [Beslutshanteringen för Edge-planen](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en).
-<br>
-
-## Implementeringssteg
-
-### Adobe Experience Platform
-
-#### Schema/datauppsättningar
-
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
-1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform i datauppsättningen för styrning.
-1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som framtvingar styrning på mål.
-
-#### Profil/identitet
-
-1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Lägg till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ställ in sammanslagningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
-1. Skapa segment för reseanvändning.
-
-#### Källor/destinationer
-
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med hjälp av direktuppspelnings-API:er och källanslutningar.
 
 ## Relaterad dokumentation
 

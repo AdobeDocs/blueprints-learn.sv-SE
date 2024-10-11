@@ -3,9 +3,9 @@ title: Beslutsledningsplaner
 description: Leverera personaliserade erbjudanden på alla kundresor.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 0%
 # Journey Optimizer - Beslutsledningsplaner
 
 Mer information om beslutshantering finns i [produktdokumentationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+
+Se följande dokumentation för skyddsförslag avseende beslutsförvaltning. [Beslutshanteringsriktlinjer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
@@ -42,8 +44,6 @@ Det första är via Adobe Experience Platform nav, som är en central datacenter
 
 ### Beslutsledning om tekniska överväganden
 
-* Begäranden per sekund = 2000.
-* Svarstid &lt; 500 ms.
 * Tillgång till en fullständig kundprofil i realtid, inklusive målgruppsmedlemskap, attribut och upplevelsehändelser.
 
 ## Beslutsfattare i utkanten
@@ -57,10 +57,7 @@ Den andra metoden är via upplevelsen [!DNL Edge Network], som är en globalt di
 
 ### Beslutsfattare om de tekniska aspekterna
 
-* Begäranden per sekund = 5000.
-* Svarstid &lt; 250 ms.
 * Tillgång till Edge-realtidsprofil. Endast kantprojicerade målgrupper och profilattribut är tillgängliga i profilen.
-* Om personalisering krävs i förstagångsupplevelser kommer navet att vara idealiskt eftersom den fullständiga profilen är tillgänglig. Kantprofilen måste synkroniseras från navet för första gången. Den allra första upplevelsen från kanten kommer därför inte att inkludera tidigare överförda profildata till navet.
 
 ## Relaterad dokumentation
 
