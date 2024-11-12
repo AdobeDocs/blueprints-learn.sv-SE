@@ -2,7 +2,8 @@
 title: Köpa en gruppbaserad plan för marknadsföring och resehantering
 description: Lär dig att hitta, designa och bygga en resa som berättigar till köp i Adobe Journey Optimizer B2B edition.
 solution: Journey Optimizer B2B Edition
-source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
+exl-id: 0a9da49c-f13a-4f2a-8407-277def2db591
+source-git-commit: b777ea5c301fb1fac39bc243b09a02a2f411f40e
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Köpgrupper representerar en grupp personer på företaget som är intresserade 
 Tack vare de förbättrade B2B-funktionerna i Journey Optimizer B2B edition kan du nu ta itu med följande problem:
 
 * Det saknas _marknadsföringskampanjer som sätter kunden först_.
-* Inkonsekvent konvertering av marknadsföringskvalificerat lead (MQL) till säljkvalificerat lead (SQL), vilket kräver att initiativen anpassas till försäljningen för att vårda MQL
+* Inkonsekvent konvertering av marknadsföringskvalificerad lead (MQL) till Sales Qualified Lead (SQL), vilket kräver att initiativen anpassas till försäljningen för att vårda MQL
 * Det saknas en säljbar mekanism för att identifiera och ha _fullständiga_-konton som mål.
 * Koncentrationsrisk i intäkter och pipeline.
 
