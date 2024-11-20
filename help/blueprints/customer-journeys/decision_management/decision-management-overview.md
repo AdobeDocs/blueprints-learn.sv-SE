@@ -3,9 +3,9 @@ title: Beslutsledningsplaner
 description: Leverera personaliserade erbjudanden på alla kundresor.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
+source-git-commit: e6ac3607ea3909acf921125cc5f8fd44c0b3e0f6
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Beslutshanteringen kan användas på ett av två sätt, på kanten eller via nav
 
 ## Beslutshantering på navet
 
-Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. I naverbjudanden körs, personaliseras och levereras med en fördröjning på över 500 ms. Hub-arkitekturen är därför bäst lämpad för kundupplevelser som inte kräver sekundär fördröjning. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden, SMS-meddelanden eller push-meddelanden och andra utgående kampanjer drivs också av navmetoden. Mer information om beslutshantering för navet finns i [beslutshanteringen för navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en).
+Det första är via Adobe Experience Platform nav, som är en central datacenterarkitektur. Hubbarkitekturen är bäst lämpad för kundupplevelser som inte kräver låg latens och hög genomströmning, men som kräver en mer detaljerad bild av kundprofilen. Exempel på sådana är erbjudandebeslut som ges för kioskdatorer eller agentassisterade upplevelser som callcenters eller personliga interaktioner. Erbjudanden som infogas i e-postmeddelanden, SMS-meddelanden eller push-meddelanden och andra utgående kampanjer drivs också av navmetoden. Mer information om beslutshantering för navet finns i [beslutshanteringen för navet](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en).
 
 * Erbjudandets behörighet kan fungera mot kundprofilen i realtid, inklusive alla attribut och upplevelsehändelser
 
