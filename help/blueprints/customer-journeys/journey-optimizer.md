@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Journey Optimizer] - Utlöst meddelanden och Adobe Experience Platform Blueprint"
+title: '[!DNL Journey Optimizer] - utlöst meddelanden och Adobe Experience Platform Blueprint'
 description: Kör utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878

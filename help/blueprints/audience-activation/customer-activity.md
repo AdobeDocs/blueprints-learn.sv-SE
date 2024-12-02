@@ -1,6 +1,6 @@
 ---
 title: Kundaktivitetshubbskiss
-description: "[!UICONTROL Kundprofil i realtid] söker efter kontext för agentassisterad support och försäljning."
+description: '[!UICONTROL Kundprofil ] i realtid söker efter kontext för agentassisterad support och försäljning.'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
