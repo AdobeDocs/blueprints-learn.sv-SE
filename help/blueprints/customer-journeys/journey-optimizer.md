@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] - utlöst meddelanden och Adobe Experience Plat
 description: Kör utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
+source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -66,7 +66,7 @@ Mobilpush:
 
 ## Skyddsräcken
 
-[[!DNL Journey Optimizer] Produktlänk för säkerhetsutkast](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
+[[!DNL Journey Optimizer] Produktlänk för säkerhetsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
 [Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
