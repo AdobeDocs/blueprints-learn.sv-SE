@@ -7,10 +7,10 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 845655a275cdb6d4a9cd397ec7c3515cbf02d321
+source-git-commit: 0d65ac8bcc8647683b6361a293d8c941869cd6b5
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 4%
+source-wordcount: '1130'
+ht-degree: 3%
 
 ---
 
@@ -22,29 +22,38 @@ ht-degree: 4%
 * Online-personalisering med kända kunddata
 * Optimering av landningssidor
 * Personalization som bygger på tidigare produktions-/innehållsvyer, tillhörighet mellan produkt och innehåll, miljöattribut och demografiska data utöver offlinedata som transaktioner, lojalitet och CRM-data samt modellerade insikter
-* Dela och inrikta er på målgrupper som definieras i Real-time Customer Data Platform på webbplatser och mobilappar med Adobe Target.
+* Dela och inrikta er på målgrupper som definieras i kunddataplattformen i realtid på webbplatser och mobilappar med hjälp av Adobe Target eller Adobe Journey Optimizer Decisioning.
 
 ## Tillämpningar
 
-* [!UICONTROL Real-time Customer Data Platform]
+* [!UICONTROL Kunddataplattform i realtid]
 * Adobe Target
+* Adobe Journey Optimizer Decisioning
 * Adobe Audience Manager (valfritt): Lägger till målgruppsdata från tredje part
-* Adobe Analytics eller Customer Journey Analytics (valfritt): Lägger till möjligheten att skapa segment baserat på historiska kund- och beteendedata med detaljerad segmentering
+* Adobe Analytics eller Customer Journey Analytics (valfritt): ger möjlighet att skapa segment som baseras på historiska kund- och beteendedata med detaljerad segmentering
 
 ### Referensdokumentation
 
-* [Adobe Target Connection för Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [Adobe Target Connection för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [Adobe Journey Optimizer Decisioning](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/gs-decision)
 * [Edge-dataströmskonfiguration](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
-* [Experience Platform-segmentdelning med Audience Manager och andra Experience Cloud-lösningar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html)
+* [Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html)
 
+## Metoder
+
+En metod för känd kundpersonalisering på webben/i mobilen är att integrera kunddataplattformen i realtid med Adobe Target. Nedan följer en detaljerad beskrivning av hur kunddataplattformen i realtid kan integreras för att stärka en känd kundpersonalisering med Adobe Target.
+
+Kundanpassning på webb- och mobilnivå kan också implementeras med Adobe Journey Optimizer Decisioning, som använder Experience Platform kundprofil och segmentering i realtid. Se [Adobe Journey Optimizer-handboken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) där [Kodbaserade upplevelser](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based-experience/get-started-code-based) eller [Webbkanalsupplevelser](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web) kan användas.
+
+Arkitekturskisser finns också i och i [Journey Optimizer Blueprint](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer) och [Journey Optimizer Decisioning Blueprint](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview) .
 
 ## Integreringsmönster
 
 | Integreringsmönster | Funktion | Krav |
-|---|---|---|
-| Utvärdering av segment i realtid i Edge som delas från Real-time Customer Data Platform till Target | <ul><li>Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge.</li><li>Dessutom projiceras alla segment som utvärderas i strömning eller batchmode även till [!DNL Edge Network] som ska inkluderas i kantsegmentsutvärderingen och personaliseringen.</li></ul> | <ul><li>Web/Mobile SDK måste implementeras för Server-API:t [!DNL Edge Network]</li><li>Datastream måste konfigureras i Experience Edge med tillägget Target och Experience Platform aktiverat</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
-| Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target via Edge | <ul><li>Dela strömnings- och gruppmålgrupper från Real-time Customer Data Platform till Target via [!DNL Edge Network]. Publiker som utvärderats i realtid kräver Web SDK och implementering av [!DNL Edge Network].</li></ul> | <ul><li>Web/Mobile SDK eller Edge API-implementering av Target krävs inte för delning av RTCDP-målgrupper för direktuppspelning och batch till Target, även om det krävs för att aktivera den realtidsutvärdering av edge segment som beskrivs ovan.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet i identitetskartan.</li><li>Måldestinationen måste konfigureras i Real-time Customer Data Platform Destinations. Endast standardproduktionssandlådan i RTCDP stöds.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li></ul> |
-| Direktuppspelning och batchvis målgruppsdelning från Real-time Customer Data Platform till Target och Audience Manager via Audience Sharing Service | <ul><li>Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas.</li></ul> | <ul><li>Web/Mobile SDK krävs inte för delning av strömnings- och gruppmålgrupper till Target, men det krävs för att aktivera realtidsutvärdering av edge segment.</li><li>Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnutrymmet.</li><li>För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet i identitetskartan.</li><li>Målgruppsprojektion via målgruppsdelningstjänsten måste tillhandahållas.</li><li>Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen.</li><li>Det är bara målgrupper från standardproduktionssandlådan som har stöd för målgruppsdelning.</li></ul> |
+|--------------------|------------|---------------|
+| **Utvärdering av segment i realtid på Edge som delas från kunddataplattform i realtid till mål** | - Utvärdera målgrupper i realtid för samma eller nästa sidpersonalisering på Edge. <br> - Alla segment som utvärderas i strömning eller gruppvis läge projiceras också för Edge Network för att inkluderas i kantsegmentsutvärderingen och personaliseringen. | - Web/Mobile SDK måste implementeras för Edge Network Server API. <br>- Datastream måste konfigureras i Experience Edge med Target- och Experience Platform-tillägget aktiverat. <br>- Målmålet måste konfigureras i kunddataplattformsmål i realtid. <br> - Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen. |
+| **Direktuppspelning och gruppmålgruppsdelning från kunddataplattformen i realtid till Target via Edge** | - Dela direktuppspelnings- och gruppmålgrupper från Customer Data Platform i realtid till Target via Edge Network. <br>- Målgrupper utvärderade i realtid kräver implementeringen av Web SDK och Edge Network. | - API-implementering av SDK för webb/mobiler eller Edge för Target krävs inte för delning av RTCDP-målgrupper och batch-RTCDP-målgrupper till Target, men krävs för att aktivera edge segment-utvärdering i realtid. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnområdet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet på identitetskartan. <br>- Målmålet måste konfigureras i kunddataplatsens mål i realtid. Endast standardproduktionssandlådan i RTCDP stöds. <br> - Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen. |
+| **Direktuppspelning och batchdelning av målgrupper från kunddataplattformen i realtid till målgruppen och Audience Manager via Audience Sharing Service** | - Det här integreringsmönstret kan utnyttjas när ytterligare berikning från data från tredje part och målgrupper i Audience Manager önskas. | - Web/Mobile SDK krävs inte för att dela direktuppspelnings- och gruppmålgrupper med Target, men krävs för att aktivera realtidsutvärdering av edge segment. <br>- Om AT.js används stöds bara profilintegrering mot ECID-identitetsnamnområdet. <br>- För anpassade namnområdessökningar för identiteter på Edge krävs Web SDK/Edge API-distributionen och varje identitet måste anges som en identitet på identitetskartan. <br> - Målgruppsprojektion via målgruppsdelningstjänsten måste etableras. <br> - Integrering med Target kräver samma IMS-organisation som Experience Platform-instansen. <br> - Endast målgrupper från standardproduktionssandlådan har stöd för målgruppsdelningens bastjänst. |
 
 ## Realtids-, strömnings- och batchmålgruppsdelning till Adobe Target
 
@@ -66,35 +75,35 @@ Kunden Personalization stöds via flera olika implementeringsmetoder.
 
 ### Implementeringsmönster 1 - [!DNL Edge Network] med Web/Mobile SDK eller [!DNL Edge Network] API (rekommenderat tillvägagångssätt)
 
-* Använder [!DNL Edge Network] med webb-/mobil-SDK. Kantsegmentering i realtid kräver implementeringsmetoden för Web/Mobile SDK eller Edge API.
-* [Gå till Experience Platform Web och Mobile SDK Blueprint](../../experience-platform/deployment/websdk.md) för den SDK-baserade implementeringen.
-* För användning i Mobile SDK måste tillägget [Adobe Journey Optimizer - Decisioning](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) vara installerat i Mobile SDK.
+* Använda [!DNL Edge Network] med SDK för webb/mobil. Kantsegmentering i realtid kräver implementeringsmetoden för SDK/Mobile eller Edge.
+* [Se Experience Platform Web and Mobile SDK Blueprint](../../experience-platform/deployment/websdk.md) för den SDK-baserade implementeringen.
+* För användning i Mobile SDK måste tillägget [Adobe Journey Optimizer - Decisioning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/) vara installerat.
 * [Se  [!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
 ### Implementeringsmönster 2 - Programspecifika SDK:er
 
-Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Direktuppspelning och gruppmålgruppsdelning från Experience Platform nav stöds dock med den här implementeringsmetoden.
+Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Däremot stöds direktuppspelning och gruppmålgruppsdelning från Experience Platform nav med den här implementeringsmetoden.
 
 [Läs Adobe Target Connector Documentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
-[Se programspecifik SDK-skiss ](../../experience-platform/deployment/appsdk.md)
+[Se programspecifika SDK Blueprint](../../experience-platform/deployment/appsdk.md)
 
 ## Implementeringsöverväganden
 
-Identitetskrav
-
-* Alla primära identiteter kan utnyttjas när implementeringsmönster 1 används som beskrivs ovan med [!DNL Edge Network] och Web SDK. Personalisering vid första inloggning kräver att personaliseringsbegäran anger en primär identitet som matchar den primära identiteten för profilen från Real-time Customer Data Platform.
+* Alla primära identiteter kan utnyttjas när implementeringsmönster 1 används som beskrivs ovan med [!DNL Edge Network] och Web SDK.
+* Personalisering av första inloggningen med kända kunddata som tidigare importerats till RTCDP kräver att personaliseringsbegäran har en primär identitet som matchar det kända kundidentitetsdiagrammet i kunddataplattformen i realtid. Om det primära ID:t är ECID eller en identitet som ännu inte har sytts ihop med den kända kundprofilen, tar det flera minuter för identitetssammanställningen att realiseras på kanten och för kantanpassning att inkludera tidigare inmatade kända kunddata.
+* Edge-profiler har för närvarande 14 dagars TTL. Om en användare inte har loggat in eller varit aktiv på 14 dagar på kanten kan profilen på kanten därför ha gått ut, och kanten måste därför hämta profilen från navet för att få en historisk profilvy för att möjliggöra personalisering, som inkluderar tidigare inmatade profilattribut och segment, kommer detta att leda till personalisering med den historiska vyn över profiler som ska visas på efterföljande sidvisningar jämfört med den första inloggningen.
 
 ## Relaterad dokumentation
 
 ### SDK-dokumentation
 
 * [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
-* [Experience Platform Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
+* [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
 * [Experience Cloud ID-tjänstdokumentation](https://experienceleague.adobe.com/docs/id-service/using/home.html)
 
 ### Segmenteringsdokumentation
 
-* [Segmenteringsöversikt för Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
+* [Experience Platform segmenteringsöversikt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
 * [Segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html)
 * [Strömmande segmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Adobe Analytics segmentdelning via Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
@@ -103,12 +112,3 @@ Identitetskrav
 ### Självstudiekurser
 
 * [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
-
-### Relaterade blogginlägg
-
-* [Adobe presenterar samma sida Förbättrad Personalization med Adobe Target och Real-time Customer Data Platform](https://blog.adobe.com/en/publish/2021/10/05/adobe-announces-same-page-enhanced-personalization-with-adobe-target-real-time-customer-data-platform)
-* [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
-* [[!DNL Adobe Experience Platform's Identity Service — How to Solve the Customer Identity Conundrum]](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
-* [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
-* [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our "Customer Zero" Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
-* [[!DNL Segmentation in Seconds: How Adobe Experience Platform Made Real-time Customer Profiles a Reality]](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
