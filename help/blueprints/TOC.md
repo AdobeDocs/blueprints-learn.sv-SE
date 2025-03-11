@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: de447727048098ecc0bf8598fe3bca386779f543
+source-git-commit: ec6778d0b3cd37442be2731cafba26388e4355ea
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 19%
@@ -30,8 +30,8 @@ ht-degree: 19%
       + [Aktivering i sociala kanaler och annonskanaler](/help/blueprints/audience-activation/advertising-activation.md)
       + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Kundaktivitetsnav](/help/blueprints/audience-activation/customer-activity.md)
-      + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
       + [Target &amp; RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
+      + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
