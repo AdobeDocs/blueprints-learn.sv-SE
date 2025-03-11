@@ -5,7 +5,7 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ec6778d0b3cd37442be2731cafba26388e4355ea
+source-git-commit: bb3d3ec11809dceb9ecf46561b608e22bff855b9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 19%
@@ -25,13 +25,13 @@ ht-degree: 19%
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Skyddsräcken](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
-   + [Audience Manager](/help/blueprints/audience-activation/audience_manager.md)
+   + [Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
    + Real-time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
       + [Aktivering i sociala kanaler och annonskanaler](/help/blueprints/audience-activation/advertising-activation.md)
       + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Kundaktivitetsnav](/help/blueprints/audience-activation/customer-activity.md)
-      + [Target &amp; RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
       + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
+      + [Target &amp; RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
