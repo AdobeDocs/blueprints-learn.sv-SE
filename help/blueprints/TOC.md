@@ -5,9 +5,9 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 613c22fd6882144515bd91da64bb305be98dccf3
+source-git-commit: 616f2ba96d18b682d92e58dc06ae1b61a6c46ab4
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '204'
 ht-degree: 20%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 20%
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Skyddsräcken](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
-   + [Översikt](/help/blueprints/audience-activation/overview.md)
    + [Audience Manager](/help/blueprints/audience-activation/AAM.md)
    + Real-time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
       + [Översikt](/help/blueprints/audience-activation/known.md)
