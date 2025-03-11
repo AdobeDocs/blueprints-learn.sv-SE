@@ -7,7 +7,7 @@ solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 613c22fd6882144515bd91da64bb305be98dccf3
+source-git-commit: de447727048098ecc0bf8598fe3bca386779f543
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Kunden Personalization stöds via flera olika implementeringsmetoder.
 ### Implementeringsmönster 1 - [!DNL Edge Network] med Web/Mobile SDK eller [!DNL Edge Network] API (rekommenderat tillvägagångssätt)
 
 * Använda [!DNL Edge Network] med SDK för webb/mobil. Kantsegmentering i realtid kräver implementeringsmetoden för SDK/Mobile eller Edge.
-* [Se Experience Platform Web and Mobile SDK Blueprint](../../experience-platform/deployment/websdk.md) för den SDK-baserade implementeringen.
+* [Se Experience Platform Web and Mobile SDK Blueprint](../experience-platform/deployment/websdk.md) för den SDK-baserade implementeringen.
 * För användning i Mobile SDK måste tillägget [Adobe Journey Optimizer - Decisioning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/) vara installerat.
 * [Se  [!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
@@ -72,7 +72,7 @@ Kunden Personalization stöds via flera olika implementeringsmetoder.
 Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Däremot stöds direktuppspelning och gruppmålgruppsdelning från Experience Platform nav med den här implementeringsmetoden.
 
 [Läs Adobe Target Connector Documentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
-[Se programspecifika SDK Blueprint](../../experience-platform/deployment/appsdk.md)
+[Se programspecifika SDK Blueprint](../experience-platform/deployment/appsdk.md)
 
 ## Implementeringsöverväganden
 
