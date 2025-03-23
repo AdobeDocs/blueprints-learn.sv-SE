@@ -1,9 +1,10 @@
 ---
 title: Journey Optimizer med Adobe Campaign v8-plan
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
-solution: Journey Optimizer, Campaign, Campaign v8 Client Console
+solution: Journey Optimizer, Campaign, Campaign v8, Campaign v8 Client Console
+version: Campaign v8, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
+source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 # Journey Optimizer med Adobe Campaign v8-plan
 
-Visar hur Adobe [!DNL Journey Optimizer] kan användas med Adobe [!DNL Campaign] för att skicka meddelanden internt genom att använda meddelandeservern i realtid i [!DNL Campaign].
+Visar hur Adobe [!DNL Journey Optimizer] kan användas med Adobe [!DNL Campaign] för att skicka meddelanden internt med hjälp av meddelandeservern i [!DNL Campaign].
 
 ## Arkitektur
 
@@ -34,7 +35,7 @@ Granska följande krav för varje program.
 
 ### Campaign v8
 
-* Körningsinstansen av meddelandetjänsten i realtid (dvs. meddelandecentret) måste vara värd för Cloud Service som hanteras av Adobe
+* Körningsinstansen av meddelandetjänsten i realtid (dvs. meddelandecentret) måste vara värd för Adobe Managed Cloud Services
 * All meddelanderedigering görs i själva Campaign-instansen
 
 ## Skyddsräcken
@@ -51,7 +52,7 @@ Följ implementeringarna för varje program som beskrivs nedan.
 
 #### Schema/datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden tillhandahållit.
 1. (Valfritt) Skapa Experience Event-klassbaserade scheman för adresstabellerna Adobe Campaign broadLog, trackingLog och non-deliverable.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
 1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform i datauppsättningen för styrning.
@@ -84,7 +85,7 @@ Följ implementeringarna för varje program som beskrivs nedan.
 ### Mobil push-konfiguration (valfritt)
 
 1. Implementera [!DNL Experience Platform] Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler.
-1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
+1. Utnyttja Adobe Tags och skapa en mobil egenskap med följande tillägg:
    * Adobe [!DNL Journey Optimizer] | Adobe [!DNL Campaign Classic] | Adobe [!DNL Campaign Standard]
    * Adobe [!DNL Experience Platform] [!DNL Edge Network]
    * Identitet för [!DNL Edge Network]
@@ -93,7 +94,7 @@ Följ implementeringarna för varje program som beskrivs nedan.
 1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
 
    >[!IMPORTANT]
-   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
+   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK enbart används för att hämta push-tokens.
 
 ## Relaterad dokumentation
 
