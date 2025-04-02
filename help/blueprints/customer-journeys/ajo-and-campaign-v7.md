@@ -3,7 +3,7 @@ title: Journey Optimizer med Adobe Campaign v7-ritning
 description: Visar hur Adobe Journey Optimizer kan användas med Adobe Campaign för att skicka meddelanden internt genom att använda meddelandeservern i Campaign
 solution: Journey Optimizer, Campaign, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
+source-git-commit: 7547cdc57e50d63f4a7949c00a77b82c86da831e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 ### Campaign v7
 
-* Körningsinstansen av meddelandetjänsten i realtid (dvs. meddelandecentret) måste vara värd för Cloud Service som hanteras av Adobe
+* Körningsinstansen av meddelandetjänsten i realtid (dvs. meddelandecentret) måste vara värd för Adobe Managed Cloud Services
 * All meddelanderedigering görs i själva Campaign-instansen
 
 <br>
@@ -53,7 +53,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 #### Schema/datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden tillhandahållit.
 1. Skapa Experience Event-klassbaserade scheman för tabeller med adresser i Adobe Campaign brushlog, trackingLog och icke-levererbara adresser (valfritt).
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
 1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform i datauppsättningen för styrning.
@@ -69,7 +69,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 #### Källor/destinationer
 
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med hjälp av direktuppspelnings-API:er och källanslutningar.
+1. [Importera data till Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med direktuppspelnings-API:er och källanslutningar.
 
 ### Journey Optimizer
 
@@ -85,16 +85,16 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 ### Mobil push-konfiguration (valfritt)
 
 1. Implementera Experience Platform Mobile SDK för att samla in push-tokens och inloggningsinformation för att koppla tillbaka till kända kundprofiler
-1. Utnyttja Adobe-taggar och skapa en mobil egenskap med följande tillägg:
+1. Utnyttja Adobe Tags och skapa en mobil egenskap med följande tillägg:
    * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
    * Adobe Experience Platform [!DNL Edge Network]
    * Identitet för [!DNL Edge Network]
    * Mobile Core
 1. Se till att du har en dedikerad datastam för mobilappsdistributioner jämfört med webbdistributioner
-1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+1. Mer information finns i [Adobe Journey Optimizer Mobile Guide](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/)
 
    >[!IMPORTANT]
-   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK endast används för att hämta push-tokens.
+   >Mobila tokens kan behöva samlas in i både Journey Optimizer och Campaign om man vill skicka realtidskommunikation via Journey Optimizer och batchpush-meddelanden via Campaign. Campaign v8 kräver att Campaign SDK enbart används för att hämta push-tokens.
 
 <br>
 
