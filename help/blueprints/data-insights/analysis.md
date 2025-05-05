@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Dataanalys och intelligens omfattar möjligheten inom [!DNL Experience Platform] att utföra experimentell fråga och analys av data som finns i sjön.
 
-[!UICONTROL Frågetjänsten ] för [!DNL Experience Platform] tillåter att SQL-frågor utförs på data.
+[!UICONTROL Frågetjänsten &#x200B;] för [!DNL Experience Platform] tillåter att SQL-frågor utförs på data.
 
 [!DNL Experience Platform] tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part att ansluta direkt till, komma åt och fråga data i [!DNL Experience Platform] med protokollet [!DNL PostgreSQL].
 

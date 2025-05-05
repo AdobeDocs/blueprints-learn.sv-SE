@@ -68,11 +68,11 @@ Den kontofokuserade lösningen kräver följande program och tjänster:
 >
 >Licenser för Journey Optimizer B2B edition ska omfatta följande:
 ><ul><li>Journey Optimizer B2B edition-instans som är ansluten till Experience Platform B2B</li><li>Marketo Engage-instans som synkroniseras till RTCDP</li></ul>
-&gt;<br/>
-&gt;För befintliga Marketo Engage-kunder rekommenderas en anslutning till den befintliga instansen.
-&gt;<br/><br/>
-&gt;Det finns ytterligare tillägg för lösningen för att förbättra profilrikedomen:
-&gt;<ul><li>Ytterligare källor till RTCDP för att utöka profilen</li><li>RTCDP-mål till Marketo Engage</li></ul>
+>&gt;<br/>
+>&gt;För befintliga Marketo Engage-kunder rekommenderas en anslutning till den befintliga instansen.
+>&gt;<br/><br/>
+>&gt;Det finns ytterligare tillägg för lösningen för att förbättra profilrikedomen:
+>&gt;<ul><li>Ytterligare källor till RTCDP för att utöka profilen</li><li>RTCDP-mål till Marketo Engage</li></ul>
 
 Implementeringen av den här lösningen kräver också en tydlig förståelse för konceptet _Konto_ och _Köpgrupp_ och hur de förstärker och snabbar upp kvalificeringen av säljleads. Med den här förståelsen måste du också identifiera önskat poängvärde för slutförande av inköpsgrupper.
 
