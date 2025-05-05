@@ -40,9 +40,9 @@ I följande avsnitt beskrivs skyddsutkast för den här integreringen.
 
 ### Real-time Customer Data Platform segmentdelning
 
-* Se RTCDP [!DNL Campaign]-målkopplingen - [RTCDP-kampanjanslutning](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html)
+* Se RTCDP [!DNL Campaign]-målkopplingen - [RTCDP-kampanjanslutning](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=sv-SE)
 
-* Se [Standardskyddsutkast för [!DNL Real-Time Customer Profile Data] och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* Se [Standardskyddsutkast för [!DNL Real-Time Customer Profile Data] och segmentering](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
 
 ## Implementeringssteg
 
@@ -52,25 +52,25 @@ I följande avsnitt beskrivs implementeringsstegen för respektive program.
 
 #### Schema/datauppsättningar
 
-1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
+1. [Konfigurera enskilda profiler, upplevelsehändelser och scheman för flera entiteter](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2021.1.xdm) i Experience Platform utifrån data som kunden har angett.
 1. Skapa Adobe [!DNL Campaign]-scheman för widthLog, trackingLog, adresser som inte kan levereras och profilinställningar (valfritt).
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) i Experience Platform för data som ska importeras.
-1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) i Experience Platform i datauppsättningen för styrning.
-1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html) som framtvingar styrning på mål.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=sv-SE) i Experience Platform för data som ska importeras.
+1. [Lägg till dataanvändningsetiketter](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=sv-SE) i Experience Platform i datauppsättningen för styrning.
+1. [Skapa profiler](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=sv-SE) som framtvingar styrning på mål.
 
 #### Profil/identitet
 
-1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Lägg till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Ställ in sammanslagningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
+1. [Skapa alla kundspecifika namnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=sv-SE).
+1. [Lägg till identiteter i scheman](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=sv-SE).
+1. [Aktivera scheman och datauppsättningar för profilen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=sv-SE).
+1. [Ställ in sammanslagningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=sv-SE) för olika vyer av [!UICONTROL Kundprofil i realtid] (valfritt).
 1. Skapa segment för användning i Adobe [!DNL Campaign].
 
 #### Källor/destinationer
 
-1. [Experience Platform och [!DNL Campaign] Standardkällor och -destinationer](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html)
-1. [Experience Platform och [!DNL Campaign] v7 Källor och dekorationer](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html)
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med hjälp av direktuppspelnings-API:er och källanslutningar.
+1. [Experience Platform och [!DNL Campaign] Standardkällor och -destinationer](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=sv-SE)
+1. [Experience Platform och [!DNL Campaign] v7 Källor och dekorationer](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=sv-SE)
+1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2020.1.dataingestion) med hjälp av direktuppspelnings-API:er och källanslutningar.
 1. Konfigurera [!DNL Azure]-blobblagringsmålet för användning med Adobe [!DNL Campaign].
 
 #### Adobe [!DNL Campaign]
@@ -110,8 +110,8 @@ I följande avsnitt beskrivs implementeringsstegen för respektive program.
 
 ## Relaterad dokumentation
 
-* [Adobe [!DNL Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
-* [[!DNL Campaign Classic] dokumentation](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [[!DNL Campaign Standard] dokumentation](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
-* [[!DNL Experience Platform] Starta dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
-* [[!DNL Experience Platform] Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
+* [Adobe [!DNL Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
+* [[!DNL Campaign Classic] dokumentation](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=sv-SE)
+* [[!DNL Campaign Standard] dokumentation](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=sv-SE)
+* [[!DNL Experience Platform] Starta dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=sv-SE)
+* [[!DNL Experience Platform] Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)

@@ -28,7 +28,7 @@ Den levereras också tillsammans med en skalbar meddelandeserver i realtid som g
 
 ## Arkitekturdiagram
 
-Läs mer om [Campaign v8-distributionsmodeller](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}.
+Läs mer om [Campaign v8-distributionsmodeller](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html?lang=sv-SE#ac-deployment){target="_blank"}.
 
 ### Driftsättning av kampanjföretag (FFDA)
 
@@ -88,7 +88,7 @@ Skyddskassorna beskrivs nedan.
    * Stöd för inläsning av API-data är främst avsett för hantering av profiler eller enkla objekt i databasen (d.v.s. skapa och uppdatera). Den är inte avsedd att användas för att läsa in stora datavolymer eller batchliknande åtgärder.
    * Det går inte att använda API:er för att läsa data för anpassade programsyften
    * Data som läses in via API mellanlagras i programdatabasen och replikeras sedan varje timme till molndatabasen
-* Begränsningar för API-anrop gäller. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+* Begränsningar för API-anrop gäller. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 ### Storlek på batchmeddelandeserver
 
@@ -110,11 +110,11 @@ Skyddskassorna beskrivs nedan.
 
 ## Implementeringssteg
 
-Se guiden Komma igång för [Implementera Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=en)
+Se guiden Komma igång för [Implementera Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=sv-SE)
 
 ## Relaterad dokumentation
 
-* [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign-v8.html)
-* [Produktbeskrivning för Campaign v8](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/launch.html)
-* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html)
+* [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=sv-SE)
+* [Produktbeskrivning för Campaign v8](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=sv-SE)
+* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)

@@ -21,7 +21,7 @@ Garantierna speglar systembegränsningar, förväntade latenser och prestandafö
 | Typ av skyddsräcke | Beskrivning |
 |---|---|
 | Prestandaskydd (mjuk gräns) | Prestandaskydd är användarbegränsningar som relaterar till omfattningen av dina användningsfall och ger en översikt över förväntade prestanda under normala förhållanden. Om det överskrids kan prestandan försämras och fördröjning uppstå. Prestandaskydd finns dokumenterade i Experience League-dokumenten under respektive lösnings skyddsavsnitt enligt nedan. |
-| Statisk gräns (hård gräns) | Det här är begränsningar som framtvingas av systemet och som inte kan överskridas. Statiska begränsningar är vanligtvis bundna och anges i kundkontraktet och i [produktbeskrivningarna](https://helpx.adobe.com/legal/product-descriptions.html). |
+| Statisk gräns (hård gräns) | Det här är begränsningar som framtvingas av systemet och som inte kan överskridas. Statiska begränsningar är vanligtvis bundna och anges i kundkontraktet och i [produktbeskrivningarna](https://helpx.adobe.com/se/legal/product-descriptions.html). |
 
 >[!NOTE]
 >
@@ -37,19 +37,19 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 
 **Experience Platform-program**
 
-* [Översikt över Real-Time CDP-skyddsutkast](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Customer Journey Analytics för målgruppsdelning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
-* [Skyddsguider för dataöverföring i Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
+* [Översikt över Real-Time CDP-skyddsutkast](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html?lang=sv-SE)
+* [Customer Journey Analytics för målgruppsdelning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=sv-SE#latency)
+* [Skyddsguider för dataöverföring i Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=sv-SE)
 
 **Experience Platform-tjänster**
 
-* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [[!DNL Edge Network] API-stödlinjer](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
-* [Kundprofil och segmenteringsguardrutor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
-* [Identitetsgarderobilder](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
-* [Frågeserverstänger](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
-* [Målaktiveringsguider](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
+* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=sv-SE)
+* [[!DNL Edge Network] API-stödlinjer](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=sv-SE)
+* [Kundprofil och segmenteringsguardrutor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+* [Identitetsgarderobilder](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=sv-SE)
+* [Frågeserverstänger](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=sv-SE)
+* [Målaktiveringsguider](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=sv-SE)
 
 ## Latensdiagram från början till slut {#end-to-end-latency}
 
@@ -61,30 +61,30 @@ I följande diagram visas den primära kanten och hubben som observerats för at
 
 ### Intag av data {#data-ingestion}
 
-I diagrammet nedan visas förväntade värden för fördröjning av dataöverföring via [direktuppspelningsuppläsning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html) och [batchförtäring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=en) när data hämtas till Real-Time CDP. Klicka på bilden för att se en högupplöst version.
+I diagrammet nedan visas förväntade värden för fördröjning av dataöverföring via [direktuppspelningsuppläsning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv-SE) och [batchförtäring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=sv-SE) när data hämtas till Real-Time CDP. Klicka på bilden för att se en högupplöst version.
 
 ![Översikt över dataöverföring på hög nivå.](/help/blueprints/experience-platform/deployment/assets/aep_data_flow_guardrails.svg "Värden för visuell överblick och fördröjning på hög nivå för dataöverföring"){width="1000" zoomable="yes"}
 
 ### Segmentering {#segmentation}
 
-Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med målgrupper i [Real-Time CDP segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html). Klicka på bilden för att se en högupplöst version.
+Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med målgrupper i [Real-Time CDP segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE). Klicka på bilden för att se en högupplöst version.
 
 ![Översikt över segmentering på hög nivå.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentering av visuella översikter och latensvärden på hög nivå"){width="1000" zoomable="yes"}
 
 ### Real-time Customer Data Platform &amp; [!DNL Edge Network] {#adobe-edge-latency}
 
-Diagrammet nedan visar förväntade fördröjningsvärden när [!DNL Edge Network] utnyttjas, till exempel för att återanvända RTCDP-målgrupper i [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en). Klicka på bilden för att se en högupplöst version.
+Diagrammet nedan visar förväntade fördröjningsvärden när [!DNL Edge Network] utnyttjas, till exempel för att återanvända RTCDP-målgrupper i [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=sv-SE). Klicka på bilden för att se en högupplöst version.
 
 ![Adobe Edge Network och Experience Platform - en överblick på hög nivå.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "Exporterar målgrupper till Adobe Target visuella översikt och fördröjning på hög nivå"){width="1000" zoomable="yes"}
 
 ### Customer Journey Analytics {#customer-journey-analytics}
 
-Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en). Klicka på bilden för att se en högupplöst version.
+Diagrammet nedan visar förväntade fördröjningsvärden när du arbetar med [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Klicka på bilden för att se en högupplöst version.
 
 ![Arbeta med högnivåvisuell översikt på Customer Journey Analytics.](/help/blueprints/experience-platform/deployment/assets/CJA_guardrails.svg "Arbeta med högnivåvisuella översikter och latensvärden för Customer Journey Analytics"){width="1000" zoomable="yes"}
 
 ### Journey Optimizer {#journey-optimizer}
 
-I diagrammet nedan visas förväntade fördröjningsvärden när du arbetar med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en). Klicka på bilden för att se en högupplöst version.
+I diagrammet nedan visas förväntade fördröjningsvärden när du arbetar med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=sv-SE). Klicka på bilden för att se en högupplöst version.
 
 ![Arbeta med Adobe Journey Optimizer visuella översikt på hög nivå.](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "Arbeta med Adobe Journey Optimizer högnivåvisuella översikter och latensvärden"){width="1000" zoomable="yes"}

@@ -56,7 +56,7 @@ För att göra detta bör du överväga stegen nedan som en del av processen fö
 
 ### Konfigurera ett Workfront-projekt med en uppgift som är klar för granskning {#configure-a-workfront-project-with-a-ready-for-review-task}
 
-Använd [projektmallar](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html){target="_blank"} för att hämta de flesta repeterbara processer, information och inställningar som är associerade med projekten i organisationen. Du kan definiera uppgifter, köämnen, skapa anpassade formulär och bifoga dokument i mallen.
+Använd [projektmallar](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html?lang=sv-SE){target="_blank"} för att hämta de flesta repeterbara processer, information och inställningar som är associerade med projekten i organisationen. Du kan definiera uppgifter, köämnen, skapa anpassade formulär och bifoga dokument i mallen.
 
 I projektmallen i Workfront kan du inkludera uppgifter för att granska resurser som ingår i marknadsföringskampanjen. Dessutom kan du lägga till en godkännandeprocess för att hantera enstaka godkännanden eller mer komplexa godkännanden på flera nivåer.
 
@@ -66,7 +66,7 @@ Om du vill starta en ny e-postkampanj bör du ha en projektmall som innehåller 
 
 ### Utlös din e-post från Marketo Engage för att synkronisera med Workfront med statusändring för uppgifter {#trigger-your-marketo-engage-email-to-sync-to-workfront}
 
-Som en del av granskningsprocessen vill du kunna synkronisera e-postmeddelanden till ditt Workfront-projekt när de är klara för granskning av marknadsföringsteamet. För att göra detta rekommenderar vi att du konfigurerar en aktivitet klar att granska med [aktivitetsstatus](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html){target="_blank"} som anger när e-postmeddelandet är klart att granskas. I vårt exempel har vi lagt till en e-poststatus för Granska Marketo som kan väljas när e-postutkastet är klart att granskas av intressenter.
+Som en del av granskningsprocessen vill du kunna synkronisera e-postmeddelanden till ditt Workfront-projekt när de är klara för granskning av marknadsföringsteamet. För att göra detta rekommenderar vi att du konfigurerar en aktivitet klar att granska med [aktivitetsstatus](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html?lang=sv-SE){target="_blank"} som anger när e-postmeddelandet är klart att granskas. I vårt exempel har vi lagt till en e-poststatus för Granska Marketo som kan väljas när e-postutkastet är klart att granskas av intressenter.
 
 Med den här statusen på plats i ditt Workfront-projekt kan du konfigurera ditt Workfront Fusion-scenario så att det lyssnar efter aktiviteten Klar att granska för att uppdatera till&quot;Granska Marketo-e-post&quot;. När ditt scenario har uppdaterats kan du hämta Marketo Engage-e-postmeddelandet som en HTML-fil, zippa upp det och spara en kopia av det i Workfront projektdokument som ska granskas.
 
@@ -78,7 +78,7 @@ När aktiviteten Redo för granskning har flyttats till statusen&quot;Granska Ma
 
 ### Använd Workfront korrektur för att samarbeta via kommentarer och anteckningar {#use-workfront-proofing-to-collaborate}
 
-[Med Workfront funktioner för korrektur](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} kan marknadsföringsteamet ta en ny resurs, till exempel en bild eller ett e-postmeddelande, och samarbeta via kommentarer och anteckningar. När ett bevis är klart att publiceras kan beslutsfattarna godkänna materialet från korrekturverktyget.
+[Med Workfront funktioner för korrektur](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html?lang=sv-SE){target="_blank"} kan marknadsföringsteamet ta en ny resurs, till exempel en bild eller ett e-postmeddelande, och samarbeta via kommentarer och anteckningar. När ett bevis är klart att publiceras kan beslutsfattarna godkänna materialet från korrekturverktyget.
 
 ![konvertera e-postskärm](assets/review-and-approve-blueprint-3.png){zoomable="yes"}
 

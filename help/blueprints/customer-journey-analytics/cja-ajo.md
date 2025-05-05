@@ -20,7 +20,7 @@ Dessutom kan målgrupper som skapats i Customer Journey Analytics publiceras i k
 
 ## Implementeringsguide
 
-I följande dokumentation finns riktlinjer för implementering och konfigurering av Journey Optimizer-data i Customer Journey Analytics. [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/reports/sharing-overview.html)
+I följande dokumentation finns riktlinjer för implementering och konfigurering av Journey Optimizer-data i Customer Journey Analytics. [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/reports/sharing-overview.html?lang=sv-SE)
 
 ## Arkitektur för Customer Journey Analytics med Journey Optimizer
 

@@ -19,7 +19,7 @@ Med ett kanalbaserat första tillvägagångssätt fungerar varje kanal som en si
 
 | Blueprint | Beskrivning | Experience Cloud-program |
 |---|---|---|
-| **[B2B-analys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
+| **[B2B-analys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=sv-SE)** | <ul><li>Inkludera B2B-kontoinformation i kundreseanalysen</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[B2B Audience Activation](b2bactivation.md)** | <ul><li>Rikta er till B2B-målgrupper över webben, e-post och annonskanaler</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B edition</li></ul> |
 | **[Köpa gruppbaserad marknadsföring och resehantering](/help/blueprints/b2b/b2b-buying-group-journeys.md)** | <ul><li>Utforma och bygg en kontoresa som kvalificerar leads för en inköpsgrupp som ökar marknadsföringsaktivitetens effektivitet när det gäller kvalificerande leads till försäljningsmöjligheter</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B edition</li><li>Adobe Marketo Engage</li></ul> |
 | **[Integreringsutkast för Marketo Engage och Workfront: Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Optimera planering, utveckling och genomförande av B2B-kampanjer</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |

@@ -37,18 +37,18 @@ Visar hur Adobe [!DNL Experience Platform] och dess kundprofil i realtid och cen
 ## Implementeringssteg
 
 Läs följande dokumentation om hur du konfigurerar källkopplingen för Campaign v8 till Adobe Experience Platform och målkopplingen för Real-time Customer Data Platform till Campaign v8.
-[Kampanj- och AEP-anslutningar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=en)
+[Kampanj- och AEP-anslutningar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=sv-SE)
 
 ## Skyddsräcken
 
 ### Adobe Campaign
 
-* Läs dokumentationen för Campaign-källanslutningen - [Campaign Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/campaign.html?lang=en)
+* Läs dokumentationen för Campaign-källanslutningen - [Campaign Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/campaign.html?lang=sv-SE)
 * Stöder endast driftsättning av enskilda enheter i Adobe Campaign
 
 
 ### Experience Platform Real-time Customer Data Platform segmentdelning
 
-* Se RTCDP Campaign Destination Connector - [RTCDP Campaign Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html)
+* Se RTCDP Campaign Destination Connector - [RTCDP Campaign Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=sv-SE)
 
-* Visa profiler för profil och dataöverföring för AEP - [Länk](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* Visa profiler för profil och dataöverföring för AEP - [Länk](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)

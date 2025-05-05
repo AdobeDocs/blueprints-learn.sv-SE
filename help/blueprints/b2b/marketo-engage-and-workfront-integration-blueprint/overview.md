@@ -30,7 +30,7 @@ Kampanjteamen behöver system som gör det möjligt för dem att effektivt plane
 
 Genom att integrera aktiveringssystemet för flerkanalsmarknadsföring (Marketo Engage) med marknadsföringsplaneringen och registersystemet (Workfront) kan ni öka kampanjhastigheten och ge intressenterna bättre synlighet.
 
-Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella och felbenägna steg som krävs för att översätta ett marknadsföringsmaterial till en kampanj. Workfront Fusion har ett integrerat lager mellan Workfront och Marketo Engage som gör det möjligt att utveckla arbetsflöden mellan olika system på ett flexibelt och effektivt sätt. Du kan läsa mer om hur du konfigurerar integreringen och vilka åtgärder som kan vidtas för att automatisera arbetsflöden [här](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}.
+Med Workfront Fusion kan marknadsföringsteamen i hög grad eliminera manuella och felbenägna steg som krävs för att översätta ett marknadsföringsmaterial till en kampanj. Workfront Fusion har ett integrerat lager mellan Workfront och Marketo Engage som gör det möjligt att utveckla arbetsflöden mellan olika system på ett flexibelt och effektivt sätt. Du kan läsa mer om hur du konfigurerar integreringen och vilka åtgärder som kan vidtas för att automatisera arbetsflöden [här](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=sv-SE){target="_blank"}.
 
 ## Kampanjplanering till utförande - användningsfall för automatisering {#campaign-planning-to-execution-automation-use-cases}
 
@@ -157,6 +157,6 @@ Att standardisera era namngivningskonventionerna för kampanjer och URL:er är e
 
 ### Resurser {#resources}
 
-* [Workfront Fusion för Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
+* [Workfront Fusion för Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=sv-SE){target="_blank"}
 
-* [Workfront Fusion för Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
+* [Workfront Fusion för Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=sv-SE){target="_blank"}

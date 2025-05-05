@@ -15,7 +15,7 @@ Det antal marknadsföringsförfrågningar som kommer in i ett marknadsföringste
 
 Genom att skapa en process för att skicka in kampanjförfrågningar och automatisera skapandet av ofta efterfrågade marknadsföringskampanjer kan ni: öka hastigheten på era kampanjer, minska antalet fel, skicka förfrågningar till rätt medlem i marknadsföringsåtgärderna, balansera och förbättra resursanvändningen och fokusera mer av era marknadsföringsåtgärder på mer strategiska uppgifter.
 
-Med Workfront och Marketo Engage kan du med en system-till-system-anslutning skapa information från ett [Workfront-formulär](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} för att skapa ett Marketo Engage-program och sedan fylla i viktiga variabler som ämnesrader, e-postkopia, bilder, datum, tider, händelseinformation och mycket annat.
+Med Workfront och Marketo Engage kan du med en system-till-system-anslutning skapa information från ett [Workfront-formulär](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html?lang=sv-SE){target="_blank"} för att skapa ett Marketo Engage-program och sedan fylla i viktiga variabler som ämnesrader, e-postkopia, bilder, datum, tider, händelseinformation och mycket annat.
 
 För att uppnå den här integreringen kommer du att använda Workfront Fusion, ett lager för automatisering av arbete som gör att du kan automatisera arbetsflöden mellan Workfront och andra system.
 
@@ -147,14 +147,14 @@ En del grundläggande information som ska ingå i sökbiblioteket för programma
 
 ## Intag och skapa automatiseringsflöde {#intake-and-create-automation-flow}
 
-Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med de fördefinierade modulerna [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} och [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} som gör att du kan leverera automatisering snabbare.
+Här är ett exempel på hur arbetsflödeslogiken kan monteras i Fusion med de fördefinierade modulerna [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=sv-SE){target="_blank"} och [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=sv-SE){target="_blank"} som gör att du kan leverera automatisering snabbare.
 
 ![Intagnings- och skapa automatiseringsflöde](assets/intake-and-create-3.png)
 
 ## Resurser {#resources}
 
-* [Adobe Marketo Engage-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
+* [Adobe Marketo Engage-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=sv-SE){target="_blank"}
 
-* [Adobe Workfront-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
+* [Adobe Workfront-moduler](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=sv-SE){target="_blank"}
 
 * [Marketo och Workfront - översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}

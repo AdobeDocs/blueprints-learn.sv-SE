@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Beslutshantering om navplanen
 
-Om du vill veta mer om beslutshantering kan du läsa produktdokumentationen [HERE](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) och översikten över beslutshantering [HERE](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
+Om du vill veta mer om beslutshantering kan du läsa produktdokumentationen [HERE](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=sv-SE) och översikten över beslutshantering [HERE](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=sv-SE)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
@@ -24,7 +24,7 @@ Den andra metoden är via upplevelsen [!DNL [!DNL Edge Network]], som är en glo
 
 Denna plan kommer att omfatta de specifika delarna av beslutsförvaltningen på navet.
 
-Om du vill veta mer om beslutshantering för Edge kan du läsa [beslutshanteringen i den översta](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en)-planen.
+Om du vill veta mer om beslutshantering för Edge kan du läsa [beslutshanteringen i den översta](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=sv-SE)-planen.
 
 ## Användningsfall för beslutshantering på navet
 
@@ -45,22 +45,22 @@ Om du vill veta mer om beslutshantering för Edge kan du läsa [beslutshantering
 
 ## Skyddsräcken
 
-* För Journey Optimizer skyddsräcken, se följande [Journey Optimizer-skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
-* För chefsutkast för beslutshantering, se följande [produktbeskrivning för beslutshantering](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
+* För Journey Optimizer skyddsräcken, se följande [Journey Optimizer-skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=sv-SE).
+* För chefsutkast för beslutshantering, se följande [produktbeskrivning för beslutshantering](https://helpx.adobe.com/se/legal/product-descriptions/offer-decisioning-app-service.html).
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=sv-SE)
 
 ## Implementeringsmönster
 
-* Implementeras i e-post-, SMS- och utgående kanaler via direkt integrering med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html).
-* För server-API-baserad implementering av beslutshantering använder du [besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
-* Använd [API:t för gruppbeslut](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html) om du vill implementera batchbaserade beslut för att leverera erbjudanden i grupp till ett meddelandeleveransprogram.
-* För Edge-baserade realtidsupplevelser använder du Web/Mobile SDK eller Edge Decisioning API så som beskrivs i [Beslutshanteringen för Edge-planen](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en).
+* Implementeras i e-post-, SMS- och utgående kanaler via direkt integrering med [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html?lang=sv-SE).
+* För server-API-baserad implementering av beslutshantering använder du [besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html?lang=sv-SE).
+* Använd [API:t för gruppbeslut](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html?lang=sv-SE) om du vill implementera batchbaserade beslut för att leverera erbjudanden i grupp till ett meddelandeleveransprogram.
+* För Edge-baserade realtidsupplevelser använder du Web/Mobile SDK eller Edge Decisioning API så som beskrivs i [Beslutshanteringen för Edge-planen](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=sv-SE).
 
 ## Relaterad dokumentation
 
-* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
-* [Adobe Journey Optimizer Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Produktbeskrivning för beslutshantering för Adobe](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE)
+* [Adobe Journey Optimizer Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=sv-SE)
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html)
+* [Produktbeskrivning för beslutshantering för Adobe](https://helpx.adobe.com/se/legal/product-descriptions/offer-decisioning-app-service.html)

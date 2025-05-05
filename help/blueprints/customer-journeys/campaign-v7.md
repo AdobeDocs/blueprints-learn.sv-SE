@@ -109,19 +109,19 @@ Granska följande skyddsutkast.
    * behöver mobilutvecklingsupplevelse med push-meddelanden i både Android och iOS för att distribuera SDK, integrera med FCM (Android) och APNS (iOS) för att få push-token, konfigurera din app så att den tar emot push-meddelanden och hantera push-interaktioner
 * Campaign Mobile SDK
    * Kontakta Adobe kundtjänst för att få åtkomst
-   * Följ [dokumentationen för Campaign SDK](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) för att lära dig hur du installerar och konfigurerar SDK
+   * Följ [dokumentationen för Campaign SDK](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=sv-SE) för att lära dig hur du installerar och konfigurerar SDK
 
   >[!IMPORTANT]
   >Om ni distribuerar Campaign SDK och arbetar med andra Experience Cloud-program måste de använda Experience Platform Mobile SDK för datainsamling. Detta är ett annat SDK och måste installeras tillsammans med Campaign SDK
 
 ## Implementeringssteg
 
-Se [Komma igång-guiden](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) för att implementera Adobe Campaign v7.
+Se [Komma igång-guiden](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=sv-SE) för att implementera Adobe Campaign v7.
 
 
 ## Relaterad dokumentation
 
-* [Kampanjdokumentation v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [Produktbeskrivning för Campaign v7](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Experience Platform Tags documentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
-* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
+* [Kampanjdokumentation v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=sv-SE)
+* [Produktbeskrivning för Campaign v7](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Experience Platform Tags documentation](https://experienceleague.adobe.com/docs/launch.html?lang=sv-SE)
+* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)

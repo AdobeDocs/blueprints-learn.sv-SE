@@ -33,19 +33,19 @@ Modellerade insikter kan hämtas till [!DNL Experience Platform] för att berika
 
 ## Implementeringssteg
 
-1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
-1. [Infoga data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i [!DNL Experience Platform].
+1. [Skapa scheman](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=sv-SE) för data som ska importeras.
+1. [Infoga data](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i [!DNL Experience Platform].
 
 För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du göra följande innan du hämtar in data:
 
-1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
-1. [Aktivera scheman och datauppsättningar för profilen ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=sv-SE) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Aktivera scheman och datauppsättningar för profilen ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=sv-SE).
 
 ## Implementeringsöverväganden
 
 * I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara enkla attributsträngar. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
-* Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler kan nås [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).
+* Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler kan nås [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=sv-SE#profile-attribute-datasets).
 * Följande metoder kan användas för att extrahera data från [!DNL Experience Platform]
    * SDK för dataåtkomst
       * Data finns i råfilsformat
@@ -55,7 +55,7 @@ För att modellresultat ska kunna hämtas till kundprofilen i realtid måste du 
 
 ## Relaterad dokumentation
 
-* [Adobe [!DNL Experience Platform] Beskrivning av informationsprodukt](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Adobe [!DNL Experience Platform] Beskrivning av informationsprodukt](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 * [Adobe [!DNL Experience Platform] Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv)
 
 ## Relaterade blogginlägg
