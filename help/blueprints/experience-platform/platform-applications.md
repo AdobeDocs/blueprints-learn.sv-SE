@@ -35,7 +35,7 @@ Arkitekturen visar hur Adobe Experience Platform relaterar till Adobe Experience
 
 <img src="assets/aep+apps_detailed.svg" alt="Experience Platform och program" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
->[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432346/?quality=12&learn=on&captions=swe)
 
 ## Programintegreringar med AEP och Experience Cloud
 
