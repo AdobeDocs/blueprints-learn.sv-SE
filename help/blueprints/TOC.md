@@ -5,10 +5,10 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: bb3d3ec11809dceb9ecf46561b608e22bff855b9
+source-git-commit: 29ac41aa5d1d33b63c094ef56b03af73b88f96af
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 19%
+source-wordcount: '208'
+ht-degree: 25%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 19%
 # Digital Experience-utkast {#architecture}
 
 + [Digital Experiences Blueprints](/help/blueprints/overview.md)
-+ Arkitekturöversikter{#architecture-overview}
++ Arkitekturöversikt{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
-   + Distribution{#deployment}
+   + Distribuering{#deployment}
       + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Skyddsräcken](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
-   + Real-time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
+   + Customer Data Platform (RTCDP) i realtid {#known-customer-audience-activation}
       + [Aktivering i sociala kanaler och annonskanaler](/help/blueprints/audience-activation/advertising-activation.md)
       + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Kundaktivitetsnav](/help/blueprints/audience-activation/customer-activity.md)
@@ -37,7 +37,8 @@ ht-degree: 19%
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
    + [Aktivera B2B-konto](/help/blueprints/b2b/b2b-account-activation.md)
    + [Köpa gruppbaserad marknadsföring och resehantering](/help/blueprints/b2b/b2b-buying-group-journeys.md)
-   + Marketo Engage och Workfront Integration Blueprint{#marketo-engage-and-workfront-integration-blueprint}
+   + [B2B-resor med Marketo Data](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
+   + Integrering av Marketo Engage och Workfront{#marketo-engage-and-workfront-integration-blueprint}
       + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
@@ -59,9 +60,9 @@ ht-degree: 19%
       + [Journey Optimizer med Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Meddelanden från tredje part](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign Standard{#campaign-standard}
-      + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=sv-SE){target="_blank"}
-      + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=sv-SE){target="_blank"}
-   + Kampanj v8{#campaign-v8}
+      + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html){target="_blank"}
+      + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html){target="_blank"}
+   + Campaign v8{#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
       + [Real-Time CDP med Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)
