@@ -121,7 +121,7 @@ Den här frågan returnerar antalet personposter som ska sammanfogas som en del 
 >[!NOTE]
 >
 >Datatabellen marketo_person_ajo_b2b används som ett komplett exempel på hur du arbetar med Marketo persondatauppsättning.
->>Du kan hitta sandlådans datauppsättning på arbetsytan [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+>&#x200B;>Du kan hitta sandlådans datauppsättning på arbetsytan [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
 
 ```sql
 select
