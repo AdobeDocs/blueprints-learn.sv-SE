@@ -17,9 +17,9 @@ ht-degree: 0%
 
 En översikt och information om SDK för webben och mobiler och [!DNL Edge Network] Server-API:t finns i följande avsnitt.
 
-* [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+* [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
 * [Mobile SDK - översikt](https://developer.adobe.com/client-sdks/documentation/)
-* [[!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
+* [[!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE)
 
 En detaljerad beskrivning av vilka programfunktioner som stöds i Web SDK finns i följande dokumentation.
 
@@ -27,10 +27,10 @@ En detaljerad beskrivning av vilka programfunktioner som stöds i Web SDK finns 
 
 Mer information om migrering från programspecifika SDK:er till webben och mobila SDK:er finns i följande dokumentation.
 
-* [Identitetstjänster](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
-* [Analyser](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/analytics-overview.html)
-* [Mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
-* [Analyser för mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html)
+* [Identitetstjänster](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=sv-SE)
+* [Analyser](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/analytics-overview.html?lang=sv-SE)
+* [Mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=sv-SE)
+* [Analyser för mål](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html?lang=sv-SE)
 
 ## Experience Platform Web/Mobile SDK eller [!DNL Edge Network] Server-API-distribution
 
@@ -44,5 +44,5 @@ Sekvensdiagram över Experience Edge, Experience Platform Services och Applicati
 
 ## Referensdokumentation
 
-* [Implementera Adobe Experience Cloud med Web SDK, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
-* [Implementera Adobe Experience Cloud i mobilappar, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
+* [Implementera Adobe Experience Cloud med Web SDK, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE)
+* [Implementera Adobe Experience Cloud i mobilappar, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=sv-SE)
