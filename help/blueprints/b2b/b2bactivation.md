@@ -4,7 +4,7 @@ description: Leverera kontobaserade målgrupper och profilbaserade kundupplevels
 solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 70816df06ec2dff5c3a4a94a8be701cb25e6f783
+source-git-commit: 0509c5a8ce92c25040262130a5f583cdd7f08e59
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Använd konto-, affärsmöjlighets- och lead-information som är knuten till en 
 
 * Observera att Marketo Engage-relaterade säkerhetsutkast och implementeringssteg bara är relevanta när Marketo Engage används som källa och/eller mål.
 
-* Mer information och skyddsförslag för datamodell, storlek och segmentering finns i dokumentet [Distributionsskyddsutkast](../experience-platform/deployment/guardrails.md)
+* Mer information och skyddsförslag för datamodell, storlek och segmentering finns i dokumentet [Distributionsskyddsutkast](../experience-platform/guardrails.md)
 
 
 ### Stöd för flera instanser och IMS-organisation:
@@ -58,7 +58,7 @@ Följande visar vilka mönster som stöds för mappning av Experience Platform- 
 
 #### Experience Platform Profil- och segmenteringsskydd:
 
-* Visa utkast för profil och segmenteringsskydd för Experience Platform - [Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+* Visa utkast för profil och segmenteringsskydd för Experience Platform - [Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * B2B-segment som inkluderar konton, leads, affärsmöjligheter använder relationer med flera enheter vilket gör att segmentutvärderingen blir en batch. Direktuppspelningssegmentering stöds för segment som är begränsade till personer och händelser.
 * Inkludera ett batch b2b-segment som indata till en direktuppspelning eller ett edge-segment för att stödja direktuppspelande b2b-segmentanvändningsfall. Batchsegmentmedlemskapet baseras på det senaste resultatet av den dagliga gruppsegmenteringsutvärderingen.
 
@@ -79,12 +79,12 @@ Följande visar vilka mönster som stöds för mappning av Experience Platform- 
 
 #### Målgarantins
 
-* Mer information om destinationerna finns i måldokumentationen. [Målstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=sv-SE)
+* Mer information om destinationerna finns i måldokumentationen. [Målstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=en)
 
 
 ## Implementeringssteg
 
-Mer information om hur du implementerar och konfigurerar B2B edition för kunddataplattformen i realtid finns i B2B edition i dokumentationen för kunddataplattformen i realtid. [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=sv-SE)
+Mer information om hur du implementerar och konfigurerar B2B edition för kunddataplattformen i realtid finns i B2B edition i dokumentationen för kunddataplattformen i realtid. [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 
 Det finns två möjliga implementeringsparter. Både möjligheten att importera B2B-data och profiler från Marketo Engage eller möjligheten att importera B2B-data från andra CRM-datakällor.
 
@@ -98,10 +98,10 @@ Om implementeringen använder Marketo Engage som källa och Marketo Engage är a
 
 ## Relaterad dokumentation
 
-* [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=sv-SE)
-* [Komma igång med kunddataplattformen B2B edition i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* [Guardrails for Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
-* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=sv-SE)
-* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=sv-SE)
-* [Adobe Experience Platform - Marketo målanslutning](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=sv-SE)
+* [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+* [Komma igång med kunddataplattformen B2B edition i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* [Guardrails for Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html)
+* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en)
+* [Adobe Experience Platform - Marketo målanslutning](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)

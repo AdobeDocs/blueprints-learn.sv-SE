@@ -5,10 +5,10 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: a972ea56-d1c8-45da-9044-ed31222a2441
-source-git-commit: 7f3bc307f74aa88a7a73f3e50cc48bd16f58b37f
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 2%
+source-wordcount: '175'
+ht-degree: 3%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 2%
 
 Dataanalys och intelligens omfattar möjligheten inom [!DNL Experience Platform] att utföra experimentell fråga och analys av data som finns i sjön.
 
-[!UICONTROL Frågetjänsten &#x200B;] för [!DNL Experience Platform] tillåter att SQL-frågor utförs på data.
+[!DNL Experience Platform]Frågetjänsten [!UICONTROL  för ] tillåter att SQL-frågor utförs på data.
 
-[!DNL Experience Platform] tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence-verktyg (BI) från tredje part att ansluta direkt till, komma åt och fråga data i [!DNL Experience Platform] med protokollet [!DNL PostgreSQL].
+[!DNL Experience Platform] tillåter anslutningar med SQL-klienter, gränssnitt och Business Intelligence (BI)-verktyg från tredje part att ansluta direkt till, komma åt och fråga data i [!DNL Experience Platform] med protokollet [!DNL PostgreSQL].
 
 ## Användningsfall
 
 * Interaktiv fråga och sammanställning av data
 * Rad- och kolumnåtkomst till inmatade data för utforskande och validering
-* Instrumentpaneler och visualisering av data via verktyg för Business Intelligence
+* Instrumentpaneler och visualisering av data via Business Intelligence verktyg
 
-Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd ärenden för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=sv-SE)
+Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd ärenden för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html)
 
 ## Tillämpningar
 
@@ -39,17 +39,9 @@ Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd är
 ## Skyddsräcken
 
 Läs produktdokumentationen för frågetjänsten för mer information om bästa praxis och skyddsanvisningar.
-[Frågetjänstvägledning](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=sv-SE)
-
-## Implementeringssteg
-
-1. [Skapa scheman](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=sv-SE) för data som ska importeras.
-1. [Infoga data](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i [!DNL Experience Platform].
-1. Bekräfta att data är tillgängliga för [[!UICONTROL frågetjänsten]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=sv-SE).
-1. [Anslut Business Intelligence-verktyg och SQL-klienter till [!UICONTROL frågetjänsten]](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=sv-SE) för visualisering, datafråga och sökning.
+[Frågetjänstvägledning](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html)
 
 ## Relaterad dokumentation
 
-* [Adobe [!DNL Experience Platform] Beskrivning av informationsprodukt](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [[!UICONTROL Frågetjänsten] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv-SE)
+* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [[!UICONTROL Frågetjänsten] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
