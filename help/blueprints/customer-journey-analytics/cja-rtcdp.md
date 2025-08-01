@@ -18,7 +18,7 @@ Skapa och publicera målgrupper som identifieras i Customer Journey Analytics (C
 
 ## Publiceringshandbok för Customer Journey Analytics
 
-I följande dokumentation finns vägledning om implementering och konfigurering av publicering av målgrupper från Customer Journey Analytics till Customer Data Platform i realtid. [Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+I följande dokumentation finns vägledning om implementering och konfigurering av publicering av målgrupper från Customer Journey Analytics till Customer Data Platform i realtid. [Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=sv-SE)
 
 ## Arkitektur för Customer Journey Analytics-ritningar
 
