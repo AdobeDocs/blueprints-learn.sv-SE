@@ -34,11 +34,11 @@ Modellerade insikter kan hämtas till [!DNL Experience Platform] för att berika
 ## Implementeringsöverväganden
 
 * I de flesta fall bör modellresultat anges som profilattribut och inte upplevas som händelser. Modellresultaten kan vara enkla attributsträngar. Om det finns flera modellresultat som ska importeras rekommenderar vi att du använder ett matris- eller mappningstypsfält.
-* Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler kan nås [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).
+* Den dagliga ögonblicksbildsdatauppsättningen, som är en daglig export av data för enhetliga profilattribut, kan utnyttjas för att utbilda modeller i profilattributdata. Datadokumentet för ögonblicksbilder av profiler kan nås [här](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=sv-SE#profile-attribute-datasets).
 
 ## Relaterad dokumentation
 
-* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 * [Adobe [!DNL Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv)
 
 ## Relaterade blogginlägg

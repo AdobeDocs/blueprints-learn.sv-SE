@@ -18,7 +18,7 @@ Dessa arkitekturdiagram visar hur Experience Platform (AEP) relaterar till andra
 
 >[!MORELIKETHIS]
 >
->[Integrationskonfigurationer för Experience Cloud-programintegreringar](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=en).
+>[Integrationskonfigurationer för Experience Cloud-programintegreringar](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=sv-SE).
 
 
 ## Arkitektur

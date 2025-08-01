@@ -21,7 +21,7 @@ Garantierna speglar systembegränsningar, förväntade latenser och prestandafö
 | Typ av skyddsräcke | Beskrivning |
 |---|---|
 | Prestandaskydd (mjuk gräns) | Prestandaskydd är användarbegränsningar som relaterar till omfattningen av dina användningsfall och ger en översikt över förväntade prestanda under normala förhållanden. Om det överskrids kan prestandan försämras och fördröjning uppstå. Prestandaskydd finns dokumenterade i Experience League-dokumenten under respektive lösningsutkast enligt nedan. |
-| Statisk gräns (hård gräns) | Det här är begränsningar som framtvingas av systemet och som inte kan överskridas. Statiska begränsningar är vanligtvis bundna och anges i kundkontraktet och i [produktbeskrivningarna](https://helpx.adobe.com/legal/product-descriptions.html). |
+| Statisk gräns (hård gräns) | Det här är begränsningar som framtvingas av systemet och som inte kan överskridas. Statiska begränsningar är vanligtvis bundna och anges i kundkontraktet och i [produktbeskrivningarna](https://helpx.adobe.com/se/legal/product-descriptions.html). |
 
 >[!NOTE]
 >
@@ -37,19 +37,19 @@ Följande sidor innehåller information om säkerhetsutkast för Adobe Experienc
 
 **Experience Platform-program**
 
-* [Översikt över Real-Time CDP-skyddsutkast](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Customer Journey Analytics målgruppsdelningsplaner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
-* [Customer Journey Analytics-åtgärder för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
+* [Översikt över Real-Time CDP-skyddsutkast](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html?lang=sv-SE)
+* [Customer Journey Analytics målgruppsdelningsplaner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=sv-SE#latency)
+* [Customer Journey Analytics-åtgärder för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=sv-SE)
 
 **Experience Platform-tjänster**
 
-* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [[!DNL Edge Network] API-stödlinjer](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
-* [Kundprofil och segmenteringsguardrutor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
-* [Identitetsgarderobilder](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
-* [Frågeserverstänger](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
-* [Målaktiveringsguider](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
+* [Skyddsförslag för dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=sv-SE)
+* [[!DNL Edge Network] API-stödlinjer](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=sv-SE)
+* [Kundprofil och segmenteringsguardrutor i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+* [Identitetsgarderobilder](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=sv-SE)
+* [Frågeserverstänger](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=sv-SE)
+* [Målaktiveringsguider](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=sv-SE)
 
 ## Latensdiagram från början till slut {#end-to-end-latency}
 

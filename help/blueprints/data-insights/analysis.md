@@ -26,7 +26,7 @@ Dataanalys och intelligens omfattar möjligheten inom [!DNL Experience Platform]
 * Rad- och kolumnåtkomst till inmatade data för utforskande och validering
 * Instrumentpaneler och visualisering av data via Business Intelligence verktyg
 
-Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd ärenden för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html)
+Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd ärenden för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=sv-SE)
 
 ## Tillämpningar
 
@@ -39,9 +39,9 @@ Fler vanliga användningsexempel för frågetjänsten beskrivs här [Använd är
 ## Skyddsräcken
 
 Läs produktdokumentationen för frågetjänsten för mer information om bästa praxis och skyddsanvisningar.
-[Frågetjänstvägledning](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html)
+[Frågetjänstvägledning](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=sv-SE)
 
 ## Relaterad dokumentation
 
-* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [[!UICONTROL Frågetjänsten] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
+* [Adobe [!DNL Experience Platform] Beskrivning av Intelligence-produkt](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [[!UICONTROL Frågetjänsten] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv-SE)
