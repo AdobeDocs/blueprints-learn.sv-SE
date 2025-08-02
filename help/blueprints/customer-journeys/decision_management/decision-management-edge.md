@@ -48,7 +48,7 @@ Mer information om beslutshantering för navet finns i [beslutshanteringen för 
 
 * För chefsutkast för beslutshantering, se följande [produktbeskrivning för beslutshantering](https://helpx.adobe.com/se/legal/product-descriptions/offer-decisioning-app-service.html).
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=sv-SE)
 
 ## Relaterad dokumentation
 

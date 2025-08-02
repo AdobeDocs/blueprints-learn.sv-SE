@@ -40,7 +40,7 @@ Meddelandeprogram från tredje part
 
 [Journey Optimizer Guardrails - produktlänk](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=sv-SE)
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=sv-SE)
 
 
 ## Implementeringssteg

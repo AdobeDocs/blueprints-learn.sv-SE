@@ -45,7 +45,7 @@ Visar hur Adobe Journey Optimizer kan användas tillsammans med Adobe Campaign f
 
 [Journey Optimizer Guardrails - produktlänk](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=sv-SE)
 
 ## Implementeringssteg
 
