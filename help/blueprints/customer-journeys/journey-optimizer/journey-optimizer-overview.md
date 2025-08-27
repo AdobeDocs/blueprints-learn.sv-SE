@@ -3,9 +3,9 @@ title: '[!DNL Journey Optimizer] - Reseutkast'
 description: Kör utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: e96b48e55c0fe2f48dc83f48ad41f5b686ec8dc1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '640'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Den här planen beskriver programmets tekniska funktioner och ger en djup genomg
 ## Användningsfall
 
 >[!BEGINTABS]
->[!TAB Användningsexempel på resa (händelsestyrd, realtid)]
+>[!TAB Resa (händelsestyrd, realtid)]
 
 - **Återställning av övergåenden:** Utlös personliga meddelanden när en användare överger en kundvagn, ett formulär eller en session via e-post, push eller i appen.
 - **Ny användarregistrering:** Engagera nya användare direkt efter att de har registrerat sig med nya kontoinställningar, relevanta erbjudanden eller förmåner
@@ -29,7 +29,7 @@ Den här planen beskriver programmets tekniska funktioner och ger en djup genomg
 - **Sammanhangsberoende målgruppsanpassning:** Kommunicera med användarna för tillfället baserat på deras signaler och plats för att hjälpa till att vägleda och dirigera upplevelsen
 - **Sammanhangsbaserad merförsäljning/korsförsäljning:** Leverera personaliserade erbjudanden baserat på profilattribut i realtid och senaste interaktioner.
 
->[!TAB Användningsexempel för kampanjsamordning (schemalagd, varumärkesinitierad)]
+>[!TAB Kampanjsamordning (schemalagd, varumärkesinitierad)]
 
 - **Kampanjkampanjer**: Starta flerstegskampanjer för produktlanseringar, säsongserbjudanden och försäljningshändelser.
 - **Livscykelmarknadsföring**: Automatisera återkommande kampanjer som födelsedagskalendrar, påminnelser om förnyelse eller milstolpar för lojalitet.
@@ -94,12 +94,12 @@ Mobilpush:
 
 [[!DNL Journey Optimizer] Produktlänk för säkerhetsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=sv-SE)
+[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Relaterad dokumentation
 
-- [[!DNL Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
+- [[!DNL Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html)
 - [[!DNL Experience Platform] Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
-- [[!DNL Experience Platform Mobile SDK] dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)
-- [[!DNL Journey Optimizer] dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=sv-SE)
-- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html)
+- [[!DNL Experience Platform Mobile SDK] dokumentation](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
