@@ -3,7 +3,7 @@ title: Digital Experience-utkast
 description: Digital Experience-utkast är repeterbara implementeringar för att hantera strategier och lösa etablerade företagsproblem. De påskyndar tid-till-värde och ger en snabb väg till framgång.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 5b1df5d6fb0da7de2054366cead10e549e650633
+source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 24%
@@ -39,11 +39,11 @@ Med digitala upplevelseutkast får du diagram över system- och dataflödesarkit
     </div>
   </td>
   <td>
-    <a href="customer-journeys/journey-optimizer.md">
-      <img alt="Journey Optimizer Översiktsdiagram" src="customer-journeys/assets/ajo-architecture.svg" />
+    <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <img alt="Journey Optimizer Översiktsdiagram" src="customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
     </a>
     <div>
-      <a href="customer-journeys/journey-optimizer.md">
+      <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
     <strong> Adobe Journey Optimizer Overview Diagram </strong>
     </a>
     </div>

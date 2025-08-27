@@ -1,27 +1,39 @@
 ---
 title: Kundresor - ritningar
-description: Leverera individuella kundupplevelser i rätt tid för alla skärmar.
+description: Leverera individuella, just-in-time och samordnade kundupplevelser för alla skärmar.
 solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
+source-git-commit: 8ee7fe8d38343a669f5ad57e69367fbe6a3e1024
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-# Kundresor - ritningar
+# Customer Journey-skisser
 
-Customer Journeys behandlar möjligheten för varumärken att aktivt interagera med och kommunicera med sina kunder via kanaler som e-post, SMS och mobilaviseringar.
+Moderna marknadsföringsteam behöver plattformar som kan stödja både reaktivt engagemang - svara på individuella kundbeteenden - och proaktivt utåtriktad marknadsföring - och initiera kampanjer som vägleder publiken in i konverteringstrattar. De här användningsfallen omfattar flera kanaler som e-post, SMS, push och allt mer webb- och appupplevelser.
 
-Orchestration-verktyg kan också integreras med andra interaktionskanaler, t.ex. med inkommande kanaler för webb-/mobilpersonalisering genom att dela målgruppsstatus med andra kanalspecifika beslutsmotorer. Ett antal faktorer avgör vilka program och alternativ för driftsättning som ska användas för kundresor, men kan sammanfattas i två olika metoder: att reagera på en kund när de engagerar (utlöses) ELLER reagera på en grupp kunder när de engagerar (planeras).
+Adobe Journey Optimizer och Adobe Campaign v8 har båda stöd för två grundläggande modeller för kundengagemang:
 
-Idag finns det två alternativ för Adobe att välja bland när man vill ha en kundreselösning:
+- Kundutlösta resor: Händelsestyrd realtidssamordning baserad på individuella beteenden och signaler.
+- Varumärkesinitierade kampanjer: Strategiskt vältajmade kampanjer som introducerar målgrupper i engagemangstrattar baserat på segmentering eller affärslogik.
 
-<ul><li>Adobe [!DNL Campaign] Managed Cloud Services</li><li>Adobe Journey Optimizer</li></ul>
+Båda lösningarna möjliggör utgående kommunikation över traditionella och digitala kanaler. AJO stöder dessutom integrering med inkommande kanaler (t.ex. webb- och mobilappar) genom målgruppsdelning och beslutstjänster, vilket möjliggör enhetlig kanalövergripande personalisering.
+
+Valet mellan dessa verktyg beror på arkitektoniska överväganden som latenstolerans, kanalkrav, dataintegrationsstrategi och skalbarhet.
+
+<br>
 
 | Blueprint | Beskrivning | Arkitektur |
-|---|---|---|
-| **[Journey Optimizer](journey-optimizer.md)** | Inbyggd ovanpå kundprofilen [!DNL Experience Platforms] i realtid, vilket gör att marknadsföringsteamen kan reagera i realtid på förändrade kundbeteenden och möta dem var de än befinner sig, när som helst, i valfri kanal | <img src="assets/ajo-architecture.svg" alt="Referensarkitektur för Journey Optimizer Blueprint" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
-| **[Adobe [!DNL Campaign] v8](campaign-v8.md)** | Nästa generations kampanjverktyg som är optimerat för mycket komplexa datahanterings- och kampanjprocesser. Gör det möjligt för kunderna att kombinera upptäckt och skapa multimediala marknadsföringskampanjer | <img src="assets/campaign-v8-architecture.svg" alt="Referensarkitektur för Campaign v8-utkast" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
-| **[Adobe [!DNL Campaign] v7](campaign-v7.md)** | Traditionellt kampanjverktyg för batchbaserade marknadsföringskampanjer i olika kanaler, som e-post, SMS och direktreklam. Möjliggör för kunderna att samordna och hantera olika kundkommunikationer på ett och samma ställe | <img src="assets/campaign-v7-architecture.svg" alt="Referensarkitektur för Campaign v7 Blueprint" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
+|---|---|:---:|
+| **[Adobe Journey Optimizer](journey-optimizer/journey-optimizer-overview.md)** | Kombinerar händelsestyrd, 1:1-profilsamordning med målgruppsbaserad varumärkeskommunikation i flera kanaler, som e-post, sms, web, push, meddelanden i appen, skrivbord osv. | <img src="journey-optimizer/images/ajo-architecture.svg" alt="Referensarkitektur för Journey Optimizer Blueprint" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
+| **[Adobe [!DNL Campaign] v8](campaign-v8/campaign-v8-overview.md)** | Fokuserad på batchbaserad kampanjhantering i flera kanaler, idealisk för traditionella marknadsföringskanaler som e-post, SMS och direktreklam. | <img src="campaign-v8/images/campaign-v8-architecture.svg" alt="Referensarkitektur för Campaign v8-utkast" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
+
+<br>
+
+## Inaktuella utkast
+
+| Blueprint | Arkitektur |
+|---|:---:|
+| **[Adobe [!DNL Campaign] v7](campaign-v7/campaign-v7-overview.md)** | <img src="campaign-v7/images/campaign-v7-architecture.svg" alt="Referensarkitektur för Campaign v7 Blueprint" style="width:50%; border:1px solid #4a4a4a" class="modal-image" /> |
