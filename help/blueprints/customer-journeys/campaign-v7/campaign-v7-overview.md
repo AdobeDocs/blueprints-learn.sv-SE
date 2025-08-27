@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## Relaterad dokumentation
 
-* [Kampanjdokumentation v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [Produktbeskrivning för Campaign v7](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=en)
-* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
+* [Kampanjdokumentation v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=sv-SE)
+* [Produktbeskrivning för Campaign v7](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/launch.html?lang=sv-SE)
+* [Experience Platform Mobile SDK-dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)
