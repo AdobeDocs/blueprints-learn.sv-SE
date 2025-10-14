@@ -115,7 +115,7 @@ Läs [dokumentationen för Real-Time CDP-garderoben](https://experienceleague.ad
 
 * Alla instanser måste finnas i samma IMS-organisation.
 * Endast en Journey Optimizer B2B edition-instans kan länkas till en Experience Platform-sandlåda.
-* Vi rekommenderar att du implementerar [Marketo Source Connector till kunddataplattformen ](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) i realtid.
+* Vi rekommenderar att du implementerar [Marketo Source Connector till kunddataplattformen &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) i realtid.
 
 ## Implementering
 

@@ -44,7 +44,7 @@ Granska följande krav för varje program.
 
 * [Journey Optimizer Guardrails - produktbegränsningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
 
-* [Garantier och vägledning från början till slut ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=sv-SE)
+* [Garantier och vägledning från början till slut &#x200B;](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=sv-SE)
 
 ## Implementeringssteg
 
