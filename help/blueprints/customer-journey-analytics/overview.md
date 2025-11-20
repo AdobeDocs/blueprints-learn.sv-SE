@@ -28,7 +28,7 @@ Exempel på vanliga användningsområden:
 * Vilka kampanjer resulterade i konvertering och ökat engagemang
 * Verktygsanvändningsanalys för att optimera självbetjäning
 
-En fullständig lista över användningsfall tillsammans med dokumentation finns [här](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=sv-SE).
+En fullständig lista över användningsfall tillsammans med dokumentation finns [här](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en).
 
 ## Arkitektur för Customer Journey Analytics
 

@@ -30,7 +30,7 @@ Anonym målgruppsaktivering är möjligheten att rikta och personalisera till m�
 * Audience Manager
 * Kunddataplattform i realtid
 
-Både Audience Manager och kunddataplattformen i realtid kan användas för att driva anonyma Audience Activation för annonsdestinationer och på plats. Observera att kunddataplattformen i realtid bara stöder en delmängd av annonsdestinationer med anonyma enhetsidentifierare som katalogiseras i [måldokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=sv-SE).
+Både Audience Manager och kunddataplattformen i realtid kan användas för att driva anonyma Audience Activation för annonsdestinationer och på plats. Observera att kunddataplattformen i realtid bara stöder en delmängd av annonsdestinationer med anonyma enhetsidentifierare som katalogiseras i [måldokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
 ## Arkitektur
 
@@ -40,8 +40,8 @@ Både Audience Manager och kunddataplattformen i realtid kan användas för att 
 
 ## Implementeringssteg för Audience Manager
 
-* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=sv-SE).
+* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html).
 
 ## Implementeringssteg för kunddataplattformen i realtid
 
-* Implementeringssteg för kunddataplattformen i realtid finns i följande [dokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/home).
+* Implementeringssteg för kunddataplattformen i realtid finns i följande [dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home).

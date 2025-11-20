@@ -29,7 +29,7 @@ Dela profil- och målgruppsändringar och händelser i strömning eller batch fr
 
 ## Relaterad dokumentation
 
-Mer information om konfigurationen av molnlagring och företagsmål finns i [Måldokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/overview).
+Mer information om konfigurationen av molnlagring och företagsmål finns i [Måldokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview).
 
 ## Skyddsräcken
 

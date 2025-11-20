@@ -10,7 +10,7 @@ exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: b634e14af3ea60e0f4cc9e84a0ef896df293a8c7
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 0%
 
 ### Referensdokumentation
 
-* [Adobe Target Connection för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=sv-SE)
-* [Edge-dataströmskonfiguration](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=sv-SE)
+* [Adobe Target Connection för kunddataplattform i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [Edge-dataströmskonfiguration](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 
 ## Integreringsmönster
 
@@ -65,13 +65,13 @@ Kunden Personalization stöds via flera olika implementeringsmetoder.
 * Använda [!DNL Edge Network] med SDK för webb/mobil. Kantsegmentering i realtid kräver implementeringsmetoden för SDK/Mobile eller Edge.
 * [Se Experience Platform Web and Mobile SDK Blueprint](../experience-platform/deployment/websdk.md) för den SDK-baserade implementeringen.
 * För användning i Mobile SDK måste tillägget [Adobe Journey Optimizer - Decisioning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/) vara installerat.
-* [Se  [!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) för en API-baserad implementering av Adobe Target med Edge Profile.
+* [Se  [!DNL Edge Network] Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) för en API-baserad implementering av Adobe Target med Edge Profile.
 
 ### Implementeringsmönster 2 - Programspecifika SDK:er
 
 Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasurement.js). Utvärdering av Edge-segment i realtid stöds inte med den här implementeringsmetoden. Däremot stöds direktuppspelning och gruppmålgruppsdelning från Experience Platform nav med den här implementeringsmetoden.
 
-[Läs Adobe Target Connector Documentation](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[Läs Adobe Target Connector Documentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [Se programspecifika SDK Blueprint](../experience-platform/deployment/appsdk.md)
 
 ## Implementeringsöverväganden
@@ -84,18 +84,18 @@ Använda traditionella programspecifika SDK:er (till exempel AT.js och AppMeasur
 
 ### SDK-dokumentation
 
-* [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE)
+* [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
-* [Experience Cloud ID-tjänstdokumentation](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE)
+* [Experience Cloud ID-tjänstdokumentation](https://experienceleague.adobe.com/docs/id-service/using/home.html)
 
 ### Segmenteringsdokumentation
 
-* [Experience Platform segmenteringsöversikt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE)
-* [Segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=sv-SE)
-* [Strömmande segmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=sv-SE)
-* [Adobe Analytics segmentdelning via Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=sv-SE)
-* [Konfiguration av sammanslagningsprincip](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE#create-a-merge-policy)
+* [Experience Platform segmenteringsöversikt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
+* [Segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html)
+* [Strömmande segmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
+* [Adobe Analytics segmentdelning via Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Konfiguration av sammanslagningsprincip](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy)
 
 ### Självstudiekurser
 
-* [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=sv-SE)
+* [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
