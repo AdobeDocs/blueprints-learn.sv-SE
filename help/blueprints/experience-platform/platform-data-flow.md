@@ -22,4 +22,4 @@ Bilden nedan visar de olika sätten att mata in data och gå ut ur Adobe Experie
 
 ## Mönster för datainress och egress
 
-En detaljerad lista över alla datainmatningsmönster, samlings-, ingress- och utgångsmönster finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home).
+En detaljerad lista över alla datainmatningsmönster, samlings-, ingress- och utgångsmönster finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/home).
