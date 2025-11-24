@@ -4,8 +4,8 @@ breadcrumb-title: Utkast
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 mini-toc-levels: 3
-role: Architect, Developer, User
-source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
+role: Developer, User
+source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 25%
@@ -66,8 +66,8 @@ ht-degree: 25%
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + Inaktuella utkast{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
