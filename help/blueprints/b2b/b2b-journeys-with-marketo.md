@@ -35,8 +35,8 @@ Denna omfattande guide beskriver hur man integrerar Marketo Engage med Adobe Jou
 
 | Integrering | Beskrivning |
 | :-- | :--- |
-| [Marketo Engage-anslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform underlättar inmatningen av data från Marketo och ger möjlighet att strukturera, märka och förbättra data med hjälp av dess tjänster. |
-| [Journey Optimizer B2B edition - Marketo Engage-åtgärder](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Synkronisera Account-Based Marketing i Journey Optimizer B2B edition med huvudinsatser i Marketo Engage med personbaserade åtgärder för att hantera listmedlemskap och begära kampanjer. |
+| [Marketo Engage-anslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform underlättar inmatningen av data från Marketo och ger möjlighet att strukturera, märka och förbättra data med hjälp av dess tjänster. |
+| [Journey Optimizer B2B edition - Marketo Engage-åtgärder](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Synkronisera Account-Based Marketing i Journey Optimizer B2B edition med huvudinsatser i Marketo Engage med personbaserade åtgärder för att hantera listmedlemskap och begära kampanjer. |
 
 ## Arkitektur
 
@@ -46,9 +46,9 @@ Denna omfattande guide beskriver hur man integrerar Marketo Engage med Adobe Jou
 
 1. Installera B2B-scheman och namnutrymmen med något av följande alternativ:
    * Använd [Postman-samlingen](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility){target="_blank"}
-   * Använd [mallar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/templates) i plattformsgränssnittet
+   * Använd [mallar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/templates) i plattformsgränssnittet
 1. Skapa relationsscheman efter behov för att representera affärsenheter, som inköp, licenser eller händelseregistreringar för resebeslut och e-postpersonalisering.
-1. Slutför [XDM-konfigurationen](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management){target="_blank"}.
+1. Slutför [XDM-konfigurationen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management){target="_blank"}.
    * Granska uppsättningen XDM-standardfält som är markerade som standard i Journey Optimizer B2B edition, även kallade _hanterade fält_. Granska uppsättningen med hanterade fält genom att gå till XDM-konfiguration i **[!UICONTROL Administration]** > **[!UICONTROL Konfigurationer]**.
       * Välj fliken **[!UICONTROL Standard]** och klicka sedan på **[!UICONTROL Redigera hanterade fält]** för både den individuella XDM-profilen och XDM Business Account.
       * Markera alternativet **[!UICONTROL Visa endast markerade fält]** om du vill visa den aktuella listan med markerade fält.
@@ -64,17 +64,17 @@ Denna omfattande guide beskriver hur man integrerar Marketo Engage med Adobe Jou
    * Konfigurera de upplevelsehändelser som du vill använda på resor.
       * Välj fliken **[!UICONTROL Händelser]** och klicka sedan på **[!UICONTROL Välj upplevelsehändelse]**.
       * Välj upplevelsehändelser och fält som du vill använda.
-1. Konfigurera [Marketo Engage-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
-   * Använd dataordlistan för att definiera [importmappningen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/ui/mapping#import-mapping) för källkopplingen.
+1. Konfigurera [Marketo Engage-källkopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
+   * Använd dataordlistan för att definiera [importmappningen](https://experienceleague.adobe.com/sv/docs/experience-platform/data-prep/ui/mapping#import-mapping) för källkopplingen.
    * Vi rekommenderar att du inte aktiverar profilen innan du tar hänsyn till [implementeringshändelserna](#implementation-considerations).
    * Vi rekommenderar också att du importerar personer, företag, affärsmöjligheter och aktiviteter till ett minimum eftersom dessa objekt är de mest användbara när du skapar kontomålgrupper.
-1. Implementera länkningsregler för [identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) för personer:
+1. Implementera länkningsregler för [identitetsdiagram](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) för personer:
    * Definiera hur personposter ska länkas med hjälp av ID-namnutrymmen.
    * Konfigurera identitetsnamnutrymmen och regler för identitetssammanslagning i Experience Platform.
    * Validera länkning med exempelpersondata och förhandsvisningsverktyg.
-1. Aktivera datauppsättningar för person, företag, affärsmöjligheter och aktiviteter för [profiler](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
-1. Definiera din första [kontomålgrupp](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/audiences/account-audience-overview)
-1. Använd kontomålgruppen för att definiera en [inköpsgrupp](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview) eller en [kontoresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview).
+1. Aktivera datauppsättningar för person, företag, affärsmöjligheter och aktiviteter för [profiler](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+1. Definiera din första [kontomålgrupp](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/audiences/account-audience-overview)
+1. Använd kontomålgruppen för att definiera en [inköpsgrupp](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview) eller en [kontoresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-overview).
    * När ett konto kvalificerar sig för kontomålgruppen körs jobbet för inköpsgrupper dagligen för att skapa inköpsgrupper och tilldela roller till associerade personer så snart målgruppen uppdateras.
    * Dessutom går det att köpa gruppunderhåll varje fredag kl. 24.00 CT. Denna veckoprocess hanterar uppdateringar, t.ex. borttagning av medlemmar som inte längre är kvalificerade eller tillägg av nykvalificerade medlemmar som inte togs med i den initiala målgruppsuppdateringen.
 
@@ -87,11 +87,11 @@ För att effektivisera implementeringen och säkerställa kompatibilitet med Ado
 * **Använd standardmappningarna för Marketo Source Connector:**
    * Utnyttja de färdiga fältmappningarna från Adobe för att förenkla inmatningen av data och minska kostnaderna för konfigurering.
 * **Använd standardmappningar för AJO B2B:**
-   * Använd [standardfältmappningarna](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) för Journey Optimizer B2B edition för att säkerställa kompatibilitet med inköpsgrupplogik och resesamordning.
+   * Använd [standardfältmappningarna](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) för Journey Optimizer B2B edition för att säkerställa kompatibilitet med inköpsgrupplogik och resesamordning.
 * **Blockera fältuppdateringar för alla fält utom e-post:**
-   * I Marketo Engage konfigurerar du fälthantering till [blockera uppdateringar](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) från Adobe Experience Platform för alla fält utom _e-post_. Detta bidrar till att upprätthålla dataintegriteten samtidigt som identitetsupplösningen aktiveras.
+   * I Marketo Engage konfigurerar du fälthantering till [blockera uppdateringar](https://experienceleague.adobe.com/sv/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) från Adobe Experience Platform för alla fält utom _e-post_. Detta bidrar till att upprätthålla dataintegriteten samtidigt som identitetsupplösningen aktiveras.
 * **Implementera regler för identitetslänkning med e-post som ett unikt ID-namnområde**
-   * Konfigurera [identitetsgrafens länkningsregler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) i Adobe Experience Platform så att _email_ uttryckligen används som ett unikt ID-namnområde. Dessa regler säkerställer att profiler sammanfogas korrekt över datakällor där _email_ finns, vilket möjliggör robust identitetsupplösning. I enlighet med Adobe bästa praxis kan du definiera länkningsregler som prioriterar e-post som en stabil och globalt unik identifierare för att behålla ett konsekvent och sekretesskompatibelt identitetsdiagram.
+   * Konfigurera [identitetsgrafens länkningsregler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) i Adobe Experience Platform så att _email_ uttryckligen används som ett unikt ID-namnområde. Dessa regler säkerställer att profiler sammanfogas korrekt över datakällor där _email_ finns, vilket möjliggör robust identitetsupplösning. I enlighet med Adobe bästa praxis kan du definiera länkningsregler som prioriterar e-post som en stabil och globalt unik identifierare för att behålla ett konsekvent och sekretesskompatibelt identitetsdiagram.
 Denna konfiguration ger en balans mellan enkel driftsättning och datastyrning, vilket ger en tillförlitlig grund för att samordna B2B-resor.
 
 ## Implementeringsöverväganden
@@ -130,7 +130,7 @@ Den här frågan returnerar antalet personposter som ska sammanfogas som en del 
 >[!NOTE]
 >
 >Datatabellen marketo_person_ajo_b2b används som ett komplett exempel på hur du arbetar med Marketo persondatauppsättning.
->Du kan hitta sandlådans datauppsättning på arbetsytan [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+>Du kan hitta sandlådans datauppsättning på arbetsytan [Dataset](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide).
 
 ```sql
 select
@@ -160,7 +160,7 @@ from
 
 #### E-postadresser med dubblettposter
 
-Den här frågan returnerar e-postmeddelanden med de mest duplicerade posterna i datauppsättningen.  Den här listan kan användas för att kontrollera vissa av posterna för att bättre förstå hur länkar mellan identiteter kan påverka Marketo och CRM.  Mer information om hur identitetslänkning fungerar finns i [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home).
+Den här frågan returnerar e-postmeddelanden med de mest duplicerade posterna i datauppsättningen.  Den här listan kan användas för att kontrollera vissa av posterna för att bättre förstå hur länkar mellan identiteter kan påverka Marketo och CRM.  Mer information om hur identitetslänkning fungerar finns i [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home).
 
 ```sql
 select
@@ -197,33 +197,33 @@ order by
 
 #### Tar bort e-post som identitet
 
-Om du efter din analys fastställer att e-post inte är ett giltigt fält som ska användas som identitetsfält kan personschemat ändras till [ta bort e-post som identitetsfält](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity)
+Om du efter din analys fastställer att e-post inte är ett giltigt fält som ska användas som identitetsfält kan personschemat ändras till [ta bort e-post som identitetsfält](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity)
 
 #### Blockera uppdateringar från Adobe Experience Platform
 
-Om det är bäst att behålla e-post som identitetsfält för dina användningsfall finns det ett alternativ för att [blockera fältuppdateringar](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) från AJO B2B och tillåter att AJO B2B huvudsakligen körs på Marketo-data.
+Om det är bäst att behålla e-post som identitetsfält för dina användningsfall finns det ett alternativ för att [blockera fältuppdateringar](https://experienceleague.adobe.com/sv/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) från AJO B2B och tillåter att AJO B2B huvudsakligen körs på Marketo-data.
 
 ## Skyddsräcken
 
 För att få en heltäckande bild av de skyddsräcken som gäller för B2B-resor med Marketo Engage, se följande officiella dokumentation:
 
-* [Adobe Journey Optimizer B2B edition - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
+* [Adobe Journey Optimizer B2B edition - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
 Innehåller specifika skyddsutkast och användningsparametrar för Journey Optimizer B2B edition.
-* [Adobe Experience Platform distributionsguider](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
+* [Adobe Experience Platform distributionsguider](https://experienceleague.adobe.com/sv/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
 Täcker allmänna arkitektur- och driftsättningsgarantier i Adobe Experience Platform-lösningar.
-* [Adobe Marketo Engage - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
+* [Adobe Marketo Engage - produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
 Information om prestanda och användningsskydd för Marketo Engage, inklusive aktivering och synkronisering av CRM.
-* [Real-Time CDP Guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
+* [Real-Time CDP Guardrails](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
 Tillhandahåller vägledning om dataintag, segmentering och aktiveringsgränser inom Real-Time Customer Data Platform.
 
 ## Relaterad dokumentation
 
-* [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
-* [Komma igång med kunddataplattformen B2B edition i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* [Guardrails for Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
-* [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform)
-* [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-* [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)
-* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-* [Adobe Journey Optimizer B2B edition Documentation](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
-* [XDM-fälthantering (Journey Optimizer B2B edition)](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)
+* [B2B edition för kunddataplattform i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
+* [Komma igång med kunddataplattformen B2B edition i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* [Guardrails for Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform)
+* [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
+* [Marketo Engage](https://experienceleague.adobe.com/sv/docs/marketo/using/home)
+* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+* [Adobe Journey Optimizer B2B edition Documentation](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview)
+* [XDM-fälthantering (Journey Optimizer B2B edition)](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)
