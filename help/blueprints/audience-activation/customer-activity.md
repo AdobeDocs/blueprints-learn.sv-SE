@@ -1,6 +1,6 @@
 ---
 title: Profilåtkomst i realtid för support- och säljscenarier
-description: '[!UICONTROL Kundprofil ] i realtid söker efter kontext för agentassisterad support och försäljning.'
+description: '[!UICONTROL Kundprofil &#x200B;] i realtid söker efter kontext för agentassisterad support och försäljning.'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
@@ -33,14 +33,14 @@ Med den här funktionen kan ni skapa ett avancerat sammanhang när en kund ringe
 
 ## Skyddsräcken
 
-* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ## Implementeringssteg
 
 1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
 1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
-1. [Aktivera scheman och datauppsättningar för profilen ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Aktivera scheman och datauppsättningar för profilen &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 1. [Infoga data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i Experience Platform.
 1. [Konfigurera sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html).
 1. Använd [Entities-API:t för att leta upp ett profilattribut](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html).

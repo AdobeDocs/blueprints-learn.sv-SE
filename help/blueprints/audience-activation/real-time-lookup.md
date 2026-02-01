@@ -55,7 +55,7 @@ Den här planen kräver en av följande datainsamlingsmetoder om du vill att pro
 
 ## Skyddsräcken
 
-* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [Edge Network Guardrails](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * Edge-profiler har en TTL-fil (time-to-live) på 14 dagar. Om en användare inte har varit aktiv på kanten på 14 dagar kan kantprofilen upphöra att gälla och måste hämtas från navet, vilket kan påverka personaliseringen på första sidan.
 * Edge personalisering stöder utvärdering av målgruppsmedlemskap i realtid för målgrupper som uppfyller villkoren för kantsegmentering. Målgrupper för grupp- och direktuppspelning från navet finns också tillgängliga i toppen med lämplig konfiguration.
@@ -77,7 +77,7 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 
 >[!IMPORTANT]
 >
->**Attributbaserade personaliseringskrav:** Om du vill anpassa baserat på profilattribut (inte bara målgruppsmedlemskap) måste du **** använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) med autentiserad integration på serversidan, oavsett om du också använder Web SDK eller Mobile SDK för datainsamling.
+>**Attributbaserade personaliseringskrav:** Om du vill anpassa baserat på profilattribut (inte bara målgruppsmedlemskap) måste du **&#x200B;**&#x200B;använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) med autentiserad integration på serversidan, oavsett om du också använder Web SDK eller Mobile SDK för datainsamling.
 
 * Möjliggör integrering med externa personaliseringsmotorer och CDN-baserad personalisering.
 * Edge Network Server-API:t är **obligatoriskt** för att säkert hämta profilattribut för personalisering.
@@ -91,7 +91,7 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
 1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
-1. [Aktivera scheman och datauppsättningar för profilen ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Aktivera scheman och datauppsättningar för profilen &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 1. [Infoga data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i Experience Platform.
 1. [Konfigurera sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för att säkerställa korrekt identitetssammanfogning och profilsammanfogning.
 1. [Konfigurera en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) i Experience Platform Data Collection med målkonfigurationen aktiverad. Datastream avgör i vilken datainsamling som målgrupperna inkluderas i svaret på sidan.
