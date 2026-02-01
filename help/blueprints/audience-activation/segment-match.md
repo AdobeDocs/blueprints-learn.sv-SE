@@ -84,7 +84,7 @@ Flödet [!UICONTROL Segmentmatchning] för att hantera partner skyddas av RBAC. 
 | **Hantera anslutningar för målgruppsdelning** | Med den här behörigheten kan du slutföra partnerhandskakningsprocessen, som ansluter två IMS-organisationer för att aktivera [!UICONTROL segmentmatchningsflöden]. |
 | **Hantera målgruppsresurser** | Med den här behörigheten kan du skapa, redigera och publicera feeds (det datapaket som används för [!UICONTROL segmentmatchning]) med aktiva partner (partners som har anslutits av administratörsanvändaren med **målgruppsdelningsanslutningar** -åtkomst). |
 
-Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#understanding-segment-match-permissions).
+Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#understanding-segment-match-permissions).
 
 ### Anslutnings-ID
 
@@ -102,7 +102,7 @@ Medgivandeinställningarna för [!UICONTROL segmentmatchning] kan hanteras på f
 
   Den här inställningen avgör om användardata kan delas eller inte. Standardinställningen är att avanmäla användardata som kan delas med antagandet att AEP-kunden redan har det medgivande som krävs för datadelning. Du kan ändra den här inställningen till att anmäla dig genom att kontakta kontohanteraren för Adobe och göra en extra kontroll för att tvinga AEP-kunder att explicit spåra sitt samtycke.
 
-* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=en).
+* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE).
 
   Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchning] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
 
@@ -208,7 +208,7 @@ Ni kan använda Adobe Experience Platform Segment Match i sekretesscentrerat må
 
 ## Mer information
 
-* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#)
-* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en)
-* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=en)
-* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=en)
+* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#)
+* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE)
+* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=sv-SE)
+* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=sv-SE)

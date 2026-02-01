@@ -34,10 +34,10 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
    * Använd namnutrymmen som e-post och SHA256-hash för e-post, om sådana finns.
    * Facebook har en lista över identiteter som stöds. För att kunna aktivera anpassade målgrupper på Facebook måste en av de identiteter som stöds finnas i de profiler som ska aktiveras.
    * Följande identiteter stöds för närvarande av Facebook: GAID, IDFA, phone_sha256, email_lc_sha256, extern_id.
-   * Mer information finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
+   * Mer information finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE).
    * Google Customer Match innehåller en lista över identiteter som stöds. För att kunna aktivera till Google kundmatchning måste en av de identiteter som stöds finnas i profilerna som ska aktiveras.
    * Följande identiteter stöds för närvarande av Google Customer Match: GAID, IDFA, phone_sha256_e.164, email_lc_sha256, user_id.
-   * Mer information finns i [Google kundmatchningsmålguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+   * Mer information finns i [Google kundmatchningsmålguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE).
    * Skapa egna namnutrymmen där det inte finns några namnutrymmen i rutan för de tillämpliga identiteterna.
 1. Konfigurera scheman och datauppsättningar för datakällor för profiler.
    * Skapa profilpostscheman för alla profilpostens källdata.
@@ -72,8 +72,8 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
    * Granska segmentresultatantalet för de angivna segmenten.
    * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
 1. Konfigurera leveransen av målgruppen till målet i målkonfigurationen.
-   * Mer information om hur du konfigurerar Facebook-målet finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
-   * Mer information om hur du konfigurerar Google-destinationen finns i [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+   * Mer information om hur du konfigurerar Facebook-målet finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE).
+   * Mer information om hur du konfigurerar Google-destinationen finns i [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE).
    * När du konfigurerar ett mål väljer du vilken målgrupp du vill aktivera för målet.
    * Fastställ det schemalagda startdatum som du vill att måldataflödet ska börja leverera målgruppen till målet.
    * Varje mål har obligatoriska och valfria attribut som ska skickas.
@@ -93,10 +93,10 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
 
 ## Skyddsräcken
 
-[Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+[Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
 
 ## Relaterad dokumentation
 
-Aktivering till anpassade målgrupper på Facebook - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)
+Aktivering till anpassade målgrupper på Facebook - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE)
 
-Aktivering av Google kundmatchning - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)
+Aktivering av Google kundmatchning - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE)
