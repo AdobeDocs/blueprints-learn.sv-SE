@@ -1,5 +1,5 @@
 ---
-title: Audience Manager Design
+title: Enhetsbaserad - anonym målgruppsanpassning med Audience Manager
 description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata. Denna förmåga möjliggör personanpassade och konsekventa kundupplevelser i realtid på alla enheter.
 landing-page-description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
 short-description: Lär dig att rikta in dig på målgrupper över webben och annonskanaler baserat på anonyma och beteendemässiga kunddata.
@@ -7,14 +7,14 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 27%
+source-wordcount: '246'
+ht-degree: 26%
 
 ---
 
-# Audience Manager Design
+# Enhetsbaserad - anonym målgruppsanpassning med Audience Manager
 
 Anonym målgruppsaktivering är möjligheten att rikta och personalisera till målgrupper över webben, mobiler och annonskanaler baserat på anonyma enhets- och beteendedata.
 
@@ -30,7 +30,7 @@ Anonym målgruppsaktivering är möjligheten att rikta och personalisera till m�
 * Audience Manager
 * Kunddataplattform i realtid
 
-Både Audience Manager och kunddataplattformen i realtid kan användas för att driva anonyma Audience Activation för annonsdestinationer och på plats. Observera att kunddataplattformen i realtid bara stöder en delmängd av annonsdestinationer med anonyma enhetsidentifierare som katalogiseras i [måldokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=sv-SE).
+Både Audience Manager och kunddataplattformen i realtid kan användas för att driva anonyma Audience Activation för annonsdestinationer och på plats. Observera att kunddataplattformen i realtid bara stöder en delmängd av annonsdestinationer med anonyma enhetsidentifierare som katalogiseras i [måldokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
 ## Arkitektur
 
@@ -40,8 +40,8 @@ Både Audience Manager och kunddataplattformen i realtid kan användas för att 
 
 ## Implementeringssteg för Audience Manager
 
-* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=sv-SE).
+* Mer information om hur du implementerar Audience Manager finns i följande [dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html).
 
 ## Implementeringssteg för kunddataplattformen i realtid
 
-* Implementeringssteg för kunddataplattformen i realtid finns i följande [dokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/home).
+* Implementeringssteg för kunddataplattformen i realtid finns i följande [dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home).

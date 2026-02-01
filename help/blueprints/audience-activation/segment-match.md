@@ -1,24 +1,24 @@
 ---
-title: Segmentmatchning - utkast
+title: Målgrupps-Collaboration med segmentmatchning
 description: Läs mer om [!UICONTROL segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör att du kan utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
 
-# Segmentmatchning - utkast
+# Audience Collaboration with Segment Match Design
 
-Segmentmatchning gör det möjligt för partnervarumärken att dela målgrupper över sina respektive Experience Platform-miljöer. Nyckeln för varumärken är att få kontakt med kunderna baserat på data som samlats in från deras direkta relationer med konsumenterna. Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.
+Segmentmatchning gör det möjligt för partnervarumärken att dela målgrupper i sina respektive Experience Platform-miljöer. Nyckeln för varumärken är att få kontakt med kunderna baserat på data som samlats in från deras direkta relationer med konsumenterna. Med bättre styrning, behörigheter och preferenshanteringssystem kan marknadsförarna ytterligare förbättra sina förstapartsautentiserade målgrupper med viktiga partners.
 
 [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör det möjligt för Experience Platform-kunder (AEP) (kallas _partners_) att utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 
 Med tjänsten kan kunderna på ett säkert sätt identifiera matchande ID:n på ett säkert, neutralt sätt utan att behöva lämna ut hela sin databas. Partners får endast angivna attribut (segmentnamn) för överlappande ID:n, vilket möjliggör snabbare och enklare delning på ett kontrollerbart, samtyckesstyrt sätt.
 
-[!UICONTROL Segmentmatchning] använder AEP-datastyrning och medgivanderamverk som ryggrad. Det finns för alla Real-time Customer Data Platform-kunder inom B2C och B2P. Viktiga funktioner i [!UICONTROL [!UICONTROL Segmentmatchning]] är:
+[!UICONTROL Segmentmatchning] använder AEP datastyrning och medgivningsramverk som ryggrad. Den är tillgänglig för alla kunder som använder kunddataplattformen B2C och B2P i realtid. Viktiga funktioner i [!UICONTROL [!UICONTROL Segmentmatchning]] är:
 
 * Segmentdelning för överlappande kunder
 * Överlappningsrapporter före delning för insikter om beräknad matchningsvolym
@@ -46,7 +46,7 @@ Globala multinationella företag står inför utmaningar när det gäller datasa
 
 ![Arkitektur för segmentmatchning](assets/architecture-segment-match.png){zoomable="yes"}
 
-[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Istället är det en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen för segmentmatchning] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
+[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Det är snarare en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen för segmentmatchning] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
 
 [!UICONTROL Segmentmatchning] aktiverar:
 
@@ -84,7 +84,7 @@ Flödet [!UICONTROL Segmentmatchning] för att hantera partner skyddas av RBAC. 
 | **Hantera anslutningar för målgruppsdelning** | Med den här behörigheten kan du slutföra partnerhandskakningsprocessen, som ansluter två IMS-organisationer för att aktivera [!UICONTROL segmentmatchningsflöden]. |
 | **Hantera målgruppsresurser** | Med den här behörigheten kan du skapa, redigera och publicera feeds (det datapaket som används för [!UICONTROL segmentmatchning]) med aktiva partner (partners som har anslutits av administratörsanvändaren med **målgruppsdelningsanslutningar** -åtkomst). |
 
-Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#understanding-segment-match-permissions).
+Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#understanding-segment-match-permissions).
 
 ### Anslutnings-ID
 
@@ -100,9 +100,9 @@ Medgivandeinställningarna för [!UICONTROL segmentmatchning] kan hanteras på f
 
 * På organisationsnivå, under introduktionen, med inställningen för avanmälan eller anmälan för godkännandekontroll.
 
-  Den här inställningen avgör om användardata kan delas eller inte. Standardinställningen är att avanmäla användarangivelse som anger att användardata kan delas med antagandet att AEP-kunden redan har det medgivande som krävs för datadelning. Du kan ändra den här inställningen till att anmäla dig genom att kontakta kontohanteraren för Adobe, vilket gör en extra kontroll för att tvinga AEP-kunder att explicit spåra samtycke.
+  Den här inställningen avgör om användardata kan delas eller inte. Standardinställningen är att avanmäla användardata som kan delas med antagandet att AEP-kunden redan har det medgivande som krävs för datadelning. Du kan ändra den här inställningen till att anmäla dig genom att kontakta kontohanteraren för Adobe och göra en extra kontroll för att tvinga AEP-kunder att explicit spåra sitt samtycke.
 
-* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE).
+* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=en).
 
   Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchning] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
 
@@ -112,7 +112,7 @@ Medgivandeinställningarna för [!UICONTROL segmentmatchning] kan hanteras på f
   `     `}
   ```
 
-  Den här inställningen kan ändras genom att du kontaktar kontohanteraren för Adobe, så att den bara omfattar     identiteter med explicit deltagande, till exempel:
+  Den här inställningen kan ändras genom att du kontaktar kontohanteraren för Adobe och endast inkluderar     identiteter med explicit deltagande, till exempel:
 
   ```
   "share": {
@@ -128,7 +128,7 @@ Varningar genereras när en partneranslutning initieras eller när segmentflöde
 
 Arbetsflödet för att konfigurera partneranslutningen hanteras med RBAC enligt ovan. När rätt behörigheter finns på plats, kräver anslutningen till en partnersandlåda att Connect-ID:t för den sandlådan/instansen i partnerorganisationen delas.
 
-När en anslutning begärs från den avsändande partnern måste den godkännas på den mottagande sidan för att säkerställa en säker och säker partnerkonfiguration. Partneranslutningens handskakning säkerställer att avtalet finns mellan de två organisationerna och tillåter Adobe att underlätta [!UICONTROL segmentmatchningsprocessen] för organisationens räkning. När anslutningen är godkänd och aktiv kan segmentdelningsprocessen initieras från båda sidor.
+När en anslutning begärs från den avsändande partnern måste den godkännas på den mottagande sidan för att säkerställa en säker och säker partnerkonfiguration. Partneranslutningens handskakning säkerställer att avtalet finns mellan de två organisationerna och gör det möjligt för Adobe att underlätta [!UICONTROL segmentmatchningsprocessen] för organisationens räkning. När anslutningen är godkänd och aktiv kan segmentdelningsprocessen initieras från båda sidor.
 
 ### Segmentdelning
 
@@ -142,7 +142,7 @@ Det övergripande processflödet är:
 
 ![Segmentdelning](assets/segment-sharing.png){zoomable="yes"}
 
-Dessa överlappande uppskattningar ger viktiga insikter, partnerupptäckt och data för att understödja datasamarbetsavtal. Inga kund- eller segmentdata flyttas över sandlådor för att få fram dessa uppskattningar av överlappning. De av kunden valda, förhash-kodade tillämpliga identiteterna i en given sandlåda läggs till i en sannolik datastruktur som gör att Adobe kan utföra union- och skärningsåtgärder mellan dem. De här åtgärderna hjälper [!UICONTROL Segmentmatchning] att få den uppskattade skärningspunkten för två datastrukturer som består av identiteter från två olika sandlådor utan att behöva jämföra de faktiska värdena
+Dessa överlappande uppskattningar ger viktiga insikter, partnerupptäckt och data för att understödja datasamarbetsavtal. Inga kund- eller segmentdata flyttas över sandlådor för att få fram dessa uppskattningar av överlappning. De på förhand valda användbara identiteterna som kunden valt i en viss sandlåda läggs till i en sannolik datastruktur som gör att Adobe kan utföra åtgärder för union och skärning mellan dem. De här åtgärderna hjälper [!UICONTROL Segmentmatchning] att få den uppskattade skärningspunkten för två datastrukturer som består av identiteter från två olika sandlådor utan att behöva jämföra de faktiska värdena
 
 Identitetsöverlappningsprocessen är beroende av datauppsättningen **daglig export med fullständig profil** från både avsändarsandlådan och mottagarsandlådan för att identifiera gemensamma profiler som tillhör de delade segmenten. Det detaljerade processflödet för överlappningsprocessen visas nedan:
 
@@ -188,7 +188,7 @@ Ni kan använda Adobe Experience Platform Segment Match i sekretesscentrerat må
 3. ACME ställer in ett ID (Private Inventory Deal) med tillämpliga målinriktningskriterier, inklusive den målgrupp som fastställdes i föregående steg. Det privata inventerings-ID:t överförs sedan till Lumas DSP.
 4. Luma skapar en Privat inventeringsaffär och trafikkampanj/annonsprojekt.
 5. Kampanjen levererar sedan via programmatisk Private Inventory Deal.
-6. Därefter levererar annonsservern eller SSP annonsvisningar som uppfyller de fastställda målinriktningsvillkoren. (Ytterligare målinriktningskriterier, t.ex. frekvensbegränsning, är tillgängliga via annonsserver och/eller DSP, beroende på om ett garantiavtal eller ett önskat avtal har upprättats i avtalet).
+6. Därefter levererar annonsservern eller SSP annonsvisningar som uppfyller de fastställda målinriktningsvillkoren. (Ytterligare målinriktningskriterier, t.ex. frekvensbegränsning, är tillgängliga via annonsservern och/eller DSP, beroende på om ett garantiavtal eller ett önskat avtal har upprättats i avtalet).
 7. Trafiken drivs av Lumas varumärke.
 8. ACME delar sedan med sig av insikter och målgrupper efter kampanjen via segmentmatchning för återanpassning.
 
@@ -208,7 +208,7 @@ Ni kan använda Adobe Experience Platform Segment Match i sekretesscentrerat må
 
 ## Mer information
 
-* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#)
-* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE)
-* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=sv-SE)
-* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=sv-SE)
+* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#)
+* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en)
+* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=en)
+* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=en)

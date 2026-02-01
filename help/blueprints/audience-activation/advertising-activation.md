@@ -1,17 +1,17 @@
 ---
-title: Aktivering till sociala medier och reklamdestinationer från RTCDP
+title: Audience Activation till sociala medier och Advertising destinationer
 description: Lär dig hur du importerar kunddata från flera källor för att skapa en enda profilvy av kunden.
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
-# Aktivering till sociala medier och reklamdestinationer från RTCDP
+# Audience Activation till sociala medier och Advertising destinationer
 
 Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden. Ni kan segmentera dessa profiler för att bygga målgrupper för marknadsföring och personalisering, dela dessa målgrupper med annonsnätverk som Facebook och Google för att rikta och personalisera kampanjer mot dessa målgrupper.
 
@@ -22,7 +22,7 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
 
 ## Tillämpningar
 
-* Real-time Customer Data Platform
+* Kunddataplattform i realtid
 
 ## Arkitektur
 
@@ -32,12 +32,12 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
 
 1. Konfigurera identitetsnamnutrymmen som ska användas i profildatakällor.
    * Använd namnutrymmen som e-post och SHA256-hash för e-post, om sådana finns.
-   * Facebook har en lista över identiteter som stöds. För att kunna aktivera anpassade målgrupper i Facebook måste en av de identiteter som stöds finnas i de profiler som ska aktiveras.
+   * Facebook har en lista över identiteter som stöds. För att kunna aktivera anpassade målgrupper på Facebook måste en av de identiteter som stöds finnas i de profiler som ska aktiveras.
    * Följande identiteter stöds för närvarande av Facebook: GAID, IDFA, phone_sha256, email_lc_sha256, extern_id.
-   * Mer information finns i [Facebook målguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE).
+   * Mer information finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
    * Google Customer Match innehåller en lista över identiteter som stöds. För att kunna aktivera till Google kundmatchning måste en av de identiteter som stöds finnas i profilerna som ska aktiveras.
    * Följande identiteter stöds för närvarande av Google Customer Match: GAID, IDFA, phone_sha256_e.164, email_lc_sha256, user_id.
-   * Mer information finns i [Google kundmatchningsmålguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE).
+   * Mer information finns i [Google kundmatchningsmålguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
    * Skapa egna namnutrymmen där det inte finns några namnutrymmen i rutan för de tillämpliga identiteterna.
 1. Konfigurera scheman och datauppsättningar för datakällor för profiler.
    * Skapa profilpostscheman för alla profilpostens källdata.
@@ -62,8 +62,8 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
       * Omforma arrayer och mappa typfält för att säkerställa korrekt mappning och modellering av arrayer och kartor för segmentering i Experience Platform.
 1. Konfigurera profilkopplingsprincipen för att säkerställa att identitetsdiagrammet konfigureras korrekt och vilka datauppsättningar som ska ingå i sammanslagningen av profiler.
 1. När dataflödena har körts kontrollerar du att inmatningen av profildata lyckades utan fel.
-   * Inspect identitetsdiagrammet för flera profiler för att säkerställa korrekt behandling av identitetsrelationer.
-   * Inspect anger attribut och händelser för flera profiler för att säkerställa korrekt intag av attribut och händelser till profilerna.
+   * Granska identitetsdiagrammet för flera profiler för att säkerställa korrekt behandling av identitetsrelationer.
+   * Granska attribut och händelser för flera profiler för att säkerställa korrekt intag av attribut och händelser till profilerna.
 1. Skapa segment för att skapa profilmålgrupper
    * Bygg segment i segmentbyggaren med regler mot attribut och händelser.
    * Spara segmentet för utvärdering. Segmenten utvärderas enligt angivet schema en gång om dagen.
@@ -72,31 +72,31 @@ Inhämta kunddata från flera källor för att skapa en enda profilvy av kunden.
    * Granska segmentresultatantalet för de angivna segmenten.
    * Undersök den profil som ska inkluderas i segmentet för att verifiera att segmentmedlemskapet ingår i segmentmedlemskapsdelen i profilen.
 1. Konfigurera leveransen av målgruppen till målet i målkonfigurationen.
-   * Mer information om hur du konfigurerar Facebook-målet finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE).
-   * Mer information om hur du konfigurerar Google-destinationen finns i [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE).
+   * Mer information om hur du konfigurerar Facebook-målet finns i [Facebook-målguiden](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
+   * Mer information om hur du konfigurerar Google-destinationen finns i [Google kundmatchningsguide](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
    * När du konfigurerar ett mål väljer du vilken målgrupp du vill aktivera för målet.
    * Fastställ det schemalagda startdatum som du vill att måldataflödet ska börja leverera målgruppen till målet.
    * Varje mål har obligatoriska och valfria attribut som ska skickas.
-      * För Facebook måste en av de identiteter som krävs inkluderas och användas för att matcha profilerna i målgrupperna i Experience Platform med en profil som Facebook har som mål.
-      * För Google Customer Match måste en av de nödvändiga identiteterna inkluderas och används för att matcha profilerna i målgrupperna i Experience Platform mot en profil som Google Customer Match har som mål.
+      * För Facebook måste en av de nödvändiga identiteterna inkluderas och används för att matcha profilerna i målgrupperna inom Experience Platform med en profil som kan användas på Facebook.
+      * För Google Customer Match måste en av de identiteter som krävs inkluderas och används för att matcha profilerna i målgrupperna inom Experience Platform med en profil som Google Customer Match har som mål.
    * Varje mål har också en angiven leveranstyp, vare sig det gäller direktuppspelning eller batch, filbaserad eller JSON-nyttolast.
       * För Facebook levereras målgruppsmedlemskap i direktuppspelande form till en Facebook-slutpunkt i JSON-format.
       * För Google Customer Match levereras målgruppsmedlemskap i direktuppspelande form till en Google Customer Match-slutpunkt i JSON-format.
-      * Målgruppsmedlemskap kommer att levereras i direktuppspelande läge efter utvärderingen av direktuppspelning eller gruppsegmentering i Experience Platform.
+      * Målgruppsmedlemskap levereras i direktuppspelande läge efter utvärderingen av direktuppspelning eller gruppsegmentering i Experience Platform.
 1. Kontrollera att målgruppen har levererats till destinationen som förväntat.
-   * Kontrollera övervakningsgränssnittet för att bekräfta att målgruppen levererades med det förväntade antalet profiler. Publiken bör ha en storlek som motsvarar det förväntade antalet profiler som är aktiverade. Observera att specifika mål som Facebook och Google kräver vissa fält, t.ex. en hash-identitet för e-post, och om de inte finns i profilen som är medlem i målgruppen aktiveras de inte för målgruppen.
+   * Kontrollera övervakningsgränssnittet för att bekräfta att målgruppen levererades med det förväntade antalet profiler. Målgruppens storlek bör återspegla det förväntade antalet profiler som är aktiverade, och observera att specifika mål som Facebook och Google kräver vissa fält, till exempel en e-posthash-identitet, och om de inte finns i profilen som är medlem av målgruppen aktiveras de inte till målplatsen.
    * Kontrollera om det finns profiler som hoppats över för att se om det saknas profiler eller attribut som var obligatoriska saknas.
    * Kontrollera om det finns andra fel som behöver åtgärdas.
 1. Kontrollera att målgruppen aktiverades till slutmålet med det förväntade antalet målgruppsmedlemskap.
-   * Logga in på Facebook Custom Audience Portal för att bekräfta att målgruppen från Real-time Customer Data Platform levererades och att matchningsfrekvensen för profiler i Facebook rimligen matchar antalet profiler i målgruppen från Real-time Customer Data Platform.
+   * Logga in på Facebooks anpassade målgruppsportal för att verifiera målgruppen från kunddataplattformen i realtid och att matchningsfrekvensen för profiler i målgruppen på Facebook på ett rimligt sätt matchar antalet profiler i målgruppen från kunddataplattformen i realtid.
    * När aktiveringsflödet är klart växlar du till ditt Google Ads-konto. De aktiverade segmenten visas i ditt Google-konto som kundlistor. Observera att beroende på segmentstorleken fyller vissa målgrupper inte i bilden om det inte finns fler än 100 aktiva användare att betjäna.
 
 ## Skyddsräcken
 
-[Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+[Profil- och segmenteringsstödlinjer](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
 ## Relaterad dokumentation
 
-Aktivering till Facebook anpassade målgrupper - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=sv-SE)
+Aktivering till anpassade målgrupper på Facebook - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)
 
-Aktivering av Google kundmatchning - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=sv-SE)
+Aktivering av Google kundmatchning - [målkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)

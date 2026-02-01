@@ -5,10 +5,10 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
+source-git-commit: 0add2a504e6ab8b6bafac78a72fc47a805440869
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 25%
+source-wordcount: '231'
+ht-degree: 21%
 
 ---
 
@@ -25,13 +25,14 @@ ht-degree: 25%
       + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
 + Målgrupps- och profilaktivering{#audience-activation}
-   + [Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
+   + [Enhetsbaserad - anonym målgruppsanpassning med Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
    + Customer Data Platform (RTCDP) i realtid {#known-customer-audience-activation}
-      + [Aktivering i sociala kanaler och annonskanaler](/help/blueprints/audience-activation/advertising-activation.md)
-      + [Aktivering till mål för fil- och företagsströmning](/help/blueprints/audience-activation/enterprise-destinations.md)
-      + [Kundaktivitetsnav](/help/blueprints/audience-activation/customer-activity.md)
-      + [Segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
-      + [Target &amp; RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
+      + [Audience Activation till sociala medier och Advertising destinationer](/help/blueprints/audience-activation/advertising-activation.md)
+      + [Målgrupps- och profilaktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
+      + [Profilåtkomst i realtid för support- och säljscenarier](/help/blueprints/audience-activation/customer-activity.md)
+      + [Edge Profile Access för webb och mobil Personalization i realtid](/help/blueprints/audience-activation/real-time-lookup.md)
+      + [Målgrupps-Collaboration med segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
+      + [Känd Personalization-kund med Target](/help/blueprints/audience-activation/rtcdp-target.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
@@ -66,8 +67,8 @@ ht-degree: 25%
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + Inaktuella utkast{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
