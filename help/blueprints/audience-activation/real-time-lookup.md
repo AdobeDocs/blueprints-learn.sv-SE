@@ -3,8 +3,7 @@ title: Edge Profile Access för webb och mobil Personalization i realtid
 description: '[!UICONTROL Åtkomst till kundprofilen i realtid] ger kontext för webb- och mobilpersonalisering i realtid.'
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 719
-exl-id: null
-source-git-commit: 5530337ed9a9c67285db4abd0afba3809466e42c
+source-git-commit: 2fad3a8a9210d703130f251b0bd7cc4c0b7cbd32
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
@@ -41,13 +40,13 @@ Med den här funktionen kan ni leverera personaliserade upplevelser på era webb
 
 Den här planen kräver en av följande datainsamlingsmetoder om du vill att profilen ska uppdateras i realtid med strömmande data. Det går att få åtkomst till Edge-profilen i realtid utan att behöva samla in data direkt till Edge-profilen. Data kan samlas in till navet och projiceras till Edge-profilen också. Observera att det kommer att finnas ytterligare fördröjning för data som samlas in på hubben och sedan projiceras för Edge.
 
-* Använd [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=sv-SE) om du vill samla in data från din webbplats.
+* Använd [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) om du vill samla in data från din webbplats.
 * Använd [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) om du vill samla in data från ditt mobilprogram.
-* Använd [Edge Network Server-API:t](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) om du inte använder Web SDK eller Mobile SDK, eller implementerar en mer direkt server-till-server-anslutning.
+* Använd [Edge Network Server-API:t](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) om du inte använder Web SDK eller Mobile SDK, eller implementerar en mer direkt server-till-server-anslutning.
 
 >[!IMPORTANT]
 >
->Innan du implementerar kantanpassning bör du läsa guiden om hur du [aktiverar målgruppsdata för kantanpassningsmål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Den här guiden tar dig igenom de nödvändiga konfigurationsstegen för användning av samma sida och nästa sida för personalisering, i flera Experience Platform-komponenter.
+>Innan du implementerar kantanpassning bör du läsa guiden om hur du [aktiverar målgruppsdata för kantanpassningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Den här guiden tar dig igenom de nödvändiga konfigurationsstegen för användning av samma sida och nästa sida för personalisering, i flera Experience Platform-komponenter.
 
 ## Arkitekturdiagram
 
@@ -55,14 +54,14 @@ Den här planen kräver en av följande datainsamlingsmetoder om du vill att pro
 
 ## Skyddsräcken
 
-* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+* [Guardsutkast för [!UICONTROL Kundprofildata i realtid] ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [Edge Network Guardrails](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * Edge-profiler har en TTL-fil (time-to-live) på 14 dagar. Om en användare inte har varit aktiv på kanten på 14 dagar kan kantprofilen upphöra att gälla och måste hämtas från navet, vilket kan påverka personaliseringen på första sidan.
 * Edge personalisering stöder utvärdering av målgruppsmedlemskap i realtid för målgrupper som uppfyller villkoren för kantsegmentering. Målgrupper för grupp- och direktuppspelning från navet finns också tillgängliga i toppen med lämplig konfiguration.
 
 ## Implementeringsmönster
 
-Edge-personalisering kan implementeras med målet [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/custom-personalization) i kunddataplattformen i realtid. Den här destinationen stöder flera datainsamlingsmetoder beroende på ditt användningsfall.
+Edge-personalisering kan implementeras med målet [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) i kunddataplattformen i realtid. Den här destinationen stöder flera datainsamlingsmetoder beroende på ditt användningsfall.
 
 ### Mönster 1: Målgruppsbaserad personalisering med Web SDK/Mobile SDK
 
@@ -77,7 +76,7 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 
 >[!IMPORTANT]
 >
->**Attributbaserade personaliseringskrav:** Om du vill anpassa baserat på profilattribut (inte bara målgruppsmedlemskap) måste du **&#x200B;**&#x200B;använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) med autentiserad integration på serversidan, oavsett om du också använder Web SDK eller Mobile SDK för datainsamling.
+>**Attributbaserade personaliseringskrav:** Om du vill anpassa baserat på profilattribut (inte bara målgruppsmedlemskap) måste du **** använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) med autentiserad integration på serversidan, oavsett om du också använder Web SDK eller Mobile SDK för datainsamling.
 
 * Möjliggör integrering med externa personaliseringsmotorer och CDN-baserad personalisering.
 * Edge Network Server-API:t är **obligatoriskt** för att säkert hämta profilattribut för personalisering.
@@ -88,21 +87,21 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 
 ## Implementeringssteg
 
-1. [Skapa scheman](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=sv-SE) för data som ska importeras.
-1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=sv-SE) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
-1. [Aktivera scheman och datauppsättningar för profilen &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=sv-SE).
-1. [Infoga data](https://experienceleague.adobe.com/?lang=sv&recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i Experience Platform.
-1. [Konfigurera sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=sv-SE) för att säkerställa korrekt identitetssammanfogning och profilsammanfogning.
-1. [Konfigurera en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE) i Experience Platform Data Collection med målkonfigurationen aktiverad. Datastream avgör i vilken datainsamling som målgrupperna inkluderas i svaret på sidan.
-1. Implementera [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=sv-SE) eller [Mobile SDK](https://developer.adobe.com/client-sdks/home/) på webb- och mobilegenskaper för datainsamling.
-1. Konfigurera kantsegmentering för målgrupper som behöver realtidsutvärdering. [Edge segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=sv-SE).
-1. Ange [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/custom-personalization) som mål i målkatalogen:
-1. [Aktivera målgrupper till kantanpassningsmålet](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Välj vilka målgrupper du vill aktivera till målet.
-1. (Valfritt för attributbaserad personalisering) Om du behöver anpassa dig baserat på profilattribut utöver målgruppsmedlemskapet implementerar du [Edge Network Server-API:t](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) med autentiserad integration på serversidan med samma datastam. Detta är **obligatoriskt** för åtkomst av profilattribut.
+1. [Skapa scheman](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
+1. [Konfigurera rätt identiteter och identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) i schemat för att säkerställa att inkapslade data kan sammanfogas till en enhetlig profil.
+1. [Aktivera scheman och datauppsättningar för profilen ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Infoga data](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) i Experience Platform.
+1. [Konfigurera sammanfogningsprinciper](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) för att säkerställa korrekt identitetssammanfogning och profilsammanfogning.
+1. [Konfigurera en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) i Experience Platform Data Collection med målkonfigurationen aktiverad. Datastream avgör i vilken datainsamling som målgrupperna inkluderas i svaret på sidan.
+1. Implementera [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) eller [Mobile SDK](https://developer.adobe.com/client-sdks/home/) på webb- och mobilegenskaper för datainsamling.
+1. Konfigurera kantsegmentering för målgrupper som behöver realtidsutvärdering. [Edge segmenteringsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html).
+1. Ange [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) som mål i målkatalogen:
+1. [Aktivera målgrupper till kantanpassningsmålet](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Välj vilka målgrupper du vill aktivera till målet.
+1. (Valfritt för attributbaserad personalisering) Om du behöver anpassa dig baserat på profilattribut utöver målgruppsmedlemskapet implementerar du [Edge Network Server-API:t](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) med autentiserad integration på serversidan med samma datastam. Detta är **obligatoriskt** för åtkomst av profilattribut.
 1. Implementera anpassningslogik i webb-/mobilapplikationen för att förbruka exporterade målgruppsdata och profilattribut:
-   * Om du använder taggar i Adobe Experience Platform använder du funktionen [skicka-händelse, fullständig](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=sv-SE), för att få åtkomst till variabeln `event.destinations` med exporterade data.
-   * Om du inte använder taggar kan du använda [kommandosvar](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=sv-SE) för att tolka JSON-svaret från Adobe Experience Platform och hämta målar-ID:n och profilattribut.
+   * Om du använder taggar i Adobe Experience Platform använder du funktionen [skicka-händelse, fullständig](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html), för att få åtkomst till variabeln `event.destinations` med exporterade data.
+   * Om du inte använder taggar kan du använda [kommandosvar](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html) för att tolka JSON-svaret från Adobe Experience Platform och hämta målar-ID:n och profilattribut.
 
 ## Implementeringsöverväganden
 
@@ -116,7 +115,7 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 
 >[!IMPORTANT]
 >
->Profilattribut kan innehålla känsliga data. För att skydda dessa data **måste** använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) när du konfigurerar det anpassade Personalization-målet för attributbaserad personalisering. Alla Edge Network Server-API-anrop måste göras i en autentiserad kontext.
+>Profilattribut kan innehålla känsliga data. För att skydda dessa data **måste** använda [Edge Network Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) när du konfigurerar det anpassade Personalization-målet för attributbaserad personalisering. Alla Edge Network Server-API-anrop måste göras i en autentiserad kontext.
 
 * För attributbaserad personalisering med hjälp av profilattribut måste du lägga till en integration på serversidan med Edge Network Server-API:t som använder samma dataström som du använder för din webb- eller Mobile SDK-implementering.
 * Du måste konfigurera vilka profilattribut som ska inkluderas i kantprojektionen via den anpassade målkonfigurationen för Personalization Connection.
@@ -134,25 +133,25 @@ Edge-personalisering kan implementeras med målet [Anpassad Personalization-ansl
 
 ### Målkonfigurationer
 
-* [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - primär implementeringsguide
-* [Översikt över Personalization-mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/overview)
-* [Aktivera målgrupper för att kanalisera personaliseringsmål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
-* [Leta upp profilattribut på kanten i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
+* [Anpassad Personalization-anslutning](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - primär implementeringsguide
+* [Översikt över Personalization-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)
+* [Aktivera målgrupper för att kanalisera personaliseringsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [Leta upp profilattribut på kanten i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
 
 ### SDK-dokumentation
 
-* [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=sv-SE)
+* [Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
 * [Experience Platform Mobile SDK-dokumentation](https://developer.adobe.com/client-sdks/home/)
-* [Edge Network Server-API-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE)
+* [Edge Network Server-API-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 * [Experience Platform Tags-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
-* [Kommandosvar i Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=sv-SE)
+* [Kommandosvar i Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)
 
 ### Profil- och segmenteringsdokumentation
 
-* [[!UICONTROL Kundprofil i realtid] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE)
-* [Profilsäkerhetsutkast](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE)
+* [[!UICONTROL Kundprofil i realtid] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Profilsäkerhetsutkast](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ### Självstudiekurser
 
-* [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=sv-SE)
-* [Dataströmskonfiguration](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE)
+* [Nästa steg i personaliseringen med Real-Time CDP och Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+* [Dataströmskonfiguration](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html)
