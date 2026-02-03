@@ -5,10 +5,10 @@ user-guide-description: Utkast är repeterbara implementeringar som åtgärdar e
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 0add2a504e6ab8b6bafac78a72fc47a805440869
+source-git-commit: d5f3618fd811131e9d9c1fae16d7aab16aecc9e9
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 21%
+source-wordcount: '230'
+ht-degree: 24%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 21%
    + [Enhetsbaserad - anonym målgruppsanpassning med Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
    + Customer Data Platform (RTCDP) i realtid {#known-customer-audience-activation}
       + [Audience Activation till sociala medier och Advertising destinationer](/help/blueprints/audience-activation/advertising-activation.md)
-      + [Målgrupps- och profilaktivering till företagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
+      + [Målgrupps- och profilaktivering för storföretagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Profilåtkomst i realtid för support- och säljscenarier](/help/blueprints/audience-activation/customer-activity.md)
       + [Edge Profile Access för webb och mobil Personalization i realtid](/help/blueprints/audience-activation/real-time-lookup.md)
       + [Målgrupps-Collaboration med segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
@@ -67,8 +67,8 @@ ht-degree: 21%
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + Inaktuella utkast{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
