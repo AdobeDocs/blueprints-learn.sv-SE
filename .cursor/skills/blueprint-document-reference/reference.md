@@ -15,7 +15,7 @@ ht-degree: 1%
 | **Scenarioplan** | Enskilt fall: arkitektur, steg, skyddsräcken | t.ex. `real-time-lookup.md`, `journey-optimizer-journeys.md` |
 | **Innehåll** | Navigering; använd inte som innehållsmall | `help/blueprints/TOC.md` |
 
----
+&#x200B;---
 
 ## Full Section Reference
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 - **Schemautskriftsscenarier** eller **Integreringsmönster**: Tabell med scenarionamn, kort beskrivning och länk till scenarioplanen.
 - **Förutsättningar**, **Guardrails**, **Relaterad dokumentation**: Samma som ovan. Var kortfattad.
 
----
+&#x200B;---
 
 ## Adobe Experience League - agentanvisningar
 
@@ -110,7 +110,7 @@ Exempel:
 * [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 ```
 
----
+&#x200B;---
 
 ## Repo och innehållsförteckning
 
@@ -118,7 +118,7 @@ Exempel:
 - **Assets**: Samarbeta med planen (t.ex. `assets/`, `images/`) eller i en delad mapp (t.ex. `experience-platform/assets/`).
 - **Innehållsförteckning**: Redigera `help/blueprints/TOC.md` när du lägger till, byter namn på eller flyttar ritningssidor. Bevara frontalformen (`user-guide-title`, `breadcrumb-title`, `user-guide-description`, `product`, `mini-toc-levels`, `role`) och hierarkin `+`.
 
----
+&#x200B;---
 
 ## Exempelreferenser i den här rapporten
 
