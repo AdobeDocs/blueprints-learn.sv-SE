@@ -19,8 +19,8 @@ Adobe kunder i olika branscher ser värdet av att kombinera marknadsföringsplan
 
 * Lumen (uppdelning vid Summit): [How Lumen Drives Agiality for Omnichannel Customer Experiences - S710](https://business.adobe.com/se/summit/2022/sessions/how-lumen-drives-agility-for-omnichannel-customer-s710.html){target="_blank"}
 
-* BNY Mellon (uppdelning på toppmöte): [How BNY Mellon Improved Campaign Execution with People, Process and Adobe Technology - S127](https://business.adobe.com/events/experience-makers-live/2022/sessions/how-bny-mellon-improved-campaign-execution-with-pe-s127.html){target="_blank"}
+* BNY Mellon (uppdelning på toppmöte): [How BNY Mellon Improved Campaign Execution with People, Process and Adobe Technology - S127](https://business.adobe.com/se/events/experience-makers-live/2022/sessions/how-bny-mellon-improved-campaign-execution-with-pe-s127.html){target="_blank"}
 
 * Commvault (fallstudie): [Commvault skapar ett högklassigt marknadsföringscenter med Adobe Marketo Engage för att köra över 1 800 kampanjer per år](https://business.adobe.com/se/customer-success-stories/commvault-case-study){target="_blank"}
 
-* Poly (blogg): [Så här ändrade Poly på att nå nya målgrupper med Adobe Experience Cloud](https://business.adobe.com/blog/basics/how-poly-shifted-gears-reach-new-audiences-adobe-experience-cloud){target="_blank"}
+* Poly (blogg): [Så här ändrade Poly på att nå nya målgrupper med Adobe Experience Cloud](https://business.adobe.com/se/blog/basics/how-poly-shifted-gears-reach-new-audiences-adobe-experience-cloud){target="_blank"}
