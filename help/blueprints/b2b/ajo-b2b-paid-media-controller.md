@@ -1,10 +1,14 @@
 ---
-source-git-commit: 9d0eebd5d84671db1c86d73e7e0de50cb926235d
+title: AJO B2B - betald mediestyrenhet
+description: Prioritet för kampanjer och aktivering av konton för betalmediernas destinationer
+solution: Journey Optimizer B2B Edition
+source-git-commit: dff5608af92fa1140419d6834d8374df75de98d3
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
+
 # Översikt
 
 Marknadsföringsteam som kör betalda B2B-medier i stor skala stöter på ett återkommande problem: **kontona hamnar i flera kampanjer samtidigt** (persona, kategorimedvetenhet, lösningsstyrd, jakt), vilket späder ut meddelanden, utlöser målgruppströtthet och tvingar till manuellt listarbete - överföringar, uteslutningar och nedtryckning - i LinkedIn Account Match (kontomål). Utan **vattenfallsprioritering** och **automatiserad kampanjtilldelning** finns det ingen plats att bestämma vilket konto som ska få vilket meddelande, och åtgärderna skalas inte.
@@ -67,8 +71,8 @@ Med all datadriven orkestrering är schemadesign viktigt. Konto- och personprofi
 
 ### Skyddsräcken
 
-- **Journey Optimizer B2B edition** - I [produktbeskrivningen](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer-b2b.html) finns information om resebegränsningar, nodbegränsningar och stöd för destinationer.
-- **Real-Time CDP** - Se [RTCDP skyddsutkast](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/guardrails/overview) för information om begränsningar för segmentering och aktivering.
+- **Journey Optimizer B2B edition** - I [produktbeskrivningen](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html) finns information om resebegränsningar, nodbegränsningar och stöd för destinationer.
+- **Real-Time CDP** - Se [RTCDP skyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) för information om begränsningar för segmentering och aktivering.
 
 ## Implementering
 
@@ -121,6 +125,6 @@ I den **betalda mediekontrollantens**-översikten visas hur **AJO B2B och AEP** 
 
 ## Relaterad dokumentation
 
-- [Köper en koncernbaserad plan för marknadsföring och resehantering](https://experienceleague.adobe.com/sv/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) - Konto- och inköpsgruppresor i AJO B2B.
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b) - produktdokumentation.
+- [Köper en koncernbaserad plan för marknadsföring och resehantering](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) - Konto- och inköpsgruppresor i AJO B2B.
+- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) - produktdokumentation.
 - [Kunddataplattform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) i realtid - målgrupper och aktivering av konton.
