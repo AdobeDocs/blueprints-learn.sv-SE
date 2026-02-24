@@ -3,14 +3,14 @@ title: Kundresor - ritningar
 description: Leverera individuella, just-in-time och samordnade kundupplevelser för alla skärmar.
 solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 8ee7fe8d38343a669f5ad57e69367fbe6a3e1024
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Customer Journey-skisser
+# Kundresor - ritningar
 
 Moderna marknadsföringsteam behöver plattformar som kan stödja både reaktivt engagemang - svara på individuella kundbeteenden - och proaktivt utåtriktad marknadsföring - och initiera kampanjer som vägleder publiken in i konverteringstrattar. De här användningsfallen omfattar flera kanaler som e-post, SMS, push och allt mer webb- och appupplevelser.
 
@@ -32,7 +32,7 @@ Valet mellan dessa verktyg beror på arkitektoniska överväganden som latenstol
 
 <br>
 
-## Inaktuella utkast
+## Borttagna ritningar
 
 | Blueprint | Arkitektur |
 |---|:---:|

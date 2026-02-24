@@ -3,7 +3,7 @@ title: Beslutsledningsplaner
 description: Leverera personaliserade erbjudanden på alla kundresor.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Journey Optimizer - Beslutsledningsplaner
 
-Se följande dokumentation för [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=sv-SE)
+Se följande dokumentation för [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
-Se följande dokumentation för skyddsförslag avseende beslutsförvaltning. [Beslutshanteringsriktlinjer](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
+Se följande dokumentation för skyddsförslag avseende beslutsförvaltning. [Beslutshanteringsriktlinjer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
 
 Adobe Decision Management är en tjänst som tillhandahålls som en del av Adobe Journey Optimizer. Denna plan beskriver användningsfall och teknisk kapacitet i programmet och ger en djupdykning i de olika arkitektoniska komponenterna och överväganden som utgör beslutsstöd.
 
@@ -27,7 +27,7 @@ Beslutsledningskapaciteten består av två huvudkomponenter:
 
 <img src="images/offers_overview.png" alt="Beslutshantering" style="width:100%; border:1px solid #4a4a4a" />
 
-Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att utföra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns också i [beslutsstyrningsdokumentationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html?lang=sv-SE).
+Beslutshanteringen kan användas på ett av två sätt, på kanten eller via navet. Var och en av dessa metoder har en specifik uppsättning gränssnitt och protokoll för att utföra tjänsten enligt beskrivningen i respektive ritning som det hänvisas till nedan. Ytterligare information finns också i [beslutsstyrningsdokumentationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
 
 ## Beslutshantering på navet
 
@@ -61,8 +61,8 @@ Den andra metoden är via upplevelsen [!DNL Edge Network], som är en globalt di
 
 ## Relaterad dokumentation
 
-* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE)
-* [Adobe Journey Optimizer Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=sv-SE)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Produktbeskrivning för Adobe-beslutshantering](https://helpx.adobe.com/se/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
+* [Adobe Journey Optimizer Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
+* [Produktbeskrivning för Adobe-beslutshantering](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)

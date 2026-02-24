@@ -1,52 +1,51 @@
 ---
-user-guide-title: Digital Experience-utkast
-breadcrumb-title: Utkast
+user-guide-title: Customer Experience Orchestration-utkast
+breadcrumb-title: utkast
 user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 747e685bb897dd15774748c20940e49e9c234b31
+source-git-commit: 4fece5535efcbcdc37a87aedc188c5a8d27269cc
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 23%
+source-wordcount: '235'
+ht-degree: 17%
 
 ---
 
 
-# Digital Experience-utkast {#architecture}
+# Kundupplevelsesimuleringar {#architecture}
 
-+ [Digital Experiences Blueprints](/help/blueprints/overview.md)
-+ Arkitekturöversikt{#architecture-overview}
++ [Kundupplevelsesimuleringar - utkast](/help/blueprints/overview.md)
++ Arkitekturöversikter{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform och program](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform dataflöde](/help/blueprints/experience-platform/platform-data-flow.md)
-   + [Experience Platform Guardrails](/help/blueprints/experience-platform/guardrails.md)
+   + [Experience Platform skyddsräcken](/help/blueprints/experience-platform/guardrails.md)
    + Distribuering{#deployment}
       + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
       + [SDK för program](/help/blueprints/experience-platform/deployment/appsdk.md)
 + Målgrupps- och profilaktivering{#audience-activation}
    + [Enhetsbaserad - anonym målgruppsanpassning med Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
-   + Customer Data Platform (RTCDP) i realtid {#known-customer-audience-activation}
-      + [Audience Activation till sociala medier och Advertising destinationer](/help/blueprints/audience-activation/advertising-activation.md)
-      + [Målgrupps- och profilaktivering för storföretagsdestinationer](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + Real-Time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
+      + [Målgruppsaktivering för sociala medier och annonser](/help/blueprints/audience-activation/advertising-activation.md)
+      + [Målgrupps- och profilaktivering av företagsapplikationer](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Profilåtkomst i realtid för support- och säljscenarier](/help/blueprints/audience-activation/customer-activity.md)
-      + [Edge Profile Access för webb och mobil Personalization i realtid](/help/blueprints/audience-activation/real-time-lookup.md)
-      + [Målgrupps-Collaboration med segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
-      + [Känd Personalization-kund med Target](/help/blueprints/audience-activation/rtcdp-target.md)
+      + [Tillgång till kantprofiler i realtid för webb- och mobilpersonalisering](/help/blueprints/audience-activation/real-time-lookup.md)
+      + [Målgruppssamarbete med segmentmatchning](/help/blueprints/audience-activation/segment-match.md)
+      + [Känd kundpersonalisering med Target](/help/blueprints/audience-activation/rtcdp-target.md)
 + B2B-aktivering och marknadsföring{#b2b-activation}
    + [Översikt](/help/blueprints/b2b/overview.md)
    + [B2B-aktivering](/help/blueprints/b2b/b2bactivation.md)
    + [Aktivera B2B-konto](/help/blueprints/b2b/b2b-account-activation.md)
-   + [B2B betald mediastyrenhet](/help/blueprints/b2b/ajo-b2b-paid-media-controller.md)
    + [Köpa gruppbaserad marknadsföring och resehantering](/help/blueprints/b2b/b2b-buying-group-journeys.md)
-   + [B2B-resor med Marketo Data](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
+   + [B2B-resor med Marketo-data](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
    + Integrering av Marketo Engage och Workfront{#marketo-engage-and-workfront-integration-blueprint}
       + [Översikt](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Infoga och skapa](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Granska och godkänn](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [Nöjda kunder](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-+ Innehåll och Commerce{#content-commerce}
-   + [ADOBE COMMERCE &amp; RTCDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
++ Innehåll och e-handel{#content-commerce}
+   + [ADOBE COMMERCE &amp; REAL-TIME CDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Översikt](/help/blueprints/customer-journey-analytics/overview.md)
    + [Dela CJA-målgrupper med RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
@@ -55,8 +54,8 @@ ht-degree: 23%
    + [Översikt](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
-      + [AJO Journeys](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
-      + [AJO Campaigns](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
+      + [AJO resor](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
+      + [AJO-kampanjer](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
       + [Meddelanden från tredje part](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
    + Beslutshantering{#decision-management}
       + [Översikt](/help/blueprints/customer-journeys/decision-management/decision-management-overview.md)
@@ -66,10 +65,10 @@ ht-degree: 23%
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8/campaign-v8-overview.md)
       + [Real-Time CDP med Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
       + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
-   + Inaktuella utkast{#deprecated-blueprints}
+   + Borttagna ritningar{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Dataanalys, intelligens och AI/ML{#data-exploration}
