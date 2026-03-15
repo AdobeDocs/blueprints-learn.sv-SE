@@ -47,7 +47,7 @@ AJO Campaign-samordning gör det möjligt för marknadsförare att utforma och g
 
 ## Skyddsräcken
 
-[Produktlänk för samordnade kampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+[Produktlänk för samordnade kampanjer](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
 
 [Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
 
@@ -56,8 +56,8 @@ AJO Campaign-samordning gör det möjligt för marknadsförare att utforma och g
 ## Relaterad dokumentation
 
 - [[!DNL Journey Optimizer] samordnade kampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
-- [Dokumentation för [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform.html)
-- [Dokumentation för [!DNL Experience Platform] taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-- [Dokumentation för [!DNL Experience Platform Mobile SDK]](https://experienceleague.adobe.com/docs/mobile.html)
-- [Dokumentation för [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
-- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
+- [Dokumentation för [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
+- [Dokumentation för [!DNL Experience Platform] taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE)
+- [Dokumentation för [!DNL Experience Platform Mobile SDK]](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)
+- [Dokumentation för [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=sv-SE)
+- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html)

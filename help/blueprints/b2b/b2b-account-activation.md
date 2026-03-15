@@ -56,14 +56,14 @@ Med kontobaserad interaktion kan marknadsförarna låsa upp tre viktiga användn
    * Upp till 30 dagars händelseuppslag, ingen ordning på händelsepredikat.
    * AND / OR stöds (så du kan säga &quot;A och B måste hända&quot;,  men man kan inte säga &quot;A måste hända 3 dagar före B&quot;).
 * För molnlagringsmål har exportschemat stöd för alternativet Efter segmentutvärdering.
-* [Guardrutor för B2B-profil och segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails).
+* [Guardrutor för B2B-profil och segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails).
 
 ## Implementeringssteg för Customer Data Platform B2B edition i realtid, framtagning av konto och aktivering
 
-* Om du vill se implementeringssteg för kunddataplattformen B2B edition i realtid kan du läsa dokumentationen för [Komma igång med Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial).
-* Mer information om steg för att skapa en målgrupp för konto finns i dokumentationen för [målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences) för kontot.
-* Mer information om Audience Activation-kontoåtgärder finns i dokumentationen för [Aktivera kontominnen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences).
-   * Obligatorisk mappning för [(Företag) LinkedIn Matched Audiences-mål &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings).
+* Om du vill se implementeringssteg för kunddataplattformen B2B edition i realtid kan du läsa dokumentationen för [Komma igång med Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial).
+* Mer information om steg för att skapa en målgrupp för konto finns i dokumentationen för [målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/account-audiences) för kontot.
+* Mer information om Audience Activation-kontoåtgärder finns i dokumentationen för [Aktivera kontominnen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-account-audiences).
+   * Obligatorisk mappning för [(Företag) LinkedIn Matched Audiences-mål &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings).
 
 ## Implementeringsöverväganden
 
@@ -71,8 +71,8 @@ LinkedIn-matchade målgrupper har ett fåtal krav, inklusive den minsta målgrup
 
 ## Relaterad dokumentation
 
-* [B2B edition of Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
-* [Video om självstudiekurs för att skapa och aktivera konto](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data)
-* [Skapa målgrupper för konto](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences)
-* [Aktivera målgrupper för konto](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences)
-* [Adobe Experience Platform - LinkedIn-målkoppling](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+* [B2B edition of Real-time Customer Data Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
+* [Video om självstudiekurs för att skapa och aktivera konto](https://experienceleague.adobe.com/sv/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data)
+* [Skapa målgrupper för konto](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/account-audiences)
+* [Aktivera målgrupper för konto](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-account-audiences)
+* [Adobe Experience Platform - LinkedIn-målkoppling](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
