@@ -1,11 +1,12 @@
 ---
 title: '[!DNL Journey Optimizer] - utlöst meddelanden och Adobe Experience Platform Blueprint'
-description: Kör utlösta meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
+description: Kör triggade meddelanden och upplevelser med Adobe Experience Platform som ett centralt nav för strömmande data, kundprofiler och segmentering.
 solution: Journey Optimizer
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+exl-id: 70573eb9-cd69-4fe6-b2ae-dae81665a308
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 7%
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -35,16 +36,16 @@ Adobe Journey Optimizer Journeys är händelsestyrda arbetsflöden i realtid som
 
 ## Skyddsräcken
 
-[[!DNL Journey Optimizer] Produktlänk för säkerhetsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
+[Produktlänk för [!DNL Journey Optimizer] Guardrails](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Garantier och Vägledning för svarstid från slut till slut](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=sv-SE)
+[Guardrails och Slut-till-slut-vägledning om svarstid](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 <br>
 
 ## Relaterad dokumentation
 
-- [[!DNL Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform.html?lang=sv-SE)
-- [[!DNL Experience Platform] Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv)
-- [[!DNL Experience Platform Mobile SDK] dokumentation](https://experienceleague.adobe.com/docs/mobile.html?lang=sv-SE)
-- [[!DNL Journey Optimizer] dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=sv-SE)
-- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html)
+- [Dokumentation för [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform.html)
+- [Dokumentation för [!DNL Experience Platform] taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+- [Dokumentation för [!DNL Experience Platform Mobile SDK]](https://experienceleague.adobe.com/docs/mobile.html)
+- [Dokumentation för [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer] produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)

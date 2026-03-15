@@ -1,11 +1,11 @@
 ---
 title: Målgrupps-Collaboration med segmentmatchning
-description: Läs mer om [!UICONTROL segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning] är en tjänst för datasamarbete som gör att du kan utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
+description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning ] är en datautbytesjänst som gör att du kan utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2235'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Med tjänsten kan kunderna på ett säkert sätt identifiera matchande ID:n på 
 
 Märk utgivaren:
 
-&quot;Användningsexempel för förläggare&quot; påverkas mest av borttagningen av cookies från tredje part och data för mobil reklam. Det här användningsexemplet har stor inverkan på medie- och underhållningsbranschen som fokuserar på att sälja reklam som en affärsmodell. [!UICONTROL Segmentmatchning] är en sökväg för utgivare med stora förstapartsmålgrupper som vill samarbeta direkt med sina annonsörer. Annonsörer kan arbeta direkt med utgivare för att annonsera mot matchande målgrupper om utgivarens egenskaper för detaljerad målinriktning eller prospekteringskampanjer.
+&quot;Användningsexempel för förläggare&quot; påverkas mest av borttagningen av cookies från tredje part och data för mobil reklam. Det här användningsexemplet har stor inverkan på medie- och underhållningsbranschen som fokuserar på att sälja reklam som en affärsmodell. [!UICONTROL Segmentmatchning ] är en sökväg för utgivare med stora förstapartsmålgrupper som vill samarbeta direkt med sina annonsörer. Annonsörer kan arbeta direkt med utgivare för att annonsera mot matchande målgrupper om utgivarens egenskaper för detaljerad målinriktning eller prospekteringskampanjer.
 
 ### Varumärke
 
@@ -46,7 +46,7 @@ Globala multinationella företag står inför utmaningar när det gäller datasa
 
 ![Arkitektur för segmentmatchning](assets/architecture-segment-match.png){zoomable="yes"}
 
-[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Det är snarare en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen för segmentmatchning] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
+[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Det är snarare en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning ] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen av segmentmatchning ] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
 
 [!UICONTROL Segmentmatchning] aktiverar:
 
@@ -84,7 +84,7 @@ Flödet [!UICONTROL Segmentmatchning] för att hantera partner skyddas av RBAC. 
 | **Hantera anslutningar för målgruppsdelning** | Med den här behörigheten kan du slutföra partnerhandskakningsprocessen, som ansluter två IMS-organisationer för att aktivera [!UICONTROL segmentmatchningsflöden]. |
 | **Hantera målgruppsresurser** | Med den här behörigheten kan du skapa, redigera och publicera feeds (det datapaket som används för [!UICONTROL segmentmatchning]) med aktiva partner (partners som har anslutits av administratörsanvändaren med **målgruppsdelningsanslutningar** -åtkomst). |
 
-Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#understanding-segment-match-permissions).
+Mer information om behörigheter finns i den [officiella dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#understanding-segment-match-permissions).
 
 ### Anslutnings-ID
 
@@ -102,9 +102,9 @@ Medgivandeinställningarna för [!UICONTROL segmentmatchning] kan hanteras på f
 
   Den här inställningen avgör om användardata kan delas eller inte. Standardinställningen är att avanmäla användardata som kan delas med antagandet att AEP-kunden redan har det medgivande som krävs för datadelning. Du kan ändra den här inställningen till att anmäla dig genom att kontakta kontohanteraren för Adobe och göra en extra kontroll för att tvinga AEP-kunder att explicit spåra sitt samtycke.
 
-* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE).
+* Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=en).
 
-  Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchning] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
+  Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchningen ] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
 
   ```
   "share": {
@@ -208,7 +208,7 @@ Ni kan använda Adobe Experience Platform Segment Match i sekretesscentrerat må
 
 ## Mer information
 
-* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=sv-SE#)
-* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE)
-* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=sv-SE)
-* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=sv-SE)
+* [Segmentmatchning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en#)
+* [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en)
+* [Felsökning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/troubleshooting.html?lang=en)
+* [XID](https://experienceleague.adobe.com/docs/experience-platform/identity/api/list-native-id.html?lang=en)
