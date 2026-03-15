@@ -63,7 +63,7 @@ Med kontobaserad interaktion kan marknadsförarna låsa upp tre viktiga användn
 * Om du vill se implementeringssteg för kunddataplattformen B2B edition i realtid kan du läsa dokumentationen för [Komma igång med Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial).
 * Mer information om steg för att skapa en målgrupp för konto finns i dokumentationen för [målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences) för kontot.
 * Mer information om Audience Activation-kontoåtgärder finns i dokumentationen för [Aktivera kontominnen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences).
-   * Obligatorisk mappning för [(Företag) LinkedIn Matched Audiences-mål ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings).
+   * Obligatorisk mappning för [(Företag) LinkedIn Matched Audiences-mål &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings).
 
 ## Implementeringsöverväganden
 

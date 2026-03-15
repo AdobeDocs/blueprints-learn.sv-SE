@@ -9,7 +9,7 @@ ht-degree: 1%
 
 *Från Adobe ExL Authoring Guide (crawlad februari 2026) + repo analysis of blueprints-learn.en*
 
----
+&#x200B;---
 
 ## Metadatahierarki
 
@@ -18,7 +18,7 @@ Metadataskader i den här ordningen (artikel åsidosätter innehållsförtecknin
 2. Innehållsförteckning i användarhandboken
 3. metadata.md vid repo root (lägsta prioritet)
 
----
+&#x200B;---
 
 ## Artikelnivåfält
 
@@ -69,7 +69,7 @@ Metadataskader i den här ordningen (artikel åsidosätter innehållsförtecknin
 | `source-git-url` | Source-databas-URL. | Fullständig GitHub-URL |
 | `cloud` | Åsidosättning av molnkategori på artikelnivå. | Titelskiftläge; måste matcha cloud.yml |
 
----
+&#x200B;---
 
 ## Innehållsförteckningsfält
 
@@ -83,7 +83,7 @@ Metadataskader i den här ordningen (artikel åsidosätter innehållsförtecknin
 | `role` | Guidens standardroll. | Samma värden som artikeln `role`; kommaavgränsade |
 | `index` | Om stödlinjen är indexerad. | `yes`/`no` |
 
----
+&#x200B;---
 
 ## Metadata.md-fält på upprepningsnivå
 
@@ -98,7 +98,7 @@ Metadataskader i den här ordningen (artikel åsidosätter innehållsförtecknin
 | `git-repo` | GitHub-repo-URL; aktiverar knapparna Redigera den här sidan och Loggproblem |
 | `index` | Standardindexinställning |
 
----
+&#x200B;---
 
 ## Giltiga lösningsvärden (skiftlägeskänsliga)
 
@@ -123,7 +123,7 @@ Gemensamma värden som används i den här rapporten:
 
 Flera värden: kommaavgränsade, t.ex. `Real-Time Customer Data Platform, Campaign`
 
----
+&#x200B;---
 
 ## Giltiga produktvärden (för fältet `product` - analysspårning)
 
@@ -137,7 +137,7 @@ En fullständig lista finns i systemprompten. Nyckelvärden:
 - `adobe campaign` / `campaign` / `ac`
 - `adobe target` / `target` / `at`
 
----
+&#x200B;---
 
 ## Giltiga rollvärden
 
@@ -149,7 +149,7 @@ En fullständig lista finns i systemprompten. Nyckelvärden:
 - `Leader`
 - `User`
 
----
+&#x200B;---
 
 ## Nyckelverifieringsregler
 

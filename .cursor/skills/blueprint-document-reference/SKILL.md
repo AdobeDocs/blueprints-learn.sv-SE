@@ -99,7 +99,7 @@ Använd en kortare struktur för översikts- eller navsidor: inledande, användn
 
 - **När ska du länka**: Länka till Experience League för produktdokumentation, API-referenser, utkast, självstudiekurser och konfigurationssteg. Duplicera inte långa procedurer, sammanfatta och länka inte.
 - **URL-format**: Använd fullständiga URL:er. Föredra `https://experienceleague.adobe.com/docs/...` eller `https://experienceleague.adobe.com/en/docs/...`. `https://developer.adobe.com/...` är även giltigt för utvecklardokument.
-- **Länka text**: Använd beskrivande text (t.ex. &quot;[Skapa scheman](url)&quot;, inte &quot;Klicka här&quot;). Använd `[!DNL Product Name]` om det är lämpligt för produktnamn i länktext.
+- **Länka text**: Använd beskrivande text (t.ex. &quot;[Skapa scheman] (url)&quot;, inte &quot;Klicka här&quot;). Använd `[!DNL Product Name]` om det är lämpligt för produktnamn i länktext.
 - **Relaterat dokumentationsavsnitt**: Avsluta utkast med ett relaterat dokumentationsavsnitt som grupperar länkar efter kategori (t.ex. målkonfigurationer, SDK-dokumentation, profil och segmentering, självstudiekurser).
 
 Detaljerade URL-mönster, länkgruppering och exempel finns i [reference.md](reference.md).

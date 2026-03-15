@@ -1,6 +1,6 @@
 ---
 title: Målgrupps-Collaboration med segmentmatchning
-description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning ] är en datautbytesjänst som gör att du kan utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
+description: Läs mer om [!UICONTROL Segmentmatchning] för Adobe Experience Platform (AEP). [!UICONTROL Segmentmatchning &#x200B;] är en datautbytesjänst som gör att du kan utbyta segmentdata baserat på vanliga branschidentifierare på ett säkert, styrt och sekretessvänligt sätt.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
 source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
@@ -30,7 +30,7 @@ Med tjänsten kan kunderna på ett säkert sätt identifiera matchande ID:n på 
 
 Märk utgivaren:
 
-&quot;Användningsexempel för förläggare&quot; påverkas mest av borttagningen av cookies från tredje part och data för mobil reklam. Det här användningsexemplet har stor inverkan på medie- och underhållningsbranschen som fokuserar på att sälja reklam som en affärsmodell. [!UICONTROL Segmentmatchning ] är en sökväg för utgivare med stora förstapartsmålgrupper som vill samarbeta direkt med sina annonsörer. Annonsörer kan arbeta direkt med utgivare för att annonsera mot matchande målgrupper om utgivarens egenskaper för detaljerad målinriktning eller prospekteringskampanjer.
+&quot;Användningsexempel för förläggare&quot; påverkas mest av borttagningen av cookies från tredje part och data för mobil reklam. Det här användningsexemplet har stor inverkan på medie- och underhållningsbranschen som fokuserar på att sälja reklam som en affärsmodell. [!UICONTROL Segmentmatchning &#x200B;] är en sökväg för utgivare med stora förstapartsmålgrupper som vill samarbeta direkt med sina annonsörer. Annonsörer kan arbeta direkt med utgivare för att annonsera mot matchande målgrupper om utgivarens egenskaper för detaljerad målinriktning eller prospekteringskampanjer.
 
 ### Varumärke
 
@@ -46,7 +46,7 @@ Globala multinationella företag står inför utmaningar när det gäller datasa
 
 ![Arkitektur för segmentmatchning](assets/architecture-segment-match.png){zoomable="yes"}
 
-[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Det är snarare en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning ] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen av segmentmatchning ] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
+[!UICONTROL Segmentmatchning] är inte en datamarknadsplats där data kan köpas. Det är snarare en AEP-funktion som fungerar med förstahandsdata hos utvalda partners och använder sekretess- och godkännandekontroller för att underlätta samarbetet. [!UICONTROL Segmentmatchning &#x200B;] hjälper dig att fokusera på att förbättra kundrelationerna och utöka varumärket. Det är fördelaktigt när det finns varumärken eller partnerrelationer. [!UICONTROL Upplevelsen av segmentmatchning &#x200B;] är enkel att hantera, skalbar och gör att administratörer kan dela segment på ett valfritt, kontrollerbart sätt.
 
 [!UICONTROL Segmentmatchning] aktiverar:
 
@@ -104,7 +104,7 @@ Medgivandeinställningarna för [!UICONTROL segmentmatchning] kan hanteras på f
 
 * Anger resursattributet som är specifikt för identiteter (idSpecific) med fältgruppen [Consents and Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=en).
 
-  Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchningen ] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
+  Den här fältgruppen innehåller ett enda fält av objekttyp, samtycke, för att hämta information om samtycke och inställningar. [!UICONTROL Segmentmatchningen &#x200B;] innehåller som standard alla identiteter som inte har valts ut explicit, till exempel:
 
   ```
   "share": {
