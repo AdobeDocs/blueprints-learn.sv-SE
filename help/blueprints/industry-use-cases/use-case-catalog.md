@@ -41,35 +41,35 @@ Butiksorganisationer använder [!DNL Adobe Experience Platform] för att samla k
 
 >[!TAB Finansiella tjänster]
 
-Användningsexempel inom finanssektorn kommer snart. [Visa aktuella användningsfall för finansiella tjänster ](financial-services/financial-services-overview.md).
+Användningsexempel inom finanssektorn kommer snart. [Visa aktuella användningsfall för finansiella tjänster &#x200B;](financial-services/financial-services-overview.md).
 
 >[!TAB Hälsovård]
 
-Vårdärenden kommer snart. [Visa aktuella användningsfall för hälso- och sjukvård ](healthcare/healthcare-overview.md).
+Vårdärenden kommer snart. [Visa aktuella användningsfall för hälso- och sjukvård &#x200B;](healthcare/healthcare-overview.md).
 
 >[!TAB Automatisering]
 
-Vi kommer snart att få fler fall av bilanvändning. [Visa aktuella ärenden för automatisk användning ](automotive/automotive-overview.md).
+Vi kommer snart att få fler fall av bilanvändning. [Visa aktuella ärenden för automatisk användning &#x200B;](automotive/automotive-overview.md).
 
 >[!TAB Resor och turism]
 
-Fall av rese- och turismanvändning kommer snart. [Visa aktuella användningsfall för Resor och turism ](travel-hospitality/travel-hospitality-overview.md).
+Fall av rese- och turismanvändning kommer snart. [Visa aktuella användningsfall för Resor och turism &#x200B;](travel-hospitality/travel-hospitality-overview.md).
 
 >[!TAB Telekommunikation]
 
-Fall av användning inom telekom kommer snart. [Visa aktuella användningsfall för telekommunikation ](telecommunications/telecommunications-overview.md).
+Fall av användning inom telekom kommer snart. [Visa aktuella användningsfall för telekommunikation &#x200B;](telecommunications/telecommunications-overview.md).
 
 >[!TAB Media och underhållning]
 
-Användningsexempel inom media och underhållning kommer snart. [Visa aktuella användningsfall för media och underhållning ](media-entertainment/media-entertainment-overview.md).
+Användningsexempel inom media och underhållning kommer snart. [Visa aktuella användningsfall för media och underhållning &#x200B;](media-entertainment/media-entertainment-overview.md).
 
 >[!TAB Försäkring]
 
-Försäkringsfall kommer snart. [Visa aktuella försäkringsanvändningsfall ](insurance/insurance-overview.md).
+Försäkringsfall kommer snart. [Visa aktuella försäkringsanvändningsfall &#x200B;](insurance/insurance-overview.md).
 
 >[!TAB B2B]
 
-Användningsexempel inom B2B kommer snart. [Visa aktuella B2B-användningsfall ](b2b/b2b-overview.md).
+Användningsexempel inom B2B kommer snart. [Visa aktuella B2B-användningsfall &#x200B;](b2b/b2b-overview.md).
 
 >[!ENDTABS]
 
