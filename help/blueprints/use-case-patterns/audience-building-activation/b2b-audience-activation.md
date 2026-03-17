@@ -109,11 +109,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL RT-CDP] B2B edition aktiverat. Roller konfigurerade för datahantering B2B, målgruppsgenerering och målaktivering. ABAC-principer används om kontodata innehåller begränsade fält. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med XDM Business Account, XDM Business Opportunity, XDM Business Campaign och XDM Individual Profile-klasser. B2B-fältgrupper som används för kontoattribut, person-kontouppgifter och affärsmöjlighetsdata. Datauppsättningar som skapats och profilaktiverade för varje B2B-enhet. Schemarelationer definierade mellan konto-, person-, affärsmöjlighets- och kampanjentiteter. | [XDM-systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
-| Datakällor och samling | Obligatoriskt | Source-anslutningar har konfigurerats för CRM ([!DNL Salesforce], [!DNL Microsoft Dynamics]) och marknadsföringsautomatisering ([!DNL Marketo Engage]) för import av konto-, person-, affärsmöjlighets- och kampanjdata. Inmatningsledningar för batchströmning eller direktuppspelning är aktiva. Dataprep-mappningar har konfigurerats för att omvandla källdata till B2B XDM-scheman. | [Källor - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsnamnutrymmen har konfigurerats för kontoidentifierare (konto-ID, CRM-konto-ID) och personidentifierare (e-post, CRM-kontakt-ID, Marketo lead-ID). Relationer från människa till konto löses genom upplösning av B2B-identitet. Sammanfogningsprinciper har konfigurerats för enhetlig kontoprofil. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [B2B edition för Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
-| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinitioner på kontonivå som skapats med kontoattribut, personattribut och aktivitetsdata. Utvärderingsscheman har konfigurerats för kontomålgrupper. Undertryckande målgrupper definierade för att utesluta icke-berättigade konton. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Kontomålgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences) |
+| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL RT-CDP] B2B edition aktiverat. Roller konfigurerade för datahantering B2B, målgruppsgenerering och målaktivering. ABAC-principer används om kontodata innehåller begränsade fält. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med XDM Business Account, XDM Business Opportunity, XDM Business Campaign och XDM Individual Profile-klasser. B2B-fältgrupper som används för kontoattribut, person-kontouppgifter och affärsmöjlighetsdata. Datauppsättningar som skapats och profilaktiverade för varje B2B-enhet. Schemarelationer definierade mellan konto-, person-, affärsmöjlighets- och kampanjentiteter. | [XDM-systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b) |
+| Datakällor och samling | Obligatoriskt | Source-anslutningar har konfigurerats för CRM ([!DNL Salesforce], [!DNL Microsoft Dynamics]) och marknadsföringsautomatisering ([!DNL Marketo Engage]) för import av konto-, person-, affärsmöjlighets- och kampanjdata. Inmatningsledningar för batchströmning eller direktuppspelning är aktiva. Dataprep-mappningar har konfigurerats för att omvandla källdata till B2B XDM-scheman. | [Källor - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsnamnutrymmen har konfigurerats för kontoidentifierare (konto-ID, CRM-konto-ID) och personidentifierare (e-post, CRM-kontakt-ID, Marketo lead-ID). Relationer från människa till konto löses genom upplösning av B2B-identitet. Sammanfogningsprinciper har konfigurerats för enhetlig kontoprofil. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [B2B edition för Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
+| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinitioner på kontonivå som skapats med kontoattribut, personattribut och aktivitetsdata. Utvärderingsscheman har konfigurerats för kontomålgrupper. Undertryckande målgrupper definierade för att utesluta icke-berättigade konton. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home), [Kontomålgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences) |
 
 ## Stödfunktioner
 
@@ -121,11 +121,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Aggregerade engagemangsmusik, livstidsvärde och aktivitetsmått på kontonivån förbättrar målgruppens precision. Beräknade attribut kan sammanfoga händelser på personnivå (e-postöppningar, webbbesök, nedladdningar av innehåll) till kontonivån för användning vid segmentering. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| Livscykelhantering för data | Rekommenderad | B2B-datalagringsprinciper säkerställer att inaktuella konto- och affärsmöjlighetsdata rensas bort. Samtalshantering för B2B-kontakter säkerställer efterlevnad av regler för e-postmarknadsföring. Förfallotidsprinciper förhindrar ackumulering av föråldrade CRM-synkroniseringsdata. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Ingår | B2B-kontodata innehåller ofta avtalsbegränsningar (intäktssiffror, antal anställda från tredjepartsleverantörer). Dataanvändningsetiketter förhindrar att begränsade kontoattribut aktiveras till obehöriga destinationer. Styrningsprinciper säkerställer att PII-fält från kontaktuppgifter hanteras på rätt sätt under aktiveringen. | [Datastyrningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| Övervakning och observerbarhet | Ingår | Övervakning av CRM- och [!DNL Marketo Engage]-källanslutningsdataflöden säkerställer att kontodata hålls aktuella. Målaktiveringsövervakning bekräftar att målgrupperna har levererats till [!DNL LinkedIn], [!DNL Marketo] och CRM-mål. Varningsregler fångar upp misslyckade inmatningar som skulle orsaka inaktuella kontodata. | [Aviseringsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview), [Övervaka måldataflöden](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations) |
-| Rapportering och analys | Rekommenderad | [!DNL CJA] B2B edition tillhandahåller kontonivåanalyser som omfattar målgruppens räckvidd, engagemang och pipeline-påverkan. Kontobaserad attribuering hjälper till att mäta effekten av aktiveringskampanjer på möjligheterna och intäkterna. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Aggregerade engagemangsmusik, livstidsvärde och aktivitetsmått på kontonivån förbättrar målgruppens precision. Beräknade attribut kan sammanfoga händelser på personnivå (e-postöppningar, webbbesök, nedladdningar av innehåll) till kontonivån för användning vid segmentering. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview) |
+| Livscykelhantering för data | Rekommenderad | B2B-datalagringsprinciper säkerställer att inaktuella konto- och affärsmöjlighetsdata rensas bort. Samtalshantering för B2B-kontakter säkerställer efterlevnad av regler för e-postmarknadsföring. Förfallotidsprinciper förhindrar ackumulering av föråldrade CRM-synkroniseringsdata. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Ingår | B2B-kontodata innehåller ofta avtalsbegränsningar (intäktssiffror, antal anställda från tredjepartsleverantörer). Dataanvändningsetiketter förhindrar att begränsade kontoattribut aktiveras till obehöriga destinationer. Styrningsprinciper säkerställer att PII-fält från kontaktuppgifter hanteras på rätt sätt under aktiveringen. | [Datastyrningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home) |
+| Övervakning och observerbarhet | Ingår | Övervakning av CRM- och [!DNL Marketo Engage]-källanslutningsdataflöden säkerställer att kontodata hålls aktuella. Målaktiveringsövervakning bekräftar att målgrupperna har levererats till [!DNL LinkedIn], [!DNL Marketo] och CRM-mål. Varningsregler fångar upp misslyckade inmatningar som skulle orsaka inaktuella kontodata. | [Aviseringsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview), [Övervaka måldataflöden](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations) |
+| Rapportering och analys | Rekommenderad | [!DNL CJA] B2B edition tillhandahåller kontonivåanalyser som omfattar målgruppens räckvidd, engagemang och pipeline-påverkan. Kontobaserad attribuering hjälper till att mäta effekten av aktiveringskampanjer på möjligheterna och intäkterna. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
 
@@ -203,8 +203,8 @@ Målet [!DNL Marketo Engage] är ett mål för direktuppspelning, vilket innebä
 
 **Experience League:**
 
-- [Marketo Engage destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [Aktivera målgrupper för Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
+- [Marketo Engage destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [Aktivera målgrupper för Marketo Engage](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
 
 ### Alternativ B: Batchmålgruppsaktivering till annonseringsplattformar
 
@@ -241,9 +241,9 @@ Batchaktivering körs enligt ett konfigurerbart schema (varje dag, var 6: e timm
 
 **Experience League:**
 
-- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
 - [Google kundmatchningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/advertising/google-customer-match)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
 
 ### Alternativ C: Filbaserad aktivering till molnlagring
 
@@ -279,8 +279,8 @@ Filbaserad aktivering ger störst kontroll över exportformat, fältval och sche
 
 **Experience League:**
 
-- [Amazon S3-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Azure Blob Storage-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
+- [Amazon S3-mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Azure Blob Storage-mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
 - [Aktivera målgrupper för batchdestinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/connect-activate-batch-destinations)
 
 ### Alternativ D: Direktuppspelningsaktivering till CRM-system
@@ -394,9 +394,9 @@ Denna fas skapar enhetliga kontoprofiler genom att konsolidera data från CRM, a
 **Experience League-dokumentation:**
 
 - [Real-Time CDP B2B edition - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Salesforce Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
+- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
+- [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Salesforce Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/crm/salesforce)
 
 ### Fas 2: Utvärdering av kontopublik
 
@@ -454,10 +454,10 @@ I den här fasen definieras och utvärderas målgrupper på kontonivå med hjäl
 
 **Experience League-dokumentation:**
 
-- [Målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Målgruppssammansättning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Målgruppssammansättning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
 
 ### Fas 3: Målkonfiguration
 
@@ -527,12 +527,12 @@ Navigera till Destinationer > Katalog > CRM > markera [!DNL Salesforce] eller [!
 
 **Experience League-dokumentation:**
 
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [Marketo Engage destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
+- [Marketo Engage destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
 - [Salesforce CRM-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Amazon S3-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Amazon S3-mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 
 ### Fas 4: Målgruppsaktivering
 
@@ -596,9 +596,9 @@ Välj vilka kontomålgrupper som ska aktiveras. Aktiveringen börjar strömma di
 **Experience League-dokumentation:**
 
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Aktivera målgrupper för batchdestinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Aktivera målgrupper för batchdestinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Aktiveringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
 
 ### Fas 5: Styrning och övervakning
 
@@ -643,11 +643,11 @@ Den här fasen säkerställer att kontomålens aktivering överensstämmer med p
 
 **Experience League-dokumentation:**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
 - [Samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [Övervaka måldataflöden](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Övervaka måldataflöden](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
+- [Aktiveringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
 
 ## Implementeringsöverväganden
 
@@ -659,7 +659,7 @@ Granska följande plattformsskyddsutkast och begränsningar som gäller för det
 
 - Maximalt 4 000 segmentdefinitioner per sandlåda, inklusive kontomaterial - [Skyddsritningar för segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - Målgrupper utvärderas huvudsakligen genom grupputvärdering; rätten till direktuppspelning begränsas till villkoren för enkla kontoattribut
-- Maximalt 100 dataflöden per målanslutning - [Målsäkerhetsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- Maximalt 100 dataflöden per målanslutning - [Målsäkerhetsutkast](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
 - Batchdestinationer exporterar upp till 5 miljoner profiler per filsegment
 - Målen för direktuppspelning har genomströmningsgränser per sekund som angetts av målpartnern (t.ex. [!DNL Marketo] API-hastighetsgränser)
 - Sammansatta målgrupper (från Audience Composition) är begränsade till grupputvärdering och kan inte använda direktuppspelning
@@ -735,65 +735,65 @@ Följande resurser innehåller ytterligare kontext och detaljerade riktlinjer f�
 **[!DNL RT-CDP]B2B edition**
 
 - [Real-Time CDP B2B edition - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
+- [Målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences)
 - [RT-CDP B2B edition produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 **Målgruppsutvärdering och -segmentering**
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Målgruppssammansättning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Målgruppssammansättning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Skyddsritningar för segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 **Destinationer och aktivering**
 
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [Marketo Engage destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
+- [Marketo Engage destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
 - [Salesforce CRM-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
 - [Microsoft Dynamics 365-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
-- [Amazon S3-mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Amazon S3-mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Aktivera målgrupper för batchdestinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Aktivera målgrupper för batchdestinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Aktiveringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
 
 **Datakällor och anslutningar**
 
-- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Salesforce Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Salesforce Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/crm/salesforce)
 
 **Datamodellering och identitet**
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
 - [Profilöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 - [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 **Datastyrning och sekretess**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
 - [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)
 - [Samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **Övervakning och observerbarhet**
 
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [Övervaka måldataflöden](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Övervaka källdataflöden](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/monitor)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
+- [Övervaka måldataflöden](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Övervaka källdataflöden](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/monitor)
 - [Kontrollpanel för licensanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **Rapportering och analys**
 
-- [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Anslutningar - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
-- [Översikt över datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Anslutningar - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/overview)
+- [Översikt över datavyer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views)
 
 **Självstudiekurser och guider**
 
 - [Komma igång med Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro)
-- [Skapa ett schema för B2B-källor](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Skapa ett schema för B2B-källor](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
 - [Verktyg för sandlåda](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/sandbox-tooling-api/overview)

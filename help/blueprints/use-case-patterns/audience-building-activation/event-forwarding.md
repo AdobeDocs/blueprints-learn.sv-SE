@@ -92,7 +92,7 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 | --- | --- | --- | --- |
 | Administration och styrning | Obligatoriskt | En sandlåda måste vara aktiv med lämpliga användarroller och behörigheter konfigurerade. Användare som hanterar händelsevidarebefordran behöver behörighet för datainsamling i [!DNL Adobe Admin Console], inklusive behörighet att hantera egenskaper, tillägg och regler för händelsevidarebefordran. | [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
 | Datamodellering och förberedelse | Obligatoriskt | XDM-scheman måste definieras för händelsedata som flödar genom Edge Network. Datastream måste referera till ett giltigt XDM ExperienceEvent-schema så att regler för vidarebefordran av händelser kan komma åt strukturerade fält för filtrering, omvandling och mappning. | [Översikt över XDM-systemet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
-| Datakällor och samling | Obligatoriskt | En datainsamlingsmekanism måste vara aktiv - Web SDK, Mobile SDK eller Edge Network Server API - för att skicka händelser via en konfigurerad datastream. Datastream är det grundläggande routningslagret som kopplar klientsidans samling till händelsevidarebefordran på serversidan. | [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
+| Datakällor och samling | Obligatoriskt | En datainsamlingsmekanism måste vara aktiv - Web SDK, Mobile SDK eller Edge Network Server API - för att skicka händelser via en konfigurerad datastream. Datastream är det grundläggande routningslagret som kopplar klientsidans samling till händelsevidarebefordran på serversidan. | [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure) |
 | Konfiguration av identitet och profil | Ej tillämpligt | Vidarebefordran av händelser utförs på råhändelsedata i Edge Network-lagret, innan identitetsupplösning eller profilåtergivning sker. Identitetsnamnutrymmen och sammanfogningsprinciper krävs inte såvida inte de vidarebefordrade händelserna också behöver bidra till kundprofilen i realtid (som är en separat konfiguration för datastream-tjänsten, inte ett problem med händelsevidarebefordran). | |
 | Målgruppsdefinition och segmentering | Ej tillämpligt | Vidarebefordran av händelser behandlar enskilda händelser i realtid och utvärderar inte medlemskap för målgruppen. Målgruppsbaserad filtrering ingår inte i funktionskedjan för vidarebefordran av händelser. Om målgruppsbaserad aktivering krävs, se referensplanen för Audience Activation till destinationer. | |
 
@@ -153,7 +153,7 @@ En kompromiss är att tillgängligheten för tillägg avgör vilka destinationer
 
 **Viktiga överväganden:**
 
-- Tilläggstillgängligheten varierar — kontrollera [tilläggskatalogen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview) innan du planerar
+- Tilläggstillgängligheten varierar — kontrollera [tilläggskatalogen för datainsamling](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/server/overview) innan du planerar
 - Tillägg underhålls av Adobe eller partners. Uppdateringar kan medföra förändringar som kräver regeljusteringar
 - Vissa tillägg har endast stöd för särskilda händelsetyper eller kräver specifika XDM-fältkopplingar
 - Tilläggen hanterar autentisering och autentiseringshantering i sitt konfigurationsgränssnitt
@@ -175,7 +175,7 @@ En kompromiss är att tillgängligheten för tillägg avgör vilka destinationer
 
 **Experience League:**
 
-- [Katalog för tillägg för vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- [Katalog för tillägg för vidarebefordran av händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/server/overview)
 - [API-tillägg för Meta Conversion](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Google Cloud Platform-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
 - [AWS-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
@@ -325,7 +325,7 @@ I följande faser beskrivs den kompletta implementeringsprocessen för vidarebef
 
 **Experience League-dokumentation:**
 
-- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
 - [Översikt över datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
 - [Översikt över vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
 
@@ -373,7 +373,7 @@ I följande faser beskrivs den kompletta implementeringsprocessen för vidarebef
 **Experience League-dokumentation:**
 
 - [Komma igång med händelsevidarebefordran](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [Katalog för tillägg för vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- [Katalog för tillägg för vidarebefordran av händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/server/overview)
 - [Sekretesser vid vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 - [Adobe Cloud Connector-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 
@@ -612,7 +612,7 @@ Följande resurser innehåller mer information om de ämnen som behandlas i den 
 
 **Tillägg för vidarebefordran av händelser**
 
-- [Katalog för tillägg på serversidan](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- [Katalog för tillägg på serversidan](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/server/overview)
 - [Adobe Cloud Connector-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 - [API-tillägg för Meta Conversion](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Google Cloud Platform-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
@@ -623,7 +623,7 @@ Följande resurser innehåller mer information om de ämnen som behandlas i den 
 
 **Datainsamling och Edge Network**
 
-- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
 - [Översikt över datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
 - [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
 - [Edge Network Server API - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)

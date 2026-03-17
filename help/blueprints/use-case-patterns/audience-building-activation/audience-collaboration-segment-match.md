@@ -97,11 +97,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Obligatoriskt | Både avsändar- och mottagarorganisationer måste ha sandlådor med lämpliga roller och behörigheter. Användare som hanterar [!DNL Segment Match] måste ha behörighet att visa och dela segment, konfigurera anslutningar och hantera partnerflöden. ABAC-principer ska konfigureras för att styra vilka användare som kan initiera och acceptera segmentresurser. | [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Antagen på plats | XDM-scheman för profiler och händelser måste finnas med de obligatoriska fältgrupperna. Profil- och händelsedatamängder måste skapas och aktiveras för [!DNL Real-Time Customer Profile]. Datamodellen måste ha stöd för de identitetsnamnutrymmen som används för segmentmatchning (vanligen hashad-e-post eller hashad-telefon). | [Översikt över XDM-systemet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
-| Datakällor och samling | Antagen på plats | Kunddata måste aktivt flöda in i [!DNL Experience Platform] via konfigurerade datakällor (SDK, källanslutningar, batchintag). Profiler måste fyllas i med de identitetstyper som används för [!DNL Segment Match] (t.ex. hashad e-post). | [Källor - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
-| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen måste konfigureras för de identifierare som används vid segmentmatchning. Både avsändaren och mottagaren måste använda kompatibla ID-namnutrymmen. Sammanfogningsprinciper måste konfigureras för att profilerna ska kunna sammanfogas korrekt. Regler för identitetslänkning bör fastställas för att säkerställa korrekt profilupplösning. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) |
-| Målgruppsdefinition och segmentering | Obligatoriskt | Source-målgrupper måste definieras och utvärderas innan de kan delas via [!DNL Segment Match]. Målgrupper ska skapas med [!DNL Segment Builder] eller [!DNL Audience Composition] där grupputvärderingen är slutförd. Endast grupputvärderade målgrupper är berättigade till delning av [!DNL Segment Match]. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
+| Administration och styrning | Obligatoriskt | Både avsändar- och mottagarorganisationer måste ha sandlådor med lämpliga roller och behörigheter. Användare som hanterar [!DNL Segment Match] måste ha behörighet att visa och dela segment, konfigurera anslutningar och hantera partnerflöden. ABAC-principer ska konfigureras för att styra vilka användare som kan initiera och acceptera segmentresurser. | [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Antagen på plats | XDM-scheman för profiler och händelser måste finnas med de obligatoriska fältgrupperna. Profil- och händelsedatamängder måste skapas och aktiveras för [!DNL Real-Time Customer Profile]. Datamodellen måste ha stöd för de identitetsnamnutrymmen som används för segmentmatchning (vanligen hashad-e-post eller hashad-telefon). | [Översikt över XDM-systemet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home) |
+| Datakällor och samling | Antagen på plats | Kunddata måste aktivt flöda in i [!DNL Experience Platform] via konfigurerade datakällor (SDK, källanslutningar, batchintag). Profiler måste fyllas i med de identitetstyper som används för [!DNL Segment Match] (t.ex. hashad e-post). | [Källor - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home) |
+| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen måste konfigureras för de identifierare som används vid segmentmatchning. Både avsändaren och mottagaren måste använda kompatibla ID-namnutrymmen. Sammanfogningsprinciper måste konfigureras för att profilerna ska kunna sammanfogas korrekt. Regler för identitetslänkning bör fastställas för att säkerställa korrekt profilupplösning. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home) |
+| Målgruppsdefinition och segmentering | Obligatoriskt | Source-målgrupper måste definieras och utvärderas innan de kan delas via [!DNL Segment Match]. Målgrupper ska skapas med [!DNL Segment Builder] eller [!DNL Audience Composition] där grupputvärderingen är slutförd. Endast grupputvärderade målgrupper är berättigade till delning av [!DNL Segment Match]. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home) |
 
 ## Stödfunktioner
 
@@ -109,11 +109,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut, som livstidsvärde, poängpoäng eller produkttillhörighet, kan skapa mer exakta segment för delning. Högkvalitativa indatasegment leder till mer värdefullt målgruppssamarbete. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| Livscykelhantering för data | Rekommenderad | Regler för samtycke och datalagring säkerställer att delade segment följer sekretesslagstiftningen. Datauppsättningens förfalloprinciper hjälper till att hantera livscykeln för mottagna målgruppsdata. Medgivandetvång förhindrar delning av profiler som har avanmält sig. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Ingår | Datastyrningsprinciper måste utvärderas innan segment delas för att säkerställa regelefterlevnad. Etiketter för identitetsfält och profilattribut avgör vad som kan delas. Styrning förhindrar att oauktoriserade data inkluderas i segmentaktier. | [Datastyrningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| Övervakning och observerbarhet | Rekommenderad | Genom att övervaka [!DNL Segment Match]-delningsprocessen, överlappa uppskattningsjobb och aktiveringsdataflöden kan du upptäcka fel tidigt. Aviseringar kan konfigureras för resursfel eller oväntat låga matchningsfrekvenser. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| Rapportering och analys | Rekommenderad | Genom att mäta resultatet för kampanjer som använder matchade målgrupper valideras värdet av samarbetet. [!DNL Customer Journey Analytics] kan analysera matchande målgruppskampanjresultat jämfört med kontrollgrupper. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut, som livstidsvärde, poängpoäng eller produkttillhörighet, kan skapa mer exakta segment för delning. Högkvalitativa indatasegment leder till mer värdefullt målgruppssamarbete. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview) |
+| Livscykelhantering för data | Rekommenderad | Regler för samtycke och datalagring säkerställer att delade segment följer sekretesslagstiftningen. Datauppsättningens förfalloprinciper hjälper till att hantera livscykeln för mottagna målgruppsdata. Medgivandetvång förhindrar delning av profiler som har avanmält sig. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Ingår | Datastyrningsprinciper måste utvärderas innan segment delas för att säkerställa regelefterlevnad. Etiketter för identitetsfält och profilattribut avgör vad som kan delas. Styrning förhindrar att oauktoriserade data inkluderas i segmentaktier. | [Datastyrningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home) |
+| Övervakning och observerbarhet | Rekommenderad | Genom att övervaka [!DNL Segment Match]-delningsprocessen, överlappa uppskattningsjobb och aktiveringsdataflöden kan du upptäcka fel tidigt. Aviseringar kan konfigureras för resursfel eller oväntat låga matchningsfrekvenser. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home) |
+| Rapportering och analys | Rekommenderad | Genom att mäta resultatet för kampanjer som använder matchade målgrupper valideras värdet av samarbetet. [!DNL Customer Journey Analytics] kan analysera matchande målgruppskampanjresultat jämfört med kontrollgrupper. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
 
@@ -179,8 +179,8 @@ Detta tillvägagångssätt är okomplicerat och ger båda parter full kontroll. 
 
 **Experience League:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### Alternativ B: Segmentdistribution med flera partner (ett till många)
 
@@ -217,7 +217,7 @@ Den här metoden använder samma underliggande [!DNL Segment Match]-mekanism som
 
 **Experience League:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
 
 ### Alternativ C: Förening av målgrupper över sandlådor
 
@@ -254,8 +254,8 @@ Det här tillvägagångssättet är särskilt värdefullt när krav på dataresi
 
 **Experience League:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home)
 
 ### Jämförelse av alternativ
 
@@ -344,10 +344,10 @@ Kontrollera att källmålgrupperna i den sändande sandlådan använder identite
 
 **Experience League-dokumentation:**
 
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Översikt över Audience Composition](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Utvärderingsmetoder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home#evaluation-methods)
-- [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Översikt över Audience Composition](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition)
+- [Utvärderingsmetoder](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home#evaluation-methods)
+- [Profile Query Language referens](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/pql/overview)
 
 ### Fas 2: Konfigurera matchning och styrning
 
@@ -405,9 +405,9 @@ Upprätta sandbox-to-sandbox-anslutningar inom organisationen. Styrningen är va
 
 **Experience League-dokumentation:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [Politiska åtgärder](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
+- [Politiska åtgärder](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/overview)
 - [Samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 ### Fas 3: Uppskattningsöverlappning
@@ -443,7 +443,7 @@ Den här fasen kör överlappningsberäkningen mellan avsändarens segment och m
 
 **Experience League-dokumentation:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
 
 ### Fas 4: Dela målgrupper
 
@@ -498,8 +498,8 @@ Utför resursen mellan sandlådor. Den matchande målgruppen visas i den mottaga
 
 **Experience League-dokumentation:**
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### Fas 5: Aktivera matchande målgrupper
 
@@ -557,10 +557,10 @@ Den mottagande sandlådan måste ha egna målkonfigurationer. Destinationer kan 
 
 **Experience League-dokumentation:**
 
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
+- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Aktiveringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
 
 ## Implementeringsöverväganden
 
@@ -568,11 +568,11 @@ Granska följande överväganden före och under implementeringen för att undvi
 
 ### Gardrutor och begränsningar
 
-- [!DNL Segment Match] använder hash-kodade identifierare för matchning - ingen PII överskrider organisationsgränserna. Se [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview).
+- [!DNL Segment Match] använder hash-kodade identifierare för matchning - ingen PII överskrider organisationsgränserna. Se [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview).
 - Endast grupputvärderade målgrupper kan delas via [!DNL Segment Match]. Strömmande och kantutvärderade segment måste konverteras till grupputvärdering innan de kan delas.
-- Max 4 000 segmentdefinitioner per sandlåda gäller både käll- och mottagningssegment. Se [Segmenteringsskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails).
+- Max 4 000 segmentdefinitioner per sandlåda gäller både käll- och mottagningssegment. Se [Segmenteringsskyddsutkast](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails).
 - Exaktheten för överlappningsberäkning beror på volymen för matchade identifierare. Små målgrupper kan visa mindre exakta uppskattningar.
-- Aktiveringsskydd gäller för matchade målgrupper på samma sätt som andra målgrupper - maximalt 100 dataflöden per mål. Se [Aktiveringsskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails).
+- Aktiveringsskydd gäller för matchade målgrupper på samma sätt som andra målgrupper - maximalt 100 dataflöden per mål. Se [Aktiveringsskyddsutkast](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails).
 - Sammansatta målgrupper utvärderas enligt ett batchschema och är begränsade till 10 kompositionscanvases per sandbox. Se [Målgruppsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails).
 
 ### Vanliga fallgropar
@@ -630,61 +630,61 @@ Följande resurser innehåller ytterligare information om de funktioner som anv�
 
 ### [!DNL Segment Match]
 
-- [Översikt över segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [Översikt över segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [Felsökning av segmentmatchning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### Segmentering och målgrupper
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Översikt över Audience Composition](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Edge segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Översikt över Audience Composition](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition)
+- [Profile Query Language referens](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/pql/overview)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Edge segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/edge-segmentation)
 
 ### Identitet och profil
 
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)
-- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
+- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces)
+- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
 
 ### Datastyrning och samtycke
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)
-- [Politiska åtgärder](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
+- [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview)
+- [Politiska åtgärder](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/overview)
 - [Samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
+- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/consents)
 
 ### Destinationer och aktivering
 
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
+- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
 
 ### Datamodellering och schema
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
 
 ### Administration och åtkomstkontroll
 
-- [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
-- [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home)
+- [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+- [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home)
 
 ### Övervakning och iakttagbarhet
 
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
+- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home)
 
 ### Skyddsräcken
 
-- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
 - [Skyddsritningar för segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Aktiveringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/guardrails)
 
 ### Självstudiekurser
 
 - [Skapa ett schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/union-schema)
-- [Aktivera en datauppsättning för profil](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile)
+- [Aktivera en datauppsättning för profil](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/enable-for-profile)
