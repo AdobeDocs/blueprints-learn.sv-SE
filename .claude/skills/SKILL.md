@@ -1,7 +1,7 @@
 ---
 name: blueprint-document-reference
 description: Referens för att skapa och redigera Adobe Digital Experience Design-dokument. Använd när du skapar nya utkast, lägger till designer eller när användaren frågar om designstrukturen, avsnitten, mallarna eller refererar till Adobe Experience League.
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Alla ritningssidor ska följa denna struktur. Inkludera endast avsnitt som gäll
 title: [Short descriptive title]
 description: "[One sentence: what this blueprint shows and why it matters.]"
 solution: [Product name, e.g. Real-Time Customer Data Platform, Journey Optimizer]
-exl-id: [UUID - leave blank if new, this will be auto-generated as part of the Experience League publishing flow]
+exl-id: [UUID - if this is already popultated keep it as is. Disregard and remove this field if it is a new blueprint as blank values will be rejected by the publishing flow. If the field and value are not present, it will be auto-generated as part of the Experience League publishing flow]
 ---
 # [H1 - same as title or expanded]
 
@@ -98,8 +98,8 @@ Använd en kortare struktur för översikts- eller navsidor: inledande, användn
 ## Referera till Adobe Experience League
 
 - **När ska du länka**: Länka till Experience League för produktdokumentation, API-referenser, utkast, självstudiekurser och konfigurationssteg. Duplicera inte långa procedurer, sammanfatta och länka inte.
-- **URL-format**: Använd fullständiga URL:er. Föredra `https://experienceleague.adobe.com/docs/?lang=sv-SE...` eller `https://experienceleague.adobe.com/sv/docs/...`. `https://developer.adobe.com/...` är även giltigt för utvecklardokument.
-- **Länka text**: Använd beskrivande text (t.ex. &quot;[Skapa scheman] (url)&quot;, inte &quot;Klicka här&quot;). Använd `[!DNL Product Name]` om det är lämpligt för produktnamn i länktext.
+- **URL-format**: Använd fullständiga URL:er. Föredra `https://experienceleague.adobe.com/docs/...` eller `https://experienceleague.adobe.com/en/docs/...`. `https://developer.adobe.com/...` är även giltigt för utvecklardokument.
+- **Länka text**: Använd beskrivande text (t.ex. &quot;[Skapa scheman](url)&quot;, inte &quot;Klicka här&quot;). Använd `[!DNL Product Name]` om det är lämpligt för produktnamn i länktext.
 - **Relaterat dokumentationsavsnitt**: Avsluta utkast med ett relaterat dokumentationsavsnitt som grupperar länkar efter kategori (t.ex. målkonfigurationer, SDK-dokumentation, profil och segmentering, självstudiekurser).
 
 Detaljerade URL-mönster, länkgruppering och exempel finns i [reference.md](reference.md).
