@@ -91,10 +91,10 @@ Samordna en flerstegs flerkanalsresa som innefattar realtidsbeslut på en eller 
 
 Följande program används för att implementera det här användningsmönstret.
 
-- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** - Resesamordning (design av arbetsyta i flera steg, startvillkor, väntevillkor, avslutsvillkor), meddelandeskapande över flera kanaler, kanalytkonfiguration, hantering av konflikter och prioriteter
+- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** - Resesamordning (design av arbetsyta i flera steg, startvillkor, väntevillkor, avslutsvillkor), meddelandeskapande över flera kanaler, kanalytkonfiguration, hantering av konflikter och prioriteter
 - **[!DNL Adobe Journey Optimizer]Beslut** - Hantering av erbjudanden och innehållsobjekt, regler för behörighet, rangordningsstrategier (prioritet, formel, AI), beslutsprinciper, ersättningar, reserverbjudanden
-- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** - Målgruppsutvärdering för registrering av resor och segment för erbjudandekvalificering, profilanrikning med beräknade attribut och benägenhetspoäng, samtycke och efterlevnadskontroll
-- **[!DNL Adobe Experience Platform]([!DNL AEP])** - Kundprofilarkiv i realtid, identitetstjänst för flerkanalsupplösning, datamodellering och inmatningsinfrastruktur i realtid
+- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** - Målgruppsutvärdering för registrering av resor och segment för erbjudandekvalificering, profilanrikning med beräknade attribut och benägenhetspoäng, samtycke och efterlevnadskontroll
+- **[!DNL Adobe Experience Platform] ([!DNL AEP])** - Kundprofilarkiv i realtid, identitetstjänst för flerkanalsupplösning, datamodellering och inmatningsinfrastruktur i realtid
 
 ## Foundationsfunktioner
 

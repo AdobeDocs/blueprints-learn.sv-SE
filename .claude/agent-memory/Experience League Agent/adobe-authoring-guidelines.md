@@ -15,7 +15,7 @@ ht-degree: 0%
 Source: https://experienceleague.adobe.com/en/docs/authoring-guide/using/home
 Crawlade: 2026-03-15
 
----
+&#x200B;---
 
 ## &#x200B;1. METADATA/FRAMFÖR-FRÅGAN
 
@@ -54,7 +54,7 @@ Crawlade: 2026-03-15
 ### Föråldrade fält
 seo-title, seo-description, målgrupp, svårighet, uuid (från migrationstidpunkten)
 
----
+&#x200B;---
 
 ## &#x200B;2. MARKERAD SYNTAX (ADOBE-FLAVORED)
 
@@ -120,10 +120,13 @@ seo-title, seo-description, målgrupp, svårighet, uuid (från migrationstidpunk
 
   ```
   ```javascript
+
   code here
+
   ```
 
   ```
+
   
   
 - Alternativ: `{line-numbers="true"}`, `{start-line="7"}`, `{highlight="11-13, 16"}`
@@ -140,7 +143,7 @@ seo-title, seo-description, målgrupp, svårighet, uuid (från migrationstidpunk
 - Layoutalternativ för markeringsregister: lägg till `{style="table-layout:auto"}` efter tabell med tomma rader
 - Undvik mycket breda/höga tabeller på grund av problem med synlighet i vågrät rullningslist
 
----
+&#x200B;---
 
 ## &#x200B;3. SPECIALTILLÄGG FÖR ADOBE SYNTAX
 
@@ -174,7 +177,8 @@ seo-title, seo-description, målgrupp, svårighet, uuid (från migrationstidpunk
 >[!ERROR]
 >[!SUCCESS]
 ```
-- ALLVARLIGT: Inget utrymme mellan `>` och `[!` - använd `>[!NOTE]` NOT `> [!NOTE]`
+
+- ALLVARLIGT: Inget utrymme mellan `>` och `[ !` - använd `>[!NOTE]` NOT `> [!NOTE]`
 - Lägg till en tom rad mellan `>[!NOTE]` och brödtextraden
 
 ### Tabbar
@@ -198,6 +202,7 @@ Content here
 Content inside
 +++
 ```
+
 Obs! Kapslade komprimerbara avsnitt stöds INTE.
 
 ### Skuggningsrutor
@@ -213,6 +218,7 @@ Content here
 ```
 >[!VIDEO](https://video.tv.adobe.com/v/ID/?quality=12&learn=on)
 ```
+
 Lägg till `{transcript=true}` för transkript.
 
 ### Mer som detta
@@ -238,6 +244,7 @@ Lägg till `{transcript=true}` för transkript.
 ```
 [!BADGE Label]{type=Informative url="https://example.com" tooltip="text"}
 ```
+
 Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (grå), `Caution` (gul)
 
 ### Textmarkering (förhandsvisning)
@@ -271,7 +278,7 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - Vågräta linjer
 - Kapslade komprimerbara avsnitt
 
----
+&#x200B;---
 
 ## &#x200B;4. FILNAMN OCH MAPPSTRUKTUR
 
@@ -301,7 +308,7 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - Metadata för innehållsförteckning: `user-guide-description`, eventuellt `breadcrumb-title`
 - `mini-toc-levels`: styr visning av rubrik till höger (1-6, standard 2)
 
----
+&#x200B;---
 
 ## &#x200B;5. INNEHÅLLSKVALITET OCH REDAKTIONSSTANDARDER
 
@@ -347,7 +354,7 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - Endast versaler för `title`-metadatafält
 - Korrekta substantiv alltid med versaler
 
----
+&#x200B;---
 
 ## 6. SEO BEST PRACTICES
 
@@ -364,7 +371,7 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - Använd verktyg som AnswerThePublic, Google Trends to research keywords
 - Innehållet ska visa E-E-A-T (erfarenhet, expertis, auktoritativitet, tillförlitlighet)
 
----
+&#x200B;---
 
 ## &#x200B;7. LOKALISERING
 
@@ -384,7 +391,7 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - `[!DNL ProductName]` - förhindrar att produkt-/varumärkesnamn översätts
 - Bilder i en&quot;do-not-localize&quot;-mapp undantas från lokalisering
 
----
+&#x200B;---
 
 ## &#x200B;8. INNEHÅLLSTYPER
 
@@ -395,13 +402,13 @@ Typer: `Informative` (blå), `Positive` (grön), `Negative` (röd), `Neutral` (g
 - **Kunskapsbasartiklar**: Kortfattad, tillfälligt relevant felsökningsinnehåll
 - **Landningssida/startsida**: Hanteras separat (SCCM)
 
----
+&#x200B;---
 
 ## &#x200B;9. VANLIGA VALIDERINGSFEL SOM SKA UNDVIKAS
 
 - `title`- eller `description`-metadata saknas
 - `description` börjar inte med &quot;Läs om..&quot; eller&quot;Lär dig mer..&quot;
-- Avstånd mellan `>` och `[!` i bildtextens syntax (`> [!NOTE]` i stället för `>[!NOTE]`)
+- Avstånd mellan `>` och `[ !` i bildtextens syntax (`> [!NOTE]` i stället för `>[!NOTE]`)
 - Blanksteg i fetstil: `**text **` (avslutande blanksteg bryts i fet stil)
 - Markeringssyntax i HTML-tabeller (t.ex. pratbubblor fungerar inte där)
 - Duplicera rubrikankar-ID:n i ett dokument

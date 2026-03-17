@@ -94,8 +94,8 @@ Utveckla kundresor på kontonivå som kvalificerar leads till inköpsgrupper fö
 
 Följande Adobe-program används i det här fallmönstret.
 
-- **[!DNL Journey Optimizer B2B Edition]([!DNL AJO B2B])** - Organiserar kundresor på kontonivå, hanterar inköpsgrupper med rollmallar och lösningsintressen, betygsätter engagemang på person- och inköpsgruppnivå, författare till B2B-e-postinnehåll, skickar SMS-meddelanden, konfigurerar säljvarningar och tillhandahåller kontrollpaneler för B2B-analyser.
-- **[!DNL Real-Time CDP B2B Edition]([!DNL RT-CDP B2B])** - Enhetaliserar kontoprofiler från B2B-data mellan olika källor, löser relationer mellan personer och konton, utvärderar målgrupper på kontonivå, konfigurerar B2B-specifika mål ([!DNL Marketo Engage], [!DNL LinkedIn], CRM) och tillämpar datastyrning över B2B-data.
+- **[!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])** - Organiserar kundresor på kontonivå, hanterar inköpsgrupper med rollmallar och lösningsintressen, betygsätter engagemang på person- och inköpsgruppnivå, författare till B2B-e-postinnehåll, skickar SMS-meddelanden, konfigurerar säljvarningar och tillhandahåller kontrollpaneler för B2B-analyser.
+- **[!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])** - Enhetaliserar kontoprofiler från B2B-data mellan olika källor, löser relationer mellan personer och konton, utvärderar målgrupper på kontonivå, konfigurerar B2B-specifika mål ([!DNL Marketo Engage], [!DNL LinkedIn], CRM) och tillämpar datastyrning över B2B-data.
 
 ## Foundationsfunktioner
 
@@ -601,7 +601,7 @@ Följande avsnitt behandlar skyddsförslag, vanliga fallgropar, bästa praxis oc
 
 ### Skyddsritningar och begränsningar
 
-- Gränser för kontoresa, inklusive högsta antal samtidiga resor och högsta antal konton per resa, följer [!DNL AJO B2B Edition] produktsäkerhetsutkast - [AJO B2B-skyddsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)[!DNL AJO B2B Edition]
+- Gränser för kontoresa, inklusive högsta antal samtidiga resor och högsta antal konton per resa, följer [!DNL AJO B2B Edition] produktsäkerhetsutkast - [AJO B2B-skyddsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview) [!DNL AJO B2B Edition]
 - [!DNL RT-CDP B2B Edition] har stöd för upp till 50 B2B-schemaklasser och följer standardprofiler och skyddsprofiler för segmentering - [Kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - Utvärdering av målgrupp för konto utförs på batchscheman. Uppdateringar av målgrupper för realtidskonton stöds inte för alla segmenttyper - [Segmenteringsskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
 - Inmatning av B2B-källanslutning har minimala schemaläggningsintervall (vanligtvis 15 minuter för [!DNL Marketo], varierande för CRM-källor) — [Inmatningsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)

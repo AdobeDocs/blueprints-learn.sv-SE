@@ -99,9 +99,9 @@ I avsnittet Mönsterkomposition under Implementeringsfrågor finns vägledning o
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO) Beslut** - Urvalsstrategier, rangordningsmodeller, objektkataloger och beslutsprofiler som utvärderar beteendesignaler och returnerar de mest relevanta objekten för varje besökare
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - ackumulering av beteendeprofildata, målgruppsutvärdering för rekommendationsomfattning och beräknade attribut för beteendeaffinitetsklassificering
-- **[!DNL Adobe Experience Platform](AEP)** - Inmatning av beteendehändelser via [!DNL Web SDK] och [!DNL Mobile SDK], [!DNL Edge Network] bearbetning, XDM-schemahantering för händelse- och katalogdata
+- **[!DNL Adobe Journey Optimizer] (AJO) Beslut** - Urvalsstrategier, rangordningsmodeller, objektkataloger och beslutsprofiler som utvärderar beteendesignaler och returnerar de mest relevanta objekten för varje besökare
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - ackumulering av beteendeprofildata, målgruppsutvärdering för rekommendationsomfattning och beräknade attribut för beteendeaffinitetsklassificering
+- **[!DNL Adobe Experience Platform] (AEP)** - Inmatning av beteendehändelser via [!DNL Web SDK] och [!DNL Mobile SDK], [!DNL Edge Network] bearbetning, XDM-schemahantering för händelse- och katalogdata
 
 ## Foundationsfunktioner
 

@@ -102,9 +102,9 @@ Leverera personaliserat innehåll, erbjudanden eller kampanjer till en identifie
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Konfiguration av webbkanal, konfiguration i appkanal, konfiguration av innehållskortskanal, beslut (urval och rankning av erbjudanden), meddelandeframställning (skräddarsytt innehåll), kampanjkörning, innehållsexperimenterande och rapportering
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering (kant, direktuppspelning och batch), profilsökning via Edge Network i realtid, profilberikning med beräknade attribut och benägenhetspoäng
-- **[!DNL Adobe Experience Platform](AEP)** - Profilarkiv, identitetstjänst, Web SDK, Mobile SDK, datastream-konfiguration, edge network delivery
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Konfiguration av webbkanal, konfiguration i appkanal, konfiguration av innehållskortskanal, beslut (urval och rankning av erbjudanden), meddelandeframställning (skräddarsytt innehåll), kampanjkörning, innehållsexperimenterande och rapportering
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering (kant, direktuppspelning och batch), profilsökning via Edge Network i realtid, profilberikning med beräknade attribut och benägenhetspoäng
+- **[!DNL Adobe Experience Platform] (AEP)** - Profilarkiv, identitetstjänst, Web SDK, Mobile SDK, datastream-konfiguration, edge network delivery
 
 ## Foundationsfunktioner
 

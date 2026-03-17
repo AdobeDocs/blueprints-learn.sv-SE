@@ -84,9 +84,9 @@ Se avsnittet [Implementeringsalternativ](#implementation-options) för hur varje
 
 Följande Adobe-program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Beslutshanteringsmotor för att skapa erbjudanden, regler för kvalificering, rangordningsstrategier, praktik och beslutspolicyer; kanalkonfiguration och meddelandeskapande för erbjudanden; kampanj- och resekörning
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering för erbjudandeberättigandesegment, profildata och beräknade attribut som används för kvalificering och rankning
-- **[!DNL Adobe Experience Platform](AEP)** - Enhetligt profilarkiv, identitetsupplösning och datamängd som stöder både AJO och RT-CDP
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Beslutshanteringsmotor för att skapa erbjudanden, regler för kvalificering, rangordningsstrategier, praktik och beslutspolicyer; kanalkonfiguration och meddelandeskapande för erbjudanden; kampanj- och resekörning
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering för erbjudandeberättigandesegment, profildata och beräknade attribut som används för kvalificering och rankning
+- **[!DNL Adobe Experience Platform] (AEP)** - Enhetligt profilarkiv, identitetsupplösning och datamängd som stöder både AJO och RT-CDP
 
 ## Foundationsfunktioner
 
