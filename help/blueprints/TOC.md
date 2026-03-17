@@ -1,13 +1,13 @@
 ---
-user-guide-title: Customer Experience Orchestration-utkast
-breadcrumb-title: utkast
-user-guide-description: Utkast är repeterbara implementeringar som åtgärdar etablerade affärsproblem och innehåller arkitekturdiagram, tekniska överväganden och relevanta dokumentationslänkar.
+user-guide-title: Affärsmål för kundupplevelsesamordning, användningsfall, arkitekturdiagram och utkast
+breadcrumb-title: Användningsexempel och utkast
+user-guide-description: Utforska viktiga affärsmål, fallmönster och exempel på användning i branschen för Adobe Experience Platform och tillämpningar. Diagram över visuell arkitektur och ritningar ger tekniska referenser för systemintegration, dataflöden och lösningsdesign - som kopplar affärsvärde till implementering.
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 021e6b48e09ce2d3da80ffe7ca1b7f4ce4a4a3a4
+source-git-commit: 6bf36e8e5d797eef5b2dfe86e4e75d36b0c026d4
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '474'
 ht-degree: 7%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 7%
          + [Journey Optimizer med Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
       + Borttagna ritningar{#deprecated-blueprints}
          + Campaign Standard{#campaign-standard}
-            + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard){target="_blank"}
-            + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/sv/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+            + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+            + [Real-Time CDP med Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
          + Campaign v7{#campaign-v7}
             + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
