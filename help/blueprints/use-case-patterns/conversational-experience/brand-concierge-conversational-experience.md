@@ -107,8 +107,8 @@ Omvandla digitala resurser till varumärkesskyddade, AI-baserade, konversationsu
 Följande program används för att implementera det här användningsmönstret.
 
 - **[!DNL Brand Concierge]** - AI-styrt program för konversationsupplevelser som tillhandahåller agenten orchestrator, Product Advisor Agent, Site Advisory Agent, varumärkesstyrning och konversationsanalys
-- **[!DNL Adobe Experience Platform](AEP)** - En enhetlig datamall som tillhandahåller XDM-scheman, identitetsupplösning, kundprofiler i realtid och infrastruktur för datainsamling för konversationssignaler
-- **[!DNL Real-Time CDP]([!DNL RT-CDP])** - Kunddataplattform som tillhandahåller profilsökning i realtid för personaliserade konversationer, målgruppssegmentering från konversationssignaler och profilberikning med intent- och känslomedata
+- **[!DNL Adobe Experience Platform] (AEP)** - En enhetlig datamall som tillhandahåller XDM-scheman, identitetsupplösning, kundprofiler i realtid och infrastruktur för datainsamling för konversationssignaler
+- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** - Kunddataplattform som tillhandahåller profilsökning i realtid för personaliserade konversationer, målgruppssegmentering från konversationssignaler och profilberikning med intent- och känslomedata
 
 ## Foundationsfunktioner
 

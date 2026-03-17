@@ -100,9 +100,9 @@ Leverera personaliserat innehåll baserat på sessionsbeteendesignaler för oide
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Konfiguration av webbkanalsyta, innehållsutveckling (webb- och kodbaserade upplevelser), kampanjkörning, innehållsexperiment (A/B-testning), beslut (dynamiskt innehållsval) och rapportering
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Edge-segmentering för målgruppsutvärdering i realtid baserad på beteendesignaler i sessioner; anonym hantering av kantprofiler
-- **[!DNL Adobe Experience Platform](AEP)** - [!DNL Web SDK] för beteendesignalinsamling, [!DNL Edge Network] för dataroutning och personalisering i realtid, datastream-konfiguration
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Konfiguration av webbkanalsyta, innehållsutveckling (webb- och kodbaserade upplevelser), kampanjkörning, innehållsexperiment (A/B-testning), beslut (dynamiskt innehållsval) och rapportering
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Edge-segmentering för målgruppsutvärdering i realtid baserad på beteendesignaler i sessioner; anonym hantering av kantprofiler
+- **[!DNL Adobe Experience Platform] (AEP)** - [!DNL Web SDK] för beteendesignalinsamling, [!DNL Edge Network] för dataroutning och personalisering i realtid, datastream-konfiguration
 
 ## Foundationsfunktioner
 
