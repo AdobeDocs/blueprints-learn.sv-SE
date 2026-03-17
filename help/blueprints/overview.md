@@ -3,14 +3,14 @@ title: Kundupplevelsesamordning - användningsfall, arkitekturdiagram och utkast
 description: Upptäck viktiga affärsmål, användningsmönster och exempel på användning i branschen för Adobe Experience Platform och tillämpningar. Diagram över visuell arkitektur och ritningar ger tekniska referenser för systemintegration, dataflöden och lösningsdesign - som kopplar affärsvärde till implementering.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: cb112d3fe3c6a95437de69815efb50492c9bf13b
+source-git-commit: 62c69ab5ba773172b5b3b55a6c3766c58331135c
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
 
-# Kundupplevelsesimuleringar
+# Affärsmål för kundupplevelsehantering, användningsfall och arkitekturdiagram
 
 Den här webbplatsen innehåller **Viktiga affärsmål** som beskriver exempel på primärt affärsvärde och mål som kan nås med Adobe Experience Platform och program. **Använd fallmönster** beskriver vanliga plattforms- och programfunktioner med repeterbara implementeringsmetoder. **Branschanvändningsexemplen** använder mönster i vertikala specifika affärsscenarier. **Diagram över arkitektur och skisser** är visuella arkitektur och referensdiagram för dataflöden som illustrerar systemintegreringspunkter, data- och innehållsflöden samt sekvenser av åtgärder - som ger en teknisk referens för lösningsdesign. Tillsammans kopplar dessa lager affärsvärdet till implementeringsberoenden och arkitektur.
 
