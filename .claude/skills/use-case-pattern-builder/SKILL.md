@@ -157,7 +157,7 @@ När alla filer har skapats och uppdaterats kontrollerar du följande:
 
 5. **Slutlighet för främmande objekt** - Mönsterfilen innehåller titel, beskrivning, lösning och exl-id i YAML-förhandsgranskningen.
 
-6. **Experience League-länkar** - Kontrollera att alla Experience League-URL:er är tillförlitliga (börja med `https://experienceleague.adobe.com/`).
+6. **Experience League-länkar** - Kontrollera att alla Experience League-URL:er är tillförlitliga (börja med `https://experienceleague.adobe.com/sv`).
 
 Rapportera eventuella valideringsfel till användaren och åtgärda dem innan uppgiften slutförs.
 
