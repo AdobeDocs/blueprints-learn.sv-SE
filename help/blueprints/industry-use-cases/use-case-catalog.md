@@ -3,9 +3,9 @@ title: Använd fallkatalog
 description: Hitta rätt startpunkt för er Adobe Experience Platform-resa genom att titta på användningsexempel vertikalt, med länkar till implementeringsmönster och affärsmål.
 doc-type: overview-page
 exl-id: 38593314-b8c9-49f6-85db-a4345ec444e7
-source-git-commit: b0fe19570fb5b649b063d0ba7d99e77ab166983d
+source-git-commit: 9d1ba8ce3fed83b1bd2b2615309ae7e3683e14f1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2379'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ Industry Use Case → Use Case Pattern → Key Business Objective
 | | [Riskbedömning och förebyggande](insurance/insurance-overview.md#risk-assessment-and-prevention) | Tillhandahålla personaliserad riskbedömningsinformation och förebyggande tips | [!BADGE Nya]{type=Informative} | [Samlad resa i flera steg](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
 | | [Program för välbefinnande och förebyggande](insurance/insurance-overview.md#wellness-and-prevention-programs) | Anpassa kommunikationen och belöningen för välgörenhetsprogram för försäkringskunder | [!BADGE Nya]{type=Informative} | [Samlad resa i flera steg](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
 | <img src="assets/use-case-icons/insurance/icon-cross-sell.png" alt="Korsförsäljning" width="40"> | [Produktrekommendationer för korsförsäljning](insurance/insurance-overview.md#cross-sell-product-recommendations) | Rekommendera ytterligare försäkringsprodukter baserade på befintliga försäkringsavtal och livscykelstadiet | [!BADGE Avancerat]{type=Caution} | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
-| | [Produkterbjudanden baserade på livscykelstadium](insurance/insurance-overview.md#life-stage-based-product-offers) | Identifiera kunder som kommer in i nya livsstadier och erbjuda relevanta försäkringsprodukter | [!BADGE Avancerat]{type=Caution} | [Flerkanalsresor med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| <img src="assets/use-case-icons/insurance/icon-life-stage-based-product-offers.png" alt="Livslängd" width="40"> | [Produkterbjudanden baserade på livscykelstadium](insurance/insurance-overview.md#life-stage-based-product-offers) | Identifiera kunder som kommer in i nya livsstadier och erbjuda relevanta försäkringsprodukter | [!BADGE Avancerat]{type=Caution} | [Flerkanalsresor med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
 | | [Rabatt och besparingar](insurance/insurance-overview.md#discount-and-savings-opportunities) | Identifiera och informera om anpassade rabattmöjligheter | [!BADGE Avancerat]{type=Caution} | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
 
 >[!TAB Media och underhållning]
