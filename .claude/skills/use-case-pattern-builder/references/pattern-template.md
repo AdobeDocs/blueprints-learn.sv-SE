@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Den här filen innehåller den fullständiga markeringsmallen för en sida med fallmönster. Ersätt alla `{{placeholder}}`-värden med det faktiska innehållet när ett nytt mönster skapas.
 
----
+&#x200B;---
 
 ## Mall
 
@@ -227,7 +227,7 @@ Complete the following before beginning the implementation.
 | Scalability | {{description}} | {{description}} | {{description}} |
 ````
 
----
+&#x200B;---
 
 ## Kommentarer om hur du använder den här mallen
 

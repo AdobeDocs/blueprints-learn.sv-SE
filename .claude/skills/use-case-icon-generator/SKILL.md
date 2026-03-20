@@ -117,9 +117,9 @@ Kontrollera den befintliga ikoninventeringssektionen i stilguiden och visa alla 
 
 Formatera utdata tydligt med följande avsnitt:
 
----
+&#x200B;---
 
-### Ikonspecifikation: {Use Case Name}
+### Ikonspecifikation: &lbrace;Use Case Name&rbrace;
 
 **Bransch:** {Industry}
 
@@ -151,7 +151,7 @@ Formatera utdata tydligt med följande avsnitt:
 6. Kontrollera att ikonen ser tydlig och identifierbar ut vid visningsstorleken 40px.
 7. Använd HTML-kodutdraget för katalogen när du lägger till det här användningsfallet i katalogtabellen.
 
----
+&#x200B;---
 
 ## Riktlinjer
 
