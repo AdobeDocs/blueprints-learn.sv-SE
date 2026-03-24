@@ -103,11 +103,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL AJO B2B Edition] och [!DNL RT-CDP B2B Edition] berättiganden aktiverade. Roller konfigurerade för B2B-marknadsförare, säljåtgärder och administratörer med lämplig behörighet för att köpa grupphantering, kontoresor och CRM-integreringsinställningar. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med B2B-specifika klasser: XDM Business Account, XDM Business Opportunity, XDM Business Person (lead/kontakt), XDM Business Campaign och XDM Business Marketing List. Fältgrupper för kontoattribut, personattribut och aktivitets-/interaktionsdata måste finnas. Datauppsättningar som har skapats och profilaktiverats för varje schema. | [Systemöversikt för XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [schemaklasser för B2B](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
-| Datakällor och samling | Obligatoriskt | Rörledningar för B2B-dataöverföring har upprättats, vanligtvis via [!DNL Marketo Engage]-källkopplingen eller [!DNL Salesforce]/[!DNL Dynamics] CRM-källanslutningarna. Data för konto, person, affärsmöjlighet, kampanj och kampanjmedlem måste flöda in i AEP datamängder. Data om beteendeinteraktion (webbbesök, e-postinteraktioner, innehållsnedladdningar) måste också hämtas för engagemangsbedömning. | [Källor - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsmatchning konfigurerad för att matcha relationer från människa till konto. Identitetsnamnutrymmen för B2B-identifierare ([!DNL Marketo] person-ID, [!DNL Salesforce] lead/kontakt-ID, konto-ID) måste finnas. Sammanfogningsprinciper som konfigurerats för B2B-profilenhetliga. Kontoprofiler måste vara enhetliga från data från olika källor. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [B2B-identitetsupplösning](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) |
-| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinitioner på kontonivå som skapats med kontoattribut, personattribut och aktivitetsdata. Kontomålgrupperna identifierar vilka konton som anger inköpsgruppsresor. Batchutvärdering är vanligtvis tillräckligt för B2B-kontoresor, men utvärdering av direktuppspelning kan användas för att utlösa kontokvalificeringsutlösare i realtid. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Kontomålgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences) |
+| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL AJO B2B Edition] och [!DNL RT-CDP B2B Edition] berättiganden aktiverade. Roller konfigurerade för B2B-marknadsförare, säljåtgärder och administratörer med lämplig behörighet för att köpa grupphantering, kontoresor och CRM-integreringsinställningar. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med B2B-specifika klasser: XDM Business Account, XDM Business Opportunity, XDM Business Person (lead/kontakt), XDM Business Campaign och XDM Business Marketing List. Fältgrupper för kontoattribut, personattribut och aktivitets-/interaktionsdata måste finnas. Datauppsättningar som har skapats och profilaktiverats för varje schema. | [Systemöversikt för XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [schemaklasser för B2B](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition) |
+| Datakällor och samling | Obligatoriskt | Rörledningar för B2B-dataöverföring har upprättats, vanligtvis via [!DNL Marketo Engage]-källkopplingen eller [!DNL Salesforce]/[!DNL Dynamics] CRM-källanslutningarna. Data för konto, person, affärsmöjlighet, kampanj och kampanjmedlem måste flöda in i AEP datamängder. Data om beteendeinteraktion (webbbesök, e-postinteraktioner, innehållsnedladdningar) måste också hämtas för engagemangsbedömning. | [Källor - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsmatchning konfigurerad för att matcha relationer från människa till konto. Identitetsnamnutrymmen för B2B-identifierare ([!DNL Marketo] person-ID, [!DNL Salesforce] lead/kontakt-ID, konto-ID) måste finnas. Sammanfogningsprinciper som konfigurerats för B2B-profilenhetliga. Kontoprofiler måste vara enhetliga från data från olika källor. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [B2B-identitetsupplösning](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) |
+| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinitioner på kontonivå som skapats med kontoattribut, personattribut och aktivitetsdata. Kontomålgrupperna identifierar vilka konton som anger inköpsgruppsresor. Batchutvärdering är vanligtvis tillräckligt för B2B-kontoresor, men utvärdering av direktuppspelning kan användas för att utlösa kontokvalificeringsutlösare i realtid. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home), [Kontomålgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences) |
 
 ## Stödfunktioner
 
@@ -115,11 +115,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut kan samla ihop engagemangshändelser på personnivå (e-postöppningar, innehållsnedladdningar, webbinarier-närvaro) till interaktionsstatistik på kontonivå som gör att inköpsgrupper kan göra poäng och logik för kontokvalificering. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| Livscykelhantering för data | Rekommenderad | Samtyckshantering är avgörande för e-post och SMS-kommunikation inom B2B. Förfallotidsprinciper för datauppsättningar hjälper till att hantera livscykeln för tillfälliga engagemangsdata och säkerställa att kraven på datalagring uppfylls. | [Avancerad livscykelhantering för data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | B2B-data innehåller ofta känslig företagsinformation och personuppgifter för affärskontakter. Datastyrningsprinciper säkerställer att B2B-data används korrekt på olika destinationer, särskilt när annonsplattformar eller tredjepartssystem aktiveras. | [Datastyrningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| Övervakning och observerbarhet | Rekommenderad | Övervakning säkerställer att dataöverföringsnäten (CRM/[!DNL Marketo]-synk) är felfria, kontoprofiler uppdateras och att kontoresan utförs utan fel. Varningar om fel i källdataflödet är viktiga för att upprätthålla datavaluta. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| Rapportering och analys | Ingår | B2B-analysinstrumentpaneler i [!DNL AJO B2B Edition] tillhandahåller inköpsgruppsengagemang, resultat för kontoresan och mätvärden för pipeline. [!DNL CJA B2B Edition] utökar analysen med arbetsyteanalys på kontonivå, analyser av inköpsgrupper och korrelation mellan affärsmöjligheter. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut kan samla ihop engagemangshändelser på personnivå (e-postöppningar, innehållsnedladdningar, webbinarier-närvaro) till interaktionsstatistik på kontonivå som gör att inköpsgrupper kan göra poäng och logik för kontokvalificering. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview) |
+| Livscykelhantering för data | Rekommenderad | Samtyckshantering är avgörande för e-post och SMS-kommunikation inom B2B. Förfallotidsprinciper för datauppsättningar hjälper till att hantera livscykeln för tillfälliga engagemangsdata och säkerställa att kraven på datalagring uppfylls. | [Avancerad livscykelhantering för data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | B2B-data innehåller ofta känslig företagsinformation och personuppgifter för affärskontakter. Datastyrningsprinciper säkerställer att B2B-data används korrekt på olika destinationer, särskilt när annonsplattformar eller tredjepartssystem aktiveras. | [Datastyrningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home) |
+| Övervakning och observerbarhet | Rekommenderad | Övervakning säkerställer att dataöverföringsnäten (CRM/[!DNL Marketo]-synk) är felfria, kontoprofiler uppdateras och att kontoresan utförs utan fel. Varningar om fel i källdataflödet är viktiga för att upprätthålla datavaluta. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home) |
+| Rapportering och analys | Ingår | B2B-analysinstrumentpaneler i [!DNL AJO B2B Edition] tillhandahåller inköpsgruppsengagemang, resultat för kontoresan och mätvärden för pipeline. [!DNL CJA B2B Edition] utökar analysen med arbetsyteanalys på kontonivå, analyser av inköpsgrupper och korrelation mellan affärsmöjligheter. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
 
@@ -204,8 +204,8 @@ Leads är kvalificerade att köpa grupproller när de hämtas från CRM eller [!
 
 **Experience League:**
 
-- [AJO B2B edition - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
-- [Skapa inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [AJO B2B edition - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview)
+- [Skapa inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
 
 ### Alternativ B: Flera olika lösningsintressen med förgreningskontoresor
 
@@ -239,8 +239,8 @@ Bedömningen av engagemanget sker oberoende av inköpsgrupp, vilket gör att en 
 
 **Experience League:**
 
-- [Lösningsintressen](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [Kontoresor](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+- [Lösningsintressen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
+- [Kontoresor](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
 
 ### Alternativ C: AI-assisterade kontokvalifikationer med automatiserad reseutveckling
 
@@ -274,8 +274,8 @@ Kontoresor använder AI-kvalificeringsutdata för att bestämma nästa steg: kon
 
 **Experience League:**
 
-- [Kontokvalificering](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [AI Assistant i AJO B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
+- [Kontokvalificering](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [AI Assistant i AJO B2B](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview)
 
 ### Jämförelse av alternativ
 
@@ -346,9 +346,9 @@ Hur ska man definiera vilka målgrupper som ska ha konton för reseinträde?
 **Experience League-dokumentation:**
 
 - [RT-CDP B2B edition - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)
-- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Marketo Engage källanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
+- [Marketo Engage källanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences)
 - [Identitetsupplösning för B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)
 
 ### Fas 1: Lösningens intresse och inställning av inköpsgrupp
@@ -402,10 +402,10 @@ Konfigurera lösningsintressen och rollmallar som i alternativ B, men konfigurer
 
 **Experience League-dokumentation:**
 
-- [Översikt över inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
-- [Lösningsintressen](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [Rollmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
-- [Skapa inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
+- [Översikt över inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [Lösningsintressen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
+- [Rollmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
+- [Skapa inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
 
 ### Fas 2: Ledningskvalifikationer och poängsättning för engagemang
 
@@ -445,9 +445,9 @@ När ska en inköpsgrupp anses redo för försäljning?
 
 **Experience League-dokumentation:**
 
-- [Engagemangsbedömning](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [Köpgruppsfaser](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [Kontokvalificering](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Engagemangsbedömning](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Köpgruppsfaser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Kontokvalificering](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
 
 ### Fas 3: Design och utförande av kontoresa
 
@@ -511,8 +511,8 @@ Designa en resa där villkorsnoderna utvärderar AI-kvalificeringspoängen i st�
 
 **Experience League-dokumentation:**
 
-- [Översikt över kontoresor](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
-- [Nod för kontoresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
+- [Översikt över kontoresor](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+- [Nod för kontoresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
 - [Framtagning av e-post från B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/email-authoring)
 - [SMS-kanal i AJO B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sms-authoring)
 - [AI-assistenten för att skapa e-post](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/ai-assistant-emails)
@@ -559,8 +559,8 @@ Hur djupt bör man hitta gruppdata i CRM?
 
 - [E-postmeddelanden om försäljningsaviseringar](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sales-alert-email)
 - [Försäljningsinsikter för CRM](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/crm-sales-insights)
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
 
 ### Fas 5: Rapportering och optimering
 
@@ -590,9 +590,9 @@ Vilka analysverktyg ska konfigureras för kontinuerlig prestandaövervakning?
 
 **Experience League-dokumentation:**
 
-- [Kontrollpaneler för B2B-analyser](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
-- [Instrumentpanel för engagemang](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
-- [Intelligent kontrollpanel](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
+- [Kontrollpaneler för B2B-analyser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
+- [Instrumentpanel för engagemang](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
+- [Intelligent kontrollpanel](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
 - [CJA B2B edition - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ## Implementeringsöverväganden
@@ -601,11 +601,11 @@ Följande avsnitt behandlar skyddsförslag, vanliga fallgropar, bästa praxis oc
 
 ### Skyddsritningar och begränsningar
 
-- Gränser för kontoresa, inklusive högsta antal samtidiga resor och högsta antal konton per resa, följer [!DNL AJO B2B Edition] produktsäkerhetsutkast - [AJO B2B-skyddsutkast](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview) [!DNL AJO B2B Edition]
-- [!DNL RT-CDP B2B Edition] har stöd för upp till 50 B2B-schemaklasser och följer standardprofiler och skyddsprofiler för segmentering - [Kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Gränser för kontoresa, inklusive högsta antal samtidiga resor och högsta antal konton per resa, följer [!DNL AJO B2B Edition] produktsäkerhetsutkast - [AJO B2B-skyddsutkast](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview) [!DNL AJO B2B Edition]
+- [!DNL RT-CDP B2B Edition] har stöd för upp till 50 B2B-schemaklasser och följer standardprofiler och skyddsprofiler för segmentering - [Kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
 - Utvärdering av målgrupp för konto utförs på batchscheman. Uppdateringar av målgrupper för realtidskonton stöds inte för alla segmenttyper - [Segmenteringsskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- Inmatning av B2B-källanslutning har minimala schemaläggningsintervall (vanligtvis 15 minuter för [!DNL Marketo], varierande för CRM-källor) — [Inmatningsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
-- E-postkanalsytor är begränsade till 10 per kanaltyp per sandlåda - [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- Inmatning av B2B-källanslutning har minimala schemaläggningsintervall (vanligtvis 15 minuter för [!DNL Marketo], varierande för CRM-källor) — [Inmatningsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
+- E-postkanalsytor är begränsade till 10 per kanaltyp per sandlåda - [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
 
 ### Vanliga fallgropar
 
@@ -660,14 +660,14 @@ Följande resurser innehåller mer information om de program och funktioner som 
 
 ### [!DNL AJO B2B Edition]
 
-- [AJO B2B edition - dokumentation - startsida](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
-- [Översikt över inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
-- [Lösningsintressen](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [Rollmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
-- [Skapa inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
-- [Köpgruppsfaser](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [Översikt över kontoresor](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
-- [Nod för kontoresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
+- [AJO B2B edition - dokumentation - startsida](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview)
+- [Översikt över inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [Lösningsintressen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
+- [Rollmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
+- [Skapa inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
+- [Köpgruppsfaser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Översikt över kontoresor](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+- [Nod för kontoresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
 - [E-postmeddelanden om försäljningsaviseringar](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sales-alert-email)
 - [Försäljningsinsikter för CRM](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/crm-sales-insights)
 
@@ -679,49 +679,49 @@ Följande resurser innehåller mer information om de program och funktioner som 
 
 ### B2B-analyser och kontrollpaneler
 
-- [Instrumentpanel för inköpsgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
-- [Instrumentpanel för engagemang](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
-- [Intelligent kontrollpanel](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
+- [Instrumentpanel för inköpsgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
+- [Instrumentpanel för engagemang](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
+- [Intelligent kontrollpanel](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
 - [CJA B2B edition - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ### [!DNL RT-CDP B2B Edition]
 
 - [RT-CDP B2B edition - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)
-- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
-- [Marketo Engage källanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [B2B-scheman i Real-Time CDP](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
+- [Målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/types/account-audiences)
+- [Marketo Engage källanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
 
 ### Data Foundation
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
+- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
 
 ### Kanalkonfiguration
 
-- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
-- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 
 ### Datastyrning och sekretess
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [Avancerad livscykelhantering av data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
+- [Avancerad livscykelhantering av data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home)
 
 ### Destinationer
 
-- [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Översikt över destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
+- [LinkedIn Matched Auditions destination](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/social/linkedin)
 
 ### Skyddsräcken
 
-- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
 - [Skyddsritningar för segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [Förvaringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
-- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [Förvaringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
+- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
 
 ### Självstudiekurser och komma igång
 
-- [Komma igång med AJO B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
+- [Komma igång med AJO B2B edition](https://experienceleague.adobe.com/sv/docs/journey-optimizer-b2b/user/guide-overview)
 - [RT-CDP B2B edition, genomgång](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-tutorial)

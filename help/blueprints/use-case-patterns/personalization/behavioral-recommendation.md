@@ -97,11 +97,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Foundational Function | Status | Vad måste finnas på plats | Experience League Reference |
 | --- | --- | --- | --- |
-| Administration och styrning | Antagen på plats | AJO-sandlåda med beslutsbehörighet aktiverat. Användarroller som tillhandahålls med tillgång till hantering av artikelkataloger, konfiguration av urvalsstrategier och kanalytadministration. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | Upplev hur händelseschemat fångar in beteendesignaler (produktvyer, tillägg till kundvagnen, inköp, innehållsinteraktioner) med artikel-/produktidentifierare. Artikelkatalogschema (produktattribut, kategorier, bilder, priser) för rekommendationsobjektsuppsättningen. Profilschema med identitetsfält. Alla scheman har aktiverats för [!DNL Real-Time Customer Profile]. | [Systemöversikt för XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition), [Skapa en datauppsättning](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create) |
-| Datakällor och samling | Obligatoriskt | Beteendeströmning i realtid via [!DNL Web SDK] eller [!DNL Mobile SDK] är avgörande - rekommendationskvaliteten beror på nya beteendesignaler. Objektkatalogdata måste importeras (batch- eller direktuppspelning). Datastölar som konfigurerats med AJO-tjänsten aktiverad för Edge-beslut. | [SDK-webböversikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), [SDK-översikt för mobiler](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview), [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
-| Konfiguration av identitet och profil | Obligatoriskt | Beteendesignaler måste kopplas till en identitet (känd eller anonym via ECID) för att kunna skapa beteendeprofiler. Autentiserad identitet (CRM-ID, e-post) måste konfigureras för rekommendationer för kända besökare. Lägg samman en aktiv policy i Edge för rekommendationsleverans i realtid. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
-| Målgruppsdefinition och segmentering | Rekommenderad | Målgrupper kan användas för att definiera rekommendationer (t.ex. endast rekommendera premiumprodukter till premiummedlemmar) eller för filtrering. Detta är inte absolut nödvändigt om rekommendationerna endast är beteendemässiga. Krävs för e-postbaserade rekommendationer (alternativ C) för att definiera målgruppen. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
+| Administration och styrning | Antagen på plats | AJO-sandlåda med beslutsbehörighet aktiverat. Användarroller som tillhandahålls med tillgång till hantering av artikelkataloger, konfiguration av urvalsstrategier och kanalytadministration. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | Upplev hur händelseschemat fångar in beteendesignaler (produktvyer, tillägg till kundvagnen, inköp, innehållsinteraktioner) med artikel-/produktidentifierare. Artikelkatalogschema (produktattribut, kategorier, bilder, priser) för rekommendationsobjektsuppsättningen. Profilschema med identitetsfält. Alla scheman har aktiverats för [!DNL Real-Time Customer Profile]. | [Systemöversikt för XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition), [Skapa en datauppsättning](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/create) |
+| Datakällor och samling | Obligatoriskt | Beteendeströmning i realtid via [!DNL Web SDK] eller [!DNL Mobile SDK] är avgörande - rekommendationskvaliteten beror på nya beteendesignaler. Objektkatalogdata måste importeras (batch- eller direktuppspelning). Datastölar som konfigurerats med AJO-tjänsten aktiverad för Edge-beslut. | [SDK-webböversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home), [SDK-översikt för mobiler](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview), [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure) |
+| Konfiguration av identitet och profil | Obligatoriskt | Beteendesignaler måste kopplas till en identitet (känd eller anonym via ECID) för att kunna skapa beteendeprofiler. Autentiserad identitet (CRM-ID, e-post) måste konfigureras för rekommendationer för kända besökare. Lägg samman en aktiv policy i Edge för rekommendationsleverans i realtid. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview) |
+| Målgruppsdefinition och segmentering | Rekommenderad | Målgrupper kan användas för att definiera rekommendationer (t.ex. endast rekommendera premiumprodukter till premiummedlemmar) eller för filtrering. Detta är inte absolut nödvändigt om rekommendationerna endast är beteendemässiga. Krävs för e-postbaserade rekommendationer (alternativ C) för att definiera målgruppen. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## Stödfunktioner
 
@@ -109,11 +109,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League Reference |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut som kategoritillhörighetspoäng, produktinteraktionsfrekvens, inköpsrekordtid och totala utgifter förbättrar rekommendationskvaliteten. [!DNL Customer AI] Propensitetsmätningar kan öka relevansen ytterligare genom att förutsäga sannolikheten för inköp. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview), [Översikt över AI för kunder](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| Livscykelhantering för data | Rekommenderad | Data för beteendehändelser bör ha lämpliga utgångsprofiler - rekommendationsrelevansen försämras med inaktuella data. Genom att ange förfalloprinciper för datauppsättningar för beteendehändelsedatamängder kan du säkerställa aktualitet och hantera lagring. Samtycksreglerna säkerställer att beteendedata används på ett korrekt sätt. | [Datauppsättningens förfallodatum](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/ui/dataset-expiration), [Översikt över livscykelhantering för avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Styrningsetiketter på beteendedata säkerställer att interaktionshistorik används korrekt för rekommendationer. Detta är särskilt viktigt när beteendedata omfattar webbläsarmönster, inköpshistorik eller intressesignaler för hälsa/finansiella produkter. | [Översikt över datastyrning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home), [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) |
-| Övervakning och observerbarhet | Rekommenderad | Leveransfördröjning, reservfrekvenser och hälsotillstånd för artikelkataloger bör övervakas. Varningar om beteendefel vid förtäring av händelser och beslutsfel hjälper till att upprätthålla rekommendationskvaliteten. | [Översikt över Insikter i observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home), [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview) |
-| Rapportering och analys | Ingår | Rekommendationsprestandarapportering ingår i Function Chain Step 4. [!DNL Customer Journey Analytics] analys av rekommendationseffektivitet, intäktseffekt och prestanda på objektnivå för olika ytor och segment ger optimeringsinsikter. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut som kategoritillhörighetspoäng, produktinteraktionsfrekvens, inköpsrekordtid och totala utgifter förbättrar rekommendationskvaliteten. [!DNL Customer AI] Propensitetsmätningar kan öka relevansen ytterligare genom att förutsäga sannolikheten för inköp. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview), [Översikt över AI för kunder](https://experienceleague.adobe.com/sv/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| Livscykelhantering för data | Rekommenderad | Data för beteendehändelser bör ha lämpliga utgångsprofiler - rekommendationsrelevansen försämras med inaktuella data. Genom att ange förfalloprinciper för datauppsättningar för beteendehändelsedatamängder kan du säkerställa aktualitet och hantera lagring. Samtycksreglerna säkerställer att beteendedata används på ett korrekt sätt. | [Datauppsättningens förfallodatum](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/ui/dataset-expiration), [Översikt över livscykelhantering för avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Styrningsetiketter på beteendedata säkerställer att interaktionshistorik används korrekt för rekommendationer. Detta är särskilt viktigt när beteendedata omfattar webbläsarmönster, inköpshistorik eller intressesignaler för hälsa/finansiella produkter. | [Översikt över datastyrning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home), [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview) |
+| Övervakning och observerbarhet | Rekommenderad | Leveransfördröjning, reservfrekvenser och hälsotillstånd för artikelkataloger bör övervakas. Varningar om beteendefel vid förtäring av händelser och beslutsfel hjälper till att upprätthålla rekommendationskvaliteten. | [Översikt över Insikter i observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home), [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview) |
+| Rapportering och analys | Ingår | Rekommendationsprestandarapportering ingår i Function Chain Step 4. [!DNL Customer Journey Analytics] analys av rekommendationseffektivitet, intäktseffekt och prestanda på objektnivå för olika ytor och segment ger optimeringsinsikter. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview), [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home) |
 
 ## Programfunktioner
 
@@ -186,7 +186,7 @@ Rekommendationer återges på sidan med kodbaserade upplevelser eller webbkanals
 **Experience League:**
 
 - [Leverera erbjudanden med Edge Decisioning API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/api/offer-delivery-api/edge-decisioning-api)
-- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
 
 ### Alternativ B: Rekommendationer för mobilappar
 
@@ -256,7 +256,7 @@ Det här alternativet bygger på ackumulerad beteendehistorik i stället för se
 
 **Experience League:**
 
-- [Skapa ett e-postmeddelande](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/create-email)
+- [Skapa ett e-postmeddelande](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/create-email)
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### Jämförelse av alternativ
@@ -323,11 +323,11 @@ Hur kommer produkten eller innehållskatalogen att importeras till AEP?
 
 **Experience League-dokumentation:**
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
-- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
-- [Definiera en relation mellan två scheman](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-api)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
+- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
+- [Definiera en relation mellan två scheman](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/relationship-api)
 
 ### Fas 2: Konfigurera identitet och profil
 
@@ -365,10 +365,10 @@ Hur ska beteendesignaler från anonyma besökare hanteras?
 
 **Experience League-dokumentation:**
 
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)
-- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
-- [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
+- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces)
+- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview)
+- [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-linking-logic)
 
 ### Fas 3: Ställ in artikelkatalog och urvalsstrategi
 
@@ -431,9 +431,9 @@ Vad ska visas för nya besökare utan beteendebakgrund?
 
 **Experience League-dokumentation:**
 
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Skapa placeringar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Skapa beslutsregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Skapa placeringar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Skapa beslutsregler](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Skapa personaliserade erbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Skapa reserverbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Skapa samlingar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -473,9 +473,9 @@ Konfigurera en e-postkanal med underdomänsdelegering, IP-pooltilldelning och av
 
 **Experience League-dokumentation:**
 
-- [Konfigurera kanalytor](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
-- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
-- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Konfigurera kanalytor](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
+- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [Konfigurera kanal för push-meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### Fas 5: Konfigurera innehåll och leverans
@@ -534,8 +534,8 @@ Designa e-postinnehåll med e-post-Designer. Infoga rekommendationsplaceringar m
 - [Personalization syntax](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [Dynamiskt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [Förhandsgranska och testa ditt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/preview-test/preview-test)
-- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Förhandsgranska och testa ditt innehåll](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/preview-test/preview-test)
+- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 
 ### Fas 6: Ställa in målgruppsomfattning och kampanj/resa (endast alternativ C)
 
@@ -573,8 +573,8 @@ Ska e-postmeddelandet levereras via en kampanj eller en resa?
 
 **Experience League-dokumentation:**
 
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Kampanjrapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-live-report)
 
 ### Fas 7: Konfigurera rapportering och optimering
@@ -608,10 +608,10 @@ Vilken nivå av rapportanalys krävs?
 - [Global kampanjrapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [Global reserapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Arbeta med Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
-- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection)
+- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
+- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
 
 ## Implementeringsöverväganden
 
@@ -619,17 +619,17 @@ Granska följande utkast, fallgropar, bästa praxis och kompromisser före och u
 
 ### Gardrutor och begränsningar
 
-- Högst 10 000 godkända anpassade erbjudanden (beslutsobjekt) per sandlåda - [Beslutsfattare](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- Högst 10 000 godkända anpassade erbjudanden (beslutsobjekt) per sandlåda - [Beslutsfattare](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
 - Högst 30 praktik per beslut
 - Maximalt 30 samlingsomfång per beslutsbegäran
 - Erbjud leveranssvarstid SLA: mindre än 500 ms vid P95 för Edge-förfrågningar med en enda omfattning
 - AI-rankningsmodeller kräver minst 1 000 konverteringshändelser för utbildning
 - Räknare för buffertbegränsning kan ha en fördröjning på upp till några sekunder i högflödesscenarier
 - Edge beslut är begränsade till profilattribut som är tillgängliga i edge-profilarkivet
-- Endast en sammanslagningsprincip kan vara aktiv på Edge per sandlåda: [Profilskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- Högst 25 aktiva beräknade attribut per sandlåda - [Beräknade attributskyddsräcken](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
-- Maximalt 4 000 segmentdefinitioner per sandlåda - [Segmenteringsskyddsräcken](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- Direktuppspelningsinmatning: högst 20 000 poster per sekund per HTTP-anslutning — [Inmatningsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- Endast en sammanslagningsprincip kan vara aktiv på Edge per sandlåda: [Profilskyddsutkast](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- Högst 25 aktiva beräknade attribut per sandlåda - [Beräknade attributskyddsräcken](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
+- Maximalt 4 000 segmentdefinitioner per sandlåda - [Segmenteringsskyddsräcken](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- Direktuppspelningsinmatning: högst 20 000 poster per sekund per HTTP-anslutning — [Inmatningsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
 
 ### Vanliga fallgropar
 
@@ -693,13 +693,13 @@ Följande resurser innehåller ytterligare information om de tekniker och funkti
 
 ### Beslutsledning
 
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Skapa placeringar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Skapa beslutsregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Skapa placeringar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Skapa beslutsregler](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Skapa personaliserade erbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Skapa reserverbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Skapa samlingar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [Skapa samlingskvalificerare](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [Skapa samlingskvalificerare](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [Skapa beslut](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [Rankningsstrategier](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
@@ -707,43 +707,43 @@ Följande resurser innehåller ytterligare information om de tekniker och funkti
 
 ### Datainsamling och webb/mobil-SDK
 
-- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Installera SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)
+- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
+- [Installera SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/overview)
 - [Mobile SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
-- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
-- [Edge Network Server API - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
+- [Edge Network Server API - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/edge-network-server-api/overview)
 
 ### XDM och datamodellering
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
-- [Skapa en datauppsättning](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create)
-- [Definiera en relation mellan två scheman](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-api)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
+- [Skapa en datauppsättning](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/create)
+- [Definiera en relation mellan två scheman](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/relationship-api)
 
 ### Identitet och profil
 
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)
-- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
+- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces)
+- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
 
 ### Målgrupper och segmentering
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Edge segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Edge segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/edge-segmentation)
 
 ### Beräknade attribut och profilberikning
 
-- [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
-- [Användargränssnittshandbok för beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
-- [Översikt över AI för kunder](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
+- [Användargränssnittshandbok för beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/ui)
+- [Översikt över AI för kunder](https://experienceleague.adobe.com/sv/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### Kanalkonfiguration
 
-- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
-- [Konfigurera kanalytor](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
+- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Konfigurera kanalytor](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
 - [Delegera underdomäner](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 
 ### Framtagning och personalisering av meddelanden
@@ -752,38 +752,38 @@ Följande resurser innehåller ytterligare information om de tekniker och funkti
 - [Lägg till personalisering](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Personalization syntax](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [Dynamiskt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 
 ### Rapportering och analys
 
 - [Global kampanjrapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [Global reserapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Arbeta med Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
+- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
 
 ### Datastyrning och livscykel
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)
-- [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
-- [Utgångsdatum för datauppsättning](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/ui/dataset-expiration)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
+- [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview)
+- [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home)
+- [Utgångsdatum för datauppsättning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/ui/dataset-expiration)
 
 ### Övervakning och iakttagbarhet
 
-- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
 
 ### Skyddsräcken
 
-- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
-- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- [Förvaringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
-- [Garantier för identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
+- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
+- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- [Förvaringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
+- [Garantier för identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails)
 
 ### Självstudiekurser och guider
 
-- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Översikt över taggar](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
-- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
+- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [Översikt över taggar](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/home)
+- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/consents)

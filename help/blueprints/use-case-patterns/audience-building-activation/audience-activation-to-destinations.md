@@ -96,11 +96,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Antagen på plats | RT-CDP-sandlådan har etablerats och är aktiv. Målhanterings- och aktiveringsbehörigheter som tilldelats implementeringsroller. Referenser till målkontot som är tillgängliga för målplattformarna. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | Profilschemat måste innehålla attribut som mappas till målfält (t.ex. e-post, telefon, hash-kodade identifierare, demografiska attribut). Schemat måste vara profilaktiverat med datauppsättningar som aktivt tar emot data. | [Systemöversikt för XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
-| Datakällor och samling | Antagen på plats | Profildata som ligger till grund för målgruppsutvärderingen måste vara inkapslade och aktuella. Inmatningsledningar för batchströmning och/eller strömning i drift. Web SDK, källanslutningar eller batchimport som levererar data till profilaktiverade datauppsättningar. | [Källor - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home), [Web SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) |
-| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen för målmatchning måste konfigureras (t.ex. hashas email for Facebook Custom Audiences, Google Ads Customer Match). Sammanslagningspolicyer måste producera enhetliga profiler med alla attribut som krävs för aktivering. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
-| Målgruppsdefinition och segmentering | Obligatoriskt | Målgrupper som definierats med Segment Builder, Audience Composition eller Federated Audience Composition. Utvärderingsmetod (batch, strömning eller kant) som väljs baserat på latensbehov vid aktivering. Denna funktion utövas i fas 1 av denna plan. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
+| Administration och styrning | Antagen på plats | RT-CDP-sandlådan har etablerats och är aktiv. Målhanterings- och aktiveringsbehörigheter som tilldelats implementeringsroller. Referenser till målkontot som är tillgängliga för målplattformarna. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | Profilschemat måste innehålla attribut som mappas till målfält (t.ex. e-post, telefon, hash-kodade identifierare, demografiska attribut). Schemat måste vara profilaktiverat med datauppsättningar som aktivt tar emot data. | [Systemöversikt för XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
+| Datakällor och samling | Antagen på plats | Profildata som ligger till grund för målgruppsutvärderingen måste vara inkapslade och aktuella. Inmatningsledningar för batchströmning och/eller strömning i drift. Web SDK, källanslutningar eller batchimport som levererar data till profilaktiverade datauppsättningar. | [Källor - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home), [Web SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home) |
+| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen för målmatchning måste konfigureras (t.ex. hashas email for Facebook Custom Audiences, Google Ads Customer Match). Sammanslagningspolicyer måste producera enhetliga profiler med alla attribut som krävs för aktivering. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
+| Målgruppsdefinition och segmentering | Obligatoriskt | Målgrupper som definierats med Segment Builder, Audience Composition eller Federated Audience Composition. Utvärderingsmetod (batch, strömning eller kant) som väljs baserat på latensbehov vid aktivering. Denna funktion utövas i fas 1 av denna plan. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## Stödfunktioner
 
@@ -110,8 +110,8 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 | --- | --- | --- | --- |
 | Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut som livstidsvärde, engagemangsmusik eller benägenhetspoäng förbättrar målgruppens precision och ger berikande attribut att mappa till mål. Särskilt värdefullt när destinationerna drar nytta av värdebaserad eller poängbaserad målgruppssegmentering. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
 | Livscykelhantering för data | Rekommenderad | Datauppsättnings- och profilförfallopolicyer säkerställer att data är aktuella och att de följs. Konfiguration av samtycke garanterar att endast godkända profiler aktiveras. Viktigt för regelefterlevnad vid export av data till externa system. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Etiketter och policyer för styrning förhindrar aktivering av begränsade data till obehöriga destinationer (t.ex. PII till annonsnätverk, känsliga segment till datapartners). Särskilt viktigt för målgruppsaktivering i externa tredjepartssystem. | [Översikt över datastyrning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home), [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) |
-| Övervakning och observerbarhet | Ingår | Aktiveringsövervakning ingår i funktionskedjan (fas 5). Omfattar övervakning av dataflöde, leveransstatusaviseringar, spårning av målgruppspopulationer och synlighet för licensanvändning. | [Övervaka måldataflöden](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations), [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Etiketter och policyer för styrning förhindrar aktivering av begränsade data till obehöriga destinationer (t.ex. PII till annonsnätverk, känsliga segment till datapartners). Särskilt viktigt för målgruppsaktivering i externa tredjepartssystem. | [Översikt över datastyrning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home), [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) |
+| Övervakning och observerbarhet | Ingår | Aktiveringsövervakning ingår i funktionskedjan (fas 5). Omfattar övervakning av dataflöde, leveransstatusaviseringar, spårning av målgruppspopulationer och synlighet för licensanvändning. | [Övervaka måldataflöden](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations), [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview) |
 | Rapportering och analys | Rekommenderad | CJA analys av målgruppens aktiveringseffektivitet möjliggör mätning av prestanda för aktiverade målgrupper (t.ex. konverteringshöjning från nedtryckning, ROAS från lookalike-målgrupper). | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
@@ -180,7 +180,7 @@ Direktuppspelningsaktivering är standard för de flesta annonsplattformsmål i 
 **Experience League:**
 
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Målkatalog för direktuppspelning](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Målkatalog för direktuppspelning](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
 
 ### Alternativ B: Aktivering av batchmål (filexport)
 
@@ -257,7 +257,7 @@ Detta är ett vanligt produktionsmönster för organisationer som arbetar på fl
 **Experience League:**
 
 - [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
 
 ### Jämförelse av alternativ
 
@@ -352,7 +352,7 @@ Utvärderingsmetoden bör ge plats för den mest krävande destinationen. Om nå
 
 **Experience League-dokumentation:**
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
 - [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
 - [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 - [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
@@ -430,7 +430,7 @@ Upprepa den här fasen för varje mål. Varje anslutning är oberoende - du kan 
 
 **Experience League-dokumentation:**
 
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
 - [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
 - [Aktivera målgrupper för att batchprofilera exportmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
@@ -495,8 +495,8 @@ Upprepa aktiveringsarbetsflödet för varje mål. Samma målgrupp kan aktiveras 
 
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
 - [Aktivera målgrupper för att batchprofilera exportmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Aktivera målgrupper on demand till batchmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/ad-hoc-activation-api)
-- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Aktivera målgrupper on demand till batchmål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/ad-hoc-activation-api)
+- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
 
 
 ### Fas 4: Validering av styrformerna
@@ -540,7 +540,7 @@ Upprepa aktiveringsarbetsflödet för varje mål. Samma målgrupp kan aktiveras 
 
 **Experience League-dokumentation:**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
 - [Politiska åtgärder](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
 - [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)
 - [Samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
@@ -565,8 +565,8 @@ Upprepa aktiveringsarbetsflödet för varje mål. Samma målgrupp kan aktiveras 
 
 **Experience League-dokumentation:**
 
-- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
 - [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 - [Kontrollpanel för licensanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
@@ -582,7 +582,7 @@ Granska följande överväganden före och under implementeringen.
 - **Direktuppspelning av målgenomströmning:** Genomströmningsgränser per sekund anges av varje målpartner, ändringar av stora volymer kan begränsas
 - **Batchutvärderingskapacitet:** Upp till 24 miljoner profiler per segmentutvärderingsjobb som standard
 - **Målgruppskomposition:** Maximalt 10 kompositionsblock per arbetsyta; sammansatta målgrupper utvärderas endast gruppvis
-- **Identitetsdiagram:** Max 50 identiteter per diagram - [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
+- **Identitetsdiagram:** Max 50 identiteter per diagram - [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails)
 - **Beräknade attribut:** Högst 25 beräknade attribut per sandlåda - [Beräknade attributskyddsräcken](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview#guardrails)
 - **Översikt över aktiveringsskyddsutkast:** [Aktiveringsskyddsutkast](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
@@ -655,16 +655,16 @@ Granska följande överväganden före och under implementeringen.
 **Destinationer**
 
 - [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Målkatalog](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Målkatalog](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview)
 - [Aktivera målgrupper för direktuppspelningsmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
 - [Aktivera målgrupper för att batchprofilera exportmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Aktivera målgrupper on demand till batchmål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/ad-hoc-activation-api)
+- [Aktivera målgrupper on demand till batchmål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/ad-hoc-activation-api)
 - [Skyddsräcken för destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 - [Destination SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-sdk/overview)
 
 **Målgrupper och segmentering**
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
 - [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
 - [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 - [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
@@ -674,7 +674,7 @@ Granska följande överväganden före och under implementeringen.
 
 **Identitet och profil**
 
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
 - [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)
 - [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)
 - [Profilöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
@@ -682,12 +682,12 @@ Granska följande överväganden före och under implementeringen.
 
 **Datamodellering och scheman**
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
 - [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
 
 **Datastyrning**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
 - [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)
 - [Datastyrningspolicyer](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
 - [Politiska åtgärder](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
@@ -695,8 +695,8 @@ Granska följande överväganden före och under implementeringen.
 
 **Övervakning och observerbarhet**
 
-- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [Övervaka dataflöden för mål](https://experienceleague.adobe.com/sv/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
 - [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 - [Kontrollpanel för licensanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
@@ -707,19 +707,19 @@ Granska följande överväganden före och under implementeringen.
 
 **Datainsamling och källor**
 
-- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
 - [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 **Administration**
 
-- [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home)
+- [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home)
 - [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 - [Attributbaserad åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/overview)
 
 **Guardrails**
 
 - [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- [Garantier för identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
+- [Garantier för identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails)
 - [Aktiveringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 - [Förvaringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
