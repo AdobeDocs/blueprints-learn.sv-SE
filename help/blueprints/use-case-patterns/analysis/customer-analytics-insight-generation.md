@@ -101,8 +101,8 @@ Se avsnittet [Implementeringsalternativ](#implementation-options) för dispositi
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Customer Journey Analytics](CJA)** - Anslutningar, datavyer, arbetsyteanalys, guidad analys, beräknade mätvärden, instrumentpaneler, målgruppspublicering och innehållsanalys
-- **[!DNL Adobe Experience Platform](AEP)** - Datasjön, datauppsättningar, XDM-scheman, profil- och händelsedata som matar in CJA-anslutningar
+- **[!DNL Customer Journey Analytics] (CJA)** - Anslutningar, datavyer, arbetsyteanalys, guidad analys, beräknade mätvärden, instrumentpaneler, målgruppspublicering och innehållsanalys
+- **[!DNL Adobe Experience Platform] (AEP)** - Datasjön, datauppsättningar, XDM-scheman, profil- och händelsedata som matar in CJA-anslutningar
 
 ## Foundationsfunktioner
 

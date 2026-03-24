@@ -90,9 +90,9 @@ Leverera personaliserat innehåll, erbjudanden eller kampanjer till en identifie
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Konfiguration av webbkanal, konfiguration i appkanal, konfiguration av innehållskortskanal, beslut (urval och rankning av erbjudanden), meddelandeframställning (skräddarsytt innehåll), kampanjkörning, innehållsexperimenterande och rapportering
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering (kant, direktuppspelning och batch), profilsökning via Edge Network i realtid, profilberikning med beräknade attribut och benägenhetspoäng
-- **[!DNL Adobe Experience Platform](AEP)** - Profilarkiv, identitetstjänst, Web SDK, Mobile SDK, datastream-konfiguration, edge network delivery
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Konfiguration av webbkanal, konfiguration i appkanal, konfiguration av innehållskortskanal, beslut (urval och rankning av erbjudanden), meddelandeframställning (skräddarsytt innehåll), kampanjkörning, innehållsexperimenterande och rapportering
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering (kant, direktuppspelning och batch), profilsökning via Edge Network i realtid, profilberikning med beräknade attribut och benägenhetspoäng
+- **[!DNL Adobe Experience Platform] (AEP)** - Profilarkiv, identitetstjänst, Web SDK, Mobile SDK, datastream-konfiguration, edge network delivery
 
 ## Foundationsfunktioner
 
@@ -244,7 +244,7 @@ Detta tillvägagångssätt stöder sofistikerade personaliseringsscenarier, inkl
 
 **Hur detta skiljer sig från offertbeslutsalternativ B:**
 
-Infrastrukturen är identisk - båda använder AJO Decisioning i toppklass med Web SDK och en fullödig kopplingsstrategi. Skillnaden är vad som markeras. Det här alternativet hanterar innehållsobjekt där urvalskriterierna är anpassning (segmentmedlemskap, beteenderangordning). [Erbjudandebeslut för ](offer-decisioning.md) Alternativ B hanterar en styrd erbjudandekatalog där berättiganderegler, begränsningar och giltighetsfönster är affärskrav. Om din objektuppsättning kräver att man får ett visst antal bilder per profil, begränsningar av behörigheten enligt gällande bestämmelser eller livscykelhantering, ska du använda Offer Decision Option B i stället.
+Infrastrukturen är identisk - båda använder AJO Decisioning i toppklass med Web SDK och en fullödig kopplingsstrategi. Skillnaden är vad som markeras. Det här alternativet hanterar innehållsobjekt där urvalskriterierna är anpassning (segmentmedlemskap, beteenderangordning). [Erbjudandebeslut för &#x200B;](offer-decisioning.md) Alternativ B hanterar en styrd erbjudandekatalog där berättiganderegler, begränsningar och giltighetsfönster är affärskrav. Om din objektuppsättning kräver att man får ett visst antal bilder per profil, begränsningar av behörigheten enligt gällande bestämmelser eller livscykelhantering, ska du använda Offer Decision Option B i stället.
 
 ### Alternativ C: Flersidig anpassning (webb + i-app + innehållskort)
 

@@ -80,9 +80,9 @@ I det här avsnittet beskrivs mönstret och funktionskedjan som används för at
 
 Följande program används i det här fallmönstret.
 
-- **[!DNL Adobe Experience Platform](Edge Network)** - Tar emot och skickar händelsedata i realtid från Web SDK, Mobile SDK eller Server-API via konfigurerade datastreams
-- **[!DNL Adobe Experience Platform](Händelsevidarebefordran)** - Tillhandahåller regelmotorn på serversidan för utvärdering, filtrering, omformning och vidarebefordran av händelsedata till externa mål
-- **[!DNL Adobe Experience Platform](Taggar/Datainsamling)** - Hanterar livscykeln, tilläggen, reglerna och publiceringsarbetsflödet för egenskapen för vidarebefordran av händelse
+- **[!DNL Adobe Experience Platform] (Edge Network)** - Tar emot och skickar händelsedata i realtid från Web SDK, Mobile SDK eller Server-API via konfigurerade datastreams
+- **[!DNL Adobe Experience Platform] (Händelsevidarebefordran)** - Tillhandahåller regelmotorn på serversidan för utvärdering, filtrering, omformning och vidarebefordran av händelsedata till externa mål
+- **[!DNL Adobe Experience Platform] (Taggar/Datainsamling)** - Hanterar livscykeln, tilläggen, reglerna och publiceringsarbetsflödet för egenskapen för vidarebefordran av händelse
 
 ## Foundationsfunktioner
 

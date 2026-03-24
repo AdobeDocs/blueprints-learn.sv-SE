@@ -105,7 +105,7 @@ Aktivera kontobaserade B2B-målgrupper över webb-, e-post- och reklamkanaler.
 Följande program används för att implementera det här användningsmönstret.
 
 - **[!DNL Real-Time CDP]B2B edition** - Kärnplattform för enhetlig kontoprofil, B2B-identitetsupplösning, utvärdering av kontomottagare, B2B-specifik destinationskonfiguration och aktivering av kontomottagare
-- **[!DNL Adobe Experience Platform](AEP)** - Foundationsinfrastruktur för B2B XDM-datamodellering, datainhämtning från CRM och källor för automatiserad marknadsföring, identitetstjänst och styrning
+- **[!DNL Adobe Experience Platform] (AEP)** - Foundationsinfrastruktur för B2B XDM-datamodellering, datainhämtning från CRM och källor för automatiserad marknadsföring, identitetstjänst och styrning
 - **[!DNL Marketo Engage]** - Primär automatiserad B2B-marknadsföring som mål för leadplantningsprogram, poängsättning och kampanjutförande som tillhandahålls av aktiverade kontomålgrupper
 
 ## Foundationsfunktioner

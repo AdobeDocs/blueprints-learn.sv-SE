@@ -106,9 +106,9 @@ Lyssna efter en händelse i realtid som rör beteende eller system och leverera 
 
 Följande Adobe-program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Resehantering med enhetlig händelseinmatning, villkorsutvärdering, väntesteg, meddelanderedigering, kanalkonfiguration, frekvensstyrning och leveransrapportering
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering för villkorsbaserad filtrering inom resor, medgivande och styrning, profilanrikning
-- **[!DNL Adobe Experience Platform](AEP)** - Inmatning av händelser i realtid via Web SDK, Mobile SDK eller API:t på serversidan; datamodellering; identitetsupplösning; Edge Network
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Resehantering med enhetlig händelseinmatning, villkorsutvärdering, väntesteg, meddelanderedigering, kanalkonfiguration, frekvensstyrning och leveransrapportering
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering för villkorsbaserad filtrering inom resor, medgivande och styrning, profilanrikning
+- **[!DNL Adobe Experience Platform] (AEP)** - Inmatning av händelser i realtid via Web SDK, Mobile SDK eller API:t på serversidan; datamodellering; identitetsupplösning; Edge Network
 
 ## Foundationsfunktioner
 

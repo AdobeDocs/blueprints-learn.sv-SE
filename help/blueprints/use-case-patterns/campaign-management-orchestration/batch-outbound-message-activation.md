@@ -90,9 +90,9 @@ Utvärdera en målgrupp och leverera sedan ett schemalagt utgående meddelande (
 
 Följande program används för att implementera mönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Meddelanderedigering, kanalkonfiguration, kampanjkörning, resesamordning, innehållsexperiment, frekvensregler och rapportering
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering, medgivande och tillsyn
-- **[!DNL Adobe Experience Platform](AEP)** - Profilarkiv, identitetstjänst, scheman, datauppsättningar, datainsamling
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Meddelanderedigering, kanalkonfiguration, kampanjkörning, resesamordning, innehållsexperiment, frekvensregler och rapportering
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering, medgivande och tillsyn
+- **[!DNL Adobe Experience Platform] (AEP)** - Profilarkiv, identitetstjänst, scheman, datauppsättningar, datainsamling
 
 ## Foundationsfunktioner
 

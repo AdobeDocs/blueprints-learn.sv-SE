@@ -84,9 +84,9 @@ Se avsnittet [Implementeringsalternativ](#implementation-options) för hur varje
 
 Följande Adobe-program används i det här fallmönstret.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** - Beslutshanteringsmotor för att skapa erbjudanden, regler för kvalificering, rangordningsstrategier, praktik och beslutspolicyer; kanalkonfiguration och meddelandeskapande för erbjudanden; kampanj- och resekörning
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** - Målgruppsutvärdering för erbjudandeberättigandesegment, profildata och beräknade attribut som används för kvalificering och rankning
-- **[!DNL Adobe Experience Platform](AEP)** - Enhetligt profilarkiv, identitetsupplösning och datamängd som stöder både AJO och RT-CDP
+- **[!DNL Adobe Journey Optimizer] (AJO)** - Beslutshanteringsmotor för att skapa erbjudanden, regler för kvalificering, rangordningsstrategier, praktik och beslutspolicyer; kanalkonfiguration och meddelandeskapande för erbjudanden; kampanj- och resekörning
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** - Målgruppsutvärdering för erbjudandeberättigandesegment, profildata och beräknade attribut som används för kvalificering och rankning
+- **[!DNL Adobe Experience Platform] (AEP)** - Enhetligt profilarkiv, identitetsupplösning och datamängd som stöder både AJO och RT-CDP
 
 ## Foundationsfunktioner
 
@@ -231,7 +231,7 @@ För kodbaserade upplevelser hämtar programmet beslutssvaret och återger erbju
 
 **Hur detta skiljer sig från anpassningsalternativ B för webbbesökare/appar:**
 
-Infrastrukturen är identisk - båda använder AJO Decisioning i toppklass med Web SDK och en fullödig kopplingsstrategi. Skillnaden är katalogstyrningsmodellen. Det här alternativet styr en avgränsad erbjudandekatalog med regler för behörighet, spärrräknare och giltighetsdatum - använd den när affärsbegränsningar eller lagstadgade begränsningar avgör vilka erbjudanden som kan visas och hur ofta. [Känd besökares anpassning av webb/app ](known-visitor-web-app-personalization.md) Alternativ B väljer bland innehållsobjekt med hjälp av segmentmedlemskap eller rankningsstrategier utan livscykelhantering. Om objektuppsättningen är stor, ändras kontinuerligt och inte kräver begränsning eller behörighetskontroll ska du använda alternativet Känd besökare B i stället.
+Infrastrukturen är identisk - båda använder AJO Decisioning i toppklass med Web SDK och en fullödig kopplingsstrategi. Skillnaden är katalogstyrningsmodellen. Det här alternativet styr en avgränsad erbjudandekatalog med regler för behörighet, spärrräknare och giltighetsdatum - använd den när affärsbegränsningar eller lagstadgade begränsningar avgör vilka erbjudanden som kan visas och hur ofta. [Känd besökares anpassning av webb/app &#x200B;](known-visitor-web-app-personalization.md) Alternativ B väljer bland innehållsobjekt med hjälp av segmentmedlemskap eller rankningsstrategier utan livscykelhantering. Om objektuppsättningen är stor, ändras kontinuerligt och inte kräver begränsning eller behörighetskontroll ska du använda alternativet Känd besökare B i stället.
 
 ### Alternativ C: Vägbeslutsnod
 
