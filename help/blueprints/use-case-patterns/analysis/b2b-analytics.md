@@ -3,7 +3,7 @@ title: B2B-analys
 description: Lär dig hur du inkluderar information på B2B-kontonivå i kanalövergripande kundreseanalyser.
 solution: Customer Journey Analytics, Real-Time Customer Data Platform
 exl-id: 9d576e5c-cbd2-4c60-a6b0-88f8b8b963b4
-source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
 source-wordcount: '7528'
 ht-degree: 0%
@@ -105,11 +105,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Obligatoriskt | Sandlådan har konfigurerats med [!DNL CJA] B2B edition- och [!DNL RT-CDP] B2B edition-berättiganden. Roller har etablerats för datatekniker, analytiker och användare av marknadsföringsåtgärder med tillgång till [!DNL CJA] och B2B-datamodellen. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home) |
-| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med B2B-klasser: XDM Business Account, XDM Business Opportunity, XDM Business Account Person Relation, XDM Business Opportunity Person Relation och XDM Business Marketing List-medlemmar. Fältgrupper för kontoattribut, affärsmöjlighetsfaser och inköpsgruppsroller måste definieras. Datauppsättningar skapade och aktiverade för profil. | [Systemöversikt för XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [B2B edition scheman](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b) |
-| Datakällor och samling | Obligatoriskt | B2B-datakällor är anslutna, vanligtvis via [!DNL Marketo Engage]-källkopplingen eller [!DNL Salesforce] CRM-källkopplingen. Kontoposter, poster för affärstillfällen, relationer mellan människor och konton samt beteendehändelser måste flöda in i AEP datamängder. [!DNL Web SDK] eller [!DNL Marketo]-integrering måste hämta beteendehändelser med kontoassociationen. | [Källor - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsmatchning konfigurerad för att matcha relationer från människa till konto. Konto-ID, ID för person ([!DNL Marketo] lead-ID eller CRM-kontakt-ID) och identiteter mellan enheter (ECID, e-post) måste vara länkade. Identitetsdiagrammet måste ha stöd för många-till-många-mappning från människa till konto som är inbyggd i B2B-datamodeller. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [B2B-identitetsupplösning](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b) |
-| Målgruppsdefinition och segmentering | Antagen på plats | Målgruppsdefinitioner på kontonivå bör vara tillgängliga om B2B-segment publiceras från [!DNL CJA] tillbaka till AEP för aktivering. I fall där bara analyser används är detta inte en strikt förutsättning, men rekommenderas för segmentbaserad analys. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home) |
+| Administration och styrning | Obligatoriskt | Sandlådan har konfigurerats med [!DNL CJA] B2B edition- och [!DNL RT-CDP] B2B edition-berättiganden. Roller har etablerats för datatekniker, analytiker och användare av marknadsföringsåtgärder med tillgång till [!DNL CJA] och B2B-datamodellen. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) |
+| Datamodellering och förberedelse | Obligatoriskt | B2B XDM-scheman konfigurerade med B2B-klasser: XDM Business Account, XDM Business Opportunity, XDM Business Account Person Relation, XDM Business Opportunity Person Relation och XDM Business Marketing List-medlemmar. Fältgrupper för kontoattribut, affärsmöjlighetsfaser och inköpsgruppsroller måste definieras. Datauppsättningar skapade och aktiverade för profil. | [Systemöversikt för XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [B2B edition scheman](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
+| Datakällor och samling | Obligatoriskt | B2B-datakällor är anslutna, vanligtvis via [!DNL Marketo Engage]-källkopplingen eller [!DNL Salesforce] CRM-källkopplingen. Kontoposter, poster för affärstillfällen, relationer mellan människor och konton samt beteendehändelser måste flöda in i AEP datamängder. [!DNL Web SDK] eller [!DNL Marketo]-integrering måste hämta beteendehändelser med kontoassociationen. | [Källor - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home), [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| Konfiguration av identitet och profil | Obligatoriskt | B2B-identitetsmatchning konfigurerad för att matcha relationer från människa till konto. Konto-ID, ID för person ([!DNL Marketo] lead-ID eller CRM-kontakt-ID) och identiteter mellan enheter (ECID, e-post) måste vara länkade. Identitetsdiagrammet måste ha stöd för många-till-många-mappning från människa till konto som är inbyggd i B2B-datamodeller. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [B2B-identitetsupplösning](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
+| Målgruppsdefinition och segmentering | Antagen på plats | Målgruppsdefinitioner på kontonivå bör vara tillgängliga om B2B-segment publiceras från [!DNL CJA] tillbaka till AEP för aktivering. I fall där bara analyser används är detta inte en strikt förutsättning, men rekommenderas för segmentbaserad analys. | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
 
 ## Stödfunktioner
 
@@ -117,11 +117,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut för kontoprofiler (t.ex. totalpoäng, dagar sedan senaste aktivitet, antal affärstillfällen) förbättrar de analytiska dimensioner som är tillgängliga i [!DNL CJA] för kontonivåanalys. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview) |
-| Livscykelhantering för data | Rekommenderad | B2B-datauppsättningar, särskilt beteendehändelsedata från [!DNL Marketo Engage], kan växa snabbt. Förfallotidsprinciper för datauppsättningar hjälper till att hantera lagring och säkerställa att kraven på datalagring uppfylls. | [Avancerad livscykelhantering för data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | B2B-data innehåller ofta känslig affärsinformation (kontraktsvärden, konkurrensinformation). Dataanvändningsetiketter och styrningsprinciper säkerställer att dessa data används på rätt sätt i arbetsflödena för analys och aktivering. | [Datastyrningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home) |
-| Övervakning och observerbarhet | Rekommenderad | B2B-källanslutningar ([!DNL Marketo], [!DNL Salesforce]) kräver övervakning för matningshälsa. Övervakning av anslutningshälsa i [!DNL CJA] säkerställer dataaktualitet för analyser. Varningsregler för misslyckade inmatningar förhindrar inaktuella instrumentpaneler. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home) |
-| Rapportering och analys | Ingår | Mönstret är i sig självt ett analysmönster. Den här funktionen är till sin natur inkluderad eftersom kärnfunktionskedjan tillhandahåller rapporterings- och analysfunktioner. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut för kontoprofiler (t.ex. totalpoäng, dagar sedan senaste aktivitet, antal affärstillfällen) förbättrar de analytiska dimensioner som är tillgängliga i [!DNL CJA] för kontonivåanalys. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| Livscykelhantering för data | Rekommenderad | B2B-datauppsättningar, särskilt beteendehändelsedata från [!DNL Marketo Engage], kan växa snabbt. Förfallotidsprinciper för datauppsättningar hjälper till att hantera lagring och säkerställa att kraven på datalagring uppfylls. | [Avancerad livscykelhantering för data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | B2B-data innehåller ofta känslig affärsinformation (kontraktsvärden, konkurrensinformation). Dataanvändningsetiketter och styrningsprinciper säkerställer att dessa data används på rätt sätt i arbetsflödena för analys och aktivering. | [Datastyrningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| Övervakning och observerbarhet | Rekommenderad | B2B-källanslutningar ([!DNL Marketo], [!DNL Salesforce]) kräver övervakning för matningshälsa. Övervakning av anslutningshälsa i [!DNL CJA] säkerställer dataaktualitet för analyser. Varningsregler för misslyckade inmatningar förhindrar inaktuella instrumentpaneler. | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| Rapportering och analys | Ingår | Mönstret är i sig självt ett analysmönster. Den här funktionen är till sin natur inkluderad eftersom kärnfunktionskedjan tillhandahåller rapporterings- och analysfunktioner. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
 
@@ -163,16 +163,16 @@ I den här planen används följande funktioner från programfunktionskatalogen.
 
 Följande objekt måste finnas innan implementeringen börjar.
 
-- [!DNL CJA] B2B edition-licensen är aktiv och har etablerats för organisationen
-- [!DNL RT-CDP] B2B edition-licens är aktiv med B2B-scheman och kontoprofiler konfigurerade
-- B2B XDM-scheman har definierats (konto, säljprojekt, kundrelation, säljprojektspersonsrelation, marknadsföringslistmedlemmar)
-- [!DNL Marketo Engage] och/eller CRM-källanslutningar är konfigurerade och inhämtar data aktivt
-- Data om beteendehändelser på kontonivå (webbbesök, e-postinteraktioner, inskickade formulär) flödar in i AEP med kontoassociation
-- Relationer från människa till konto har upprättats i identitetsdiagrammet
-- Minst 30 dagars historisk B2B-engagemangsdata finns tillgängliga för meningsfull analys
-- Intresseförklaringar för inköp av grupproller och intressemappningar för lösningar har fastställts
-- [!DNL CJA] användarkonton har tilldelats lämpliga produktprofiler för B2B edition-funktioner
-- Mål-KPI:er och rapporteringskrav har definierats av marknads- och säljledningen
+- [ ] [!DNL CJA] B2B edition-licensen är aktiv och har etablerats för organisationen
+- [ ] [!DNL RT-CDP] B2B edition-licens är aktiv med B2B-scheman och kontoprofiler konfigurerade
+- [ ] B2B XDM-scheman har definierats (konto, säljprojekt, relation till kontoperson, relation för säljprojektperson, medlemmar i marknadsföringslista)
+- [ ] [!DNL Marketo Engage]- och/eller CRM-källanslutningar har konfigurerats och inhämtar data aktivt
+- [ ] Beteendedata på kontonivå (webbbesök, e-postinteraktioner, formulärinskickningar) flödar till AEP med kontoassociation
+- [ ]-person-till-konto-relationer har upprättats i identitetsdiagrammet
+- [ ] Det finns minst 30 dagars historik över B2B-interaktionsdata tillgängliga för meningsfull analys
+- [ ] intressenter har kommit överens om att köpa grupprolldefinitioner och mappningar av lösningsintressen
+- [ ] [!DNL CJA] användarkonton har tilldelats lämpliga produktprofiler för B2B edition-funktioner
+- [ ] KPI:er för mål och rapporteringskrav har definierats av marknads- och säljledningen
 
 ## Implementeringsalternativ
 
@@ -210,7 +210,7 @@ Kontobaserad analys ger den mest naturliga bilden för B2B-organisationer där k
 **Experience League:**
 
 - [CJA B2B edition - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
-- [B2B edition schemas](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
+- [B2B edition schemas](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
 
 ### Alternativ B: Global kontobaserad analys
 
@@ -276,8 +276,8 @@ Den personcentrerade datavyn ger en traditionell reseanalys på individnivå (t.
 
 **Experience League:**
 
-- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [Översikt över datavyer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [Översikt över datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
 
 ### Jämförelse av alternativ
 
@@ -365,9 +365,9 @@ Skapa en enda anslutning med alla B2B-datauppsättningar. Använd konto-ID som p
 
 **Experience League-dokumentation:**
 
-- [Anslutningar - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/overview)
-- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection)
-- [Hantera anslutningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/manage-connections)
+- [Anslutningar - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
+- [Hantera anslutningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections)
 - [CJA B2B edition - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ### Fas 2: Konfiguration av kontodatavy
@@ -436,13 +436,13 @@ Skapa två datavyer från samma anslutning. I datavy 1 används person som prim�
 
 **Experience League-dokumentation:**
 
-- [Översikt över datavyer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views)
-- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [Översikt över komponentinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
-- [Inställningar för beständighet](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
-- [Attributinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
-- [Härledda fält](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/derived-fields)
-- [Sessionsinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/session-settings)
+- [Översikt över datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [Översikt över komponentinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
+- [Inställningar för beständighet](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
+- [Attributinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
+- [Härledda fält](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields)
+- [Sessionsinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/session-settings)
 
 ### Fas 3: Workspace-analys
 
@@ -502,18 +502,18 @@ Information om nyckelkonfiguration:
 
 **Experience League-dokumentation:**
 
-- [Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
-- [Skapa ett projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
-- [Frihandsregister](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
-- [Attributionspanelen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/attribution)
-- [Flödesvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
-- [Utfallsvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
-- [Kohortabell](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
-- [Översikt över filter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
-- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
-- [Skapa beräknade mått](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
-- [Översikt över anteckningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/annotations/overview)
-- [Översikt över guidad analys](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/guided-analysis/overview)
+- [Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Skapa ett projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
+- [Frihandsregister](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
+- [Attributionspanelen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)
+- [Flödesvisualisering](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
+- [Utfallsvisualisering](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
+- [Kohortabell](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
+- [Översikt över filter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
+- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [Skapa beräknade mått](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
+- [Översikt över anteckningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/annotations/overview)
+- [Översikt över guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)
 - [Uppdelningsdimensioner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 ### Fas 4: Dashboard publishing
@@ -557,13 +557,13 @@ Information om nyckelkonfiguration:
 
 **Experience League-dokumentation:**
 
-- [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/create-scorecard)
-- [Dela projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Schemalägg projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/create-scorecard)
+- [Dela projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
+- [Schemalägg projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Konfigurera och strukturera styrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
-- [Adobe Analytics Dashboards - Executive Guide](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/set-up-execs)
-- [Översikt över målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
-- [Skapa och publicera målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Adobe Analytics Dashboards - Executive Guide](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/set-up-execs)
+- [Översikt över målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
+- [Skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
 
 ## Implementeringsöverväganden
 
@@ -571,7 +571,7 @@ Följande avsnitt behandlar skyddsförslag, vanliga fallgropar, bästa praxis oc
 
 ### Gardrutor och begränsningar
 
-- [!DNL CJA] anslutningar kan innehålla datauppsättningar från endast en AEP-sandlåda - [CJA skyddsräcken](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-admin/guardrails)
+- [!DNL CJA] anslutningar kan innehålla datauppsättningar från endast en AEP-sandlåda - [CJA skyddsräcken](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-admin/guardrails)
 - Maximalt 5 000 dimensioner och 5 000 mätvärden per datavy
 - Max 100 härledda fält per datavy
 - B2B-attribuering stöder uppslagsfönster upp till 13 månader för kontonivåanalys
@@ -638,88 +638,88 @@ Följande resurser innehåller ytterligare information för implementering av de
 **[!DNL CJA]B2B edition**
 
 - [CJA B2B edition - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
-- [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview)
-- [CJA skyddsräcken](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-admin/guardrails)
+- [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [CJA skyddsräcken](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-admin/guardrails)
 
 **Anslutningar**
 
-- [Anslutningar - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/overview)
-- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection)
-- [Hantera anslutningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/manage-connections)
+- [Anslutningar - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
+- [Hantera anslutningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections)
 
 **Datavyer**
 
-- [Översikt över datavyer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views)
-- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [Översikt över komponentinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
-- [Inställningar för beständighet](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
-- [Attributinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
-- [Formatinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/format)
-- [Härledda fält](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/derived-fields)
-- [Sessionsinställningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/session-settings)
+- [Översikt över datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Skapa eller redigera en datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [Översikt över komponentinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
+- [Inställningar för beständighet](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
+- [Attributinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
+- [Formatinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/format)
+- [Härledda fält](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields)
+- [Sessionsinställningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/session-settings)
 
 **Workspace och analys**
 
-- [Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
-- [Skapa ett projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
-- [Frihandsregister](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
-- [Flödesvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
-- [Utfallsvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
-- [Kohortabell](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
-- [Attributionspanelen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/attribution)
-- [Dela projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Schemalägg projekt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Skapa ett projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
+- [Frihandsregister](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
+- [Flödesvisualisering](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
+- [Utfallsvisualisering](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
+- [Kohortabell](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
+- [Attributionspanelen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)
+- [Dela projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
+- [Schemalägg projekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Uppdelningsdimensioner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 **Komponenter**
 
-- [Översikt över filter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
-- [Skapa filter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-filters/create-filters)
-- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
-- [Skapa beräknade mått](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
-- [Översikt över anteckningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/annotations/overview)
+- [Översikt över filter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
+- [Skapa filter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/create-filters)
+- [Översikt över beräknade mätvärden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [Skapa beräknade mått](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
+- [Översikt över anteckningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/annotations/overview)
 - [Datumintervall](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/date-ranges/overview)
 
 **Publiker**
 
-- [Översikt över målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
-- [Skapa och publicera målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/publish)
-- [Hantera målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/manage)
+- [Översikt över målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
+- [Skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Hantera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/manage)
 
 **Kontrollpaneler och styrkort**
 
-- [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/create-scorecard)
+- [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/create-scorecard)
 - [Konfigurera och strukturera styrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
-- [Adobe Analytics Dashboards - Executive Guide](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/set-up-execs)
+- [Adobe Analytics Dashboards - Executive Guide](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/set-up-execs)
 
 **Guidad analys**
 
-- [Översikt över guidad analys](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/guided-analysis/overview)
+- [Översikt över guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)
 - [Funnel view](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/funnel)
-- [Trendvyn](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/guided-analysis/trends/usage)
-- [Bevarandevy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/guided-analysis/retention/retention-rates)
+- [Trendvyn](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/trends/usage)
+- [Bevarandevy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)
 
 **[!DNL RT-CDP]B2B edition**
 
 - [RT-CDP B2B edition - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#702702)
-- [B2B edition schemas](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b)
-- [Översikt över B2B-källor](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/sources/b2b)
+- [B2B edition schemas](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Översikt över B2B-källor](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/sources/b2b)
 
 **AEP Data Foundation**
 
-- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
-- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
-- [Marketo Engage Connector](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
-- [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+- [Marketo Engage Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home)
 
 **Datastyrning och livscykel**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
-- [Avancerad livscykelhantering av data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Avancerad livscykelhantering av data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
 
 **Självstudiekurser och guider**
 
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
-- [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
-- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)

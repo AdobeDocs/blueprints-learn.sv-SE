@@ -2,13 +2,13 @@
 title: Användningsexempel inom telekommunikation
 description: Upptäck hur telekommunikationsorganisationer använder Adobe Experience Platform för att minska bortfall, få enhetsuppgraderingar och förbättra kundengagemanget.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: 653632f0-81be-435c-a703-56c5bc132794
+source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 1%
+source-wordcount: '3822'
+ht-degree: 0%
 
 ---
-
 
 # Användningsexempel inom telekommunikation
 
@@ -20,11 +20,11 @@ Identifiera kunder som är berättigade till enhetsuppgraderingar och presentera
 
 ### Affärspåverkan
 
-Organisationer som implementerar rekommendationer för enhetsuppgradering ser vanligtvis en 30-40-procentig ökning av konverteringsgraden genom att leverera rätt erbjudande vid rätt tidpunkt via den kanal kunden föredrar.
+Organisationer som implementerar rekommendationer för enhetsuppgradering ser förbättrade konverteringsgrader genom att leverera rätt erbjudande vid rätt tidpunkt via den kanal kunden föredrar.
 
 ### Implementera
 
-Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att samordna uppgraderingsresor som utvärderar varje abonnents behörighet, enhetsinställningar och kanaltillhörighet för att leverera personaliserade uppgraderingserbjudanden via e-post, appmeddelanden och butiksupplevelser.
+Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att samordna uppgraderingsresor som utvärderar varje abonnents behörighet, enhetsinställningar och kanaltillhörighet för att leverera personaliserade uppgraderingserbjudanden via e-post, appmeddelanden och butiksupplevelser. Det här är det rätta mönstret när valet av erbjudanden måste ta hänsyn till enhetsberättigandefönster, kanalinställningar och lagerbegränsningar - begränsningar som kräver styrd beslutslogik snarare än enbart enkla beteenderekommendationer.
 
 ### Tekniska överväganden
 
@@ -40,11 +40,11 @@ Analysera kundanvändningsmönster och rekommendera optimala ändringar av plane
 
 ### Affärspåverkan
 
-Planoptimeringskampanjer ger normalt en 25-35-procentig ökning av antalet avtalsändringar, vilket ger nöjdare kunder och ökar även den genomsnittliga intäkten per användare när prenumeranterna går över till planer som bättre motsvarar deras förbrukning.
+Planoptimeringskampanjer driver till en förbättrad nivå på planändringar, vilket förbättrar kundnöjdheten och samtidigt ökar den genomsnittliga intäkten per användare när prenumeranterna går över till planer som bättre motsvarar deras förbrukning.
 
 ### Implementera
 
-Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att skapa en multi-touch-kampanj som identifierar avvikelser mellan användning och plan, utbildar prenumeranter på bättre alternativ och guidar dem genom avtalsförändringsprocessen med aktuella uppföljningar.
+Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att skapa en multi-touch-kampanj som identifierar avvikelser mellan användning och plan, utbildar prenumeranter på bättre alternativ och guidar dem genom avtalsförändringsprocessen med aktuella uppföljningar. Det här är det rätta mönstret när användningsexemplet kräver ett sekvensflöde med flera meddelanden på flera dagar med villkorlig förgrening baserat på prenumerantens engagemang och planens antagande - ett enda utlöst meddelande kan inte hantera utbildningsresan och beroendelogiken mellan utbildnings- och konverteringssteg.
 
 ### Tekniska överväganden
 
@@ -60,11 +60,11 @@ Identifiera värdefulla kunder som riskerar att bli stulna och engagera dem med 
 
 ### Affärspåverkan
 
-Program för att förebygga kronor som riktar sig till värdefulla abonnenter brukar få en minskning på 20-30 %, vilket skyddar betydande återkommande intäkter och minskar kostnaderna för att skaffa nya kunder.
+Program för att förebygga kronor som riktar sig till värdefulla abonnenter leder till meningsfulla bortfall av bortfall, skyddar betydande återkommande intäkter och minskar kostnaderna för att skaffa nya kunder.
 
 ### Implementera
 
-Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att övervaka bortfallsrisksignaler i realtid, fastställa det bästa erbjudandet för kvarhållande för varje prenumerant och samordna personaliserad utåtriktad marknadsföring över digitala kanaler och callcenter.
+Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att övervaka bortfallsrisksignaler i realtid, fastställa det bästa erbjudandet för kvarhållande för varje prenumerant och samordna personaliserad utåtriktad marknadsföring över digitala kanaler och callcenter. Det här är det rätta mönstret när resan måste koordinera leveransen över digitala och agentstödda kanaler för att förhindra dubblerade kvarhållningserbjudanden och när valet av erbjudanden kräver riskpoäng och affärsbegränsningar - en flerstegssamordning ger inte den realtidskoordinering som behövs.
 
 ### Tekniska överväganden
 
@@ -80,11 +80,11 @@ Automatisera en personaliserad introduktionsresa för nya kunder med välkomstin
 
 ### Affärspåverkan
 
-Väldesignade introduktionsresor ökar normalt antalet aktiveringar av funktioner med 50-60 %, vilket leder till högre nöjdhetspoäng och lägre bortfall i förtid hos nya prenumeranter.
+Väldesignade introduktionsresor ökar antalet aktiverade funktioner, vilket leder till högre nöjdhetspoäng och lägre bortfall i förtid bland nya abonnenter.
 
 ### Implementera
 
-Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att skapa en sekventiell introduktionsupplevelse som anpassar sig utifrån varje abonnents plantyp, enhet och engagemang med föregående introduktionssteg.
+Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att skapa en sekventiell introduktionsupplevelse som anpassar sig utifrån varje abonnents plantyp, enhet och engagemang med föregående introduktionssteg. Det här är det rätta mönstret när användningsfallet kräver ett sekvensflöde med flera meddelanden på flera dagar med villkorlig förgreningslogik baserat på funktionsidentifiering och engagemang - ett enda utlöst meddelande kan inte hantera den adaptiva beroendelogiken mellan startsteg baserat på prenumerationsplan och enhetstyp.
 
 ### Tekniska överväganden
 
@@ -100,11 +100,11 @@ Skicka personaliserade aviseringar när kunderna närmar sig datagränserna och 
 
 ### Affärspåverkan
 
-Aviseringar om proaktiv dataanvändning genererar vanligtvis en ökning på 40-50 % av inköpen av tillägg av data, samtidigt som de minskar antalet faktureringstötande klagomål och förbättrar kundnöjdheten.
+Proaktiva varningsmeddelanden om dataanvändning ger bättre inköp av tillägg av data samtidigt som man minskar antalet faktureringsproblem och förbättrar kundnöjdheten generellt.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka realtidsaviseringar när användningströskeln överskrids, med personaliserade rekommendationer baserade på abonnentens historiska konsumtionsmönster och planinformation.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka realtidsaviseringar när användningströskeln överskrids, med personaliserade rekommendationer baserade på abonnentens historiska konsumtionsmönster och planinformation. Det här är det rätta mönstret när utlösaren är en systemhändelse (korsning av tröskelvärde för användning) i stället för kundbeteende, och den kommunikation som krävs är omedelbar och reaktiv i stället för en kontinuerlig närliggande sekvens.
 
 ### Tekniska överväganden
 
@@ -120,11 +120,11 @@ Meddela kunderna i förväg om avbrott i tjänsten, underhåll eller nätverkspr
 
 ### Affärspåverkan
 
-Proaktiva meddelanden om driftsavbrott ger normalt en bekräftelsefrekvens på 60-70 % och minskar avsevärt kundens volym vid avbrott i tjänsten, vilket minskar supportkostnaderna samtidigt som kundens uppfattning förbättras.
+Proaktiva meddelanden om driftsavbrott ger tydliga bekräftelsegrader och minskar avsevärt kundens volym vid avbrott i tjänsten, vilket minskar supportkostnaderna samtidigt som kundens uppfattning förbättras.
 
 ### Implementera
 
-Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill identifiera nätverkshändelser och omedelbart meddela berörda prenumeranter via de kanaler de föredrar med relevant information, beräknade lösningstider och lämplig kompensation när så är lämpligt.
+Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill identifiera nätverkshändelser och omedelbart meddela berörda prenumeranter via de kanaler de föredrar med relevant information, beräknade lösningstider och lämplig kompensation när så är lämpligt. Det här är det rätta mönstret när utlösaren är en systemhändelse (nätverksavbrott) i stället för kundbeteende, och den kommunikation som krävs är omedelbar och reaktiv i stället för en kontinuerlig närliggande sekvens.
 
 ### Tekniska överväganden
 
@@ -140,11 +140,11 @@ Anpassa kommunikationen och erbjudandena för administratörer av familjeplaner 
 
 ### Affärspåverkan
 
-Kommunikation om anpassad hantering av familjeplaner ökar vanligtvis familjens engagemang med 30-40 %, vilket leder till högre radlojalitet och högre livstidsvärde per konto.
+Kommunikation om personaliserad familjerelaterad hantering ökar engagemanget i familjeplanen, vilket leder till högre radlojalitet och högre livstidsvärde per konto.
 
 ### Implementera
 
-Använd mönstret [Flerkanalsresor med beslutande](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) om du vill analysera användningen för alla familjemedlemmar, identifiera möjligheter som att lägga till rader eller justera enskilda begränsningar och leverera anpassade rekommendationer till avtalsadministratören.
+Använd mönstret [Flerkanalsresor med beslutande](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) om du vill analysera användningen för alla familjemedlemmar, identifiera möjligheter som att lägga till rader eller justera enskilda begränsningar och leverera anpassade rekommendationer till avtalsadministratören. Det här är det rätta mönstret när valet av erbjudanden måste ta hänsyn till hierarkibehörigheter, användningsaggregering för flera medlemmar och integritetsbegränsningar - begränsningar som kräver styrd beslutslogik snarare än individuella prenumerantrekommendationer.
 
 ### Tekniska överväganden
 
@@ -160,11 +160,11 @@ Rikta er till kunder som är berättigade till 5G-nätverksuppgraderingar med pe
 
 ### Affärspåverkan
 
-Riktade uppgraderingskampanjer för 5G ger en 25-35-procentig ökning av 5 G-acceptansnivån bland berättigade prenumeranter, vilket ger bättre avkastning på investeringar i nätverk och konkurrensfördelar.
+Målinriktade uppgraderingskampanjer för 5G ökar acceptansnivån för 5G bland berättigade prenumeranter, vilket ger bättre avkastning på investeringar i nätverk och konkurrensfördelar.
 
 ### Implementera
 
-Använd mönstret [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) för att segmentera prenumeranter baserat på 5G-täckning, enhetskompatibilitet och planbehörighet. Leverera sedan personaliserade uppgraderingskampanjer som visar de fördelar som är mest relevanta för varje prenumerations användningsprofil.
+Använd mönstret [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) för att segmentera prenumeranter baserat på 5G-täckning, enhetskompatibilitet och planbehörighet. Leverera sedan personaliserade uppgraderingskampanjer som visar de fördelar som är mest relevanta för varje prenumerations användningsprofil. Det här är det rätta mönstret när målgruppen är fördefinierad och stor, leveranstider är schemalagda i stället för händelsestyrd, och ingen förgrening eller beslutsfattande i realtid krävs - kampanjen kan planeras helt i förväg baserat på tidsramar för lansering av avtal.
 
 ### Tekniska överväganden
 
@@ -180,11 +180,11 @@ Skicka personliga påminnelser om fakturabetalning via önskade kanaler med beta
 
 ### Affärspåverkan
 
-Personaliserade påminnelser om fakturabetalning förbättrar vanligtvis betalningstakten i tid med 20-30 %, vilket minskar indrivningskostnaderna och minimerar antalet avbrott i tjänsten som ökar kundens missnöje.
+Personaliserade påminnelser om fakturabetalning förbättrar betalningstakten i tid, minskar indrivningskostnaderna och minimerar avbrott i tjänsten som kan leda till missnöjda kunder.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka påminnelser vid rätt tidpunkt före förfallodatumet, anpassade med abonnentens saldo, betalningsmetod och en direktlänk för att slutföra betalningen.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka påminnelser vid rätt tidpunkt före förfallodatumet, anpassade med abonnentens saldo, betalningsmetod och en direktlänk för att slutföra betalningen. Detta är det rätta mönstret när utlösaren är en tidsbaserad systemhändelse (faktureringsdatum) snarare än kundbeteende, och den nödvändiga kommunikationen är omedelbar och transaktionell snarare än en interaktionssekvens i flera steg.
 
 ### Tekniska överväganden
 
@@ -200,11 +200,11 @@ Rekommendera relevanta tilläggstjänster som enhetsförsäkring, molnlagring oc
 
 ### Affärspåverkan
 
-Personaliserade rekommendationer för tilläggstjänster genererar vanligtvis en ökning på 15-25 % av antalet tillägg, vilket ökar intäkterna från den befintliga prenumerationsbasen utan att kostnaden för nya kunder ökar.
+Personaliserade rekommendationer för tilläggstjänster ger förbättrad acceptansgrad för tillägg, vilket ökar intäkterna från den befintliga prenumerationsbasen utan att kostnaden för nya kunder ökar.
 
 ### Implementera
 
-Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) för att utvärdera varje abonnents profil, aktuella tjänster och beteendesignaler för att fastställa det mest relevanta tilläggserbjudandet och presentera det via den optimala kanalen och ögonblicket.
+Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) för att utvärdera varje abonnents profil, aktuella tjänster och beteendesignaler för att fastställa det mest relevanta tilläggserbjudandet och presentera det via den optimala kanalen och ögonblicket. Det här är det rätta mönstret när valet av erbjudande måste ta hänsyn till nuvarande ägarskap av tjänster och affärsregler som styr kompletterande tjänsteberättigande - regler som kräver styrd beslutslogik i stället för enbart beteendetillhörighet.
 
 ### Tekniska överväganden
 
@@ -220,11 +220,11 @@ Anpassa information om nätverksprestanda och rekommendationer baserat på kunde
 
 ### Affärspåverkan
 
-Personaliserade nätverksprestandaupplevelser ökar vanligtvis appengagemanget med 35-45 %, eftersom prenumeranterna återgår till att kontrollera täckning, felsöka problem och hitta optimeringstips som är skräddarsydda efter deras situation.
+Personaliserade nätverksprestandaupplevelser ökar appengagemanget, eftersom prenumeranterna återgår till att kontrollera täckning, felsöka problem och hitta optimeringstips som är skräddarsydda efter deras situation.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) för att leverera anpassade instrumentpaneler för nätverksprestanda, täckningsinformation och optimeringsrekommendationer i prenumerantens app- och webbkontoupplevelse.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) för att leverera anpassade instrumentpaneler för nätverksprestanda, täckningsinformation och optimeringsrekommendationer i prenumerantens app- och webbkontoupplevelse. Det här är det rätta mönstret när personalisering drivs av profilattribut och platsdata i stället för en beteendetillhörighetsmodell.
 
 ### Tekniska överväganden
 
@@ -236,15 +236,15 @@ Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-c
 
 ## Lojalitetsprogramengagemang
 
-Anpassa kundens kundskikt, poängbalans och inlösenhistorik efter kundens kundrelationer. En välpersonaliserad lojalitetsupplevelse stärker den känslomässiga kopplingen till varumärket och skapar meningsfulla byteskostnader utöver avtalsvillkoren.
+Anpassa kundens kundskikt, poängsaldo och inlösenhistorik, samtidigt som ni i realtid fragmenterar olika kanaler i appar, på webben, i SMS och i butik för att förhindra att dubbletter eller motstridiga erbjudanden når samma abonnent. Nivåbaserade begränsningar för behörighet styr vilka belöningar, partnerinlösen och kampanjer som varje prenumerant har tillgång till, och dessa regler måste verkställas på beslutslagret i stället för inbäddade i den enskilda kampanjlogiken. Lojalitetsprogrammet måste också samordna med aktiva lojalitets- och uppgraderingskampanjer så att förebyggande erbjudanden och lojalitetserbjudanden kompletterar varandra i stället för att dubbla erbjudanden skickas till prenumeranter som samtidigt befinner sig på flera resor.
 
 ### Affärspåverkan
 
-Personaliserat lojalitetsprogram ökar vanligtvis deltagandet i programmet och belönar inlösen med 30-40 %, vilket leder till högre lojalitetsgrad bland registrerade prenumeranter.
+Personaliserat lojalitetsprogram främjar bättre deltagande och belöningsinlösen, vilket ger högre lojalitetsgrad bland registrerade prenumeranter.
 
 ### Implementera
 
-Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att skapa personliga kundrelationer som framhäver relevanta belöningar, underrättar prenumeranter om hur skiktet utvecklas och presenterar möjligheter till inlösen i linje med deras preferenser och beteenden.
+Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att skapa personliga kundrelationer som framhäver relevanta belöningar, underrättar prenumeranter om hur skiktet utvecklas och presenterar möjligheter till inlösen i linje med deras preferenser och beteenden. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att förhindra dubbla lojalitetserbjudanden och när valet av erbjudanden kräver nivåstatus och inlösningshistorik - flerstegssamordning ger inte det beslutsskikt i realtid som behövs.
 
 ### Tekniska överväganden
 
@@ -252,3 +252,62 @@ Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-c
 - Koppla ihop partnerbelöningskataloger för att presentera ett stort antal inlösenalternativ som är skräddarsydda efter varje abonnents uppvisade intressen och tidigare inlösen.
 - Samordna lojalitetsmeddelanden med andra kampanjresor för att säkerställa att lojalitetserbjudanden och lojalitetsbelöningar kompletterar varandra i stället för att skapa konflikter mellan varandra.
 - Supportnivåutvecklingen förbättras genom att man beräknar hur nära en prenumerant är nästa nivå och presenterar åtgärdbara steg för att nå den.
+
+
+## AI Plan Advisor
+
+Teleabonnenter står inför en ständig utmaning: att förstå hur deras nuvarande plan jämfört med tillgängliga alternativ och om en annan plan bättre passar deras faktiska användning. Statiska jämförelsesidor kräver att abonnenterna själva tolkar data som de kanske inte förstår helt, vilket leder till suboptimala planval, faktureringstötar och möjlighet att förhindra bortfall. En AI-plansrådgivare engagerar abonnenterna i en naturlig konversation, granskar deras användningsmönster utifrån deras realtidsprofil, frågar kvalificerande frågor om enhetens behov och hushållets behov och guidar dem till den plan - eller en kombination av planer och tillägg - som bäst passar deras situation.
+
+### Affärspåverkan
+
+Konversationsplanens vägledning minskar den plansdrivna belastningen, ökar den bifogade uppgraderingen för prenumeranter som är underdimensionerade av sin nuvarande plan och sänker kontaktcentrets volym för fakturerings- och plansändringsfrågor.
+
+### Implementera
+
+Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md). Med den här metoden distribueras Product Advisor Agent mot planen och tilläggskatalogen med hjälp av AEP Agent Orchestrator-data och kundprofildata i realtid - inklusive användningshistorik och aktuell planinformation - för att vägleda abonnenterna genom personaliserat planval via naturlig dialog. Det här är det rätta mönstret när målet är interaktiv konversationsidentifiering i flera omgångar som hjälper prenumeranter att aktivt utvärdera och välja rätt plan - skilt från händelseutlösta meddelanden, som meddelar prenumeranter reaktivt om tröskelvärden eller planändringar, och från personaliserade webbupplevelser, som visar planjämförelser i bakgrunden utan att engagera prenumeranterna i en kvalificerande dialog. Det kräver AEP Agent Orchestrator och varumärkesstyrningskonfiguration.
+
+### Tekniska överväganden
+
+- Kundprofilsökningen i realtid måste innehålla aktuella plandetaljer, data- och röstanvändningsmönster, enhetskompatibilitet och avtalsstatus så att rådgivaren kan ge korrekt, kontospecifik vägledning i stället för allmänna beskrivningar som kräver att abonnenten själv tillämpar sin situation.
+- Planen och tilläggskatalogen måste hållas aktuell genom integrering med produkthanteringssystemet, eftersom ett rekommendation om ett erbjudande eller kampanjpris som inte längre är tillgängligt - eller utelämnande av ett nystartat alternativ - direkt undergräver prenumerantens förtroende och kan skapa serviceförfrågningar.
+- Garantierna för varumärkesstyrning måste definiera hur agenten hanterar konkurrensutsatta jämförelser mellan leverantörer, kampanjpriser och avtalsåtaganden, och säkerställa att agentens respons överensstämmer med regler och varumärkesstandarder utan att skapa vilseledande åtaganden som abonnenten senare kan ifrågasätta.
+- Konversationssignaler - inklusive angiven storlek för hushåll, antal enheter, internationell användningsränta och planförändringsavsikt som uttrycks under dialoger - måste hämtas som XDM Experience Events och strömmas tillbaka till AEP, vilket berikar prenumerantprofilerna för att informera kampanjer för att förebygga förändringar, uppgradera och korsförsäljning längre fram i kedjan.
+
+
+## Churn Propensity och Network Experience Analytics
+
+Korrelera mätvärden för nätverksupplevelser - bortfall av anrop, försämrad dataflöde, exponering av driftstopp - med kundtjänstens kontaktfrekvens och utfall av kundbortfall för att identifiera var problem med nätverkskvalitet kan leda till mätbar attribueringsrisk. Telekommunikationsleverantörer som analyserar nätverksprestanda och kundbeteenden i separata system kan inte avgöra vilka fel i tjänstekvaliteten som faktiskt driver bortfall jämfört med vilka som absorberas utan konsekvens.
+
+### Affärspåverkan
+
+Genom att koppla data om nätverksupplevelser till kundbeteenden och bortfall kan nätverksoperations-, produkt- och kundlojalitetsteamen prioritera reparationsinvesteringar baserat på dokumenterad attribueringseffekt i stället för enbart teknisk svårighetsgrad.
+
+### Implementera
+
+Använd mönstret [Kundanalys och insiktsgenerering](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Den här metoden kopplar data från nätverkshändelser, kundtjänstinteraktionsposter, digitala beteendesignaler och prenumeranternas livscykelhändelser till Customer Journey Analytics, där korrelerad analys identifierar tröskelvärden för nätverksupplevelser och kontaktmönster som är statistiskt kopplade till bortfall av bortfall och kontraktsförnyelse. Det här är det rätta mönstret när målet är att skapa insikter och analysera rotorsaker - förstå vilka tjänstekvalitetshändelser som skapar attribuering - i stället för att utlösa ett kvarhållningserbjudande eller aktivera en riskgrupp i en CDP.
+
+### Tekniska överväganden
+
+- Händelser för nätverksupplevelser måste kopplas till prenumerantposter med enhets- eller kontoidentifierare som överensstämmer med det person-ID som konfigurerats i CJA-anslutningen, eftersom nätverks-telemetrisystem vanligtvis använder utrustnings-ID i stället för kundidentifierare internt.
+- Kontaktdata för kundtjänst - inklusive kontaktorsakskoder, använd kanal och lösningsstatus - måste infogas som händelser med tidsstämplar som gör att analytiker kan skapa sekventiella sökvägar från nätverkshändelser via servicekontakter via bortfall i CJA-flöden eller bortfallsvisualiseringar.
+- Prenumerantens kontrakt- och plandata, inklusive kontraktets slutdatum, plannivå och löptid, bör vara tillgängliga som uppslagsdimensioner i datavyn för CJA så att omsättningsanalysen kan segmenteras efter kontraktets närhet och värdenivå i stället för att prenumerationsbasen behandlas som homogen.
+- Datavolymer för telemetri i nätverk kan vara mycket stora. Samplingsstrategier för datauppsättningar eller föraggning i AEP bör övervägas för att hålla CJA frågeprestanda inom godtagbara intervall för självbetjäning av analytiker.
+
+## Churn Prevention &amp; Win-Back
+
+Använd prediktiva modeller och beteendesignaler för att identifiera riskkunder och utlösa personaliserade kundlojalitetskampanjer med skräddarsydda erbjudanden innan de faller bort. Telekommunikationspartners utsätts för ständigt tryck på sig, och det är betydligt mer kostnadseffektivt att nå riskabonnenter med rätt erbjudande innan de kontaktar annulleringskön än att vinna tillbaka kampanjer efter detta.
+
+### Affärspåverkan
+
+Telekomleverantörer med proaktiva program för att förebygga bortfall av bortfall ser från meningsfulla minskningar av den frivilliga bortfallet för riktade segment, med störst påverkan bland medelstora kunder där riktade erbjudanden är mer kostnadseffektiva än allmänna rabatter.
+
+### Implementera
+
+Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att skapa en kundresa som identifierar riskabonnenter baserat på poängvärden för bortfallsbenägenhet, väljer lämpligt kvarhållningserbjudande med hjälp av beslutslogik och levererar det i de kanaler som abonnenten föredrar med uppföljningssteg om den första utåtgången ignoreras. Det här är det rätta mönstret när både val av erbjudanden och resesamordning krävs - ett enda meddelande som utlöses kan inte hantera den rangordningslogik och den multitouch-uppföljning som krävs för effektiv lagring.
+
+### Tekniska överväganden
+
+- Manövreringsmodeller måste utbildas i historiska churn-data som omfattar nätverkserfarenhet, faktureringshändelser, servicebesök och enhetsålder - modeller som är utbildade på enbart engagemangsdata underpresterar ofta mot telekomspecifika churn-drivrutiner.
+- Bevarandeerbjudanden måste begränsas av tröskelvärden för kostnader som ska behållas per kundvärdessegment. Beslutsmotorn bör förhindra att erbjudanden om högkostnadskvarhållande tillämpas på lågvärdesabonnenter.
+- Signalbearbetning i realtid av kanaler måste upptäcka avtalsförfrågningar och besök på sidan för avbrutna tjänster för att utlösa brådskande kvarhållningssvar innan abonnenten eskalerar.
+- Kundtjänstintegrering är avgörande - prenumeranter som anropar kvarhållningskön bör identifieras som resande deltagare så att agenterna har kontexten för kvarhållningserbjudandet klar innan samtalet börjar.

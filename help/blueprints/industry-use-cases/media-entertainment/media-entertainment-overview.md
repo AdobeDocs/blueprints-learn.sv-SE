@@ -2,13 +2,13 @@
 title: Användningsexempel inom media och underhållning
 description: Upptäck hur medie- och underhållningsorganisationer använder Adobe Experience Platform för att personalisera innehållsidentifiering, minska antalet prenumeranter och öka publikens engagemang.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: cfcf689f-9579-447f-9ef9-72e0c80c1f27
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '3363'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel inom media och underhållning
 
@@ -20,11 +20,11 @@ Tillhandahåll personaliserade rekommendationer för innehåll, inklusive filmer
 
 ### Affärspåverkan
 
-Organisationer som använder personaliserade rekommendationsmotorer ser vanligtvis en 30-40-procentig ökning av innehållsengagemanget och en meningsfull ökning av den totala övervaknings- eller avlyssningstiden per användare.
+Organisationer som använder personaliserade rekommendationsmotorer ser bättre innehållsengagemang och en meningsfull ökning av den totala bevaknings- eller avlyssningstiden per användare.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Strategin använder AI-drivna rekommendationsmodeller som kontinuerligt lär sig av målgruppsinteraktioner för att visa det mest relevanta innehållet för varje individ.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Strategin använder AI-drivna rekommendationsmodeller som kontinuerligt lär sig av målgruppsinteraktioner för att visa det mest relevanta innehållet för varje individ. Det här är det rätta mönstret när objektuppsättningen är stor och ändras kontinuerligt (innehållskataloger) och markeringen styrs av beteendetillhörighet som lärt sig av visningshistoriken - i stället för av en avgränsad uppsättning erbjudanden som styrs av regler för behörighet.
 
 ### Tekniska överväganden
 
@@ -40,11 +40,11 @@ Identifiera abonnenter som riskerar att avbryta och engagera dem med personalise
 
 ### Affärspåverkan
 
-Effektiva program för att förebygga förändringar ger en minskning på 20-30 % av antalet prenumeranter, skyddar återkommande intäkter och förbättrar det långsiktiga värdet för målgruppens livstid.
+Effektiva program för att förebygga förändringar ger meningsfulla minskningar av antalet abonnenter, skyddar återkommande intäkter och förbättrar det långsiktiga värdet för målgruppens livslängd.
 
 ### Implementera
 
-Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Detta tillvägagångssätt kombinerar resesamordning med realtidsbeslut för att välja det bästa erbjudandet om kvarhållning eller innehållsrekommendation för varje riskabonnent i alla kanaler.
+Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Detta tillvägagångssätt kombinerar resesamordning med realtidsbeslut för att välja det bästa erbjudandet om kvarhållning eller innehållsrekommendation för varje riskabonnent i alla kanaler. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att förhindra dubbletterbjudanden för kvarhållande och när valet av erbjudanden kräver regler för kvalificering baserat på prenumerantens värde och risknivå - flerstegssamordning ger inte ensam det beslutsskikt i realtid som behövs.
 
 ### Tekniska överväganden
 
@@ -60,11 +60,11 @@ Meddela prenumeranterna om nya innehållsreleaser som matchar deras preferenser 
 
 ### Affärspåverkan
 
-Personaliserade versionsmeddelanden ger normalt en 40-50-procentig ökning av engagemanget för nytt innehåll inom den första veckan efter releasen, vilket snabbar upp tittandet och ökar innehållets prestandamått.
+Personaliserade versionsmeddelanden skapar bättre engagemang för nytt innehåll inom den första veckan efter releasen, vilket snabbar upp tittandet och ökar innehållets prestandamått.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på innehållsreleaseversionshändelser och matchar nya titlar mot prenumerantprofiler för att leverera aktuella och relevanta meddelanden.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på innehållsreleaseversionshändelser och matchar nya titlar mot prenumerantprofiler för att leverera aktuella och relevanta meddelanden. Det här är det rätta mönstret när utlösaren är en systemhändelse (innehållsrelease) i stället för ett kundbeteende, och den kommunikation som krävs är omedelbar och reaktiv i stället för en kontinuerlig vårdsekvens.
 
 ### Tekniska överväganden
 
@@ -80,11 +80,11 @@ Anpassa sidor för hemsida och innehållsidentifiering dynamiskt för att visa d
 
 ### Affärspåverkan
 
-Personaliserade hemsidesupplevelser leder till en 25-35-procentig ökning av hemsidans engagemang och förbättrar innehållsidentifieringen på ett meningsfullt sätt, särskilt för plattformar med stora och växande innehållsbibliotek.
+Personaliserade hemsidesupplevelser ökar engagemanget på hemsidan och förbättrar innehållsidentifieringen avsevärt, särskilt för plattformar med stora och växande innehållsbibliotek.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder urvalsstrategier och rangordningsmodeller för att ändra ordning på innehållsrader och beskrivna titlar på hemsidan baserat på varje besökares profil och beteende i realtid.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder urvalsstrategier och rangordningsmodeller för att ändra ordning på innehållsrader och beskrivna titlar på hemsidan baserat på varje besökares profil och beteende i realtid. Det här är det rätta mönstret när objektuppsättningen är stor och ändras kontinuerligt och markeringen styrs av beteendetillhörighet för att rangordna innehållsrader dynamiskt, i stället för en statisk kuraterad uppsättning eller enkel attributbaserad personalisering.
 
 ### Tekniska överväganden
 
@@ -100,11 +100,11 @@ Skicka påminnelser till användare om innehåll i deras bevakningslista som de 
 
 ### Affärspåverkan
 
-Påminnelseprogram för bevakningslistor uppnår vanligtvis en 30-40-procentig ökning av antalet slutförda bevakningslistor, vilket omvandlar sparade avsikter till aktivt engagemang och ökar den totala plattformsanvändningen.
+Påminnelseprogram för bevakningslistor ökar hastigheten för slutförande av bevakningslistor, omvandlar sparad avsikt till aktivt engagemang och ökar den totala plattformsanvändningen.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser baserat på aktivitetssignaler för bevakning och inaktivitetssignaler, och skickar tidskrävande meddelanden när innehållet har sparats men ännu inte startats.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser baserat på aktivitetssignaler för bevakning och inaktivitetssignaler, och skickar tidskrävande meddelanden när innehållet har sparats men ännu inte startats. Detta är det rätta mönstret när en diskret beteendesignal (inaktivitet i bevakningslistan) är utlösaren och det svar som krävs är ett enda tidskänsligt meddelande - i stället för en sekvens i flera steg eller en kontinuerlig rekommendationsström.
 
 ### Tekniska överväganden
 
@@ -120,11 +120,11 @@ Engagera användare av kostnadsfria testversioner med personliga rekommendatione
 
 ### Affärspåverkan
 
-Väldesignade konverteringskampanjer för testversioner ger en 25-35-procentig förbättring av konverteringsgraden från testversion till betald, vilket direkt ökar prenumerationernas effektivitet och minskar kostnaden per förvärv.
+Väldesignade konverteringskampanjer för testversioner ger meningsfulla förbättringar av konverteringsgraden mellan testversioner och betalningar, vilket direkt ökar prenumerationernas effektivitet och minskar kostnaden per förvärv.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här resan för multitouch-näring guidar testanvändare genom en sekvens av innehållsidentifiering, värdedemonstration och konverteringsmeddelanden, som anpassar sig efter deras engagemang under hela testperioden.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här resan för multitouch-näring guidar testanvändare genom en sekvens av innehållsidentifiering, värdedemonstration och konverteringsmeddelanden, som anpassar sig efter deras engagemang under hela testperioden. Det här är det rätta mönstret när användningsfallet kräver ett sekvensflöde med flera meddelanden på flera dagar med villkorlig förgrening baserat på interaktionshändelser och återstående testtid - ett enda utlöst meddelande kan inte hantera beroendelogiken mellan steg eller behovet av stängningsjusteringar.
 
 ### Tekniska överväganden
 
@@ -140,11 +140,11 @@ Informera användarna om kommande live-event, sportevenemang eller premiärer so
 
 ### Affärspåverkan
 
-Personaliserade påminnelser för live-event genererar vanligtvis en 50-60-procentig ökning av livesändningen, vilket maximerar målgruppen för högklassig realtidsprogrammering.
+Personaliserade påminnelser för live-event förbättrar tittandet live och maximerar målgruppen för högklassig realtidsprogrammering.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser meddelanden baserat på data för händelseplanering, matchning av kommande händelser mot prenumerantens intresseprofiler för att leverera påminnelser i rätt tid.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser meddelanden baserat på data för händelseplanering, matchning av kommande händelser mot prenumerantens intresseprofiler för att leverera påminnelser i rätt tid. Det här är det rätta mönstret när utlösaren är en systemhändelse (ett händelseschema) i stället för kundbeteende, och den kommunikation som krävs är omedelbar och tidsbunden i stället för en kontinuerlig vårdsekvens.
 
 ### Tekniska överväganden
 
@@ -160,11 +160,11 @@ Generera och uppdatera automatiskt personaliserade spellistor baserat på varje 
 
 ### Affärspåverkan
 
-Personlig generering av spellistor genererar en 40-50-procentig ökning av engagemanget i spellistor och utökar den genomsnittliga avlyssningstiden avsevärt, vilket stärker de dagliga användningsvanorna för plattformen.
+Personlig generering av spellistor ökar engagemanget i spellistan och förlänger den genomsnittliga avlyssningstiden på ett meningsfullt sätt, vilket stärker de dagliga användningsvanorna för plattformen.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna modeller som analyserar avlyssningsmönster, hoppbeteende och sammanhangsberoende signaler för att generera och uppdatera spellistor som är anpassade för varje användare.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna modeller som analyserar avlyssningsmönster, hoppbeteende och sammanhangsberoende signaler för att generera och uppdatera spellistor som är anpassade för varje användare. Det här är det rätta mönstret när objektuppsättningen är stor och förändras kontinuerligt och markeringen styrs av beteendetillhörighet från avlyssningshistorik och humörsignaler - i stället för av en avgränsad uppsättning spellistor som styrs av redigeringsregler.
 
 ### Tekniska överväganden
 
@@ -180,11 +180,11 @@ Skapa en smidig innehållsupplevelse på olika enheter genom att synkronisera be
 
 ### Affärspåverkan
 
-Synkronisering av innehåll på olika plattformar innebär en 30-40-procentig ökning av engagemanget på olika enheter och minskar friktionen avsevärt, vilket kan leda till att sessionerna avbryts när användare växlar mellan olika enheter.
+Synkronisering av innehåll på olika plattformar ökar engagemanget på olika enheter och minskar på ett meningsfullt sätt friktionen som kan leda till att sessionerna avbryts när användare växlar mellan olika enheter.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Detta tillvägagångssätt personaliserar upplevelsen för identifierade användare på olika webb- och appplattformar och säkerställer ett konsekvent innehållsläge och rekommendationer oavsett enhet.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Detta tillvägagångssätt personaliserar upplevelsen för identifierade användare på olika webb- och appplattformar och säkerställer ett konsekvent innehållsläge och rekommendationer oavsett enhet. Det här är det rätta mönstret när personalisering styrs av profilattribut (enhetsidentitet, bevakning av förloppstillstånd) och segmentmedlemskap i stället för en beteendetillhörighetsmodell eller en färgreformationssekvens.
 
 ### Tekniska överväganden
 
@@ -200,11 +200,11 @@ Anpassa uppmaningar och rekommendationer för social delning baserat på varje a
 
 ### Affärspåverkan
 
-Personaliserade uppmaningar om social delning får normalt en 20-30-procentig ökning av andelen social delning, vilket förstärker den ekologiska räckvidden och minskar de betalda anskaffningskostnaderna.
+Personaliserade möjligheter till social delning uppnår förbättrade delningsnivåer i sociala medier, vilket ökar den ekologiska räckvidden och minskar de betalda anskaffningskostnaderna.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Det här sättet personaliserar upplevelser i appdelning för identifierade användare, och visar sammanhangsberoende relevanta delningsfrågor baserat på användarens önskemål och engagemangsmönster.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Det här sättet personaliserar upplevelser i appdelning för identifierade användare, och visar sammanhangsberoende relevanta delningsfrågor baserat på användarens önskemål och engagemangsmönster. Det här är det rätta mönstret när personalisering drivs av profilattribut och kända engagemangskontext snarare än en beteendeaffinitetsmodell, och målet är att förbättra upplevelsen i ögonblicket utan att skapa en sekvens för kundresan.
 
 ### Tekniska överväganden
 
@@ -220,11 +220,11 @@ Identifiera användare som skulle kunna dra nytta av premiumfunktioner och prese
 
 ### Affärspåverkan
 
-Personaliserade premiumbaserade merförsäljningskampanjer leder till en ökning på 15-25 % av premiumanvändningen, vilket ökar den genomsnittliga intäkten per användare samtidigt som de levererar funktioner som verkligen matchar prenumerantens behov.
+Personaliserade premiumbaserade merförsäljningskampanjer ger förbättrad användning av premiumfunktioner, ökade genomsnittliga intäkter per användare samtidigt som de levererar funktioner som verkligen matchar prenumerantens behov.
 
 ### Implementera
 
-Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera varje abonnents användningsmönster och välja det mest relevanta premieerbjudandet vid rätt tidpunkt.
+Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera varje abonnents användningsmönster och välja det mest relevanta premieerbjudandet vid rätt tidpunkt. Det här är det rätta mönstret när valet av erbjudanden måste ta hänsyn till begränsningar för användningsmönster och regler för behörighet på premienivå - begränsningar som kräver styrd beslutslogik i stället för enbart rangordning av beteendetillhörighet.
 
 ### Tekniska överväganden
 
@@ -240,11 +240,11 @@ Påminn användarna om att slutföra tittandet på eller lyssna på innehåll de
 
 ### Affärspåverkan
 
-Kampanjer för slutförande av innehåll ger vanligtvis en 35-45-procentig förbättring av innehållets slutförandefrekvens, ökar den totala engagemangstiden och stärker abonnentens uppfattning om plattformens värde.
+Kampanjer för slutförande av innehåll ökar hastigheten för slutförande av innehåll, ökar den totala engagemangstiden och förstärker abonnentens uppfattning om plattformens värde.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser baserat på händelser för innehållsutelämnande, och skickar meddelanden i rätt tid när en användare har pausat en del av en titel och inte har returnerat inom ett definierat fönster.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser baserat på händelser för innehållsutelämnande, och skickar meddelanden i rätt tid när en användare har pausat en del av en titel och inte har returnerat inom ett definierat fönster. Det här är det rätta mönstret när en diskret beteendesignal (innehållsbortfall) är utlösaren och det svar som krävs är ett enda tidskänsligt budskap i rätt sammanhang - snarare än en flerstegsresa eller dynamiskt urval av erbjudanden.
 
 ### Tekniska överväganden
 
@@ -252,3 +252,23 @@ Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patte
 - Påminnelsemeddelanden ska innehålla den specifika innehållstiteln, en visuell miniatyrbild och en direkt djup länk som återupptar uppspelningen exakt där användaren slutade.
 - Frekvensbegränsning måste förhindra alltför stora påminnelser för användare som rutinmässigt tar prov på innehåll utan att först ta slut; upprepade knuffar för innehåll som användaren har valt att ge upp kan kännas påträngande.
 - Innehållstillgängligheten måste verifieras vid sändning eftersom titlar kan lämna plattformen eller ändra tillgänglighetsområdena mellan övergivningshändelsen och påminnelseleveransen.
+
+
+## Analys av drivrutin och engagemang för innehåll för prenumerant
+
+Identifiera vilka innehållskonsumtionsmönster, förändringar av engagemangsfrekvensen och kataloginteraktionsbeteenden som föregår abonnentannullering och mät hur innehållets affinitet varierar mellan abonnentsegment och förvärvsmetoder. Strömma och publicera företag som inte kan koppla samman innehållsbeteenden för att ändra resultatet fattar innehållsinvesteringsbeslut baserat på mängdantal snarare än lojalitetseffekt.
+
+### Affärspåverkan
+
+Att korrelera innehållsengagemangsmönster med prenumerantens lojalitetsresultat ger produkt-, innehållsstrategi- och marknadsföringsteam en faktisk grund för att prioritera kataloginvesteringar och utforma återengagemangskampanjer kring de beteenden som faktiskt stöder prenumerationer.
+
+### Implementera
+
+Använd mönstret [Kundanalys och insiktsgenerering](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Detta tillvägagångssätt kopplar data från direktuppspelningshändelser, metadata för innehåll, prenumerationslivscykelposter och kampanjinteraktionshistorik till Customer Journey Analytics, där kohortanalyser för kvarhållningsanalys mäter hur innehållstillhörigheten korrelerar med prenumerantens varaktighet och falloutanalys identifierar de släppningsmönster för engagemang som föregår annulleringen. Det här är det rätta mönstret när målet är att förstå beteendedrivkrafter för förändring och innehållsprestanda, i stället för att utlösa ett återvinningsmeddelande eller aktivera en riskfylld målgrupp för undertryckande.
+
+### Tekniska överväganden
+
+- Innehållsförbrukningshändelser måste innehålla både innehållsidentifierare och metadata på sessionsnivå - start-, paus-, slutförings- och hopphändelser - så att engagemangsdjupet kan mätas utöver antalet råformat i CJA.
+- Prenumerationens livscykelhändelser, inklusive teststart, konvertering, betalningsfel, nedgradering och annullering, måste infogas som diskreta händelser med exakta tidsstämplar så att beteendefönster för förannullering kan definieras exakt i CJA-filter.
+- Attribut för innehållskataloger som genre, format, seriesammanslutning och releaseferens måste vara tillgängliga som en uppslagsdatauppsättning i CJA-anslutningen så att innehållsengagemangsanalysen kan delas upp efter katalogdimension i stället för att behöva analyseras på den enskilda titelnivån.
+- Kohortanalyser där man jämför kvarhållningskurvor per inköps- och originalinnehåll som visas kräver att både inköps- och det första visade innehållet hämtas som profil- eller första-händelsedimensioner, som är tillgängliga för kohortdefinition i CJA.

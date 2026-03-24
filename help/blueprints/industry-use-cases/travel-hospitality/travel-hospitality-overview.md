@@ -1,50 +1,50 @@
 ---
-title: Användningsexempel för resor och turism
-description: Upptäck hur rese- och turismorganisationer använder Adobe Experience Platform för att personalisera bokningsupplevelser, återställa övergivna bokningar och bygga gästlojalitet.
+title: Travel & Hospitality Use Cases
+description: Discover how travel and hospitality organizations use Adobe Experience Platform to personalize booking experiences, recover abandoned reservations, and build guest loyalty.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '3648'
 ht-degree: 0%
 
 ---
 
+# Travel &amp; Hospitality Use Cases
 
-# Användningsexempel för resor och turism
+Travel and hospitality organizations use Adobe Experience Platform to bring together guest data from booking engines, loyalty programs, property management systems, and digital touchpoints into a single view of each traveler. This unified foundation powers personalized experiences that inspire bookings, recover abandoned reservations, and build the kind of guest loyalty that drives repeat visits.
 
-Rese- och turismorganisationer använder Adobe Experience Platform för att samla gästdata från bokningsmotorer, lojalitetsprogram, egendomsstyrningssystem och digitala kontaktytor i en enda vy över varje resenär. Denna enhetliga grund driver personaliserade upplevelser som inspirerar bokningar, återställer övergivna reservationer och bygger upp den typ av gästlojalitet som driver återkommande besök.
+## Personalized Homepage for New Visitors
 
-## Personaliserad hemsida för nya besökare
-
-Visa personliga kryssnings-, hotell- och destinationsrekommendationer på hemsidan baserat på besökarens geografiska plats och surfbeteende. Första gången besökare som ser relevanta resealternativ direkt är mycket mer benägna att utforska och påbörja bokningsprocessen.
+Show personalized cruise, hotel, and destination recommendations on the homepage based on the visitor&#39;s geographic location and browsing behavior. First-time visitors who see relevant travel options immediately are far more likely to explore further and begin the booking process.
 
 ### Affärspåverkan
 
-Personalisering av hemsidan för nya besökare innebär vanligtvis en 15-20-procentig ökning av konverteringsgraden genom att presentera resealternativ som matchar besökarens plats och intressen i stället för generiskt innehåll.
+Personalizing the homepage for new visitors drives improved conversion rates by presenting travel options that match the visitor&#39;s location and interests rather than generic content.
 
 ### Implementera
 
-Använd mönstret [Anonym besökswebb-Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md). Det här arbetssättet levererar skräddarsytt innehåll till besökare som ännu inte har identifierat sig, med hjälp av tillgängliga signaler som geopositionering, enhetstyp och hänvisningskälla för att personalisera upplevelsen från den allra första sidan.
+Use the [Anonymous Visitor Web Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md) pattern. This approach delivers tailored content to visitors who have not yet identified themselves, using available signals such as geolocation, device type, and referral source to personalize the experience from the very first page. This is the right pattern when the visitor has not yet identified themselves and personalization must rely on available signals such as geolocation, device type, and referral source — known-visitor personalization requires an authenticated profile that does not yet exist.
 
 ### Tekniska överväganden
 
-- Geolokaliseringsdata måste tolkas korrekt vid kanten för att betjäna regionsspecifika destinationer, valutor och avgångsportar utan att lägga till latens till startsidans belastning.
-- Personalization regler bör ta hänsyn till årstidsutvecklingen för resor per region, surfning av varma väderplatser till besökare i kalla klimat under vintermånaderna, till exempel.
-- Strategier för återfallsinnehåll är avgörande för besökare vars position inte kan fastställas eller som kommer via anonyma tjänster.
-- Integrationen med bokningssystemets tillgänglighetsflöde säkerställer att aktuella egenskaper och färdvägar verkligen är bokningsbara, vilket förhindrar frustration att marknadsföra utsålda alternativ.
+- Geolocation data must be resolved accurately at the edge to serve region-appropriate destinations, currencies, and departure ports without adding latency to the homepage load.
+- Personalization rules should account for seasonal travel trends by region, surfacing warm-weather destinations to visitors in cold climates during winter months, for example.
+- Fallback content strategies are essential for visitors whose location cannot be determined or who arrive through anonymizing services.
+- Integration with the reservation system&#39;s availability feed ensures that featured properties and itineraries are actually bookable, preventing frustration from promoting sold-out options.
 
 
-## Återvinning av kundvagnsåtervinning
+## Cart Abandonment Recovery Journey
 
-Identifiera automatiskt när en kund överger sin bokningsvagn och utlöser en e-postresa i flera steg med personaliserade erbjudanden för att uppmuntra till slutförande. Övergivna bokningar är ett av de största intäktsläckorna inom resor och turism, och en snabb uppföljning medan reseavsikten fortfarande återhämtar en meningsfull andel av bokningarna.
+Automatically detect when a customer abandons their booking cart and trigger a multi-step email journey with personalized offers to encourage completion. Abandoned reservations represent one of the largest revenue leaks in travel and hospitality, and timely follow-up while the travel intent is still fresh recovers a meaningful share of those bookings.
 
 ### Affärspåverkan
 
-Effektiva program för återfinnande av bokningar ger en 25-35-procentig kundåtervinningsnivå och kan generera ytterligare 50 000-200 000 USD i månadsomsättning beroende på bokningsvolym och genomsnittligt resevärde.
+Effective booking recovery programs achieve meaningful cart recovery rates and can generate significant incremental revenue depending on booking volume and average trip value.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på en händelse om att kundvagnen överges i realtid och en påminnelse skickas så fort kundens reseåtergivning är hög.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). This approach responds to a real-time cart abandon event, sending a timely reminder while the customer&#39;s travel intent is still high. Det här är det rätta mönstret när utlösaren är en kundbeteendehändelse i realtid och det svar som krävs är ett enda tidskänsligt meddelande - snarare än en interaktiv sekvens i flera steg eller ett dynamiskt urval som ändras baserat på kundrespons.
 
 ### Tekniska överväganden
 
@@ -60,11 +60,11 @@ Identifiera besökare med hög inköpsmetod med hjälp av AI-driven benägenhets
 
 ### Affärspåverkan
 
-Att rikta in sig på besökare med hög återgivning med personaliserade erbjudanden ger en 30-40-procentig ökning av konverteringsgraden för dessa segment, och koncentrerar marknadsföringsinvesteringarna där den ger störst avkastning.
+Att rikta in sig på besökare med hög återgivning med personaliserade erbjudanden ger förbättrad konvertering för dessa segment och koncentrerar marknadsföringsinvesteringarna där de ger störst avkastning.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Den här metoden använder profildata och beteendesignaler i realtid för att personalisera webbupplevelsen för identifierade besökare och leverera skräddarsytt innehåll och erbjudanden som matchar deras nivå av inköpsberedskap.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Den här metoden använder profildata och beteendesignaler i realtid för att personalisera webbupplevelsen för identifierade besökare och leverera skräddarsytt innehåll och erbjudanden som matchar deras nivå av inköpsberedskap. Det här är det rätta mönstret när personalisering styrs av profilattribut och benägenhetspoäng för identifierade kunder snarare än en beteendetillhörighetsmodell - och när kunden redan har autentiserats, gör deras segmentmedlemskap och avsiktssignaler tillgängliga.
 
 ### Tekniska överväganden
 
@@ -80,11 +80,11 @@ När kunden har avslutat en bokning startar automatiskt merförsäljningskampanj
 
 ### Affärspåverkan
 
-Bokföringskampanjer med merförsäljning ökar vanligtvis det genomsnittliga ordervärdet med $200-$500 och ökar de extra intäkterna med 15-25 %, vilket gör en enstaka bokning till en betydligt mer värdefull transaktion.
+Kampanjer för merförsäljning efter bokning ökar det genomsnittliga ordervärdet och ökar därmed intäkterna, vilket gör en enda bokning till en betydligt mer värdefull transaktion.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här flerstegsresan vägleder kunderna genom en tidsbestämd sekvens av merförsäljningsmöjligheter och anpassar erbjudandena baserat på vad gästen redan har köpt och deras engagemang med tidigare meddelanden.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här flerstegsresan vägleder kunderna genom en tidsbestämd sekvens av merförsäljningsmöjligheter och anpassar erbjudandena baserat på vad gästen redan har köpt och deras engagemang med tidigare meddelanden. Det här är det rätta mönstret när användningsfallet kräver ett sekvensflöde med flera meddelanden på flera dagar med villkorlig förgrening baserat på engagemangshändelser och lagertillgänglighet - ett enda utlöst meddelande kan inte hantera beroendelogiken mellan merförsäljningsstunder eller timingjusteringar baserat på resedatum.
 
 ### Tekniska överväganden
 
@@ -100,11 +100,11 @@ Identifiera kunder som inte har bokat på tolv eller fler månader och engagera 
 
 ### Affärspåverkan
 
-Välinriktade återvinnande kampanjer ger en 10-15-procentig återaktiveringsfrekvens bland bortfallna kunder, vilket återhämtar intäkter från gäster som annars aldrig kommer tillbaka.
+Välinriktade återvinnande kampanjer ger meningsfulla återaktiveringsfrekvenser bland bortgångna kunder och återhämtar intäkter från gäster som annars aldrig skulle kunna återvända.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här flerstegsresan engagerade kunderna på nytt med en progressiv serie meddelanden som utvecklas från inspiration till incitament baserat på kundens respons.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här flerstegsresan engagerade kunderna på nytt med en progressiv serie meddelanden som utvecklas från inspiration till incitament baserat på kundens respons. Det här är det rätta mönstret när det inte finns någon diskret utlösande händelse och tidsinställning måste beräknas utifrån kundens livscyklmodeller och säsongsbokningsmönster - händelserelaterade meddelanden kan inte hantera den progressiva eskaleringslogiken eller behovet av att hålla erbjudanden runt normala reseplaneringsfönster.
 
 ### Tekniska överväganden
 
@@ -120,11 +120,11 @@ Visa personaliserade kryssningsrutnät och destinationer baserat på kundens tid
 
 ### Affärspåverkan
 
-Personaliserade rekommendationer för flygvägar leder till en 20-30-procentig ökning av engagemanget med flygplanssidor, vilket hjälper kunderna att hitta rätt resa snabbare och minskar den minskning som inträffar när resenärerna känner sig överväldigade av för många alternativ.
+Personaliserade rekommendationer för flygvägar ger ett bättre engagemang med resplan-sidor, vilket hjälper kunderna att hitta rätt resa snabbare och minskar den avgång som inträffar när resenärerna känner sig överväldigade av för många alternativ.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Detta tillvägagångssätt personaliserar webbplatsinnehållet för identifierade besökare genom att använda deras profildata och beteendehistorik för att identifiera de mest relevanta resvägarna och destinationerna.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Detta tillvägagångssätt personaliserar webbplatsinnehållet för identifierade besökare genom att använda deras profildata och beteendehistorik för att identifiera de mest relevanta resvägarna och destinationerna. Detta är det rätta mönstret när personalisering styrs av profilattribut och bokningshistorik snarare än en beteendetillhörighetsmodell - vilket gör att regelbaserad logik kan ta hänsyn till reselogistik som avreseportar och datum vid sidan av kundens önskemål.
 
 ### Tekniska överväganden
 
@@ -140,11 +140,11 @@ Visa nyligen visade kryssningar, hotell eller destinationer på hemsidan för at
 
 ### Affärspåverkan
 
-Genom att visa nyligen använda reseprodukter på hemsidan ökar besöksupplevelsen med 15-20 %, vilket hjälper kunderna att fortsätta där de slutade och korta vägen till bokning.
+Genom att visa nyligen använda reseprodukter på hemsidan ökar besöksupplevelsen, vilket hjälper kunderna att fortsätta där de slutade och korta vägen till bokningen.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Den här metoden använder besökarens lagrade profildata för att återge tidigare visade objekt på hemsidan, vilket skapar kontinuitet mellan olika webbläsarsessioner.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Den här metoden använder besökarens lagrade profildata för att återge tidigare visade objekt på hemsidan, vilket skapar kontinuitet mellan olika webbläsarsessioner. Det här är det rätta mönstret när personalisering bygger på beständiga profildata för olika sessioner och enheter i stället för beteendeaffinitet i realtid - och när reglerna för relevans är tidsbaserade (nyligen använda) i stället för algoritmisk rankning.
 
 ### Tekniska överväganden
 
@@ -160,11 +160,11 @@ När en besökare visar sin avslutningsmetod, ska han/hon visa ett personalisera
 
 ### Affärspåverkan
 
-Modaler för att avsluta med personaliserade reseerbjudanden återfår en konverteringsgrad på 5-10 % bland besökare som annars skulle gå utan bokning, vilket ger intäkter som helt skulle gå förlorade.
+Modaler för att avsluta med personaliserade reseerbjudanden återskapar meningsfulla konverteringar bland besökare som annars skulle lämna programmet utan att bokföra, vilket fångar upp intäkter som helt skulle gå förlorade.
 
 ### Implementera
 
-Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera alla tillgängliga erbjudanden och välja det som är mest relevant för den avgående besökaren baserat på deras sessionsbeteende och profildata.
+Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera alla tillgängliga erbjudanden och välja det som är mest relevant för den avgående besökaren baserat på deras sessionsbeteende och profildata. Det här är det rätta mönstret när valet av erbjudanden måste ta hänsyn till rätt till lojalitetsnivå och affärsbegränsningar runt frekvensbegränsning - begränsningar som kräver styrd beslutslogik i stället för en enkel beteenderekommendation eller ett enda utlöst meddelande.
 
 ### Tekniska överväganden
 
@@ -180,11 +180,11 @@ Anpassa webbplatsupplevelsen, erbjudandena och kommunikationen baserat på kunde
 
 ### Affärspåverkan
 
-Nivåbaserad personalisering driver på en 25-35-procentig ökning av lojalitetsmedlemmarnas engagemang, fördjupar relationen och snabbar upp intäktsgenereringen och inlösenbeteendena.
+Nivåbaserad personalisering driver på lojalitetsmedlemmarnas engagemang, fördjupar relationen och snabbar upp intäktsbeteendena och inlösen som ger långsiktiga intäkter.
 
 ### Implementera
 
-Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Strategin kombinerar resesamordning med realtidsbeslut för att leverera rätt erbjudande via rätt kanal för varje lojalitetsmedlem, som anpassas till deras nivå, preferenser och senaste aktivitet.
+Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Strategin kombinerar resesamordning med realtidsbeslut för att leverera rätt erbjudande via rätt kanal för varje lojalitetsmedlem, som anpassas till deras nivå, preferenser och senaste aktivitet. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att förhindra dubblerade erbjudanden och när valet av erbjudanden kräver nivåbaserade regler för behörighet och inlösenbegränsningar - endast resesamordning ger inte det flerkanalsbeslutslager som behövs.
 
 ### Tekniska överväganden
 
@@ -200,11 +200,11 @@ Skicka personliga bokningspåminnelser via e-post, SMS och push-meddelanden till
 
 ### Affärspåverkan
 
-Påminnelser om flerkanalsbokning förbättrar antalet slutförda bokningar med 20-30 %, vilket återvinner betydande intäkter från kunder som hade för avsikt att boka men som spårades innan de slutfördes.
+Påminnelser om flerkanalsbokning förbättrar antalet slutförda bokningar, vilket ger betydande intäkter från kunder som hade för avsikt att boka men som spårades innan de slutfördes.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser automatiskt när en ofullständig bokningshändelse upptäcks, vilket ger aktuella meddelanden i de kanaler kunden föredrar.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser påminnelser automatiskt när en ofullständig bokningshändelse upptäcks, vilket ger aktuella meddelanden i de kanaler kunden föredrar. Det här är det rätta mönstret när utlösaren är en diskret kundåtgärd (att starta en bokning) och det svar som krävs är tidskänslig leverans i de kanaler som föredras - i stället för en sekvens i flera steg där varje meddelande är beroende av tidigare engagemang- eller tillgänglighetsändringar.
 
 ### Tekniska överväganden
 
@@ -220,11 +220,11 @@ Anpassa kampanjer och erbjudanden baserat på säsongsinställningar, tidigare s
 
 ### Affärspåverkan
 
-Personaliserade kampanjer med säsongsbaserad annonsering ökar konverteringsgraden för bokning med 15-25 %, vilket säkerställer att marknadsföringsinvesteringarna koncentreras till de destinationer och reseprodukter som är mest troliga att få gensvar hos varje kund.
+Personaliserade kampanjer med säsongsbunden bokning ökar konverteringsgraden, vilket säkerställer att marknadsföringsinvesteringarna koncentreras till de destinationer och resprodukter som mest troligt får gensvar hos varje kund.
 
 ### Implementera
 
-Använd mönstret [Aktivera utgående batchmeddelande](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Detta tillvägagångssätt levererar personaliserade säsongskampanjer till stora målgrupper på regelbunden basis och segmenterar kunderna efter deras säsongsrelaterade resemönster och önskemål.
+Använd mönstret [Aktivera utgående batchmeddelande](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Detta tillvägagångssätt levererar personaliserade säsongskampanjer till stora målgrupper på regelbunden basis och segmenterar kunderna efter deras säsongsrelaterade resemönster och önskemål. Det här är det rätta mönstret när målgruppen är stor och fördefinierad av säsongsbokningshistorik. Leveranstiderna är schemalagda baserat på säsongsrelaterade planeringsfönster snarare än händelsestyrda, och ingen förgrening eller beslut krävs i realtid.
 
 ### Tekniska överväganden
 
@@ -240,11 +240,11 @@ Identifiera kunder som ofta bokar gruppresor och proaktivt rekommenderar grupppa
 
 ### Affärspåverkan
 
-Förebyggande rekommendationer för gruppbokning ökar det genomsnittliga ordervärdet med $1 000-$3 000 per bokning, vilket fångar upp det fulla värdet av gruppresetransaktioner som annars skulle kunna delas upp i flera enskilda reservationer.
+Förebyggande rekommendationer för gruppbokning ökar det genomsnittliga ordervärdet per bokning, vilket fångar upp hela värdet av gruppresetransaktioner som annars skulle kunna delas upp i flera enskilda reservationer.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna modeller som bygger på kundbokningsmönster och beteenden för att rekommendera de mest relevanta gruppresemöjligheterna för varje kund.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna modeller som bygger på kundbokningsmönster och beteenden för att rekommendera de mest relevanta gruppresemöjligheterna för varje kund. Det här är det rätta mönstret när artikeluppsättningen är stor och ständigt förändras - grupppaketen utvecklas med prissättning och tillgänglighet - och urvalet drivs av beteendemönster i gruppbokningshistorik snarare än en avgränsad uppsättning erbjudanden som styrs av reglerna för behörighet.
 
 ### Tekniska överväganden
 
@@ -252,3 +252,23 @@ Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/pe
 - Grupppaketpriset måste dras dynamiskt från bokningssystemet eftersom grupppriserna ofta skiljer sig från enskilda priser och kan kräva miniminivåer eller förskottsbokningsfönster.
 - Rekommendationsinnehållet ska ta upp grupporganisatörernas unika behov, inklusive information om gruppmatningsalternativ, mötesplatser, blockbokningsrabatter och tillgänglighet för gruppexponering.
 - Profilberikning för [!DNL Real-Time Customer Data Platform] ska flagga kunder som gruppreseorganisatörer baserat på deras bokningsmönster, vilket möjliggör riktade kampanjer under högtider för gruppplanering som familjesäsong eller företagsfönster.
+
+
+## AI Booking Concierge
+
+Rese- och turismorganisationer erbjuder komplexa, värdefulla inköpsresor där gästerna måste navigera bland flyg, rum, rumskategorier, sidotjänster och lojalitetsförmåner innan de förbinder sig till en bokning. Statiska gränssnitt för bläddring och filtrering ger beslutsutmattning och ökar avhoppet. Ett AI-bokningskoncernen engagerar gästerna i en naturlig konversation för att förstå deras reseavsikter, partistorlek, preferenser och budget och vägleder dem sedan steg för steg genom reseplanering, bostadsval och tilläggsalternativ - samtidigt som man ser lojalitetsfördelar som är relevanta för gästens skikt.
+
+### Affärspåverkan
+
+Vägledning om konversationsbokning förbättrar antalet slutförda samtal och därmed sammanhängande bilagor, samtidigt som det minskar antalet besökare som annars skulle ringa för att förtydliga alternativen.
+
+### Implementera
+
+Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md). Med den här metoden används Product Advisor Agent mot egenskaps- och tidskatalogen, med hjälp av AEP Agent Orchestrator-data och kundprofildata i realtid för att identifiera personaliserade alternativ och lojalitetsrelevanta rekommendationer via guidad fleromvänd dialog. Detta är det rätta mönstret när målet är interaktiv konversationsidentifiering i flera omgångar som bygger på ett komplext bokningsbeslut - skilt från händelseutlösta meddelanden, som reagerar på diskreta resenäråtgärder med enkelriktad utåtriktad marknadsföring, och från personaliserade webbupplevelser, som tar upp rekommendationer passivt utan att engagera gästen i en dialog. Det kräver AEP Agent Orchestrator och varumärkesstyrningskonfiguration.
+
+### Tekniska överväganden
+
+- Tillgänglighets- och prissättningsdata måste hållas aktuella genom nära realtidsintegrering mellan bokningssystemet och Brand Concierge innehållslager, eftersom rekommendationer om otillgängliga rumstyper eller felaktiga priser i en konversation omedelbart undergräver förtroendet.
+- Vid sökning efter kundprofiler i realtid måste kundens lojalitetsnivå, lagringshistorik och angivna inställningar visas, så att agenten proaktivt kan bekräfta gästens status och anpassa rekommendationer utan att gästen behöver förklara sina inställningar på nytt vid varje besök.
+- Varumärkesstyrningen måste definiera hur agenten hanterar frågor om matchning av frekvens, konkurrentreferenser och situationer där gästens önskade datum eller rumstyp inte är tillgängliga, så att agenten kan reagera smidigt inom varumärkesuttrycket i stället för att presentera en odödlig ände.
+- Konversationssignaler - inklusive destinationsintresse, resekomposition och närliggande preferenser som uttrycks under dialogen - måste flöda tillbaka till AEP som ExperienceEvent-data, vilket berikar gästprofilerna för att informera e-post, lojalitet och återengagemangskampanjer längre fram i kedjan.

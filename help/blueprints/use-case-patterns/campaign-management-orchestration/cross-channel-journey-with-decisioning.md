@@ -2,13 +2,13 @@
 title: Flerkanalsresor med beslut
 description: Lär dig att samordna en flerstegsresa som innefattar realtidsbeslut för att välja optimala kanaler, innehåll eller erbjudanden.
 solution: Journey Optimizer, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: eabdd91f-bb7d-4de3-adb5-5940d3ca4a78
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '8992'
-ht-degree: 0%
+source-wordcount: '9029'
+ht-degree: 1%
 
 ---
-
 
 # Flerkanalsresor med beslutsfattande
 
@@ -33,9 +33,12 @@ Det här mönstret passar bäst när:
 
 Målgruppen är bland annat marknadsförare som hanterar livscykelprogram, lojalitetsresor, återvinningssekvenser och introduktionsflöden där personalisering i stor skala kräver automatiskt beslutsfattande vid varje kontaktyta.
 
+>[!NOTE]
+>Om din resa inte kräver ett dynamiskt beslut på enskilda noder - till exempel ett program för näring eller introduktion med fast ordningsföljd - se [Flerstegsdirigerad resa](multi-step-orchestrated-journey.md). Det mönstret är enklare att konfigurera och kräver inte AJO Decisioning.
+
 ## Viktiga verksamhetsmål
 
-Följande affärsmål behandlas i det här användningsmönstret.
+Följande affärsmål stöds av det här användningsmönstret.
 
 **[Leverera personaliserade kundupplevelser](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)**
 Skräddarsy innehåll, erbjudanden och budskap efter enskilda preferenser, beteenden och livscykelsteg.
@@ -91,10 +94,10 @@ Samordna en flerstegs flerkanalsresa som innefattar realtidsbeslut på en eller 
 
 Följande program används för att implementera det här användningsmönstret.
 
-- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** - Resesamordning (design av arbetsyta i flera steg, startvillkor, väntevillkor, avslutsvillkor), meddelandeskapande över flera kanaler, kanalytkonfiguration, hantering av konflikter och prioriteter
+- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** - Resesamordning (design av arbetsyta i flera steg, startvillkor, väntevillkor, avslutsvillkor), meddelandeskapande över flera kanaler, kanalytkonfiguration, hantering av konflikter och prioriteter
 - **[!DNL Adobe Journey Optimizer]Beslut** - Hantering av erbjudanden och innehållsobjekt, regler för behörighet, rangordningsstrategier (prioritet, formel, AI), beslutsprinciper, ersättningar, reserverbjudanden
-- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** - Målgruppsutvärdering för registrering av resor och segment för erbjudandekvalificering, profilanrikning med beräknade attribut och benägenhetspoäng, samtycke och efterlevnadskontroll
-- **[!DNL Adobe Experience Platform] ([!DNL AEP])** - Kundprofilarkiv i realtid, identitetstjänst för flerkanalsupplösning, datamodellering och inmatningsinfrastruktur i realtid
+- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** - Målgruppsutvärdering för registrering av resor och segment för erbjudandekvalificering, profilanrikning med beräknade attribut och benägenhetspoäng, samtycke och efterlevnadskontroll
+- **[!DNL Adobe Experience Platform]([!DNL AEP])** - Kundprofilarkiv i realtid, identitetstjänst för flerkanalsupplösning, datamodellering och inmatningsinfrastruktur i realtid
 
 ## Foundationsfunktioner
 
@@ -102,11 +105,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Antagen på plats | [!DNL AJO]-sandlådan med konfigurerade behörigheter för resa, kampanj och beslut. Kanalytor för alla möjliga leveranskanaler. Användarroller för resedesigners, beslutsfattare och innehållsförfattare. | [Översikt över sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | Profilschemat måste innehålla attribut som används för beslut (till exempel lojalitetsnivå, inköpshistorik, kanalinställningar, engagemangspoäng). Erbjudandekatalog och beslutsscheman måste konfigureras. ExperienceEvent-scheman måste fånga upp beteendesignaler som används av regler för behörighet och rankningsformler. | [Systemöversikt för XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition) |
-| Datakällor och samling | Antagen på plats | Profilattribut och beteendesignaler som används vid beslut måste vara aktuella. Händelseströmning i realtid behövs om resan använder händelseutlösta kriterier för inträde eller utträde. Web SDK, Mobile SDK eller serversidessamling måste vara aktiva för kanaler som har feed-beslutssammanhang. | [Översikt över Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home), [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home) |
-| Konfiguration av identitet och profil | Obligatoriskt | Identitetsupplösning för flera kanaler är avgörande - resan måste matcha profiler via e-post, push, SMS och webben. Sammanslagningsprinciper måste skapa en enhetlig profil för beslut. Identitetsnamnutrymmen för alla kundidentifierare (CRM-ID, e-post, ECID, telefon) måste konfigureras. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview) |
-| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinition för resan. Ytterligare segment som används för att erbjuda regler för kvalificering och villkorsförgreningar under resan. Utvärderingsmetoden måste matcha latenskraven (direktuppspelning för registrering i realtid, batch för schemalagd). | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) |
+| Administration och styrning | Antagen på plats | [!DNL AJO]-sandlådan med konfigurerade behörigheter för resa, kampanj och beslut. Kanalytor för alla möjliga leveranskanaler. Användarroller för resedesigners, beslutsfattare och innehållsförfattare. | [Översikt över sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home), [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | Profilschemat måste innehålla attribut som används för beslut (till exempel lojalitetsnivå, inköpshistorik, kanalinställningar, engagemangspoäng). Erbjudandekatalog och beslutsscheman måste konfigureras. ExperienceEvent-scheman måste fånga upp beteendesignaler som används av regler för behörighet och rankningsformler. | [Systemöversikt för XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
+| Datakällor och samling | Antagen på plats | Profilattribut och beteendesignaler som används vid beslut måste vara aktuella. Händelseströmning i realtid behövs om resan använder händelseutlösta kriterier för inträde eller utträde. Web SDK, Mobile SDK eller serversidessamling måste vara aktiva för kanaler som har feed-beslutssammanhang. | [Översikt över Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| Konfiguration av identitet och profil | Obligatoriskt | Identitetsupplösning för flera kanaler är avgörande - resan måste matcha profiler via e-post, push, SMS och webben. Sammanslagningsprinciper måste skapa en enhetlig profil för beslut. Identitetsnamnutrymmen för alla kundidentifierare (CRM-ID, e-post, ECID, telefon) måste konfigureras. | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Översikt över sammanslagningsprinciper](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
+| Målgruppsdefinition och segmentering | Obligatoriskt | Målgruppsdefinition för resan. Ytterligare segment som används för att erbjuda regler för kvalificering och villkorsförgreningar under resan. Utvärderingsmetoden måste matcha latenskraven (direktuppspelning för registrering i realtid, batch för schemalagd). | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Användargränssnittsguide för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## Stödfunktioner
 
@@ -114,11 +117,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut som till exempel kundernas AI-poängtal, engagemangsmätningar, kanalpreferenser och beräkningar av livstidsvärden förbättrar beslutskvaliteten avsevärt. Dessa förhöjda profilattribut möjliggör mer sofistikerade regler för behörighet och rankningsformler. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview), [Översikt över AI för kunder](https://experienceleague.adobe.com/sv/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| Livscykelhantering för data | Rekommenderad | Erbjud historik- och beslutshändelsedata ackumuleras över tid och bör ha lagringspolicyer. Det är viktigt att kunna genomdriva samtycke över flera kanaler - profiler utan giltigt samtycke för en kanal måste uteslutas från den kanalens leveransväg. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home), [Medgivande i Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Styrning över flera kanaler och erbjudandetyper är viktigt när beslut kan dirigera profiler till olika kanaler med olika begränsningar för dataanvändning. Ser till att erbjudandet levereras korrekt över alla kanaler. | [Översikt över datastyrning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home), [Krävande av principer](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/overview) |
-| Övervakning och observerbarhet | Ingår | Resekontroll och beslutsövervakning är av största vikt för produktionsverksamheten. Varningar vid fel vid registrering av resor, beslut om reservtoppar och leveransfel möjliggör snabb problemlösning. | [Aviseringsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview), [Översikt över Insikter i observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home) |
-| Rapportering och analys | Ingår | Reserapporter och beslutsrapporter ingår i rapporteringsfasen. CJA analys av beslutseffektivitet, optimering av kanalmixning, resultat och avkastning på kundresan ger de insikter som behövs för att förfina rangordningsstrategier och optimera kundresan över tid. | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview), [AJO + CJA - integreringsguide](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Beräknade attribut som till exempel kundernas AI-poängtal, engagemangsmätningar, kanalpreferenser och beräkningar av livstidsvärden förbättrar beslutskvaliteten avsevärt. Dessa förhöjda profilattribut möjliggör mer sofistikerade regler för behörighet och rankningsformler. | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview), [Översikt över AI för kunder](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| Livscykelhantering för data | Rekommenderad | Erbjud historik- och beslutshändelsedata ackumuleras över tid och bör ha lagringspolicyer. Det är viktigt att kunna genomdriva samtycke över flera kanaler - profiler utan giltigt samtycke för en kanal måste uteslutas från den kanalens leveransväg. | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home), [Medgivande i Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Styrning över flera kanaler och erbjudandetyper är viktigt när beslut kan dirigera profiler till olika kanaler med olika begränsningar för dataanvändning. Ser till att erbjudandet levereras korrekt över alla kanaler. | [Översikt över datastyrning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home), [Krävande av principer](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
+| Övervakning och observerbarhet | Ingår | Resekontroll och beslutsövervakning är av största vikt för produktionsverksamheten. Varningar vid fel vid registrering av resor, beslut om reservtoppar och leveransfel möjliggör snabb problemlösning. | [Aviseringsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview), [Översikt över Insikter i observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| Rapportering och analys | Ingår | Reserapporter och beslutsrapporter ingår i rapporteringsfasen. CJA analys av beslutseffektivitet, optimering av kanalmixning, resultat och avkastning på kundresan ger de insikter som behövs för att förfina rangordningsstrategier och optimera kundresan över tid. | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [AJO + CJA - integreringsguide](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
 ## Programfunktioner
 
@@ -199,7 +202,7 @@ Erbjudandeplaceringar bäddas in direkt i meddelandeinnehållet med e-post-Desig
 #### Experience League-referenser
 
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
 
 ### Alternativ B: Resa med dynamiskt kanalval (fast innehåll, dynamisk kanal)
 
@@ -236,8 +239,8 @@ Med den här metoden optimeras leveranskanalen samtidigt som innehållet är rel
 
 #### Experience League-referenser
 
-- [Villkorsaktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Skapa en resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Villkorsaktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Skapa en resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 
 ### Alternativ C: En helt anpassningsbar resa (dynamisk kanal + dynamiskt innehåll)
 
@@ -276,7 +279,7 @@ Detta är den mest komplexa varianten och kräver den djupaste integrationen mel
 
 #### Experience League-referenser
 
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
 - [Rankningsstrategier](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 
 ### Jämförelse av alternativ
@@ -351,10 +354,10 @@ Hur snabbt måste målgruppen kvalificera sig för profiler?
 
 #### Experience League-dokumentation
 
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Edge segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Profile Query Language referens](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/pql/overview)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Edge segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### Fas 2: Kanalkonfiguration
 
@@ -394,10 +397,10 @@ Hur ska den sändande underdomänen delegeras till Adobe?
 
 #### Experience League-dokumentation
 
-- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [Delegera underdomäner](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [Skapa IP-pooler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
-- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [Konfigurera kanal för push-meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### Fas 3: Beslutsinställningar
@@ -462,9 +465,9 @@ Konfigurera två beslutsskikt: en uppsättning beslutsprofiler för kanalval och
 
 #### Experience League-dokumentation
 
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Skapa placeringar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Skapa beslutsregler](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Skapa placeringar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Skapa beslutsregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Skapa personaliserade erbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Skapa reserverbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Skapa samlingar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -526,10 +529,10 @@ Varje kanal har sitt eget meddelandeinnehåll med inbäddade erbjudandeplacering
 - [Lägg till personalisering](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Dynamiskt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [Skapa ett SMS-meddelande](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/create-sms)
-- [Utforma ett push-meddelande](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/push/design-push)
+- [Skapa ett SMS-meddelande](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/create-sms)
+- [Utforma ett push-meddelande](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/design-push)
 
 ### Fas 5: Resedesign och aktivering
 
@@ -604,18 +607,18 @@ Kombinera villkorsnoder för val av kanaler med åtgärdsnoder för beslutsmedde
 
 #### Experience League-dokumentation
 
-- [Skapa en resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [Resans egenskaper](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [Läs målgruppsaktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [Villkorsaktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Vänta på aktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Lägg till ett meddelande i en resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Skapa en resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Resans egenskaper](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [Läs målgruppsaktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [Villkorsaktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Vänta på aktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [Lägg till ett meddelande i en resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Avslutningskriterier](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Anställningshantering](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Testa din resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Testa din resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Publicera resan](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
-- [Prioritetspoäng](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [Översikt över hantering av konflikter och prioritet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [Prioritetspoäng](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Översikt över hantering av konflikter och prioritet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
 - [Frekvensregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### Fas 6: Rapportering och övervakning
@@ -649,8 +652,8 @@ Vilken nivå av rapportanalys krävs?
 - [Rapport om livesändning på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Global reserapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Arbeta med Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
-- [Integreringsguide för AJO + CJA](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Integreringsguide för AJO + CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## Implementeringsöverväganden
 
@@ -658,7 +661,7 @@ Granska följande utkast, vanliga fallgropar, bästa praxis och beslut om kompro
 
 ### Gardrutor och begränsningar
 
-- Maximalt 500 live-resor per sandlåda - [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
+- Maximalt 500 live-resor per sandlåda - [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 - Den maximala transporttiden är 91 dagar (global tidsgräns)
 - Max 50 aktiviteter per arbetsyta
 - Läs målgruppsresor kan bearbeta upp till 20 000 profiler per sekund
@@ -670,7 +673,7 @@ Granska följande utkast, vanliga fallgropar, bästa praxis och beslut om kompro
 - Högst 10 kanalytor per kanaltyp per sandlåda
 - Väntestegen har en minsta varaktighet på 1 timme för målgruppsläsningar
 - Minsta antal återinträde på resan är 5 minuter
-- Maximalt 4 000 segmentdefinitioner per sandlåda - [Plattformsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- Maximalt 4 000 segmentdefinitioner per sandlåda - [Plattformsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 ### Vanliga fallgropar
 
@@ -748,96 +751,96 @@ Följande resurser innehåller ytterligare information om de funktioner som anv�
 
 ### Resesamordning
 
-- [Kom igång med resor](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [Skapa en resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [Resans egenskaper](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [Läs målgruppsaktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [Allmänna händelser](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [Elevkvalificeringshändelser](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
-- [Villkorsaktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Vänta på aktivitet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Lägg till ett meddelande i en resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Kom igång med resor](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
+- [Skapa en resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Resans egenskaper](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [Läs målgruppsaktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [Allmänna händelser](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
+- [Elevkvalificeringshändelser](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [Villkorsaktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Vänta på aktivitet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [Lägg till ett meddelande i en resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Avslutningskriterier](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Anställningshantering](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Testa din resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Testa din resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Publicera resan](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
 
 ### Beslutsledning
 
-- [Beslutsledning - översikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Skapa placeringar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Skapa beslutsregler](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Beslutsledning - översikt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
+- [Skapa placeringar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Skapa beslutsregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Skapa personaliserade erbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Skapa reserverbjudanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Skapa samlingar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [Skapa samlingskvalificerare](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [Skapa samlingskvalificerare](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [Skapa beslut](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [Rankningsstrategier](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [Leverera erbjudanden i meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### Kanalkonfiguration
 
-- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Kom igång med e-postkonfiguration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [Delegera underdomäner](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [Skapa IP-pooler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
 - [Planer för IP-värmare](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-warmup/ip-warmup-gs)
-- [Inställningar för e-postyta](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
-- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Inställningar för e-postyta](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
+- [Konfigurera SMS-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [Konfigurera kanal för push-meddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### Framtagning och personalisering av meddelanden
 
-- [Skapa ett e-postmeddelande](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/create-email)
+- [Skapa ett e-postmeddelande](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/create-email)
 - [Designa e-postinnehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/design-emails)
 - [Lägg till personalisering](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Personalization syntax](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [Dynamiskt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Arbeta med innehållsmallar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [Förhandsgranska och testa ditt innehåll](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/preview-test/preview-test)
+- [Förhandsgranska och testa ditt innehåll](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/preview-test/preview-test)
 
 ### Hantering av konflikter, prioritet och frekvens
 
-- [Översikt över hantering av konflikter och prioritet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
-- [Prioritetspoäng](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [Identifiera potentiella konflikter](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/conflicts)
-- [Resegotypning och skiljeförfarande](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
+- [Översikt över hantering av konflikter och prioritet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [Prioritetspoäng](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Identifiera potentiella konflikter](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/conflicts)
+- [Resegotypning och skiljeförfarande](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
 - [Frekvensregler](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### Målgrupper och segmentering
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Edge segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Målgruppssammansättning](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition)
-- [Profile Query Language referens](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/pql/overview)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Edge segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Målgruppssammansättning](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Profile Query Language referens](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### Rapportering och analys
 
 - [Rapport om livesändning på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Global reserapport](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Arbeta med Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Integreringsguide för AJO + CJA](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
-- [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
+- [Integreringsguide för AJO + CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 ### Profil och identitet
 
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
-- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview)
-- [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
-- [Översikt över AI för kunder](https://experienceleague.adobe.com/sv/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [Översikt över AI för kunder](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### Datastyrning och samtycke
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [Samtycke i Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted)
-- [Hantera undertryckningslista](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
+- [Hantera undertryckningslista](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
 
 ### Skyddsräcken
 
-- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/guardrails)
-- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
-- [Garantier för identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails)
+- [Journey Optimizer skyddsräcken](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Garantier för identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)

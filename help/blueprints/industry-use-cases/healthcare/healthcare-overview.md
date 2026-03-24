@@ -2,17 +2,20 @@
 title: Handlingar
 description: Upptäck hur sjukvårdsorganisationer använder Adobe Experience Platform för att förbättra patienternas engagemang, effektivisera samordningen av vården och få bättre hälsoresultat.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: 8da82711-a783-488d-a0ed-070b33ecbbc4
+source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 1%
+source-wordcount: '3818'
+ht-degree: 0%
 
 ---
-
 
 # Handlingar
 
 Sjukvårdsorganisationer använder Adobe Experience Platform för att skapa enhetliga patientprofiler och leverera personaliserad kommunikation i rätt tid över alla kontaktytor. Genom att knyta samman kliniska data, beteendedata och preferensdata på ett och samma ställe kan vårdpersonal engagera patienter mer effektivt samtidigt som högsta standard för sekretess och efterlevnad upprätthålls.
+
+>[!IMPORTANT]
+>Fall av hälso- och sjukvårdsanvändning omfattar skyddad hälsoinformation (PHI) som omfattas av HIPAA och andra tillämpliga bestämmelser. Innan du implementerar något av dessa mönster måste du se till att [!DNL Adobe Experience Platform] har etablerats som en HIPAA-kvalificerad tjänst och att ett Business Associate-avtal (BAA) har skapats med Adobe. De tekniska övervägandena i varje avsnitt belyser viktiga krav på efterlevnad, men är inte uttömmande. Samarbeta med era jurister, regelefterlevnadsteam och säkerhetsteam för att validera implementeringen mot alla tillämpliga lagstadgade krav.
 
 ## Påminnelseautomatisering för avtalad tid
 
@@ -20,11 +23,11 @@ Skicka personliga påminnelser om möten via e-post, sms och push-meddelanden ba
 
 ### Affärspåverkan
 
-Organisationer som implementerar påminnelser om automatiska möten ser vanligtvis en 30-40-procentig förbättring av antalet besökstillfällen och en betydande minskning av kostsamma antal ej uträknade möten.
+Organisationer som implementerar påminnelser om automatiska möten ser mätbara förbättringar av antalet avtalade tider och en meningsfull minskning av kostsamma inga visningar.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Skapande och uppdatering av avtalade tider från schemaläggningssystemet fungerar som naturliga utlösare för relevanta påminnelsemeddelanden i rätt tid.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Skapande och uppdatering av avtalade tider från schemaläggningssystemet fungerar som naturliga utlösare för relevanta påminnelsemeddelanden i rätt tid. Detta är det rätta mönstret när en diskret avtalad tid utlöses och det svar som krävs är ett enda, tidskänsligt meddelande - snarare än en kontinuerlig engagemangssekvens, eftersom patienterna behöver en omedelbar bekräftelse utan uppföljningssteg.
 
 ### Tekniska överväganden
 
@@ -40,11 +43,11 @@ Skicka personliga påminnelser och utbildningsmaterial för att hjälpa patiente
 
 ### Affärspåverkan
 
-Personaliserade uppföljningskampanjer inom medicin leder normalt till en 20 till 30-procentig förbättring av följsamhetsgraden, vilket leder till mätbart bättre hälsoresultat och färre återbesök på sjukhus.
+Personaliserade uppföljningskampanjer för medicinering bidrar till att förbättra följsamheten, vilket leder till bättre hälsoresultat och färre återbesök på sjukhus.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. För att upprätthålla medicineringen krävs en kontinuerlig, flerberöringsstrategi med eskalerande påminnelser, kontaktpunkter för utbildning och uppföljningskontroller under en behandlingsplan.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. För att upprätthålla medicineringen krävs en kontinuerlig, flerberöringsstrategi med eskalerande påminnelser, kontaktpunkter för utbildning och uppföljningskontroller under en behandlingsplan. Det här är det rätta mönstret eftersom medicinering kräver ett sekvensflöde med flera meddelanden på dagar eller veckor med villkorlig förgrening baserat på påfyllnadshändelser och engagemangssignaler - ett enda triggat meddelande kan inte hantera beroendelogiken mellan utbildningssteg och eskaleringsvägar.
 
 ### Tekniska överväganden
 
@@ -60,11 +63,11 @@ Påminn proaktivt patienter om rekommenderad förebyggande vård såsom vaccinat
 
 ### Affärspåverkan
 
-Förebyggande förebyggande vård leder normalt till en ökning på 25 till 35 procent av andelen patienter som färdigställer förebyggande vård, vilket bidrar till förbättrad folkhälsa och minskade kostnader för långtidsbehandling.
+Förebyggande förebyggande vård leder till bättre slutförandegrad av förebyggande vård, vilket bidrar till bättre folkhälsa och minskade kostnader för långtidsbehandling.
 
 ### Implementera
 
-Använd mönstret [Aktivera utgående batchmeddelande](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Påminnelser om förebyggande vård ges bäst genom schemalagda batchkampanjer som utvärderar patienternas rätt till behandling i förhållande till kliniska riktlinjer med regelbunden uppföljning.
+Använd mönstret [Aktivera utgående batchmeddelande](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Påminnelser om förebyggande vård ges bäst genom schemalagda batchkampanjer som utvärderar patienternas rätt till behandling i förhållande till kliniska riktlinjer med regelbunden uppföljning. Detta är det rätta mönstret när målgruppen är fördefinierad av kliniska riktlinjer och leveranstider är schemalagda på en vanlig cadence snarare än händelsestyrd, och ingen förgrening eller beslut krävs i realtid.
 
 ### Tekniska överväganden
 
@@ -80,11 +83,11 @@ Skicka automatiskt enkäter, omvårdnadsinstruktioner och påminnelser efter bes
 
 ### Affärspåverkan
 
-Automatiserade uppföljningskampanjer efter besök ger normalt en 40 till 50 procents förbättring av svarsfrekvensen för undersökningar och mätbart högre poängtal för patientnöjdhet.
+Automatiserade uppföljningskampanjer efter besök ger bättre svarsfrekvens för undersökningar och högre poängvärden för patientnöjdhet.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Besök slutförandehändelser från det elektroniska patientjournalsystemet som ger en naturlig och snabb utlösare för uppföljningskommunikation som är skräddarsydd för påräkningstypen.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Besök slutförandehändelser från det elektroniska patientjournalsystemet som ger en naturlig och snabb utlösare för uppföljningskommunikation som är skräddarsydd för påräkningstypen. Det här är det rätta mönstret när en händelse för att slutföra ett besök är utlösaren och det svar som krävs är en omedelbar uppföljning som är skräddarsydd för att hitta typ - snarare än en sekvens i flera steg, eftersom varje besök genererar ett eget oberoende uppföljningsbehov.
 
 ### Tekniska överväganden
 
@@ -100,11 +103,11 @@ Personalisera kommunikation om hantering av kroniska sjukdomar, utbildningsmater
 
 ### Affärspåverkan
 
-I personaliserade program för hantering av kroniska sjukdomar ökar programengagemanget med 30 till 40 procent, vilket leder till bättre sjukdomshanteringsresultat och minskat utnyttjande av akutvård.
+Personaliserade program för hantering av kroniska sjukdomar ser ökad delaktighet i programmet, vilket leder till bättre sjukdomshanteringsresultat och minskat utnyttjande av akutvård.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Hantering av kronisk sjukdom är i sig en långvarig, flerpunktsupplevelse som kräver adaptiva meddelanden baserat på patientengagemang och milstolpar inom hälsoområdet.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Hantering av kronisk sjukdom är i sig en långvarig, flerpunktsupplevelse som kräver adaptiva meddelanden baserat på patientengagemang och milstolpar inom hälsoområdet. Detta är det rätta mönstret eftersom hantering av kroniska sjukdomar kräver adaptiva meddelanden under en längre period med villkorlig förgrening baserad på kliniska mätvärden och engagemangsmönster - händelseutlösta meddelanden kan inte hantera den pågående dynamiska omprövningen som behövs för att justera interventioner baserat på förändrade hälsodata.
 
 ### Tekniska överväganden
 
@@ -120,11 +123,11 @@ Automatisera en introduktionsresa i flera steg för nya patienter som innehålle
 
 ### Affärspåverkan
 
-Automatiserade nya patientintroduktionsresor ger normalt en 50 till 60-procentig förbättring av portalaktiveringshastigheten och betydligt högre tidig patientinteraktion.
+Automatiserade nya patientintroduktionsresor bidrar till att öka antalet portalaktiveringar och stärka det tidiga patientengagemanget.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Patientintroduktion är en naturligt sekventiell flerstegsprocess där varje kommunikation bygger på det tidigare och anpassas beroende på om patienten har slutfört de viktigaste åtgärderna.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Patientintroduktion är en naturligt sekventiell flerstegsprocess där varje kommunikation bygger på det tidigare och anpassas beroende på om patienten har slutfört de viktigaste åtgärderna. Det här är det rätta mönstret eftersom introduktionen kräver ett sekventiellt, beroende flöde över flera dagar med förgreningar baserat på patientåtgärder (portalaktivering, ifyllnad av formulär) - ett enda meddelande eller en satsbaserad metod kan inte hantera det inbördes beroendet mellan steg eller anpassa sig till progressiv slutförande.
 
 ### Tekniska överväganden
 
@@ -140,11 +143,11 @@ Leverera personaliserat innehåll, hälsotips och resurser för hälsoutbildning
 
 ### Affärspåverkan
 
-Personaliserat innehåll på hälsoområdet når normalt en 35-45-procentig ökning av engagemanget, vilket leder till avsevärt förbättrad patientutbildning och hälsoförståelse.
+Personaliserat innehåll på hälsoområdet når upp till högre engagemang, vilket leder till förbättrad patientutbildning och hälsoförståelse.
 
 ### Implementera
 
-Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Leverans av hälsoinnehåll drar nytta av realtidsbeslut som väljer det mest relevanta innehållet för varje patient baserat på deras villkor, önskemål och tidigare engagemang, som levereras via den kanal de föredrar.
+Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Leverans av hälsoinnehåll drar nytta av realtidsbeslut som väljer det mest relevanta innehållet för varje patient baserat på deras villkor, önskemål och tidigare engagemang, som levereras via den kanal de föredrar. Det här är det rätta mönstret när innehållsvalet måste ta hänsyn till patientförhållanden, samtycke och kanalpreferenser samtidigt som det förhindrar duplicering eller utmattning av leveransen - i flerstegssamordning finns inte det realtidslager som behövs för att matcha dynamiskt innehåll med individuella patientbehov.
 
 ### Tekniska överväganden
 
@@ -160,11 +163,11 @@ Meddela patienterna när labbresultaten är tillgängliga via den kommunikations
 
 ### Affärspåverkan
 
-Automatiserade labbresultatmeddelanden ger normalt en 60 till 70-procentig ökning av antalet visade resultat, vilket förbättrar patientkommunikationen och möjliggör snabbare klinisk uppföljning när resultaten kräver åtgärder.
+Automatiserade labbresultatmeddelanden hjälper till att öka tittarfrekvensen, förbättrar patientkommunikationen och möjliggör snabbare klinisk uppföljning när resultaten kräver åtgärder.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tillgänglighet för Lab-resultat är en diskret händelse som kräver ett omedelbart, enda meddelande via den kanal patienten föredrar.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tillgänglighet för Lab-resultat är en diskret händelse som kräver ett omedelbart, enda meddelande via den kanal patienten föredrar. Detta är det rätta mönstret när en diskret labbresultathändelse är utlösaren och det svar som krävs är en enda, omedelbar avisering - snarare än en sekvens med flera meddelanden, eftersom patienterna behöver en snabb avisering för att kontrollera portalen utan ytterligare uppföljningskommunikation.
 
 ### Tekniska överväganden
 
@@ -180,11 +183,11 @@ Kontrollera och förmedla information om försäkringsskydd till patienterna inn
 
 ### Affärspåverkan
 
-Proaktiv kontroll av försäkringsskydd resulterar normalt i en 25 till 35-procentig förbättring av bekräftelsefrekvensen före besök och en meningsfull minskning av faktureringstvister och patientklagomål.
+Proaktiv kontroll av försäkringsskydd resulterar i förbättrad bekräftelsefrekvens före besök och en meningsfull minskning av antalet faktureringstvister och patientklagomål.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tidsplaneringshändelser för möten fungerar som en utlösare för att påbörja disponeringsverifiering och informera patienten om resultaten före besöket.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tidsplaneringshändelser för möten fungerar som en utlösare för att påbörja disponeringsverifiering och informera patienten om resultaten före besöket. Detta är det rätta mönstret när en diskret avtalad tid-schemaläggningshändelse är utlösaren och det svar som krävs är ett enda tidskänsligt meddelande om täckning - i stället för en interaktionssekvens i flera steg, eftersom patienten behöver ett tydligt meddelande innan han eller hon utses.
 
 ### Tekniska överväganden
 
@@ -200,11 +203,11 @@ Skicka personliga påminnelser för telefonmöten med anslutningsanvisningar, ti
 
 ### Affärspåverkan
 
-Påminnelser om personliga möten i telekommunikationer leder vanligtvis till en förbättring på 40 till 50 procent av antalet virtuella besök och ökar den totala användningen av telesäkrar i hela patientpopulationen.
+Påminnelser om personliga möten i telekommunikationen bidrar till att förbättra antalet virtuella besök och påskynda det övergripande införandet av telhälso- och sjukvård i hela patientpopulationen.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tidsplaneringshändelser för möten inom telehälsa är en naturlig utlösare för påminnelser i rätt tid som innehåller anslutningsinformation och vägledning om förberedelser.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Tidsplaneringshändelser för möten inom telehälsa är en naturlig utlösare för påminnelser i rätt tid som innehåller anslutningsinformation och vägledning om förberedelser. Detta är det rätta mönstret när ett diskret möte i telekommunikationen är utlösaren och det svar som krävs är en enda, omedelbar påminnelse med teknisk vägledning - snarare än en sekvens i flera steg, eftersom patienterna behöver tydliga instruktioner före tillsättningen utan efterföljande uppföljningsmeddelanden.
 
 ### Tekniska överväganden
 
@@ -220,11 +223,11 @@ Anpassa kommunikationen, utmaningarna och belöningen för välkända program ut
 
 ### Affärspåverkan
 
-Personaliserade kampanjer för hälsoprogram bidrar vanligtvis till att öka deltagandet i programmen med 30 till 40 procent, vilket bidrar till förbättrade hälsoresultat och ökad lojalitet hos patienten.
+Personaliserade kampanjer för hälsoprogram leder till ökad delaktighet i programmet, vilket bidrar till bättre hälsoresultat och ökad lojalitet hos patienten.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Välfärdsprogram är varaktiga engagemangsupplevelser med flera milstolpar, utmaningar och belöningar som kräver adaptiv samordning baserat på patientens deltagande och framsteg.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Välfärdsprogram är varaktiga engagemangsupplevelser med flera milstolpar, utmaningar och belöningar som kräver adaptiv samordning baserat på patientens deltagande och framsteg. Det här är det rätta mönstret eftersom hälsoprogram kräver ett sekvensflöde med flera meddelanden under en längre period med villkorlig förgrening baserat på milstolpar för deltagande och engagemangsmönster - händelseutlösta meddelanden kan inte hantera den hållbara, adaptiva orkestrering som behövs för att justera utmaningar och belöningar baserat på pågående uppföljning av framsteg.
 
 ### Tekniska överväganden
 
@@ -240,11 +243,11 @@ Möjliggör anpassad kommunikation och samordning mellan patienter och deras vå
 
 ### Affärspåverkan
 
-Effektiv kommunikation i form av samordning mellan vårdteam resulterar vanligtvis i en 35-45-procentig förbättring av vårdteamets engagemang och mätbart bättre resultat av samordningen mellan vårdplaner för flera vårdgivare.
+Effektiv kommunikation i form av samordning av vårdteam leder till bättre engagemang i vårdteam och bättre resultat av samordning av vården över flera vårdplaner.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Samordning i vårdteam innefattar flera intressenter och kontinuerliga kommunikationsflöden som måste anpassas baserat på milstolpar i vårdplanen, förändringar av patientstatus och leverantörsåtgärder.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Samordning i vårdteam innefattar flera intressenter och kontinuerliga kommunikationsflöden som måste anpassas baserat på milstolpar i vårdplanen, förändringar av patientstatus och leverantörsåtgärder. Detta är det rätta mönstret eftersom vårdsamordning kräver adaptiva meddelandeflöden i flera steg som bygger på milstolpar för vårdplaner och leverantörsåtgärder för flera intressenter - ett enda meddelande eller ett enklare mönster kan inte hantera de komplexa, inbördes beroenden och rollbaserade meddelanderutiner som behövs i alla kliniska team.
 
 ### Tekniska överväganden
 
@@ -252,3 +255,62 @@ Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/camp
 - Integrera med system för hantering av vård och elektroniska patientjournaler för att få uppdateringar av vårdplanen, slutförda hänvisningar och övergångshändelser som utlöser samordningsmeddelanden.
 - Designa olika kommunikationsvägar för patienttillvända och leverantörstillvända meddelanden och se till att klinisk terminologi används på rätt sätt för leverantörer medan patientmeddelandena förblir tydliga och tillgängliga.
 - Upprätthåll en fullständig verifieringskedja över all kommunikation för samordning av vården för att uppfylla reglerna för kontinuitet och ackrediteringskrav.
+
+
+## Patientresa Funnel och vårdmellanrumsanalys
+
+Kartlägg hela patientresan, från inledande webbforskning till schemaläggning av möten, leverans av vård och uppföljning, för att identifiera var patienterna faller bort och vilka populationer som har brister i rekommenderad förebyggande eller kronisk vård. Hälsosystem som saknar synlighet för flerkanaliga resor kan inte skilja mellan schemaläggning av friktion och bortfall av patienter - vilket begränsar deras förmåga att förbättra tillgången och täppa till luckor i vården i stor skala.
+
+### Affärspåverkan
+
+Genom att förstå var patienter faller bort från behandlingsvägarna och vilka medlemssegment som har den högsta koncentrationen av vårdluckor kan ansvariga och marknadsföringsteamen fokusera på de yttre resurserna på populationer och friktionspunkter som kommer att ge den största förbättringen av vårdefterlevnaden.
+
+### Implementera
+
+Använd mönstret [Kundanalys och insiktsgenerering](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Den här metoden kopplar samman webb- och portalbeteendedata, poster för avtalade tider och vårdanspråk med Customer Journey Analytics, där bortfallsanalys mäter bortfall vid varje schemaläggnings- eller vårdsteg och kohortanalys identifierar vilka medlemssegment som har lägst noggrannhetsgrad. Detta är det rätta mönstret när målet är att generera insikter och analysera populationsnivå - förstå var resorna faller ned och vem som är mest i farozonen - i stället för att utlösa en outreach eller aktivera en suppressionslista.
+
+### Tekniska överväganden
+
+- Uppsägnings- och anspråksdata från kliniska system måste mappas till HIPAA-kompatibla XDM-scheman innan man får in i AEP, och dataanvändningsetiketter måste användas för att begränsa tillgången till skyddad hälsoinformation inom CJA datavyer.
+- Identifierare av patienter eller medlemmar i webbportalen, schemaläggningssystemet och EHR måste matchas med ett konsekvent person-ID i CJA-anslutningen för att skapa en sammanhängande systemövergripande resevy utan att behöva duplicera enskilda personer.
+- För analys av vårdgap krävs uppslagsuppsättningar med kliniska riktlinjer som kodar definitioner - t.ex. rekommenderade screeningintervall efter ålder och tillstånd - så att CJA härledda fält kan flagga medlemmar som inte har slutfört rekommenderad vård i riktlinjefönstret.
+- Schemaläggning av funnel-analys bör fånga både avslutade och övergivna schemaläggningssessioner, inklusive avslutspunkter i schemaläggningsflöden i flera steg, så att friktionspunkter visas på stegnivå i stället för som aggregerade bortfallsfrekvenser.
+
+
+## Innehåll i patientportal Personalization
+
+Anpassa den autentiserade patientportalupplevelsen genom att ta del av det mest relevanta hälsoinnehållet, verktygen och resurserna baserat på varje patients surfbeteende och engagemangshistorik. En portal som anpassar sig efter vad en patient aktivt undersöker - istället för att presentera samma statiska upplevelse för varje besökare - gör det enklare för patienterna att hitta det de behöver och uppmuntrar till djupare engagemang med tillgängliga hälsoresurser.
+
+### Affärspåverkan
+
+Personalisering av patientportalupplevelsen baserat på engagemangsbeteenden ger förbättrad innehållsidentifiering och snabbare självbetjäning, vilket gör att patienterna kan navigera mer tillförlitligt utan att vårdteamet behöver göra något.
+
+### Implementera
+
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Beteendesignaler under sessioner från den autentiserade portalen - inklusive visningar av innehållssidor, användning av hälsoverktyg, engagemang i vanliga frågor och schemaläggning av möten - utbilda en rekommendationsmodell som hämtar de mest relevanta resurserna för varje patient baserat på vad de aktivt utforskar, utan att det krävs kliniska data som indata. Detta är det rätta mönstret när personalisering styrs av implicita beteendesignaler i en autentiserad session och målet är relevansrankning av ett innehåll och en resurskatalog - i stället för ett styrt beslut om behörighet, vilket är lämpligare när kliniska kriterier måste styra vad en patient ser.
+
+### Tekniska överväganden
+
+- Begränsa beteendesignaler som används för rekommendationer för interaktionsdata på portalen - innehållsvyer, verktygsanvändning och navigeringsmönster - och implementera dataanvändningsetiketter som förhindrar att misstänkta hälsointressen flödar utanför den autentiserade portalsessionen eller in i marknadsföringskanaler.
+- Implementera ett kliniskt granskat innehållsbibliotek som rekommendationspool så att modellen endast kan visa förgodkänt utbildningsmaterial för hälsovård, vilket säkerställer att alla rekommenderade resurser har validerats för precision före driftsättningen.
+- Se till att rekommendationssystemet uppfyller HIPAA:s tekniska säkerhetskrav för den autentiserade portalmiljön, inklusive timeout-kontroller för sessioner och granskningsloggning av vilket innehåll som presenteras för varje patient och när.
+- Förse patienterna med synliga kontroller för att rensa deras portalwebbhistorik och avanmäla sig från beteendeanpassning, behålla transparensen och förtroendet för hur deras interaktionsdata används i portalupplevelsen.
+
+## Påminnelser om patientengagemang och avtalade tider
+
+Skicka personliga påminnelser om möten, hälsotips och uppföljningsmeddelanden via kompatibla, medgivandemedvetna flerkanalsresor. Automatiserade, personaliserade påminnelser om möten minskar antalet visningar samtidigt som kommunikationen följer sekretesslagstiftningen inom hälso- och sjukvården och patientens önskemål om samtycke.
+
+### Affärspåverkan
+
+Sjukvårdsorganisationer med automatiserade påminnelseprogram för möten ser meningsfulla minskningar av antalet misslyckade besök och avbrutna möten, vilket förbättrar användningen av leverantörsschemat och patienternas hälsa genom bättre tillmötesgående.
+
+### Implementera
+
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill svara på schemaläggningshändelser för möten med anpassade påminnelser som hålls i tid med optimala intervall före mötesdatumet. Detta är det rätta mönstret när kommunikationen utlöses av en specifik interaktionshändelse och svaret är ett tidskänsligt, individanpassat budskap - snarare än en interaktiv interaktionssekvens på flera veckor eller ett komplext urval av erbjudanden.
+
+### Tekniska överväganden
+
+- All patientkommunikation måste följa tillämpliga regler för hälso- och sjukvårdssekretess; budgivningsinnehåll måste undvika att inkludera skyddad hälsoinformation utöver vad som är absolut nödvändigt för kommunikationen.
+- Medgivandehantering måste ske på kanalnivå - patienter som inte har valt att använda SMS-påminnelser får inte ta emot texter, även när SMS skulle vara den mest effektiva påminnelsekanalen för sin demografi.
+- Integreringen med schemaläggningssystemet måste leverera avtalade tider i nära realtid för att möjliggöra påminnelsetider som stämmer med det faktiska schemat för avtalad tid, inklusive scheman för ombokningar samma dag och annulleringar.
+- Påminnelsesekvenser för flera kanaler måste innehålla en undertryckningslogik så att patienter som bekräftar att de avtalat tid inte får påminnelsemeddelanden för den avtalade tiden.

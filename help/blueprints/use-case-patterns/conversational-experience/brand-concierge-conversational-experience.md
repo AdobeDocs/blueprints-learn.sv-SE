@@ -3,7 +3,7 @@ title: Brand Concierge Conversational Experience
 description: Lär dig hur du omvandlar digitala resurser till varumärkesskyddade, AI-baserade konverteringsinsikter som vägleder kundupptäckt.
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: a9545328-316d-446a-9308-18af61c58d1c
-source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
 source-wordcount: '7239'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Förbättra andelen besökare och presumtiva som utför önskade åtgärder, t.e
 
 Utöka kundbasen med riktade kampanjer, lookalike-målgrupper och optimering av betalda medier.
 
-**KPI:er:** Merförsäljning/korsförsäljning %, Inkrementell intäkt, Kundens livstidsvärde
+**KPI:er:** Nya kunder, Kundanskaffningskostnad, Prospekt/Leadkonvertering
 
 [Läs mer om hur man skaffar nya kunder](/help/blueprints/business-objectives/acquisition-growth/acquire-new-customers.md)
 
@@ -107,8 +107,8 @@ Omvandla digitala resurser till varumärkesskyddade, AI-baserade, konversationsu
 Följande program används för att implementera det här användningsmönstret.
 
 - **[!DNL Brand Concierge]** - AI-styrt program för konversationsupplevelser som tillhandahåller agenten orchestrator, Product Advisor Agent, Site Advisory Agent, varumärkesstyrning och konversationsanalys
-- **[!DNL Adobe Experience Platform] (AEP)** - En enhetlig datamall som tillhandahåller XDM-scheman, identitetsupplösning, kundprofiler i realtid och infrastruktur för datainsamling för konversationssignaler
-- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** - Kunddataplattform som tillhandahåller profilsökning i realtid för personaliserade konversationer, målgruppssegmentering från konversationssignaler och profilberikning med intent- och känslomedata
+- **[!DNL Adobe Experience Platform](AEP)** - En enhetlig datamall som tillhandahåller XDM-scheman, identitetsupplösning, kundprofiler i realtid och infrastruktur för datainsamling för konversationssignaler
+- **[!DNL Real-Time CDP]([!DNL RT-CDP])** - Kunddataplattform som tillhandahåller profilsökning i realtid för personaliserade konversationer, målgruppssegmentering från konversationssignaler och profilberikning med intent- och känslomedata
 
 ## Foundationsfunktioner
 
@@ -116,11 +116,11 @@ Följande grundläggande funktioner måste finnas för det här användningsmön
 
 | Funktionen Foundation | Status | Vad måste finnas på plats | Experience League referens |
 | --- | --- | --- | --- |
-| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL Brand Concierge]-berättigande aktiverat; roller konfigurerade för konversationsbaserade upplevelseadministratörer, innehållshanterare och analysanvändare; ABAC-principer finns på plats för konversationsdata som innehåller PII-signaler eller känsliga kundsignaler | [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) |
-| Datamodellering och förberedelse | Obligatoriskt | XDM-scheman för konverteringshändelser (klassen ExperienceEvent med konversationsspecifika fältgrupper som fångar avsikt, känslouttryck, produktinteraktioner och överlämningshändelser), profilschema utökat med konverteringsalternativ och intent-attribut, sökschema för produktkatalog för avrundningsrekommendationer | [Översikt över XDM-systemet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home) |
-| Datakällor och samling | Obligatoriskt | [!DNL Web SDK] eller [!DNL Mobile SDK] har konfigurerats med datastreams som cirkulerar konversationshändelsedata till datauppsättningar i AEP; [!DNL Edge Network]-integrering för händelsehantering i realtid under konversationer; produktkatalogdata som hämtas via källanslutningar eller batchmatning | [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home) |
-| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen har konfigurerats för besökaridentifiering (ECID för anonym, CRM-ID eller e-post för autentiserad), sammanslagningsprincip har konfigurerats med kantaktivering för profilsökning i realtid under konversationer, regler för identitetslänkning för konversationskontinuitet mellan enheter | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home) |
-| Målgruppsdefinition och segmentering | Antagen på plats | Målgrupper krävs inte för distribution av konversationer, men behövs för personaliserade konversationsstrategier (t.ex. tar kundsegment med högt värde emot olika konversationsflöden); direktuppspelning eller edge-utvärdering rekommenderas för personalisering av konversationer i realtid | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home) |
+| Administration och styrning | Obligatoriskt | Sandlådan har etablerats med [!DNL Brand Concierge]-berättigande aktiverat; roller konfigurerade för konversationsbaserade upplevelseadministratörer, innehållshanterare och analysanvändare; ABAC-principer finns på plats för konversationsdata som innehåller PII-signaler eller känsliga kundsignaler | [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| Datamodellering och förberedelse | Obligatoriskt | XDM-scheman för konverteringshändelser (klassen ExperienceEvent med konversationsspecifika fältgrupper som fångar avsikt, känslouttryck, produktinteraktioner och överlämningshändelser), profilschema utökat med konverteringsalternativ och intent-attribut, sökschema för produktkatalog för avrundningsrekommendationer | [Översikt över XDM-systemet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
+| Datakällor och samling | Obligatoriskt | [!DNL Web SDK] eller [!DNL Mobile SDK] har konfigurerats med datastreams som cirkulerar konversationshändelsedata till datauppsättningar i AEP; [!DNL Edge Network]-integrering för händelsehantering i realtid under konversationer; produktkatalogdata som hämtas via källanslutningar eller batchmatning | [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) |
+| Konfiguration av identitet och profil | Obligatoriskt | Identitetsnamnutrymmen har konfigurerats för besökaridentifiering (ECID för anonym, CRM-ID eller e-post för autentiserad), sammanslagningsprincip har konfigurerats med kantaktivering för profilsökning i realtid under konversationer, regler för identitetslänkning för konversationskontinuitet mellan enheter | [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) |
+| Målgruppsdefinition och segmentering | Antagen på plats | Målgrupper krävs inte för distribution av konversationer, men behövs för personaliserade konversationsstrategier (t.ex. tar kundsegment med högt värde emot olika konversationsflöden); direktuppspelning eller edge-utvärdering rekommenderas för personalisering av konversationer i realtid | [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
 
 ## Stödfunktioner
 
@@ -128,11 +128,11 @@ Följande funktioner förstärker det här användningsmönstret, men behövs in
 
 | Stödfunktioner | Status | Varför det spelar någon roll | Experience League referens |
 | --- | --- | --- | --- |
-| Skapande av beräknat/härlett attribut | Rekommenderad | Samla in konversationssignaler i profilnivåattribut (t.ex. totala konversationer, dominerande produktintressen, genomsnittligt poängvärde) för användning i segmentering och personalisering i efterföljande led | [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview) |
-| Livscykelhantering för data | Rekommenderad | Konfigurera lagringspolicyer för konversationshändelsedata, hantera samtycke för inspelning och profilering av konversationer och ge stöd för begäranden om borttagning av sekretess för konversationstryckningar | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home) |
-| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Märk konversationsdatafält som innehåller PII-, känslo- eller avsiktssignaler; tillämpa styrningsprinciper som förhindrar att känsliga konversationsdata når obehöriga mål | [Datastyrningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home) |
-| Övervakning och observerbarhet | Rekommenderad | Övervaka händelseinmatningsledningar för konversationer, spåra hur många profiler som har berikats och få meddelanden om dataflödesfel som kan påverka konversationspersonaliseringens kvalitet | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home) |
-| Rapportering och analys | Ingår | Analysera konversationsprestanda, kundfeedback, konverteringsattribuering och agenteffektivitet med [!DNL Brand Concierge] inbyggda analyser och [!DNL CJA] för analys av konversationseffekter över flera kanaler | [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Skapande av beräknat/härlett attribut | Rekommenderad | Samla in konversationssignaler i profilnivåattribut (t.ex. totala konversationer, dominerande produktintressen, genomsnittligt poängvärde) för användning i segmentering och personalisering i efterföljande led | [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| Livscykelhantering för data | Rekommenderad | Konfigurera lagringspolicyer för konversationshändelsedata, hantera samtycke för inspelning och profilering av konversationer och ge stöd för begäranden om borttagning av sekretess för konversationstryckningar | [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| Dataanvändningsetiketter och -tillämpning | Rekommenderad | Märk konversationsdatafält som innehåller PII-, känslo- eller avsiktssignaler; tillämpa styrningsprinciper som förhindrar att känsliga konversationsdata når obehöriga mål | [Datastyrningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| Övervakning och observerbarhet | Rekommenderad | Övervaka händelseinmatningsledningar för konversationer, spåra hur många profiler som har berikats och få meddelanden om dataflödesfel som kan påverka konversationspersonaliseringens kvalitet | [Översikt över Insikter om observabilitet](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| Rapportering och analys | Ingår | Analysera konversationsprestanda, kundfeedback, konverteringsattribuering och agenteffektivitet med [!DNL Brand Concierge] inbyggda analyser och [!DNL CJA] för analys av konversationseffekter över flera kanaler | [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Programfunktioner
 
@@ -165,16 +165,16 @@ I den här planen används följande funktioner från programfunktionskatalogen.
 
 Följande objekt måste finnas innan implementeringen börjar.
 
-- [!DNL Adobe Brand Concierge]-berättigandet är aktivt för organisationen
-- AEP- och [!DNL RT-CDP]-licenser har tilldelats med tillräcklig profil- och händelsenorättighet
-- Riktlinjedokument för varumärken som definierar röst, ton, godkända meddelanden och förbjudna ämnen
-- Produktkatalog eller innehållslager förberedda för integrering (AEM-resurser, PIM-data eller strukturerad produktfeed)
-- Webbegenskaper som identifieras för användning av konversationsupplevelser med teknisk åtkomst för SDK-integrering
-- Aktiv agentinfrastruktur tillgänglig om överlämning krävs (kontaktcenterplattform, CRM-integrering)
-- Samtyckeshanteringsramverk finns på plats för datainhämtning och profilering via konversationer
-- [!DNL Web SDK] eller [!DNL Mobile SDK] har redan distribuerats på målegenskaper (eller planerats för samtidig distribution)
-- Intressentanpassning till konversationsomfånget (endast produktrådgivning, webbplatsnavigering eller båda)
-- Integritet och juridisk granskning har slutförts för inhämtning och användning av konverteringsdata via AI
+- [ ] [!DNL Adobe Brand Concierge]-berättigandet är aktivt för organisationen
+- [ ] AEP- och [!DNL RT-CDP]-licenser har tilldelats med tillräcklig profil- och händelsenorättighet
+- [ ] Riktlinjedokument för varumärken som definierar röst, ton, godkända meddelanden och förbjudna ämnen
+- [ ] Produktkatalog eller innehållsdatabas förberedd för integrering (AEM-resurser, PIM-data eller strukturerad produktfeed)
+- [ ] Webbegenskaper har identifierats för distribution av konversationsupplevelser med teknisk åtkomst för SDK-integrering
+- [ ] Live Agent-infrastruktur tillgänglig om överlämning krävs (kontaktcenterplattform, CRM-integrering)
+- [ ]-ramverk för hantering av samtycke finns på plats för konverteringsdata och profilering
+- [ ] [!DNL Web SDK] eller [!DNL Mobile SDK] har redan distribuerats på målegenskaper (eller planerats för samtidig distribution)
+- [ ] Intressentjustering för konversationsomfattning (endast produktrådgivning, webbplatsnavigering eller båda)
+- [ ] Sekretess och juridisk granskning har slutförts för AI-baserad konverteringsdatainhämtning och -användning
 
 ## Implementeringsalternativ
 
@@ -362,7 +362,7 @@ Aktivera båda specialiseringarna och konfigurera orchestrators intent routing l
 **Experience League-dokumentation:**
 
 - [Brand Concierge - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [Översikt över AI Assistant](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home)
+- [Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 - [AEP Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 
 ### Fas 2: Inställningar för varumärkesstyrning
@@ -408,7 +408,7 @@ Information om nyckelkonfiguration:
 **Experience League-dokumentation:**
 
 - [Brand Concierge varumärkesstyrning](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [AI Assistant - driftsinsikter](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home)
+- [AI Assistant - driftsinsikter](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 
 ### Fas 3: Integrering av innehåll
 
@@ -464,7 +464,7 @@ Konfigurera både produktkataloger och webbplatsinnehållskällor. Se till att i
 - [Brand Concierge content configuration](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 - [Brand Concierge produktrådgivare](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/product-advisor)
 - [Webbplatsrådgivare för Brand Concierge](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/site-advisor)
-- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 ### Fas 4: Konversationsupplevelsedistribution
 
@@ -519,10 +519,10 @@ Information om nyckelkonfiguration:
 **Experience League-dokumentation:**
 
 - [Brand Concierge](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
-- [Edge Network Server API - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/edge-network-server-api/overview)
-- [Slutpunkt för profil-API-entiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/api/entities)
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
+- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Edge Network Server API - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
+- [Slutpunkt för profil-API-entiteter](https://experienceleague.adobe.com/en/docs/experience-platform/profile/api/entities)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### Fas 5: Profilberikning
 
@@ -564,11 +564,11 @@ Information om nyckelkonfiguration:
 
 **Experience League-dokumentation:**
 
-- [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
-- [Användargränssnittshandbok för beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/ui)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
+- [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [Användargränssnittshandbok för beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### Fas 6: Analys och optimering
 
@@ -601,9 +601,9 @@ Information om nyckelkonfiguration:
 **Experience League-dokumentation:**
 
 - [Brand Concierge Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [CJA Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
-- [Skapa eller redigera en CJA-anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection)
-- [Skapa eller redigera en datavy för CJA](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [CJA Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Skapa eller redigera en CJA-anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
+- [Skapa eller redigera en datavy för CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
 
 ## Implementeringsöverväganden
 
@@ -612,11 +612,11 @@ Följande avsnitt behandlar skyddsförslag, vanliga fallgropar, bästa praxis oc
 ### Gardrutor och begränsningar
 
 - [!DNL Brand Concierge] konversationsupplevelser omfattas av hastighetsgränser för generering av AI-svar. Den samtidiga konversationskapaciteten beror på behörighetsnivån
-- Profilsökning i realtid under konversationer omfattas av hastighetsbegränsningar för profil-API per sandlåda - [Kundprofilsgardinsnivå i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
-- Inmatning av konversationsdata följer AEP standardgränser för direktuppspelning av inmatning: [Inmatningsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
+- Profilsökning i realtid under konversationer omfattas av hastighetsbegränsningar för profil-API per sandlåda - [Kundprofilsgardinsnivå i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Inmatning av konversationsdata följer AEP standardgränser för direktuppspelning av inmatning: [Inmatningsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
 - Produktkatalogens storlek och innehållsindexvolymen omfattas av [!DNL Brand Concierge] innehållsintegreringsgränser
-- Maximalt 25 beräknade attribut per sandlåda gäller för konverteringssignalaggregeringar - [Beräknade attributskyddsdetaljer](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
-- Maximalt 4 000 segmentdefinitioner per sandlåda gäller för konversationsmålgrupper - [Segmenteringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- Maximalt 25 beräknade attribut per sandlåda gäller för konverteringssignalaggregeringar - [Beräknade attributskyddsdetaljer](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- Maximalt 4 000 segmentdefinitioner per sandlåda gäller för konversationsmålgrupper - [Segmenteringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 ### Vanliga fallgropar
 
@@ -684,57 +684,57 @@ Följande resurser innehåller ytterligare information för implementering av de
 - [Brand Concierge - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 - [Brand Concierge produktrådgivare](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/product-advisor)
 - [Webbplatsrådgivare för Brand Concierge](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/site-advisor)
-- [Översikt över AI Assistant](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home)
+- [Översikt över AI Assistant](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 
 **[!DNL Adobe Experience Platform]**
 
-- [AEP - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/home)
-- [XDM - systemöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
-- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home)
+- [AEP - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home)
+- [XDM - systemöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [Översikt över kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 **Datainsamling och integrering**
 
-- [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
+- [SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
 - [Mobile SDK - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
-- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
-- [Edge Network Server API - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/edge-network-server-api/overview)
-- [Översikt över källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Edge Network Server API - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
+- [Översikt över källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 **Identitet och profil**
 
-- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home)
-- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces)
-- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview)
-- [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview)
+- [Översikt över identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Översikt över namnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)
+- [Översikt över kopplingsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
 
 **Målgrupper och segmentering**
 
-- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/home)
-- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder)
-- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Användargränssnittsguide för segmentbyggare](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
 
 **Datastyrning och sekretess**
 
-- [Översikt över dataförvaltning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/home)
-- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/consents)
-- [Privacy Service - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/home)
-- [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/sv/docs/experience-platform/data-lifecycle/home)
+- [Översikt över dataförvaltning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Fältgruppen för samtycke och inställningar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
+- [Privacy Service - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
+- [Översikt över livscykelhantering av avancerade data](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
 
 **Övervakning och observerbarhet**
 
-- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/home)
-- [Översikt över aviseringar](https://experienceleague.adobe.com/sv/docs/experience-platform/observability/alerts/overview)
+- [Översikt över Insikter i observationer](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [Översikt över aviseringar](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
 
 **Analyser och rapporter**
 
-- [CJA - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview)
-- [CJA Connections overview](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/overview)
-- [CJA datavyer - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views)
-- [Analysis Workspace - översikt](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home)
+- [CJA - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [CJA Connections overview](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [CJA datavyer - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Analysis Workspace - översikt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 **Guardrails**
 
-- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
-- [Förvaringsskydd](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails)
-- [Skyddsritningar för segmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails)
+- [Garantier för kundprofiler i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Förvaringsskydd](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [Skyddsritningar för segmentering](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)

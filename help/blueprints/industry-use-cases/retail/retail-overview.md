@@ -2,13 +2,13 @@
 title: Användningsexempel
 description: Upptäck hur detaljhandelsorganisationer använder Adobe Experience Platform för att personalisera shoppingupplevelser, återställa övergivna kundvagnar och öka kundlojaliteten.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
+source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '6166'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel
 
@@ -20,11 +20,11 @@ Visa anpassade produktrekommendationer för hemsida, kategorisidor och produktin
 
 ### Affärspåverkan
 
-Detaljhandlare ser vanligtvis en ökning på 20-30 % av klickfrekvensen och en 15-25-procentig förbättring av konverteringsgraden när de tar emot personaliserade rekommendationer i stället för statiska produktlistor.
+Detaljhandlarna ser bättre klickfrekvenser och konverteringsgrader när de levererar personaliserade rekommendationer i stället för statiska produktlistor.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna rekommendationsmodeller som kontinuerligt lär sig av kundinteraktioner för att identifiera de mest relevanta produkterna för varje individ.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder AI-drivna rekommendationsmodeller som kontinuerligt lär sig av kundinteraktioner för att identifiera de mest relevanta produkterna för varje individ. Det här är det rätta mönstret när objektuppsättningen är stor och ändras kontinuerligt och valet styrs av beteendetillhörighet - snarare än en avgränsad uppsättning erbjudanden som styrs av behörighetsregler.
 
 ### Tekniska överväganden
 
@@ -40,11 +40,11 @@ Skicka automatiskt skräddarsydda e-postpåminnelser till kunder som övergett s
 
 ### Affärspåverkan
 
-Effektiva kundvagnsåtervinningsprogram ger en 25-35-procentig kundåtervinningsnivå och kan generera ytterligare 100 000-500 000 USD i månadsomsättning beroende på butiksvolym.
+Effektiva kundvagnsåtervinningsprogram förbättrar kundvagnens återvinningsgrad och kan generera meningsfulla inkrementella intäkter beroende på butikens volym.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på en händelse om att kundvagnen överges i realtid, vilket innebär att en påminnelse skickas i tid medan inköpsmetoden fortfarande är hög.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på en händelse om att kundvagnen överges i realtid, vilket innebär att en påminnelse skickas i tid medan inköpsmetoden fortfarande är hög. Det här är det rätta mönstret när en diskret kundåtgärd är utlösaren och det svar som krävs är ett enda tidskänsligt meddelande - snarare än en sekvens i flera steg eller dynamiskt urval av erbjudanden.
 
 ### Tekniska överväganden
 
@@ -60,11 +60,11 @@ Utlös varningar och kampanjer i realtid när produktlagret är lågt, vilket sk
 
 ### Affärspåverkan
 
-Snabba kampanjer med låga lager genererar vanligtvis en 30-40-procentig ökning av konverteringsgraden för aktuella produkter, samtidigt som de minskar överlagret genom att snabba upp försäljningen av produkter som rör sig långsamt.
+Snabba kampanjer med låga lager ökar konverteringsgraden för aktuella produkter samtidigt som de minskar överlagret genom att snabba upp försäljningen av produkter som rör sig långsamt.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Detta tillvägagångssätt svarar på lagertröskelhändelser och aktiverar automatiskt brådskande meddelanden när lagernivåerna underskrider definierade gränser.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Detta tillvägagångssätt svarar på lagertröskelhändelser och aktiverar automatiskt brådskande meddelanden när lagernivåerna underskrider definierade gränser. Det här är det rätta mönstret när utlösaren är en systemhändelse snarare än ett kundbeteende, och den kommunikation som krävs är omedelbar och reaktiv snarare än en kontinuerlig vårdssekvens.
 
 ### Tekniska överväganden
 
@@ -80,11 +80,11 @@ Visa relevanta korsförsäljnings- och merförsäljningsprodukter i kassan, via 
 
 ### Affärspåverkan
 
-Välbeprövade korsförsäljnings- och merförsäljningsstrategier ökar det genomsnittliga ordervärdet med 25-75 dollar och ökar intäkterna per transaktion med 10-15 %.
+Välbeprövade strategier för korsförsäljning och merförsäljning ökar det genomsnittliga ordervärdet och ökar intäkterna per transaktion, vilket bidrar till en starkare övergripande korgekonomi.
 
 ### Implementera
 
-Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera alla tillgängliga erbjudanden och välja det bästa alternativet för korsförsäljning eller merförsäljning för varje kund och kontext.
+Använd mönstret [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Strategin använder centraliserad beslutslogik för att utvärdera alla tillgängliga erbjudanden och välja det bästa alternativet för korsförsäljning eller merförsäljning för varje kund och kontext. Det här är det rätta mönstret när valet av erbjudanden måste ta hänsyn till marginal, lagertillgänglighet och produktrelationsregler - affärsbegränsningar som kräver styrd beslutslogik i stället för enbart beteendetillhörighet.
 
 ### Tekniska överväganden
 
@@ -100,11 +100,11 @@ Automatisera en välkomstserie för flera e-postmeddelanden för nya kunder med 
 
 ### Affärspåverkan
 
-En väldesignad välkomstserie genererar en 40-50-procentig engagemangsgrad bland nya kunder och förbättrar livstidsvärdet på ett meningsfullt sätt genom att tidigt bygga upp varumärkestillhörigheten.
+En väldesignad välkomstserie skapar stark interaktion bland nya kunder och förbättrar livstidsvärdet på ett meningsfullt sätt genom att snabbt bygga upp varumärkestillhörigheten.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här multitouch-vårdsresan vägleder nya kunder genom en sekvens av varumärkesintroduktion, produktupptäckt och stimulansmeddelanden som anpassar sig efter deras engagemang.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här multitouch-vårdsresan vägleder nya kunder genom en sekvens av varumärkesintroduktion, produktupptäckt och stimulansmeddelanden som anpassar sig efter deras engagemang. Det här är det rätta mönstret när användningsfallet kräver ett sekvensflöde med flera meddelanden på flera dagar med villkorlig förgrening baserat på engagemangshändelser - ett enda utlöst meddelande kan inte hantera beroendelogiken mellan steg.
 
 ### Tekniska överväganden
 
@@ -120,11 +120,11 @@ Meddela kunderna via e-post eller push-meddelanden när produkter i deras önske
 
 ### Affärspåverkan
 
-Varningar om prisfall genererar en konverteringsgrad på 20-30 % bland mottagarna och ökar kundnöjdheten genom att hjälpa kunderna att känna att de får det bästa värdet.
+Aviseringar om prisfall genererar förbättrad konverteringsgrad bland mottagare och ökar kundnöjdheten avsevärt genom att hjälpa kunderna att känna att de får det bästa värdet.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Detta tillvägagångssätt svarar på produktprisförändringar och matchar dem mot kundens intressesignaler för att leverera meddelanden i rätt tid.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Detta tillvägagångssätt svarar på produktprisförändringar och matchar dem mot kundens intressesignaler för att leverera meddelanden i rätt tid. Det här är det rätta mönstret när utlösaren är en katalogsystemhändelse och leveransfönstret är tidskänsligt - en kontinuerlig resa blir för långsam och ingen uppföljning i flera steg behövs efter det första meddelandet.
 
 ### Tekniska överväganden
 
@@ -140,11 +140,11 @@ Skicka automatiska påminnelser till kunder om produkter de köper regelbundet, 
 
 ### Affärspåverkan
 
-Påminnelseprogram för påfyllnad ger en 30-40-procentig upprepningsfrekvens och avsevärt förbättrad kundlojalitet genom att göra det enkelt för kunderna att förnya sina produkter.
+Påminnelseprogram för påfyllnad ger högre återköpsfrekvenser och förbättrad kundlojalitet genom att göra det enkelt för kunderna att förnya sina produkter.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här återkommande schemalagda resan använder prognoser om inköpsfrekvens för att skicka påminnelser vid den optimala tidpunkten innan en kund sannolikt kommer att behöva fylla på något.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. Den här återkommande schemalagda resan använder prognoser om inköpsfrekvens för att skicka påminnelser vid den optimala tidpunkten innan en kund sannolikt kommer att behöva fylla på något. Det här är det rätta mönstret när det inte finns någon diskret utlösande händelse och tidsbestämning måste beräknas utifrån inköpsfrekvensmodeller som omkalibreras dynamiskt - händelseutlösta meddelanden kan inte hantera prediktiva schemaläggnings- eller tidsjusteringar när kunderna beställer om tidigt eller sent.
 
 ### Tekniska överväganden
 
@@ -160,11 +160,11 @@ Anpassa kategorisidor dynamiskt för att visa de mest relevanta produkterna för
 
 ### Affärspåverkan
 
-Personaliserade kategorisidor ger en 25-35-procentig ökning av engagemanget hos kategorisidor och förbättrar produktupptäckt på ett meningsfullt sätt, särskilt för återförsäljare med stora kataloger.
+Personaliserade kategorisidor ökar engagemanget och förbättrar produktupptäckt avsevärt, särskilt för detaljhandlare med stora kataloger.
 
 ### Implementera
 
-Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder urvalsstrategier och rangordningsmodeller för att ordna om produkter på kategorisidor baserat på varje besökares profil och beteende i realtid.
+Använd mönstret [Beteenderekommendation](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Den här metoden använder urvalsstrategier och rangordningsmodeller för att ordna om produkter på kategorisidor baserat på varje besökares profil och beteende i realtid. Det här är det rätta mönstret när aktiviteten rankas i en stor, öppen produktuppsättning med beteendesignaler - beslut om erbjudanden passar inte här eftersom det inte finns några regler för behörighet eller affärsbegränsningar som begränsar vilka produkter som visas.
 
 ### Tekniska överväganden
 
@@ -180,11 +180,11 @@ Skicka e-postmeddelanden efter köp med tips om produkter, produktförslag, gran
 
 ### Affärspåverkan
 
-Effektiva kampanjer efter inköp ökar antalet inskickade granskningar med 15-20 % och ger en 10-15-procentig upprepningsfrekvens, vilket gör att engångsköpare blir lojala kunder.
+Effektiva kampanjer efter köp ökar granskningens överföringshastighet och ökar antalet återkommande inköp, vilket gör att engångsköpare blir lojala kunder.
 
 ### Implementera
 
-Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. I det här flerstegsflödet används förgreningslogik för att skräddarsy uppföljningsmeddelanden baserat på produkttyp, kundsegment och engagemang med tidigare e-postmeddelanden i serien.
+Använd mönstret [Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) i flera steg. I det här flerstegsflödet används förgreningslogik för att skräddarsy uppföljningsmeddelanden baserat på produkttyp, kundsegment och engagemang med tidigare e-postmeddelanden i serien. Detta är det rätta mönstret eftersom uppföljningen sträcker sig över flera dagar, är beroende av händelser för leveransstatus och grenar baserade på produktkategori och returhändelser - ett enda utlöst meddelande kan inte stödja den villkorliga logik som krävs på hela tidslinjen efter köpet.
 
 ### Tekniska överväganden
 
@@ -200,11 +200,11 @@ Identifiera värdefulla kunder och leverera exklusiva erbjudanden, tidig tillgå
 
 ### Affärspåverkan
 
-VIP-program genererar vanligtvis 50-70 % engagemang från kunder i toppskiktet och förbättrar kundens livstidsvärde genom att minska bortfallet bland de mest lönsamma segmenten.
+VIP-program genererar ett starkt engagemang från kunder i toppskiktet och förbättrar på ett mätbart sätt kundens livstidsvärde genom att minska bortfallet bland de mest lönsamma segmenten.
 
 ### Implementera
 
-Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Detta tillvägagångssätt kombinerar resesamordning med beslut i realtid för att välja erbjudande, vilket säkerställer att alla VIP-kunder får det mest relevanta exklusiva erbjudandet i alla kanaler.
+Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Detta tillvägagångssätt kombinerar resesamordning med beslut i realtid för att välja erbjudande, vilket säkerställer att alla VIP-kunder får det mest relevanta exklusiva erbjudandet i alla kanaler. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att förhindra dubblerade erbjudanden och när valet av erbjudanden kräver regler för behörighet och affärsbegränsningar - flerstegssamordning ger inte ensam det realtidslager som behövs för att styra vilket exklusivt erbjudande varje VIP får.
 
 ### Tekniska överväganden
 
@@ -220,11 +220,11 @@ Låt kunderna registrera sig för meddelanden när färdiga produkter blir tillg
 
 ### Affärspåverkan
 
-Aviseringar som skickas tillbaka i lager når en konverteringsgrad på 40-50 % bland abonnenterna och minskar på ett betydande sätt försäljningen av efterfrågade produkter som har tillfälliga lager.
+Aviseringar som skickas tillbaka i lager når upp till en hög konverteringsgrad bland abonnenterna och minskar på ett betydande sätt försäljningen av efterfrågade produkter som har tillfälliga lager.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser meddelanden om lagerbaserade händelser och matchar lageruppdateringar mot kundmeddelanden för att leverera aviseringar i rätt tid.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden utlöser meddelanden om lagerbaserade händelser och matchar lageruppdateringar mot kundmeddelanden för att leverera aviseringar i rätt tid. Det här är det rätta mönstret eftersom utlösaren är en diskret inventeringssystemhändelse, leveransen är tidskritisk (lagret kan gå snabbt att sälja ut igen) och kommunikationen är ett enda meddelande i stället för en pågående resa.
 
 ### Tekniska överväganden
 
@@ -240,11 +240,11 @@ Visa personliga sociala bevis, inklusive recensioner, omdömen och förslag om&q
 
 ### Affärspåverkan
 
-Personaliserade sociala bevis ökar konverteringsgraden med 10-15 % och ökar kundernas förtroende, särskilt för förstagångsköpare och högprisprodukter där köpvanheten är störst.
+Personaliserade sociala bevis ökar konverteringsgraden och ökar kundens förtroende, särskilt för förstagångsköpare och högprisprodukter där köpvanheten är störst.
 
 ### Implementera
 
-Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Det här arbetssättet personaliserar webbinnehåll för identifierade besökare och väljer de mest relevanta granskningarna och elementen för socialt korrektur baserat på kundens profil, önskemål och surfningssammanhang.
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Det här arbetssättet personaliserar webbinnehåll för identifierade besökare och väljer de mest relevanta granskningarna och elementen för socialt korrektur baserat på kundens profil, önskemål och surfningssammanhang. Det här är det rätta mönstret när personalisering styrs av profilattribut och segmentmedlemskap i stället för en beteendetillhörighetsmodell - beteenderekommendation passar inte här eftersom val av socialt korrektur beror på vem kunden är, inte på vilka objekt de har bläddrat.
 
 ### Tekniska överväganden
 
@@ -252,3 +252,242 @@ Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-c
 - Sociala korrekturrundselement bör läsas in asynkront för att undvika att huvudproduktsidans rendering blockeras, eftersom granskningsdata kan komma från en tredjepartsgranskningsplattform med varierande svarstider.
 - Sekretessreglerna kräver att alla kunddata som används för att matcha granskningar mot besökare hanteras enligt medgivandepreferenser. Att visa&quot;kunder som du&quot;-innehåll innebär profilering som kan kräva utlämnande.
 - [!DNL Experience Platform]-målgruppsmedlemskap kan användas för att välja vilka recensioner som ska markeras och visa utomhusentusiaster recensioner från utomhusshoppare i stället för generiska topprankade recensioner.
+
+
+## AI Product Advisor
+
+Onlinebutikerna har tusentals SKU:er i komplexa kategorihierarkier, vilket gör det svårt för kunderna att hitta rätt produkt utan utökad surfning eller övergivna sökningar. En AI-driven produktrådgivare engagerar kunderna i en naturlig flerkanalsdialog - där man ställer frågor om behov, preferenser och budget - och sedan begränsar urvalet till en välstrukturerad uppsättning personaliserade rekommendationer. Upplevelsen speglar den vägledning som ett kunnigt butikstjänstemän skulle ge, levererad i digital skala.
+
+### Affärspåverkan
+
+Handlare som använder guidad konversationsidentifiering kan se förbättrade konverteringsgrader och genomsnittligt ordervärde jämfört med oövervakad surfning, samtidigt som de minskar produktavkastningen genom bättre underbyggda inköpsbeslut.
+
+### Implementera
+
+Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md). Med den här metoden används Product Advisor Agent mot en strukturerad produktkatalog och AEP Agent Orchestrator och kundprofildata i realtid används för att generera varumärkessäkra, personaliserade produktrekommendationer genom naturlig dialog. Det här är det rätta mönstret när målet är interaktiv konversationsidentifiering i flera omgångar som styrs av kundens angivna behov - skilt från händelseutlösta meddelanden, som är enkelriktade och reaktiva till en viss åtgärd, och från personaliserade webbupplevelser, som visar rekommendationer passivt snarare än att engagera kunderna i konversationer. Det kräver AEP Agent Orchestrator och varumärkesstyrningskonfiguration.
+
+### Tekniska överväganden
+
+- Produktkatalogen måste struktureras med omfattande attributdata - inklusive storlek, material, kompatibilitet, tillgänglighet och priser - eftersom Product Advisor Agent anser att det finns rekommendationer i kataloginnehållet och inte på ett tillförlitligt sätt kan ge råd om produkter med ofullständiga attribut.
+- Kundprofilsökning i realtid via RT-CDP måste konfigureras med edge-aktivering så att inköpshistorik, surfbeteende och lojalitetsnivådata är tillgängliga under live-konversationen utan fördröjning som skulle störa upplevelsen.
+- Garantier för varumärkesstyrning måste definieras för att specificera hur agenten hanterar artiklar som inte finns i lager, konkurrensutsatta produktjämförelser, kampanjpriser och förbjudna ämnen, så att alla åtgärder överensstämmer med varumärkesstandarder för detaljhandeln.
+- Konversationshändelser - inklusive avsiktssignaler, produktinteraktioner och rekommendationer - måste samlas in som XDM Experience Events och strömmas tillbaka till AEP, vilket berikar kundprofiler med produkttillhörighetsdata som förbättrar den framtida personaliseringen i alla kanaler.
+
+
+## Analys av flerkanalsattribuering
+
+Mät hur varje kontaktyta för marknadsföring - betalsökningar, e-post, sociala kampanjer och butikskampanjer - bidrar till köpkonverteringar online och offline. Återförsäljare som förlitar sig på sista-beröringen-attribuering undervärderar systematiskt de övre funnel-kanalerna och fattar beslut om budgetallokering baserat på en ofullständig bild av köpbanan.
+
+### Affärspåverkan
+
+Marknadsföringsteam inom detaljhandeln som går från sista-beröringen till flerberöringsattribuering får en tydligare bild av vilka kanaler som driver inköpsavsikten, vilket leder till bättre underbyggda budgetbeslut och förbättrad avkastning på marknadsföringsutgifter.
+
+### Implementera
+
+Använd mönstret [Kundanalys och insiktsgenerering](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Detta tillvägagångssätt kopplar samman händelsedata online och offline - webbklickningar, e-postärenden, lojalitetstransaktioner och butiksposter - med Customer Journey Analytics, där attribueringsmodeller kan konfigureras och jämföras över hela inköpsvägen. Detta är det rätta mönstret när målet är att mäta och generera insikter över en komplex flerkanalsresa - i stället för att aktivera målgrupper eller utlösa budskap - och när analysen kräver Customer Journey Analytics snarare än ett CDP- eller kampanjverktyg.
+
+### Tekniska överväganden
+
+- Transaktionsdata för butiker och e-handel måste dela en enhetlig kundidentifierare så att konverteringar i butiker och online kan sammanfogas till en enda flerkanalsvy i CJA.
+- Flera attribueringsmodeller - first-touch, last-touch, linear och time-decay - bör konfigureras i CJA datavy så att analytiker kan jämföra dem sida vid sida utan att behöva bygga om analysen.
+- Betalda mediemått och klickdata från externa annonsplattformar måste hämtas via källanslutningar eller batchöverföringar för att de betalda kanalerna ska ingå i attribueringsvägen bredvid ägda kanaler.
+- Konverteringsfönster och kreditsökningsperioder måste definieras per kanaltyp, eftersom det relevanta attribueringsfönstret för ett betalt sökklick skiljer sig avsevärt från det för en säsongsbunden e-postkampanj.
+
+## Målgruppssegmentering och -aktivering för betalmedia
+
+Bygg värdefulla målgruppssegment från enhetliga kundprofiler och aktivera dem för betalmediematerial som Google Ads, Meta och The Trade Desk för förvärv och återannonsering av kampanjer. Enhetliga beteendedata, transaktionsdata och lojalitetsdata ger en mer exakt målgruppsanpassning som minskar bortslösade annonskostnader och förbättrar avkastningen på investeringen i kampanjer.
+
+### Affärspåverkan
+
+Återförsäljare som aktiverar förstahandsmålgrupper av hög kvalitet ser förbättrade matchningsfrekvenser på betalda medieplattformar, minskad kostnad per förvärv och större avkastning på annonskostnaderna jämfört med att förlita sig på tredjepartssegment.
+
+### Implementera
+
+Använd mönstret [Audience Activation till destinationer](/help/blueprints/use-case-patterns/audience-building-activation/audience-activation-to-destinations.md) för att utvärdera målgruppsmedlemskap mot enhetliga profiler och publicera segment till anslutna betalda mediemål på schemalagd eller direktuppspelad basis. Detta är det rätta mönstret när det primära kravet är segmentpublicering till externa system snarare än samordnade meddelanden eller realtidsbeslut.
+
+### Tekniska överväganden
+
+- Identitetsupplösning för webben, mobiler och lojalitetsdata krävs för att skapa fullständiga kundprofiler innan aktivering - fragmenterade profiler minskar målgruppernas kvalitet och matchar.
+- Målanslutningarna måste konfigureras för varje betald mediaplattform, med lämpliga godkännandeflaggor på profilnivå för att förhindra att icke-godkända data aktiveras.
+- Frekvensen för uppdatering av segment bör vara anpassad till kampanjmålen - målgrupper som förvärvar kan behöva dagliga uppdateringar samtidigt som målgrupperna kan dra nytta av uppdateringar i nära realtid för att utesluta nya köpare.
+- Överlappningsanalys mellan olika målgrupper inom kundförvärv och kundlojalitet bidrar till att förhindra korskontaminering där befintliga kunder får meddelanden om kundvärvning.
+
+
+## Inaktivering av kunder för värvningskampanjer
+
+Förhindra befintliga kunder och nya konverterare från att köpa in annonser genom att aktivera exkluderingsmålgrupper till betalda mediematerial, vilket minskar bortslösade utgifter. Kontinuerlig synkronisering av undertryckningslistor säkerställer att betalda budgetar avser nya nettokunder i stället för personer som redan har konverterat eller aktivt engagerat sig.
+
+### Affärspåverkan
+
+Genom att hindra befintliga kunder från att värva upp kampanjer minskar ni bortslösade utgifter för betalda medier, förbättrar kostnaden per kundvärvning och förhindrar befintliga kunder från att ta emot meddelanden som inte är relevanta för deras relationsfas.
+
+### Implementera
+
+Använd mönstret [Audience Activation till destinationer](/help/blueprints/use-case-patterns/audience-building-activation/audience-activation-to-destinations.md) för att publicera exkluderingsmålgrupper - senaste köpare, aktiva prenumeranter och värdefulla kunder - för varje betald mediemål enligt ett ofta återkommande schema. Detta är det rätta mönstret när målet är segmentpublicering för att undertrycka snarare än att skapa en kundinriktad resa.
+
+### Tekniska överväganden
+
+- De som inte vill visa bilder måste ha en tydlig definition av vem de ska utesluta - vanligtvis kunder som har köpt under de senaste 30-90 dagarna, aktiva lojalitetsmedlemmar och nyligen använda e-postkonverteringar.
+- Uteslutningslistorna måste uppdateras tillräckligt ofta för att utesluta köpare innan annonserna kan användas. Inaktuella undertryckningslistor orsakar den största varumärkesfriktionen i butiksperioder med stora volymer.
+- Identitetsmatchningskvaliteten påverkar direkt dämpningskvaliteten - dålig matchning av e-post eller enhets-ID resulterar i att befintliga kunder fortfarande ser kundvärvningsannonser.
+- Se till att de som inte tar emot kampanjer är åtskilda från målgrupperna som vill behålla dem, så att ni kan nå kunder som inte ska hindras.
+
+
+## Personaliserade webbupplevelser för kända besökare
+
+Leverera personaliserade hjältebanners, produktrekommendationer och marknadsföringsmaterial till autentiserade webbplatsbesökare baserat på deras realtidsprofil, segmentmedlemskap och beteendehistorik. När återkommande kunder ser upplevelser som är skräddarsydda efter deras lojalitetsstatus, inköpshistorik och preferenser, blir engagemangsfrekvensen och konverteringsgraden avsevärt bättre jämfört med generiska hemsidor.
+
+### Affärspåverkan
+
+Återförsäljare som personaliserar för kända besökare ser meningsfulla förbättringar i engagemangsmått, inklusive tid på plats, sidor per session och konverteringsgrad, med störst påverkan bland lojalitetsmedlemmar som besöker ofta.
+
+### Implementera
+
+Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) för att leverera profilstyrda personaliserade upplevelser vid sidinläsning med segmentmedlemskap i realtid och profilattribut. Detta är det rätta mönstret när upplevelsen måste styras av identitetslänkade profildata snarare än sessionssignaler - och när innehållsbeslut inte kräver komplex rangordning av erbjudanden eller affärsbegränsningar.
+
+### Tekniska överväganden
+
+- Autentisering måste ske innan profildriven personalisering kan aktiveras. Webbplatsen behöver en mekanism för att identifiera besökaren och matcha deras ECID mot en känd profil.
+- Profilsökningar i realtid måste slutföras inom sidans budget för tidsfördröjning av inläsning, vilket normalt kräver profilutvärdering som distribueras av edge, i stället för API-anrop på serversidan för den kritiska återgivningssökvägen.
+- Innehållsvariationer måste utformas för alla målgruppssegment som ska anpassas, inklusive en standardupplevelse för besökare som inte matchar någon personaliseringsregel.
+- Personalization-beslut bör loggas för analys, vilket möjliggör A/B-testning av innehållsvariationer och attribuering av engagemangsförbättringar för specifika segment.
+
+
+## Anonym besökare på Personalization
+
+Anpassa innehåll för oidentifierade webbplatsbesökare med hjälp av sessionsbeteendesignaler som visade sidor, bläddrade produktkategorier och hänvisningskälla. Eftersom merparten av webbtrafiken inom detaljhandeln är anonym, utökar personaliseringen av okända besökare avsevärt räckvidden för webbplatspersonaliseringen utanför det autentiserade segmentet.
+
+### Affärspåverkan
+
+Återförsäljare som levererar personaliserade upplevelser till anonyma besökare ser bättre engagemang och konverteringsgrader för första besök, med särskilt stor påverkan på besökare som kommer från specifika kampanjkällor eller som surfar på kategorisidor med hög återgivning.
+
+### Implementera
+
+Använd mönstret [Anonym besökswebb-Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md) för att utvärdera sessionsbeteendesignaler i kanten och leverera relevanta innehållsvariationer utan att någon autentisering krävs. Detta är det rätta mönstret när personalisering måste fungera direkt från den första interaktionen utan att förlita sig på en beständig profil - särskilt för kundvärvstrafik och besökare som ännu inte har loggat in.
+
+### Tekniska överväganden
+
+- Sessionspersonalisering bygger på strömmande händelsedata som samlas in via Edge Network; kantutvärderingsreglerna måste distribueras och testas innan trafik skickas till dem.
+- Innehållsvariationer bör utformas kring beteenden med hög signal under sessioner - hänvisningskälla, första sidan ska visas, produktkategori utforskas - istället för lågsignalsattribut som inte förutsäger avsikten på ett tillförlitligt sätt.
+- Kraven på integritetsskydd måste utvärderas noggrant. I vissa jurisdiktioner behandlas beteendeanpassning som krav på samtycke även för anonyma besökare.
+- Personalization regler för anonyma besökare bör vara enklare och snabbare att utvärdera än kända besökarregler, eftersom begränsningar för gränslatens är strängare.
+
+
+## Welcome Series Journey
+
+Samordna en välkomstresa i flera steg för nyregistrerade kunder och leverera introduktionsinnehåll, produktutbildning och ett första inköp i e-postkanaler och push-kanaler. En väldesignad välkomstserie sätter tonen för kundrelationen och ökar sannolikheten för att en ny registrant ska gå över till sitt första inköp avsevärt.
+
+### Affärspåverkan
+
+Välkomstserieprogram ger meningsfulla förbättringar av kundaktiveringstakten och konverteringsgraden vid första köpet, med störst effekt när serien kombinerar utbildningsinnehåll med ett vältajmat, personaliserat incitament.
+
+### Implementera
+
+Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att utforma en introduktionssekvens för flera dagar med väntesteg, kanalförgrening baserad på engagemang och nedtryckning när det första inköpsmålet har uppnåtts. Detta är det rätta mönstret när användningsfallet kräver ett sekventiellt, tidsfördelat kommunikationsflöde med villkorslogik - ett enda meddelande som utlöses är inte tillräckligt för att vägleda en ny kund genom introduktionsupplevelsen.
+
+### Tekniska överväganden
+
+- Reseposten bör aktiveras av kontoregistreringshändelser i realtid så att det första välkomstmeddelandet kommer så fort registreringsavsikten är hög.
+- Resan måste innehålla avslutningsvillkor som utesluter återstående meddelanden när en ny kund slutför sitt första köp - att fortsätta välkomstserien efter köpet undergräver meddelandets relevans.
+- Kanalinställningarna måste gälla överallt. Steg för push-meddelanden kräver att du installerar appen och anmäler dig till tjänsten, med e-postreservlösningar för kunder utan att anmäla dig.
+- Personalization i välkomstserien förbättrar konverteringen men kräver tillräckligt med profildata för att vara meningsfulla - nya profiler behöver ofta en reserv till bestsäljare eller trendprodukter.
+
+
+## Återställning av kundvagnsavbrott
+
+Trigga e-post i realtid och push-meddelanden när en kund överger sin kundvagn, med personaliserade produktpåminnelser och tidsbegränsade incitament för att slutföra köpet. Att kunden överger sina intäkter är ett av de mest lönsamma användningsområdena inom detaljhandeln, och återfår intäkterna från kunder som redan har visat god inköpsvilja.
+
+### Affärspåverkan
+
+Välgenomförda program för övergivna varukorgar återvinner en meningsfull andel av övergivna intäkter, med högsta återvinningsgrad när det första meddelandet kommer inom en timme efter överlämnandet och inkluderar de exakta artiklarna som återstår i kundvagnen.
+
+### Implementera
+
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) för att svara på händelsen att kundvagnen överges med en omedelbart utlöst kommunikation medan inköpsmetoden fortfarande är aktiv. Det här är det rätta mönstret när en diskret kundåtgärd är utlösaren och det primära kravet är ett personaliserat svar i rätt tid - snarare än en flerveckorsbevakning eller komplexa anbudsbeslut med begränsade affärsmöjligheter.
+
+### Tekniska överväganden
+
+- Identifiering av avbruten kundvagn kräver ett definierat inaktivitetströskelvärde (vanligtvis 30-60 minuter) för att undvika att skicka meddelanden till kunder som fortfarande aktivt bläddrar eller slutför utcheckningsflödet.
+- E-postinnehåll måste dynamiskt återge aktuella produktbilder, priser och lagerstatus när de skickas, eftersom artiklar kan sälja ut eller ändra priset mellan nedläggning och meddelandeleverans.
+- Undertryckningslogiken måste utesluta kunder som slutfört sitt köp via en annan kanal mellan avhoppsidentifiering och meddelandeutskick.
+- Regler för frekvensbegränsning bör förhindra att upprepade kundvagnsövergivna meddelanden visas i korta fönster, särskilt för kunder som vanligtvis överger kundvagnar som surfbeteende.
+
+
+## Deltagande efter inköp
+
+Leverera postinköpsmeddelanden som orderbekräftelse, leveransuppdateringar, korsförsäljningsrekommendationer och granskningsbegäranden via en samordnad flerstegsresa. Fönstret efter köpet är en av de mest engagerande ögonblicken i kundens livscykel, vilket gör det till ett idealiskt tillfälle att skapa lojalitet och introducera relevanta kompletterande produkter.
+
+### Affärspåverkan
+
+Återförsäljare med strukturerade kundresor kan se förbättrade återköpsfrekvenser och färre kundgranskningar, vilket bidrar till både långsiktig lojalitet och sociala bevis som stöder framtida förvärv.
+
+### Implementera
+
+Använd mönstret [Flerstegsdirigerad resa](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) om du vill orkestrera en sekvens av postköpskommunikation som är tidsbestämd till viktiga milstolpar: orderbekräftelse, leverans, leverans och uppföljning efter leverans. Detta är det rätta mönstret när användningsfallet sträcker sig över flera dagar med flera mål - ett enda utlöst meddelande kan inte rymma bågen från transaktionsbekräftelse till lojalitetsskapande till granskningsbegäran.
+
+### Tekniska överväganden
+
+- Integrering av orderhanteringssystem krävs för att kunna ta emot köp- och leveranshändelser i realtid; förseningar i händelse av förtäring skapar besvärlig timing i kommunikation efter inköp.
+- Korsförsäljningsrekommendationer i sekvensen efter inköp kräver realtidsdata i produktkatalogen och rekommendationsmodellslutsatser vid meddelandeåtergivningstiden för att återspegla aktuellt lager och aktuella priser.
+- Meddelanden om förfrågningar måste uppfylla plattformens användarvillkor för att ge incitament till granskningar och bör skickas när kunden har haft tillräckligt med tid för att använda produkten.
+- Kanalsamordning är viktigt - kunderna bör inte få både e-post och push för samma milstolpe om de inte har engagerat sig i den första kanalen.
+
+
+## Uppgraderingskampanj för bonusnivå
+
+Identifiera kunder som närmar sig lojalitetströskeln och leverera målinriktade kampanjer som uppmuntrar dem att nå nästa nivå med personaliserade erbjudanden baserade på inköpshistorik och önskemål. När kunderna är inom räckhåll för en nivåuppgradering skapar riktade meddelanden med personaliserade incitament ett trängande behov och driver på inkrementellt köpbeteende.
+
+### Affärspåverkan
+
+Uppgraderingskampanjer på bonusnivå driver på den stegvisa inköpsvolymen och förbättrar programmets engagemang, med störst effekt bland medlemmar i mellanskiktet som ligger nära nästa tröskelvärde och har visat upp den senaste köpaktiviteten.
+
+### Implementera
+
+Använd mönstret [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) för att skapa en nivånärhetskampanj som kommer in i kunderna när de når en definierad utgiftsgräns under nästa nivå och guidar dem genom en sekvens av förmånsmeddelanden och bonuserbjudanden. Detta är det rätta mönstret när användningsfallet kräver övervakning av ett beräknat profilattribut över tiden och samordning av en flerstegskampanj som är kopplad till kundens framsteg mot ett mål.
+
+### Tekniska överväganden
+
+- Uppgifter om lojalitetsplattformen - poängbalans, nivåstatus, nivåtröskelvärden - måste hämtas in och hållas aktuella i kundprofilen så att nivånärhetsberäkningarna blir korrekta.
+- Uppgraderingskampanjer på nivån ska inte visas för kunder som redan har uppnått målnivån eller vars lojalitetsstatus har ändrats sedan kampanjen introducerades.
+- Personaliserade incitament i uppgraderingskampanjen bör begränsas till erbjudanden som kunden verkligen är berättigad till och som inte undergräver det upplevda värdet av nivåstrukturen.
+- Kampanjen måste innehålla tydliga avslutningsvillkor för kunder som slutför uppgraderingen av skiktet mitt i kundresan, pivotera till ett gratulationsmeddelande istället för att fortsätta med övertalningssekvensen.
+
+
+## Samlad flerkanalsmarknadsföring
+
+Samordna samordnade marknadsföringskampanjer i e-post-, SMS-, push- och webbkanaler med förgreningar av resan, väntesteg och frekvensbegränsning för att maximera engagemanget utan trötthet. Samordnad flerkanalssamordning säkerställer att kunderna får en sammanhängande kampanjupplevelse oavsett vilken kanal de först svarar på, vilket eliminerar dubblettmeddelanden och motstridiga erbjudanden.
+
+### Affärspåverkan
+
+Återförsäljare med funktioner för flerkanalsmarknadsföring ser ett högre kampanjengagemang och större konverteringsgrader än kampanjer i en enda kanal, samtidigt som de minskar avabonnemangsfrekvensen på grund av kanalutmattning på grund av osamordnade meddelanden.
+
+### Implementera
+
+Använd mönstret [Flerkanalsresa med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att skapa kampanjer som dirigerar kunder via personaliserade kanalsekvenser baserat på deras interaktionshistorik, kanalpreferenser och realtidssvarssignaler. Det här är det rätta mönstret när kampanjen kräver styrt urval av erbjudanden, kanalpreferenser och dynamisk förgrening baserat på engagemanget under resan - i stället för en fast sekvens som skickas till alla kampanjmottagare.
+
+### Tekniska överväganden
+
+- Globala frekvenshål måste konfigureras över alla kanaler för att förhindra att kunderna får för mycket information när flera resor körs samtidigt.
+- Kanalinställningsdata måste vara aktuella och användbara - inställningsprofiler som är månader inaktuella dirigerar kunder till kanaler som de inte längre interagerar med.
+- Resehanteringslogiken bör hantera återinträde på ett smidigt sätt, så att kunderna inte kan gå in i samma kampanj två gånger samtidigt som de inte utesluts från verkligt nya kampanjer.
+- Realtidsengagemangssignaler (e-post öppnas, länkklick, webbsessioner) bör flöda tillbaka till resan för att möjliggöra kanalbyte och tidig avslutning för kunder som redan har konverterat.
+
+
+## Brand Concierge Conversational Experience
+
+Driftsätt en AI-driven, varumärkessäker konverteringsagent för digitala resurser för att ge personlig produktvägledning, hjälp med webbplatsnavigering och smidig leverans till aktiva agenter. En AI-konversation på plats utökar den personaliserade tjänsten i stor skala, vilket hjälper kunderna att hitta produkter, jämföra alternativ och slutföra köp utan att de behöver hjälp av handläggare för vanliga frågor.
+
+### Affärspåverkan
+
+Återförsäljare med AI-konverteringsfunktioner rapporterar om förbättrad självbetjäningsupplösning, minskad inkommande supportvolym för produkt- och navigeringsfrågor samt högre konverteringsgrad bland kunder som interagerar med konversationsvägledning före köp.
+
+### Implementera
+
+Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md) för att distribuera en styrd AI-agent som är baserad på produktkatalogdata, varumärkesriktlinjer och kundprofilskontext i realtid. Det här är det rätta mönstret när användningsfallet kräver en naturlig språkinteraktion över en stor, dynamisk produktuppsättning - istället för en skriptad chattbot med fast avsikt eller ett mönster som matchar en viss kanal som e-post.
+
+### Tekniska överväganden
+
+- AI-agenten måste grunda sig på aktuella produktkatalogdata, inklusive beskrivningar, specifikationer, tillgänglighet och priser för att ge korrekt vägledning. Gamla produktdata leder till felaktiga rekommendationer.
+- Garantier för varumärkessäkerhet måste konfigureras för att förhindra agenten från att diskutera konkurrentprodukter, göra prisåtaganden som står i konflikt med kampanjer eller svara på frågor utanför temat.
+- Leveranslogik till live-agenter kräver integrering med tjänstplattformen och bör aktiveras när AI-agenten inte kan lösa kundens fråga efter ett definierat antal omgångar.
+- Integrering av profildata gör det möjligt för agenten att anpassa svar baserat på inköpshistorik och lojalitetsstatus, men detta kräver att identitetsmatchningen slutförs innan konversationssessionen börjar.
