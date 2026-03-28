@@ -969,6 +969,6 @@ Följande resurser innehåller ytterligare information om det här användningsm
 
 ### Självstudiekurser och guider
 
-- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [Grundläggande om schemakomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition)
 - [SDK - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home)
-- [Konfigurera datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Konfigurera datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure)
