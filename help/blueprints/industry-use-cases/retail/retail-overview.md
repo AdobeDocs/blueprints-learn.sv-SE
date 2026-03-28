@@ -3,9 +3,9 @@ title: Användningsexempel
 description: Upptäck hur detaljhandelsorganisationer använder Adobe Experience Platform för att personalisera shoppingupplevelser, återställa övergivna kundvagnar och öka kundlojaliteten.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '6166'
+source-wordcount: '7216'
 ht-degree: 0%
 
 ---
@@ -491,3 +491,111 @@ Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/u
 - Garantier för varumärkessäkerhet måste konfigureras för att förhindra agenten från att diskutera konkurrentprodukter, göra prisåtaganden som står i konflikt med kampanjer eller svara på frågor utanför temat.
 - Leveranslogik till live-agenter kräver integrering med tjänstplattformen och bör aktiveras när AI-agenten inte kan lösa kundens fråga efter ett definierat antal omgångar.
 - Integrering av profildata gör det möjligt för agenten att anpassa svar baserat på inköpshistorik och lojalitetsstatus, men detta kräver att identitetsmatchningen slutförs innan konversationssessionen börjar.
+
+## Påminnelse om incheckning med Appnedladdning CTA
+
+Påminn gästerna om att checka in och uppmuntra dem att hämta appen för att enkelt få tillgång till information. Påminnelser i rätt tid i samband med appnedladdning plus uppmaningar om att öka mobilengagemanget och skapa mer engagerande upplevelser på plats.
+
+### Affärspåverkan
+
+Återförsäljare som kombinerar påminnelser om incheckning med appnedladdningsanrop kan se ökad appanvändning och större engagemang i butiken, eftersom kunder som använder mobilappen oftare interagerar med reklam och webbplatsinnehåll.
+
+### Implementera
+
+Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill utlösa en påminnelse om incheckning med programnedladdning av CTA baserat på händelsens närvaro eller reservationsdata. Det här är det rätta mönstret när ett enda meddelande i rätt tid måste skickas som svar på en känd händelse eller en schemalagd utlösare.
+
+### Tekniska överväganden
+
+- Påminnelser om incheckning måste anges korrekt i förhållande till evenemanget eller besöksdatumet för att maximera engagemanget utan att uppfattas som för tidigt eller för sent.
+- Djupa länkar för appnedladdning bör dirigera till rätt appbutik baserat på kundens enhetsplattform (iOS eller Android).
+- Kunder som redan har installerat appen bör få en annan meddelandevariant som hoppar över nedladdningen av CTA och fokuserar på incheckningsfunktionen.
+
+## Födelsedagskampanjer för fans
+
+Rikta fansen på sin födelsedag med ett personligt födelsedagsmeddelande och ett exklusivt erbjudande. Födelsedagskampanjer skapar känslomässiga kopplingar med fans och driver inkrementella inköp genom personaliserad utåtriktad marknadsföring.
+
+### Affärspåverkan
+
+Födelsedagskampanjer ger genomgående en högre öppnings- och konverteringsgrad än genomsnittet eftersom de kommer i ett ögonblick av personlig betydelse, skapar mervärde och uppmuntrar fansen att behandla sig själva med ett specialköp.
+
+### Implementera
+
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka ett personligt födelsedagmeddelande när kundens födelsedatum kommer. Det här är det rätta mönstret när ett enda händelsestyrt meddelande skickas baserat på en utlösare för profilattributsdatum.
+
+### Tekniska överväganden
+
+- Födelsedatum måste registreras i kundprofilen och valideras för att undvika att meddelanden skickas på felaktiga datum.
+- Erbjudandena bör ha ett definierat giltighetsfönster (t.ex. födelseveckan) för att skapa ett trängande behov och samtidigt ge kunderna rimlig tid att lösa in.
+- Fans utan födelsedag ska uteslutas från kampanjen i stället för att skicka ett generiskt meddelande.
+
+## Födelsedagskampanjer för köpare
+
+Rikta kunderna på deras födelsedag med ett personligt födelsedagsmeddelande och ett exklusivt erbjudande. Födelsedagskampanjer bygger varumärkeslojalitet genom att man erkänner kunderna personligen och uppmuntrar till ett prisvärt köp.
+
+### Affärspåverkan
+
+Personaliserade födelsedagserbjudanden genererar högre inlösenfrekvenser än generiska kampanjer eftersom de är anpassade efter ett ögonblick då kunderna redan är benägna att göra diskretionära inköp åt sig själva.
+
+### Implementera
+
+Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill utlösa ett födelsedagsmeddelande och ett erbjudande baserat på köparens attribut för födelsedatumprofil. Det här är det rätta mönstret när ett personligt meddelande måste levereras på ett visst kalenderdatum som är knutet till kundprofilen.
+
+### Tekniska överväganden
+
+- Födelsedatum måste lagras som ett profilattribut och bör samlas in under registrering eller registrering av lojalitet.
+- Erbjudandepersonalisering bör ta hänsyn till kundens inköpshistorik och preferenser för att presentera relevanta produktförslag tillsammans med födelsedagserbjudandet.
+- Dubblett av undertryckningslogiken behövs för kunder som finns i flera system för att undvika att skicka flera födelsedagskalendern.
+
+## Game Day Promotion Campaign
+
+Rikta fansen mot att köpa biljetter till ett kommande spel med personaliserade kampanjer och erbjudanden. Game day-kampanjer driver försäljningen av biljetter genom att nå rätt målgrupp med aktuella, händelsespecifika meddelanden.
+
+### Affärspåverkan
+
+Målgruppsanpassade erbjudanden för speldagar förbättrar antalet biljettförsäljningspriser genom att nå fansen med relevanta erbjudanden baserat på deras teampreferenser, tidigare närvaro och närhet till platsen.
+
+### Implementera
+
+Använd mönstret [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) för att skicka kampanjmeddelanden till segmenterade fangrupper före kommande spel. Det här är det rätta mönstret när en grupp personaliserade meddelanden måste skickas till ett färdigbyggt målgruppssegment på schemalagd basis.
+
+### Tekniska överväganden
+
+- Spelschemadata måste integreras för att utlösa kampanjer vid rätt ledtid före varje händelse.
+- Målgruppssegmentering bör ta hänsyn till teamets affinitet, geografiska närhet och tidigare närvaromönster för att maximera relevansen.
+- Kunder som redan har köpt biljetter till det framhävda spelet bör inte få något kundförvärvsmeddelande och kan i stället få merförsäljningserbjudanden för uppgraderingar eller tillägg.
+
+## Produktkampanjer
+
+Rikta kunderna till att köpa produkter under en pågående produktkampanj. Kampanjkampanjer genererar intäkter genom att koppla samman rätt kunder med aktuella erbjudanden anpassade till aktiva kampanjer.
+
+### Affärspåverkan
+
+Målinriktade produktmarknadsföringskampanjer överträffar breda kampanjer genom att fokusera på de kunder som mest sannolikt konverterar, minska mängden marknadsföringsslöseri och förbättra avkastningen på marknadsföringsbudgeten.
+
+### Implementera
+
+Använd mönstret [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) för att skicka kampanjmeddelanden till kvalificerade målgruppssegment under aktiva kampanjfönster. Detta är det rätta mönstret när en schemalagd batch med personaliserade kampanjmeddelanden måste nå en viss målgrupp under en tidsbunden kampanj.
+
+### Tekniska överväganden
+
+- Start- och slutdatum för kampanjen måste hanteras för att säkerställa att meddelanden bara skickas under det aktiva erbjudandefönstret.
+- Målgruppssegmenteringen bör utnyttja inköpshistorik, surfbeteende och produkttillhörighet för att nå målgrupper som är mest benägna att interagera med de produkter som marknadsförs.
+- Frekvensbegränsning bör tillämpas för att förhindra reklamtrötthet, särskilt när flera kampanjer körs samtidigt.
+
+## Kundvagnsöverge
+
+Engagera kunder som överger kundvagnen på nytt med personliga påminnelser och incitament för att slutföra köpet. Återvinning av kundöverläggningar är ett av de mest lönsamma användningsområdena inom detaljhandeln.
+
+### Affärspåverkan
+
+Kampanjer för återfinnande av kundsegment återhämtar en meningsfull procentandel av de intäkter som annars gått förlorade genom att engagera kunderna på nytt i det ögonblick de hade störst inköpsavsikt med personaliserade påminnelser och incitament.
+
+### Implementera
+
+Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) för att utlösa ett återställningsmeddelande när en händelse om att en kundvagn har övergivits identifieras. Det här är det rätta mönstret när ett enda meddelande i realtid måste skickas som svar på en beteendehändelse, till exempel att du lämnar objekt i kundvagnen utan att behöva slutföra utcheckningen.
+
+### Tekniska överväganden
+
+- Identifiering av avbruten kundvagn kräver ett definierat inaktivitetströskelvärde (vanligtvis 30-60 minuter) för att särskilja avbruten kundvagn från kunder som fortfarande surfar.
+- Kundvagnsinnehållet måste skickas i händelsenyttolasten för att det ska gå att aktivera anpassade produktpåminnelser i återställningsmeddelandet.
+- Kunder som slutför köpet mellan övergivningshändelsen och meddelandet måste ignoreras för att undvika irrelevanta meddelanden.

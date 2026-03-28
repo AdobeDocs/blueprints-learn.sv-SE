@@ -1,50 +1,50 @@
 ---
-title: Travel & Hospitality Use Cases
-description: Discover how travel and hospitality organizations use Adobe Experience Platform to personalize booking experiences, recover abandoned reservations, and build guest loyalty.
+title: Användningsexempel för resor och turism
+description: Upptäck hur rese- och turismorganisationer använder Adobe Experience Platform för att personalisera bokningsupplevelser, återställa övergivna bokningar och bygga gästlojalitet.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '4015'
 ht-degree: 0%
 
 ---
 
-# Travel &amp; Hospitality Use Cases
+# Användningsexempel för resor och turism
 
-Travel and hospitality organizations use Adobe Experience Platform to bring together guest data from booking engines, loyalty programs, property management systems, and digital touchpoints into a single view of each traveler. This unified foundation powers personalized experiences that inspire bookings, recover abandoned reservations, and build the kind of guest loyalty that drives repeat visits.
+Rese- och turismorganisationer använder Adobe Experience Platform för att samla gästdata från bokningsmotorer, lojalitetsprogram, egendomsstyrningssystem och digitala kontaktytor i en enda vy över varje resenär. Denna enhetliga grund driver personaliserade upplevelser som inspirerar bokningar, återställer övergivna reservationer och bygger upp den typ av gästlojalitet som driver återkommande besök.
 
-## Personalized Homepage for New Visitors
+## Personaliserad hemsida för nya besökare
 
-Show personalized cruise, hotel, and destination recommendations on the homepage based on the visitor&#39;s geographic location and browsing behavior. First-time visitors who see relevant travel options immediately are far more likely to explore further and begin the booking process.
+Visa personliga kryssnings-, hotell- och destinationsrekommendationer på hemsidan baserat på besökarens geografiska plats och surfbeteende. Första gången besökare som ser relevanta resealternativ direkt är mycket mer benägna att utforska och påbörja bokningsprocessen.
 
 ### Affärspåverkan
 
-Personalizing the homepage for new visitors drives improved conversion rates by presenting travel options that match the visitor&#39;s location and interests rather than generic content.
+Personalisering av hemsidan för nya besökare ökar konverteringsgraden genom att presentera resealternativ som matchar besökarens plats och intressen i stället för generiskt innehåll.
 
 ### Implementera
 
-Use the [Anonymous Visitor Web Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md) pattern. This approach delivers tailored content to visitors who have not yet identified themselves, using available signals such as geolocation, device type, and referral source to personalize the experience from the very first page. This is the right pattern when the visitor has not yet identified themselves and personalization must rely on available signals such as geolocation, device type, and referral source — known-visitor personalization requires an authenticated profile that does not yet exist.
+Använd mönstret [Anonym besökswebb-Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md). Det här arbetssättet levererar skräddarsytt innehåll till besökare som ännu inte har identifierat sig, med hjälp av tillgängliga signaler som geopositionering, enhetstyp och hänvisningskälla för att personalisera upplevelsen från den allra första sidan. Det här är det rätta mönstret när besökaren ännu inte har identifierat sig och personaliseringen måste förlita sig på tillgängliga signaler som geopositionering, enhetstyp och hänvisningskälla - personalisering av kända besökare kräver en autentiserad profil som ännu inte finns.
 
 ### Tekniska överväganden
 
-- Geolocation data must be resolved accurately at the edge to serve region-appropriate destinations, currencies, and departure ports without adding latency to the homepage load.
-- Personalization rules should account for seasonal travel trends by region, surfacing warm-weather destinations to visitors in cold climates during winter months, for example.
-- Fallback content strategies are essential for visitors whose location cannot be determined or who arrive through anonymizing services.
-- Integration with the reservation system&#39;s availability feed ensures that featured properties and itineraries are actually bookable, preventing frustration from promoting sold-out options.
+- Geolokaliseringsdata måste tolkas korrekt vid kanten för att betjäna regionsspecifika destinationer, valutor och avgångsportar utan att lägga till latens till startsidans belastning.
+- Personalization regler bör ta hänsyn till årstidsutvecklingen för resor per region, surfning av varma väderplatser till besökare i kalla klimat under vintermånaderna, till exempel.
+- Strategier för återfallsinnehåll är avgörande för besökare vars position inte kan fastställas eller som kommer via anonyma tjänster.
+- Integrationen med bokningssystemets tillgänglighetsflöde säkerställer att aktuella egenskaper och färdvägar verkligen är bokningsbara, vilket förhindrar frustration att marknadsföra utsålda alternativ.
 
 
-## Cart Abandonment Recovery Journey
+## Återvinning av kundvagnsåtervinning
 
-Automatically detect when a customer abandons their booking cart and trigger a multi-step email journey with personalized offers to encourage completion. Abandoned reservations represent one of the largest revenue leaks in travel and hospitality, and timely follow-up while the travel intent is still fresh recovers a meaningful share of those bookings.
+Identifiera automatiskt när en kund överger sin bokningsvagn och utlöser en e-postresa i flera steg med personaliserade erbjudanden för att uppmuntra till slutförande. Övergivna bokningar är ett av de största intäktsläckorna inom resor och turism, och en snabb uppföljning medan reseavsikten fortfarande återhämtar en meningsfull andel av bokningarna.
 
 ### Affärspåverkan
 
-Effective booking recovery programs achieve meaningful cart recovery rates and can generate significant incremental revenue depending on booking volume and average trip value.
+Effektiva program för återfinnande av bokningar ger en meningsfull kundvagnsåtervinning och kan generera betydande ytterligare intäkter beroende på bokningsvolym och genomsnittligt resevärde.
 
 ### Implementera
 
-Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). This approach responds to a real-time cart abandon event, sending a timely reminder while the customer&#39;s travel intent is still high. Det här är det rätta mönstret när utlösaren är en kundbeteendehändelse i realtid och det svar som krävs är ett enda tidskänsligt meddelande - snarare än en interaktiv sekvens i flera steg eller ett dynamiskt urval som ändras baserat på kundrespons.
+Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Den här metoden är ett svar på en händelse om att kundvagnen överges i realtid och en påminnelse skickas så fort kundens reseåtergivning är hög. Det här är det rätta mönstret när utlösaren är en kundbeteendehändelse i realtid och det svar som krävs är ett enda tidskänsligt meddelande - snarare än en interaktiv sekvens i flera steg eller ett dynamiskt urval som ändras baserat på kundrespons.
 
 ### Tekniska överväganden
 
@@ -272,3 +272,40 @@ Använd mönstret [Brand Concierge Conversational Experience](/help/blueprints/u
 - Vid sökning efter kundprofiler i realtid måste kundens lojalitetsnivå, lagringshistorik och angivna inställningar visas, så att agenten proaktivt kan bekräfta gästens status och anpassa rekommendationer utan att gästen behöver förklara sina inställningar på nytt vid varje besök.
 - Varumärkesstyrningen måste definiera hur agenten hanterar frågor om matchning av frekvens, konkurrentreferenser och situationer där gästens önskade datum eller rumstyp inte är tillgängliga, så att agenten kan reagera smidigt inom varumärkesuttrycket i stället för att presentera en odödlig ände.
 - Konversationssignaler - inklusive destinationsintresse, resekomposition och närliggande preferenser som uttrycks under dialogen - måste flöda tillbaka till AEP som ExperienceEvent-data, vilket berikar gästprofilerna för att informera e-post, lojalitet och återengagemangskampanjer längre fram i kedjan.
+
+## Födelsedagskampanjer för gäster
+
+Rikta gästerna på sin födelsedag med ett personligt födelsedagsmeddelande och ett exklusivt erbjudande. Födelsedagskampanjer stärker gästernas relationer genom att bekräfta en personlig milstolpe och uppmuntra till en högtidlig bokning eller besök.
+
+### Affärspåverkan
+
+Födelsedag skapar en känslomässig kontaktyta som särskiljer varumärket och skapar inkrementella bokningar, eftersom det är mer sannolikt att gästerna planerar en resa eller matupplevelse runt sin födelsedag när de får ett övertygande, personaliserat erbjudande.
+
+### Implementera
+
+Använd mönstret [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) om du vill skicka ett personligt födelsedagsmeddelande och erbjudande när gästens födelsedatum kommer. Det här är det rätta mönstret när ett enda händelsestyrt meddelande skickas baserat på en utlösare för profilattributsdatum.
+
+### Tekniska överväganden
+
+- Födelsedatum måste hämtas i gästprofilen och valideras för att undvika att meddelanden skickas på felaktiga datum.
+- Erbjudandena bör ha ett definierat giltighetsdatum (t.ex. födelsemånaden) för att ge gästerna rimlig tid att planera och boka en vistelse eller en upplevelse.
+- Gäster utan födelsedag ska uteslutas från kampanjen i stället för att skickas med ett generiskt meddelande.
+- Erbjudandepersonalisering bör beakta tidigare bokningsinställningar (destination, egenskapstyp, rumskategori) för att kunna presentera relevanta förslag.
+
+## Destinationskampanjer
+
+Rikta gästerna för att boka en reservation under en pågående befordran av resmål. Destinationskampanjer driver bokningar genom att koppla samman resenärer med vältajmade erbjudanden för framhävda destinationer som passar deras intressen.
+
+### Affärspåverkan
+
+Målinriktade destinationskampanjer förbättrar bokningskonverteringen genom att nå de resenärer som troligtvis är intresserade baserat på tidigare resehistorik och angivna preferenser, vilket minskar mängden reklamavfall och förbättrar avkastningen på kampanjinvesteringen.
+
+### Implementera
+
+Använd mönstret [Aktivera utgående batchmeddelande](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) för att skicka kampanjmeddelanden till kvalificerade målgruppssegment under aktiva målkampanjfönster. Detta är det rätta mönstret när en schemalagd batch med personaliserade kampanjmeddelanden måste nå en viss målgrupp under en tidsbunden kampanj.
+
+### Tekniska överväganden
+
+- Start- och slutdatum för kampanjen måste hanteras för att säkerställa att meddelanden bara skickas under det aktiva erbjudandefönstret.
+- Målgruppssegmentering bör utnyttja tidigare bokningshistorik, webbläsarbeteende och målgruppstillhörighet för de målgäster som mest sannolikt interagerar med det framhävda målet.
+- Gäster som redan har bokat för den befordrade destinationen och resedatum bör inte få meddelanden om värvning.

@@ -3,9 +3,9 @@ title: Användningsexempel inom telekommunikation
 description: Upptäck hur telekommunikationsorganisationer använder Adobe Experience Platform för att minska bortfall, få enhetsuppgraderingar och förbättra kundengagemanget.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 653632f0-81be-435c-a703-56c5bc132794
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -232,26 +232,6 @@ Använd mönstret [Known-Visitor Web/App Personalization](/help/blueprints/use-c
 - Koppla samman diagnostikdata för enheter för att erbjuda skräddarsydda felsökningsrekommendationer baserat på prenumerantens specifika enhetsmodell och programvaruversion.
 - Använd [!DNL Adobe Experience Platform]-kanttjänster för att leverera personalisering med låg latens i appupplevelsen utan att påverka prestanda.
 - Implementera feedback-slingor så att prenumeranterna kan rapportera täckningsproblem och berika nätverksdata samtidigt som de visar hur lyhörda de är.
-
-
-## Lojalitetsprogramengagemang
-
-Anpassa kundens kundskikt, poängsaldo och inlösenhistorik, samtidigt som ni i realtid fragmenterar olika kanaler i appar, på webben, i SMS och i butik för att förhindra att dubbletter eller motstridiga erbjudanden når samma abonnent. Nivåbaserade begränsningar för behörighet styr vilka belöningar, partnerinlösen och kampanjer som varje prenumerant har tillgång till, och dessa regler måste verkställas på beslutslagret i stället för inbäddade i den enskilda kampanjlogiken. Lojalitetsprogrammet måste också samordna med aktiva lojalitets- och uppgraderingskampanjer så att förebyggande erbjudanden och lojalitetserbjudanden kompletterar varandra i stället för att dubbla erbjudanden skickas till prenumeranter som samtidigt befinner sig på flera resor.
-
-### Affärspåverkan
-
-Personaliserat lojalitetsprogram främjar bättre deltagande och belöningsinlösen, vilket ger högre lojalitetsgrad bland registrerade prenumeranter.
-
-### Implementera
-
-Använd mönstret [Cross-Channel Journey med Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) för att skapa personliga kundrelationer som framhäver relevanta belöningar, underrättar prenumeranter om hur skiktet utvecklas och presenterar möjligheter till inlösen i linje med deras preferenser och beteenden. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att förhindra dubbla lojalitetserbjudanden och när valet av erbjudanden kräver nivåstatus och inlösningshistorik - flerstegssamordning ger inte det beslutsskikt i realtid som behövs.
-
-### Tekniska överväganden
-
-- Integrera lojalitetsplattformen för att få tillgång till poäng i realtid, nivåstatus och inlösenhistorik för korrekt personalisering.
-- Koppla ihop partnerbelöningskataloger för att presentera ett stort antal inlösenalternativ som är skräddarsydda efter varje abonnents uppvisade intressen och tidigare inlösen.
-- Samordna lojalitetsmeddelanden med andra kampanjresor för att säkerställa att lojalitetserbjudanden och lojalitetsbelöningar kompletterar varandra i stället för att skapa konflikter mellan varandra.
-- Supportnivåutvecklingen förbättras genom att man beräknar hur nära en prenumerant är nästa nivå och presenterar åtgärdbara steg för att nå den.
 
 
 ## AI Plan Advisor

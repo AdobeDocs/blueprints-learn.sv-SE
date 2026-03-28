@@ -3,9 +3,9 @@ title: Försäkringsanvändningsfall
 description: Upptäck hur försäkringsorganisationer använder Adobe Experience Platform för att personalisera regelhanteringen, förbättra upplevelserna och få kunderna att stanna kvar.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: a082598f-555b-49a4-b201-a55bee793959
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -132,26 +132,6 @@ Använd mönstret [Händelseutlöst meddelanden](/help/blueprints/use-case-patte
 - Konfigurera timingregler som balanserar skyndsamhet med respekt - inledande uppföljning inom några timmar, med ett begränsat antal efterföljande påminnelser under de följande dagarna.
 - Använd regler för samtycke och integritet för att säkerställa att uppföljning endast skickas till presumtiva som har valt att marknadsföra meddelanden, särskilt för kunder som ännu inte har etablerat ett politiskt förhållande.
 - Inkludera djupa länkar som returnerar potentiella kunder direkt till deras sparade offert i stället för att kräva att de startar om processen från början.
-
-
-## Produkterbjudanden baserade på livscykelstadium
-
-Identifiera kunder som kommer in i nya livsstadier - som giftermål, hemköp, växande familj eller pension - och erbjud relevanta försäkringsprodukter som matchar deras föränderliga skyddsbehov. Med målgruppsanpassning för livsstadiet kan försäkringstagarna skapa rätt täckning vid rätt tidpunkt.
-
-### Affärspåverkan
-
-Livfasbaserade produkter ger bättre acceptansgrad i vardagen och fördjupar kundrelationerna under viktiga beslutstillfällen.
-
-### Implementera
-
-Använd mönstret [Flerkanalsresa med beslut](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Övergångar i livscykelstadiet drar nytta av flerkanalssamordning i kombination med realtidsbeslut för att välja den mest relevanta produkten och leverera den via den kanal kunden föredrar i det optimala ögonblicket. Det här är det rätta mönstret när resan måste koordinera leveransen över flera kanaler för att säkerställa enhetliga erbjudanden samtidigt som man drar nytta av beslut om att välja den lämpligaste produkten för den identifierade livscykeln - en flerstegssamordning kan inte tillhandahålla den realtidsbedömning av lämplighet och lämplighet som krävs för rekommendationer av försäkringsprodukter.
-
-### Tekniska överväganden
-
-- Bygg modeller för upptäckt av livsstadier med hjälp av beteendesignaler som adressändringar, mottagaruppdateringar och onlineforskningsmönster, i kombination med förändrade politiska händelser.
-- Konfigurera beslutsmotorn med regler för produktberättigande och lämplighet som matchar varje livscykelstadium till lämpliga täckningsrekommendationer.
-- Samordna livserbjudanden med den tilldelade agenten eller mäklaren så att de är redo att ge kunden konsultation när erbjudandet levereras.
-- Använd datastyrningsetiketter på alla datakällor från tredje part som används för att övervaka att dataintegritetsreglerna efterlevs och att marknadsföringsrutinerna är rättvisa.
 
 
 ## Rabatt och besparingar
