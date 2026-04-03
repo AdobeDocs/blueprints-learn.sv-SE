@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARKIVERAD
 
-Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/blueprints-learn.en>.
+Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/blueprints-learn.sv-SE>.
